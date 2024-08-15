@@ -6,8 +6,8 @@ exports.up = async function (knex) {
     await knex.schema
         .createTable('sections', table => {
             table.increments('id') // Primary Key
-            table.string('name').notNullable().unique() // Section name
-            table.string('image_url') // URL or path to the section image
+            table.string('section_name').notNullable().unique() // Section name
+            table.string('section_img_url') // URL or path to the section image
         })
         .createTable('topics', table => {
             table.increments('id') // Primary Key
@@ -18,8 +18,9 @@ exports.up = async function (knex) {
                 .inTable('sections')
                 .onDelete('RESTRICT')
                 .onUpdate('RESTRICT') // Foreign Key to Sections
-            table.string('name').notNullable() // Topic name
-            table.string('image_url') // URL or path to the topic image
+            table.integer('order_index').index()    
+            table.string('topic_name').notNullable().unique() // Topic name
+            table.string('topic_img_url') // URL or path to the topic image
         })
         .createTable('challenges', table => {
             table.increments('id') // Primary Key
@@ -30,7 +31,8 @@ exports.up = async function (knex) {
                 .inTable('topics')
                 .onDelete('RESTRICT')
                 .onUpdate('RESTRICT') // Foreign Key to Topics
-            table.string('name').notNullable() // Challenge name
+            table.integer('order_index').index()
+            table.string('challenge_name').notNullable().unique() // Challenge name
             table.text('description').notNullable() // Challenge details
             table.integer('difficulty').notNullable() // Challenge difficulty
         })
