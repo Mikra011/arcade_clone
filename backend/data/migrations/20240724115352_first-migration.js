@@ -7,6 +7,7 @@ exports.up = async function (knex) {
         .createTable('sections', table => {
             table.increments('id') // Primary Key
             table.string('section_name').notNullable().unique() // Section name
+            table.integer('order_index').index()
             table.string('section_img_url') // URL or path to the section image
         })
         .createTable('topics', table => {
