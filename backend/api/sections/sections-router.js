@@ -1,31 +1,9 @@
 const express = require('express')
 const router = express.Router()
-const Section = require('./sections-model')
+const sectionController = require('./sections-conroller')
 
-// Get all sections
-router.get('/', () => {
-  next()
-})
-
-// Get section by ID
-router.get('/:id', () => {
-  next()
-})
-
-// Create a new section
-router.post('/', () => {
-  next()
-})
-
-// Update an existing section
-router.put('/:id', () => {
-  next()
-})
-
-// Delete a section
-router.delete('/:id', () => {
-  next()
-})
+// GET all sections:
+router.get('/', sectionController.getAllSections)
 
 router.use((err, req, res, next) => { // eslint-disable-line
     res.status(500).json({
