@@ -18,10 +18,10 @@ const sharedConfig = {
   module.exports = {
     development: {
       ...sharedConfig,
-      connection: { filename: './backend/data/arcade_clone.db3' },
+      connection: { filename: './data/arcade_clone.db3' },
     },
     testing: {
       ...sharedConfig,
-      connection: { filename: './backend/data/arcade_clone.test.db3' },
+      connection: { filename: './data/arcade_clone.test.db3' },
     },
   }
