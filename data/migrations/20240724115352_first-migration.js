@@ -35,7 +35,6 @@ exports.up = async function (knex) {
             table.integer('order_index').index()
             table.string('challenge_name').notNullable().unique() // Challenge name
             table.text('description').notNullable() // Challenge details
-            table.integer('difficulty').notNullable() // Challenge difficulty
         })
         .createTable('tests', table => {
             table.increments('id') // Primary Key
