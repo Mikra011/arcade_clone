@@ -1,35 +1,8 @@
 const express = require('express');
 const router = express.Router();
-const Challenge = require('./challenges-model');
+const challengeController = require('./challenges-controller');
 
-// Get all challenges
-router.get('/', () => {
-  next()
-}) 
-
-// Get challenges by topic ID
-router.get('/topics/:topicId/challenges', () => {
-  next()
-}) 
-
-// Get challenge by ID
-router.get('/:id', () => {
-  next()
-}) 
-
-// Create a new challenge
-router.post('/', () => {
-  next()
-}) 
-
-// Update an existing challenge
-router.put('/:id', () => {
-  next()
-}) 
-
-// Delete a challenge
-router.delete('/:id', () => {
-  next()
-}) 
+// GET challenge description by ID
+router.get('/:id', challengeController.getChallengeDescriptionById)
 
 module.exports = router
