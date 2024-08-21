@@ -12,10 +12,10 @@ exports.up = async function (knex) {
         })
         .createTable('topics', table => {
             table.increments('id') // Primary Key
-            table.integer('section_id')
+            table.string('section_name')
                 .unsigned()
                 .notNullable()
-                .references('id')
+                .references('section_name')
                 .inTable('sections')
                 .onDelete('RESTRICT')
                 .onUpdate('RESTRICT') // Foreign Key to Sections
