@@ -9,7 +9,7 @@ const getTopicsBySection = async (sectionName) => {
     // Iterate over each topic to fetch the corresponding challenges
     for (const topic of topics) {
         const challenges = await db('challenges')
-            .select('order_index', 'challenge_name')
+            .select('order_index', 'challenge_name', 'id')
             .where('topic_id', topic.id)
             .orderBy('order_index');
 
