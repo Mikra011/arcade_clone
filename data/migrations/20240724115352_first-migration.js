@@ -45,9 +45,22 @@ exports.up = async function (knex) {
                 .inTable('challenges')
                 .onDelete('RESTRICT')
                 .onUpdate('RESTRICT') // Foreign Key to Challenges
-            table.text('input').notNullable() // Input data for the test case
+                table.integer('order_index').index()
             table.text('expected_output').notNullable() // Expected output
             table.boolean('is_sample').notNullable() // Whether the test case is a sample
+        })
+
+        .createTable('test_inputs', table => {
+            table.increments('id') // Primary Key
+            table.integer('test_id')
+                .unsigned()
+                .notNullable()
+                .references('id')
+                .inTable('tests')
+                .onDelete('CASCADE')
+                .onUpdate('CASCADE') // Foreign Key to Tests
+            table.string('input_name').notNullable() // Name of the input parameter
+            table.text('input_value').notNullable() // Value of the input parameter
         })
 }
 
@@ -57,6 +70,7 @@ exports.up = async function (knex) {
  */
 exports.down = async function (knex) {
     await knex.schema
+        .dropTableIfExists('test_inputs')
         .dropTableIfExists('tests')
         .dropTableIfExists('challenges')
         .dropTableIfExists('topics')
