@@ -16,6 +16,11 @@ const getChallengeDescriptionById = async (req, res) => {
     }
 }
 
+const runCode = async (req, res) => {
+    res.json({ message: 'POST /code endpoint is working', requestBody: req.body })
+}
+
 module.exports = {
-    getChallengeDescriptionById
+    getChallengeDescriptionById,
+    runCode
 }
