@@ -1423,10 +1423,22 @@ const test_inputs = [
         "input_value": "[2, 3, 5, 1, 6]"
     },
     {
+        "test_id": 307,
+        "input_type": "number",
+        "input_name": "k",
+        "input_value": "2"
+    },
+    {
         "test_id": 308,
         "input_type": "arrayOfIntegers",
         "input_name": "inputArray",
         "input_value": "[2, 4, 10, 1]"
+    },
+    {
+        "test_id": 308,
+        "input_type": "number",
+        "input_name": "k",
+        "input_value": "2"
     },
     {
         "test_id": 309,
@@ -1435,10 +1447,22 @@ const test_inputs = [
         "input_value": "[1, 3, 2, 4]"
     },
     {
+        "test_id": 309,
+        "input_type": "number",
+        "input_name": "k",
+        "input_value": "3"
+    },
+    {
         "test_id": 310,
         "input_type": "arrayOfIntegers",
         "input_name": "inputArray",
         "input_value": "[3, 2, 1, 1]"
+    },
+    {
+        "test_id": 310,
+        "input_type": "number",
+        "input_name": "k",
+        "input_value": "1"
     },
     {
         "test_id": 311,
@@ -1447,10 +1471,22 @@ const test_inputs = [
         "input_value": "[1, 3, 4, 2, 4, 2, 4]"
     },
     {
+        "test_id": 311,
+        "input_type": "number",
+        "input_name": "k",
+        "input_value": "4"
+    },
+    {
         "test_id": 312,
         "input_type": "arrayOfIntegers",
         "input_name": "inputArray",
         "input_value": "[963, 741, 22, 851, 399, 382, 190, 247, 494, 452, 891, 532, 795, 920, 465, 831, 344, 391, 582, 897, 763, 951, 735, 806, 320, 702, 200, 59, 870, 345, 695, 321, 817, 83, 416, 36, 914, 335, 117, 985, 690, 303, 875, 556, 292, 309, 496, 791, 509, 360, 235, 784, 607, 341]"
+    },
+    {
+        "test_id": 312,
+        "input_type": "number",
+        "input_name": "k",
+        "input_value": "23"
     },
 
     // growingPlant
@@ -1547,196 +1583,166 @@ const test_inputs = [
 
     // Knapsack Light
     {
-        "test_id": 317,
+        "test_id": 318,
         "input_type": "number",
         "input_name": "value1",
         "input_value": "10"
     },
     {
-        "test_id": 317,
+        "test_id": 318,
         "input_type": "number",
         "input_name": "weight1",
         "input_value": "5"
     },
     {
-        "test_id": 317,
+        "test_id": 318,
         "input_type": "number",
         "input_name": "value2",
         "input_value": "6"
     },
     {
-        "test_id": 317,
+        "test_id": 318,
         "input_type": "number",
         "input_name": "weight2",
         "input_value": "4"
     },
     {
-        "test_id": 317,
+        "test_id": 318,
         "input_type": "number",
         "input_name": "maxW",
         "input_value": "8"
     },
     {
-        "test_id": 318,
+        "test_id": 319,
         "input_type": "number",
         "input_name": "value1",
         "input_value": "10"
     },
     {
-        "test_id": 318,
+        "test_id": 319,
         "input_type": "number",
         "input_name": "weight1",
         "input_value": "5"
     },
     {
-        "test_id": 318,
+        "test_id": 319,
         "input_type": "number",
         "input_name": "value2",
         "input_value": "6"
     },
     {
-        "test_id": 318,
+        "test_id": 319,
         "input_type": "number",
         "input_name": "weight2",
         "input_value": "4"
     },
     {
-        "test_id": 318,
+        "test_id": 319,
         "input_type": "number",
         "input_name": "maxW",
         "input_value": "9"
     },
     {
-        "test_id": 319,
+        "test_id": 320,
         "input_type": "number",
         "input_name": "value1",
         "input_value": "5"
     },
     {
-        "test_id": 319,
+        "test_id": 320,
         "input_type": "number",
         "input_name": "weight1",
         "input_value": "3"
     },
     {
-        "test_id": 319,
+        "test_id": 320,
         "input_type": "number",
         "input_name": "value2",
         "input_value": "7"
     },
     {
-        "test_id": 319,
+        "test_id": 320,
         "input_type": "number",
         "input_name": "weight2",
         "input_value": "4"
     },
     {
-        "test_id": 319,
+        "test_id": 320,
         "input_type": "number",
         "input_name": "maxW",
         "input_value": "6"
     },
     {
-        "test_id": 320,
+        "test_id": 321,
         "input_type": "number",
         "input_name": "value1",
         "input_value": "10"
     },
     {
-        "test_id": 320,
+        "test_id": 321,
         "input_type": "number",
         "input_name": "weight1",
         "input_value": "2"
     },
     {
-        "test_id": 320,
+        "test_id": 321,
         "input_type": "number",
         "input_name": "value2",
         "input_value": "11"
     },
     {
-        "test_id": 320,
+        "test_id": 321,
         "input_type": "number",
         "input_name": "weight2",
         "input_value": "3"
     },
     {
-        "test_id": 320,
+        "test_id": 321,
         "input_type": "number",
         "input_name": "maxW",
         "input_value": "1"
     },
     {
-        "test_id": 321,
+        "test_id": 322,
         "input_type": "number",
         "input_name": "value1",
         "input_value": "15"
     },
     {
-        "test_id": 321,
+        "test_id": 322,
         "input_type": "number",
         "input_name": "weight1",
         "input_value": "2"
     },
     {
-        "test_id": 321,
+        "test_id": 322,
         "input_type": "number",
         "input_name": "value2",
         "input_value": "20"
     },
     {
-        "test_id": 321,
+        "test_id": 322,
         "input_type": "number",
         "input_name": "weight2",
         "input_value": "3"
     },
     {
-        "test_id": 321,
+        "test_id": 322,
         "input_type": "number",
         "input_name": "maxW",
         "input_value": "2"
     },
     {
-        "test_id": 322,
+        "test_id": 323,
         "input_type": "number",
         "input_name": "value1",
         "input_value": "2"
     },
     {
-        "test_id": 322,
-        "input_type": "number",
-        "input_name": "weight1",
-        "input_value": "5"
-    },
-    {
-        "test_id": 322,
-        "input_type": "number",
-        "input_name": "value2",
-        "input_value": "3"
-    },
-    {
-        "test_id": 322,
-        "input_type": "number",
-        "input_name": "weight2",
-        "input_value": "4"
-    },
-    {
-        "test_id": 322,
-        "input_type": "number",
-        "input_name": "maxW",
-        "input_value": "5"
-    },
-    {
-        "test_id": 323,
-        "input_type": "number",
-        "input_name": "value1",
-        "input_value": "4"
-    },
-    {
         "test_id": 323,
         "input_type": "number",
         "input_name": "weight1",
-        "input_value": "3"
+        "input_value": "5"
     },
     {
         "test_id": 323,
@@ -1754,19 +1760,19 @@ const test_inputs = [
         "test_id": 323,
         "input_type": "number",
         "input_name": "maxW",
-        "input_value": "4"
+        "input_value": "5"
     },
     {
         "test_id": 324,
         "input_type": "number",
         "input_name": "value1",
-        "input_value": "3"
+        "input_value": "4"
     },
     {
         "test_id": 324,
         "input_type": "number",
         "input_name": "weight1",
-        "input_value": "5"
+        "input_value": "3"
     },
     {
         "test_id": 324,
@@ -1776,12 +1782,42 @@ const test_inputs = [
     },
     {
         "test_id": 324,
+        "input_type": "number",
+        "input_name": "weight2",
+        "input_value": "4"
+    },
+    {
+        "test_id": 324,
+        "input_type": "number",
+        "input_name": "maxW",
+        "input_value": "4"
+    },
+    {
+        "test_id": 325,
+        "input_type": "number",
+        "input_name": "value1",
+        "input_value": "3"
+    },
+    {
+        "test_id": 325,
+        "input_type": "number",
+        "input_name": "weight1",
+        "input_value": "5"
+    },
+    {
+        "test_id": 325,
+        "input_type": "number",
+        "input_name": "value2",
+        "input_value": "3"
+    },
+    {
+        "test_id": 325,
         "input_type": "number",
         "input_name": "weight2",
         "input_value": "8"
     },
     {
-        "test_id": 324,
+        "test_id": 325,
         "input_type": "number",
         "input_name": "maxW",
         "input_value": "10"
@@ -1789,37 +1825,37 @@ const test_inputs = [
 
     // longestDigitsPrefix
     {
-        "test_id": 325,
+        "test_id": 326,
         "input_type": "string",
         "input_name": "inputString",
         "input_value": "123aa1"
     },
     {
-        "test_id": 326,
+        "test_id": 327,
         "input_type": "string",
         "input_name": "inputString",
         "input_value": "0123456789"
     },
     {
-        "test_id": 327,
-        "input_type": "string",
-        "input_name": "inputString",
-        "input_value": "3) always check for whitespaces"
-    },
-    {
         "test_id": 328,
         "input_type": "string",
         "input_name": "inputString",
-        "input_value": "12abc34"
+        "input_value": "  3) always check for whitespaces"
     },
     {
         "test_id": 329,
         "input_type": "string",
         "input_name": "inputString",
-        "input_value": "the output is 42"
+        "input_value": "12abc34"
     },
     {
         "test_id": 330,
+        "input_type": "string",
+        "input_name": "inputString",
+        "input_value": "the output is 42"
+    },
+    {
+        "test_id": 331,
         "input_type": "string",
         "input_name": "inputString",
         "input_value": "aaaaaaa"
@@ -1827,61 +1863,61 @@ const test_inputs = [
 
     // digitDegree
     {
-        "test_id": 331,
+        "test_id": 332,
         "input_type": "number",
         "input_name": "n",
         "input_value": "5"
     },
     {
-        "test_id": 332,
+        "test_id": 333,
         "input_type": "number",
         "input_name": "n",
         "input_value": "100"
     },
     {
-        "test_id": 333,
+        "test_id": 334,
         "input_type": "number",
         "input_name": "n",
         "input_value": "91"
     },
     {
-        "test_id": 334,
+        "test_id": 335,
         "input_type": "number",
         "input_name": "n",
         "input_value": "99"
     },
     {
-        "test_id": 335,
+        "test_id": 336,
         "input_type": "number",
         "input_name": "n",
         "input_value": "1000000000"
     },
     {
-        "test_id": 336,
+        "test_id": 337,
         "input_type": "number",
         "input_name": "n",
         "input_value": "9"
     },
     {
-        "test_id": 337,
+        "test_id": 338,
         "input_type": "number",
         "input_name": "n",
         "input_value": "73"
     },
     {
-        "test_id": 338,
+        "test_id": 339,
         "input_type": "number",
         "input_name": "n",
         "input_value": "877"
     },
     {
-        "test_id": 339,
+        "test_id": 340,
         "input_type": "number",
         "input_name": "n",
         "input_value": "777773"
     },
     {
-        "test_id": 340,
+        "test_id": 341,
         "input_type": "number",
         "input_name": "n",
         "input_value": "304"
@@ -1889,121 +1925,121 @@ const test_inputs = [
 
     // Bishop and Pawn
     {
-        "test_id": 341,
+        "test_id": 342,
         "input_type": "string",
         "input_name": "bishop",
         "input_value": "a1"
     },
     {
-        "test_id": 341,
+        "test_id": 342,
         "input_type": "string",
         "input_name": "pawn",
         "input_value": "c3"
     },
     {
-        "test_id": 342,
+        "test_id": 343,
         "input_type": "string",
         "input_name": "bishop",
         "input_value": "h1"
     },
     {
-        "test_id": 342,
+        "test_id": 343,
         "input_type": "string",
         "input_name": "pawn",
         "input_value": "h3"
     },
     {
-        "test_id": 343,
+        "test_id": 344,
         "input_type": "string",
         "input_name": "bishop",
         "input_value": "a5"
     },
     {
-        "test_id": 343,
+        "test_id": 344,
         "input_type": "string",
         "input_name": "pawn",
         "input_value": "c3"
     },
     {
-        "test_id": 344,
+        "test_id": 345,
         "input_type": "string",
         "input_name": "bishop",
         "input_value": "g1"
     },
     {
-        "test_id": 344,
+        "test_id": 345,
         "input_type": "string",
         "input_name": "pawn",
         "input_value": "f3"
     },
     {
-        "test_id": 345,
+        "test_id": 346,
         "input_type": "string",
         "input_name": "bishop",
         "input_value": "e7"
     },
     {
-        "test_id": 345,
+        "test_id": 346,
         "input_type": "string",
         "input_name": "pawn",
         "input_value": "d6"
     },
     {
-        "test_id": 346,
+        "test_id": 347,
         "input_type": "string",
         "input_name": "bishop",
         "input_value": "e7"
     },
     {
-        "test_id": 346,
+        "test_id": 347,
         "input_type": "string",
         "input_name": "pawn",
         "input_value": "a3"
     },
     {
-        "test_id": 347,
+        "test_id": 348,
         "input_type": "string",
         "input_name": "bishop",
         "input_value": "e3"
     },
     {
-        "test_id": 347,
+        "test_id": 348,
         "input_type": "string",
         "input_name": "pawn",
         "input_value": "a7"
     },
     {
-        "test_id": 348,
+        "test_id": 349,
         "input_type": "string",
         "input_name": "bishop",
         "input_value": "a1"
     },
     {
-        "test_id": 348,
+        "test_id": 349,
         "input_type": "string",
         "input_name": "pawn",
         "input_value": "h8"
     },
     {
-        "test_id": 349,
+        "test_id": 350,
         "input_type": "string",
         "input_name": "bishop",
         "input_value": "a1"
     },
     {
-        "test_id": 349,
+        "test_id": 350,
         "input_type": "string",
         "input_name": "pawn",
         "input_value": "h7"
     },
     {
-        "test_id": 350,
+        "test_id": 351,
         "input_type": "string",
         "input_name": "bishop",
         "input_value": "h1"
     },
     {
-        "test_id": 350,
+        "test_id": 351,
         "input_type": "string",
         "input_name": "pawn",
         "input_value": "a8"

@@ -45,7 +45,7 @@ const runCode = async (req, res) => {
     const results = tests.map(test => {
         const { test_id, expected_output, inputs, is_complex } = test
 
-        // console.log(inputs)
+        console.log(inputs)
         // Convert input values to their appropriate types
         const parsedInputs = Object.entries(inputs).map(([key, { value, type }]) => {
             switch (type) {
