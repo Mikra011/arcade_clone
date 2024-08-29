@@ -19,7 +19,7 @@ exports.up = async function (knex) {
                 .inTable('sections')
                 .onDelete('RESTRICT')
                 .onUpdate('RESTRICT') // Foreign Key to Sections
-            table.integer('order_index').index()    
+            table.integer('order_index').index()
             table.string('topic_name').notNullable().unique() // Topic name
             table.string('topic_img_url') // URL or path to the topic image
         })
@@ -45,8 +45,9 @@ exports.up = async function (knex) {
                 .inTable('challenges')
                 .onDelete('RESTRICT')
                 .onUpdate('RESTRICT') // Foreign Key to Challenges
-                table.integer('order_index').index()
+            table.integer('order_index').index()
             table.text('expected_output').notNullable() // Expected output
+            table.boolean('is_complex').notNullable()
             table.boolean('is_sample').notNullable() // Whether the test case is a sample
         })
 
@@ -59,6 +60,7 @@ exports.up = async function (knex) {
                 .inTable('tests')
                 .onDelete('CASCADE')
                 .onUpdate('CASCADE') // Foreign Key to Tests
+            table.string('input_type').notNullable()
             table.string('input_name').notNullable() // Name of the input parameter
             table.text('input_value').notNullable() // Value of the input parameter
         })

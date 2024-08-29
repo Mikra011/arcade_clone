@@ -11,13 +11,13 @@ const getChallengeById = async (id) => {
     }
 
     const tests = await db('tests as t')
-        .select('t.id as test_id', 't.expected_output', 't.is_sample')
+        .select('t.id as test_id', 't.expected_output', 'is_complex', 't.is_sample')
         .where('t.challenge_id', id)
         .orderBy('t.order_index')
 
     const testsWithInputs = await Promise.all(tests.map(async (test) => {
         const inputs = await db('test_inputs as ti')
-            .select('ti.input_name', 'ti.input_value')
+            .select('ti.input_name', 'ti.input_value', 'ti.input_type')
             .where('ti.test_id', test.test_id)
 
         return {

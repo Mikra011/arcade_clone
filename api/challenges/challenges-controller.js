@@ -43,11 +43,23 @@ const runCode = async (req, res) => {
     }
 
     const results = tests.map(test => {
-        const { test_id, expected_output, inputs } = test
+        const { test_id, expected_output, inputs, is_complex } = test
 
+        // console.log(inputs)
         // Convert input values to their appropriate types
-        const parsedInputs = Object.values(inputs).map(value => {
-            return isNaN(value) ? value : Number(value)
+        const parsedInputs = Object.entries(inputs).map(([key, { value, type }]) => {
+            switch (type) {
+                case 'number':
+                    return Number(value)
+                case 'arrayOfIntegers':
+                    return JSON.parse(value)
+                case 'matrix':
+                    return JSON.parse(value)
+                case 'arrayOfStrings':
+                    return JSON.parse(value)
+                default:
+                    return String(value) // Default is string or any unhandled type
+            }
         })
 
         try {
@@ -55,14 +67,18 @@ const runCode = async (req, res) => {
             const solutionFunction = getSolutionFunction()
             const result = solutionFunction(...parsedInputs)
 
-            // Compare the result with the expected output
-            const passed = String(result) === expected_output
-
+            let passed
+            if (is_complex) {
+                passed = areEqual(result, JSON.parse(expected_output))
+            } else {
+                passed = String(result) === expected_output
+            }
+            
             return {
                 test_id,
                 passed,
                 expected_output,
-                result: String(result),
+                result: tests.is_complex ? String(result) : result
             }
         } catch (error) {
             return {
@@ -78,6 +94,32 @@ const runCode = async (req, res) => {
     res.json({ results })
 }
 
+
+// Helper for deep comparison
+function areEqual(value1, value2) {
+    // Check if both are arrays
+    if (!Array.isArray(value1) || !Array.isArray(value2)) {
+        return false
+    }
+    
+    // Check if they have the same length
+    if (value1.length !== value2.length) {
+        return false
+    }
+
+    // Deep comparison for each element
+    for (let i = 0; i < value1.length; i++) {
+        if (Array.isArray(value1[i]) && Array.isArray(value2[i])) {
+            if (!areEqual(value1[i], value2[i])) {
+                return false
+            }
+        } else if (value1[i] !== value2[i]) {
+            return false
+        }
+    }
+
+    return true;
+}
 
 module.exports = {
     getChallengeDescriptionById,
