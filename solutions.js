@@ -809,7 +809,215 @@ function solution(inputString) {
     return mac48Regex.test(inputString);
 }
 
-// 48: 
+// 48: isDigit
+function solution(symbol) {
+    return !isNaN(symbol) && symbol.trim() !== '';
+}
+
+// 49: lineEncoding
+function solution(s) {
+    let encodedString = '';
+    let i = 0;
+    
+    while (i < s.length) {
+        let char = s[i];
+        let count = 0;
+        
+        // Count the number of repeating characters
+        while (i < s.length && s[i] === char) {
+            count++;
+            i++;
+        }
+        
+        // Encode the substring based on its length
+        if (count > 1) {
+            encodedString += count + char;
+        } else {
+            encodedString += char;
+        }
+    }
+    
+    return encodedString;
+}
+
+// 50: chessKnight
+function solution(cell) {
+    // Define all possible knight moves
+    const moves = [
+        [2, 1], [2, -1], [-2, 1], [-2, -1],
+        [1, 2], [1, -2], [-1, 2], [-1, -2]
+    ];
+    
+    // Convert the cell to numerical coordinates
+    const column = cell.charCodeAt(0) - 'a'.charCodeAt(0) + 1; // 'a' -> 1, 'b' -> 2, ..., 'h' -> 8
+    const row = parseInt(cell[1]); // '1' -> 1, '2' -> 2, ..., '8' -> 8
+    
+    let validMoves = 0;
+    
+    // Check each possible move
+    for (const [dRow, dCol] of moves) {
+        const newRow = row + dRow;
+        const newCol = column + dCol;
+        
+        // Check if the new position is within the bounds of the chessboard
+        if (newRow >= 1 && newRow <= 8 && newCol >= 1 && newCol <= 8) {
+            validMoves++;
+        }
+    }
+    
+    return validMoves;
+}
+
+// 51: deleteDigit
+function solution(n) {
+    const numStr = n.toString();
+    let maxNumber = -Infinity;
+
+    // Iterate over each digit position
+    for (let i = 0; i < numStr.length; i++) {
+        // Create a new number by excluding the digit at position i
+        const newNumberStr = numStr.slice(0, i) + numStr.slice(i + 1);
+        const newNumber = parseInt(newNumberStr, 10);
+        
+        // Update the maximum number found
+        if (newNumber > maxNumber) {
+            maxNumber = newNumber;
+        }
+    }
+    
+    return maxNumber;
+}
+
+// 52: longestWord
+function solution(text) {
+    // Step 1: Normalize the string by removing non-letter characters
+    // and replace them with spaces to isolate words.
+    const normalizedText = text.replace(/[^a-zA-Z]+/g, ' ');
+    
+    // Step 2: Extract all sequences of letters (words)
+    const words = normalizedText.trim().split(/\s+/);
+    
+    // Step 3: Find the longest word
+    let longestWord = '';
+    for (const word of words) {
+        if (word.length > longestWord.length) {
+            longestWord = word;
+        }
+    }
+    
+    return longestWord;
+}
+
+// 53: Valid Time
+function solution(time) {
+    // Split the input string by ':'
+    const [hours, minutes] = time.split(':');
+    
+    // Convert hours and minutes to numbers
+    const hour = parseInt(hours, 10);
+    const minute = parseInt(minutes, 10);
+    
+    // Check if hour is between 0 and 23, and minute is between 0 and 59
+    return hour >= 0 && hour < 24 && minute >= 0 && minute < 60;
+}
+
+// 54: sumUpNumbers
+function solution(inputString) {
+    // Use regex to find all sequences of digits
+    const numbers = inputString.match(/\d+/g);
+    
+    // If no numbers found, return 0
+    if (!numbers) {
+        return 0;
+    }
+    
+    // Convert each found sequence to an integer and sum them up
+    const sum = numbers.reduce((acc, num) => acc + parseInt(num, 10), 0);
+    
+    return sum;
+}
+
+// 55: Different Squares
+function solution(matrix) {
+    const rows = matrix.length;
+    const cols = matrix[0].length;
+    const uniqueSquares = new Set();
+    
+    // Iterate over possible top-left corners of 2x2 squares
+    for (let i = 0; i < rows - 1; i++) {
+        for (let j = 0; j < cols - 1; j++) {
+            // Extract the 2x2 square
+            const square = [
+                matrix[i][j], matrix[i][j+1],
+                matrix[i+1][j], matrix[i+1][j+1]
+            ];
+            
+            // Serialize the square to a string
+            const key = square.join(',');
+            
+            // Add the serialized square to the set
+            uniqueSquares.add(key);
+        }
+    }
+    
+    // The size of the set represents the number of unique 2x2 squares
+    return uniqueSquares.size;
+}
+
+// 56: digitsProduct
+function solution(product) {
+    // Special cases
+    if (product === 0) return 10;
+    if (product === 1) return 1;
+    
+    // Array to store the factors (digits from 2 to 9)
+    let factors = [];
+    
+    // Factorize the product using digits from 9 to 2
+    for (let i = 9; i >= 2; i--) {
+        while (product % i === 0) {
+            factors.push(i);
+            product /= i;
+        }
+    }
+    
+    // If product is not 1 after factorization, return -1
+    if (product !== 1) return -1;
+    
+    // Sort the factors to form the smallest possible number
+    factors.sort((a, b) => a - b);
+    
+    // Combine factors to form the smallest number
+    return parseInt(factors.join(''));
+}
+
+// 57: File Naming
+function solution(names) {
+    // Set to keep track of used filenames
+    const usedNames = new Set();
+    const result = [];
+    
+    // Iterate through each name in the input array
+    for (let name of names) {
+        let baseName = name;
+        let suffix = 1;
+        
+        // Check if the baseName is already used
+        while (usedNames.has(baseName)) {
+            // If it is used, add a suffix (k)
+            baseName = `${name}(${suffix})`;
+            suffix++;
+        }
+        
+        // Add the unique baseName to the result and mark it as used
+        result.push(baseName);
+        usedNames.add(baseName);
+    }
+    
+    return result;
+}
+
+// 58: 
 
 
 

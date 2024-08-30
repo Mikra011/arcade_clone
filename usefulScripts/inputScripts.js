@@ -168,7 +168,7 @@ logAllObjectsAsSingleObject();
 
 /// matrix integers  -------____________------_____________-----
 
-const startId = 205;  // Starting ID
+const startId = 464;  // Starting ID
 const inputType = 'matrix';  // Define your input type
 const inputName = 'matrix';  // Define your input name
 
@@ -189,18 +189,26 @@ function logAllObjectsAsSingleObject() {
 
     dataArray.forEach((item, index) => {
         // Extract 2D array from the 'matrix' key
-        const arrayMatch = item.match(/matrix:\s*\[\[([^\]]+)\]\]/);
+        const arrayMatch = item.match(/matrix:\s*\[\[([\s\S]*?)\]\]/);
         if (arrayMatch) {
             // Clean and format the 2D array
-            const inputValueArray = arrayMatch[1]
-                .split(/\s*,\s*/)
-                .map(s => s.split(/\s*\[\s*|\s*\]\s*/).filter(Boolean).map(Number)) // Convert to nested arrays of numbers
+            const cleanedArray = arrayMatch[1]
+                .replace(/\[\s*([^\[\]]+?)\s*\]/g, '[$1]')  // Remove extra brackets
+                .split(/\]\s*,\s*\[/g)  // Split rows by '],['
+                .map(row => row
+                    .replace(/^\[|\]$/g, '')  // Remove surrounding brackets
+                    .split(/\s*,\s*/)  // Split by commas
+                    .map(Number)  // Convert to numbers
+                );
+
+            // Convert cleaned array to JSON string
+            const formattedArray = JSON.stringify(cleanedArray);
 
             allObjects.push({
                 test_id: startId + index,
                 input_type: inputType,
                 input_name: inputName,
-                input_value: JSON.stringify(inputValueArray), // Convert array to JSON string
+                input_value: formattedArray,
             });
         } else {
             console.warn(`No 'matrix' key found in item ${index + 1}`);
@@ -212,6 +220,7 @@ function logAllObjectsAsSingleObject() {
 
 // Call the function to log all objects
 logAllObjectsAsSingleObject();
+
 
 
 /// matrix booleans  -------____________------_____________-----
