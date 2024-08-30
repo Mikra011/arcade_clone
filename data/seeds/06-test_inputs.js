@@ -2045,9 +2045,340 @@ const test_inputs = [
         "input_value": "a8"
     },
 
-    //
+    // isBeautifulString
+    {
+        "test_id": 352,
+        "input_type": "string",
+        "input_name": "inputString",
+        "input_value": "bbbaacdafe"
+    },
+    {
+        "test_id": 353,
+        "input_type": "string",
+        "input_name": "inputString",
+        "input_value": "aabbb"
+    },
+    {
+        "test_id": 354,
+        "input_type": "string",
+        "input_name": "inputString",
+        "input_value": "bbc"
+    },
+    {
+        "test_id": 355,
+        "input_type": "string",
+        "input_name": "inputString",
+        "input_value": "bbbaa"
+    },
+    {
+        "test_id": 356,
+        "input_type": "string",
+        "input_name": "inputString",
+        "input_value": "abcdefghijklmnopqrstuvwxyzz"
+    },
+    {
+        "test_id": 357,
+        "input_type": "string",
+        "input_name": "inputString",
+        "input_value": "abcdefghijklmnopqrstuvwxyz"
+    },
+    {
+        "test_id": 358,
+        "input_type": "string",
+        "input_name": "inputString",
+        "input_value": "abcdefghijklmnopqrstuvwxyzqwertuiopasdfghjklxcvbnm"
+    },
+    {
+        "test_id": 359,
+        "input_type": "string",
+        "input_name": "inputString",
+        "input_value": "fyudhrygiuhdfeis"
+    },
+    {
+        "test_id": 360,
+        "input_type": "string",
+        "input_name": "inputString",
+        "input_value": "zaa"
+    },
+    {
+        "test_id": 361,
+        "input_type": "string",
+        "input_name": "inputString",
+        "input_value": "zyy"
+    },
+
+    // Find Email Domain
+    {
+        "test_id": 362,
+        "input_type": "string",
+        "input_name": "address",
+        "input_value": "prettyandsimple@example.com"
+    },
+    {
+        "test_id": 363,
+        "input_type": "string",
+        "input_name": "address",
+        "input_value": "fully-qualified-domain@codesignal.com"
+    },
+    {
+        "test_id": 364,
+        "input_type": "string",
+        "input_name": "address",
+        "input_value": "\" \"@space.com"
+    },
+    {
+        "test_id": 365,
+        "input_type": "string",
+        "input_name": "address",
+        "input_value": "someaddress@yandex.ru"
+    },
+    {
+        "test_id": 366,
+        "input_type": "string",
+        "input_name": "address",
+        "input_value": "\" \"@xample.org"
+    },
+    {
+        "test_id": 367,
+        "input_type": "string",
+        "input_name": "address",
+        "input_value": "\"much.more unusual\"@yahoo.com"
+    },
+    {
+        "test_id": 368,
+        "input_type": "string",
+        "input_name": "address",
+        "input_value": "\"very.unusual.@.unusual.com\"@usual.com"
+    },
+    {
+        "test_id": 369,
+        "input_type": "string",
+        "input_name": "address",
+        "input_value": "admin@mailserver2.ru"
+    },
+    {
+        "test_id": 370,
+        "input_type": "string",
+        "input_name": "address",
+        "input_value": "example-indeed@strange-example.com"
+    },
+    {
+        "test_id": 371,
+        "input_type": "string",
+        "input_name": "address",
+        "input_value": "very.common@gmail.com"
+    },
+
+    // buildPalindrome
+    {
+        "test_id": 372,
+        "input_type": "string",
+        "input_name": "st",
+        "input_value": "abcdc"
+    },
+    {
+        "test_id": 373,
+        "input_type": "string",
+        "input_name": "st",
+        "input_value": "ababab"
+    },
+    {
+        "test_id": 374,
+        "input_type": "string",
+        "input_name": "st",
+        "input_value": "abba"
+    },
+    {
+        "test_id": 375,
+        "input_type": "string",
+        "input_name": "st",
+        "input_value": "abaa"
+    },
+    {
+        "test_id": 376,
+        "input_type": "string",
+        "input_name": "st",
+        "input_value": "aaaaba"
+    },
+    {
+        "test_id": 377,
+        "input_type": "string",
+        "input_name": "st",
+        "input_value": "abc"
+    },
+    {
+        "test_id": 378,
+        "input_type": "string",
+        "input_name": "st",
+        "input_value": "kebab"
+    },
+    {
+        "test_id": 379,
+        "input_type": "string",
+        "input_name": "st",
+        "input_value": "abccba"
+    },
+    {
+        "test_id": 380,
+        "input_type": "string",
+        "input_name": "st",
+        "input_value": "abcabc"
+    },
+    {
+        "test_id": 381,
+        "input_type": "string",
+        "input_name": "st",
+        "input_value": "cbdbedffcg"
+    },
+    {
+        "test_id": 382,
+        "input_type": "string",
+        "input_name": "st",
+        "input_value": "euotmn"
+    },
+
+    // Elections Winners
+    {
+        "test_id": 383,
+        "input_type": "arrayOfIntegers",
+        "input_name": "votes",
+        "input_value": "[2, 3, 5, 2]"
+    },
+    {
+        "test_id": 383,
+        "input_type": "number",
+        "input_name": "k",
+        "input_value": "3"
+    },
+    {
+        "test_id": 384,
+        "input_type": "arrayOfIntegers",
+        "input_name": "votes",
+        "input_value": "[1, 3, 3, 1, 1]"
+    },
+    {
+        "test_id": 384,
+        "input_type": "number",
+        "input_name": "k",
+        "input_value": "0"
+    },
+    {
+        "test_id": 385,
+        "input_type": "arrayOfIntegers",
+        "input_name": "votes",
+        "input_value": "[5, 1, 3, 4, 1]"
+    },
+    {
+        "test_id": 385,
+        "input_type": "number",
+        "input_name": "k",
+        "input_value": "0"
+    },
+    {
+        "test_id": 386,
+        "input_type": "arrayOfIntegers",
+        "input_name": "votes",
+        "input_value": "[1, 1, 1, 1]"
+    },
+    {
+        "test_id": 386,
+        "input_type": "number",
+        "input_name": "k",
+        "input_value": "1"
+    },
+    {
+        "test_id": 387,
+        "input_type": "arrayOfIntegers",
+        "input_name": "votes",
+        "input_value": "[1, 1, 1, 1]"
+    },
+    {
+        "test_id": 387,
+        "input_type": "number",
+        "input_name": "k",
+        "input_value": "0"
+    },
+    {
+        "test_id": 388,
+        "input_type": "arrayOfIntegers",
+        "input_name": "votes",
+        "input_value": "[3, 1, 1, 3, 1]"
+    },
+    {
+        "test_id": 388,
+        "input_type": "number",
+        "input_name": "k",
+        "input_value": "2"
+    },
+
+    // Is MAC48 Address?
+    {
+        "test_id": 389,
+        "input_type": "string",
+        "input_name": "inputString",
+        "input_value": "00-1B-63-84-45-E6"
+    },
+    {
+        "test_id": 390,
+        "input_type": "string",
+        "input_name": "inputString",
+        "input_value": "Z1-1B-63-84-45-E6"
+    },
+    {
+        "test_id": 391,
+        "input_type": "string",
+        "input_name": "inputString",
+        "input_value": "not a MAC-48 address"
+    },
+    {
+        "test_id": 392,
+        "input_type": "string",
+        "input_name": "inputString",
+        "input_value": "FF-FF-FF-FF-FF-FF"
+    },
+    {
+        "test_id": 393,
+        "input_type": "string",
+        "input_name": "inputString",
+        "input_value": "00-00-00-00-00-00"
+    },
+    {
+        "test_id": 394,
+        "input_type": "string",
+        "input_name": "inputString",
+        "input_value": "G0-00-00-00-00-00"
+    },
+    {
+        "test_id": 395,
+        "input_type": "string",
+        "input_name": "inputString",
+        "input_value": "02-03-04-05-06-07-"
+    },
+    {
+        "test_id": 396,
+        "input_type": "string",
+        "input_name": "inputString",
+        "input_value": "12-34-56-78-9A-BC"
+    },
+    {
+        "test_id": 397,
+        "input_type": "string",
+        "input_name": "inputString",
+        "input_value": "FF-FF-AB-CD-EA-BC"
+    },
+    {
+        "test_id": 398,
+        "input_type": "string",
+        "input_name": "inputString",
+        "input_value": "12-34-56-78-9A-BG"
+    },
+
+    // isDigit
+    
 
 
+
+    
 ]
 
 

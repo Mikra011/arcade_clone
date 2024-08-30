@@ -1459,76 +1459,417 @@ const tests = [
         "expected_output": "true",
         "is_complex": false,
         "is_sample": true
-      },
-      {
+    },
+    {
         "challenge_id": 42,
         "order_index": 2,
         "expected_output": "false",
         "is_complex": false,
         "is_sample": true
-      },
-      {
+    },
+    {
         "challenge_id": 42,
         "order_index": 3,
         "expected_output": "true",
         "is_complex": false,
         "is_sample": true
-      },
-      {
+    },
+    {
         "challenge_id": 42,
         "order_index": 4,
         "expected_output": "false",
         "is_complex": false,
         "is_sample": true
-      },
-      {
+    },
+    {
         "challenge_id": 42,
         "order_index": 5,
         "expected_output": "true",
         "is_complex": false,
         "is_sample": true
-      },
-      {
+    },
+    {
         "challenge_id": 42,
         "order_index": 6,
         "expected_output": "true",
         "is_complex": false,
         "is_sample": true
-      },
-      {
+    },
+    {
         "challenge_id": 42,
         "order_index": 7,
         "expected_output": "true",
         "is_complex": false,
         "is_sample": true
-      },
-      {
+    },
+    {
         "challenge_id": 42,
         "order_index": 8,
         "expected_output": "true",
         "is_complex": false,
         "is_sample": true
-      },
-      {
+    },
+    {
         "challenge_id": 42,
         "order_index": 9,
         "expected_output": "false",
         "is_complex": false,
         "is_sample": true
-      },
-      {
+    },
+    {
         "challenge_id": 42,
         "order_index": 10,
         "expected_output": "true",
         "is_complex": false,
         "is_sample": true
-      },
+    },
 
-      //
+    // isBeautifulString
+    {
+        "challenge_id": 43,
+        "order_index": 1,
+        "expected_output": "true",
+        "is_complex": false,
+        "is_sample": true
+    },
+    {
+        "challenge_id": 43,
+        "order_index": 2,
+        "expected_output": "false",
+        "is_complex": false,
+        "is_sample": true
+    },
+    {
+        "challenge_id": 43,
+        "order_index": 3,
+        "expected_output": "false",
+        "is_complex": false,
+        "is_sample": true
+    },
+    {
+        "challenge_id": 43,
+        "order_index": 4,
+        "expected_output": "false",
+        "is_complex": false,
+        "is_sample": true
+    },
+    {
+        "challenge_id": 43,
+        "order_index": 5,
+        "expected_output": "false",
+        "is_complex": false,
+        "is_sample": true
+    },
+    {
+        "challenge_id": 43,
+        "order_index": 6,
+        "expected_output": "true",
+        "is_complex": false,
+        "is_sample": true
+    },
+    {
+        "challenge_id": 43,
+        "order_index": 7,
+        "expected_output": "true",
+        "is_complex": false,
+        "is_sample": true
+    },
+    {
+        "challenge_id": 43,
+        "order_index": 8,
+        "expected_output": "false",
+        "is_complex": false,
+        "is_sample": true
+    },
+    {
+        "challenge_id": 43,
+        "order_index": 9,
+        "expected_output": "false",
+        "is_complex": false,
+        "is_sample": true
+    },
+    {
+        "challenge_id": 43,
+        "order_index": 10,
+        "expected_output": "false",
+        "is_complex": false,
+        "is_sample": true
+    },
+
+    // Find Email Domain
+    {
+        "challenge_id": 44,
+        "order_index": 1,
+        "expected_output": "example.com",
+        "is_complex": false,
+        "is_sample": true
+    },
+    {
+        "challenge_id": 44,
+        "order_index": 2,
+        "expected_output": "codesignal.com",
+        "is_complex": false,
+        "is_sample": true
+    },
+    {
+        "challenge_id": 44,
+        "order_index": 3,
+        "expected_output": "space.com",
+        "is_complex": false,
+        "is_sample": true
+    },
+    {
+        "challenge_id": 44,
+        "order_index": 4,
+        "expected_output": "yandex.ru",
+        "is_complex": false,
+        "is_sample": true
+    },
+    {
+        "challenge_id": 44,
+        "order_index": 5,
+        "expected_output": "xample.org",
+        "is_complex": false,
+        "is_sample": true
+    },
+    {
+        "challenge_id": 44,
+        "order_index": 6,
+        "expected_output": "yahoo.com",
+        "is_complex": false,
+        "is_sample": true
+    },
+    {
+        "challenge_id": 44,
+        "order_index": 7,
+        "expected_output": "usual.com",
+        "is_complex": false,
+        "is_sample": true
+    },
+    {
+        "challenge_id": 44,
+        "order_index": 8,
+        "expected_output": "mailserver2.ru",
+        "is_complex": false,
+        "is_sample": true
+    },
+    {
+        "challenge_id": 44,
+        "order_index": 9,
+        "expected_output": "strange-example.com",
+        "is_complex": false,
+        "is_sample": true
+    },
+    {
+        "challenge_id": 44,
+        "order_index": 10,
+        "expected_output": "gmail.com",
+        "is_complex": false,
+        "is_sample": true
+    },
+
+    // buildPalindrome
+    {
+        "challenge_id": 45,
+        "order_index": 1,
+        "expected_output": "abcdcba",
+        "is_complex": false,
+        "is_sample": true
+    },
+    {
+        "challenge_id": 45,
+        "order_index": 2,
+        "expected_output": "abababa",
+        "is_complex": false,
+        "is_sample": true
+    },
+    {
+        "challenge_id": 45,
+        "order_index": 3,
+        "expected_output": "abba",
+        "is_complex": false,
+        "is_sample": true
+    },
+    {
+        "challenge_id": 45,
+        "order_index": 4,
+        "expected_output": "abaaba",
+        "is_complex": false,
+        "is_sample": true
+    },
+    {
+        "challenge_id": 45,
+        "order_index": 5,
+        "expected_output": "aaaabaaaa",
+        "is_complex": false,
+        "is_sample": true
+    },
+    {
+        "challenge_id": 45,
+        "order_index": 6,
+        "expected_output": "abcba",
+        "is_complex": false,
+        "is_sample": true
+    },
+    {
+        "challenge_id": 45,
+        "order_index": 7,
+        "expected_output": "kebabek",
+        "is_complex": false,
+        "is_sample": true
+    },
+    {
+        "challenge_id": 45,
+        "order_index": 8,
+        "expected_output": "abccba",
+        "is_complex": false,
+        "is_sample": true
+    },
+    {
+        "challenge_id": 45,
+        "order_index": 9,
+        "expected_output": "abcabcbacba",
+        "is_complex": false,
+        "is_sample": true
+    },
+    {
+        "challenge_id": 45,
+        "order_index": 10,
+        "expected_output": "cbdbedffcgcffdebdbc",
+        "is_complex": false,
+        "is_sample": true
+    },
+    {
+        "challenge_id": 45,
+        "order_index": 11,
+        "expected_output": "euotmnmtoue",
+        "is_complex": false,
+        "is_sample": true
+    },
+
+    // Elections Winners
+    {
+        "challenge_id": 46,
+        "order_index": 1,
+        "expected_output": "2",
+        "is_complex": false,
+        "is_sample": true
+    },
+    {
+        "challenge_id": 46,
+        "order_index": 2,
+        "expected_output": "0",
+        "is_complex": false,
+        "is_sample": true
+    },
+    {
+        "challenge_id": 46,
+        "order_index": 3,
+        "expected_output": "1",
+        "is_complex": false,
+        "is_sample": true
+    },
+    {
+        "challenge_id": 46,
+        "order_index": 4,
+        "expected_output": "4",
+        "is_complex": false,
+        "is_sample": true
+    },
+    {
+        "challenge_id": 46,
+        "order_index": 5,
+        "expected_output": "0",
+        "is_complex": false,
+        "is_sample": true
+    },
+    {
+        "challenge_id": 46,
+        "order_index": 6,
+        "expected_output": "2",
+        "is_complex": false,
+        "is_sample": true
+    },
+
+    // Is MAC48 Address?
+    {
+        "challenge_id": 47,
+        "order_index": 1,
+        "expected_output": "true",
+        "is_complex": false,
+        "is_sample": true
+    },
+    {
+        "challenge_id": 47,
+        "order_index": 2,
+        "expected_output": "false",
+        "is_complex": false,
+        "is_sample": true
+    },
+    {
+        "challenge_id": 47,
+        "order_index": 3,
+        "expected_output": "false",
+        "is_complex": false,
+        "is_sample": true
+    },
+    {
+        "challenge_id": 47,
+        "order_index": 4,
+        "expected_output": "true",
+        "is_complex": false,
+        "is_sample": true
+    },
+    {
+        "challenge_id": 47,
+        "order_index": 5,
+        "expected_output": "true",
+        "is_complex": false,
+        "is_sample": true
+    },
+    {
+        "challenge_id": 47,
+        "order_index": 6,
+        "expected_output": "false",
+        "is_complex": false,
+        "is_sample": true
+    },
+    {
+        "challenge_id": 47,
+        "order_index": 7,
+        "expected_output": "false",
+        "is_complex": false,
+        "is_sample": true
+    },
+    {
+        "challenge_id": 47,
+        "order_index": 8,
+        "expected_output": "true",
+        "is_complex": false,
+        "is_sample": true
+    },
+    {
+        "challenge_id": 47,
+        "order_index": 9,
+        "expected_output": "true",
+        "is_complex": false,
+        "is_sample": true
+    },
+    {
+        "challenge_id": 47,
+        "order_index": 10,
+        "expected_output": "false",
+        "is_complex": false,
+        "is_sample": true
+    },
+
+    // isDigit
+    
 
 ]
 
 
 exports.seed = async function (knex) {
-    await knex('tests').insert(tests)
+    const batchSize = 100; // Adjust the batch size if necessary
+    await knex.batchInsert('tests', tests, batchSize)
 }

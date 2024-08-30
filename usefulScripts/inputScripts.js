@@ -376,7 +376,7 @@ logAllObjectsAsSingleObject();
 
 const startId = 300;  // Starting ID
 const inputTypeArray = 'arrayOfIntegers';  // Define your input type for array
-const inputNameArray = 'inputArray';  // Define your input name for array
+const inputNameArray = 'votes';  // Define your input name for array
 const inputTypeK = 'number';  // Define your input type for k
 const inputNameK = 'k';  // Define your input name for k
 
@@ -396,12 +396,12 @@ function logAllObjectsAsSingleObject() {
     const allObjects = [];
 
     dataArray.forEach((item, index) => {
-        // Extract inputArray and k from each test case
-        const arrayMatch = item.match(/inputArray:\s*(\[[^\]]*\])/);
+        // Extract votes and k from each test case
+        const arrayMatch = item.match(/votes:\s*(\[[^\]]*\])/);
         const kMatch = item.match(/k:\s*(\d+)/);
 
         if (arrayMatch && kMatch) {
-            const inputArray = JSON.parse(arrayMatch[1]);
+            const votes = JSON.parse(arrayMatch[1]);
             const k = kMatch[1]; // Keep as string
 
             allObjects.push(
@@ -409,7 +409,7 @@ function logAllObjectsAsSingleObject() {
                     test_id: startId + index,
                     input_type: inputTypeArray,
                     input_name: inputNameArray,
-                    input_value: JSON.stringify(inputArray).replace(/\],\[/g, '], [').replace(/,/g, ', '),
+                    input_value: JSON.stringify(votes).replace(/\],\[/g, '], [').replace(/,/g, ', '),
                 },
                 {
                     test_id: startId + index,

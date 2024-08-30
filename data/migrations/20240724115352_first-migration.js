@@ -33,7 +33,7 @@ exports.up = async function (knex) {
                 .onDelete('RESTRICT')
                 .onUpdate('RESTRICT') // Foreign Key to Topics
             table.integer('order_index').index()
-            table.string('challenge_name').notNullable().unique() // Challenge name
+            table.string('challenge_name').notNullable() // Challenge name
             table.text('description').notNullable() // Challenge details
         })
         .createTable('tests', table => {

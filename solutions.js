@@ -34,7 +34,6 @@ function solution(inputArray) {
 }
 
 // 5: shapeArea
-
 function solution(n) {
     let b = n - 1
     return (b * b) + (n * n)
@@ -731,10 +730,429 @@ function solution(bishop, pawn) {
     return Math.abs(bishopX - pawnX) === Math.abs(bishopY - pawnY);
 }
 
-// 43: 
+// 43: isBeautifulString
+function solution(inputString) {
+    // Initialize frequency count for each letter a-z
+    const frequency = Array(26).fill(0);
+    
+    // Count occurrences of each letter
+    for (let char of inputString) {
+        frequency[char.charCodeAt(0) - 'a'.charCodeAt(0)]++;
+    }
+    
+    // Check if the frequency condition is met
+    for (let i = 1; i < 26; i++) {
+        if (frequency[i] > frequency[i - 1]) {
+            return false;
+        }
+    }
+    
+    return true;
+}
+
+// 44: Find Email Domain
+function solution(address) {
+    const atIndex = address.lastIndexOf('@');
+    
+    // Extract and return the substring after the "@" symbol
+    return address.slice(atIndex + 1);
+}
+
+// 45: buildPalindrome
+function solution(st) {
+    function isPalindrome(str) {
+        return str === str.split('').reverse().join('');
+    }
+
+    // Iterate from the end of the string to find the longest palindromic suffix
+    for (let i = 0; i < st.length; i++) {
+        const suffix = st.slice(i);
+        if (isPalindrome(suffix)) {
+            const prefix = st.slice(0, i);
+            return st + prefix.split('').reverse().join('');
+        }
+    }
+    
+    // In case of any unforeseen errors, but ideally should not reach here
+    return st;
+}
+
+// 46: Elections Winners
+function solution(votes, k) {
+    const n = votes.length;
+
+   // Edge case when k is 0
+   if (k === 0) {
+       const maxVotes = Math.max(...votes);
+       const maxCount = votes.filter(vote => vote === maxVotes).length;
+       // If more than one candidate has the maximum votes, there can be no winner
+       return maxCount === 1 ? 1 : 0;
+   }
+
+   // Normal case when k > 0
+   const maxVotes = Math.max(...votes);
+   let count = 0;
+
+   for (const vote of votes) {
+       const potentialMaxVotes = vote + k;
+       if (potentialMaxVotes > maxVotes) {
+           count++;
+       }
+   }
+   
+   return count;
+}
+
+// 47: Is MAC48 Address?
+function solution(inputString) {
+    const mac48Regex = /^([0-9A-Fa-f]{2}-){5}[0-9A-Fa-f]{2}$/;
+    return mac48Regex.test(inputString);
+}
+
+// 48: 
 
 
 
+//// __________________________________The Core_______________________________ ////
+
+// 1: Add Two Digits
 
 
+// 2: Largest Number
+
+
+// 3: Candies
+
+
+// 4: Seats in Theater
+
+
+// 5: Max Multiple
+
+
+// 6: Circle of Numbers
+
+
+// 7: Late Ride
+
+
+// 8: Phone Call
+
+
+// 9: Reach Next Level
+
+
+// 10: Knapsack Light
+
+
+// 11: Extra Number
+
+
+// 12: Is Infinite Process?
+
+
+// 13: Arithmetic Expression
+
+
+// 14: Tennis Set
+
+
+// 15: Will You?
+
+
+// 16: Metro Card
+
+
+// 17: Kill K-th Bit
+
+
+// 18: Array Packing
+
+
+// 19: Range Bit Count
+
+
+// 20: Mirror Bits
+
+
+// 21: Second-Rightmost Zero Bit
+
+
+// 22: Swap Adjacent Bits
+
+
+// 23: Different Rightmost Bit
+
+
+// 24: Equal Pair of Bits
+
+
+// 25: Least Factorial
+
+
+// 26: Count Sum of Two Representations 2
+
+
+// 27: Magical Well
+
+
+// 28: Lineup
+
+
+// 29: Addition Without Carrying
+
+
+// 30: Apple Boxes
+
+
+// 31: Increase Number Roundness
+
+
+// 32: Rounders
+
+
+// 33: Candles
+
+
+// 34: Count Black Cells
+
+
+// 35: Create Array
+
+
+// 36: Array Replace
+
+
+// 37: First Reverse Try
+
+
+// 38: Concatenate Arrays
+
+
+// 39: Remove Array Part
+
+
+// 40: Is Smooth?
+
+
+// 41: Replace Middle
+
+
+// 42: Make Array Consecutive 2
+
+
+// 43: Is Power?
+
+
+// 44: Is Sum of Consecutive 2
+
+
+// 45: Square Digits Sequence
+
+
+// 46: Pages Numbering With Ink
+
+
+// 47: Comfortable Numbers
+
+
+// 48: Weak Numbers
+
+
+// 49: Rectangle Rotation
+
+
+// 50: Crossword Formation
+
+
+// 51: Enclose In Brackets
+
+
+// 52: Proper Noun Correction
+
+
+// 53: Is Tandem Repeat?
+
+
+// 54: Is Case-Insensitive Palindrome?
+
+
+// 55: Find Email Domain
+
+
+// 56: HTML End Tag By Start Tag
+
+
+// 57: Is MAC48 Address?
+
+
+// 58: Is Unstable Pair?
+
+
+// 59: Strings Construction
+
+
+// 60: Is Substitution Cipher?
+
+
+// 61: Create Anagram
+
+
+// 62: Construct Square
+
+
+// 63: Numbers Grouping
+
+
+// 64: Different Squares
+
+
+// 65: Most Frequent Digit Sum
+
+
+// 66: Number of Clans
+
+
+// 67: House Numbers Sum
+
+
+// 68: All Longest Strings
+
+
+// 69: House of Cats
+
+
+// 70: Alphabet Subsequence
+
+
+// 71: Minimal Number of Coins
+
+
+// 72: Add Border
+
+
+// 73: Switch Lights
+
+
+// 74: Timed Reading
+
+
+// 75: Elections Winners
+
+
+// 76: Integer to String of Fixed Width
+
+
+// 77: Are Similar?
+
+
+// 78: Ada Number
+
+
+// 79: Three Split
+
+
+// 80: Character Parity
+
+
+// 81: Reflect String
+
+
+// 82: New Numeral System
+
+
+// 83: Cipher 26
+
+
+// 84: Stolen Lunch
+
+
+// 85: Higher Version
+
+
+// 86: Decipher
+
+
+// 87: Alphanumeric Less
+
+
+// 88: Array Conversion
+
+
+// 89: Array Previous Less
+
+
+// 90: Pair of Shoes
+
+
+// 91: Combs
+
+
+// 92: Strings Crossover
+
+
+// 93: Cyclic String
+
+
+// 94: Beautiful Text
+
+
+// 95: Runners Meetings
+
+
+// 96: Christmas Tree
+
+
+// 97: File Naming
+
+
+// 98: Extract Matrix Column
+
+
+// 99: Are Isomorphic?
+
+
+// 100: Reverse On Diagonals
+
+
+// 101: Swap Diagonals
+
+
+// 102: Crossing Sum
+
+
+// 103: Draw Rectangle
+
+
+// 104: Volleyball Positions
+
+
+// 105: Star Rotation
+
+
+// 106: Sudoku
+
+
+// 107: Minesweeper
+
+
+// 108: Box Blur
+
+
+// 109: Contours Shifting
+
+
+// 110: Polygon Perimeter
+
+
+// 111: Gravitation
+
+
+// 112: Is Information Consistent?
+
+
+// 113: Correct Nonogram
+
+
+// 114: 
 
