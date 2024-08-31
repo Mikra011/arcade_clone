@@ -1464,5 +1464,156 @@ function solution(grid) {
 // 113: Correct Nonogram
 
 
-// 114: 
+// 114: Shuffled Array
+function solution(shuffled) {
+    const sumValue = shuffled.reduce((a,b) => a+b)/2;
+    const index = shuffled.indexOf(sumValue);
+    const newArray = shuffled.slice()
+    newArray.splice(index,1)
+    return newArray.sort((a,b) => a - b)
+}
+
+// 115: Sort by Height
+
+
+// 116: Sort By Length
+
+
+// 117: Boxes Packing
+
+
+// 118: Maximum Sum
+
+
+// 119: Rows Rearranging
+
+
+// 120: Digit Difference Sort
+
+
+// 121: Unique Digit Products
+
+
+// 122: Bishop and Pawn
+
+
+// 123: Chess Knight Moves
+
+
+// 124: Bishop Diagonal
+
+
+// 125: Whose Turn?
+
+
+// 126: Chess Bishop Dream
+
+
+// 127: Chess Triangle
+
+
+// 128: Amazon Checkmate
+
+
+// 129: Pawn Race
+
+
+// 130: Valid Time
+
+
+// 131: Video Part
+
+
+// 132: Day of Week
+
+
+// 133: Curious Clock
+
+
+// 134: New Year Celebrations
+
+
+// 135: Regular Months
+
+
+// 136: Missed Classes
+
+
+// 137: Holiday
+
+
+// 138: Is Sentence Correct?
+
+
+// 139: Replace All Digits RegExp
+
+
+// 140: Swap Adjacent Words
+
+
+// 141: N-th Number
+
+
+// 142: Is Subsequence?
+
+
+// 143: Eye Rhyme
+
+
+// 144: Program Translation
+
+
+// 145: Repetition Encryption
+
+
+// 146: Bugs and Bugfixes
+
+
+// 147: LRC to SubRip
+
+
+// 148: HTML Table
+
+
+// 149: Chess Notation
+
+
+// 150: Cells Joining
+
+
+// 151: First Operation Character
+
+
+// 152: Count Elements
+
+
+// 153: Tree Bottom
+
+
+// 154: Befunge-93
+
+
+// 155: Pipes Game
+
+
+// 156: Game 2048
+
+
+// 157: Snake Game
+
+
+// 158: Tetris Game
+
+
+// 159: Pyraminx Puzzle
+
+
+// 161: Lines Game
+
+
+// 161: Fractal
+
+
+// 162: Time ASCII Representation
+
 

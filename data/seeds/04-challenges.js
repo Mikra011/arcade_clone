@@ -7250,6 +7250,2592 @@ const challenges = [
             </ul>
         `
     },
+    {
+        "topic_id": 26,
+        "order_index": 114,
+        "challenge_name": 'Shuffled Array',
+        "description": `
+            <p>A noob programmer was given two simple tasks: sum and sort the elements of a given array <code>a = [a1, a2, ..., an]</code>. He completed the summing task easily but decided to store the sum in a random position of the original array, which turned out to be a bad idea. Now, he needs to sort the original array <code>a</code>, but since he modified it, he's facing difficulties.</p>
+            
+            <p>Given the array <code>shuffled</code>, which consists of the elements <code>a1, a2, ..., an</code> and the sum <code>a1 + a2 + ... + an</code> in random order, return the sorted array of the original elements <code>a1, a2, ..., an</code>.</p>
+            
+            <h3>Example</h3>
+            <p>For <code>shuffled = [1, 12, 3, 6, 2]</code>, the output should be:</p>
+            <pre><code>solution(shuffled) = [1, 2, 3, 6];</code></pre>
+            <p>Here, <code>1 + 3 + 6 + 2 = 12</code>, which means that <code>1, 3, 6</code>, and <code>2</code> are the original elements of the array.</p>
+            
+            <p>For <code>shuffled = [1, -3, -5, 7, 2]</code>, the output should be:</p>
+            <pre><code>solution(shuffled) = [-5, -3, 2, 7];</code></pre>
+            
+            <h3>Input/Output</h3>
+            <ul>
+                <li><p><span>[execution time limit]</span> 4 seconds (js)</p></li>
+                <li><p><span>[memory limit]</span> 1 GB</p></li>
+                <li>
+                    <p><span>[input]</span> array.integer <code>shuffled</code></p>
+                    <p>An array of at least two integers. It is guaranteed that there is an index <code>i</code> such that <code>shuffled[i] = shuffled[0] + ... + shuffled[i - 1] + shuffled[i + 1] + ... + shuffled[n]</code>.</p>
+                    <p>Guaranteed constraints:</p>
+                    <ul>
+                        <li><code>2 ≤ shuffled.length ≤ 10<sup>4</sup></code></li>
+                        <li><code>-5 × 10<sup>4</sup> ≤ shuffled[i] ≤ 5 × 10<sup>4</sup></code></li>
+                    </ul>
+                </li>
+                <li>
+                    <p><span>[output]</span> array.integer</p>
+                    <p>A sorted array of <code>shuffled.length - 1</code> elements.</p>
+                </li>
+            </ul>
+        `
+    },
+    {
+        "topic_id": 26,
+        "order_index": 115,
+        "challenge_name": 'Sort by Height',
+        "description": `
+            <p>Some people are standing in a row in a park. There are trees between them which cannot be moved. Your task is to rearrange the people by their heights in a non-descending order without moving the trees. People can be very tall!</p>
+            
+            <h3>Example</h3>
+            <p>For <code>a = [-1, 150, 190, 170, -1, -1, 160, 180]</code>, the output should be:</p>
+            <code>solution(a) = [-1, 150, 160, 170, -1, -1, 180, 190];</code>
+            
+            <h3>Input/Output</h3>
+            <ul>
+                <li><p><span>[execution time limit]</span> 4 seconds (js)</p></li>
+                <li><p><span>[memory limit]</span> 1 GB</p></li>
+                <li>
+                    <p><span>[input]</span> array.integer <code>a</code></p>
+                    <p>If <code>a[i] = -1</code>, then the <code>i</code>th position is occupied by a tree. Otherwise, <code>a[i]</code> is the height of a person standing in the <code>i</code>th position.</p>
+                    <p>Guaranteed constraints:</p>
+                    <ul>
+                        <li><code>1 ≤ a.length ≤ 1000</code></li>
+                        <li><code>-1 ≤ a[i] ≤ 1000</code></li>
+                    </ul>
+                </li>
+                <li>
+                    <p><span>[output]</span> array.integer</p>
+                    <p>Sorted array <code>a</code> with all the trees untouched.</p>
+                </li>
+            </ul>
+        `
+    },
+    {
+        "topic_id": 26,
+        "order_index": 116,
+        "challenge_name": 'Sort By Length',
+        "description": `
+            <p>Given an array of strings, sort them in the order of increasing lengths. If two strings have the same length, their relative order must be the same as in the initial array.</p>
+            
+            <h3>Example</h3>
+            <p>For</p>
+
+            code>inputArray = ["abc", "", "aaa", "a", "zz"]</code>
+            <p>the output should be:</p>
+
+            <code>solution(inputArray) = ["", "a", "zz", "abc", "aaa"];</code>
+            
+            <h3>Input/Output</h3>
+            <ul>
+                <li><p><span>[execution time limit]</span> 4 seconds (js)</p></li>
+                <li><p><span>[memory limit]</span> 1 GB</p></li>
+                <li>
+                    <p><span>[input]</span> array.string <code>inputArray</code></p>
+                    <p>A non-empty array of strings.</p>
+                    <p>Guaranteed constraints:</p>
+                    <ul>
+                        <li><code>3 ≤ inputArray.length ≤ 100</code></li>
+                        <li><code>0 ≤ inputArray[i].length ≤ 100</code></li>
+                    </ul>
+                </li>
+                <li>
+                    <p><span>[output]</span> array.string</p>
+                    <p>The array sorted by increasing lengths of strings.</p>
+                </li>
+            </ul>
+        `
+    },
+    {
+        "topic_id": 26,
+        "order_index": 117,
+        "challenge_name": 'Boxes Packing',
+        "description": `
+            <p>You are given <code>n</code> rectangular boxes, where the <code>i</code>th box has the dimensions <code>length<sub>i</sub></code>, <code>width<sub>i</sub></code>, and <code>height<sub>i</sub></code>. Your task is to check if it is possible to pack all boxes into one such that inside each box there is no more than one another box (which, in turn, can contain at most one another box, and so on). More formally, you need to determine whether there exists a sequence of <code>n</code> different numbers <code>p<sub>i</sub></code> (<code>1 ≤ p<sub>i</sub> ≤ n</code>) such that for each <code>1 ≤ i < n</code>, the box number <code>p<sub>i</sub></code> can be put into the box number <code>p<sub>i+1</sub></code>.</p>
+            
+            <p>A box can be put into another box if all dimensions of the first one are less than the respective dimensions of the second one. You can rotate each box as needed, meaning you can swap its length, width, and height if necessary.</p>
+            
+            <h3>Example</h3>
+            <p>For <code>length = [1, 3, 2]</code>, <code>width = [1, 3, 2]</code>, and <code>height = [1, 3, 2]</code>, the output should be:</p>
+            <code>solution(length, width, height) = true;</code>
+            
+            <p>For <code>length = [1, 1]</code>, <code>width = [1, 1]</code>, and <code>height = [1, 1]</code>, the output should be:</p>
+            <code>solution(length, width, height) = false;</code>
+            
+            <p>For <code>length = [3, 1, 2]</code>, <code>width = [3, 1, 2]</code>, and <code>height = [3, 2, 1]</code>, the output should be:</p>
+            <code>solution(length, width, height) = false;</code>
+            
+            <h3>Input/Output</h3>
+            <ul>
+                <li><p><span>[execution time limit]</span> 4 seconds (js)</p></li>
+                <li><p><span>[memory limit]</span> 1 GB</p></li>
+                <li>
+                    <p><span>[input]</span> array.integer <code>length</code></p>
+                    <p>An array of positive integers representing the lengths of the boxes.</p>
+                    <p>Guaranteed constraints:</p>
+                    <ul>
+                        <li><code>1 ≤ length.length ≤ 10<sup>4</sup></code></li>
+                        <li><code>1 ≤ length[i] ≤ 2 × 10<sup>4</sup></code></li>
+                    </ul>
+                </li>
+                <li>
+                    <p><span>[input]</span> array.integer <code>width</code></p>
+                    <p>An array of positive integers representing the widths of the boxes.</p>
+                    <p>Guaranteed constraints:</p>
+                    <ul>
+                        <li><code>width.length = length.length</code></li>
+                        <li><code>1 ≤ width[i] ≤ 2 × 10<sup>4</sup></code></li>
+                    </ul>
+                </li>
+                <li>
+                    <p><span>[input]</span> array.integer <code>height</code></p>
+                    <p>An array of positive integers representing the heights of the boxes.</p>
+                    <p>Guaranteed constraints:</p>
+                    <ul>
+                        <li><code>height.length = length.length</code></li>
+                        <li><code>1 ≤ height[i] ≤ 2 × 10<sup>4</sup></code></li>
+                    </ul>
+                </li>
+                <li>
+                    <p><span>[output]</span> boolean</p>
+                    <p><code>true</code> if it is possible to pack all boxes into one, <code>false</code> otherwise.</p>
+                </li>
+            </ul>
+        `
+    },
+    {
+        "topic_id": 26,
+        "order_index": 118,
+        "challenge_name": 'Maximum Sum',
+        "description": `
+            <p>You are given an array of integers <code>a</code>. A range sum query is defined by a pair of non-negative integers <code>l</code> and <code>r</code> (<code>l ≤ r</code>). The output to a range sum query on the given array <code>a</code> is the sum of all the elements of <code>a</code> that have indices from <code>l</code> to <code>r</code>, inclusive.</p>
+            
+            <p>Your task is to find an algorithm that can rearrange the array <code>a</code> in such a way that the total sum of all the query outputs is maximized, and return this total sum.</p>
+            
+            <h3>Example</h3>
+            <p>For <code>a = [9, 7, 2, 4, 4]</code> and <code>q = [[1, 3], [1, 4], [0, 2]]</code>, the output should be:</p>
+            <code>solution(a, q) = 62;</code>
+            
+            <p>You can achieve this sum if the array <code>a</code> is rearranged to be <code>[2, 9, 7, 4, 4]</code>. In this arrangement:</p>
+            <ul>
+                <li>The first range sum query <code>[1, 3]</code> returns the sum <code>9 + 7 + 4 = 20</code>.</li>
+                <li>The second query <code>[1, 4]</code> returns the sum <code>9 + 7 + 4 + 4 = 24</code>.</li>
+                <li>The third query <code>[0, 2]</code> returns the sum <code>2 + 9 + 7 = 18</code>.</li>
+            </ul>
+            <p>The total sum of all query outputs is <code>20 + 24 + 18 = 62</code>.</p>
+            
+            <h3>Input/Output</h3>
+            <ul>
+                <li><p><span>[execution time limit]</span> 4 seconds (js)</p></li>
+                <li><p><span>[memory limit]</span> 1 GB</p></li>
+                <li>
+                    <p><span>[input]</span> array.integer <code>a</code></p>
+                    <p>An initial array of integers.</p>
+                    <p>Guaranteed constraints:</p>
+                    <ul>
+                        <li><code>2 ≤ a.length ≤ 10</code></li>
+                        <li><code>1 ≤ a[i] ≤ 10</code></li>
+                    </ul>
+                </li>
+                <li>
+                    <p><span>[input]</span> array.array.integer <code>q</code></p>
+                    <p>An array of range sum queries, where each query is an array of two non-negative integers.</p>
+                    <p>Guaranteed constraints:</p>
+                    <ul>
+                        <li><code>1 ≤ q.length ≤ 10</code></li>
+                        <li><code>0 ≤ q[i][0] ≤ q[i][1] < a.length</code></li>
+                    </ul>
+                </li>
+                <li>
+                    <p><span>[output]</span> integer</p>
+                    <p>Return the maximum possible total sum of the given range sum query outputs.</p>
+                </li>
+            </ul>
+        `
+    },
+    {
+        "topic_id": 26,
+        "order_index": 119,
+        "challenge_name": 'Rows Rearranging',
+        "description": `
+            <p>Given a rectangular matrix of integers, check if it is possible to rearrange its rows in such a way that all its columns become strictly increasing sequences (read from top to bottom).</p>
+            
+            <h3>Example</h3>
+            <p>For</p>
+            <pre><code>matrix = 
+            [[2, 7, 1], 
+             [0, 2, 0], 
+             [1, 3, 1]]</code></pre>
+            <p>the output should be:</p>
+            <pre><code>solution(matrix) = false;</code></pre>
+            
+            <p>For</p>
+            <pre><code>matrix = 
+            [[6, 4], 
+             [2, 2], 
+             [4, 3]]</code></pre>
+            <p>the output should be:</p>
+            <pre><code>solution(matrix) = true;</code></pre>
+            
+            <h3>Input/Output</h3>
+            <ul>
+                <li><p><span>[execution time limit]</span> 4 seconds (js)</p></li>
+                <li><p><span>[memory limit]</span> 1 GB</p></li>
+                <li>
+                    <p><span>[input]</span> array.array.integer <code>matrix</code></p>
+                    <p>A 2-dimensional array of integers.</p>
+                    <p>Guaranteed constraints:</p>
+                    <ul>
+                        <li><code>1 ≤ matrix.length ≤ 10</code></li>
+                        <li><code>1 ≤ matrix[0].length ≤ 10</code></li>
+                        <li><code>-300 ≤ matrix[i][j] ≤ 300</code></li>
+                    </ul>
+                </li>
+                <li>
+                    <p><span>[output]</span> boolean</p>
+                    <p><code>true</code> if it is possible to rearrange the rows so that all columns are strictly increasing sequences, <code>false</code> otherwise.</p>
+                </li>
+            </ul>
+        `
+    },
+    {
+        "topic_id": 26,
+        "order_index": 120,
+        "challenge_name": 'Digit Difference Sort',
+        "description": `
+            <p>Given an array of integers, sort its elements by the difference between their largest and smallest digits. In the case of a tie, the element with the larger index in the array should come first.</p>
+            
+            <h3>Example</h3>
+            <p>For <code>a = [152, 23, 7, 887, 243]</code>, the output should be:</p>
+            <code>solution(a) = [7, 887, 23, 243, 152];</code>
+            
+            <p>Here are the differences of all the numbers:</p>
+            <ul>
+                <li><code>152</code>: difference = <code>5 - 1 = 4</code></li>
+                <li><code>23</code>: difference = <code>3 - 2 = 1</code></li>
+                <li><code>7</code>: difference = <code>7 - 7 = 0</code></li>
+                <li><code>887</code>: difference = <code>8 - 7 = 1</code></li>
+                <li><code>243</code>: difference = <code>4 - 2 = 2</code></li>
+            </ul>
+            <p><code>23</code> and <code>887</code> have the same difference, but <code>887</code> appears after <code>23</code> in <code>a</code>, so in the sorted array, it comes first.</p>
+            
+            <h3>Input/Output</h3>
+            <ul>
+                <li><p><span>[execution time limit]</span> 4 seconds (js)</p></li>
+                <li><p><span>[memory limit]</span> 1 GB</p></li>
+                <li>
+                    <p><span>[input]</span> array.integer <code>a</code></p>
+                    <p>An array of integers.</p>
+                    <p>Guaranteed constraints:</p>
+                    <ul>
+                        <li><code>0 ≤ a.length ≤ 10<sup>4</sup></code></li>
+                        <li><code>1 ≤ a[i] ≤ 10<sup>5</sup></code></li>
+                    </ul>
+                </li>
+                <li>
+                    <p><span>[output]</span> array.integer</p>
+                    <p>Array <code>a</code> sorted as described above.</p>
+                </li>
+            </ul>
+        `
+    },
+    {
+        "topic_id": 26,
+        "order_index": 121,
+        "challenge_name": 'Unique Digit Products',
+        "description": `
+            <p>Let's call <code>product(x)</code> the product of the digits of <code>x</code>. Given an array of integers <code>a</code>, calculate <code>product(x)</code> for each <code>x</code> in <code>a</code>, and return the number of distinct results you get.</p>
+            
+            <h3>Example</h3>
+            <p>For <code>a = [2, 8, 121, 42, 222, 23]</code>, the output should be:</p>
+            <code>solution(a) = 3;</code>
+            
+            <p>Here are the products of the array's elements:</p>
+            <ul>
+                <li><code>2</code>: <code>product(2) = 2</code></li>
+                <li><code>8</code>: <code>product(8) = 8</code></li>
+                <li><code>121</code>: <code>product(121) = 1 * 2 * 1 = 2</code></li>
+                <li><code>42</code>: <code>product(42) = 4 * 2 = 8</code></li>
+                <li><code>222</code>: <code>product(222) = 2 * 2 * 2 = 8</code></li>
+                <li><code>23</code>: <code>product(23) = 2 * 3 = 6</code></li>
+            </ul>
+            <p>As you can see, there are only 3 different products: <code>2</code>, <code>6</code>, and <code>8</code>.</p>
+            
+            <h3>Input/Output</h3>
+            <ul>
+                <li><p><span>[execution time limit]</span> 4 seconds (js)</p></li>
+                <li><p><span>[memory limit]</span> 1 GB</p></li>
+                <li>
+                    <p><span>[input]</span> array.integer <code>a</code></p>
+                    <p>An array of integers.</p>
+                    <p>Guaranteed constraints:</p>
+                    <ul>
+                        <li><code>1 ≤ a.length ≤ 10<sup>5</sup></code></li>
+                        <li><code>1 ≤ a[i] ≤ 10<sup>9</sup></code></li>
+                    </ul>
+                </li>
+                <li>
+                    <p><span>[output]</span> integer</p>
+                    <p>The number of different digit products in <code>a</code>.</p>
+                </li>
+            </ul>
+        `
+    },
+    {
+        "topic_id": 27,
+        "order_index": 122,
+        "challenge_name": 'Bishop and Pawn',
+        "description": `
+            <p>Given the positions of a white bishop and a black pawn on the standard chess board, determine whether the bishop can capture the pawn in one move.</p>
+            
+            <p>The bishop has no restrictions in distance for each move, but is limited to diagonal movement. Check out the example below to see how it can move:</p>
+            
+            <h3>Example</h3>
+            <p>For <code>bishop = "a1"</code> and <code>pawn = "c3"</code>, the output should be:</p>
+            <pre><code>solution(bishop, pawn) = true;</code></pre>
+            
+            <p>For <code>bishop = "h1"</code> and <code>pawn = "h3"</code>, the output should be:</p>
+            <pre><code>solution(bishop, pawn) = false;</code></pre>
+            
+            <h3>Input/Output</h3>
+            <ul>
+                <li><p><span>[execution time limit]</span> 4 seconds (js)</p></li>
+                <li><p><span>[memory limit]</span> 1 GB</p></li>
+                <li>
+                    <p><span>[input]</span> string <code>bishop</code></p>
+                    <p>Coordinates of the white bishop in the chess notation.</p>
+                    <p>Guaranteed constraints:</p>
+                    <ul>
+                        <li><code>bishop.length = 2</code></li>
+                        <li><code>'a' ≤ bishop[0] ≤ 'h'</code></li>
+                        <li><code>1 ≤ bishop[1] ≤ 8</code></li>
+                    </ul>
+                </li>
+                <li>
+                    <p><span>[input]</span> string <code>pawn</code></p>
+                    <p>Coordinates of the black pawn in the same notation.</p>
+                    <p>Guaranteed constraints:</p>
+                    <ul>
+                        <li><code>pawn.length = 2</code></li>
+                        <li><code>'a' ≤ pawn[0] ≤ 'h'</code></li>
+                        <li><code>1 ≤ pawn[1] ≤ 8</code></li>
+                    </ul>
+                </li>
+                <li>
+                    <p><span>[output]</span> boolean</p>
+                    <p><code>true</code> if the bishop can capture the pawn, <code>false</code> otherwise.</p>
+                </li>
+            </ul>
+        `
+    },
+    {
+        "topic_id": 27,
+        "order_index": 123,
+        "challenge_name": 'Chess Knight Moves',
+        "description": `
+            <p>Given a position of a knight on the standard chessboard, find the number of different moves the knight can perform.</p>
+            
+            <p>The knight can move to a square that is two squares horizontally and one square vertically, or two squares vertically and one square horizontally away from it. The complete move therefore looks like the letter <code>L</code>. Check out the image below to see all valid moves for a knight piece that is placed on one of the central squares.</p>
+            
+            <h3>Example</h3>
+            <p>For <code>cell = "a1"</code>, the output should be:</p>
+            <pre><code>solution(cell) = 2;</code></pre>
+            
+            <p>For <code>cell = "c2"</code>, the output should be:</p>
+            <pre><code>solution(cell) = 6;</code></pre>
+            
+            <h3>Input/Output</h3>
+            <ul>
+                <li><p><span>[execution time limit]</span> 4 seconds (js)</p></li>
+                <li><p><span>[memory limit]</span> 1 GB</p></li>
+                <li>
+                    <p><span>[input]</span> string <code>cell</code></p>
+                    <p>String consisting of 2 letters - coordinates of the knight on an 8 × 8 chessboard in chess notation.</p>
+                    <p>Guaranteed constraints:</p>
+                    <ul>
+                        <li><code>cell.length = 2</code></li>
+                        <li><code>'a' ≤ cell[0] ≤ 'h'</code></li>
+                        <li><code>1 ≤ cell[1] ≤ 8</code></li>
+                    </ul>
+                </li>
+                <li>
+                    <p><span>[output]</span> integer</p>
+                    <p>The number of different moves the knight can perform from the given position.</p>
+                </li>
+            </ul>
+        `
+    },
+    {
+        "topic_id": 27,
+        "order_index": 124,
+        "challenge_name": 'Bishop Diagonal',
+        "description": `
+            <p>In the Land Of Chess, bishops don't really like each other. In fact, when two bishops happen to stand on the same diagonal, they immediately rush towards the opposite ends of that same diagonal.</p>
+            
+            <p>Given the initial positions (in chess notation) of two bishops, <code>bishop1</code> and <code>bishop2</code>, calculate their future positions. Keep in mind that bishops won't move unless they see each other along the same diagonal.</p>
+            
+            <h3>Example</h3>
+            <p>For <code>bishop1 = "d7"</code> and <code>bishop2 = "f5"</code>, the output should be:</p>
+            <pre><code>solution(bishop1, bishop2) = ["c8", "h3"];</code></pre>
+            
+            <p>For <code>bishop1 = "d8"</code> and <code>bishop2 = "b5"</code>, the output should be:</p>
+            <pre><code>solution(bishop1, bishop2) = ["b5", "d8"];</code></pre>
+            
+            <p>The bishops don't belong to the same diagonal, so they don't move.</p>
+            
+            <h3>Input/Output</h3>
+            <ul>
+                <li><p><span>[execution time limit]</span> 4 seconds (js)</p></li>
+                <li><p><span>[memory limit]</span> 1 GB</p></li>
+                <li>
+                    <p><span>[input]</span> string <code>bishop1</code></p>
+                    <p>Coordinates of the first bishop in chess notation.</p>
+                    <p>Guaranteed constraints:</p>
+                    <ul>
+                        <li><code>bishop1.length = 2</code></li>
+                        <li><code>'a' ≤ bishop1[0] ≤ 'h'</code></li>
+                        <li><code>1 ≤ bishop1[1] ≤ 8</code></li>
+                    </ul>
+                </li>
+                <li>
+                    <p><span>[input]</span> string <code>bishop2</code></p>
+                    <p>Coordinates of the second bishop in the same notation.</p>
+                    <p>Guaranteed constraints:</p>
+                    <ul>
+                        <li><code>bishop2.length = 2</code></li>
+                        <li><code>'a' ≤ bishop2[0] ≤ 'h'</code></li>
+                        <li><code>1 ≤ bishop2[1] ≤ 8</code></li>
+                    </ul>
+                </li>
+                <li>
+                    <p><span>[output]</span> array.string</p>
+                    <p>Coordinates of the bishops in lexicographical order after they check the diagonals they stand on.</p>
+                </li>
+            </ul>
+        `
+    },
+    {
+        "topic_id": 27,
+        "order_index": 125,
+        "challenge_name": 'Whose Turn?',
+        "description": `
+            <p>Imagine a standard chess board with only two white and two black knights placed in their standard starting positions: the white knights on <code>b1</code> and <code>g1</code>; the black knights on <code>b8</code> and <code>g8</code>.</p>
+            
+            <p>There are two players: one plays for white, the other for black. During each move, the player picks one of his knights and moves it to an unoccupied square according to standard chess rules. Thus, a knight on d5 can move to any of the following squares: b6, c7, e7, f6, f4, e3, c3, and b4, as long as it is not occupied by either a friendly or an enemy knight.</p>
+            
+            <p>The players take turns in making moves, starting with the white player. Given the configuration <code>p</code> of the knights after an unspecified number of moves, determine whose turn it is.</p>
+            
+            <h3>Example</h3>
+            <p>For <code>p = "b1;g1;b8;g8"</code>, the output should be:</p>
+            <pre><code>solution(p) = true;</code></pre>
+            
+            <p>The configuration corresponds to the initial state of the game. Thus, it's white's turn.</p>
+            
+            <h3>Input/Output</h3>
+            <ul>
+                <li><p><span>[execution time limit]</span> 4 seconds (js)</p></li>
+                <li><p><span>[memory limit]</span> 1 GB</p></li>
+                <li>
+                    <p><span>[input]</span> string <code>p</code></p>
+                    <p>The positions of the four knights, starting with white knights, separated by a semicolon, in the chess notation.</p>
+                    <p>Guaranteed constraints:</p>
+                    <ul>
+                        <li><code>p.length = 11</code></li>
+                    </ul>
+                </li>
+                <li>
+                    <p><span>[output]</span> boolean</p>
+                    <p>true if white is to move, false otherwise.</p>
+                </li>
+            </ul>
+        `
+    },
+    {
+        "topic_id": 27,
+        "order_index": 126,
+        "challenge_name": 'Chess Bishop Dream',
+        "description": `
+            <p>In ChessLand there is a small but proud chess bishop with a recurring dream. In the dream the bishop finds itself on an <code>n × m</code> chessboard with mirrors along each edge, and it is not a bishop but a ray of light. This ray of light moves only along diagonals (the bishop can't imagine any other types of moves even in its dreams), it never stops, and once it reaches an edge or a corner of the chessboard it reflects from it and moves on.</p>
+            
+            <p>Given the initial position and the direction of the ray, find its position after <code>k</code> steps where a step means either moving from one cell to the neighboring one or reflecting from a corner of the board.</p>
+            
+            <h3>Example</h3>
+            <p>For <code>boardSize = [3, 7]</code>, <code>initPosition = [1, 2]</code>, <code>initDirection = [-1, 1]</code>, and <code>k = 13</code>, the output should be:</p>
+            <pre><code>solution(boardSize, initPosition, initDirection, k) = [0, 1];</code></pre>
+            
+            <p>Here is the bishop's path:</p>
+            <pre><code>
+    [1, 2] -> [0, 3] -(reflection from the top edge)-> [0, 4] -> 
+    [1, 5] -> [2, 6] -(reflection from the bottom right corner)-> [2, 6] ->
+    [1, 5] -> [0, 4] -(reflection from the top edge)-> [0, 3] ->
+    [1, 2] -> [2, 1] -(reflection from the bottom edge)-> [2, 0] -(reflection from the left edge)->
+    [1, 0] -> [0, 1]</code></pre>
+            
+            <h3>Input/Output</h3>
+            <ul>
+                <li><p><span>[execution time limit]</span> 4 seconds (js)</p></li>
+                <li><p><span>[memory limit]</span> 1 GB</p></li>
+                <li>
+                    <p><span>[input]</span> array.integer <code>boardSize</code></p>
+                    <p>An array of two integers, the number of rows and columns, respectively. Rows are numbered by integers from 0 to <code>boardSize[0] - 1</code>, columns are numbered by integers from 0 to <code>boardSize[1] - 1</code> (both inclusive).</p>
+                    <p>Guaranteed constraints:</p>
+                    <ul>
+                        <li><code>1 ≤ boardSize[i] ≤ 20</code></li>
+                    </ul>
+                </li>
+                <li>
+                    <p><span>[input]</span> array.integer <code>initPosition</code></p>
+                    <p>An array of two integers, indices of the row and the column where the bishop initially stands, respectively.</p>
+                    <p>Guaranteed constraints:</p>
+                    <ul>
+                        <li><code>0 ≤ initPosition[i] < boardSize[i]</code></li>
+                    </ul>
+                </li>
+                <li>
+                    <p><span>[input]</span> array.integer <code>initDirection</code></p>
+                    <p>An array of two integers representing the initial direction of the bishop. If it stands in <code>(a, b)</code>, the next cell he'll move to is <code>(a + initDirection[0], b + initDirection[1])</code> or whichever it'll reflect to in case it runs into a mirror immediately.</p>
+                    <p>Guaranteed constraints:</p>
+                    <ul>
+                        <li><code>initDirection[i] ∈ {-1, 1}</code></li>
+                    </ul>
+                </li>
+                <li>
+                    <p><span>[input]</span> integer <code>k</code></p>
+                    <p>The number of steps to move.</p>
+                    <p>Guaranteed constraints:</p>
+                    <ul>
+                        <li><code>1 ≤ k ≤ 10^9</code></li>
+                    </ul>
+                </li>
+                <li>
+                    <p><span>[output]</span> array.integer</p>
+                    <p>The position of the bishop after <code>k</code> steps.</p>
+                </li>
+            </ul>
+        `
+    },
+    {
+        "topic_id": 27,
+        "order_index": 127,
+        "challenge_name": 'Chess Triangle',
+        "description": `
+            <p>Consider a bishop, a knight, and a rook on an <code>n × m</code> chessboard. They are said to form a triangle if each piece attacks exactly one other piece and is attacked by exactly one piece. Calculate the number of ways to choose positions of the pieces to form a triangle.</p>
+            
+            <p>Note that:</p>
+            <ul>
+                <li>The bishop attacks pieces sharing the common diagonal with it;</li>
+                <li>The rook attacks in horizontal and vertical directions;</li>
+                <li>The knight attacks squares which are two squares horizontally and one square vertically, or two squares vertically and one square horizontally away from its position.</li>
+            </ul>
+            
+            <h3>Example</h3>
+            <p>For <code>n = 2</code> and <code>m = 3</code>, the output should be:</p>
+            <pre><code>solution(n, m) = 8;</code></pre>
+            
+            <h3>Input/Output</h3>
+            <ul>
+                <li><p><span>[execution time limit]</span> 4 seconds (js)</p></li>
+                <li><p><span>[memory limit]</span> 1 GB</p></li>
+                <li>
+                    <p><span>[input]</span> integer <code>n</code></p>
+                    <p>Number of rows in the chessboard.</p>
+                    <p>Guaranteed constraints:</p>
+                    <ul>
+                        <li><code>1 ≤ n ≤ 40</code></li>
+                    </ul>
+                </li>
+                <li>
+                    <p><span>[input]</span> integer <code>m</code></p>
+                    <p>Number of columns in the chessboard.</p>
+                    <p>Guaranteed constraints:</p>
+                    <ul>
+                        <li><code>1 ≤ m ≤ 40</code></li>
+                        <li><code>3 ≤ n · m</code></li>
+                    </ul>
+                </li>
+                <li>
+                    <p><span>[output]</span> integer</p>
+                    <p>The number of ways to position the pieces to form a triangle.</p>
+                </li>
+            </ul>
+        `
+    },
+    {
+        "topic_id": 27,
+        "order_index": 128,
+        "challenge_name": 'Amazon Checkmate',
+        "description": `
+            <p>An amazon (also known as a queen + knight compound) is an imaginary chess piece that can move like a queen or a knight (or, equivalently, like a rook, bishop, or knight). The diagram below shows all squares which the amazon can attack from e4 (circles represent knight-like moves while crosses correspond to queen-like moves).</p>
+            
+            <p>Recently, you've come across a diagram with only three pieces left on the board: a white amazon, the white king, and the black king. It's black's move. You don't have time to determine whether the game is over or not, but you'd like to figure it out in your head. Unfortunately, the diagram is smudged and you can't see the position of the black king, so you'll need to consider all possible positions.</p>
+            
+            <p>Given the positions of the white pieces on a standard chessboard (using algebraic notation), your task is to determine the number of possible black king's positions such that:</p>
+            <ul>
+                <li><strong>it's checkmate</strong> (i.e., black's king is under the amazon's attack and it cannot make a valid move);</li>
+                <li><strong>it's check</strong> (i.e., black's king is under the amazon's attack but it can reach a safe square in one move);</li>
+                <li><strong>it's stalemate</strong> (i.e., black's king is on a safe square but it cannot make a valid move);</li>
+                <li><strong>black's king is on a safe square and it can make a valid move.</strong></li>
+            </ul>
+            <p>Note that two kings cannot be placed on two adjacent squares (including two diagonally adjacent ones).</p>
+            
+            <h3>Example</h3>
+            <p>For <code>king = "d3"</code> and <code>amazon = "e4"</code>, the output should be:</p>
+            <pre><code>solution(king, amazon) = [5, 21, 0, 29];</code></pre>
+            
+            <p>Red crosses correspond to the checkmate positions, orange pluses refer to check positions, and green circles denote safe squares.</p>
+            
+            <p>For <code>king = "a1"</code> and <code>amazon = "g5"</code>, the output should be:</p>
+            <pre><code>solution(king, amazon) = [0, 29, 1, 29];</code></pre>
+            
+            <h3>Input/Output</h3>
+            <ul>
+                <li><p><span>[execution time limit]</span> 4 seconds (js)</p></li>
+                <li><p><span>[memory limit]</span> 1 GB</p></li>
+                <li>
+                    <p><span>[input]</span> string <code>king</code></p>
+                    <p>The position of the white king, in chess notation.</p>
+                    <p>Guaranteed constraints:</p>
+                    <ul>
+                        <li><code>king.length = 2</code></li>
+                        <li><code>'a' ≤ king[0] ≤ 'h'</code></li>
+                        <li><code>1 ≤ king[1] ≤ 8</code></li>
+                    </ul>
+                </li>
+                <li>
+                    <p><span>[input]</span> string <code>amazon</code></p>
+                    <p>The position of the white amazon, in the same notation.</p>
+                    <p>Guaranteed constraints:</p>
+                    <ul>
+                        <li><code>amazon.length = 2</code></li>
+                        <li><code>'a' ≤ amazon[0] ≤ 'h'</code></li>
+                        <li><code>1 ≤ amazon[1] ≤ 8</code></li>
+                        <li><code>amazon ≠ king</code></li>
+                    </ul>
+                </li>
+                <li>
+                    <p><span>[output]</span> array.integer</p>
+                    <p>An array of four integers, each equal to the number of black's king positions corresponding to a specific situation. More specifically, the array should be of the form <code>[checkmate positions, check positions, stalemate positions, safe positions]</code>.</p>
+                </li>
+            </ul>
+        `
+    },
+    {
+        "topic_id": 27,
+        "order_index": 129,
+        "challenge_name": 'Pawn Race',
+        "description": `
+            <p>Pawn race is a game for two people, played on an ordinary 8 × 8 chessboard. The first player has a white pawn, the second one - a black pawn. Initially, the pawns are placed somewhere on the board so that the 1st and the 8th rows are not occupied. Players take turns to make a move.</p>
+            
+            <p>White pawn moves upwards, black one moves downwards. The following moves are allowed:</p>
+            <ul>
+                <li>one-cell move on the same vertical in the allowed direction;</li>
+                <li>two-cell move on the same vertical in the allowed direction, if the pawn is standing on the 2nd (for the white pawn) or the 7th (for the black pawn) row. Note that even with the two-cell move a pawn can't jump over the opponent's pawn;</li>
+                <li>capture move one cell forward in the allowed direction and one cell to the left or to the right.</li>
+            </ul>
+            
+            <p>The purpose of the game is to reach the 1st row (for the black pawn) or the 8th row (for the white one), or to capture the opponent's pawn.</p>
+            
+            <p>Given the initial positions and whose turn it is, determine who will win or declare it a draw (i.e., it is impossible for any player to win). Assume that the players play optimally.</p>
+            
+            <h3>Example</h3>
+            <p>For <code>white = "e2"</code>, <code>black = "e7"</code>, and <code>toMove = 'w'</code>, the output should be:</p>
+            <pre><code>solution(white, black, toMove) = "draw";</code></pre>
+            
+            <p>For <code>white = "e3"</code>, <code>black = "d7"</code>, and <code>toMove = 'b'</code>, the output should be:</p>
+            <pre><code>solution(white, black, toMove) = "black";</code></pre>
+            
+            <p>For <code>white = "a7"</code>, <code>black = "h2"</code>, and <code>toMove = 'w'</code>, the output should be:</p>
+            <pre><code>solution(white, black, toMove) = "white";</code></pre>
+            
+            <h3>Input/Output</h3>
+            <ul>
+                <li><p><span>[execution time limit]</span> 4 seconds (js)</p></li>
+                <li><p><span>[memory limit]</span> 1 GB</p></li>
+                <li>
+                    <p><span>[input]</span> string <code>white</code></p>
+                    <p>Coordinates of the white pawn in the chess notation.</p>
+                </li>
+                <li>
+                    <p><span>[input]</span> string <code>black</code></p>
+                    <p>Position of the black pawn in the same notation. It is guaranteed that <code>white ≠ black</code>.</p>
+                </li>
+                <li>
+                    <p><span>[input]</span> char <code>toMove</code></p>
+                    <p><code>'w'</code> if it is the first player's turn, <code>'b'</code> otherwise.</p>
+                </li>
+                <li>
+                    <p><span>[output]</span> string</p>
+                    <p><code>"white"</code>, <code>"black"</code> or <code>"draw"</code> depending on the result of the game.</p>
+                </li>
+            </ul>
+        `
+    },
+    {
+        "topic_id": 28,
+        "order_index": 130,
+        "challenge_name": 'Valid Time',
+        "description": `
+            <p>Check if the given string is a correct time representation of the 24-hour clock.</p>
+            
+            <h3>Example</h3>
+            <p>For <code>time = "13:58"</code>, the output should be:</p>
+            <pre><code>solution(time) = true;</code></pre>
+            
+            <p>For <code>time = "25:51"</code>, the output should be:</p>
+            <pre><code>solution(time) = false;</code></pre>
+            
+            <p>For <code>time = "02:76"</code>, the output should be:</p>
+            <pre><code>solution(time) = false;</code></pre>
+            
+            <h3>Input/Output</h3>
+            <ul>
+                <li><p><span>[execution time limit]</span> 4 seconds (js)</p></li>
+                <li><p><span>[memory limit]</span> 1 GB</p></li>
+                <li>
+                    <p><span>[input]</span> string <code>time</code></p>
+                    <p>A string representing time in <code>HH:MM</code> format. It is guaranteed that the first two characters, as well as the last two characters, are digits.</p>
+                </li>
+                <li>
+                    <p><span>[output]</span> boolean</p>
+                    <p><code>true</code> if the given representation is correct, <code>false</code> otherwise.</p>
+                </li>
+            </ul>
+        `
+    },
+    {
+        "topic_id": 28,
+        "order_index": 131,
+        "challenge_name": 'Video Part',
+        "description": `
+            <p>You have been watching a video for some time. Knowing the total video duration find out what portion of the video you have already watched.</p>
+            
+            <h3>Example</h3>
+            <p>For <code>part = "02:20:00"</code> and <code>total = "07:00:00"</code>, the output should be:</p>
+            <pre><code>solution(part, total) = [1, 3];</code></pre>
+            
+            <p>You have watched <code>1 / 3</code> of the whole video.</p>
+            
+            <h3>Input/Output</h3>
+            <ul>
+                <li><p><span>[execution time limit]</span> 4 seconds (js)</p></li>
+                <li><p><span>[memory limit]</span> 1 GB</p></li>
+                <li>
+                    <p><span>[input]</span> string <code>part</code></p>
+                    <p>A string of the following format <code>"hh:mm:ss"</code> representing the time you have been watching the video.</p>
+                </li>
+                <li>
+                    <p><span>[input]</span> string <code>total</code></p>
+                    <p>A string of the following format <code>"hh:mm:ss"</code> representing the total video duration.</p>
+                </li>
+                <li>
+                    <p><span>[output]</span> array.integer</p>
+                    <p>An array of the following format <code>[a, b]</code> (where <code>a / b</code> is a reduced fraction).</p>
+                </li>
+            </ul>
+        `
+    },
+    {
+        "topic_id": 28,
+        "order_index": 132,
+        "challenge_name": 'Day of Week',
+        "description": `
+            <p>Whenever you decide to celebrate your birthday you always do this your favorite café, which is quite popular and as such usually very crowded. This year you got lucky: when you and your friend enter the café you're surprised to see that it's almost empty. The waiter lets slip that there are always very few people on this day of the week.</p>
+            
+            <p>You enjoyed having the café all to yourself, and are now curious about the next time you'll be this lucky. Given the current birthdayDate, determine the number of years until it will fall on the same day of the week.</p>
+            
+            <p>For your convenience, here is the list of months lengths (from January to December, respectively):</p>
+            <pre><code>Months lengths: 31, 28, 31, 30, 31, 30, 31, 31, 30, 31, 30, 31.</code></pre>
+            <p>Please, note that in leap years February has 29 days. If your birthday is on the 29th of February, you celebrate it once in four years. Otherwise, your birthday is celebrated each year.</p>
+            
+            <h3>Example</h3>
+            <p>For <code>birthdayDate = "02-01-2016"</code>, the output should be:</p>
+            <pre><code>solution(birthdayDate) = 5;</code></pre>
+            
+            <p>February 1 in 2016 is a Monday. The next year in which this same date will be Monday too is 2021. <code>2021 - 2016 = 5</code>, which is the answer.</p>
+            
+            <h3>Input/Output</h3>
+            <ul>
+                <li><p><span>[execution time limit]</span> 4 seconds (js)</p></li>
+                <li><p><span>[memory limit]</span> 1 GB</p></li>
+                <li>
+                    <p><span>[input]</span> string <code>birthdayDate</code></p>
+                    <p>A string representing the correct date in the format <code>mm-dd-yyyy</code>, where <code>mm</code> is the number of month (1-based, i.e. 01 for January, 02 for February and so on), <code>dd</code> is the day, and <code>yyyy</code> is the year.</p>
+                </li>
+                <li>
+                    <p><span>[output]</span> integer</p>
+                    <p>An integer describing the number of years until your birthday falls on the same day of the week.</p>
+                </li>
+            </ul>
+        `
+    },
+    {
+        "topic_id": 28,
+        "order_index": 133,
+        "challenge_name": 'Curious Clock',
+        "description": `
+            <p>Benjamin recently bought a digital clock at a magic trick shop. The seller never told Ben what was so special about it, but mentioned that one day Benjamin would be faced with a surprise.</p>
+            
+            <p>Indeed, the clock did surprise Benjamin: without warning, at <code>someTime</code> the clock suddenly started going in the opposite direction! Unfortunately, Benjamin has an important meeting very soon, and knows that at <code>leavingTime</code> he should leave the house so as to not be late. Ben spent all his money on the clock, so has to figure out what time his clock will show when it's time to leave.</p>
+            
+            <p>Given the <code>someTime</code> at which the clock started to go backwards, find out what time will be shown on the curious clock at <code>leavingTime</code>.</p>
+            
+            <p>For your convenience, here is the list of months lengths (from January to December, respectively):</p>
+            <pre><code>Months lengths: 31, 28, 31, 30, 31, 30, 31, 31, 30, 31, 30, 31.</code></pre>
+            <p>Please, note that in leap years February has 29 days.</p>
+            
+            <h3>Example</h3>
+            <p>For <code>someTime = "2016-08-26 22:40"</code> and <code>leavingTime = "2016-08-29 10:00"</code>, the output should be:</p>
+            <pre><code>solution(someTime, leavingTime) = "2016-08-24 11:20";</code></pre>
+            
+            <p>There are 2 days, 11 hours, and 20 minutes till the meeting. Thus, the clock will show <code>2016-08-24 11:20</code> at the leaving time.</p>
+            
+            <h3>Input/Output</h3>
+            <ul>
+                <li><p><span>[execution time limit]</span> 4 seconds (js)</p></li>
+                <li><p><span>[memory limit]</span> 1 GB</p></li>
+                <li>
+                    <p><span>[input]</span> string <code>someTime</code></p>
+                    <p>The time at which the clock started going backwards. It is guaranteed that the time is correct. The time is given in the format <code>YYYY-MM-DD HH:MM</code>.</p>
+                </li>
+                <li>
+                    <p><span>[input]</span> string <code>leavingTime</code></p>
+                    <p>The time at which Ben will have to leave for the meeting in the same format as <code>someTime</code> and with the same constraints.</p>
+                </li>
+                <li>
+                    <p><span>[output]</span> string</p>
+                    <p>The time Ben's curious clock will show when it's time to leave in the same format as <code>leavingTime</code> and <code>someTime</code>. It is guaranteed that it will be not earlier than the midnight of January the 1st, 1970.</p>
+                </li>
+            </ul>
+        `
+    },
+    {
+        "topic_id": 28,
+        "order_index": 134,
+        "challenge_name": 'New Year Celebrations',
+        "description": `
+            <p>You're a pretty busy billionaire, and you often fly your personal Private Jet to remote places. Usually, travel doesn't bother you, but this time you are unlucky: it's New Year's Eve, and since you have to fly halfway around the world, you'll probably have to celebrate New Year's Day in mid-air!</p>
+            
+            <p>Your course lies west of your current location and crosses several time zones. The pilot told you the exact schedule: it is known that you will take off at <code>takeOffTime</code>, and in <code>minutes[i]</code> after takeoff you will cross the <code>i</code>th border between time zones. After crossing each border, you will have to set your wrist watch one hour earlier (every second matters to you, so you can't let your watch show incorrect time). It is guaranteed that you won't cross the IDL (i.e. after crossing each time zone border your current time will be set one hour back).</p>
+            
+            <p>You've been thinking about this situation and realized that it might be a good opportunity to celebrate New Year's Day more than once, i.e. each time your wrist watch shows 00:00. Assuming that you set your watch immediately after the border is crossed, how many times will you be able to celebrate this New Year's Day with a nice bottle of champagne? Note that the answer should include celebrations both in mid-air and on the ground (it doesn't matter if the plane landed in the last time zone before the midnight or not, you'll not let the last opportunity to celebrate New Year slip through your fingers).</p>
+            
+            <h3>Example</h3>
+            <p>For <code>takeOffTime = "23:35"</code> and <code>minutes = [60, 90, 140]</code>, the output should be:</p>
+            <pre><code>solution(takeOffTime, minutes) = 3;</code></pre>
+            
+            <p>Here is the list of events by the time zones:</p>
+            <ul>
+                <li>initial time zone:
+                    <ul>
+                        <li>at 23:35 your flight starts;</li>
+                        <li>at 00:00 you celebrate New Year for the first time;</li>
+                        <li>at 00:35 (60 minutes after the take off) you cross the first border;</li>
+                    </ul>
+                </li>
+                <li>time zone -1:
+                    <ul>
+                        <li>at 23:35 you cross the border (00:35 by your initial time zone);</li>
+                        <li>at 00:00 you celebrate New Year for the second time (01:00 by your initial time zone);</li>
+                        <li>at 00:05 (90 minutes after the take off) you cross the second border;</li>
+                    </ul>
+                </li>
+                <li>time zone -2:
+                    <ul>
+                        <li>at 23:05 you cross the border;</li>
+                        <li>at 23:55 (140 minutes after the take off) you cross another border;</li>
+                    </ul>
+                </li>
+                <li>time zone -3:
+                    <ul>
+                        <li>at 22:55 you cross the border;</li>
+                        <li>at 00:00 you celebrate New Year for the third time.</li>
+                    </ul>
+                </li>
+            </ul>
+            
+            <p>Thus, the output should be 3. That's a lot of champagne!</p>
+            
+            <h3>Input/Output</h3>
+            <ul>
+                <li><p><span>[execution time limit]</span> 4 seconds (js)</p></li>
+                <li><p><span>[memory limit]</span> 1 GB</p></li>
+                <li>
+                    <p><span>[input]</span> string <code>takeOffTime</code></p>
+                    <p>The take off time in the 24-hour format <code>HH:MM</code>. It is guaranteed that the given time is valid. The "00:00" time corresponds to the midnight of 31st of December / 1st of January.</p>
+                </li>
+                <li>
+                    <p><span>[input]</span> array.integer <code>minutes</code></p>
+                    <p>A strictly increasing array of integers. <code>minutes[i]</code> stands for the number of minutes from the take off to crossing the <code>i</code>th time zone border.</p>
+                </li>
+                <li>
+                    <p><span>[output]</span> integer</p>
+                    <p>The number of times you will be able to celebrate New Year's Day.</p>
+                </li>
+            </ul>
+        `
+    },
+    {
+        "topic_id": 28,
+        "order_index": 135,
+        "challenge_name": 'Regular Months',
+        "description": `
+            <p>In an effort to be more innovative, your boss introduced a strange new tradition: the first day of every month you're allowed to work from home. You like this rule when the day falls on a Monday, because any excuse to skip rush hour traffic is great!</p>
+            
+            <p>You and your colleagues have started calling these months regular months. Since you're a fan of working from home, you decide to find out how far away the nearest regular month is, given that the <code>currMonth</code> has just started.</p>
+            
+            <p>For your convenience, here is a list of month lengths (from January to December, respectively):</p>
+            <pre><code>Month lengths: 31, 28, 31, 30, 31, 30, 31, 31, 30, 31, 30, 31.</code></pre>
+            <p>Please, note that in leap years February has 29 days.</p>
+            
+            <h3>Example</h3>
+            <p>For <code>currMonth = "02-2016"</code>, the output should be:</p>
+            <pre><code>solution(currMonth) = "08-2016";</code></pre>
+            
+            <p>February of 2016 year is regular, but it doesn't count since it has started already, so the next regular month is August of 2016 - which is the answer.</p>
+            
+            <h3>Input/Output</h3>
+            <ul>
+                <li><p><span>[execution time limit]</span> 4 seconds (js)</p></li>
+                <li><p><span>[memory limit]</span> 1 GB</p></li>
+                <li>
+                    <p><span>[input]</span> string <code>currMonth</code></p>
+                    <p>A string representing the current month in the format <code>mm-yyyy</code>, where <code>mm</code> is the number of the month (1-based, i.e. 01 for January, 02 for February and so on) and <code>yyyy</code> is the year.</p>
+                </li>
+                <li>
+                    <p><span>[output]</span> string</p>
+                    <p>The earliest regular month after the given one in the same format as <code>currMonth</code>.</p>
+                </li>
+            </ul>
+        `
+    },
+    {
+        "topic_id": 28,
+        "order_index": 136,
+        "challenge_name": 'Missed Classes',
+        "description": `
+            <p>Your Math teacher takes education very seriously, and hates it when a class is missed or canceled for any reason. He even made up the following rule: if a class is missed because of a holiday, the teacher will compensate for it with a makeup class after school.</p>
+            
+            <p>You're given an array, <code>daysOfTheWeek</code>, with the weekdays on which your teacher's classes are scheduled, and <code>holidays</code>, representing the dates of the holidays throughout the academic year (from 1st of September in year to 31st of May in year + 1). How many times will you be forced to stay after school for a makeup class because of holiday conflicts in the current academic year?</p>
+            
+            <p>For your convenience, here is a list of month lengths (from January to December, respectively):</p>
+            <pre><code>Month lengths: 31, 28, 31, 30, 31, 30, 31, 31, 30, 31, 30, 31.</code></pre>
+            <p>Please note that in leap years February has 29 days.</p>
+            
+            <h3>Example</h3>
+            <p>For <code>year = 2015</code>, <code>daysOfTheWeek = [2, 3]</code>, and <code>holidays = ["11-04", "02-22", "02-23", "03-07", "03-08", "05-09"]</code>, the output should be:</p>
+            <pre><code>solution(year, daysOfTheWeek, holidays) = 3;</code></pre>
+            
+            <p>November 4th of 2015 is a Wednesday, February 23rd of 2016 and March 8th of 2016 are Tuesdays, and the other holidays fall on Mondays. Classes are scheduled on Wednesdays and Tuesdays, so there will be only 3 missed classes.</p>
+            
+            <h3>Input/Output</h3>
+            <ul>
+                <li><p><span>[execution time limit]</span> 4 seconds (js)</p></li>
+                <li><p><span>[memory limit]</span> 1 GB</p></li>
+                <li>
+                    <p><span>[input]</span> integer <code>year</code></p>
+                    <p>An integer representing the correct year. The current academic year started on September 1st and will finish on May 31st of year + 1.</p>
+                </li>
+                <li>
+                    <p><span>[input]</span> array.integer <code>daysOfTheWeek</code></p>
+                    <p>A sorted array of integers from 1 to 7 representing the days of the week (1-based, i.e. 1 for Monday, 2 for Tuesday and so on) on which classes are scheduled.</p>
+                </li>
+                <li>
+                    <p><span>[input]</span> array.string <code>holidays</code></p>
+                    <p>An array of strings representing the correct dates of holidays in this academic year in the format <code>mm-dd</code>, where <code>mm</code> stands for the month (1-based, i.e. "01" for January, "02" for February and so on) and <code>dd</code> stands for the day.</p>
+                </li>
+                <li>
+                    <p><span>[output]</span> integer</p>
+                    <p>The number of classes that will be missed.</p>
+                </li>
+            </ul>
+        `
+    },
+    {
+        "topic_id": 28,
+        "order_index": 137,
+        "challenge_name": 'Holiday',
+        "description": `
+            <p>John Doe likes holidays very much, and he was very happy to hear that his country's government decided to introduce yet another one. He heard that the new holiday will be celebrated each year on the <code>x</code>th week of the month, on <code>weekDay</code>.</p>
+            
+            <p>Your task is to return the day of the month on which the holiday will be celebrated in the year <code>yearNumber</code>.</p>
+            
+            <p>For your convenience, here are the lists of months names and lengths and the list of days of the week names:</p>
+            <ul>
+                <li><code>Months:</code> "January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December".</li>
+                <li><code>Months lengths:</code> 31, 28, 31, 30, 31, 30, 31, 31, 30, 31, 30, 31.</li>
+                <li><code>Days of the week:</code> "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday", "Sunday".</li>
+            </ul>
+            <p>Please, note that in leap years February has 29 days.</p>
+            
+            <h3>Example</h3>
+            <p>For <code>x = 3</code>, <code>weekDay = "Wednesday"</code>, <code>month = "November"</code>, and <code>yearNumber = 2016</code>, the output should be:</p>
+            <pre><code>solution(x, weekDay, month, yearNumber) = 16;</code></pre>
+            
+            <p>The new holiday will be celebrated every November on the 3rd Wednesday of the month. In 2016 the 3rd Wednesday falls on the 16th of November.</p>
+            
+            <p>For <code>x = 5</code>, <code>weekDay = "Thursday"</code>, <code>month = "November"</code>, and <code>yearNumber = 2016</code>, the output should be:</p>
+            <pre><code>solution(x, weekDay, month, yearNumber) = -1;</code></pre>
+            
+            <p>There are only 4 Thursdays in November 2016.</p>
+            
+            <h3>Input/Output</h3>
+            <ul>
+                <li><p><span>[execution time limit]</span> 4 seconds (js)</p></li>
+                <li><p><span>[memory limit]</span> 1 GB</p></li>
+                <li>
+                    <p><span>[input]</span> integer <code>x</code></p>
+                    <p>A positive integer.</p>
+                </li>
+                <li>
+                    <p><span>[input]</span> string <code>weekDay</code></p>
+                    <p>A string representing a correct name of some day of the week.</p>
+                </li>
+                <li>
+                    <p><span>[input]</span> string <code>month</code></p>
+                    <p>A string representing a correct name of some month.</p>
+                </li>
+                <li>
+                    <p><span>[input]</span> integer <code>yearNumber</code></p>
+                    <p>An integer representing the year.</p>
+                </li>
+                <li>
+                    <p><span>[output]</span> integer</p>
+                    <p>The day of the month on which the holiday will be celebrated in the year <code>yearNumber</code>. If there is no answer, return -1.</p>
+                </li>
+            </ul>
+        `
+    },
+    {
+        "topic_id": 29,
+        "order_index": 138,
+        "challenge_name": 'Is Sentence Correct?',
+        "description": `
+            <p>A sentence is considered correct if:</p>
+            <ul>
+                <li>it starts with a capital letter;</li>
+                <li>it ends with a full stop, question mark or exclamation point ('.', '?' or '!');</li>
+                <li>full stops, question marks and exclamation points don't appear anywhere else in the sentence.</li>
+            </ul>
+            <p>Given a sentence, return <code>true</code> if it is correct and <code>false</code> otherwise.</p>
+            
+            <h3>Example</h3>
+            <p>For <code>sentence = "This is an example of *correct* sentence."</code>, the output should be:</p>
+            <pre><code>solution(sentence) = true;</code></pre>
+            
+            <p>For <code>sentence = "!this sentence is TOTALLY incorrecT"</code>, the output should be:</p>
+            <pre><code>solution(sentence) = false;</code></pre>
+            
+            <h3>Input/Output</h3>
+            <ul>
+                <li><p><span>[execution time limit]</span> 4 seconds (js)</p></li>
+                <li><p><span>[memory limit]</span> 1 GB</p></li>
+                <li>
+                    <p><span>[input]</span> string <code>sentence</code></p>
+                    <p>A string without newline characters.</p>
+                </li>
+                <li>
+                    <p><span>[output]</span> boolean</p>
+                    <p><code>true</code> if the given sentence is correct, <code>false</code> otherwise.</p>
+                </li>
+            </ul>
+        `
+    },
+    {
+        "topic_id": 29,
+        "order_index": 139,
+        "challenge_name": 'Replace All Digits RegExp',
+        "description": `
+            <p>Implement a function that replaces each digit in the given string with a <code>#</code> character.</p>
+            
+            <h3>Example</h3>
+            <p>For <code>input = "There are 12 points"</code>, the output should be:</p>
+            <pre><code>solution(input) = "There are ## points";</code></pre>
+            
+            <h3>Input/Output</h3>
+            <ul>
+                <li><p><span>[execution time limit]</span> 4 seconds (js)</p></li>
+                <li><p><span>[memory limit]</span> 1 GB</p></li>
+                <li>
+                    <p><span>[input]</span> string <code>input</code></p>
+                    <p>Guaranteed constraints: <code>5 ≤ input.length ≤ 20</code>.</p>
+                </li>
+                <li>
+                    <p><span>[output]</span> string</p>
+                    <p>A string with each digit replaced by a <code>#</code> character.</p>
+                </li>
+            </ul>
+        `
+    },
+    {
+        "topic_id": 29,
+        "order_index": 140,
+        "challenge_name": 'Swap Adjacent Words',
+        "description": `
+            <p>You are given a string consisting of words separated by whitespace characters, where the words consist only of English letters. Your task is to swap pairs of consecutive words and return the result.</p>
+            
+            <h3>Example</h3>
+            <p>For <code>s = "CodeFight On"</code>, the output should be:</p>
+            <pre><code>solution(s) = "On CodeFight";</code></pre>
+            
+            <p>For <code>s = "How are you today guys"</code>, the output should be:</p>
+            <pre><code>solution(s) = "are How today you guys";</code></pre>
+            
+            <h3>Input/Output</h3>
+            <ul>
+                <li><p><span>[execution time limit]</span> 4 seconds (js)</p></li>
+                <li><p><span>[memory limit]</span> 1 GB</p></li>
+                <li>
+                    <p><span>[input]</span> string <code>s</code></p>
+                    <p>A string consisting of whitespace characters (' ') and English letters. There is exactly one whitespace character between two consecutive words, and both the first and the last characters of <code>s</code> are not equal to ' '. Guaranteed constraints: <code>0 ≤ s.length ≤ 100</code>.</p>
+                </li>
+                <li>
+                    <p><span>[output]</span> string</p>
+                    <p>String <code>s</code> with pairs of adjacent words swapped.</p>
+                </li>
+            </ul>
+        `
+    },
+    {
+        "topic_id": 29,
+        "order_index": 141,
+        "challenge_name": 'N-th Number',
+        "description": `
+            <p>You are given a string <code>s</code> of characters that contains at least <code>n</code> numbers (here, a number is defined as a consecutive series of digits, where any character immediately to the left and right of the series are not digits). The numbers may contain leading zeros, but it is guaranteed that each number has at least one non-zero digit in it.</p>
+            
+            <p>Your task is to find the <code>n</code>th number and return it as a string without leading zeros.</p>
+            
+            <h3>Example</h3>
+            <p>For <code>s = "8one 003number 201numbers li-000233le number444"</code> and <code>n = 4</code>, the output should be:</p>
+            <pre><code>solution(s, n) = "233";</code></pre>
+            
+            <h3>Input/Output</h3>
+            <ul>
+                <li><p><span>[execution time limit]</span> 4 seconds (js)</p></li>
+                <li><p><span>[memory limit]</span> 1 GB</p></li>
+                <li>
+                    <p><span>[input]</span> string <code>s</code></p>
+                    <p>A string containing at least <code>n</code> numbers. Guaranteed constraints: <code>20 ≤ s.length ≤ 650</code>.</p>
+                </li>
+                <li>
+                    <p><span>[input]</span> integer <code>n</code></p>
+                    <p>1-based index of the number to find. Guaranteed constraints: <code>1 ≤ n ≤ 15</code>.</p>
+                </li>
+                <li>
+                    <p><span>[output]</span> string</p>
+                    <p>The <code>n</code>th number without leading zeros.</p>
+                </li>
+            </ul>
+        `
+    },
+    {
+        "topic_id": 29,
+        "order_index": 142,
+        "challenge_name": 'Is Subsequence?',
+        "description": `
+            <p>Given a string <code>s</code>, determine if it is a subsequence of a given string <code>t</code>.</p>
+            
+            <h3>Example</h3>
+            <p>For <code>t = "CodeSignal"</code> and <code>s = "CoSi"</code>, the output should be:</p>
+            <pre><code>solution(t, s) = true;</code></pre>
+            
+            <p>For <code>t = "CodeSignal"</code> and <code>s = "cosi"</code>, the output should be:</p>
+            <pre><code>solution(t, s) = false;</code></pre>
+            
+            <h3>Input/Output</h3>
+            <ul>
+                <li><p><span>[execution time limit]</span> 4 seconds (js)</p></li>
+                <li><p><span>[memory limit]</span> 1 GB</p></li>
+                <li>
+                    <p><span>[input]</span> string <code>t</code></p>
+                    <p>A string consisting of English letters, whitespace characters (' '), digits and punctuation marks (".,?!=*+-"). Guaranteed constraints: <code>0 ≤ t.length ≤ 500</code>.</p>
+                </li>
+                <li>
+                    <p><span>[input]</span> string <code>s</code></p>
+                    <p>A string consisting of English letters, whitespace characters (' '), digits and punctuation marks (".,?!=*+-"). Guaranteed constraints: <code>0 ≤ s.length ≤ 50</code>.</p>
+                </li>
+                <li>
+                    <p><span>[output]</span> boolean</p>
+                    <p><code>true</code> if <code>s</code> is a subsequence of <code>t</code>, <code>false</code> otherwise.</p>
+                </li>
+            </ul>
+        `
+    },
+    {
+        "topic_id": 29,
+        "order_index": 143,
+        "challenge_name": 'Eye Rhyme',
+        "description": `
+            <p>An eye rhyme is a rhyme in which two words are spelled similarly but pronounced differently. An example is the pair <code>cough</code> and <code>bough</code>; although they look similar, when they are spoken there is no rhyming quality.</p>
+            
+            <p>You are writing a thesis on the eye rhyme, and you thought it would be cool to make the text itself eye rhymed. This brilliant idea came to your mind a little too late: the text is already written. Now you want to check if a given pair of lines in your text have an eye rhyme. More specifically, you want to make sure that the last three characters of each pair of lines coincide.</p>
+            
+            <p>You have already split your text into pairs of lines. Now all that's left is to check that the last three characters of the lines in each <code>pairOfLines</code> coincide. Implement a function that will do this job.</p>
+            
+            <h3>Example</h3>
+            <p>For <code>pairOfLines = "cough\\tbough"</code>, the output should be:</p>
+            <pre><code>solution(pairOfLines) = true;</code></pre>
+            
+            <p>Both lines end with <code>ugh</code>.</p>
+            
+            <p>For <code>pairOfLines = "CodeFig!ht\\tWith all your might"</code>, the output should be:</p>
+            <pre><code>solution(pairOfLines) = false;</code></pre>
+            
+            <p>The first line ends with <code>!ht</code>, and the second one ends with <code>ght</code>.</p>
+            
+            <h3>Input/Output</h3>
+            <ul>
+                <li><p><span>[execution time limit]</span> 4 seconds (js)</p></li>
+                <li><p><span>[memory limit]</span> 1 GB</p></li>
+                <li>
+                    <p><span>[input]</span> string <code>pairOfLines</code></p>
+                    <p>A string in the format <code>&lt;line1&gt;\\t&lt;line2&gt;</code>, where <code>&lt;linei&gt;</code> consists of at least 3 characters and may contain any character except <code>'\\t'</code> (tabulation character). The lines are separated by <code>'\\t'</code> (tabulation character).</p>
+                </li>
+                <li>
+                    <p><span>[output]</span> boolean</p>
+                    <p><code>true</code> if the lines in <code>pairOfLines</code> have an eye rhyme, <code>false</code> otherwise.</p>
+                </li>
+            </ul>
+        `
+    },
+    {
+        "topic_id": 29,
+        "order_index": 144,
+        "challenge_name": 'Program Translation',
+        "description": `
+            <p>As an avid user of CodeSignal, you find it frustrating that there are no debugging and recovery tasks in your favorite language, PHP. You decide to help the platform by translating solutions in JavaScript into PHP.</p>
+            
+            <p>You quickly discover that this approach is quite convenient: sometimes all you have to do is substitute the function arguments by adding the <code>$</code> sign in front of them. At first you do this manually, but soon realize that it won't get you far enough.</p>
+            
+            <p>Now you need to implement a function that, given a code written in JavaScript and its arguments, adds a <code>$</code> sign in front of each <code>args[i]</code> (unless there is already a dollar sign present).</p>
+            
+            <p>Given a code in JavaScript and its arguments, return the almost-PHP solution.</p>
+            
+            <h3>Example</h3>
+            <p>For</p>
+            <pre><code>code = 
+        "function add($n, m) {\\t
+           return n + $m;\\t
+         }"
+    </code></pre>
+            <p>and</p>
+            <pre><code>args = ["n", "m"]</code></pre>
+            <p>the output should be:</p>
+            <pre><code>solution(code, args) =
+        "function add($n, $m) {\\t
+           return $n + $m;\\t
+         }"
+    </code></pre>
+            
+            <h3>Input/Output</h3>
+            <ul>
+                <li><p><span>[execution time limit]</span> 4 seconds (js)</p></li>
+                <li><p><span>[memory limit]</span> 1 GB</p></li>
+                <li>
+                    <p><span>[input]</span> string <code>code</code></p>
+                    <p>Solution written in JavaScript. It is guaranteed that the given code snippet:</p>
+                    <ul>
+                        <li>is correct and can be executed in the CodeSignal environment with <code>$</code> symbols removed;</li>
+                        <li>does not contain comments or string variables;</li>
+                        <li>does not start with one of the <code>args</code>.</li>
+                    </ul>
+                    <p>Due to system limitations, tabulation (<code>\\t</code>) characters are used instead of newlines (<code>\\n</code>).</p>
+                    <p>Guaranteed constraints:</p>
+                    <ul>
+                        <li>40 ≤ <code>code.length</code> ≤ 200.</li>
+                    </ul>
+                </li>
+                <li>
+                    <p><span>[input]</span> array.string <code>args</code></p>
+                    <p>An array of distinct function arguments. It is guaranteed that each argument is valid, i.e. it consists only of uppercase and lowercase letters <code>A</code> through <code>Z</code>, the underscore (<code>_</code>) and, except for the first character, the digits <code>0</code> through <code>9</code>. It is also guaranteed that no argument coincides with one of the reserved words.</p>
+                    <p>Guaranteed constraints:</p>
+                    <ul>
+                        <li>1 ≤ <code>args.length</code> ≤ 10,</li>
+                        <li>1 ≤ <code>args[i].length</code> ≤ 10.</li>
+                    </ul>
+                </li>
+                <li>
+                    <p><span>[output]</span> string</p>
+                    <p>The given code with <code>args</code> replaced to PHP-style.</p>
+                </li>
+            </ul>
+        `
+    },
+    {
+        "topic_id": 29,
+        "order_index": 145,
+        "challenge_name": 'Repetition Encryption',
+        "description": `
+            <p>Jane just got a letter from her friend and realized that something's wrong: some words in the letter are written twice in a row. The thing is, she and her friend devised an ingenious cypher, the key to which is the number of pairs of repeated words in the encoded text. The cases of the words don't matter.</p>
+            
+            <p>Formally, a word is a substring of the letter consisting of English letters, such that characters to the left of the leftmost letter and to the right of the rightmost letter are not letters.</p>
+            
+            <p>For obvious reasons, Jane can't tell you how the encryption works, but she needs your help with calculating the number of pairs of consecutive equal words. Write a function that, given a letter, returns this number.</p>
+            
+            <h3>Example</h3>
+            <p>For</p>
+            <pre><code>letter = "Hi, hi Jane! I'm so. So glad to to finally be able to write - WRITE!! - to you!"</code></pre>
+            <p>the output should be:</p>
+            <pre><code>solution(letter) = 4</code></pre>
+            <p>There are 4 pairs of consecutive identical words in the text. They are shown in different colors below:</p>
+            <pre><code>"Hi, hi Jane! I'm so. So glad to to finally be able to write - WRITE!! - to you!"</code></pre>
+            
+            <h3>Input/Output</h3>
+            <ul>
+                <li><p><span>[execution time limit]</span> 4 seconds (js)</p></li>
+                <li><p><span>[memory limit]</span> 1 GB</p></li>
+                <li>
+                    <p><span>[input]</span> string <code>letter</code></p>
+                    <p>The letter Jane's friend wrote to her. It is guaranteed that there are no more than two consecutive equal words in a row. It is also guaranteed that between two such pairs there are at least two symbols.</p>
+                    <p>Guaranteed constraints:</p>
+                    <ul>
+                        <li>1 ≤ <code>letter.length</code> ≤ 250.</li>
+                    </ul>
+                </li>
+                <li>
+                    <p><span>[output]</span> integer</p>
+                    <p>The number of pairs of consecutive equal words in the letter.</p>
+                </li>
+            </ul>
+        `
+    },
+    {
+        "topic_id": 29,
+        "order_index": 146,
+        "challenge_name": 'Bugs and Bugfixes',
+        "description": `
+            <p>In most role-playing games, die rolls required by the system are given in the form AdX. A and X are positive integers, separated by the letter 'd', which stands for die or dice.</p>
+            
+            <p>A is the number of times the die should be rolled (usually omitted if 1). X is the number of faces on the die. To this basic notation, an additive modifier can be appended that yields expressions in the form AdX+B or AdX-B. B is a number added to the sum of the rolls (or subtracted from it). So, 1d20-10 would indicate a single roll of a 20-sided die with 10 being subtracted from the result.</p>
+            
+            <p>You're reading the rules of a famous Bugs and Bugfixes role-playing game involving dice. What is the maximum number of points you can get, assuming that you roll the dice according to each formula present within the rules?</p>
+            
+            <p>It is guaranteed that all the formulas that appear in rules are correct (i.e. A and X are always positive in a formula-like substring), and any two substrings that may be formulas do not overlap.</p>
+            
+            <h3>Example</h3>
+            <p>For</p>
+            <pre><code>rules = "Roll d6-3 and 4d4+3 to pick a weapon, and finish the boss with 3d7!"</code></pre>
+            <p>the output should be:</p>
+            <pre><code>solution(rules) = 43</code></pre>
+            <p>There are three formulas in the rules.</p>
+            <ul>
+                <li><code>d6-3</code> indicates a single roll of a 6-sided die, with 3 subtracted from the result. The maximum number that is possible to get is thus 6 - 3 = 3.</li>
+                <li><code>4d4+3</code> stands for 4 rolls of a 4-sided die, with 3 added to the result. It is possible to get 4 * 4 + 3 = 19 points.</li>
+                <li><code>3d7</code> means 3 rolls of a 7-sided die. The maximum number to obtain with it is 3 * 7 = 21.</li>
+            </ul>
+            
+            <h3>Input/Output</h3>
+            <ul>
+                <li><p><span>[execution time limit]</span> 4 seconds (js)</p></li>
+                <li><p><span>[memory limit]</span> 1 GB</p></li>
+                <li>
+                    <p><span>[input]</span> string <code>rules</code></p>
+                    <p>Rules given as a string.</p>
+                    <p>Guaranteed constraints:</p>
+                    <ul>
+                        <li>1 ≤ <code>rules.length</code> ≤ 100.</li>
+                    </ul>
+                </li>
+                <li>
+                    <p><span>[output]</span> integer</p>
+                    <p>The maximum possible number of points. If there are no formulas in rules, the output should be 0.</p>
+                </li>
+            </ul>
+        `
+    },
+    {
+        "topic_id": 30,
+        "order_index": 147,
+        "challenge_name": 'LRC to SubRip',
+        "description": `
+            <p>During your most recent trip to Codelandia you decided to buy a brand new CodePlayer, a music player that (allegedly) can work with any possible media format. As it turns out, this isn't true: the player can't read lyrics written in the LRC format. It can, however, read the SubRip format, so now you want to translate all the lyrics you have from LRC to SubRip.</p>
+            
+            <p>Since you are a pro programmer (no noob would ever get to Codelandia!), you're happy to implement a function that, given <code>lrcLyrics</code> and <code>songLength</code>, returns the lyrics in SubRip format.</p>
+            
+            <h3>Example</h3>
+            <p>For</p>
+            <pre><code>lrcLyrics = ["[00:12.00] Happy birthday dear coder,",
+                 "[00:17.20] Happy birthday to you!"]
+    and songLength = "00:00:20"</code></pre>
+            <p>the output should be:</p>
+            <pre><code>solution(lrcLyrics, songLength) = [
+      "1",
+      "00:00:12,000 --> 00:00:17,200",
+      "Happy birthday dear coder,",
+      "",
+      "2",
+      "00:00:17,200 --> 00:00:20,000",
+      "Happy birthday to you!"
+    ]</code></pre>
+            <p>The input LRC lyrics are converted to SubRip format with each entry including a line number, time range, and the lyrics text itself. Each entry is separated by an empty line.</p>
+            
+            <h3>Input/Output</h3>
+            <ul>
+                <li><p><span>[execution time limit]</span> 4 seconds (js)</p></li>
+                <li><p><span>[memory limit]</span> 1 GB</p></li>
+                <li>
+                    <p><span>[input]</span> array.string <code>lrcLyrics</code></p>
+                    <p>Lyrics in LRC format. Each string has the format [MM:SS.xx] <song_line>, (note the whitespace character after the time) where:</p>
+                    <ul>
+                        <li><code>MM:SS.xx</code> is the lyrics time (it is guaranteed that the elements of <code>lrcLyrics</code> are sorted in ascending order of this time);</li>
+                        <li><code>0 ≤ int(xx) ≤ 99;</code></li>
+                        <li><code>0 ≤ int(SS) ≤ 59;</code></li>
+                        <li><code>0 ≤ int(MM) ≤ 99;</code></li>
+                        <li><code><song_line></code> is the corresponding lyrics line.</li>
+                    </ul>
+                    <p>Guaranteed constraints:</p>
+                    <ul>
+                        <li>1 ≤ <code>lrcLyrics.length</code> ≤ 50,</li>
+                        <li>1 ≤ <code>lrcLyrics[i].length</code> ≤ 100.</li>
+                    </ul>
+                </li>
+                <li>
+                    <p><span>[input]</span> string <code>songLength</code></p>
+                    <p>The length of the song in the format "HH:MM:SS". It is guaranteed that it is greater than the last time in <code>lrcLyrics</code>.</p>
+                    <p>Guaranteed constraints:</p>
+                    <ul>
+                        <li>0 ≤ int(HH) ≤ 2,</li>
+                        <li>0 ≤ int(MM) ≤ 59,</li>
+                        <li>0 ≤ int(SS) ≤ 59.</li>
+                    </ul>
+                </li>
+                <li>
+                    <p><span>[output]</span> array.string</p>
+                    <p>The given lyrics in the SubRip format. For each line in the <code>lrcLyrics</code>, three new lines should be generated:</p>
+                    <ul>
+                        <li>The first line is the 1-based lyrics line number;</li>
+                        <li>The second line should be in the format HH1:MM1:SS1,xxx1 --> HH2:MM2:SS2,xxx2, where:
+                            <ul>
+                                <li>HH1:MM1:SS1,xxx1 the time the row starts;</li>
+                                <li>HH2:MM2:SS2,xxx2 when the next lyrics should appear, or the length of the song if it's the last lyrics line;</li>
+                            </ul>
+                        </li>
+                        <li>The last line is the lyrics text itself.</li>
+                    </ul>
+                    <p>Each pair of consecutive three-lines groups should be separated by a single empty string.</p>
+                </li>
+            </ul>
+        `
+    },
+    {
+        "topic_id": 30,
+        "order_index": 148,
+        "challenge_name": 'HTML Table',
+        "description": `
+            <p>HTML tables allow web developers to arrange data into rows and columns of cells. They are created using the <code>&lt;table&gt;</code> tag. Its content consists of one or more rows denoted by the <code>&lt;tr&gt;</code> tag. Further, the content of each row comprises one or more cells denoted by the <code>&lt;td&gt;</code> tag, and content within the <code>&lt;td&gt;</code> tags is what site visitors see in the table. For this task assume that tags have no attributes in contrast to real world HTML.</p>
+            
+            <p>Some tables contain the <code>&lt;th&gt;</code> tag. This tag defines header cells, which shouldn't be counted as regular cells.</p>
+            
+            <p>You are given a rectangular HTML table. Extract the content of the cell with coordinates (row, column).</p>
+            
+            <h3>Example</h3>
+            <p>For</p>
+            <pre><code>table = "<table><tr><td>1</td><td>TWO</td></tr><tr><td>three</td><td>FoUr4</td></tr></table>", row = 0, and column = 1</code></pre>
+            <p>the output should be:</p>
+            <pre><code>solution(table, row, column) = "TWO"</code></pre>
+            <p>The table:</p>
+            <pre><code>&lt;table&gt;
+     &lt;tr&gt;
+      &lt;td&gt;1&lt;/td&gt;
+      &lt;td&gt;TWO&lt;/td&gt;
+     &lt;/tr&gt;
+     &lt;tr&gt;
+      &lt;td&gt;three&lt;/td&gt;
+      &lt;td&gt;FoUr4&lt;/td&gt;
+     &lt;/tr&gt;
+    &lt;/table&gt;</code></pre>
+            <p>corresponds to:</p>
+            <pre><code>1   TWO
+    three FoUr4</code></pre>
+            <p>For</p>
+            <pre><code>table = "<table><tr><td>1</td><td>TWO</td></tr></table>", row = 1, and column = 0</code></pre>
+            <p>the output should be:</p>
+            <pre><code>solution(table, row, column) = "No such cell"</code></pre>
+            <p>The table:</p>
+            <pre><code>&lt;table&gt;
+     &lt;tr&gt;
+      &lt;td&gt;1&lt;/td&gt;
+      &lt;td&gt;TWO&lt;/td&gt;
+     &lt;/tr&gt;
+    &lt;/table&gt;</code></pre>
+            <p>corresponds to:</p>
+            <pre><code>1   TWO</code></pre>
+            
+            <h3>Input/Output</h3>
+            <ul>
+                <li><p><span>[execution time limit]</span> 4 seconds (js)</p></li>
+                <li><p><span>[memory limit]</span> 1 GB</p></li>
+                <li>
+                    <p><span>[input]</span> string <code>table</code></p>
+                    <p>A syntactically correct representation of a rectangular HTML table with at least one cell. Each of its cells contains only letters and/or digits.</p>
+                    <p>Guaranteed constraints:</p>
+                    <ul>
+                        <li>35 ≤ <code>table.length</code> ≤ 1600.</li>
+                    </ul>
+                </li>
+                <li>
+                    <p><span>[input]</span> integer <code>row</code></p>
+                    <p>A non-negative integer representing 0-based index of the desired row (rows are numbered from top to bottom).</p>
+                    <p>Guaranteed constraints:</p>
+                    <ul>
+                        <li>0 ≤ <code>row</code> ≤ 10.</li>
+                    </ul>
+                </li>
+                <li>
+                    <p><span>[input]</span> integer <code>column</code></p>
+                    <p>A non-negative integer representing 0-based index of the desired column (columns are numbered from left to right).</p>
+                    <p>Guaranteed constraints:</p>
+                    <ul>
+                        <li>0 ≤ <code>column</code> ≤ 10.</li>
+                    </ul>
+                </li>
+                <li>
+                    <p><span>[output]</span> string</p>
+                    <p>The content of the cell with coordinates (row, column) or the string "No such cell" if there is no cell with those coordinates in the table.</p>
+                </li>
+            </ul>
+        `
+    },
+    {
+        "topic_id": 30,
+        "order_index": 149,
+        "challenge_name": 'Chess Notation',
+        "description": `
+            <p>John has always had trouble remembering chess game positions. To help himself with remembering, he decided to store game positions in strings. He came up with the following position notation:</p>
+            
+            <p>The notation is built for the current game position row by row from top to bottom, with <code>/</code> separating each row notation;</p>
+            <p>Within each row, the contents of each square are described from the leftmost column to the rightmost;</p>
+            <p>Each piece is identified by a single letter taken from the standard English names (<code>'P'</code> = pawn, <code>'N'</code> = knight, <code>'B'</code> = bishop, <code>'R'</code> = rook, <code>'Q'</code> = queen, <code>'K'</code> = king);</p>
+            <p>White pieces are designated using upper-case letters ("<code>PNBRQK</code>") while black pieces use lowercase ("<code>pnbrqk</code>");</p>
+            <p>Empty squares are noted using digits 1 through 8 (the number of empty squares from the last piece);</p>
+            <p>Empty lines are noted as "<code>8</code>".</p>
+            
+            <p>For example, for the initial position (shown in the picture below) the notation will look like this:</p>
+            <pre><code>"rnbqkbnr/pppppppp/8/8/8/8/PPPPPPPP/RNBQKBNR"</code></pre>
+            <p>After the white pawn moves from e2 to e4, the notation will be as follows:</p>
+            <pre><code>"rnbqkbnr/pppppppp/8/8/4P3/8/PPPP1PPP/RNBQKBNR"</code></pre>
+            
+            <p>John has written down some positions using his notation, and now he wants to rotate the board 90 degrees clockwise and see what notation for the new board would look like. Help him with this task.</p>
+            
+            <h3>Example</h3>
+            <p>For</p>
+            <pre><code>notation = "rnbqkbnr/pppppppp/8/8/4P3/8/PPPP1PPP/RNBQKBNR"</code></pre>
+            <p>the output should be:</p>
+            <pre><code>solution(notation) = "RP4pr/NP4pn/BP4pb/QP4pq/K2P2pk/BP4pb/NP4pn/RP4pr"</code></pre>
+            <p>The notation corresponds to the initial position with one move made (white pawn from e2 to e4). After rotating the board, it will look like this:</p>
+            <pre><code>
+    RP4pr
+    NP4pn
+    BP4pb
+    QP4pq
+    K2P2pk
+    BP4pb
+    NP4pn
+    RP4pr</code></pre>
+            
+            <h3>Input/Output</h3>
+            <ul>
+                <li><p><span>[execution time limit]</span> 4 seconds (js)</p></li>
+                <li><p><span>[memory limit]</span> 1 GB</p></li>
+                <li>
+                    <p><span>[input]</span> string <code>notation</code></p>
+                    <p>Game position in John's notation. It is guaranteed that notation is correct, but not guaranteed that it represents a valid game position.</p>
+                    <p>Guaranteed constraints:</p>
+                    <ul>
+                        <li>15 ≤ <code>notation.length</code> ≤ 71.</li>
+                    </ul>
+                </li>
+                <li>
+                    <p><span>[output]</span> string</p>
+                    <p>Notation for the position of the game board, rotated 90 degrees clockwise.</p>
+                </li>
+            </ul>
+        `
+    },
+    {
+        "topic_id": 30,
+        "order_index": 150,
+        "challenge_name": 'Cells Joining',
+        "description": `
+            <p>You are writing a spreadsheet application for an ancient operating system. The system runs on a computer so old that it can only display ASCII graphics. Currently you are stuck with implementing the cells joining algorithm.</p>
+            
+            <p>You are given a table in ASCII graphics, where the following characters are used for borders: <code>+</code>, <code>-</code>, <code>|</code>. The rows can have different heights and the columns can have different widths. Each cell has an area greater than 1 (excluding the borders) and can contain any ASCII characters excluding <code>+</code>, <code>-</code> and <code>|</code>.</p>
+            
+            <p>The algorithm you want to implement should merge the cells within a given rectangular part of the table into a single cell by removing the borders between them (i.e., replace them with space characters (<code>' '</code>) and replace redundant <code>+</code>s with correct border symbols). The cells to join are represented by the coordinates of the cells at the extreme bottom-left and top-right of the area.</p>
+            
+            <h3>Example</h3>
+            <p>For</p>
+            <pre><code>table = 
+   [" +----+--+-----+----+",
+    " |abcd|56|!@#$%|qwer|",
+    " |1234|78|^&=()|tyui|",
+    " +----+--+-----+----+",
+    " |zxcv|90|77777|stop|",
+    " +----+--+-----+----+",
+    " |asdf|~~|ghjkl|100$|",
+    " +----+--+-----+----+"]</code></pre>
+            <p>and</p>
+            <pre><code>coords = [[2, 0], [1, 1]]</code></pre>
+            <p>the output should be:</p>
+            <pre><code>solution(table, coords) = 
+   [" +----+--+-----+----+",
+    " |abcd|56|!@#$%|qwer|",
+    " |1234|78|^&=()|tyui|",
+    " +----+--+-----+----+",
+    " |zxcv 90|77777|stop|",
+    " |       +-----+----+",
+    " |asdf ~~|ghjkl|100$|",
+    " +-------+-----+----+"]</code></pre>
+            <p>The table with cells in the given region joined into one looks like this:</p>
+            <pre><code>
+    +----+--+-----+----+
+    |abcd|56|!@#$%|qwer|
+    |1234|78|^&=()|tyui|
+    +----+--+-----+----+
+    |zxcv 90|77777|stop|
+    |       +-----+----+
+    |asdf ~~|ghjkl|100$|
+    +-------+-----+----+</code></pre>
+            
+            <h3>Input/Output</h3>
+            <ul>
+                <li><p><span>[execution time limit]</span> 4 seconds (js)</p></li>
+                <li><p><span>[memory limit]</span> 1 GB</p></li>
+                <li>
+                    <p><span>[input]</span> array.string <code>table</code></p>
+                    <p>A table in ASCII graphics. <code>|</code> and <code>-</code> characters represent borders, and <code>+</code> characters represent their intersection. It is guaranteed that there are no joined cells in the table. It's also guaranteed that the table occupies the entire rectangular array, i.e., its outer borders occupy the leftmost and the rightmost columns of the array as well as its topmost and bottommost rows.</p>
+                    <p>Guaranteed constraints:</p>
+                    <ul>
+                        <li>3 ≤ <code>table.length</code> ≤ 25,</li>
+                        <li>3 ≤ <code>table[i].length</code> ≤ 80,</li>
+                        <li><code>table[i].length = table[j].length</code>.</li>
+                    </ul>
+                </li>
+                <li>
+                    <p><span>[input]</span> array.array.integer <code>coords</code></p>
+                    <p><code>coords[0]</code> contains 0-based row and column indices (given in that exact order) of the extreme bottom left cell in the area to join, and <code>coords[1]</code> contains indices of the extreme top right cell of that region.</p>
+                    <p>It's guaranteed that there are at least two cells to be joined, and that cells with the given indices do exist in the table.</p>
+                    <p>The rows are numbered from top to bottom while the columns are numbered from left to right.</p>
+                    <p>Guaranteed constraints:</p>
+                    <ul>
+                        <li><code>coords.length = 2</code>,</li>
+                        <li><code>coords[i].length = 2</code>,</li>
+                        <li>0 ≤ <code>coords[1][0]</code> ≤ <code>coords[0][0]</code> < 10,</li>
+                        <li>0 ≤ <code>coords[0][1]</code> ≤ <code>coords[1][1]</code> ≤ 25.</li>
+                    </ul>
+                </li>
+                <li>
+                    <p><span>[output]</span> array.string</p>
+                    <p>Table with cells in the given region joined into one.</p>
+                </li>
+            </ul>
+        `
+    },
+    {
+        "topic_id": 30,
+        "order_index": 151,
+        "challenge_name": 'First Operation Character',
+        "description": `
+            <p>Given a string which represents a valid arithmetic expression, find the index of the character in the given expression corresponding to the arithmetic operation which needs to be computed first.</p>
+            
+            <p>Note that several operations of the same type with equal priority are computed from left to right.</p>
+            
+            <p>See the explanation of the third example for more details about the operations priority in this problem.</p>
+            
+            <h3>Example</h3>
+            <p>For</p>
+            <pre><code>expr = "(2 + 2) * 2"</code></pre>
+            <p>the output should be:</p>
+            <pre><code>solution(expr) = 3</code></pre>
+            <p>There are two operations in the expression: <code>+</code> and <code>*</code>. The result of <code>+</code> should be computed first, since it is enclosed in parentheses. Thus, the output is the index of the <code>+</code> sign, which is 3.</p>
+            
+            <p>For</p>
+            <pre><code>expr = "2 + 2 * 2"</code></pre>
+            <p>the output should be:</p>
+            <pre><code>solution(expr) = 6</code></pre>
+            <p>There are two operations in the given expression: <code>+</code> and <code>*</code>. Since there are no parentheses, <code>*</code> should be computed first as it has higher priority. The answer is the position of <code>*</code>, which is 6.</p>
+            
+            <p>For</p>
+            <pre><code>expr = "((2 + 2) * 2) * 3 + (2 + (2 * 2))"</code></pre>
+            <p>the output should be:</p>
+            <pre><code>solution(expr) = 28</code></pre>
+            <p>There are two operations which are enclosed in two parentheses: <code>+</code> at the position 4, and <code>*</code> at the position 28. Since <code>*</code> has higher priority than <code>+</code>, the answer is 28.</p>
+            
+            <h3>Input/Output</h3>
+            <ul>
+                <li><p><span>[execution time limit]</span> 4 seconds (js)</p></li>
+                <li><p><span>[memory limit]</span> 1 GB</p></li>
+                <li>
+                    <p><span>[input]</span> string <code>expr</code></p>
+                    <p>A string consisting of digits, parentheses, addition and multiplication signs (pluses and asterisks). It is guaranteed that there is at least one arithmetic sign in it.</p>
+                    <p>Guaranteed constraints:</p>
+                    <ul>
+                        <li>5 ≤ <code>expr.length</code> ≤ 45.</li>
+                    </ul>
+                </li>
+                <li>
+                    <p><span>[output]</span> integer</p>
+                    <p>The index of the character in the given expression corresponding to the arithmetic operation which needs to be computed first.</p>
+                </li>
+            </ul>
+        `
+    },
+    {
+        "topic_id": 30,
+        "order_index": 152,
+        "challenge_name": 'Count Elements',
+        "description": `
+            <p>You've been invited to a job interview at a famous company that tests programming challenges. To evaluate your coding skills, they have asked you to parse a given problem's input given as an <code>inputString</code> string, and count the number of primitive type elements within it.</p>
+            
+            <p>The <code>inputString</code> can be either a primitive type variable or an array (possibly multidimensional) that contains elements of the primitive types.</p>
+            
+            <p>A primitive type variable can be:</p>
+            <ul>
+                <li><p>an integer number;</p></li>
+                <li><p>a string, which is surrounded by <code>"</code> characters (note that it may contain any character except <code>"</code>);</p></li>
+                <li><p>a boolean, which is either <code>true</code> or <code>false</code>.</p></li>
+            </ul>
+            
+            <p>Return the total number of primitive type elements inside <code>inputString</code>.</p>
+            
+            <h3>Example</h3>
+            <p>For</p>
+            <pre><code>inputString = "[[0, 20], [33, 99]]"</code></pre>
+            <p>the output should be:</p>
+            <pre><code>solution(inputString) = 4</code></pre>
+            <p>There are four primitive elements: 0, 20, 33, and 99.</p>
+            
+            <p>For</p>
+            <pre><code>inputString = "[ "one", 2, "three" ]"</code></pre>
+            <p>the output should be:</p>
+            <pre><code>solution(inputString) = 3</code></pre>
+            <p>There are three primitive elements: "one", 2, and "three".</p>
+            
+            <p>For</p>
+            <pre><code>inputString = "true"</code></pre>
+            <p>the output should be:</p>
+            <pre><code>solution(inputString) = 1</code></pre>
+            <p>There is one primitive element: true.</p>
+            
+            <p>For</p>
+            <pre><code>inputString = "[[1, 2, [3]], 4]"</code></pre>
+            <p>the output should be:</p>
+            <pre><code>solution(inputString) = 4</code></pre>
+            <p>There are four primitive elements: 1, 2, 3, and 4.</p>
+            
+            <h3>Input/Output</h3>
+            <ul>
+                <li><p><span>[execution time limit]</span> 4 seconds (js)</p></li>
+                <li><p><span>[memory limit]</span> 1 GB</p></li>
+                <li>
+                    <p><span>[input]</span> string <code>inputString</code></p>
+                    <p>Correct input of a given problem.</p>
+                    <p>Guaranteed constraints:</p>
+                    <ul>
+                        <li>2 ≤ <code>inputString.length</code> ≤ 60.</li>
+                    </ul>
+                </li>
+                <li>
+                    <p><span>[output]</span> integer</p>
+                    <p>The total number of primitive type elements within the input.</p>
+                </li>
+            </ul>
+        `
+    },
+    {
+        "topic_id": 30,
+        "order_index": 153,
+        "challenge_name": 'Tree Bottom',
+        "description": `
+            <p>You are given a recursive notation of a binary tree: each node of a tree is represented as a set of three elements:</p>
+            
+            <ul>
+                <li>value of the node;</li>
+                <li>left subtree;</li>
+                <li>right subtree.</li>
+            </ul>
+            
+            <p>So, a tree can be written as <code>(value left_subtree right_subtree)</code>. It is guaranteed that 1 ≤ value ≤ 10<sup>9</sup>. If a node doesn't exist then it is represented as an empty set: <code>()</code>. For example, here is a representation of a tree in the given picture:</p>
+            
+            <pre><code>(2 (7 (2 () ()) (6 (5 () ()) (11 () ()))) (5 () (9 (4 () ()) ())))</code></pre>
+            
+            <p>Your task is to obtain a list of nodes that are the most distant from the tree root, in the order from left to right.</p>
+            
+            <h3>Example</h3>
+            <p>For</p>
+            <pre><code>tree = "(2 (7 (2 () ()) (6 (5 () ()) (11 () ()))) (5 () (9 (4 () ()) ())))"</code></pre>
+            <p>the output should be:</p>
+            <pre><code>solution(tree) = [5, 11, 4]</code></pre>
+            <p>In this tree, the nodes at the maximum depth are 5, 11, and 4. They are listed from left to right.</p>
+            
+            <h3>Input/Output</h3>
+            <ul>
+                <li><p><span>[execution time limit]</span> 4 seconds (js)</p></li>
+                <li><p><span>[memory limit]</span> 1 GB</p></li>
+                <li>
+                    <p><span>[input]</span> string <code>tree</code></p>
+                    <p>The recursive notation of the binary tree.</p>
+                    <p>Guaranteed constraints:</p>
+                    <ul>
+                        <li>9 ≤ <code>tree.length</code> ≤ 1000.</li>
+                    </ul>
+                </li>
+                <li>
+                    <p><span>[output]</span> array.integer</p>
+                    <p>The values of the nodes that are the most distant from the tree root.</p>
+                </li>
+            </ul>
+        `
+    },
+    {
+        "topic_id": 30,
+        "order_index": 154,
+        "challenge_name": 'Befunge-93',
+        "description": `
+            <p>While exploring the ruins of a golden lost city, you discovered an ancient manuscript containing series of strange symbols. Thanks to your profound knowledge of dead languages, you realized that the text was written in one of the dialects of Befunge-93. Looks like the prophecy was true: you are the one who can find the answer to the Ultimate Question of Life! Of course you brought your futuristic laptop with you, so now you just need a function that will run the encrypted message and make you the all-knowing human being.</p>
+    
+            <p>Befunge-93 is a stack-based programming language, the programs for which are arranged in a two-dimensional torus grid. The program execution sequence starts at the top left corner and proceeds to the right until the first direction instruction is met (which can appear in the very first cell). The torus adjective means that the program never leaves the grid: when it encounters a border, it simply goes to the next command at the opposite side of the grid.</p>
+    
+            <p>You need to write a function that will be able to execute the given Befunge-93 program. Unfortunately your laptop, futuristic that it is, can't handle more than 105 instructions and will probably catch on fire if you try to execute more, so the function should exit after 105 commands. The good news is, the prophesy said that the answer to the Ultimate Question of Life contains no more than 100 symbols, so the function should return the program output once it contains 100 symbols.</p>
+    
+            <h3>Dialect of Befunge-93</h3>
+            <p>The dialect of Befunge-93 in the manuscript consists of the following commands:</p>
+            
+            <ul>
+                <li><strong>Direction Instructions:</strong>
+                    <ul>
+                        <li><code>></code>: start moving right</li>
+                        <li><code>&lt;</code>: start moving left</li>
+                        <li><code>v</code>: start moving down</li>
+                        <li><code>^</code>: start moving up</li>
+                        <li><code>#</code>: bridge; skip next cell</li>
+                    </ul>
+                </li>
+                <li><strong>Conditional Instructions:</strong>
+                    <ul>
+                        <li><code>_</code>: pop a value; move right if value = 0, left otherwise</li>
+                        <li><code>|</code>: pop a value; move down if value = 0, up otherwise</li>
+                    </ul>
+                </li>
+                <li><strong>Math Operators:</strong>
+                    <ul>
+                        <li><code>+</code>: addition; pop a, pop b, then push a + b</li>
+                        <li><code>-</code>: subtraction; pop a, pop b, then push b - a</li>
+                        <li><code>*</code>: multiplication; pop a, pop b, then push a * b</li>
+                        <li><code>/</code>: integer division; pop a, pop b, then push b / a</li>
+                        <li><code>%</code>: modulo operation; pop a, pop b, then push b % a</li>
+                    </ul>
+                </li>
+                <li><strong>Logical Operators:</strong>
+                    <ul>
+                        <li><code>!</code>: logical NOT; pop a value, if the value = 0, push 1, otherwise push 0</li>
+                        <li><code></code>: greater than; pop a and b, then push 1 if b > a, otherwise 0</li>
+                    </ul>
+                </li>
+                <li><strong>Stack Instructions:</strong>
+                    <ul>
+                        <li><code>::</code>: duplicate value on top of the stack</li>
+                        <li><code>\</code>: swap the top stack value with the second to the top</li>
+                        <li><code>$</code>: pop value from the stack and discard it</li>
+                    </ul>
+                </li>
+                <li><strong>Output Instructions:</strong>
+                    <ul>
+                        <li><code>.</code>: pop value and output it as an integer followed by a space</li>
+                        <li><code>,</code>: pop value and output it as ASCII character</li>
+                    </ul>
+                </li>
+                <li><strong>Other:</strong>
+                    <ul>
+                        <li><code>0-9</code>: push the encountered number on the stack</li>
+                        <li><code>"</code>: start string mode; push each character's ASCII value all the way up to the next "</li>
+                        <li><code> </code>: empty instruction; does nothing</li>
+                        <li><code>@</code>: end program; the program output should be returned then</li>
+                    </ul>
+                </li>
+            </ul>
+    
+            <h3>Example</h3>
+            <p>For</p>
+            <pre><code>program = [
+        "               v",
+        "v  ,,,,,"Hello"<",
+        ">48*,          v",
+        ""!dlroW",,,,,,v>",
+        "25*,@         > "
+    ]</code></pre>
+            <p>the output should be:</p>
+            <pre><code>solution(program) = "Hello World!\\n"</code></pre>
+            <p>Note, that in the tests tab you will see a \\ as an escape symbol before each "</p>
+    
+            <h3>Input/Output</h3>
+            <ul>
+                <li><p><span>[execution time limit]</span> 4 seconds (js)</p></li>
+                <li><p><span>[memory limit]</span> 1 GB</p></li>
+                <li>
+                    <p><span>[input]</span> array.string <code>program</code></p>
+                    <p>Array of strings of an equal length, representing a correct program written in the Befunge-93 dialect.</p>
+                    <p>Guaranteed constraints:</p>
+                    <ul>
+                        <li>1 ≤ <code>program.length</code> ≤ 20</li>
+                        <li>1 ≤ <code>program[0].length</code> ≤ 100</li>
+                        <li><code>program[i].length = program[0].length</code></li>
+                    </ul>
+                </li>
+                <li>
+                    <p><span>[output]</span> string</p>
+                    <p>The output of the program after</p>
+                    <ul>
+                        <li>the program hits the @ command;</li>
+                        <li>the program executes 105 commands;</li>
+                        <li>the program output contains 100 symbols;</li>
+                        <li>or whichever comes first.</li>
+                    </ul>
+                </li>
+            </ul>
+        `
+    },
+    {
+        "topic_id": 31,
+        "order_index": 155,
+        "challenge_name": 'Pipes Game',
+        "description": `
+            <p>Carlos always loved playing video games, especially the well-known computer game "Pipes". Today he finally decided to write his own version of the legendary game from scratch.</p>
+    
+            <p>In this game, the player has to place the pipes on a rectangular field to make water pour from each source to a respective sink. He has already come up with the entire program, but one question still bugs him: how can he best check that the arrangement of pipes is correct?</p>
+    
+            <p>Carlos has 7 types of pipes in his game, with numbers corresponding to each type:</p>
+            <ul>
+                <li><strong>1</strong> - vertical pipe</li>
+                <li><strong>2</strong> - horizontal pipe</li>
+                <li><strong>3-6</strong> - corner pipes</li>
+                <li><strong>7</strong> - two pipes crossed in the same cell (note that these pipes are not connected)</li>
+            </ul>
+            
+            <p>Water pours from each source in each direction that has a pipe connected to it (thus it can even pour in all four directions). The puzzle is solved correctly only if all water poured from each source eventually reaches a corresponding sink.</p>
+    
+            <p>Help Carlos check whether the arrangement of pipes is correct. If it is correct, return the number of cells with pipes that will be full of water at the end of the game. If not, return <code>-X</code>, where <code>X</code> is the number of cells with water before the first leakage point is reached, or if the first drop of water reaches an incorrect destination (whichever comes first). Assume that water moves from one cell to another at the same speed.</p>
+    
+            <h3>Example</h3>
+            <p>For</p>
+            <pre><code>state = [
+        "a224C22300000",
+        "0001643722B00",
+        "0b27275100000",
+        "00c7256500000",
+        "0006A45000000"
+    ]</code></pre>
+            <p>the output should be:</p>
+            <pre><code>solution(state) = 19</code></pre>
+            <p>Here is how the game will end:</p>
+    
+            <h3>Input/Output</h3>
+            <ul>
+                <li><p><span>[execution time limit]</span> 4 seconds (js)</p></li>
+                <li><p><span>[memory limit]</span> 1 GB</p></li>
+                <li>
+                    <p><span>[input]</span> array.string <code>state</code></p>
+                    <p>Array of strings of an equal length representing some state of the game. The pipes are represented by the numbers <code>'1'</code> to <code>'7'</code>, the sources are given as lowercase English letters, and the corresponding sinks are marked by uppercase letters. Empty cells are marked with <code>'0'</code>.</p>
+                    <p>Guaranteed constraints:</p>
+                    <ul>
+                        <li>1 ≤ <code>state.length</code> ≤ 100</li>
+                        <li>1 ≤ <code>state[i].length</code> ≤ 100</li>
+                        <li><code>state[i][j] ∈ {0-7, a-z, A-Z}</code></li>
+                    </ul>
+                </li>
+                <li>
+                    <p><span>[output]</span> integer</p>
+                    <p>If the pipe arrangement is correct, return the number of cells with pipes that will be filled with water at the end of the game. If not, return <code>-X</code>, where <code>X</code> is the number of cells with water before the first leakage point is reached, or if the first drop of water reaches an incorrect destination.</p>
+                </li>
+            </ul>
+        `
+    },
+    {
+        "topic_id": 31,
+        "order_index": 156,
+        "challenge_name": 'Game 2048',
+        "description": `
+            <p>You are most likely familiar with the game 2048.</p>
+    
+            <p>2048 is played on a gray 4 × 4 grid with numbered tiles that slide smoothly when a player moves them using one of the four arrow keys - Up, Down, Left or Right. On every turn, a new tile with a value of either 2 or 4 randomly appears on an empty spot of the board. After one of the keys is pressed, the tiles slide as far as possible in the chosen direction until they are stopped either by another tile or by the edge of the grid. If two tiles with the same number collide while moving, they merge into a tile with this number doubled. You can't merge an already merged tile in the same turn. If there are more than 2 tiles in the same row (column) that can merge, the farthest (closest to an edge) pair will be merged first (see the second example).</p>
+    
+            <p>In this problem you are not going to solve the 2048 puzzle, but you are going to find the final state of the board from the given one after a defined set of <code>n</code> arrow key presses, assuming that no new random tiles will appear on the empty spots.</p>
+    
+            <p>The following example shows the next state of the board after pressing Right.</p>
+            <pre><code>[[0, 0, 0, 0],\n [0, 0, 0, 4],\n [0, 0, 2, 4],\n [0, 0, 8, 8]]</code></pre>
+    
+            <p>This example shows the next state of the board after pressing Down.</p>
+            <pre><code>[[0, 0, 0, 0],\n [0, 0, 2, 4],\n [0, 0, 4, 8],\n [0, 0, 8, 16]]</code></pre>
+    
+            <p>For more details you can visit <a href="http://gabrielecirulli.github.io/2048/" target="_blank">2048 online</a> and play online 😃</p>
+    
+            <p>You are given a matrix 4 × 4 which corresponds to the 2048 game grid. <code>grid[0][0]</code> corresponds to the upper left tile of the grid. Each element of the grid is equal to some power of 2 if there is a tile with that value in the corresponding position, and 0 if it corresponds to the empty spot.</p>
+    
+            <p>You are also given a sequence of key presses as a string <code>path</code>. Each character of the string equals <code>L</code>, <code>R</code>, <code>U</code>, or <code>D</code> corresponding to Left, Right, Up or Down respectively.</p>
+    
+            <p>Please note that in some cases after pressing an arrow key nothing will be changed.</p>
+    
+            <h3>Example</h3>
+            <p>For</p>
+            <pre><code>grid = [[0, 0, 0, 0],\n        [0, 0, 2, 2],\n        [0, 0, 2, 4],\n        [2, 2, 4, 8]]\npath = "RR"</code></pre>
+            <p>the output should be:</p>
+            <pre><code>solution(grid, path) = [[0, 0, 0, 0],\n                        [0, 0, 0, 4],\n                        [0, 0, 2, 4],\n                        [0, 0, 8, 8]]</code></pre>
+    
+            <h3>Input/Output</h3>
+            <ul>
+                <li><p><span>[execution time limit]</span> 4 seconds (js)</p></li>
+                <li><p><span>[memory limit]</span> 1 GB</p></li>
+                <li>
+                    <p><span>[input]</span> array.array.integer <code>grid</code></p>
+                    <p>A square matrix of size 4 × 4, the starting state of the board. Each value of the matrix is 0 or a power of 2.</p>
+                    <p>Guaranteed constraints:</p>
+                    <ul>
+                        <li><code>grid[i][j] ∈ {0} ∪ {2^i | i = 0, 1, ..., 16}</code>.</li>
+                    </ul>
+                </li>
+                <li>
+                    <p><span>[input]</span> string <code>path</code></p>
+                    <p>String representing key presses. Each character of the string equals <code>L</code>, <code>R</code>, <code>U</code>, or <code>D</code>.</p>
+                    <p>Guaranteed constraints:</p>
+                    <ul>
+                        <li>1 ≤ <code>path.length</code> ≤ 30.</li>
+                    </ul>
+                </li>
+                <li>
+                    <p><span>[output]</span> array.array.integer</p>
+                    <p>The final state of the board after the given key presses are applied.</p>
+                </li>
+            </ul>
+        `
+    },
+    {
+        "topic_id": 31,
+        "order_index": 157,
+        "challenge_name": 'Snake Game',
+        "description": `
+            <p>Your task is to imitate a turn-based variation of the popular "Snake" game.</p>
+    
+            <p>You are given the initial configuration of the board and a list of commands which the snake follows one-by-one. The game ends if one of the following happens:</p>
+            <ul>
+                <li>the snake tries to eat its tail;</li>
+                <li>the snake tries to move out of the board;</li>
+                <li>it executes all the given commands.</li>
+            </ul>
+    
+            <p>Output the board configuration after the game ends.</p>
+    
+            <h3>Example</h3>
+            <p>For</p>
+            <pre><code>gameBoard = [['.', '.', '.', '.'],\n             ['.', '.', '<', '*'],\n             ['.', '.', '.', '*']]\ncommands = "FFFFFRFFRRLLF"</code></pre>
+            <p>the output should be:</p>
+            <pre><code>solution(gameBoard, commands) = [['.', '.', '.', '.'],\n                                 ['X', 'X', 'X', '.'],\n                                 ['.', '.', '.', '.']]</code></pre>
+    
+            <p>For</p>
+            <pre><code>gameBoard = [['.', '.', '^', '.', '.'],\n             ['.', '.', '*', '*', '.'],\n             ['.', '.', '.', '*', '*']]\ncommands = "RFRF"</code></pre>
+            <p>the output should be:</p>
+            <pre><code>solution(gameBoard, commands) = [['.', '.', 'X', 'X', '.'],\n                                 ['.', '.', 'X', 'X', '.'],\n                                 ['.', '.', '.', 'X', '.']]</code></pre>
+    
+            <p>For</p>
+            <pre><code>gameBoard = [['.', '.', '*', '>', '.'],\n             ['.', '*', '*', '.', '.'],\n             ['.', '.', '.', '.', '.']]\ncommands = "FRFFRFFRFLFF"</code></pre>
+            <p>the output should be:</p>
+            <pre><code>solution(gameBoard, commands) = [['.', '.', '.', '.', '.'],\n                                 ['<', '*', '*', '.', '.'],\n                                 ['.', '.', '*', '.', '.']]</code></pre>
+    
+            <h3>Input/Output</h3>
+            <ul>
+                <li><p><span>[execution time limit]</span> 4 seconds (js)</p></li>
+                <li><p><span>[memory limit]</span> 1 GB</p></li>
+                <li>
+                    <p><span>[input]</span> array.array.char <code>gameBoard</code></p>
+                    <p>A rectangular matrix of characters. It is guaranteed that it represents a correct game board configuration, i.e. there is exactly one snake. Direction of snake's head is depicted by one of the following characters ('^', '>', 'v', '<'). All of the other snake's body parts are depicted by '*'s (note, that if the snake has length 1 then there is no asterisks in its representation). All cells which are not occupied by the snake are depicted by '.'s.</p>
+                    <p>It is guaranteed that all snake cells are connected and no snake cell has more than two neighbors.</p>
+                    <p>Guaranteed constraints:</p>
+                    <ul>
+                        <li>1 ≤ <code>gameBoard.length</code> ≤ 10,</li>
+                        <li>1 ≤ <code>gameBoard[0].length</code> ≤ 10.</li>
+                    </ul>
+                </li>
+                <li>
+                    <p><span>[input]</span> string <code>commands</code></p>
+                    <p>A list of commands, where <code>'F'</code> means go one cell forward in the current direction, <code>'L'</code> and <code>'R'</code> mean change current direction 90 degrees left (counter-clockwise) or right (clockwise) correspondingly.</p>
+                    <p>Guaranteed constraints:</p>
+                    <ul>
+                        <li>0 ≤ <code>commands.length</code> ≤ 40.</li>
+                    </ul>
+                </li>
+                <li>
+                    <p><span>[output]</span> array.array.char</p>
+                    <p>Configuration of the board after the end of the game.</p>
+                    <p>If the snake dies, output its state before the losing move and replace each of the cells it occupied with Xs.</p>
+                </li>
+            </ul>
+        `
+    },
+    {
+        "topic_id": 31,
+        "order_index": 158,
+        "challenge_name": 'Tetris Game',
+        "description": `
+            <p>Let's play Tetris! But first we need to define the rules, especially since they probably differ from the way you've played Tetris before.</p>
+    
+            <p>There is an empty field with 20 rows and 10 columns, which is initially empty. Random pieces appear on the field, each composed of four square blocks. You can't change the piece's shape, but you can rotate it 90 degree clockwise (possibly several times) and choose which columns it will appear within. Once you've rotated the piece and have set its starting position, it appears at the topmost row where you placed it and falls down until it can't fall any further. The objective of the game is to create horizontal lines composed of 10 blocks. When such a line is created, it disappears, and all lines above the deleted one move down. The player receives 1 point for each deleted row.</p>
+    
+            <p>Your task is to implement an algorithm that places each new piece optimally. The piece is considered to be placed optimally if:</p>
+            <ul>
+                <li>The total number of blocks in the rows this piece will occupy after falling down is maximized;</li>
+                <li>Among all positions with that value maximized, this position requires the least number of rotations;</li>
+                <li>Among all positions that require the minimum number of rotations, this one is the leftmost one (i.e. the leftmost block's position is as far to the left as possible).</li>
+            </ul>
+    
+            <p>The piece can't leave the field. It is guaranteed that it is always possible to place the Tetris piece in the field.</p>
+    
+            <h3>Example</h3>
+            <p>For</p>
+            <pre><code>pieces = 
+            [[[".", "#", "."],           
+              ["#", "#", "#"]],        
+             [["#", ".", "."],           
+              ["#", "#", "#"]],          
+             [["#", "#", "."],            
+              [".", "#", "#"]],          
+             [["#", "#", "#", "#"]],         
+             [["#", "#", "#", "#"]],        
+             [["#", "#"],           
+              ["#", "#"]]]
+            </code></pre>
+            <p>the output should be:</p>
+            <pre><code>solution(pieces) = 1.</code></pre>
+    
+            <p>For this explanation, we are representing each block by the index of the piece it belongs to. After the first 5 blocks fall, the field looks like this:</p>
+            <pre><code>
+    ...
+    . . . . . . . . . .
+    . . . . . . . . . .
+    . . . . . . . . . .
+    . . . . . . . . . .
+    . . . . . . . . 3 4
+    . . . . . . . . 3 4
+    . 0 . 1 . 2 2 . 3 4
+    0 0 0 1 1 1 2 2 3 4</code></pre>
+            <p>Note that the 0th, 1st, and 2nd pieces all fell down without rotating, while the 3rd and the 4th pieces were rotated one time each.</p>
+    
+            <p>Since there is now a row composed of 10 blocks, it is deleted, and you get 1 point.</p>
+    
+            <p>When the last piece falls, the final field looks like this:</p>
+            <pre><code>
+    ...
+    . . . . . . . . . .
+    . . . . . . . . . .
+    . . . . . . . . . .
+    . . . . . . . . . .
+    . . . . . . . . . .
+    5 5 . . . . . . 3 4
+    5 5 . . . . . . 3 4
+    . 0 . 1 . 2 2 . 3 4</code></pre>
+    
+            <h3>Input/Output</h3>
+            <ul>
+                <li><p><span>[execution time limit]</span> 4 seconds (js)</p></li>
+                <li><p><span>[memory limit]</span> 1 GB</p></li>
+                <li>
+                    <p><span>[input]</span> array.array.array.char <code>pieces</code></p>
+                    <p>A non-empty array of pieces in the order in which they fall. Each piece is represented as a rectangular matrix, where <code>'#'</code> represents a block and <code>'.'</code> represents an empty cell.</p>
+                    <p>Each piece consists of 4 blocks, and each block shares a common side with at least one another block. It's guaranteed that each piece contains neither empty rows nor empty columns.</p>
+                    <p>Guaranteed constraints:</p>
+                    <ul>
+                        <li>3 ≤ <code>pieces.length</code> ≤ 30,</li>
+                        <li>1 ≤ <code>pieces[i].length</code> ≤ 2,</li>
+                        <li>2 ≤ <code>pieces[i][j].length</code> ≤ 4.</li>
+                    </ul>
+                </li>
+                <li>
+                    <p><span>[output]</span> integer</p>
+                    <p>The number of points you will have by the end of the game.</p>
+                </li>
+            </ul>
+        `
+    },
+    {
+        "topic_id": 31,
+        "order_index": 159,
+        "challenge_name": "Pyraminx Puzzle",
+        "description": `
+            <p>You've mastered the Rubik's Cube and got bored solving it, so now you are looking for a new challenge. One puzzle similar to the Rubik's Cube caught your attention. It's called a Pyraminx puzzle, and is a triangular pyramid-shaped puzzle. The parts are arranged in a pyramidal pattern on each side, while the layers can be rotated with respect to each vertex, and the individual tips can be rotated as well. There are 4 faces on the Pyraminx. The puzzle should be held so that one face faces you and one face faces down, as in the image below. The four corners are then labeled U (for up), R (for right), L (for left), and B (for back). The front face thus contains the U, R, and L corners.</p>
+        
+            <p>Let's write down all possible moves for vertex U in the following notation:</p>
+            <ul>
+                <li><code>U</code> - 120° counterclockwise turn of topmost tip (assuming that we're looking at the pyraminx from the top, and vertex U is the topmost);</li>
+                <li><code>U'</code> - clockwise turn for the same tip;</li>
+                <li><code>u</code> - 120° counterclockwise turn of two upper layers;</li>
+                <li><code>u'</code> - clockwise turn for the same layers.</li>
+            </ul>
+        
+            <p>For other vertices the moves can be described similarly:</p>
+        
+            <p>The first puzzle you bought wasn't assembled, so you get your professional pyraminx solver friend to assemble it. He does, and you wrote down all his moves notated as described above. Now the puzzle's faces have colors <code>faceColors[0]</code> (front face), <code>faceColors[1]</code> (bottom face), <code>faceColors[2]</code> (left face), <code>faceColors[3]</code> (right face). You want to know the initial state of the puzzle to repeat your friend's moves and see how he solved it.</p>
+        
+            <h3>Example</h3>
+            <p>For</p>
+            <pre><code>faceColors = ['R', 'G', 'Y', 'O']</code></pre>
+            <p>and</p>
+            <pre><code>moves = ["B", "b'", "u'", "R"]</code></pre>
+            <p>the output should be:</p>
+            <pre><code>solution(faceColors, moves) = 
+        [['Y', 'Y', 'Y', 'Y', 'R', 'R', 'R', 'R', 'G'],
+         ['G', 'R', 'O', 'O', 'O', 'G', 'G', 'G', 'G'],
+         ['Y', 'O', 'Y', 'G', 'O', 'O', 'G', 'G', 'Y'],
+         ['R', 'O', 'O', 'R', 'O', 'Y', 'Y', 'R', 'R']]</code></pre>
+            <p>Let's repeat the friend's steps in reverse order:</p>
+        
+            <p>Final state:</p>
+            <pre><code>...</code></pre>
+        
+            <p>Before the last move:</p>
+            <pre><code>...</code></pre>
+        
+            <p>One more move before that:</p>
+            <pre><code>...</code></pre>
+        
+            <p>And one more:</p>
+            <pre><code>...</code></pre>
+        
+            <p>Finally, the initial state:</p>
+            <pre><code>...</code></pre>
+        
+            <h3>Input/Output</h3>
+            <ul>
+                <li><p><span>[execution time limit]</span> 4 seconds (js)</p></li>
+                <li><p><span>[memory limit]</span> 1 GB</p></li>
+                <li>
+                    <p><span>[input]</span> array.char <code>faceColors</code></p>
+                    <p>A distinct array of four distinct characters, representing the front, bottom, left and right faces, respectively.</p>
+                    <p>Guaranteed constraints:</p>
+                    <ul>
+                        <li><code>faceColors.length = 4</code>.</li>
+                    </ul>
+                </li>
+                <li>
+                    <p><span>[input]</span> array.string <code>moves</code></p>
+                    <p>Guaranteed constraints:</p>
+                    <ul>
+                        <li><code>1 ≤ moves.length ≤ 100</code>,</li>
+                        <li><code>moves[i] ∈ {"U", "U'", "u", "u'", "L", "L'", "l", "l'", "R", "R'", "r", "r'", "B", "B'", "b", "b'"}</code>.</li>
+                    </ul>
+                </li>
+                <li>
+                    <p><span>[output]</span> array.array.char</p>
+                    <p>Initial state of the puzzle. <code>result[0]</code> should contain 9 characters corresponding to the front face, <code>result[1]</code> - to the bottom face, <code>result[2]</code> - to the left face and <code>result[3]</code> - to the right face.</p>
+                    <p>The colors for each face should be given in top-to-bottom and left-to-right order, starting from the marked vertex (i.e. U, B, L or R), assuming that this vertex is at the top of the puzzle.</p>
+                </li>
+            </ul>
+        `
+    },
+    {
+        "topic_id": 31,
+        "order_index": 160,
+        "challenge_name": "Lines Game",
+        "description": `
+            <p>Let's remember the '90s and play an old-school Lines game with the following rules.</p>
+        
+            <p>The game starts with a 9 × 9 field with several colored balls placed on its cells (there are 7 possible colors but not all colors have to be present initially). The player can move one ball per turn, and they may only move a ball if there is a clear path between the current position of the chosen ball and the desired destination. Clear paths are formed by neighboring empty cells. Two cells are neighboring if they have a common side. The goal is to remove balls by forming lines (horizontal, vertical or diagonal) of at least five balls of the same color. If the player manages to form one or more such lines, the move is called successful, and the balls in those lines disappear. Otherwise, the move is called unsuccessful, and three more balls appear on the field.</p>
+        
+            <p>You are given the game logs, and your task is to calculate the player's final score. Here's the information you have:</p>
+            <ul>
+                <li>The field state at the initial moment;</li>
+                <li>The clicks the user has made. Note that a click does not necessarily result in a move:
+                    <ul>
+                        <li>If the user clicks a ball and then another, the first click is ignored;</li>
+                        <li>If two consecutive clicks result in an incorrect move, they are ignored;</li>
+                    </ul>
+                </li>
+                <li>After each unsuccessful move three more balls appear:
+                    <ul>
+                        <li><code>newBalls</code> contains the balls' colors;</li>
+                        <li><code>newBallsCoordinates</code> contains their coordinates;</li>
+                    </ul>
+                </li>
+                <li>Note that after the balls appear, new lines may form;</li>
+                <li>Whenever new lines appear, they are removed and the player receives <code>A + B - 1</code> points, where:
+                    <ul>
+                        <li><code>A</code> is the number of lines of at least five balls;</li>
+                        <li><code>B</code> is the total number of balls in those lines.</li>
+                    </ul>
+                </li>
+            </ul>
+        
+            <h3>Example</h3>
+            <p>For</p>
+            <pre><code>field = 
+            [['.', 'G', '.', '.', '.', '.', '.', '.', '.'],
+             ['.', '.', '.', '.', '.', '.', '.', 'V', '.'],
+             ['.', 'O', '.', '.', 'O', '.', '.', '.', '.'],
+             ['.', '.', '.', '.', 'O', '.', '.', '.', '.'],
+             ['.', '.', '.', '.', '.', '.', '.', '.', 'O'],
+             ['.', '.', '.', '.', 'O', '.', '.', '.', '.'],
+             ['.', '.', '.', '.', '.', '.', '.', '.', '.'],
+             ['R', '.', '.', '.', '.', '.', '.', 'B', 'R'],
+             ['.', '.', 'C', '.', '.', '.', '.', 'Y', 'O']],
+            </code></pre>
+
+            <pre>
+            <code>clicks = [[4, 8], [2, 1], [4, 4], [6, 4], [4, 8], [1, 2], [1, 4], [4, 8], [6, 4]],</code>
+            <code>newBalls = ['R', 'V', 'C', 'G', 'Y', 'O'],</code>
+            <code>newBallsCoordinates = [[1, 2], [8, 5], [8, 6], [1, 1], [1, 8], [7, 4]]</code>
+            </pre>
+            <p>the output should be:</p>
+            <code>solution(field, clicks, newBalls, newBallsCoordinates) = 6.</code>
+        
+            <p>The only correct moves were:</p>
+            <ul>
+                <li>Orange ball moved from [2, 1] to [4, 4];</li>
+                <li>Red ball moved from [1, 2] to [1, 4];</li>
+                <li>Orange ball moved from [4, 8] to [6, 4]</li>
+            </ul>
+            <p>After the third move a vertical line with 6 orange balls appears, so it is removed and the player receives 1 + 6 - 1 = 6 points.</p>
+        
+            <p>For</p>
+            <pre><code>field = 
+            [['.', '.', '.', '.', '.', '.', '.', '.', '.'],
+             ['.', '.', '.', '.', '.', '.', '.', '.', '.'],
+             ['.', '.', 'O', '.', 'O', '.', 'O', '.', '.'],
+             ['.', '.', '.', 'O', 'O', 'O', '.', '.', '.'],
+             ['.', '.', '.', '.', '.', '.', '.', '.', 'O'],
+             ['.', '.', '.', 'O', 'O', 'O', '.', '.', '.'],
+             ['.', '.', 'O', '.', 'O', '.', 'O', '.', '.'],
+             ['.', '.', '.', '.', '.', '.', '.', '.', '.'],
+             ['.', '.', '.', '.', '.', '.', '.', '.', '.']],
+            </code></pre>
+
+            <pre><code>
+            clicks = [[4, 8], [4, 4]],
+            newBalls = [],
+            newBallsCoordinates = []<code></pre>
+            <p>the output should be:</p>
+            <code>solution(field, clicks, newBalls, newBallsCoordinates) = 17.</code>
+            
+        
+            <p>After the move there will be three lines with exactly 5 balls of the same color, so the answer is 3 + (5 + 5 + 5) - 1 = 17.</p>
+        
+            <h3>Input/Output</h3>
+            <ul>
+                <li><p><span>[execution time limit]</span> 4 seconds (js)</p></li>
+                <li><p><span>[memory limit]</span> 1 GB</p></li>
+                <li>
+                    <p><span>[input]</span> array.array.char <code>field</code></p>
+                    <p>A rectangular matrix, where each element represents either a ball of some color (see above), or an empty cell ('.').</p>
+                    <p>It is guaranteed that initially there are no lines of five or more balls of the same color.</p>
+                    <p>Guaranteed constraints:</p>
+                    <ul>
+                        <li><code>field.length = 9</code>,</li>
+                        <li><code>field[i].length = 9</code>.</li>
+                    </ul>
+                </li>
+                <li>
+                    <p><span>[input]</span> array.array.integer <code>clicks</code></p>
+                    <p>Each element of <code>clicks</code> consists of two integers and represents some cell from fields that was clicked.</p>
+                    <p>Guaranteed constraints:</p>
+                    <ul>
+                        <li><code>2 ≤ clicks.length ≤ 40</code>,</li>
+                        <li><code>0 ≤ clicks[i][j] ≤ 8</code>.</li>
+                    </ul>
+                </li>
+                <li>
+                    <p><span>[input]</span> array.char <code>newBalls</code></p>
+                    <p>A list of colors of new balls to appear on the field after each unsuccessful move.</p>
+                    <p>Guaranteed constraints:</p>
+                    <ul>
+                        <li><code>0 ≤ newBalls.length ≤ 60</code>.</li>
+                    </ul>
+                </li>
+                <li>
+                    <p><span>[input]</span> array.array.integer <code>newBallsCoordinates</code></p>
+                    <p>The <code>i</code>th element represents the coordinates of the <code>i</code>th ball to appear.</p>
+                    <p>Guaranteed constraints:</p>
+                    <ul>
+                        <li><code>newBallsCoordinates.length = newBalls.length</code>,</li>
+                        <li><code>newBallsCoordinates[i].length = 2</code>,</li>
+                        <li><code>0 ≤ newBallsCoordinates[i][j] ≤ 8</code>.</li>
+                    </ul>
+                </li>
+                <li>
+                    <p><span>[output]</span> integer</p>
+                    <p>The player's final score.</p>
+                </li>
+            </ul>
+        `
+    },
+    {
+        "topic_id": 31,
+        "order_index": 161,
+        "challenge_name": "Fractal",
+        "description": `
+            <p>Your task is to draw a special fractal after <code>n</code> iterations. The fractal consists of unit connectors <code>'|'</code> and <code>'_'</code>.</p>
+        
+            <p>For <code>n = 1</code> the fractal looks as follows:</p>
+            <pre><code>_
+    _
+    </code></pre>
+        
+            <p>Now assume that you have already made <code>N</code> iterations and drawn the <code>f(N)</code> fractal. To draw the <code>f(N + 1)</code> fractal do the following:</p>
+            <ul>
+                <li>Note that every fractal has exactly two edge points which can be connected to the edge points of other fractals using the unit connectors.</li>
+                <li>At first, take the <code>f(N)</code> fractal and place it in the top left corner. As the next step, put <code>f(N)</code> rotated by 0°, 90°, 180° or 270° in the remaining 3 quarters - top right, bottom left and bottom right - so that it is possible to connect all four of them by adding exactly 3 unit connectors between the adjacent fractal edge points.</li>
+                <li>Note that there is always exactly one possible combination of rotations which allows to connect all 4 <code>f(N)</code> fractals together.</li>
+            </ul>
+        
+            <h3>Example</h3>
+            <p>For <code>n = 1</code>, the output should be:</p>
+            <pre><code>
+            [[' ', '_', ' '],       
+             [' ', '_', '|']]</code></pre>
+            <p>In other words, it should represent the following picture:</p>
+            <pre><code> _
+     _|</code></pre>
+        
+            <p>For <code>n = 2</code>, the output should be:</p>
+            <pre><code>
+            [[' ', '_', ' ', ' ', ' ', '_', ' '],      
+             [' ', '_', '|', ' ', '|', '_', ' '],                                  
+             ['|', ' ', ' ', '_', ' ', ' ', '|'],                                 
+             ['|', '_', '|', ' ', '|', '_', '|']]</code></pre>
+            <p>Or, to put it differently:</p>
+            <pre><code>  
+     _   _
+     _| |_
+    |  _  |
+    |_| |_|</code></pre>
+        
+            <p>For <code>n = 3</code>, the output should be:</p>
+            <pre><code>
+            [[" ", "_", " ", " ", " ", "_", "_", "_", " ", " ", " ", "_", "_", "_", " "], 
+             [" ", "_", "|", " ", "|", "_", " ", " ", "|", "_", "|", " ", " ", "_", "|"], 
+             ["|", " ", " ", "_", " ", " ", "|", " ", " ", "_", " ", " ", "|", "_", " "], 
+             ["|", "_", "|", " ", "|", "_", "|", " ", "|", " ", "|", "_", "_", "_", "|"], 
+             [" ", "_", " ", " ", " ", "_", " ", " ", "|", " ", " ", "_", "_", "_", " "], 
+             ["|", " ", "|", "_", "|", " ", "|", " ", "|", "_", "|", " ", " ", "_", "|"], 
+             ["|", "_", " ", " ", " ", "_", "|", " ", " ", "_", " ", " ", "|", "_", " "], 
+             [" ", "_", "|", " ", "|", "_", "_", "_", "|", " ", "|", "_", "_", "_", "|"]]</code></pre>
+            <p>The fractal looks as follows:</p>
+            <pre><code>  
+      _   ___   ___ 
+      _| |_  |_|  _|
+     |  _  |  _  |_ 
+     |_| |_| | |___| 
+      _   _  |  ___ 
+     | |_| | |_|  _|
+     |_   _|  _  |_ 
+      _| |___| |___|</code></pre>
+        
+            <h3>Input/Output</h3>
+            <ul>
+                <li><p><span>[execution time limit]</span> 4 seconds (js)</p></li>
+                <li><p><span>[memory limit]</span> 1 GB</p></li>
+                <li>
+                    <p><span>[input]</span> integer <code>n</code></p>
+                    <p>A positive integer.</p>
+                    <p>Guaranteed constraints:</p>
+                    <ul>
+                        <li><code>1 ≤ n ≤ 6</code>.</li>
+                    </ul>
+                </li>
+                <li>
+                    <p><span>[output]</span> array.array.char</p>
+                    <p>Each character can be an underscore ('_'), a vertical bar ('|') or a whitespace character (' ').</p>
+                </li>
+            </ul>
+        `
+    },
+    {
+        "topic_id": 31,
+        "order_index": 162,
+        "challenge_name": "Time ASCII Representation",
+        "description": `
+            <p>John has always liked analog clocks more than digital ones. He's been dreaming about turning his digital clock into an analog one for as long as he can remember, and now he met you, a great programmer, so his dream is about to come true.</p>
+        
+            <p>The screen of his digital clock is a simple 17 × 17 rectangle of pixels. It always shows four digits: the first two stand for hours and the second two for minutes (John's clock uses the 24-hour format). Each digit is located in a 17 × 4 rectangle, with the leftmost column always empty, and the other three columns filled according to this pattern with the proper scaling:</p>
+        
+            <p>After the first two digits there is a separating column containing one symbol ':' at its center.</p>
+        
+            <p>Now John asks you to make his clock show time in the format similar to analog clocks. Here's how: an analog clock can be represented as a circle (the clock's borders) and two segments (the clock's hands). To show it on the 17 × 17 screen, you should light the pixels on it so that the pixel with coordinates (x, y) is enabled if and only if the minimal distance to the circle or one of the segments is less than sqrt(0.5).</p>
+        
+            <p>Please note that for the early prototype you have to develop, both of the clock's hands should have the same length.</p>
+        
+            <h3>Example</h3>
+            <p>For</p>
+            <pre><code>dtime = [
+      ['.', '*', '*', '*', '.', '.', '*', '.', '.', '.', '*', '*', '*', '.', '*', '*', '*'],
+      ['.', '*', '.', '*', '.', '.', '*', '.', '.', '.', '.', '.', '*', '.', '*', '.', '*'],
+      ['.', '*', '.', '*', '.', '.', '*', '.', '.', '.', '.', '.', '*', '.', '*', '.', '*'],
+      ['.', '*', '.', '*', '.', '.', '*', '.', '.', '.', '.', '.', '*', '.', '*', '.', '*'],
+      ['.', '*', '.', '*', '.', '.', '*', '.', '.', '.', '.', '.', '*', '.', '*', '.', '*'],
+      ['.', '*', '.', '*', '.', '.', '*', '.', '.', '.', '.', '.', '*', '.', '*', '.', '*'],
+      ['.', '*', '.', '*', '.', '.', '*', '.', '.', '.', '.', '.', '*', '.', '*', '.', '*'],
+      ['.', '*', '.', '*', '.', '.', '*', '.', '.', '.', '.', '.', '*', '.', '*', '.', '*'],
+      ['.', '*', '.', '*', '.', '.', '*', '.', ':', '.', '*', '*', '*', '.', '*', '.', '*'],
+      ['.', '*', '.', '*', '.', '.', '*', '.', '.', '.', '.', '.', '*', '.', '*', '.', '*'],
+      ['.', '*', '.', '*', '.', '.', '*', '.', '.', '.', '.', '.', '*', '.', '*', '.', '*'],
+      ['.', '*', '.', '*', '.', '.', '*', '.', '.', '.', '.', '.', '*', '.', '*', '.', '*'],
+      ['.', '*', '.', '*', '.', '.', '*', '.', '.', '.', '.', '.', '*', '.', '*', '.', '*'],
+      ['.', '*', '.', '*', '.', '.', '*', '.', '.', '.', '.', '.', '*', '.', '*', '.', '*'],
+      ['.', '*', '.', '*', '.', '.', '*', '.', '.', '.', '.', '.', '*', '.', '*', '.', '*'],
+      ['.', '*', '.', '*', '.', '.', '*', '.', '.', '.', '.', '.', '*', '.', '*', '.', '*'],
+      ['.', '*', '*', '*', '.', '.', '*', '.', '.', '.', '*', '*', '*', '.', '*', '*', '*']
+    ]</code></pre>
+        
+            <p>the output should be</p>
+            <pre><code>solution(dtime) = [
+      ['.', '.', '.', '.', '*', '*', '*', '*', '*', '*', '*', '*', '*', '.', '.', '.', '.'],
+      ['.', '.', '.', '*', '*', '.', '.', '.', '.', '.', '.', '.', '*', '*', '.', '.', '.'],
+      ['.', '.', '*', '*', '.', '.', '.', '.', '.', '.', '.', '.', '.', '*', '*', '.', '.'],
+      ['.', '*', '*', '.', '.', '.', '.', '.', '.', '.', '.', '.', '.', '*', '*', '*', '.'],
+      ['*', '*', '.', '.', '.', '.', '.', '.', '.', '.', '.', '.', '*', '.', '.', '*', '*'],
+      ['*', '.', '.', '.', '.', '.', '.', '.', '.', '.', '.', '*', '.', '.', '.', '.', '*'],
+      ['*', '.', '.', '.', '.', '.', '.', '.', '.', '.', '*', '.', '.', '.', '.', '.', '*'],
+      ['*', '.', '.', '.', '.', '.', '.', '.', '.', '*', '.', '.', '.', '.', '.', '.', '*'],
+      ['*', '.', '.', '.', '.', '.', '.', '.', '*', '.', '.', '.', '.', '.', '.', '.', '*'],
+      ['*', '.', '.', '.', '.', '.', '.', '.', '*', '.', '.', '.', '.', '.', '.', '.', '*'],
+      ['*', '.', '.', '.', '.', '.', '.', '.', '*', '.', '.', '.', '.', '.', '.', '.', '*'],
+      ['*', '.', '.', '.', '.', '.', '.', '.', '*', '.', '.', '.', '.', '.', '.', '.', '*'],
+      ['*', '*', '.', '.', '.', '.', '.', '.', '*', '.', '.', '.', '.', '.', '.', '*', '*'],
+      ['.', '*', '*', '.', '.', '.', '.', '.', '*', '.', '.', '.', '.', '.', '*', '*', '.'],
+      ['.', '.', '*', '*', '.', '.', '.', '.', '*', '.', '.', '.', '.', '*', '*', '.', '.'],
+      ['.', '.', '.', '*', '*', '.', '.', '.', '*', '.', '.', '.', '*', '*', '.', '.', '.'],
+      ['.', '.', '.', '.', '*', '*', '*', '*', '*', '*', '*', '*', '*', '.', '.', '.', '.']
+    ]</code></pre>
+            <p>(Enabled pixels are painted red to make them more visible).</p>
+        
+            <p>Here is the geometrical representation of an analog clock showing time 01:30. Enabled pixels are painted red.</p>
+        
+            <h3>Input/Output</h3>
+            <ul>
+                <li><p><span>[execution time limit]</span> 4 seconds (js)</p></li>
+                <li><p><span>[memory limit]</span> 1 GB</p></li>
+                <li>
+                    <p><span>[input]</span> array.array.char <code>dtime</code></p>
+                    <p>Digital time representation, where <code>dtime[x][y]</code> is equal to <code>'*'</code> if the pixel with coordinates <code>(x, y)</code> is enabled and <code>'.'</code> otherwise. It is guaranteed that the given time is correct, and that <code>dtime[8][8] = ':'</code>.</p>
+                    <p>Guaranteed constraints:</p>
+                    <ul>
+                        <li><code>dtime.length = 17</code>,</li>
+                        <li><code>dtime[i].length = 17</code>.</li>
+                    </ul>
+                </li>
+                <li>
+                    <p><span>[output]</span> array.array.char</p>
+                    <p>Representation of the same time on the same rectangle, but in an analog clock format.</p>
+                </li>
+            </ul>
+        `
+    },
+    
+    
+    
+    
+    
     
     
     
