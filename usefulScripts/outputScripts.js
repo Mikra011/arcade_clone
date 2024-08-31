@@ -216,6 +216,50 @@ if (!data) {
 }
 
 
+/// array of strings -------____________------_____________-----
+
+// Retrieve the data from local storage using the correct key
+const data = JSON.parse(localStorage.getItem('returnValueLog'));
+
+// Check if data was retrieved successfully
+if (!data) {
+    console.error('No data found in local storage under key "returnValueLog".');
+} else {
+    function transformData(data) {
+        return data.map((item, index) => {
+            // Extract the expected output using regex, capturing the content inside the brackets
+            const match = item.match(/expected return value : (\[.*\])/s);
+            let expectedOutput = '';
+
+            if (match) {
+                expectedOutput = match[1]
+                    .replace(/\n\s*/g, '')   // Remove newlines and any leading spaces after them
+                    .replace(/\\"/g, '"');  // Replace escaped quotes with normal quotes
+            }
+
+            // Construct the formatted object string manually
+            return `{
+    "challenge_id": 57,
+    "order_index": ${index + 1},
+    "expected_output": '${expectedOutput}',
+    "is_complex": true,
+    "is_sample": true
+}`;
+        });
+    }
+
+    // Transform the data
+    const transformedData = transformData(data);
+
+    // Construct the array string manually
+    const arrayString = `[
+${transformedData.join(',\n')}
+]`;
+
+    // Print the array string
+    console.log(arrayString);
+}
+
 
 
 

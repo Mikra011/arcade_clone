@@ -4,13 +4,12 @@
 
 /// Array of strings  -------____________------_____________-----
 
-// Define your start ID, input type, and input name
-const startId = 171;
-const inputType = 'arrayOfStrings';  // Changed to 'arrayOfStrings'
-const inputName = 'inputArray';  // Replace with your actual input name
+const startId = 480;
+const inputType = 'arrayOfStrings';
+const inputName = 'names';
 
-// Function to log all objects as a single object
-function logAllObjectsAsSingleObject() {
+// Function to log each object individually in the specified format
+function logAllObjectsIndividually() {
     // Retrieve the data from local storage
     const storedData = localStorage.getItem('paramsLog');
     
@@ -21,7 +20,13 @@ function logAllObjectsAsSingleObject() {
     }
 
     // Parse the data if it's a JSON string
-    const dataArray = JSON.parse(storedData);
+    let dataArray;
+    try {
+        dataArray = JSON.parse(storedData);
+    } catch (e) {
+        console.error('Error parsing JSON data:', e);
+        return;
+    }
     
     // Check if data is an array
     if (!Array.isArray(dataArray)) {
@@ -29,42 +34,35 @@ function logAllObjectsAsSingleObject() {
         return;
     }
 
-    // Create an array to hold all the objects
-    const allObjects = [];
-
     // Iterate over the array and extract information
     dataArray.forEach((item, index) => {
-        // Create an object with the predefined values and extracted input value
-        const testCaseMatch = item.match(/inputArray:\s*\[([^\]]+)\]/);
+        // Assuming 'item' is a string containing JSON-like data
+        const testCaseMatch = item.match(/names:\s*\[([^\]]+)\]/);
         if (testCaseMatch) {
+            // Extract the array part from the matched group
             const inputValueArray = testCaseMatch[1]
                 .split(/\s*,\s*/)
                 .map(s => s.replace(/["\s]/g, '')); // Clean up the strings
-            
-            // Convert the array to a JSON string representation
-            let inputValueString = JSON.stringify(inputValueArray);
-            
-            // Replace double quotes with single quotes inside the string
-            inputValueString = inputValueString.replace(/"/g, "'");
-            
-            // Add the constructed object to the array
-            allObjects.push({
-                test_id: startId + index,
-                input_type: inputType,
-                input_name: inputName,
-                input_value: inputValueString,
-            });
+
+            // Convert the array to a string with single quotes for the entire array
+            const inputValueString = `'["${inputValueArray.join('","')}"]'`;
+
+            // Manually format and log each object to match the exact desired output
+            const objString = `{
+    "test_id": ${startId + index},
+    "input_type": "${inputType}",
+    "input_name": "${inputName}",
+    "input_value": ${inputValueString}
+}`;
+            console.log(objString);
         } else {
-            console.warn(`No 'inputArray' key found in item ${index + 1}`);
+            console.warn(`No 'names' key found in item ${index + 1}`);
         }
     });
-
-    // Log the array of objects as a single object
-    console.log({ allObjects });
 }
 
-// Call the function to log all objects
-logAllObjectsAsSingleObject();
+// Call the function to log each object individually
+logAllObjectsIndividually();
 
 
 
@@ -170,7 +168,7 @@ logAllObjectsAsSingleObject();
 
 const startId = 464;  // Starting ID
 const inputType = 'matrix';  // Define your input type
-const inputName = 'matrix';  // Define your input name
+const inputName = 'grid';  // Define your input name
 
 function logAllObjectsAsSingleObject() {
     const storedData = localStorage.getItem('paramsLog');
@@ -188,8 +186,8 @@ function logAllObjectsAsSingleObject() {
     const allObjects = [];
 
     dataArray.forEach((item, index) => {
-        // Extract 2D array from the 'matrix' key
-        const arrayMatch = item.match(/matrix:\s*\[\[([\s\S]*?)\]\]/);
+        // Extract 2D array from the 'grid' key
+        const arrayMatch = item.match(/grid:\s*\[\[([\s\S]*?)\]\]/);
         if (arrayMatch) {
             // Clean and format the 2D array
             const cleanedArray = arrayMatch[1]
@@ -211,7 +209,7 @@ function logAllObjectsAsSingleObject() {
                 input_value: formattedArray,
             });
         } else {
-            console.warn(`No 'matrix' key found in item ${index + 1}`);
+            console.warn(`No 'grid' key found in item ${index + 1}`);
         }
     });
 

@@ -2390,66 +2390,292 @@ const tests = [
         "expected_output": "26",
         "is_complex": false,
         "is_sample": true
-      },
-      {
+    },
+    {
         "challenge_id": 56,
         "order_index": 2,
         "expected_output": "-1",
         "is_complex": false,
         "is_sample": true
-      },
-      {
+    },
+    {
         "challenge_id": 56,
         "order_index": 3,
         "expected_output": "2559",
         "is_complex": false,
         "is_sample": true
-      },
-      {
+    },
+    {
         "challenge_id": 56,
         "order_index": 4,
         "expected_output": "10",
         "is_complex": false,
         "is_sample": true
-      },
-      {
+    },
+    {
         "challenge_id": 56,
         "order_index": 5,
         "expected_output": "-1",
         "is_complex": false,
         "is_sample": true
-      },
-      {
+    },
+    {
         "challenge_id": 56,
         "order_index": 6,
         "expected_output": "1",
         "is_complex": false,
         "is_sample": true
-      },
-      {
+    },
+    {
         "challenge_id": 56,
         "order_index": 7,
         "expected_output": "399",
         "is_complex": false,
         "is_sample": true
-      },
-      {
+    },
+    {
         "challenge_id": 56,
         "order_index": 8,
         "expected_output": "889",
         "is_complex": false,
         "is_sample": true
-      },
-      {
+    },
+    {
         "challenge_id": 56,
         "order_index": 9,
         "expected_output": "589",
         "is_complex": false,
         "is_sample": true
-      },
+    },
 
-      // File Naming
-      
+    // File Naming
+    {
+        "challenge_id": 57,
+        "order_index": 1,
+        "expected_output": '["doc", "doc(1)", "image", "doc(1)(1)", "doc(2)"]',
+        "is_complex": true,
+        "is_sample": true
+    },
+    {
+        "challenge_id": 57,
+        "order_index": 2,
+        "expected_output": '["a(1)", "a(6)", "a", "a(2)", "a(3)", "a(4)", "a(5)", "a(7)", "a(8)", "a(9)", "a(10)", "a(11)"]',
+        "is_complex": true,
+        "is_sample": true
+    },
+    {
+        "challenge_id": 57,
+        "order_index": 3,
+        "expected_output": '["dd", "dd(1)", "dd(2)", "dd(3)", "dd(1)(1)", "dd(1)(2)", "dd(1)(1)(1)", "dd(4)", "dd(1)(3)"]',
+        "is_complex": true,
+        "is_sample": true
+    },
+    {
+        "challenge_id": 57,
+        "order_index": 4,
+        "expected_output": '["name", "name(1)", "name(1)(1)", "name(3)", "name(2)", "name(2)(1)"]',
+        "is_complex": true,
+        "is_sample": true
+    },
+    {
+        "challenge_id": 57,
+        "order_index": 5,
+        "expected_output": '[]',
+        "is_complex": true,
+        "is_sample": true
+    },
+
+    // messageFromBinaryCode
+
+    {
+        "challenge_id": 58,
+        "order_index": 1,
+        "expected_output": "Hello!",
+        "is_complex": false,
+        "is_sample": true
+    },
+    {
+        "challenge_id": 58,
+        "order_index": 2,
+        "expected_output": "May the Force be with you",
+        "is_complex": false,
+        "is_sample": true
+    },
+    {
+        "challenge_id": 58,
+        "order_index": 3,
+        "expected_output": "You had me at `hello.",
+        "is_complex": false,
+        "is_sample": true
+    },
+    {
+        "challenge_id": 58,
+        "order_index": 4,
+        "expected_output": "Elementary, my dear Watson!",
+        "is_complex": false,
+        "is_sample": true
+    },
+    {
+        "challenge_id": 58,
+        "order_index": 5,
+        "expected_output": "Love For All, Hatred For None.",
+        "is_complex": false,
+        "is_sample": true
+    },
+    {
+        "challenge_id": 58,
+        "order_index": 6,
+        "expected_output": "Change the world by being yourself.",
+        "is_complex": false,
+        "is_sample": true
+    },
+    {
+        "challenge_id": 58,
+        "order_index": 7,
+        "expected_output": "Every moment is a fresh beginning.",
+        "is_complex": false,
+        "is_sample": true
+    },
+    {
+        "challenge_id": 58,
+        "order_index": 8,
+        "expected_output": "Never regret anything that made you smile.",
+        "is_complex": false,
+        "is_sample": true
+    },
+    {
+        "challenge_id": 58,
+        "order_index": 9,
+        "expected_output": "Die with memories, not dreams.",
+        "is_complex": false,
+        "is_sample": true
+    },
+    {
+        "challenge_id": 58,
+        "order_index": 10,
+        "expected_output": "Aspire to inspire before we expire.",
+        "is_complex": false,
+        "is_sample": true
+    },
+
+    // spiralNumbers
+    {
+        "challenge_id": 59,
+        "order_index": 1,
+        "expected_output": "[[1,2,3],  [8,9,4],  [7,6,5]]",
+        "is_complex": true,
+        "is_sample": true
+    },
+    {
+        "challenge_id": 59,
+        "order_index": 2,
+        "expected_output": "[[1,2,3,4,5],  [16,17,18,19,6],  [15,24,25,20,7],  [14,23,22,21,8],  [13,12,11,10,9]]",
+        "is_complex": true,
+        "is_sample": true
+    },
+    {
+        "challenge_id": 59,
+        "order_index": 3,
+        "expected_output": "[[1,2,3,4,5,6],  [20,21,22,23,24,7],  [19,32,33,34,25,8],  [18,31,36,35,26,9],  [17,30,29,28,27,10],  [16,15,14,13,12,11]]",
+        "is_complex": true,
+        "is_sample": true
+    },
+    {
+        "challenge_id": 59,
+        "order_index": 4,
+        "expected_output": "[[1,2,3,4,5,6,7],  [24,25,26,27,28,29,8],  [23,40,41,42,43,30,9],  [22,39,48,49,44,31,10],  [21,38,47,46,45,32,11],  [20,37,36,35,34,33,12],  [19,18,17,16,15,14,13]]",
+        "is_complex": true,
+        "is_sample": true
+    },
+    {
+        "challenge_id": 59,
+        "order_index": 5,
+        "expected_output": "[[1,2,3,4,5,6,7,8,9,10],  [36,37,38,39,40,41,42,43,44,11],  [35,64,65,66,67,68,69,70,45,12],  [34,63,84,85,86,87,88,71,46,13],  [33,62,83,96,97,98,89,72,47,14],  [32,61,82,95,100,99,90,73,48,15],  [31,60,81,94,93,92,91,74,49,16],  [30,59,80,79,78,77,76,75,50,17],  [29,58,57,56,55,54,53,52,51,18],  [28,27,26,25,24,23,22,21,20,19]]",
+        "is_complex": true,
+        "is_sample": true
+    },
+
+    // Sudoku
+    {
+        "challenge_id": 60,
+        "order_index": 1,
+        "expected_output": "true",
+        "is_complex": false,
+        "is_sample": true
+    },
+    {
+        "challenge_id": 60,
+        "order_index": 2,
+        "expected_output": "false",
+        "is_complex": false,
+        "is_sample": true
+    },
+    {
+        "challenge_id": 60,
+        "order_index": 3,
+        "expected_output": "false",
+        "is_complex": false,
+        "is_sample": true
+    },
+    {
+        "challenge_id": 60,
+        "order_index": 4,
+        "expected_output": "false",
+        "is_complex": false,
+        "is_sample": true
+    },
+    {
+        "challenge_id": 60,
+        "order_index": 5,
+        "expected_output": "false",
+        "is_complex": false,
+        "is_sample": true
+    },
+    {
+        "challenge_id": 60,
+        "order_index": 6,
+        "expected_output": "false",
+        "is_complex": false,
+        "is_sample": true
+    },
+    {
+        "challenge_id": 60,
+        "order_index": 7,
+        "expected_output": "false",
+        "is_complex": false,
+        "is_sample": true
+    },
+    {
+        "challenge_id": 60,
+        "order_index": 8,
+        "expected_output": "false",
+        "is_complex": false,
+        "is_sample": true
+    },
+    {
+        "challenge_id": 60,
+        "order_index": 9,
+        "expected_output": "false",
+        "is_complex": false,
+        "is_sample": true
+    },
+    {
+        "challenge_id": 60,
+        "order_index": 10,
+        "expected_output": "false",
+        "is_complex": false,
+        "is_sample": true
+    },
+    {
+        "challenge_id": 60,
+        "order_index": 11,
+        "expected_output": "false",
+        "is_complex": false,
+        "is_sample": true
+    },
+
+    // 
+
 
 
 ]

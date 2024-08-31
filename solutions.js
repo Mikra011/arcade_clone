@@ -1017,8 +1017,110 @@ function solution(names) {
     return result;
 }
 
-// 58: 
+// 58: messageFromBinaryCode
+function solution(code) {
+    let message = '';
+    
+    // Iterate over the binary string in chunks of 8 bits
+    for (let i = 0; i < code.length; i += 8) {
+        // Extract the 8-bit chunk
+        let binaryChunk = code.substring(i, i + 8);
+        
+        // Convert binary to decimal
+        let decimalValue = parseInt(binaryChunk, 2);
+        
+        // Convert decimal to character
+        let character = String.fromCharCode(decimalValue);
+        
+        // Append the character to the message
+        message += character;
+    }
+    
+    return message;
+}
 
+// 59: spiralNumbers
+function solution(n) {
+    // Initialize the NxN matrix with zeros
+    const matrix = Array.from({ length: n }, () => Array(n).fill(0));
+    
+    // Define the boundaries
+    let top = 0, bottom = n - 1, left = 0, right = n - 1;
+    let num = 1; // Start filling from 1
+    
+    while (top <= bottom && left <= right) {
+        // Traverse from left to right along the top row
+        for (let i = left; i <= right; i++) {
+            matrix[top][i] = num++;
+        }
+        top++; // Move the top boundary down
+        
+        // Traverse from top to bottom along the right column
+        for (let i = top; i <= bottom; i++) {
+            matrix[i][right] = num++;
+        }
+        right--; // Move the right boundary left
+        
+        // Traverse from right to left along the bottom row (if there are rows left)
+        if (top <= bottom) {
+            for (let i = right; i >= left; i--) {
+                matrix[bottom][i] = num++;
+            }
+            bottom--; // Move the bottom boundary up
+        }
+        
+        // Traverse from bottom to top along the left column (if there are columns left)
+        if (left <= right) {
+            for (let i = bottom; i >= top; i--) {
+                matrix[i][left] = num++;
+            }
+            left++; // Move the left boundary right
+        }
+    }
+    
+    return matrix;
+}
+
+// 60: Sudoku
+function solution(grid) {
+    const isValidSet = (set) => set.size === 9 && ![...set].some(n => n < 1 || n > 9);
+
+    // Check all rows
+    for (let i = 0; i < 9; i++) {
+        const rowSet = new Set(grid[i]);
+        if (!isValidSet(rowSet)) {
+            return false;
+        }
+    }
+
+    // Check all columns
+    for (let j = 0; j < 9; j++) {
+        const colSet = new Set();
+        for (let i = 0; i < 9; i++) {
+            colSet.add(grid[i][j]);
+        }
+        if (!isValidSet(colSet)) {
+            return false;
+        }
+    }
+
+    // Check all 3x3 sub-grids
+    for (let row = 0; row < 9; row += 3) {
+        for (let col = 0; col < 9; col += 3) {
+            const subGridSet = new Set();
+            for (let i = row; i < row + 3; i++) {
+                for (let j = col; j < col + 3; j++) {
+                    subGridSet.add(grid[i][j]);
+                }
+            }
+            if (!isValidSet(subGridSet)) {
+                return false;
+            }
+        }
+    }
+
+    return true;
+}
 
 
 //// __________________________________The Core_______________________________ ////
