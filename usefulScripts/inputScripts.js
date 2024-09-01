@@ -71,7 +71,7 @@ logAllObjectsIndividually();
 
 const startId = 171;  // Starting ID
 const inputType = 'arrayOfIntegers';  // Define your input type
-const inputName = 'inputArray';  // Define your input name
+const inputName = 'a';  // Define your input name
 
 function logAllObjectsAsSingleObject() {
     const storedData = localStorage.getItem('paramsLog');
@@ -89,8 +89,8 @@ function logAllObjectsAsSingleObject() {
     const allObjects = [];
 
     dataArray.forEach((item, index) => {
-        // Extract integers from the 'inputArray' key
-        const valuesMatch = item.match(/inputArray:\s*\[([^\]]+)\]/);
+        // Extract integers from the 'a' key
+        const valuesMatch = item.match(/a:\s*\[([^\]]+)\]/);
         if (valuesMatch) {
             const inputValueArray = valuesMatch[1]
                 .split(/\s*,\s*/)
@@ -106,7 +106,7 @@ function logAllObjectsAsSingleObject() {
                 input_value: formattedInputValue, // Use the formatted string
             });
         } else {
-            console.warn(`No 'inputArray' key found in item ${index + 1}`);
+            console.warn(`No 'a' key found in item ${index + 1}`);
         }
     });
 
@@ -121,47 +121,76 @@ logAllObjectsAsSingleObject();
 
 /// strings  -------____________------_____________-----
 
-const startId = 200;  // Starting ID
-const inputType = 'string';  // Define your input type
-const inputName = 'inputString';  // Define your input inputString
+// Define your start ID and input type
+const startId = 711;  // Starting ID
+const inputType = 'string';  // Replace with your actual input type
 
+// Function to log all objects as a single object
 function logAllObjectsAsSingleObject() {
+    // Retrieve the data from local storage
     const storedData = localStorage.getItem('paramsLog');
+    
+    // Check if data exists
     if (!storedData) {
         console.error('No data found in local storage.');
         return;
     }
 
-    const dataArray = JSON.parse(storedData);
-    if (!Array.isArray(dataArray)) {
-        console.error('Data format is incorrect.');
+    // Parse the data if it's a JSON string
+    let dataArray;
+    try {
+        dataArray = JSON.parse(storedData);
+    } catch (e) {
+        console.error('Failed to parse JSON data:', e);
         return;
     }
 
+    // Check if data is an array
+    if (!Array.isArray(dataArray)) {
+        console.error('Data format is incorrect. Expected an array.');
+        return;
+    }
+
+    // Create an array to hold all the objects
     const allObjects = [];
 
-    dataArray.forEach((item, index) => {
-        // Extract string value from the 'inputString' key
-        const stringMatch = item.match(/inputString:\s*"([^"]+)"/);
-        if (stringMatch) {
-            const inputValue = stringMatch[1];
+    // Regular expression to match key-value pairs with optional quotes
+    const keyValuePattern = /(\w+):\s*["']([^"']*)["']/g;
 
+    // Iterate over the array and extract information
+    dataArray.forEach((item, index) => {
+        console.log(`Processing item ${index + 1}: ${item}`); // Debugging: Log each item
+        
+        let match;
+        let foundAny = false;
+
+        while ((match = keyValuePattern.exec(item)) !== null) {
+            const key = match[1];        // Extracted key
+            const value = match[2];      // Extracted value
+
+            // Add the constructed object to the array
             allObjects.push({
                 test_id: startId + index,
                 input_type: inputType,
-                input_name: inputName,
-                input_value: inputValue, // Directly use the value without additional quotes
+                input_name: key,
+                input_value: value,
             });
-        } else {
-            console.warn(`No 'inputString' key found in item ${index + 1}`);
+
+            foundAny = true;
+        }
+
+        if (!foundAny) {
+            console.warn(`No valid key-value pairs found in item ${index + 1}`);
         }
     });
 
+    // Log the array of objects as a single object
     console.log({ allObjects });
 }
 
 // Call the function to log all objects
 logAllObjectsAsSingleObject();
+
 
 
 /// matrix integers  -------____________------_____________-----
@@ -488,4 +517,77 @@ logAllObjectsAsSingleObject();
 
 
 
+/// nums + strings + booleans(not tested yet) + arr of ingeres
 
+const startId = 776;  // Define your starting ID
+
+// Define your input types and their corresponding regex patterns
+const inputTypes = {
+    number: /(\w+):\s*(\d+)/g,
+    string: /(\w+):\s*"([^"]*)"/g,
+    boolean: /(\w+):\s*(true|false)/g,      // Example pattern for booleans
+    arrayOfIntegers: /(\w+):\s*\[([^\]]+)\]/g,  // Pattern to match arrayOfIntegers and capture the key
+    // Add more types and patterns as needed
+};
+
+// Function to log all objects as a single object
+function logAllObjectsAsSingleObject(startId) {
+    // Retrieve the data from local storage
+    const storedData = localStorage.getItem('paramsLog');
+    
+    // Check if data exists
+    if (!storedData) {
+        console.error('No data found in local storage.');
+        return;
+    }
+
+    // Parse the data if it's a JSON string
+    const dataArray = JSON.parse(storedData);
+    
+    // Check if data is an array
+    if (!Array.isArray(dataArray)) {
+        console.error('Data format is incorrect.');
+        return;
+    }
+
+    // Create an array to hold all the objects
+    const allObjects = [];
+
+    // Iterate over the array and extract information
+    dataArray.forEach((item, index) => {
+        Object.keys(inputTypes).forEach(inputType => {
+            const regex = inputTypes[inputType];
+            let match;
+            while ((match = regex.exec(item)) !== null) {
+                const [fullMatch, key, value] = match;
+
+                let inputValue;
+                if (inputType === 'arrayOfIntegers') {
+                    // Special handling for arrayOfIntegers
+                    const inputValueArray = value.split(/\s*,\s*/).map(s => parseInt(s, 10)); // Convert to integers
+                    inputValue = `[${inputValueArray.join(', ')}]`; // Convert array to string with spaces after commas
+                } else {
+                    inputValue = value.trim();
+                }
+
+                // Add the constructed object to the array
+                allObjects.push({
+                    test_id: startId + index,
+                    input_type: inputType,
+                    input_name: key.trim(),  // Use the extracted key as input_name
+                    input_value: inputValue,
+                });
+            }
+        });
+
+        if (allObjects.length === 0) {
+            console.warn(`No valid key-value pairs found in item ${index + 1}`);
+        }
+    });
+
+    // Log the array of objects as a single object
+    console.log({ allObjects });
+}
+
+// Call the function to log all objects
+logAllObjectsAsSingleObject(startId);

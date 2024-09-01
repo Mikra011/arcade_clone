@@ -87,7 +87,11 @@ const runCode = async (req, res) => {
                 test_id,
                 passed: false,
                 expected_output,
-                error: error.message,
+                error: {
+                    message: error.message, 
+                    stack: error.stack,     
+                    name: error.name,       
+                }
             }
         }
     })

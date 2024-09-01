@@ -3953,8 +3953,1044 @@ const tests = [
         "is_sample": true
     },
 
-    // 
+    // Least Factorial
+    {
+        "challenge_id": 85,
+        "order_index": 1,
+        "expected_output": "24",
+        "is_complex": false,
+        "is_sample": true
+    },
+    {
+        "challenge_id": 85,
+        "order_index": 2,
+        "expected_output": "1",
+        "is_complex": false,
+        "is_sample": true
+    },
+    {
+        "challenge_id": 85,
+        "order_index": 3,
+        "expected_output": "6",
+        "is_complex": false,
+        "is_sample": true
+    },
+    {
+        "challenge_id": 85,
+        "order_index": 4,
+        "expected_output": "120",
+        "is_complex": false,
+        "is_sample": true
+    },
+    {
+        "challenge_id": 85,
+        "order_index": 5,
+        "expected_output": "24",
+        "is_complex": false,
+        "is_sample": true
+    },
+    {
+        "challenge_id": 85,
+        "order_index": 6,
+        "expected_output": "120",
+        "is_complex": false,
+        "is_sample": true
+    },
+    {
+        "challenge_id": 85,
+        "order_index": 7,
+        "expected_output": "120",
+        "is_complex": false,
+        "is_sample": true
+    },
+    {
+        "challenge_id": 85,
+        "order_index": 8,
+        "expected_output": "24",
+        "is_complex": false,
+        "is_sample": true
+    },
+    {
+        "challenge_id": 85,
+        "order_index": 9,
+        "expected_output": "120",
+        "is_complex": false,
+        "is_sample": true
+    },
+    {
+        "challenge_id": 85,
+        "order_index": 10,
+        "expected_output": "24",
+        "is_complex": false,
+        "is_sample": true
+    },
 
+    // Count Sum of Two Representations 2
+    {
+        "challenge_id": 86,
+        "order_index": 1,
+        "expected_output": "2",
+        "is_complex": false,
+        "is_sample": true
+    },
+    {
+        "challenge_id": 86,
+        "order_index": 2,
+        "expected_output": "1",
+        "is_complex": false,
+        "is_sample": true
+    },
+    {
+        "challenge_id": 86,
+        "order_index": 3,
+        "expected_output": "0",
+        "is_complex": false,
+        "is_sample": true
+    },
+    {
+        "challenge_id": 86,
+        "order_index": 4,
+        "expected_output": "5",
+        "is_complex": false,
+        "is_sample": true
+    },
+    {
+        "challenge_id": 86,
+        "order_index": 5,
+        "expected_output": "1",
+        "is_complex": false,
+        "is_sample": true
+    },
+    {
+        "challenge_id": 86,
+        "order_index": 6,
+        "expected_output": "12",
+        "is_complex": false,
+        "is_sample": true
+    },
+
+    // Magical Well
+    {
+        "challenge_id": 87,
+        "order_index": 1,
+        "expected_output": "8",
+        "is_complex": false,
+        "is_sample": true
+    },
+    {
+        "challenge_id": 87,
+        "order_index": 2,
+        "expected_output": "1",
+        "is_complex": false,
+        "is_sample": true
+    },
+    {
+        "challenge_id": 87,
+        "order_index": 3,
+        "expected_output": "128",
+        "is_complex": false,
+        "is_sample": true
+    },
+    {
+        "challenge_id": 87,
+        "order_index": 4,
+        "expected_output": "0",
+        "is_complex": false,
+        "is_sample": true
+    },
+    {
+        "challenge_id": 87,
+        "order_index": 5,
+        "expected_output": "0",
+        "is_complex": false,
+        "is_sample": true
+    },
+    {
+        "challenge_id": 87,
+        "order_index": 6,
+        "expected_output": "17800540",
+        "is_complex": false,
+        "is_sample": true
+    },
+    {
+        "challenge_id": 87,
+        "order_index": 7,
+        "expected_output": "110113",
+        "is_complex": false,
+        "is_sample": true
+    },
+    {
+        "challenge_id": 87,
+        "order_index": 8,
+        "expected_output": "0",
+        "is_complex": false,
+        "is_sample": true
+    },
+    {
+        "challenge_id": 87,
+        "order_index": 9,
+        "expected_output": "3060400",
+        "is_complex": false,
+        "is_sample": true
+    },
+    {
+        "challenge_id": 87,
+        "order_index": 10,
+        "expected_output": "924738",
+        "is_complex": false,
+        "is_sample": true
+    },
+
+    // Lineup
+    {
+        "challenge_id": 88,
+        "order_index": 1,
+        "expected_output": "3",
+        "is_complex": false,
+        "is_sample": true
+    },
+    {
+        "challenge_id": 88,
+        "order_index": 2,
+        "expected_output": "1",
+        "is_complex": false,
+        "is_sample": true
+    },
+    {
+        "challenge_id": 88,
+        "order_index": 3,
+        "expected_output": "0",
+        "is_complex": false,
+        "is_sample": true
+    },
+    {
+        "challenge_id": 88,
+        "order_index": 4,
+        "expected_output": "0",
+        "is_complex": false,
+        "is_sample": true
+    },
+    {
+        "challenge_id": 88,
+        "order_index": 5,
+        "expected_output": "1",
+        "is_complex": false,
+        "is_sample": true
+    },
+    {
+        "challenge_id": 88,
+        "order_index": 6,
+        "expected_output": "15",
+        "is_complex": false,
+        "is_sample": true
+    },
+    {
+        "challenge_id": 88,
+        "order_index": 7,
+        "expected_output": "16",
+        "is_complex": false,
+        "is_sample": true
+    },
+    {
+        "challenge_id": 88,
+        "order_index": 8,
+        "expected_output": "5",
+        "is_complex": false,
+        "is_sample": true
+    },
+
+    // Addition Without Carrying
+    {
+        "challenge_id": 89,
+        "order_index": 1,
+        "expected_output": "1180",
+        "is_complex": false,
+        "is_sample": true
+    },
+    {
+        "challenge_id": 89,
+        "order_index": 2,
+        "expected_output": "99999",
+        "is_complex": false,
+        "is_sample": true
+    },
+    {
+        "challenge_id": 89,
+        "order_index": 3,
+        "expected_output": "888",
+        "is_complex": false,
+        "is_sample": true
+    },
+    {
+        "challenge_id": 89,
+        "order_index": 4,
+        "expected_output": "0",
+        "is_complex": false,
+        "is_sample": true
+    },
+    {
+        "challenge_id": 89,
+        "order_index": 5,
+        "expected_output": "8642",
+        "is_complex": false,
+        "is_sample": true
+    },
+    {
+        "challenge_id": 89,
+        "order_index": 6,
+        "expected_output": "0",
+        "is_complex": false,
+        "is_sample": true
+    },
+
+    // Apple Boxes
+    {
+        "challenge_id": 90,
+        "order_index": 1,
+        "expected_output": "-15",
+        "is_complex": false,
+        "is_sample": true
+    },
+    {
+        "challenge_id": 90,
+        "order_index": 2,
+        "expected_output": "-120",
+        "is_complex": false,
+        "is_sample": true
+    },
+    {
+        "challenge_id": 90,
+        "order_index": 3,
+        "expected_output": "666",
+        "is_complex": false,
+        "is_sample": true
+    },
+    {
+        "challenge_id": 90,
+        "order_index": 4,
+        "expected_output": "-1",
+        "is_complex": false,
+        "is_sample": true
+    },
+    {
+        "challenge_id": 90,
+        "order_index": 5,
+        "expected_output": "105",
+        "is_complex": false,
+        "is_sample": true
+    },
+    {
+        "challenge_id": 90,
+        "order_index": 6,
+        "expected_output": "78",
+        "is_complex": false,
+        "is_sample": true
+    },
+    {
+        "challenge_id": 90,
+        "order_index": 7,
+        "expected_output": "-45",
+        "is_complex": false,
+        "is_sample": true
+    },
+    {
+        "challenge_id": 90,
+        "order_index": 8,
+        "expected_output": "820",
+        "is_complex": false,
+        "is_sample": true
+    },
+    {
+        "challenge_id": 90,
+        "order_index": 9,
+        "expected_output": "-703",
+        "is_complex": false,
+        "is_sample": true
+    },
+
+    // Increase Number Roundness
+    {
+        "challenge_id": 91,
+        "order_index": 1,
+        "expected_output": "true",
+        "is_complex": false,
+        "is_sample": true
+    },
+    {
+        "challenge_id": 91,
+        "order_index": 2,
+        "expected_output": "false",
+        "is_complex": false,
+        "is_sample": true
+    },
+    {
+        "challenge_id": 91,
+        "order_index": 3,
+        "expected_output": "true",
+        "is_complex": false,
+        "is_sample": true
+    },
+    {
+        "challenge_id": 91,
+        "order_index": 4,
+        "expected_output": "true",
+        "is_complex": false,
+        "is_sample": true
+    },
+    {
+        "challenge_id": 91,
+        "order_index": 5,
+        "expected_output": "true",
+        "is_complex": false,
+        "is_sample": true
+    },
+    {
+        "challenge_id": 91,
+        "order_index": 6,
+        "expected_output": "false",
+        "is_complex": false,
+        "is_sample": true
+    },
+    {
+        "challenge_id": 91,
+        "order_index": 7,
+        "expected_output": "false",
+        "is_complex": false,
+        "is_sample": true
+    },
+    {
+        "challenge_id": 91,
+        "order_index": 8,
+        "expected_output": "false",
+        "is_complex": false,
+        "is_sample": true
+    },
+    {
+        "challenge_id": 91,
+        "order_index": 9,
+        "expected_output": "false",
+        "is_complex": false,
+        "is_sample": true
+    },
+    {
+        "challenge_id": 91,
+        "order_index": 10,
+        "expected_output": "true",
+        "is_complex": false,
+        "is_sample": true
+    },
+
+    // Rounders
+    {
+        "challenge_id": 92,
+        "order_index": 1,
+        "expected_output": "20",
+        "is_complex": false,
+        "is_sample": true
+    },
+    {
+        "challenge_id": 92,
+        "order_index": 2,
+        "expected_output": "1000",
+        "is_complex": false,
+        "is_sample": true
+    },
+    {
+        "challenge_id": 92,
+        "order_index": 3,
+        "expected_output": "2000",
+        "is_complex": false,
+        "is_sample": true
+    },
+    {
+        "challenge_id": 92,
+        "order_index": 4,
+        "expected_output": "10",
+        "is_complex": false,
+        "is_sample": true
+    },
+    {
+        "challenge_id": 92,
+        "order_index": 5,
+        "expected_output": "10",
+        "is_complex": false,
+        "is_sample": true
+    },
+    {
+        "challenge_id": 92,
+        "order_index": 6,
+        "expected_output": "7000",
+        "is_complex": false,
+        "is_sample": true
+    },
+    {
+        "challenge_id": 92,
+        "order_index": 7,
+        "expected_output": "100",
+        "is_complex": false,
+        "is_sample": true
+    },
+
+    // Candles 
+    {
+        "challenge_id": 93,
+        "order_index": 1,
+        "expected_output": "9",
+        "is_complex": false,
+        "is_sample": true
+    },
+    {
+        "challenge_id": 93,
+        "order_index": 2,
+        "expected_output": "1",
+        "is_complex": false,
+        "is_sample": true
+    },
+    {
+        "challenge_id": 93,
+        "order_index": 3,
+        "expected_output": "4",
+        "is_complex": false,
+        "is_sample": true
+    },
+    {
+        "challenge_id": 93,
+        "order_index": 4,
+        "expected_output": "16",
+        "is_complex": false,
+        "is_sample": true
+    },
+    {
+        "challenge_id": 93,
+        "order_index": 5,
+        "expected_output": "18",
+        "is_complex": false,
+        "is_sample": true
+    },
+    {
+        "challenge_id": 93,
+        "order_index": 6,
+        "expected_output": "20",
+        "is_complex": false,
+        "is_sample": true
+    },
+    {
+        "challenge_id": 93,
+        "order_index": 7,
+        "expected_output": "23",
+        "is_complex": false,
+        "is_sample": true
+    },
+    {
+        "challenge_id": 93,
+        "order_index": 8,
+        "expected_output": "7",
+        "is_complex": false,
+        "is_sample": true
+    },
+    {
+        "challenge_id": 93,
+        "order_index": 9,
+        "expected_output": "16",
+        "is_complex": false,
+        "is_sample": true
+    },
+    {
+        "challenge_id": 93,
+        "order_index": 10,
+        "expected_output": "2",
+        "is_complex": false,
+        "is_sample": true
+    },
+
+    // Count Black Cells
+    {
+        "challenge_id": 94,
+        "order_index": 1,
+        "expected_output": "6",
+        "is_complex": false,
+        "is_sample": true
+    },
+    {
+        "challenge_id": 94,
+        "order_index": 2,
+        "expected_output": "7",
+        "is_complex": false,
+        "is_sample": true
+    },
+    {
+        "challenge_id": 94,
+        "order_index": 3,
+        "expected_output": "6",
+        "is_complex": false,
+        "is_sample": true
+    },
+    {
+        "challenge_id": 94,
+        "order_index": 4,
+        "expected_output": "1",
+        "is_complex": false,
+        "is_sample": true
+    },
+    {
+        "challenge_id": 94,
+        "order_index": 5,
+        "expected_output": "2",
+        "is_complex": false,
+        "is_sample": true
+    },
+    {
+        "challenge_id": 94,
+        "order_index": 6,
+        "expected_output": "3",
+        "is_complex": false,
+        "is_sample": true
+    },
+    {
+        "challenge_id": 94,
+        "order_index": 7,
+        "expected_output": "239",
+        "is_complex": false,
+        "is_sample": true
+    },
+    {
+        "challenge_id": 94,
+        "order_index": 8,
+        "expected_output": "86",
+        "is_complex": false,
+        "is_sample": true
+    },
+    {
+        "challenge_id": 94,
+        "order_index": 9,
+        "expected_output": "30",
+        "is_complex": false,
+        "is_sample": true
+    },
+    {
+        "challenge_id": 94,
+        "order_index": 10,
+        "expected_output": "177774",
+        "is_complex": false,
+        "is_sample": true
+    },
+
+    // Create Array
+    {
+        "challenge_id": 95,
+        "order_index": 1,
+        "expected_output": "[1, 1, 1, 1]",
+        "is_complex": true,
+        "is_sample": true
+    },
+    {
+        "challenge_id": 95,
+        "order_index": 2,
+        "expected_output": "[1, 1]",
+        "is_complex": true,
+        "is_sample": true
+    },
+    {
+        "challenge_id": 95,
+        "order_index": 3,
+        "expected_output": "[1]",
+        "is_complex": true,
+        "is_sample": true
+    },
+    {
+        "challenge_id": 95,
+        "order_index": 4,
+        "expected_output": "[1, 1, 1, 1, 1]",
+        "is_complex": true,
+        "is_sample": true
+    },
+    {
+        "challenge_id": 95,
+        "order_index": 5,
+        "expected_output": "[1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1]",
+        "is_complex": true,
+        "is_sample": true
+    },
+
+    // Array Replace
+    {
+        "challenge_id": 96,
+        "order_index": 1,
+        "expected_output": "[3, 2, 3]",
+        "is_complex": true,
+        "is_sample": true
+    },
+    {
+        "challenge_id": 96,
+        "order_index": 2,
+        "expected_output": "[1, 2, 0, 4, 5]",
+        "is_complex": true,
+        "is_sample": true
+    },
+    {
+        "challenge_id": 96,
+        "order_index": 3,
+        "expected_output": "[10, 10, 10]",
+        "is_complex": true,
+        "is_sample": true
+    },
+    {
+        "challenge_id": 96,
+        "order_index": 4,
+        "expected_output": "[1, 1, 1, 1, 1]",
+        "is_complex": true,
+        "is_sample": true
+    },
+    {
+        "challenge_id": 96,
+        "order_index": 5,
+        "expected_output": "[1, 2, 1, 2, 1]",
+        "is_complex": true,
+        "is_sample": true
+    },
+    {
+        "challenge_id": 96,
+        "order_index": 6,
+        "expected_output": "[9, 1]",
+        "is_complex": true,
+        "is_sample": true
+    },
+    {
+        "challenge_id": 96,
+        "order_index": 7,
+        "expected_output": "[10, 10]",
+        "is_complex": true,
+        "is_sample": true
+    },
+    {
+        "challenge_id": 96,
+        "order_index": 8,
+        "expected_output": "[2, 1]",
+        "is_complex": true,
+        "is_sample": true
+    },
+
+    // First Reverse Try
+    {
+        "challenge_id": 97,
+        "order_index": 1,
+        "expected_output": "[5, 2, 3, 4, 1]",
+        "is_complex": true,
+        "is_sample": true
+    },
+    {
+        "challenge_id": 97,
+        "order_index": 2,
+        "expected_output": "[]",
+        "is_complex": true,
+        "is_sample": true
+    },
+    {
+        "challenge_id": 97,
+        "order_index": 3,
+        "expected_output": "[239]",
+        "is_complex": true,
+        "is_sample": true
+    },
+    {
+        "challenge_id": 97,
+        "order_index": 4,
+        "expected_output": "[324, 54, 12, 3, 4, 56, 23, 12, 5, 23]",
+        "is_complex": true,
+        "is_sample": true
+    },
+    {
+        "challenge_id": 97,
+        "order_index": 5,
+        "expected_output": "[1, -1]",
+        "is_complex": true,
+        "is_sample": true
+    },
+    {
+        "challenge_id": 97,
+        "order_index": 6,
+        "expected_output": "[543, -101, -310, 818, 747, -888, -183, -687, -723, 188, -611, 677, -597, 293, -295, -162, -265, 368, 346, 81, -831, 198, -94, 685, -434, -241, -566, -397, 501, -183, 366, -669, 96, -592, 358, 598, 444, -929, 769, -361, -754, 218, -464, 332, 893, 422, -192, -287, -850, 88]",
+        "is_complex": true,
+        "is_sample": true
+    },
+
+    // Concatenate Arrays
+    {
+        "challenge_id": 98,
+        "order_index": 1,
+        "expected_output": "[2, 2, 1, 10, 11]",
+        "is_complex": true,
+        "is_sample": true
+    },
+    {
+        "challenge_id": 98,
+        "order_index": 2,
+        "expected_output": "[1, 2, 3, 1, 2]",
+        "is_complex": true,
+        "is_sample": true
+    },
+    {
+        "challenge_id": 98,
+        "order_index": 3,
+        "expected_output": "[1]",
+        "is_complex": true,
+        "is_sample": true
+    },
+    {
+        "challenge_id": 98,
+        "order_index": 4,
+        "expected_output": "[2, 10, 3, 9, 5, 11, 11, 4, 8, 1, 13, 3, 1, 14]",
+        "is_complex": true,
+        "is_sample": true
+    },
+    {
+        "challenge_id": 98,
+        "order_index": 5,
+        "expected_output": "[9, 6, 6, 9, 8, 14, 3, 2, 2, 5, 3, 11, 12, 9, 7, 7]",
+        "is_complex": true,
+        "is_sample": true
+    },
+
+    // Remove Array Part
+    {
+        "challenge_id": 99,
+        "order_index": 1,
+        "expected_output": "[2, 3, 5]",
+        "is_complex": true,
+        "is_sample": true
+    },
+    {
+        "challenge_id": 99,
+        "order_index": 2,
+        "expected_output": "[1]",
+        "is_complex": true,
+        "is_sample": true
+    },
+    {
+        "challenge_id": 99,
+        "order_index": 3,
+        "expected_output": "[5, 2, 3, 4]",
+        "is_complex": true,
+        "is_sample": true
+    },
+    {
+        "challenge_id": 99,
+        "order_index": 4,
+        "expected_output": "[]",
+        "is_complex": true,
+        "is_sample": true
+    },
+    {
+        "challenge_id": 99,
+        "order_index": 5,
+        "expected_output": "[0, -2, 5]",
+        "is_complex": true,
+        "is_sample": true
+    },
+    {
+        "challenge_id": 99,
+        "order_index": 6,
+        "expected_output": "[4, 3, 4, 5]",
+        "is_complex": true,
+        "is_sample": true
+    },
+    {
+        "challenge_id": 99,
+        "order_index": 7,
+        "expected_output": "[24, -40, -30, 30, 80, -94, 18, -56, -31, -68, -94, 67, -28, -2, -10, -83, -41, 43, -27, 88]",
+        "is_complex": true,
+        "is_sample": true
+    },
+    {
+        "challenge_id": 99,
+        "order_index": 8,
+        "expected_output": "[]",
+        "is_complex": true,
+        "is_sample": true
+    },
+
+    // Is Smooth?
+    {
+        "challenge_id": 100,
+        "order_index": 1,
+        "expected_output": "true",
+        "is_complex": false,
+        "is_sample": true
+    },
+    {
+        "challenge_id": 100,
+        "order_index": 2,
+        "expected_output": "false",
+        "is_complex": false,
+        "is_sample": true
+    },
+    {
+        "challenge_id": 100,
+        "order_index": 3,
+        "expected_output": "false",
+        "is_complex": false,
+        "is_sample": true
+    },
+    {
+        "challenge_id": 100,
+        "order_index": 4,
+        "expected_output": "false",
+        "is_complex": false,
+        "is_sample": true
+    },
+    {
+        "challenge_id": 100,
+        "order_index": 5,
+        "expected_output": "true",
+        "is_complex": false,
+        "is_sample": true
+    },
+    {
+        "challenge_id": 100,
+        "order_index": 6,
+        "expected_output": "false",
+        "is_complex": false,
+        "is_sample": true
+    },
+    {
+        "challenge_id": 100,
+        "order_index": 7,
+        "expected_output": "false",
+        "is_complex": false,
+        "is_sample": true
+    },
+    {
+        "challenge_id": 100,
+        "order_index": 8,
+        "expected_output": "false",
+        "is_complex": false,
+        "is_sample": true
+    },
+    {
+        "challenge_id": 100,
+        "order_index": 9,
+        "expected_output": "false",
+        "is_complex": false,
+        "is_sample": true
+    },
+    {
+        "challenge_id": 100,
+        "order_index": 10,
+        "expected_output": "false",
+        "is_complex": false,
+        "is_sample": true
+    },
+    {
+        "challenge_id": 100,
+        "order_index": 11,
+        "expected_output": "false",
+        "is_complex": false,
+        "is_sample": true
+    },
+
+    // Replace Middle
+    {
+        "challenge_id": 101,
+        "order_index": 1,
+        "expected_output": "[7, 2, 7, 10, 7]",
+        "is_complex": true,
+        "is_sample": true
+    },
+    {
+        "challenge_id": 101,
+        "order_index": 2,
+        "expected_output": "[-5, -5, 10]",
+        "is_complex": true,
+        "is_sample": true
+    },
+    {
+        "challenge_id": 101,
+        "order_index": 3,
+        "expected_output": "[45, 23, 12, 45, 453, -234, -45]",
+        "is_complex": true,
+        "is_sample": true
+    },
+    {
+        "challenge_id": 101,
+        "order_index": 4,
+        "expected_output": "[10]",
+        "is_complex": true,
+        "is_sample": true
+    },
+    {
+        "challenge_id": 101,
+        "order_index": 5,
+        "expected_output": "[-12, 34, 40, -5, -12, 4, 0, 0, -12]",
+        "is_complex": true,
+        "is_sample": true
+    },
+    {
+        "challenge_id": 101,
+        "order_index": 6,
+        "expected_output": "[9, 15, 9]",
+        "is_complex": true,
+        "is_sample": true
+    },
+    {
+        "challenge_id": 101,
+        "order_index": 7,
+        "expected_output": "[-6, 6, -6]",
+        "is_complex": true,
+        "is_sample": true
+    },
+    {
+        "challenge_id": 101,
+        "order_index": 8,
+        "expected_output": "[26, 26, -17]",
+        "is_complex": true,
+        "is_sample": true
+    },
+    {
+        "challenge_id": 101,
+        "order_index": 9,
+        "expected_output": "[-7, 10, 10]",
+        "is_complex": true,
+        "is_sample": true
+    },
+
+    // Make Array Consecutive 2
+    {
+        "challenge_id": 102,
+        "order_index": 1,
+        "expected_output": "3",
+        "is_complex": false,
+        "is_sample": true
+    },
+    {
+        "challenge_id": 102,
+        "order_index": 2,
+        "expected_output": "2",
+        "is_complex": false,
+        "is_sample": true
+    },
+    {
+        "challenge_id": 102,
+        "order_index": 3,
+        "expected_output": "0",
+        "is_complex": false,
+        "is_sample": true
+    },
+    {
+        "challenge_id": 102,
+        "order_index": 4,
+        "expected_output": "2",
+        "is_complex": false,
+        "is_sample": true
+    },
+    {
+        "challenge_id": 102,
+        "order_index": 5,
+        "expected_output": "0",
+        "is_complex": false,
+        "is_sample": true
+    },
+
+    // 
 
 
 

@@ -1320,58 +1320,207 @@ function solution(n, m) {
 }
 
 // 25: Least Factorial
+function solution(n) {
+    let factorial = 1;
+    let m = 1;
 
+    while (factorial < n) {
+        m++;
+        factorial *= m;
+    }
+
+    return factorial;
+}
 
 // 26: Count Sum of Two Representations 2
+function solution(n, l, r) {
+    let count = 0;
 
+    for (let A = l; A <= r; A++) {
+        let B = n - A;
+        if (A <= B && B <= r) {
+            count++;
+        }
+    }
+
+    return count;
+}
 
 // 27: Magical Well
+function solution(a, b, n) {
+    let totalMoney = 0;
 
+    for (let i = 0; i < n; i++) {
+        totalMoney += a * b;
+        a++;
+        b++;
+    }
+
+    return totalMoney;
+}
 
 // 28: Lineup
-
+function solution(commands) {
+    c = 0, s = true
+    for (i of commands) {
+        if (i == "L" || i == "R") {
+            if (s) { s = false }
+            else {
+                c++
+                s = true
+            }
+        }
+        else if (s) { c++ }
+    }
+    return c
+}
 
 // 29: Addition Without Carrying
+function solution(param1, param2) {
+    let str1 = param1.toString().padStart(10, '0');
+    let str2 = param2.toString().padStart(10, '0');
+    let result = '';
 
+    for (let i = 0; i < str1.length; i++) {
+        let sum = parseInt(str1[i]) + parseInt(str2[i]);
+        result += (sum % 10).toString();
+    }
+
+    return parseInt(result);
+}
 
 // 30: Apple Boxes
+function solution(k) {
+    let yellowApples = 0;
+    let redApples = 0;
 
+    for (let i = 1; i <= k; i++) {
+        let applesInBox = i * i;
+        if (i % 2 === 0) {
+            redApples += applesInBox;
+        } else {
+            yellowApples += applesInBox;
+        }
+    }
+
+    return redApples - yellowApples;
+}
 
 // 31: Increase Number Roundness
+function solution(n) {
+    let str = n.toString();
+    let trailingZeroes = str.length - str.trimEnd().length;
 
+    // Find the first non-zero digit after the trailing zeroes
+    let firstNonZeroIndex = str.length - trailingZeroes - 1;
+    while (firstNonZeroIndex >= 0 && str[firstNonZeroIndex] === '0') {
+        firstNonZeroIndex--;
+    }
+
+    // Check if there is a zero before the first non-zero digit
+    let hasZeroBefore = str.slice(0, firstNonZeroIndex + 1).includes('0');
+
+    return hasZeroBefore;
+}
 
 // 32: Rounders
-
+function solution(value) {
+    let r = 0
+    while (value > 10) {
+        value = Math.round(value / 10)
+        r++
+    }
+    return value * Math.pow(10, r)
+}
 
 // 33: Candles
+function solution(candlesNumber, makeNew) {
+    let totalBurned = 0;
+    let leftovers = 0;
 
+    while (candlesNumber > 0) {
+        // Burn all current candles
+        totalBurned += candlesNumber;
+        leftovers += candlesNumber;
+
+        // Create new candles from leftovers
+        candlesNumber = Math.floor(leftovers / makeNew);
+        leftovers = leftovers % makeNew;
+    }
+
+    return totalBurned;
+}
 
 // 34: Count Black Cells
-
+function solution(n, m) {
+    let gcd = (a, b) => b == 0 ? a : gcd(b, a % b);
+    return n + m + gcd(n, m) - 2;
+}
 
 // 35: Create Array
-
+function solution(size) {
+    return Array(size).fill(1);
+}
 
 // 36: Array Replace
-
+function solution(elemToReplace, substitutionElem, inputArray) {
+    return inputArray.map(elem => elem === elemToReplace ? substitutionElem : elem);
+}
 
 // 37: First Reverse Try
-
+function solution(arr) {
+    if (arr.length > 1) {
+        let temp = arr[0];
+        arr[0] = arr[arr.length - 1];
+        arr[arr.length - 1] = temp;
+    }
+    return arr;
+}
 
 // 38: Concatenate Arrays
-
+function solution(a, b) {
+    return a.concat(b);
+}
 
 // 39: Remove Array Part
-
+function solution(l, r, inputArray) {
+    return inputArray.slice(0, l).concat(inputArray.slice(r + 1));
+}
 
 // 40: Is Smooth?
+function solution(arr) {
+    const n = arr.length;
+    const first = arr[0];
+    const last = arr[n - 1];
 
+    if (n % 2 === 1) { // odd number of elements
+        const middle = arr[Math.floor(n / 2)];
+        return first === last && first === middle;
+    } else { // even number of elements
+        const middle = arr[n / 2 - 1] + arr[n / 2];
+        return first === last && first === middle;
+    }
+}
 
 // 41: Replace Middle
-
+function solution(arr) {
+    const n = arr.length;
+    if (n % 2 === 1) { // odd number of elements
+        return arr;
+    } else { // even number of elements
+        const mid1 = n / 2 - 1;
+        const mid2 = n / 2;
+        const middleValue = arr[mid1] + arr[mid2];
+        return [...arr.slice(0, mid1), middleValue, ...arr.slice(mid2 + 1)];
+    }
+}
 
 // 42: Make Array Consecutive 2
-
+function solution(statues) {
+    const min = Math.min(...statues);
+    const max = Math.max(...statues);
+    return (max - min + 1) - statues.length;
+}
 
 // 43: Is Power?
 
