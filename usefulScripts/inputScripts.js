@@ -6,7 +6,7 @@
 
 const startId = 480;
 const inputType = 'arrayOfStrings';
-const inputName = 'names';
+const inputName = 'a';
 
 // Function to log each object individually in the specified format
 function logAllObjectsIndividually() {
@@ -37,7 +37,7 @@ function logAllObjectsIndividually() {
     // Iterate over the array and extract information
     dataArray.forEach((item, index) => {
         // Assuming 'item' is a string containing JSON-like data
-        const testCaseMatch = item.match(/names:\s*\[([^\]]+)\]/);
+        const testCaseMatch = item.match(/a:\s*\[([^\]]+)\]/);
         if (testCaseMatch) {
             // Extract the array part from the matched group
             const inputValueArray = testCaseMatch[1]
@@ -56,7 +56,7 @@ function logAllObjectsIndividually() {
 }`;
             console.log(objString);
         } else {
-            console.warn(`No 'names' key found in item ${index + 1}`);
+            console.warn(`No 'a' key found in item ${index + 1}`);
         }
     });
 }
@@ -316,7 +316,7 @@ function logAllObjectsAsSingleObject() {
 logAllObjectsAsSingleObject();
 
 
-/// Strings
+/// Strings  -------____________------_____________-----  -------____________------_____________-----
 
 // Define your start ID, input type, and input names
 const startId = 250;  // Starting ID
@@ -379,7 +379,7 @@ logAllObjectsAsSingleObject();
 
 
 
-/// arr + 1 num
+/// arr + 1 num  -------____________------_____________-----  -------____________------_____________-----
 
 const startId = 300;  // Starting ID
 const inputTypeArray = 'arrayOfIntegers';  // Define your input type for array
@@ -437,6 +437,54 @@ function logAllObjectsAsSingleObject() {
 logAllObjectsAsSingleObject();
 
 
+/// more Boolean  -------____________------_____________-----  -------____________------_____________-----
+
+
+const startId = 500;  // Starting ID (you can adjust as needed)
+const inputType = 'boolean';  // Define your input type
+const inputNames = ['young', 'beautiful', 'loved'];  // Define the input names
+
+function logAllObjectsAsSingleObject() {
+    const storedData = localStorage.getItem('paramsLog');
+    if (!storedData) {
+        console.error('No data found in local storage.');
+        return;
+    }
+
+    const dataArray = JSON.parse(storedData);
+    if (!Array.isArray(dataArray)) {
+        console.error('Data format is incorrect.');
+        return;
+    }
+
+    const allObjects = [];
+
+    dataArray.forEach((item, index) => {
+        // Extract key-value pairs from each item
+        const keyValuePairs = item.match(/(\w+):\s*(true|false)/g);
+        if (keyValuePairs) {
+            keyValuePairs.forEach(pair => {
+                const [key, value] = pair.split(': ').map(s => s.trim());
+
+                if (inputNames.includes(key)) {
+                    allObjects.push({
+                        test_id: startId + index,
+                        input_type: inputType,
+                        input_name: key,
+                        input_value: value,
+                    });
+                }
+            });
+        } else {
+            console.warn(`No valid key-value pairs found in item ${index + 1}`);
+        }
+    });
+
+    console.log({ allObjects });
+}
+
+// Call the function to log all objects
+logAllObjectsAsSingleObject();
 
 
 

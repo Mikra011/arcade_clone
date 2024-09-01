@@ -83,9 +83,6 @@ if (!data) {
 }
 
 
-// Log the transformed data to the console
-console.log(transformedData);
-
 // boolean -------____________------_____________-----
 
 // Define the predefined values

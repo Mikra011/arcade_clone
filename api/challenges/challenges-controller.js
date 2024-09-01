@@ -57,6 +57,8 @@ const runCode = async (req, res) => {
                     return JSON.parse(value)
                 case 'arrayOfStrings':
                     return JSON.parse(value)
+                case 'boolean':
+                    return JSON.parse(value)
                 default:
                     return String(value) // Default is string or any unhandled type
             }

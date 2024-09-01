@@ -3071,6 +3071,2381 @@ const test_inputs = [
         "input_value": "[[1,2,3,4,5,6,7,8,9],[4,5,6,7,8,9,1,2,3],[7,8,9,1,2,3,4,5,6],[2,3,4,5,6,7,8,9,1],[3,4,5,6,7,8,9,1,2],[5,6,7,8,9,1,2,3,4],[6,7,8,9,1,2,3,4,5],[8,9,1,2,3,4,5,6,7],[9,1,2,3,4,5,6,7,8]]"
     },
 
+
+    ////////// THE CORE /////////////////////////////////////////////////// THE CORE /////////////////////////////////////////
+    ////////// THE CORE /////////////////////////////////////////////////// THE CORE /////////////////////////////////////////
+    ////////// THE CORE /////////////////////////////////////////////////// THE CORE /////////////////////////////////////////
+    ////////// THE CORE /////////////////////////////////////////////////// THE CORE /////////////////////////////////////////
+    ////////// THE CORE /////////////////////////////////////////////////// THE CORE /////////////////////////////////////////
+    ////////// THE CORE /////////////////////////////////////////////////// THE CORE /////////////////////////////////////////
+    ////////// THE CORE /////////////////////////////////////////////////// THE CORE /////////////////////////////////////////
+    ////////// THE CORE /////////////////////////////////////////////////// THE CORE /////////////////////////////////////////
+    ////////// THE CORE /////////////////////////////////////////////////// THE CORE /////////////////////////////////////////
+    ////////// THE CORE /////////////////////////////////////////////////// THE CORE /////////////////////////////////////////
+    ////////// THE CORE /////////////////////////////////////////////////// THE CORE /////////////////////////////////////////
+    ////////// THE CORE /////////////////////////////////////////////////// THE CORE /////////////////////////////////////////
+    ////////// THE CORE /////////////////////////////////////////////////// THE CORE /////////////////////////////////////////
+    ////////// THE CORE /////////////////////////////////////////////////// THE CORE /////////////////////////////////////////
+    ////////// THE CORE /////////////////////////////////////////////////// THE CORE /////////////////////////////////////////
+
+    // Add Two Digits
+    {
+        "test_id": 511,
+        "input_type": "number",
+        "input_name": "n",
+        "input_value": "29"
+    },
+    {
+        "test_id": 512,
+        "input_type": "number",
+        "input_name": "n",
+        "input_value": "48"
+    },
+    {
+        "test_id": 513,
+        "input_type": "number",
+        "input_name": "n",
+        "input_value": "10"
+    },
+    {
+        "test_id": 514,
+        "input_type": "number",
+        "input_name": "n",
+        "input_value": "25"
+    },
+    {
+        "test_id": 515,
+        "input_type": "number",
+        "input_name": "n",
+        "input_value": "52"
+    },
+    {
+        "test_id": 516,
+        "input_type": "number",
+        "input_name": "n",
+        "input_value": "99"
+    },
+    {
+        "test_id": 517,
+        "input_type": "number",
+        "input_name": "n",
+        "input_value": "44"
+    },
+    {
+        "test_id": 518,
+        "input_type": "number",
+        "input_name": "n",
+        "input_value": "50"
+    },
+    {
+        "test_id": 519,
+        "input_type": "number",
+        "input_name": "n",
+        "input_value": "39"
+    },
+    {
+        "test_id": 520,
+        "input_type": "number",
+        "input_name": "n",
+        "input_value": "26"
+    },
+
+    // Largest Number
+    {
+        "test_id": 521,
+        "input_type": "number",
+        "input_name": "n",
+        "input_value": "2"
+    },
+    {
+        "test_id": 522,
+        "input_type": "number",
+        "input_name": "n",
+        "input_value": "1"
+    },
+    {
+        "test_id": 523,
+        "input_type": "number",
+        "input_name": "n",
+        "input_value": "7"
+    },
+    {
+        "test_id": 524,
+        "input_type": "number",
+        "input_name": "n",
+        "input_value": "4"
+    },
+    {
+        "test_id": 525,
+        "input_type": "number",
+        "input_name": "n",
+        "input_value": "3"
+    },
+
+    // Candies
+    {
+        "test_id": 526,
+        "input_type": "number",
+        "input_name": "n",
+        "input_value": "3"
+    },
+    {
+        "test_id": 526,
+        "input_type": "number",
+        "input_name": "m",
+        "input_value": "10"
+    },
+    {
+        "test_id": 527,
+        "input_type": "number",
+        "input_name": "n",
+        "input_value": "1"
+    },
+    {
+        "test_id": 527,
+        "input_type": "number",
+        "input_name": "m",
+        "input_value": "2"
+    },
+    {
+        "test_id": 528,
+        "input_type": "number",
+        "input_name": "n",
+        "input_value": "10"
+    },
+    {
+        "test_id": 528,
+        "input_type": "number",
+        "input_name": "m",
+        "input_value": "5"
+    },
+    {
+        "test_id": 529,
+        "input_type": "number",
+        "input_name": "n",
+        "input_value": "4"
+    },
+    {
+        "test_id": 529,
+        "input_type": "number",
+        "input_name": "m",
+        "input_value": "4"
+    },
+    {
+        "test_id": 530,
+        "input_type": "number",
+        "input_name": "n",
+        "input_value": "4"
+    },
+    {
+        "test_id": 530,
+        "input_type": "number",
+        "input_name": "m",
+        "input_value": "15"
+    },
+    {
+        "test_id": 531,
+        "input_type": "number",
+        "input_name": "n",
+        "input_value": "9"
+    },
+    {
+        "test_id": 531,
+        "input_type": "number",
+        "input_name": "m",
+        "input_value": "100"
+    },
+    {
+        "test_id": 532,
+        "input_type": "number",
+        "input_name": "n",
+        "input_value": "8"
+    },
+    {
+        "test_id": 532,
+        "input_type": "number",
+        "input_name": "m",
+        "input_value": "2"
+    },
+    {
+        "test_id": 533,
+        "input_type": "number",
+        "input_name": "n",
+        "input_value": "3"
+    },
+    {
+        "test_id": 533,
+        "input_type": "number",
+        "input_name": "m",
+        "input_value": "3"
+    },
+    {
+        "test_id": 534,
+        "input_type": "number",
+        "input_name": "n",
+        "input_value": "7"
+    },
+    {
+        "test_id": 534,
+        "input_type": "number",
+        "input_name": "m",
+        "input_value": "10"
+    },
+    {
+        "test_id": 535,
+        "input_type": "number",
+        "input_name": "n",
+        "input_value": "3"
+    },
+    {
+        "test_id": 535,
+        "input_type": "number",
+        "input_name": "m",
+        "input_value": "23"
+    },
+
+    // Seats in Theater
+    {
+        "test_id": 536,
+        "input_type": "number",
+        "input_name": "nCols",
+        "input_value": "16"
+    },
+    {
+        "test_id": 536,
+        "input_type": "number",
+        "input_name": "nRows",
+        "input_value": "11"
+    },
+    {
+        "test_id": 536,
+        "input_type": "number",
+        "input_name": "col",
+        "input_value": "5"
+    },
+    {
+        "test_id": 536,
+        "input_type": "number",
+        "input_name": "row",
+        "input_value": "3"
+    },
+    {
+        "test_id": 537,
+        "input_type": "number",
+        "input_name": "nCols",
+        "input_value": "1"
+    },
+    {
+        "test_id": 537,
+        "input_type": "number",
+        "input_name": "nRows",
+        "input_value": "1"
+    },
+    {
+        "test_id": 537,
+        "input_type": "number",
+        "input_name": "col",
+        "input_value": "1"
+    },
+    {
+        "test_id": 537,
+        "input_type": "number",
+        "input_name": "row",
+        "input_value": "1"
+    },
+    {
+        "test_id": 538,
+        "input_type": "number",
+        "input_name": "nCols",
+        "input_value": "13"
+    },
+    {
+        "test_id": 538,
+        "input_type": "number",
+        "input_name": "nRows",
+        "input_value": "6"
+    },
+    {
+        "test_id": 538,
+        "input_type": "number",
+        "input_name": "col",
+        "input_value": "8"
+    },
+    {
+        "test_id": 538,
+        "input_type": "number",
+        "input_name": "row",
+        "input_value": "3"
+    },
+    {
+        "test_id": 539,
+        "input_type": "number",
+        "input_name": "nCols",
+        "input_value": "60"
+    },
+    {
+        "test_id": 539,
+        "input_type": "number",
+        "input_name": "nRows",
+        "input_value": "100"
+    },
+    {
+        "test_id": 539,
+        "input_type": "number",
+        "input_name": "col",
+        "input_value": "60"
+    },
+    {
+        "test_id": 539,
+        "input_type": "number",
+        "input_name": "row",
+        "input_value": "1"
+    },
+    {
+        "test_id": 540,
+        "input_type": "number",
+        "input_name": "nCols",
+        "input_value": "1000"
+    },
+    {
+        "test_id": 540,
+        "input_type": "number",
+        "input_name": "nRows",
+        "input_value": "1000"
+    },
+    {
+        "test_id": 540,
+        "input_type": "number",
+        "input_name": "col",
+        "input_value": "1000"
+    },
+    {
+        "test_id": 540,
+        "input_type": "number",
+        "input_name": "row",
+        "input_value": "1000"
+    },
+
+    // Max Multiple
+    {
+        "test_id": 541,
+        "input_type": "number",
+        "input_name": "divisor",
+        "input_value": "3"
+    },
+    {
+        "test_id": 541,
+        "input_type": "number",
+        "input_name": "bound",
+        "input_value": "10"
+    },
+    {
+        "test_id": 542,
+        "input_type": "number",
+        "input_name": "divisor",
+        "input_value": "2"
+    },
+    {
+        "test_id": 542,
+        "input_type": "number",
+        "input_name": "bound",
+        "input_value": "7"
+    },
+    {
+        "test_id": 543,
+        "input_type": "number",
+        "input_name": "divisor",
+        "input_value": "10"
+    },
+    {
+        "test_id": 543,
+        "input_type": "number",
+        "input_name": "bound",
+        "input_value": "50"
+    },
+    {
+        "test_id": 544,
+        "input_type": "number",
+        "input_name": "divisor",
+        "input_value": "7"
+    },
+    {
+        "test_id": 544,
+        "input_type": "number",
+        "input_name": "bound",
+        "input_value": "100"
+    },
+    {
+        "test_id": 545,
+        "input_type": "number",
+        "input_name": "divisor",
+        "input_value": "7"
+    },
+    {
+        "test_id": 545,
+        "input_type": "number",
+        "input_name": "bound",
+        "input_value": "20"
+    },
+    {
+        "test_id": 546,
+        "input_type": "number",
+        "input_name": "divisor",
+        "input_value": "5"
+    },
+    {
+        "test_id": 546,
+        "input_type": "number",
+        "input_name": "bound",
+        "input_value": "13"
+    },
+    {
+        "test_id": 547,
+        "input_type": "number",
+        "input_name": "divisor",
+        "input_value": "8"
+    },
+    {
+        "test_id": 547,
+        "input_type": "number",
+        "input_name": "bound",
+        "input_value": "88"
+    },
+    {
+        "test_id": 548,
+        "input_type": "number",
+        "input_name": "divisor",
+        "input_value": "10"
+    },
+    {
+        "test_id": 548,
+        "input_type": "number",
+        "input_name": "bound",
+        "input_value": "100"
+    },
+    {
+        "test_id": 549,
+        "input_type": "number",
+        "input_name": "divisor",
+        "input_value": "2"
+    },
+    {
+        "test_id": 549,
+        "input_type": "number",
+        "input_name": "bound",
+        "input_value": "5"
+    },
+    {
+        "test_id": 550,
+        "input_type": "number",
+        "input_name": "divisor",
+        "input_value": "3"
+    },
+    {
+        "test_id": 550,
+        "input_type": "number",
+        "input_name": "bound",
+        "input_value": "5"
+    },
+    {
+        "test_id": 551,
+        "input_type": "number",
+        "input_name": "divisor",
+        "input_value": "9"
+    },
+    {
+        "test_id": 551,
+        "input_type": "number",
+        "input_name": "bound",
+        "input_value": "11"
+    },
+    {
+        "test_id": 552,
+        "input_type": "number",
+        "input_name": "divisor",
+        "input_value": "8"
+    },
+    {
+        "test_id": 552,
+        "input_type": "number",
+        "input_name": "bound",
+        "input_value": "15"
+    },
+    {
+        "test_id": 553,
+        "input_type": "number",
+        "input_name": "divisor",
+        "input_value": "9"
+    },
+    {
+        "test_id": 553,
+        "input_type": "number",
+        "input_name": "bound",
+        "input_value": "60"
+    },
+
+    // Circle of Numbers
+    {
+        "test_id": 554,
+        "input_type": "number",
+        "input_name": "n",
+        "input_value": "10"
+    },
+    {
+        "test_id": 554,
+        "input_type": "number",
+        "input_name": "firstNumber",
+        "input_value": "2"
+    },
+    {
+        "test_id": 555,
+        "input_type": "number",
+        "input_name": "n",
+        "input_value": "10"
+    },
+    {
+        "test_id": 555,
+        "input_type": "number",
+        "input_name": "firstNumber",
+        "input_value": "7"
+    },
+    {
+        "test_id": 556,
+        "input_type": "number",
+        "input_name": "n",
+        "input_value": "4"
+    },
+    {
+        "test_id": 556,
+        "input_type": "number",
+        "input_name": "firstNumber",
+        "input_value": "1"
+    },
+    {
+        "test_id": 557,
+        "input_type": "number",
+        "input_name": "n",
+        "input_value": "6"
+    },
+    {
+        "test_id": 557,
+        "input_type": "number",
+        "input_name": "firstNumber",
+        "input_value": "3"
+    },
+    {
+        "test_id": 558,
+        "input_type": "number",
+        "input_name": "n",
+        "input_value": "18"
+    },
+    {
+        "test_id": 558,
+        "input_type": "number",
+        "input_name": "firstNumber",
+        "input_value": "6"
+    },
+    {
+        "test_id": 559,
+        "input_type": "number",
+        "input_name": "n",
+        "input_value": "12"
+    },
+    {
+        "test_id": 559,
+        "input_type": "number",
+        "input_name": "firstNumber",
+        "input_value": "10"
+    },
+    {
+        "test_id": 560,
+        "input_type": "number",
+        "input_name": "n",
+        "input_value": "18"
+    },
+    {
+        "test_id": 560,
+        "input_type": "number",
+        "input_name": "firstNumber",
+        "input_value": "5"
+    },
+
+    // Late Ride
+    {
+        "test_id": 561,
+        "input_type": "number",
+        "input_name": "n",
+        "input_value": "240"
+    },
+    {
+        "test_id": 562,
+        "input_type": "number",
+        "input_name": "n",
+        "input_value": "808"
+    },
+    {
+        "test_id": 563,
+        "input_type": "number",
+        "input_name": "n",
+        "input_value": "1439"
+    },
+    {
+        "test_id": 564,
+        "input_type": "number",
+        "input_name": "n",
+        "input_value": "0"
+    },
+    {
+        "test_id": 565,
+        "input_type": "number",
+        "input_name": "n",
+        "input_value": "23"
+    },
+    {
+        "test_id": 566,
+        "input_type": "number",
+        "input_name": "n",
+        "input_value": "8"
+    },
+
+    // Phone Call
+    {
+        "test_id": 567,
+        "input_type": "number",
+        "input_name": "min1",
+        "input_value": "3"
+    },
+    {
+        "test_id": 567,
+        "input_type": "number",
+        "input_name": "min2_10",
+        "input_value": "1"
+    },
+    {
+        "test_id": 567,
+        "input_type": "number",
+        "input_name": "min11",
+        "input_value": "2"
+    },
+    {
+        "test_id": 567,
+        "input_type": "number",
+        "input_name": "s",
+        "input_value": "20"
+    },
+    {
+        "test_id": 568,
+        "input_type": "number",
+        "input_name": "min1",
+        "input_value": "2"
+    },
+    {
+        "test_id": 568,
+        "input_type": "number",
+        "input_name": "min2_10",
+        "input_value": "2"
+    },
+    {
+        "test_id": 568,
+        "input_type": "number",
+        "input_name": "min11",
+        "input_value": "1"
+    },
+    {
+        "test_id": 568,
+        "input_type": "number",
+        "input_name": "s",
+        "input_value": "2"
+    },
+    {
+        "test_id": 569,
+        "input_type": "number",
+        "input_name": "min1",
+        "input_value": "10"
+    },
+    {
+        "test_id": 569,
+        "input_type": "number",
+        "input_name": "min2_10",
+        "input_value": "1"
+    },
+    {
+        "test_id": 569,
+        "input_type": "number",
+        "input_name": "min11",
+        "input_value": "2"
+    },
+    {
+        "test_id": 569,
+        "input_type": "number",
+        "input_name": "s",
+        "input_value": "22"
+    },
+    {
+        "test_id": 570,
+        "input_type": "number",
+        "input_name": "min1",
+        "input_value": "2"
+    },
+    {
+        "test_id": 570,
+        "input_type": "number",
+        "input_name": "min2_10",
+        "input_value": "2"
+    },
+    {
+        "test_id": 570,
+        "input_type": "number",
+        "input_name": "min11",
+        "input_value": "1"
+    },
+    {
+        "test_id": 570,
+        "input_type": "number",
+        "input_name": "s",
+        "input_value": "24"
+    },
+    {
+        "test_id": 571,
+        "input_type": "number",
+        "input_name": "min1",
+        "input_value": "1"
+    },
+    {
+        "test_id": 571,
+        "input_type": "number",
+        "input_name": "min2_10",
+        "input_value": "2"
+    },
+    {
+        "test_id": 571,
+        "input_type": "number",
+        "input_name": "min11",
+        "input_value": "1"
+    },
+    {
+        "test_id": 571,
+        "input_type": "number",
+        "input_name": "s",
+        "input_value": "6"
+    },
+    {
+        "test_id": 572,
+        "input_type": "number",
+        "input_name": "min1",
+        "input_value": "10"
+    },
+    {
+        "test_id": 572,
+        "input_type": "number",
+        "input_name": "min2_10",
+        "input_value": "10"
+    },
+    {
+        "test_id": 572,
+        "input_type": "number",
+        "input_name": "min11",
+        "input_value": "10"
+    },
+    {
+        "test_id": 572,
+        "input_type": "number",
+        "input_name": "s",
+        "input_value": "8"
+    },
+
+    // Reach Next Level
+    {
+        "test_id": 573,
+        "input_type": "number",
+        "input_name": "experience",
+        "input_value": "10"
+    },
+    {
+        "test_id": 573,
+        "input_type": "number",
+        "input_name": "threshold",
+        "input_value": "15"
+    },
+    {
+        "test_id": 573,
+        "input_type": "number",
+        "input_name": "reward",
+        "input_value": "5"
+    },
+    {
+        "test_id": 574,
+        "input_type": "number",
+        "input_name": "experience",
+        "input_value": "10"
+    },
+    {
+        "test_id": 574,
+        "input_type": "number",
+        "input_name": "threshold",
+        "input_value": "15"
+    },
+    {
+        "test_id": 574,
+        "input_type": "number",
+        "input_name": "reward",
+        "input_value": "4"
+    },
+    {
+        "test_id": 575,
+        "input_type": "number",
+        "input_name": "experience",
+        "input_value": "3"
+    },
+    {
+        "test_id": 575,
+        "input_type": "number",
+        "input_name": "threshold",
+        "input_value": "6"
+    },
+    {
+        "test_id": 575,
+        "input_type": "number",
+        "input_name": "reward",
+        "input_value": "4"
+    },
+    {
+        "test_id": 576,
+        "input_type": "number",
+        "input_name": "experience",
+        "input_value": "84"
+    },
+    {
+        "test_id": 576,
+        "input_type": "number",
+        "input_name": "threshold",
+        "input_value": "135"
+    },
+    {
+        "test_id": 576,
+        "input_type": "number",
+        "input_name": "reward",
+        "input_value": "36"
+    },
+    {
+        "test_id": 577,
+        "input_type": "number",
+        "input_name": "experience",
+        "input_value": "74"
+    },
+    {
+        "test_id": 577,
+        "input_type": "number",
+        "input_name": "threshold",
+        "input_value": "170"
+    },
+    {
+        "test_id": 577,
+        "input_type": "number",
+        "input_name": "reward",
+        "input_value": "58"
+    },
+    {
+        "test_id": 578,
+        "input_type": "number",
+        "input_name": "experience",
+        "input_value": "80"
+    },
+    {
+        "test_id": 578,
+        "input_type": "number",
+        "input_name": "threshold",
+        "input_value": "199"
+    },
+    {
+        "test_id": 578,
+        "input_type": "number",
+        "input_name": "reward",
+        "input_value": "15"
+    },
+    {
+        "test_id": 579,
+        "input_type": "number",
+        "input_name": "experience",
+        "input_value": "97"
+    },
+    {
+        "test_id": 579,
+        "input_type": "number",
+        "input_name": "threshold",
+        "input_value": "57"
+    },
+    {
+        "test_id": 579,
+        "input_type": "number",
+        "input_name": "reward",
+        "input_value": "7"
+    },
+    {
+        "test_id": 580,
+        "input_type": "number",
+        "input_name": "experience",
+        "input_value": "235"
+    },
+    {
+        "test_id": 580,
+        "input_type": "number",
+        "input_name": "threshold",
+        "input_value": "293"
+    },
+    {
+        "test_id": 580,
+        "input_type": "number",
+        "input_name": "reward",
+        "input_value": "4"
+    },
+    {
+        "test_id": 581,
+        "input_type": "number",
+        "input_name": "experience",
+        "input_value": "222"
+    },
+    {
+        "test_id": 581,
+        "input_type": "number",
+        "input_name": "threshold",
+        "input_value": "137"
+    },
+    {
+        "test_id": 581,
+        "input_type": "number",
+        "input_name": "reward",
+        "input_value": "58"
+    },
+    {
+        "test_id": 582,
+        "input_type": "number",
+        "input_name": "experience",
+        "input_value": "16"
+    },
+    {
+        "test_id": 582,
+        "input_type": "number",
+        "input_name": "threshold",
+        "input_value": "23"
+    },
+    {
+        "test_id": 582,
+        "input_type": "number",
+        "input_name": "reward",
+        "input_value": "16"
+    },
+
+    // Knapsack Light
+    {
+        "test_id": 583,
+        "input_type": "number",
+        "input_name": "value1",
+        "input_value": "10"
+    },
+    {
+        "test_id": 583,
+        "input_type": "number",
+        "input_name": "weight1",
+        "input_value": "5"
+    },
+    {
+        "test_id": 583,
+        "input_type": "number",
+        "input_name": "value2",
+        "input_value": "6"
+    },
+    {
+        "test_id": 583,
+        "input_type": "number",
+        "input_name": "weight2",
+        "input_value": "4"
+    },
+    {
+        "test_id": 583,
+        "input_type": "number",
+        "input_name": "maxW",
+        "input_value": "8"
+    },
+    {
+        "test_id": 584,
+        "input_type": "number",
+        "input_name": "value1",
+        "input_value": "10"
+    },
+    {
+        "test_id": 584,
+        "input_type": "number",
+        "input_name": "weight1",
+        "input_value": "5"
+    },
+    {
+        "test_id": 584,
+        "input_type": "number",
+        "input_name": "value2",
+        "input_value": "6"
+    },
+    {
+        "test_id": 584,
+        "input_type": "number",
+        "input_name": "weight2",
+        "input_value": "4"
+    },
+    {
+        "test_id": 584,
+        "input_type": "number",
+        "input_name": "maxW",
+        "input_value": "9"
+    },
+    {
+        "test_id": 585,
+        "input_type": "number",
+        "input_name": "value1",
+        "input_value": "5"
+    },
+    {
+        "test_id": 585,
+        "input_type": "number",
+        "input_name": "weight1",
+        "input_value": "3"
+    },
+    {
+        "test_id": 585,
+        "input_type": "number",
+        "input_name": "value2",
+        "input_value": "7"
+    },
+    {
+        "test_id": 585,
+        "input_type": "number",
+        "input_name": "weight2",
+        "input_value": "4"
+    },
+    {
+        "test_id": 585,
+        "input_type": "number",
+        "input_name": "maxW",
+        "input_value": "6"
+    },
+    {
+        "test_id": 586,
+        "input_type": "number",
+        "input_name": "value1",
+        "input_value": "10"
+    },
+    {
+        "test_id": 586,
+        "input_type": "number",
+        "input_name": "weight1",
+        "input_value": "2"
+    },
+    {
+        "test_id": 586,
+        "input_type": "number",
+        "input_name": "value2",
+        "input_value": "11"
+    },
+    {
+        "test_id": 586,
+        "input_type": "number",
+        "input_name": "weight2",
+        "input_value": "3"
+    },
+    {
+        "test_id": 586,
+        "input_type": "number",
+        "input_name": "maxW",
+        "input_value": "1"
+    },
+    {
+        "test_id": 587,
+        "input_type": "number",
+        "input_name": "value1",
+        "input_value": "15"
+    },
+    {
+        "test_id": 587,
+        "input_type": "number",
+        "input_name": "weight1",
+        "input_value": "2"
+    },
+    {
+        "test_id": 587,
+        "input_type": "number",
+        "input_name": "value2",
+        "input_value": "20"
+    },
+    {
+        "test_id": 587,
+        "input_type": "number",
+        "input_name": "weight2",
+        "input_value": "3"
+    },
+    {
+        "test_id": 587,
+        "input_type": "number",
+        "input_name": "maxW",
+        "input_value": "2"
+    },
+    {
+        "test_id": 588,
+        "input_type": "number",
+        "input_name": "value1",
+        "input_value": "2"
+    },
+    {
+        "test_id": 588,
+        "input_type": "number",
+        "input_name": "weight1",
+        "input_value": "5"
+    },
+    {
+        "test_id": 588,
+        "input_type": "number",
+        "input_name": "value2",
+        "input_value": "3"
+    },
+    {
+        "test_id": 588,
+        "input_type": "number",
+        "input_name": "weight2",
+        "input_value": "4"
+    },
+    {
+        "test_id": 588,
+        "input_type": "number",
+        "input_name": "maxW",
+        "input_value": "5"
+    },
+    {
+        "test_id": 589,
+        "input_type": "number",
+        "input_name": "value1",
+        "input_value": "4"
+    },
+    {
+        "test_id": 589,
+        "input_type": "number",
+        "input_name": "weight1",
+        "input_value": "3"
+    },
+    {
+        "test_id": 589,
+        "input_type": "number",
+        "input_name": "value2",
+        "input_value": "3"
+    },
+    {
+        "test_id": 589,
+        "input_type": "number",
+        "input_name": "weight2",
+        "input_value": "4"
+    },
+    {
+        "test_id": 589,
+        "input_type": "number",
+        "input_name": "maxW",
+        "input_value": "4"
+    },
+    {
+        "test_id": 590,
+        "input_type": "number",
+        "input_name": "value1",
+        "input_value": "3"
+    },
+    {
+        "test_id": 590,
+        "input_type": "number",
+        "input_name": "weight1",
+        "input_value": "5"
+    },
+    {
+        "test_id": 590,
+        "input_type": "number",
+        "input_name": "value2",
+        "input_value": "3"
+    },
+    {
+        "test_id": 590,
+        "input_type": "number",
+        "input_name": "weight2",
+        "input_value": "8"
+    },
+    {
+        "test_id": 590,
+        "input_type": "number",
+        "input_name": "maxW",
+        "input_value": "10"
+    },
+
+    // Extra Number
+    {
+        "test_id": 591,
+        "input_type": "number",
+        "input_name": "a",
+        "input_value": "2"
+    },
+    {
+        "test_id": 591,
+        "input_type": "number",
+        "input_name": "b",
+        "input_value": "7"
+    },
+    {
+        "test_id": 591,
+        "input_type": "number",
+        "input_name": "c",
+        "input_value": "2"
+    },
+    {
+        "test_id": 592,
+        "input_type": "number",
+        "input_name": "a",
+        "input_value": "3"
+    },
+    {
+        "test_id": 592,
+        "input_type": "number",
+        "input_name": "b",
+        "input_value": "2"
+    },
+    {
+        "test_id": 592,
+        "input_type": "number",
+        "input_name": "c",
+        "input_value": "2"
+    },
+    {
+        "test_id": 593,
+        "input_type": "number",
+        "input_name": "a",
+        "input_value": "5"
+    },
+    {
+        "test_id": 593,
+        "input_type": "number",
+        "input_name": "b",
+        "input_value": "5"
+    },
+    {
+        "test_id": 593,
+        "input_type": "number",
+        "input_name": "c",
+        "input_value": "1"
+    },
+    {
+        "test_id": 594,
+        "input_type": "number",
+        "input_name": "a",
+        "input_value": "500000000"
+    },
+    {
+        "test_id": 594,
+        "input_type": "number",
+        "input_name": "b",
+        "input_value": "3"
+    },
+    {
+        "test_id": 594,
+        "input_type": "number",
+        "input_name": "c",
+        "input_value": "500000000"
+    },
+    {
+        "test_id": 595,
+        "input_type": "number",
+        "input_name": "a",
+        "input_value": "1"
+    },
+    {
+        "test_id": 595,
+        "input_type": "number",
+        "input_name": "b",
+        "input_value": "5"
+    },
+    {
+        "test_id": 595,
+        "input_type": "number",
+        "input_name": "c",
+        "input_value": "1"
+    },
+    {
+        "test_id": 596,
+        "input_type": "number",
+        "input_name": "a",
+        "input_value": "5"
+    },
+    {
+        "test_id": 596,
+        "input_type": "number",
+        "input_name": "b",
+        "input_value": "5"
+    },
+    {
+        "test_id": 596,
+        "input_type": "number",
+        "input_name": "c",
+        "input_value": "3"
+    },
+    {
+        "test_id": 597,
+        "input_type": "number",
+        "input_name": "a",
+        "input_value": "5"
+    },
+    {
+        "test_id": 597,
+        "input_type": "number",
+        "input_name": "b",
+        "input_value": "1"
+    },
+    {
+        "test_id": 597,
+        "input_type": "number",
+        "input_name": "c",
+        "input_value": "1"
+    },
+    {
+        "test_id": 598,
+        "input_type": "number",
+        "input_name": "a",
+        "input_value": "4000000"
+    },
+    {
+        "test_id": 598,
+        "input_type": "number",
+        "input_name": "b",
+        "input_value": "3000000"
+    },
+    {
+        "test_id": 598,
+        "input_type": "number",
+        "input_name": "c",
+        "input_value": "4000000"
+    },
+    {
+        "test_id": 599,
+        "input_type": "number",
+        "input_name": "a",
+        "input_value": "548442737"
+    },
+    {
+        "test_id": 599,
+        "input_type": "number",
+        "input_name": "b",
+        "input_value": "82231042"
+    },
+    {
+        "test_id": 599,
+        "input_type": "number",
+        "input_name": "c",
+        "input_value": "548442737"
+    },
+    {
+        "test_id": 600,
+        "input_type": "number",
+        "input_name": "a",
+        "input_value": "469992838"
+    },
+    {
+        "test_id": 600,
+        "input_type": "number",
+        "input_name": "b",
+        "input_value": "66019520"
+    },
+    {
+        "test_id": 600,
+        "input_type": "number",
+        "input_name": "c",
+        "input_value": "66019520"
+    },
+
+    // Is Infinite Process?
+    {
+        "test_id": 601,
+        "input_type": "number",
+        "input_name": "a",
+        "input_value": "2"
+    },
+    {
+        "test_id": 601,
+        "input_type": "number",
+        "input_name": "b",
+        "input_value": "6"
+    },
+    {
+        "test_id": 602,
+        "input_type": "number",
+        "input_name": "a",
+        "input_value": "2"
+    },
+    {
+        "test_id": 602,
+        "input_type": "number",
+        "input_name": "b",
+        "input_value": "3"
+    },
+    {
+        "test_id": 603,
+        "input_type": "number",
+        "input_name": "a",
+        "input_value": "2"
+    },
+    {
+        "test_id": 603,
+        "input_type": "number",
+        "input_name": "b",
+        "input_value": "10"
+    },
+    {
+        "test_id": 604,
+        "input_type": "number",
+        "input_name": "a",
+        "input_value": "0"
+    },
+    {
+        "test_id": 604,
+        "input_type": "number",
+        "input_name": "b",
+        "input_value": "1"
+    },
+    {
+        "test_id": 605,
+        "input_type": "number",
+        "input_name": "a",
+        "input_value": "3"
+    },
+    {
+        "test_id": 605,
+        "input_type": "number",
+        "input_name": "b",
+        "input_value": "1"
+    },
+    {
+        "test_id": 606,
+        "input_type": "number",
+        "input_name": "a",
+        "input_value": "10"
+    },
+    {
+        "test_id": 606,
+        "input_type": "number",
+        "input_name": "b",
+        "input_value": "10"
+    },
+    {
+        "test_id": 607,
+        "input_type": "number",
+        "input_name": "a",
+        "input_value": "5"
+    },
+    {
+        "test_id": 607,
+        "input_type": "number",
+        "input_name": "b",
+        "input_value": "10"
+    },
+    {
+        "test_id": 608,
+        "input_type": "number",
+        "input_name": "a",
+        "input_value": "6"
+    },
+    {
+        "test_id": 608,
+        "input_type": "number",
+        "input_name": "b",
+        "input_value": "10"
+    },
+    {
+        "test_id": 609,
+        "input_type": "number",
+        "input_name": "a",
+        "input_value": "10"
+    },
+    {
+        "test_id": 609,
+        "input_type": "number",
+        "input_name": "b",
+        "input_value": "0"
+    },
+    {
+        "test_id": 610,
+        "input_type": "number",
+        "input_name": "a",
+        "input_value": "5"
+    },
+    {
+        "test_id": 610,
+        "input_type": "number",
+        "input_name": "b",
+        "input_value": "5"
+    },
+
+    // Arithmetic Expression
+    {
+        "test_id": 611,
+        "input_type": "number",
+        "input_name": "a",
+        "input_value": "2"
+    },
+    {
+        "test_id": 611,
+        "input_type": "number",
+        "input_name": "b",
+        "input_value": "3"
+    },
+    {
+        "test_id": 611,
+        "input_type": "number",
+        "input_name": "c",
+        "input_value": "5"
+    },
+    {
+        "test_id": 612,
+        "input_type": "number",
+        "input_name": "a",
+        "input_value": "8"
+    },
+    {
+        "test_id": 612,
+        "input_type": "number",
+        "input_name": "b",
+        "input_value": "2"
+    },
+    {
+        "test_id": 612,
+        "input_type": "number",
+        "input_name": "c",
+        "input_value": "4"
+    },
+    {
+        "test_id": 613,
+        "input_type": "number",
+        "input_name": "a",
+        "input_value": "8"
+    },
+    {
+        "test_id": 613,
+        "input_type": "number",
+        "input_name": "b",
+        "input_value": "3"
+    },
+    {
+        "test_id": 613,
+        "input_type": "number",
+        "input_name": "c",
+        "input_value": "2"
+    },
+    {
+        "test_id": 614,
+        "input_type": "number",
+        "input_name": "a",
+        "input_value": "6"
+    },
+    {
+        "test_id": 614,
+        "input_type": "number",
+        "input_name": "b",
+        "input_value": "3"
+    },
+    {
+        "test_id": 614,
+        "input_type": "number",
+        "input_name": "c",
+        "input_value": "3"
+    },
+    {
+        "test_id": 615,
+        "input_type": "number",
+        "input_name": "a",
+        "input_value": "18"
+    },
+    {
+        "test_id": 615,
+        "input_type": "number",
+        "input_name": "b",
+        "input_value": "2"
+    },
+    {
+        "test_id": 615,
+        "input_type": "number",
+        "input_name": "c",
+        "input_value": "9"
+    },
+    {
+        "test_id": 616,
+        "input_type": "number",
+        "input_name": "a",
+        "input_value": "2"
+    },
+    {
+        "test_id": 616,
+        "input_type": "number",
+        "input_name": "b",
+        "input_value": "3"
+    },
+    {
+        "test_id": 616,
+        "input_type": "number",
+        "input_name": "c",
+        "input_value": "6"
+    },
+    {
+        "test_id": 617,
+        "input_type": "number",
+        "input_name": "a",
+        "input_value": "5"
+    },
+    {
+        "test_id": 617,
+        "input_type": "number",
+        "input_name": "b",
+        "input_value": "2"
+    },
+    {
+        "test_id": 617,
+        "input_type": "number",
+        "input_name": "c",
+        "input_value": "0"
+    },
+    {
+        "test_id": 618,
+        "input_type": "number",
+        "input_name": "a",
+        "input_value": "10"
+    },
+    {
+        "test_id": 618,
+        "input_type": "number",
+        "input_name": "b",
+        "input_value": "2"
+    },
+    {
+        "test_id": 618,
+        "input_type": "number",
+        "input_name": "c",
+        "input_value": "2"
+    },
+    {
+        "test_id": 619,
+        "input_type": "number",
+        "input_name": "a",
+        "input_value": "5"
+    },
+    {
+        "test_id": 619,
+        "input_type": "number",
+        "input_name": "b",
+        "input_value": "2"
+    },
+    {
+        "test_id": 619,
+        "input_type": "number",
+        "input_name": "c",
+        "input_value": "2"
+    },
+    {
+        "test_id": 620,
+        "input_type": "number",
+        "input_name": "a",
+        "input_value": "1"
+    },
+    {
+        "test_id": 620,
+        "input_type": "number",
+        "input_name": "b",
+        "input_value": "2"
+    },
+    {
+        "test_id": 620,
+        "input_type": "number",
+        "input_name": "c",
+        "input_value": "1"
+    },
+    {
+        "test_id": 621,
+        "input_type": "number",
+        "input_name": "a",
+        "input_value": "1"
+    },
+    {
+        "test_id": 621,
+        "input_type": "number",
+        "input_name": "b",
+        "input_value": "2"
+    },
+    {
+        "test_id": 621,
+        "input_type": "number",
+        "input_name": "c",
+        "input_value": "2"
+    },
+
+    // Tennis Set
+    {
+        "test_id": 622,
+        "input_type": "number",
+        "input_name": "score1",
+        "input_value": "3"
+    },
+    {
+        "test_id": 622,
+        "input_type": "number",
+        "input_name": "score2",
+        "input_value": "6"
+    },
+    {
+        "test_id": 623,
+        "input_type": "number",
+        "input_name": "score1",
+        "input_value": "8"
+    },
+    {
+        "test_id": 623,
+        "input_type": "number",
+        "input_name": "score2",
+        "input_value": "5"
+    },
+    {
+        "test_id": 624,
+        "input_type": "number",
+        "input_name": "score1",
+        "input_value": "6"
+    },
+    {
+        "test_id": 624,
+        "input_type": "number",
+        "input_name": "score2",
+        "input_value": "5"
+    },
+    {
+        "test_id": 625,
+        "input_type": "number",
+        "input_name": "score1",
+        "input_value": "7"
+    },
+    {
+        "test_id": 625,
+        "input_type": "number",
+        "input_name": "score2",
+        "input_value": "7"
+    },
+    {
+        "test_id": 626,
+        "input_type": "number",
+        "input_name": "score1",
+        "input_value": "6"
+    },
+    {
+        "test_id": 626,
+        "input_type": "number",
+        "input_name": "score2",
+        "input_value": "4"
+    },
+    {
+        "test_id": 627,
+        "input_type": "number",
+        "input_name": "score1",
+        "input_value": "7"
+    },
+    {
+        "test_id": 627,
+        "input_type": "number",
+        "input_name": "score2",
+        "input_value": "5"
+    },
+    {
+        "test_id": 628,
+        "input_type": "number",
+        "input_name": "score1",
+        "input_value": "7"
+    },
+    {
+        "test_id": 628,
+        "input_type": "number",
+        "input_name": "score2",
+        "input_value": "2"
+    },
+    {
+        "test_id": 629,
+        "input_type": "number",
+        "input_name": "score1",
+        "input_value": "7"
+    },
+    {
+        "test_id": 629,
+        "input_type": "number",
+        "input_name": "score2",
+        "input_value": "6"
+    },
+    {
+        "test_id": 630,
+        "input_type": "number",
+        "input_name": "score1",
+        "input_value": "4"
+    },
+    {
+        "test_id": 630,
+        "input_type": "number",
+        "input_name": "score2",
+        "input_value": "10"
+    },
+    {
+        "test_id": 631,
+        "input_type": "number",
+        "input_name": "score1",
+        "input_value": "0"
+    },
+    {
+        "test_id": 631,
+        "input_type": "number",
+        "input_name": "score2",
+        "input_value": "0"
+    },
+
+    // Will You?
+    {
+        "test_id": 632,
+        "input_type": "boolean",
+        "input_name": "young",
+        "input_value": "true"
+    },
+    {
+        "test_id": 632,
+        "input_type": "boolean",
+        "input_name": "beautiful",
+        "input_value": "true"
+    },
+    {
+        "test_id": 632,
+        "input_type": "boolean",
+        "input_name": "loved",
+        "input_value": "true"
+    },
+    {
+        "test_id": 633,
+        "input_type": "boolean",
+        "input_name": "young",
+        "input_value": "true"
+    },
+    {
+        "test_id": 633,
+        "input_type": "boolean",
+        "input_name": "beautiful",
+        "input_value": "false"
+    },
+    {
+        "test_id": 633,
+        "input_type": "boolean",
+        "input_name": "loved",
+        "input_value": "true"
+    },
+    {
+        "test_id": 634,
+        "input_type": "boolean",
+        "input_name": "young",
+        "input_value": "false"
+    },
+    {
+        "test_id": 634,
+        "input_type": "boolean",
+        "input_name": "beautiful",
+        "input_value": "false"
+    },
+    {
+        "test_id": 634,
+        "input_type": "boolean",
+        "input_name": "loved",
+        "input_value": "false"
+    },
+    {
+        "test_id": 635,
+        "input_type": "boolean",
+        "input_name": "young",
+        "input_value": "false"
+    },
+    {
+        "test_id": 635,
+        "input_type": "boolean",
+        "input_name": "beautiful",
+        "input_value": "false"
+    },
+    {
+        "test_id": 635,
+        "input_type": "boolean",
+        "input_name": "loved",
+        "input_value": "true"
+    },
+
+    // Metro Card
+    {
+        "test_id": 636,
+        "input_type": "number",
+        "input_name": "lastNumberOfDays",
+        "input_value": "30"
+    },
+    {
+        "test_id": 637,
+        "input_type": "number",
+        "input_name": "lastNumberOfDays",
+        "input_value": "31"
+    },
+
+    // Kill K-th Bit
+    {
+        "test_id": 638,
+        "input_type": "number",
+        "input_name": "n",
+        "input_value": "37"
+    },
+    {
+        "test_id": 638,
+        "input_type": "number",
+        "input_name": "k",
+        "input_value": "3"
+    },
+    {
+        "test_id": 639,
+        "input_type": "number",
+        "input_name": "n",
+        "input_value": "37"
+    },
+    {
+        "test_id": 639,
+        "input_type": "number",
+        "input_name": "k",
+        "input_value": "4"
+    },
+    {
+        "test_id": 640,
+        "input_type": "number",
+        "input_name": "n",
+        "input_value": "37"
+    },
+    {
+        "test_id": 640,
+        "input_type": "number",
+        "input_name": "k",
+        "input_value": "2"
+    },
+    {
+        "test_id": 641,
+        "input_type": "number",
+        "input_name": "n",
+        "input_value": "0"
+    },
+    {
+        "test_id": 641,
+        "input_type": "number",
+        "input_name": "k",
+        "input_value": "4"
+    },
+    {
+        "test_id": 642,
+        "input_type": "number",
+        "input_name": "n",
+        "input_value": "2147483647"
+    },
+    {
+        "test_id": 642,
+        "input_type": "number",
+        "input_name": "k",
+        "input_value": "16"
+    },
+    {
+        "test_id": 643,
+        "input_type": "number",
+        "input_name": "n",
+        "input_value": "374823748"
+    },
+    {
+        "test_id": 643,
+        "input_type": "number",
+        "input_name": "k",
+        "input_value": "13"
+    },
+    {
+        "test_id": 644,
+        "input_type": "number",
+        "input_name": "n",
+        "input_value": "2734827"
+    },
+    {
+        "test_id": 644,
+        "input_type": "number",
+        "input_name": "k",
+        "input_value": "4"
+    },
+    {
+        "test_id": 645,
+        "input_type": "number",
+        "input_name": "n",
+        "input_value": "1084197039"
+    },
+    {
+        "test_id": 645,
+        "input_type": "number",
+        "input_name": "k",
+        "input_value": "15"
+    },
+    {
+        "test_id": 646,
+        "input_type": "number",
+        "input_name": "n",
+        "input_value": "1160825071"
+    },
+    {
+        "test_id": 646,
+        "input_type": "number",
+        "input_name": "k",
+        "input_value": "3"
+    },
+    {
+        "test_id": 647,
+        "input_type": "number",
+        "input_name": "n",
+        "input_value": "2039063284"
+    },
+    {
+        "test_id": 647,
+        "input_type": "number",
+        "input_name": "k",
+        "input_value": "4"
+    },
+
+    // Array Packing
+    {
+        "test_id": 648,
+        "input_type": "arrayOfIntegers",
+        "input_name": "a",
+        "input_value": "[24, 85, 0]"
+    },
+    {
+        "test_id": 649,
+        "input_type": "arrayOfIntegers",
+        "input_name": "a",
+        "input_value": "[23, 45, 39]"
+    },
+    {
+        "test_id": 650,
+        "input_type": "arrayOfIntegers",
+        "input_name": "a",
+        "input_value": "[1, 2, 4, 8]"
+    },
+    {
+        "test_id": 651,
+        "input_type": "arrayOfIntegers",
+        "input_name": "a",
+        "input_value": "[5]"
+    },
+    {
+        "test_id": 652,
+        "input_type": "arrayOfIntegers",
+        "input_name": "a",
+        "input_value": "[187, 99, 42, 43]"
+    },
+
+    // Range Bit Count
+    {
+        "test_id": 653,
+        "input_type": "number",
+        "input_name": "a",
+        "input_value": "2"
+    },
+    {
+        "test_id": 653,
+        "input_type": "number",
+        "input_name": "b",
+        "input_value": "7"
+    },
+    {
+        "test_id": 654,
+        "input_type": "number",
+        "input_name": "a",
+        "input_value": "0"
+    },
+    {
+        "test_id": 654,
+        "input_type": "number",
+        "input_name": "b",
+        "input_value": "1"
+    },
+    {
+        "test_id": 655,
+        "input_type": "number",
+        "input_name": "a",
+        "input_value": "1"
+    },
+    {
+        "test_id": 655,
+        "input_type": "number",
+        "input_name": "b",
+        "input_value": "10"
+    },
+    {
+        "test_id": 656,
+        "input_type": "number",
+        "input_name": "a",
+        "input_value": "8"
+    },
+    {
+        "test_id": 656,
+        "input_type": "number",
+        "input_name": "b",
+        "input_value": "9"
+    },
+    {
+        "test_id": 657,
+        "input_type": "number",
+        "input_name": "a",
+        "input_value": "9"
+    },
+    {
+        "test_id": 657,
+        "input_type": "number",
+        "input_name": "b",
+        "input_value": "10"
+    },
+
+    // Mirror Bits
+    {
+        "test_id": 658,
+        "input_type": "number",
+        "input_name": "a",
+        "input_value": "97"
+    },
+    {
+        "test_id": 659,
+        "input_type": "number",
+        "input_name": "a",
+        "input_value": "8"
+    },
+    {
+        "test_id": 660,
+        "input_type": "number",
+        "input_name": "a",
+        "input_value": "123"
+    },
+    {
+        "test_id": 661,
+        "input_type": "number",
+        "input_name": "a",
+        "input_value": "86782"
+    },
+    {
+        "test_id": 662,
+        "input_type": "number",
+        "input_name": "a",
+        "input_value": "5"
+    },
+
+    // Second-Rightmost Zero Bit
+    {
+        "test_id": 663,
+        "input_type": "number",
+        "input_name": "n",
+        "input_value": "37"
+    },
+    {
+        "test_id": 664,
+        "input_type": "number",
+        "input_name": "n",
+        "input_value": "1073741824"
+    },
+    {
+        "test_id": 665,
+        "input_type": "number",
+        "input_name": "n",
+        "input_value": "83748"
+    },
+    {
+        "test_id": 666,
+        "input_type": "number",
+        "input_name": "n",
+        "input_value": "4"
+    },
+    {
+        "test_id": 667,
+        "input_type": "number",
+        "input_name": "n",
+        "input_value": "728782938"
+    },
+
+    // Swap Adjacent Bits
+    {
+        "test_id": 668,
+        "input_type": "number",
+        "input_name": "n",
+        "input_value": "13"
+    },
+    {
+        "test_id": 669,
+        "input_type": "number",
+        "input_name": "n",
+        "input_value": "74"
+    },
+    {
+        "test_id": 670,
+        "input_type": "number",
+        "input_name": "n",
+        "input_value": "1073741823"
+    },
+    {
+        "test_id": 671,
+        "input_type": "number",
+        "input_name": "n",
+        "input_value": "0"
+    },
+    {
+        "test_id": 672,
+        "input_type": "number",
+        "input_name": "n",
+        "input_value": "1"
+    },
+    {
+        "test_id": 673,
+        "input_type": "number",
+        "input_name": "n",
+        "input_value": "83748"
+    },
+
+    // Different Rightmost Bit
+    {
+        "test_id": 674,
+        "input_type": "number",
+        "input_name": "n",
+        "input_value": "11"
+    },
+    {
+        "test_id": 674,
+        "input_type": "number",
+        "input_name": "m",
+        "input_value": "13"
+    },
+    {
+        "test_id": 675,
+        "input_type": "number",
+        "input_name": "n",
+        "input_value": "7"
+    },
+    {
+        "test_id": 675,
+        "input_type": "number",
+        "input_name": "m",
+        "input_value": "23"
+    },
+    {
+        "test_id": 676,
+        "input_type": "number",
+        "input_name": "n",
+        "input_value": "1"
+    },
+    {
+        "test_id": 676,
+        "input_type": "number",
+        "input_name": "m",
+        "input_value": "0"
+    },
+    {
+        "test_id": 677,
+        "input_type": "number",
+        "input_name": "n",
+        "input_value": "64"
+    },
+    {
+        "test_id": 677,
+        "input_type": "number",
+        "input_name": "m",
+        "input_value": "65"
+    },
+    {
+        "test_id": 678,
+        "input_type": "number",
+        "input_name": "n",
+        "input_value": "1073741823"
+    },
+    {
+        "test_id": 678,
+        "input_type": "number",
+        "input_name": "m",
+        "input_value": "1071513599"
+    },
+    {
+        "test_id": 679,
+        "input_type": "number",
+        "input_name": "n",
+        "input_value": "42"
+    },
+    {
+        "test_id": 679,
+        "input_type": "number",
+        "input_name": "m",
+        "input_value": "22"
+    },
+
+    // Equal Pair of Bits
+    {
+        "test_id": 680,
+        "input_type": "number",
+        "input_name": "n",
+        "input_value": "10"
+    },
+    {
+        "test_id": 680,
+        "input_type": "number",
+        "input_name": "m",
+        "input_value": "11"
+    },
+    {
+        "test_id": 681,
+        "input_type": "number",
+        "input_name": "n",
+        "input_value": "0"
+    },
+    {
+        "test_id": 681,
+        "input_type": "number",
+        "input_name": "m",
+        "input_value": "0"
+    },
+    {
+        "test_id": 682,
+        "input_type": "number",
+        "input_name": "n",
+        "input_value": "28"
+    },
+    {
+        "test_id": 682,
+        "input_type": "number",
+        "input_name": "m",
+        "input_value": "27"
+    },
+    {
+        "test_id": 683,
+        "input_type": "number",
+        "input_name": "n",
+        "input_value": "895"
+    },
+    {
+        "test_id": 683,
+        "input_type": "number",
+        "input_name": "m",
+        "input_value": "928"
+    },
+    {
+        "test_id": 684,
+        "input_type": "number",
+        "input_name": "n",
+        "input_value": "1073741824"
+    },
+    {
+        "test_id": 684,
+        "input_type": "number",
+        "input_name": "m",
+        "input_value": "1006895103"
+    },
+
     // 
 
 ]

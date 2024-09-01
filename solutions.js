@@ -634,43 +634,43 @@ function solution(str) {
 // 37: arrayMaxConsecutiveSum
 function solution(inputArray, k) {
     if (inputArray.length < k || k <= 0) {
-       throw new Error("Invalid input: Array length is less than k or k is non-positive.");
-   }
+        throw new Error("Invalid input: Array length is less than k or k is non-positive.");
+    }
 
-   // Calculate the initial sum of the first 'k' elements
-   let maxSum = 0;
-   let currentSum = 0;
-   
-   for (let i = 0; i < k; i++) {
-       currentSum += inputArray[i];
-   }
-   
-   maxSum = currentSum;
-   
-   // Slide the window across the array
-   for (let i = k; i < inputArray.length; i++) {
-       currentSum = currentSum - inputArray[i - k] + inputArray[i];
-       if (currentSum > maxSum) {
-           maxSum = currentSum;
-       }
-   }
-   
-   return maxSum;
+    // Calculate the initial sum of the first 'k' elements
+    let maxSum = 0;
+    let currentSum = 0;
+
+    for (let i = 0; i < k; i++) {
+        currentSum += inputArray[i];
+    }
+
+    maxSum = currentSum;
+
+    // Slide the window across the array
+    for (let i = k; i < inputArray.length; i++) {
+        currentSum = currentSum - inputArray[i - k] + inputArray[i];
+        if (currentSum > maxSum) {
+            maxSum = currentSum;
+        }
+    }
+
+    return maxSum;
 }
 
 // 38: growingPlant
 function solution(upSpeed, downSpeed, desiredHeight) {
     let result = 0
     let count = 0
-    
-    while(result < desiredHeight) {
+
+    while (result < desiredHeight) {
         result += upSpeed
         count++
         if (result < desiredHeight) {
             result -= downSpeed
-        } 
+        }
     }
-    
+
     return count
 }
 
@@ -725,7 +725,7 @@ function solution(bishop, pawn) {
     const bishopY = parseInt(bishop[1], 10);
     const pawnX = pawn.charCodeAt(0) - 'a'.charCodeAt(0) + 1;
     const pawnY = parseInt(pawn[1], 10);
-    
+
     // Check if they are on the same diagonal
     return Math.abs(bishopX - pawnX) === Math.abs(bishopY - pawnY);
 }
@@ -734,26 +734,26 @@ function solution(bishop, pawn) {
 function solution(inputString) {
     // Initialize frequency count for each letter a-z
     const frequency = Array(26).fill(0);
-    
+
     // Count occurrences of each letter
     for (let char of inputString) {
         frequency[char.charCodeAt(0) - 'a'.charCodeAt(0)]++;
     }
-    
+
     // Check if the frequency condition is met
     for (let i = 1; i < 26; i++) {
         if (frequency[i] > frequency[i - 1]) {
             return false;
         }
     }
-    
+
     return true;
 }
 
 // 44: Find Email Domain
 function solution(address) {
     const atIndex = address.lastIndexOf('@');
-    
+
     // Extract and return the substring after the "@" symbol
     return address.slice(atIndex + 1);
 }
@@ -772,7 +772,7 @@ function solution(st) {
             return st + prefix.split('').reverse().join('');
         }
     }
-    
+
     // In case of any unforeseen errors, but ideally should not reach here
     return st;
 }
@@ -781,26 +781,26 @@ function solution(st) {
 function solution(votes, k) {
     const n = votes.length;
 
-   // Edge case when k is 0
-   if (k === 0) {
-       const maxVotes = Math.max(...votes);
-       const maxCount = votes.filter(vote => vote === maxVotes).length;
-       // If more than one candidate has the maximum votes, there can be no winner
-       return maxCount === 1 ? 1 : 0;
-   }
+    // Edge case when k is 0
+    if (k === 0) {
+        const maxVotes = Math.max(...votes);
+        const maxCount = votes.filter(vote => vote === maxVotes).length;
+        // If more than one candidate has the maximum votes, there can be no winner
+        return maxCount === 1 ? 1 : 0;
+    }
 
-   // Normal case when k > 0
-   const maxVotes = Math.max(...votes);
-   let count = 0;
+    // Normal case when k > 0
+    const maxVotes = Math.max(...votes);
+    let count = 0;
 
-   for (const vote of votes) {
-       const potentialMaxVotes = vote + k;
-       if (potentialMaxVotes > maxVotes) {
-           count++;
-       }
-   }
-   
-   return count;
+    for (const vote of votes) {
+        const potentialMaxVotes = vote + k;
+        if (potentialMaxVotes > maxVotes) {
+            count++;
+        }
+    }
+
+    return count;
 }
 
 // 47: Is MAC48 Address?
@@ -818,17 +818,17 @@ function solution(symbol) {
 function solution(s) {
     let encodedString = '';
     let i = 0;
-    
+
     while (i < s.length) {
         let char = s[i];
         let count = 0;
-        
+
         // Count the number of repeating characters
         while (i < s.length && s[i] === char) {
             count++;
             i++;
         }
-        
+
         // Encode the substring based on its length
         if (count > 1) {
             encodedString += count + char;
@@ -836,7 +836,7 @@ function solution(s) {
             encodedString += char;
         }
     }
-    
+
     return encodedString;
 }
 
@@ -847,24 +847,24 @@ function solution(cell) {
         [2, 1], [2, -1], [-2, 1], [-2, -1],
         [1, 2], [1, -2], [-1, 2], [-1, -2]
     ];
-    
+
     // Convert the cell to numerical coordinates
     const column = cell.charCodeAt(0) - 'a'.charCodeAt(0) + 1; // 'a' -> 1, 'b' -> 2, ..., 'h' -> 8
     const row = parseInt(cell[1]); // '1' -> 1, '2' -> 2, ..., '8' -> 8
-    
+
     let validMoves = 0;
-    
+
     // Check each possible move
     for (const [dRow, dCol] of moves) {
         const newRow = row + dRow;
         const newCol = column + dCol;
-        
+
         // Check if the new position is within the bounds of the chessboard
         if (newRow >= 1 && newRow <= 8 && newCol >= 1 && newCol <= 8) {
             validMoves++;
         }
     }
-    
+
     return validMoves;
 }
 
@@ -878,13 +878,13 @@ function solution(n) {
         // Create a new number by excluding the digit at position i
         const newNumberStr = numStr.slice(0, i) + numStr.slice(i + 1);
         const newNumber = parseInt(newNumberStr, 10);
-        
+
         // Update the maximum number found
         if (newNumber > maxNumber) {
             maxNumber = newNumber;
         }
     }
-    
+
     return maxNumber;
 }
 
@@ -893,10 +893,10 @@ function solution(text) {
     // Step 1: Normalize the string by removing non-letter characters
     // and replace them with spaces to isolate words.
     const normalizedText = text.replace(/[^a-zA-Z]+/g, ' ');
-    
+
     // Step 2: Extract all sequences of letters (words)
     const words = normalizedText.trim().split(/\s+/);
-    
+
     // Step 3: Find the longest word
     let longestWord = '';
     for (const word of words) {
@@ -904,7 +904,7 @@ function solution(text) {
             longestWord = word;
         }
     }
-    
+
     return longestWord;
 }
 
@@ -912,11 +912,11 @@ function solution(text) {
 function solution(time) {
     // Split the input string by ':'
     const [hours, minutes] = time.split(':');
-    
+
     // Convert hours and minutes to numbers
     const hour = parseInt(hours, 10);
     const minute = parseInt(minutes, 10);
-    
+
     // Check if hour is between 0 and 23, and minute is between 0 and 59
     return hour >= 0 && hour < 24 && minute >= 0 && minute < 60;
 }
@@ -925,15 +925,15 @@ function solution(time) {
 function solution(inputString) {
     // Use regex to find all sequences of digits
     const numbers = inputString.match(/\d+/g);
-    
+
     // If no numbers found, return 0
     if (!numbers) {
         return 0;
     }
-    
+
     // Convert each found sequence to an integer and sum them up
     const sum = numbers.reduce((acc, num) => acc + parseInt(num, 10), 0);
-    
+
     return sum;
 }
 
@@ -942,24 +942,24 @@ function solution(matrix) {
     const rows = matrix.length;
     const cols = matrix[0].length;
     const uniqueSquares = new Set();
-    
+
     // Iterate over possible top-left corners of 2x2 squares
     for (let i = 0; i < rows - 1; i++) {
         for (let j = 0; j < cols - 1; j++) {
             // Extract the 2x2 square
             const square = [
-                matrix[i][j], matrix[i][j+1],
-                matrix[i+1][j], matrix[i+1][j+1]
+                matrix[i][j], matrix[i][j + 1],
+                matrix[i + 1][j], matrix[i + 1][j + 1]
             ];
-            
+
             // Serialize the square to a string
             const key = square.join(',');
-            
+
             // Add the serialized square to the set
             uniqueSquares.add(key);
         }
     }
-    
+
     // The size of the set represents the number of unique 2x2 squares
     return uniqueSquares.size;
 }
@@ -969,10 +969,10 @@ function solution(product) {
     // Special cases
     if (product === 0) return 10;
     if (product === 1) return 1;
-    
+
     // Array to store the factors (digits from 2 to 9)
     let factors = [];
-    
+
     // Factorize the product using digits from 9 to 2
     for (let i = 9; i >= 2; i--) {
         while (product % i === 0) {
@@ -980,13 +980,13 @@ function solution(product) {
             product /= i;
         }
     }
-    
+
     // If product is not 1 after factorization, return -1
     if (product !== 1) return -1;
-    
+
     // Sort the factors to form the smallest possible number
     factors.sort((a, b) => a - b);
-    
+
     // Combine factors to form the smallest number
     return parseInt(factors.join(''));
 }
@@ -996,46 +996,46 @@ function solution(names) {
     // Set to keep track of used filenames
     const usedNames = new Set();
     const result = [];
-    
+
     // Iterate through each name in the input array
     for (let name of names) {
         let baseName = name;
         let suffix = 1;
-        
+
         // Check if the baseName is already used
         while (usedNames.has(baseName)) {
             // If it is used, add a suffix (k)
             baseName = `${name}(${suffix})`;
             suffix++;
         }
-        
+
         // Add the unique baseName to the result and mark it as used
         result.push(baseName);
         usedNames.add(baseName);
     }
-    
+
     return result;
 }
 
 // 58: messageFromBinaryCode
 function solution(code) {
     let message = '';
-    
+
     // Iterate over the binary string in chunks of 8 bits
     for (let i = 0; i < code.length; i += 8) {
         // Extract the 8-bit chunk
         let binaryChunk = code.substring(i, i + 8);
-        
+
         // Convert binary to decimal
         let decimalValue = parseInt(binaryChunk, 2);
-        
+
         // Convert decimal to character
         let character = String.fromCharCode(decimalValue);
-        
+
         // Append the character to the message
         message += character;
     }
-    
+
     return message;
 }
 
@@ -1043,24 +1043,24 @@ function solution(code) {
 function solution(n) {
     // Initialize the NxN matrix with zeros
     const matrix = Array.from({ length: n }, () => Array(n).fill(0));
-    
+
     // Define the boundaries
     let top = 0, bottom = n - 1, left = 0, right = n - 1;
     let num = 1; // Start filling from 1
-    
+
     while (top <= bottom && left <= right) {
         // Traverse from left to right along the top row
         for (let i = left; i <= right; i++) {
             matrix[top][i] = num++;
         }
         top++; // Move the top boundary down
-        
+
         // Traverse from top to bottom along the right column
         for (let i = top; i <= bottom; i++) {
             matrix[i][right] = num++;
         }
         right--; // Move the right boundary left
-        
+
         // Traverse from right to left along the bottom row (if there are rows left)
         if (top <= bottom) {
             for (let i = right; i >= left; i--) {
@@ -1068,7 +1068,7 @@ function solution(n) {
             }
             bottom--; // Move the bottom boundary up
         }
-        
+
         // Traverse from bottom to top along the left column (if there are columns left)
         if (left <= right) {
             for (let i = bottom; i >= top; i--) {
@@ -1077,7 +1077,7 @@ function solution(n) {
             left++; // Move the left boundary right
         }
     }
-    
+
     return matrix;
 }
 
@@ -1126,76 +1126,198 @@ function solution(grid) {
 //// __________________________________The Core_______________________________ ////
 
 // 1: Add Two Digits
+function solution(n) {
+    // Get the tens digit by dividing by 10 and using Math.floor to get the integer part
+    const tensDigit = Math.floor(n / 10);
 
+    // Get the units digit by taking the remainder when divided by 10
+    const unitsDigit = n % 10;
+
+    // Return the sum of the two digits
+    return tensDigit + unitsDigit;
+}
 
 // 2: Largest Number
+function solution(n) {
+    // Calculate the largest number with n digits
+    const largestNumber = Math.pow(10, n) - 1;
 
+    // Return the result
+    return largestNumber;
+}
 
 // 3: Candies
-
+function solution(n, m) {
+    return m - m % n;
+}
 
 // 4: Seats in Theater
-
+function solution(nCols, nRows, col, row) {
+    return (nRows - row) * (nCols - col + 1);
+}
 
 // 5: Max Multiple
-
+function solution(divisor, bound) {
+    return Math.floor(bound / divisor) * divisor;
+}
 
 // 6: Circle of Numbers
-
+function solution(n, firstNumber) {
+    return (firstNumber + n / 2) % n;
+}
 
 // 7: Late Ride
-
+function solution(n) {
+    let hours = Math.floor(n / 60);
+    let minutes = n % 60;
+    let timeString = hours.toString().padStart(2, '0') + minutes.toString().padStart(2, '0');
+    return timeString.split('').reduce((sum, digit) => sum + parseInt(digit), 0);
+}
 
 // 8: Phone Call
+function solution(min1, min2_10, min11, s) {
+    if (s < min1) return 0;
 
+    s -= min1;
+    if (s <= min2_10 * 9) {
+        return 1 + Math.floor(s / min2_10);
+    }
+
+    s -= min2_10 * 9;
+    return 10 + Math.floor(s / min11);
+}
 
 // 9: Reach Next Level
-
+function solution(experience, threshold, reward) {
+    return experience + reward >= threshold;
+}
 
 // 10: Knapsack Light
-
+function solution(value1, weight1, value2, weight2, maxW) {
+    if (weight1 + weight2 <= maxW) {
+        return value1 + value2;
+    } else if (weight1 <= maxW && weight2 <= maxW) {
+        return Math.max(value1, value2);
+    } else if (weight1 <= maxW) {
+        return value1;
+    } else if (weight2 <= maxW) {
+        return value2;
+    } else {
+        return 0;
+    }
+}
 
 // 11: Extra Number
-
+function solution(a, b, c) {
+    if (a === b) return c;
+    if (a === c) return b;
+    return a;
+}
 
 // 12: Is Infinite Process?
-
+function solution(a, b) {
+    return a > b || a % 2 != b % 2;
+}
 
 // 13: Arithmetic Expression
-
+function solution(a, b, c) {
+    return a + b === c || a - b === c || a * b === c || (b !== 0 && a / b === c);
+}
 
 // 14: Tennis Set
-
+function solution(score1, score2) {
+    var max = Math.max(score1, score2),
+        min = Math.min(score1, score2);
+    return (max == 6 && min < 5) || (max == 7 && min >= 5 && min <= 6);
+}
 
 // 15: Will You?
-
+function solution(young, beautiful, loved) {
+    return (young && beautiful && !loved) || (loved && (!young || !beautiful));
+}
 
 // 16: Metro Card
-
+function solution(lastNumberOfDays) {
+    var result = {
+        30: [31],
+        28: [31],
+        31: [28, 30, 31]
+    };
+    return result[lastNumberOfDays];
+}
 
 // 17: Kill K-th Bit
-
+function solution(n, k) {
+    return n & ~(1 << k - 1);
+}
 
 // 18: Array Packing
-
+function solution(a) {
+    let M = 0;
+    for (let i = 0; i < a.length; i++) {
+        M |= a[i] << (8 * i);
+    }
+    return M;
+}
 
 // 19: Range Bit Count
-
+function solution(a, b) {
+    let count = 0;
+    for (let i = a; i <= b; i++) {
+        count += i.toString(2).split('1').length - 1;
+    }
+    return count;
+}
 
 // 20: Mirror Bits
+function solution(a) {
+    // Convert the number to binary string
+    let binaryStr = a.toString(2);
 
+    // Reverse the binary string
+    let reversedBinaryStr = binaryStr.split('').reverse().join('');
+
+    // Convert the reversed binary string back to an integer
+    return parseInt(reversedBinaryStr, 2);
+}
 
 // 21: Second-Rightmost Zero Bit
+function solution(n) {
+    return (function (input) {
+        // Fuck your "only change the ..." policy
 
+        var result = 0;
+        var zeroFound = false;
+
+        for (var i = 0; i < 32; i++) {
+            if (!((input >> i) & 1)) {
+                if (zeroFound) {
+                    result = i;
+                    break;
+                }
+
+                zeroFound = true;
+            }
+        }
+
+        return Math.pow(2, result);
+    })(n);
+}
 
 // 22: Swap Adjacent Bits
-
+function solution(n) {
+    return parseInt(n.toString(2).padStart(32, `0`).replace(/(.)(.)/g, `$2$1`), 2);
+}
 
 // 23: Different Rightmost Bit
-
+function solution(n, m) {
+    return (n ^ m) & -(n ^ m);
+}
 
 // 24: Equal Pair of Bits
-
+function solution(n, m) {
+    return ~(n ^ m) & ((n ^ m) + 1);
+}
 
 // 25: Least Factorial
 
@@ -1466,11 +1588,11 @@ function solution(grid) {
 
 // 114: Shuffled Array
 function solution(shuffled) {
-    const sumValue = shuffled.reduce((a,b) => a+b)/2;
+    const sumValue = shuffled.reduce((a, b) => a + b) / 2;
     const index = shuffled.indexOf(sumValue);
     const newArray = shuffled.slice()
-    newArray.splice(index,1)
-    return newArray.sort((a,b) => a - b)
+    newArray.splice(index, 1)
+    return newArray.sort((a, b) => a - b)
 }
 
 // 115: Sort by Height
@@ -1615,5 +1737,7 @@ function solution(shuffled) {
 
 
 // 162: Time ASCII Representation
+
+
 
 
