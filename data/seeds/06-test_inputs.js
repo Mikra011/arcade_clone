@@ -6910,7 +6910,2676 @@ const test_inputs = [
         "input_value": "[1]"
     },
 
+    // Is Power?
+    {
+        "test_id": 828,
+        "input_type": "number",
+        "input_name": "n",
+        "input_value": "125"
+    },
+    {
+        "test_id": 829,
+        "input_type": "number",
+        "input_name": "n",
+        "input_value": "72"
+    },
+    {
+        "test_id": 830,
+        "input_type": "number",
+        "input_name": "n",
+        "input_value": "100"
+    },
+    {
+        "test_id": 831,
+        "input_type": "number",
+        "input_name": "n",
+        "input_value": "11"
+    },
+    {
+        "test_id": 832,
+        "input_type": "number",
+        "input_name": "n",
+        "input_value": "324"
+    },
+    {
+        "test_id": 833,
+        "input_type": "number",
+        "input_name": "n",
+        "input_value": "256"
+    },
+    {
+        "test_id": 834,
+        "input_type": "number",
+        "input_name": "n",
+        "input_value": "119"
+    },
+    {
+        "test_id": 835,
+        "input_type": "number",
+        "input_name": "n",
+        "input_value": "400"
+    },
+    {
+        "test_id": 836,
+        "input_type": "number",
+        "input_name": "n",
+        "input_value": "350"
+    },
+    {
+        "test_id": 837,
+        "input_type": "number",
+        "input_name": "n",
+        "input_value": "361"
+    },
+
+    // Is Sum of Consecutive 2
+    {
+        "test_id": 838,
+        "input_type": "number",
+        "input_name": "n",
+        "input_value": "9"
+    },
+    {
+        "test_id": 839,
+        "input_type": "number",
+        "input_name": "n",
+        "input_value": "8"
+    },
+    {
+        "test_id": 840,
+        "input_type": "number",
+        "input_name": "n",
+        "input_value": "15"
+    },
+    {
+        "test_id": 841,
+        "input_type": "number",
+        "input_name": "n",
+        "input_value": "24"
+    },
+    {
+        "test_id": 842,
+        "input_type": "number",
+        "input_name": "n",
+        "input_value": "13"
+    },
+    {
+        "test_id": 843,
+        "input_type": "number",
+        "input_name": "n",
+        "input_value": "25"
+    },
+    {
+        "test_id": 844,
+        "input_type": "number",
+        "input_name": "n",
+        "input_value": "99"
+    },
+
+    // Square Digits Sequence
+    {
+        "test_id": 845,
+        "input_type": "number",
+        "input_name": "a0",
+        "input_value": "16"
+    },
+    {
+        "test_id": 846,
+        "input_type": "number",
+        "input_name": "a0",
+        "input_value": "103"
+    },
+    {
+        "test_id": 847,
+        "input_type": "number",
+        "input_name": "a0",
+        "input_value": "1"
+    },
+    {
+        "test_id": 848,
+        "input_type": "number",
+        "input_name": "a0",
+        "input_value": "13"
+    },
+    {
+        "test_id": 849,
+        "input_type": "number",
+        "input_name": "a0",
+        "input_value": "89"
+    },
+    {
+        "test_id": 850,
+        "input_type": "number",
+        "input_name": "a0",
+        "input_value": "612"
+    },
+
+    // Pages Numbering With Ink
+    {
+        "test_id": 851,
+        "input_type": "number",
+        "input_name": "current",
+        "input_value": "1"
+    },
+    {
+        "test_id": 851,
+        "input_type": "number",
+        "input_name": "numberOfDigits",
+        "input_value": "5"
+    },
+    {
+        "test_id": 852,
+        "input_type": "number",
+        "input_name": "current",
+        "input_value": "21"
+    },
+    {
+        "test_id": 852,
+        "input_type": "number",
+        "input_name": "numberOfDigits",
+        "input_value": "5"
+    },
+    {
+        "test_id": 853,
+        "input_type": "number",
+        "input_name": "current",
+        "input_value": "8"
+    },
+    {
+        "test_id": 853,
+        "input_type": "number",
+        "input_name": "numberOfDigits",
+        "input_value": "4"
+    },
+    {
+        "test_id": 854,
+        "input_type": "number",
+        "input_name": "current",
+        "input_value": "21"
+    },
+    {
+        "test_id": 854,
+        "input_type": "number",
+        "input_name": "numberOfDigits",
+        "input_value": "6"
+    },
+    {
+        "test_id": 855,
+        "input_type": "number",
+        "input_name": "current",
+        "input_value": "10"
+    },
+    {
+        "test_id": 855,
+        "input_type": "number",
+        "input_name": "numberOfDigits",
+        "input_value": "3"
+    },
+    {
+        "test_id": 856,
+        "input_type": "number",
+        "input_name": "current",
+        "input_value": "76"
+    },
+    {
+        "test_id": 856,
+        "input_type": "number",
+        "input_name": "numberOfDigits",
+        "input_value": "250"
+    },
+    {
+        "test_id": 857,
+        "input_type": "number",
+        "input_name": "current",
+        "input_value": "80"
+    },
+    {
+        "test_id": 857,
+        "input_type": "number",
+        "input_name": "numberOfDigits",
+        "input_value": "1000"
+    },
+
+    // Comfortable Numbers
+    {
+        "test_id": 858,
+        "input_type": "number",
+        "input_name": "l",
+        "input_value": "10"
+    },
+    {
+        "test_id": 858,
+        "input_type": "number",
+        "input_name": "r",
+        "input_value": "12"
+    },
+    {
+        "test_id": 859,
+        "input_type": "number",
+        "input_name": "l",
+        "input_value": "1"
+    },
+    {
+        "test_id": 859,
+        "input_type": "number",
+        "input_name": "r",
+        "input_value": "9"
+    },
+    {
+        "test_id": 860,
+        "input_type": "number",
+        "input_name": "l",
+        "input_value": "13"
+    },
+    {
+        "test_id": 860,
+        "input_type": "number",
+        "input_name": "r",
+        "input_value": "13"
+    },
+    {
+        "test_id": 861,
+        "input_type": "number",
+        "input_name": "l",
+        "input_value": "12"
+    },
+    {
+        "test_id": 861,
+        "input_type": "number",
+        "input_name": "r",
+        "input_value": "108"
+    },
+    {
+        "test_id": 862,
+        "input_type": "number",
+        "input_name": "l",
+        "input_value": "239"
+    },
+    {
+        "test_id": 862,
+        "input_type": "number",
+        "input_name": "r",
+        "input_value": "777"
+    },
+    {
+        "test_id": 863,
+        "input_type": "number",
+        "input_name": "l",
+        "input_value": "1"
+    },
+    {
+        "test_id": 863,
+        "input_type": "number",
+        "input_name": "r",
+        "input_value": "1000"
+    },
+
+    // Weak Numbers
+    {
+        "test_id": 864,
+        "input_type": "number",
+        "input_name": "n",
+        "input_value": "9"
+    },
+    {
+        "test_id": 865,
+        "input_type": "number",
+        "input_name": "n",
+        "input_value": "1"
+    },
+    {
+        "test_id": 866,
+        "input_type": "number",
+        "input_name": "n",
+        "input_value": "2"
+    },
+    {
+        "test_id": 867,
+        "input_type": "number",
+        "input_name": "n",
+        "input_value": "7"
+    },
+    {
+        "test_id": 868,
+        "input_type": "number",
+        "input_name": "n",
+        "input_value": "500"
+    },
+    {
+        "test_id": 869,
+        "input_type": "number",
+        "input_name": "n",
+        "input_value": "4"
+    },
+
+    // Rectangle Rotation
+    {
+        "test_id": 870,
+        "input_type": "number",
+        "input_name": "a",
+        "input_value": "6"
+    },
+    {
+        "test_id": 870,
+        "input_type": "number",
+        "input_name": "b",
+        "input_value": "4"
+    },
+    {
+        "test_id": 871,
+        "input_type": "number",
+        "input_name": "a",
+        "input_value": "30"
+    },
+    {
+        "test_id": 871,
+        "input_type": "number",
+        "input_name": "b",
+        "input_value": "2"
+    },
+    {
+        "test_id": 872,
+        "input_type": "number",
+        "input_name": "a",
+        "input_value": "8"
+    },
+    {
+        "test_id": 872,
+        "input_type": "number",
+        "input_name": "b",
+        "input_value": "6"
+    },
+    {
+        "test_id": 873,
+        "input_type": "number",
+        "input_name": "a",
+        "input_value": "16"
+    },
+    {
+        "test_id": 873,
+        "input_type": "number",
+        "input_name": "b",
+        "input_value": "20"
+    },
+    {
+        "test_id": 874,
+        "input_type": "number",
+        "input_name": "a",
+        "input_value": "20"
+    },
+    {
+        "test_id": 874,
+        "input_type": "number",
+        "input_name": "b",
+        "input_value": "32"
+    },
+    {
+        "test_id": 875,
+        "input_type": "number",
+        "input_name": "a",
+        "input_value": "30"
+    },
+    {
+        "test_id": 875,
+        "input_type": "number",
+        "input_name": "b",
+        "input_value": "26"
+    },
+    {
+        "test_id": 876,
+        "input_type": "number",
+        "input_name": "a",
+        "input_value": "50"
+    },
+    {
+        "test_id": 876,
+        "input_type": "number",
+        "input_name": "b",
+        "input_value": "4"
+    },
+    {
+        "test_id": 877,
+        "input_type": "number",
+        "input_name": "a",
+        "input_value": "2"
+    },
+    {
+        "test_id": 877,
+        "input_type": "number",
+        "input_name": "b",
+        "input_value": "2"
+    },
+    {
+        "test_id": 878,
+        "input_type": "number",
+        "input_name": "a",
+        "input_value": "50"
+    },
+    {
+        "test_id": 878,
+        "input_type": "number",
+        "input_name": "b",
+        "input_value": "50"
+    },
+    {
+        "test_id": 879,
+        "input_type": "number",
+        "input_name": "a",
+        "input_value": "38"
+    },
+    {
+        "test_id": 879,
+        "input_type": "number",
+        "input_name": "b",
+        "input_value": "42"
+    },
+
+    // Crossword Formation
+    {
+        "test_id": 880,
+        "input_type": "arrayOfStrings",
+        "input_name": "words",
+        "input_value": '["crossword","square","formation","something"]'
+    },
+    {
+        "test_id": 881,
+        "input_type": "arrayOfStrings",
+        "input_name": "words",
+        "input_value": '["anaesthetist","thatch","ethnics","sabulous"]'
+    },
+    {
+        "test_id": 882,
+        "input_type": "arrayOfStrings",
+        "input_name": "words",
+        "input_value": '["eternal","texas","chainsaw","massacre"]'
+    },
+    {
+        "test_id": 883,
+        "input_type": "arrayOfStrings",
+        "input_name": "words",
+        "input_value": '["africa","america","australia","antarctica"]'
+    },
+    {
+        "test_id": 884,
+        "input_type": "arrayOfStrings",
+        "input_name": "words",
+        "input_value": '["phenomenon","remuneration","particularly","pronunciation"]'
+    },
+    {
+        "test_id": 885,
+        "input_type": "arrayOfStrings",
+        "input_name": "words",
+        "input_value": '["onomatopoeia","philosophical","provocatively","thesaurus"]'
+    },
+
+    // Enclose In Brackets
+    {
+        "test_id": 886,
+        "input_type": "string",
+        "input_name": "inputString",
+        "input_value": "abacaba"
+    },
+    {
+        "test_id": 887,
+        "input_type": "string",
+        "input_name": "inputString",
+        "input_value": "abcdef"
+    },
+    {
+        "test_id": 888,
+        "input_type": "string",
+        "input_name": "inputString",
+        "input_value": "aaad"
+    },
+    {
+        "test_id": 889,
+        "input_type": "string",
+        "input_name": "inputString",
+        "input_value": "if"
+    },
+    {
+        "test_id": 890,
+        "input_type": "string",
+        "input_name": "inputString",
+        "input_value": "it"
+    },
+    {
+        "test_id": 891,
+        "input_type": "string",
+        "input_name": "inputString",
+        "input_value": "doesnt"
+    },
+    {
+        "test_id": 892,
+        "input_type": "string",
+        "input_name": "inputString",
+        "input_value": "challenge"
+    },
+    {
+        "test_id": 893,
+        "input_type": "string",
+        "input_name": "inputString",
+        "input_value": "you"
+    },
+    {
+        "test_id": 894,
+        "input_type": "string",
+        "input_name": "inputString",
+        "input_value": "itt"
+    },
+    {
+        "test_id": 895,
+        "input_type": "string",
+        "input_name": "inputString",
+        "input_value": "wont"
+    },
+
+    // Proper Noun Correction
+    {
+        "test_id": 896,
+        "input_type": "string",
+        "input_name": "noun",
+        "input_value": "pARiS"
+    },
+    {
+        "test_id": 897,
+        "input_type": "string",
+        "input_name": "noun",
+        "input_value": "John"
+    },
+    {
+        "test_id": 898,
+        "input_type": "string",
+        "input_name": "noun",
+        "input_value": "mary"
+    },
+    {
+        "test_id": 899,
+        "input_type": "string",
+        "input_name": "noun",
+        "input_value": "a"
+    },
+    {
+        "test_id": 900,
+        "input_type": "string",
+        "input_name": "noun",
+        "input_value": "B"
+    },
+    {
+        "test_id": 901,
+        "input_type": "string",
+        "input_name": "noun",
+        "input_value": "yFZMlGvUQP"
+    },
+    {
+        "test_id": 902,
+        "input_type": "string",
+        "input_name": "noun",
+        "input_value": "HQQrrDxuqe"
+    },
+    {
+        "test_id": 903,
+        "input_type": "string",
+        "input_name": "noun",
+        "input_value": "atDh"
+    },
+    {
+        "test_id": 904,
+        "input_type": "string",
+        "input_name": "noun",
+        "input_value": "pJHSYVAZB"
+    },
+    {
+        "test_id": 905,
+        "input_type": "string",
+        "input_name": "noun",
+        "input_value": "dKrqO"
+    },
+
+    // Is Tandem Repeat?
+    {
+        "test_id": 906,
+        "input_type": "string",
+        "input_name": "inputString",
+        "input_value": "tandemtandem"
+    },
+    {
+        "test_id": 907,
+        "input_type": "string",
+        "input_name": "inputString",
+        "input_value": "qqq"
+    },
+    {
+        "test_id": 908,
+        "input_type": "string",
+        "input_name": "inputString",
+        "input_value": "2w2ww"
+    },
+    {
+        "test_id": 909,
+        "input_type": "string",
+        "input_name": "inputString",
+        "input_value": "hophey"
+    },
+    {
+        "test_id": 910,
+        "input_type": "string",
+        "input_name": "inputString",
+        "input_value": "CodeSignalCodeSignal"
+    },
+    {
+        "test_id": 911,
+        "input_type": "string",
+        "input_name": "inputString",
+        "input_value": "interestinterest"
+    },
+    {
+        "test_id": 912,
+        "input_type": "string",
+        "input_name": "inputString",
+        "input_value": "aa"
+    },
+    {
+        "test_id": 913,
+        "input_type": "string",
+        "input_name": "inputString",
+        "input_value": "ab"
+    },
+    {
+        "test_id": 914,
+        "input_type": "string",
+        "input_name": "inputString",
+        "input_value": "stringString"
+    },
+    {
+        "test_id": 915,
+        "input_type": "string",
+        "input_name": "inputString",
+        "input_value": "truetruetrue"
+    },
+
+    // Is Case-Insensitive Palindrome?
+    {
+        "test_id": 916,
+        "input_type": "string",
+        "input_name": "inputString",
+        "input_value": "AaBaa"
+    },
+    {
+        "test_id": 917,
+        "input_type": "string",
+        "input_name": "inputString",
+        "input_value": "abac"
+    },
+    {
+        "test_id": 918,
+        "input_type": "string",
+        "input_name": "inputString",
+        "input_value": "aBACaba"
+    },
+    {
+        "test_id": 919,
+        "input_type": "string",
+        "input_name": "inputString",
+        "input_value": "opOP"
+    },
+    {
+        "test_id": 920,
+        "input_type": "string",
+        "input_name": "inputString",
+        "input_value": "ZZzzazZzz"
+    },
+    {
+        "test_id": 921,
+        "input_type": "string",
+        "input_name": "inputString",
+        "input_value": "zzzzazzzz"
+    },
+    {
+        "test_id": 922,
+        "input_type": "string",
+        "input_name": "inputString",
+        "input_value": "ZZzzabzZzz"
+    },
+    {
+        "test_id": 923,
+        "input_type": "string",
+        "input_name": "inputString",
+        "input_value": "abcdcbA"
+    },
+    {
+        "test_id": 924,
+        "input_type": "string",
+        "input_name": "inputString",
+        "input_value": "abracabra"
+    },
+    {
+        "test_id": 925,
+        "input_type": "string",
+        "input_name": "inputString",
+        "input_value": "abcd"
+    },
+
+    // Find Email Domain
+    {
+        "test_id": 926,
+        "input_type": "string",
+        "input_name": "address",
+        "input_value": "prettyandsimple@example.com"
+    },
+    {
+        "test_id": 927,
+        "input_type": "string",
+        "input_name": "address",
+        "input_value": "fully-qualified-domain@codesignal.com"
+    },
+    {
+        "test_id": 928,
+        "input_type": "string",
+        "input_name": "address",
+        "input_value": "\" \"@space.com"
+    },
+    {
+        "test_id": 929,
+        "input_type": "string",
+        "input_name": "address",
+        "input_value": "someaddress@yandex.ru"
+    },
+    {
+        "test_id": 930,
+        "input_type": "string",
+        "input_name": "address",
+        "input_value": "\" \"@xample.org"
+    },
+    {
+        "test_id": 931,
+        "input_type": "string",
+        "input_name": "address",
+        "input_value": "\"much.more unusual\"@yahoo.com"
+    },
+    {
+        "test_id": 932,
+        "input_type": "string",
+        "input_name": "address",
+        "input_value": "\"very.unusual.@.unusual.com\"@usual.com"
+    },
+    {
+        "test_id": 933,
+        "input_type": "string",
+        "input_name": "address",
+        "input_value": "admin@mailserver2.ru"
+    },
+    {
+        "test_id": 934,
+        "input_type": "string",
+        "input_name": "address",
+        "input_value": "example-indeed@strange-example.com"
+    },
+    {
+        "test_id": 935,
+        "input_type": "string",
+        "input_name": "address",
+        "input_value": "very.common@gmail.com"
+    },
+
+    // HTML End Tag By Start Tag
+    {
+        "test_id": 936,
+        "input_type": "string",
+        "input_name": "startTag",
+        "input_value": "<button type='button' disabled>"
+    },
+    {
+        "test_id": 937,
+        "input_type": "string",
+        "input_name": "startTag",
+        "input_value": "<i>"
+    },
+    {
+        "test_id": 938,
+        "input_type": "string",
+        "input_name": "startTag",
+        "input_value": "<div id='my_area' class='data' title='This is a test for title on Div tag'>"
+    },
+    {
+        "test_id": 939,
+        "input_type": "string",
+        "input_name": "startTag",
+        "input_value": "<html>"
+    },
+    {
+        "test_id": 940,
+        "input_type": "string",
+        "input_name": "startTag",
+        "input_value": "<TABLE border='1'>"
+    },
+    {
+        "test_id": 941,
+        "input_type": "string",
+        "input_name": "startTag",
+        "input_value": "<li class='test'>"
+    },
+
+    // Is MAC48 Address?
+    {
+        "test_id": 942,
+        "input_type": "string",
+        "input_name": "inputString",
+        "input_value": "00-1B-63-84-45-E6"
+    },
+    {
+        "test_id": 943,
+        "input_type": "string",
+        "input_name": "inputString",
+        "input_value": "Z1-1B-63-84-45-E6"
+    },
+    {
+        "test_id": 944,
+        "input_type": "string",
+        "input_name": "inputString",
+        "input_value": "not a MAC-48 address"
+    },
+    {
+        "test_id": 945,
+        "input_type": "string",
+        "input_name": "inputString",
+        "input_value": "FF-FF-FF-FF-FF-FF"
+    },
+    {
+        "test_id": 946,
+        "input_type": "string",
+        "input_name": "inputString",
+        "input_value": "00-00-00-00-00-00"
+    },
+    {
+        "test_id": 947,
+        "input_type": "string",
+        "input_name": "inputString",
+        "input_value": "G0-00-00-00-00-00"
+    },
+    {
+        "test_id": 948,
+        "input_type": "string",
+        "input_name": "inputString",
+        "input_value": "02-03-04-05-06-07-"
+    },
+    {
+        "test_id": 949,
+        "input_type": "string",
+        "input_name": "inputString",
+        "input_value": "12-34-56-78-9A-BC"
+    },
+    {
+        "test_id": 950,
+        "input_type": "string",
+        "input_name": "inputString",
+        "input_value": "FF-FF-AB-CD-EA-BC"
+    },
+    {
+        "test_id": 951,
+        "input_type": "string",
+        "input_name": "inputString",
+        "input_value": "12-34-56-78-9A-BG"
+    },
+
+    // Is Unstable Pair?
+    {
+        "test_id": 952,
+        "input_type": "string",
+        "input_name": "filename1",
+        "input_value": "aa"
+    },
+    {
+        "test_id": 952,
+        "input_type": "string",
+        "input_name": "filename2",
+        "input_value": "AAB"
+    },
+    {
+        "test_id": 953,
+        "input_type": "string",
+        "input_name": "filename1",
+        "input_value": "A"
+    },
+    {
+        "test_id": 953,
+        "input_type": "string",
+        "input_name": "filename2",
+        "input_value": "z"
+    },
+    {
+        "test_id": 954,
+        "input_type": "string",
+        "input_name": "filename1",
+        "input_value": "yyyyyy"
+    },
+    {
+        "test_id": 954,
+        "input_type": "string",
+        "input_name": "filename2",
+        "input_value": "Azzzzzzzzz"
+    },
+    {
+        "test_id": 955,
+        "input_type": "string",
+        "input_name": "filename1",
+        "input_value": "mehOu"
+    },
+    {
+        "test_id": 955,
+        "input_type": "string",
+        "input_name": "filename2",
+        "input_value": "mehau"
+    },
+    {
+        "test_id": 956,
+        "input_type": "string",
+        "input_name": "filename1",
+        "input_value": "aaZ"
+    },
+    {
+        "test_id": 956,
+        "input_type": "string",
+        "input_name": "filename2",
+        "input_value": "AAzz"
+    },
+    {
+        "test_id": 957,
+        "input_type": "string",
+        "input_name": "filename1",
+        "input_value": "fdsAs"
+    },
+    {
+        "test_id": 957,
+        "input_type": "string",
+        "input_name": "filename2",
+        "input_value": "dzdw"
+    },
+    {
+        "test_id": 958,
+        "input_type": "string",
+        "input_name": "filename1",
+        "input_value": "aaad"
+    },
+    {
+        "test_id": 958,
+        "input_type": "string",
+        "input_name": "filename2",
+        "input_value": "aaAdd"
+    },
+    {
+        "test_id": 959,
+        "input_type": "string",
+        "input_name": "filename1",
+        "input_value": "zzzzzAa123"
+    },
+    {
+        "test_id": 959,
+        "input_type": "string",
+        "input_name": "filename2",
+        "input_value": "zzzzza"
+    },
+    {
+        "test_id": 960,
+        "input_type": "string",
+        "input_name": "filename1",
+        "input_value": "123za"
+    },
+    {
+        "test_id": 960,
+        "input_type": "string",
+        "input_name": "filename2",
+        "input_value": "123Z"
+    },
+    {
+        "test_id": 961,
+        "input_type": "string",
+        "input_name": "filename1",
+        "input_value": "qwerTyu123"
+    },
+    {
+        "test_id": 961,
+        "input_type": "string",
+        "input_name": "filename2",
+        "input_value": "qwertyu"
+    },
+
+    // Strings Construction
+    {
+        "test_id": 962,
+        "input_type": "string",
+        "input_name": "a",
+        "input_value": "abc"
+    },
+    {
+        "test_id": 962,
+        "input_type": "string",
+        "input_name": "b",
+        "input_value": "abccba"
+    },
+    {
+        "test_id": 963,
+        "input_type": "string",
+        "input_name": "a",
+        "input_value": "ab"
+    },
+    {
+        "test_id": 963,
+        "input_type": "string",
+        "input_name": "b",
+        "input_value": "abcbcb"
+    },
+    {
+        "test_id": 964,
+        "input_type": "string",
+        "input_name": "a",
+        "input_value": "ab"
+    },
+    {
+        "test_id": 964,
+        "input_type": "string",
+        "input_name": "b",
+        "input_value": "abccba"
+    },
+    {
+        "test_id": 965,
+        "input_type": "string",
+        "input_name": "a",
+        "input_value": "b"
+    },
+    {
+        "test_id": 965,
+        "input_type": "string",
+        "input_name": "b",
+        "input_value": "abccba"
+    },
+    {
+        "test_id": 966,
+        "input_type": "string",
+        "input_name": "a",
+        "input_value": "c"
+    },
+    {
+        "test_id": 966,
+        "input_type": "string",
+        "input_name": "b",
+        "input_value": "abccbac"
+    },
+    {
+        "test_id": 967,
+        "input_type": "string",
+        "input_name": "a",
+        "input_value": "z"
+    },
+    {
+        "test_id": 967,
+        "input_type": "string",
+        "input_name": "b",
+        "input_value": "z"
+    },
+    {
+        "test_id": 968,
+        "input_type": "string",
+        "input_name": "a",
+        "input_value": "z"
+    },
+    {
+        "test_id": 968,
+        "input_type": "string",
+        "input_name": "b",
+        "input_value": "y"
+    },
+    {
+        "test_id": 969,
+        "input_type": "string",
+        "input_name": "a",
+        "input_value": "za"
+    },
+    {
+        "test_id": 969,
+        "input_type": "string",
+        "input_name": "b",
+        "input_value": "bzc"
+    },
+    {
+        "test_id": 970,
+        "input_type": "string",
+        "input_name": "a",
+        "input_value": "hnccv"
+    },
+    {
+        "test_id": 970,
+        "input_type": "string",
+        "input_name": "b",
+        "input_value": "hncvohcjhdfnhonxddcocjncchnvohchnjohcvnhjdhihsn"
+    },
+    {
+        "test_id": 971,
+        "input_type": "string",
+        "input_name": "a",
+        "input_value": "abc"
+    },
+    {
+        "test_id": 971,
+        "input_type": "string",
+        "input_name": "b",
+        "input_value": "def"
+    },
+    {
+        "test_id": 972,
+        "input_type": "string",
+        "input_name": "a",
+        "input_value": "zzz"
+    },
+    {
+        "test_id": 972,
+        "input_type": "string",
+        "input_name": "b",
+        "input_value": "zzzzzzzzzzz"
+    },
+    {
+        "test_id": 973,
+        "input_type": "string",
+        "input_name": "a",
+        "input_value": "abcabcabc"
+    },
+    {
+        "test_id": 973,
+        "input_type": "string",
+        "input_name": "b",
+        "input_value": "aaaaaaaaaaabbbbbbbbbbcccccccccc"
+    },
+    {
+        "test_id": 974,
+        "input_type": "string",
+        "input_name": "a",
+        "input_value": "abc"
+    },
+    {
+        "test_id": 974,
+        "input_type": "string",
+        "input_name": "b",
+        "input_value": "xyz"
+    },
+    {
+        "test_id": 975,
+        "input_type": "string",
+        "input_name": "a",
+        "input_value": "zbc"
+    },
+    {
+        "test_id": 975,
+        "input_type": "string",
+        "input_name": "b",
+        "input_value": "ydlblksdjccdddb"
+    },
+    {
+        "test_id": 976,
+        "input_type": "string",
+        "input_name": "a",
+        "input_value": "abdd"
+    },
+    {
+        "test_id": 976,
+        "input_type": "string",
+        "input_name": "b",
+        "input_value": "adadapqrtsmnckgljj"
+    },
+    {
+        "test_id": 977,
+        "input_type": "string",
+        "input_name": "a",
+        "input_value": "abcde"
+    },
+    {
+        "test_id": 977,
+        "input_type": "string",
+        "input_name": "b",
+        "input_value": "edbcaacbdebcedaadbecadbceecabddbaecabecdcdabeabcde"
+    },
+    {
+        "test_id": 978,
+        "input_type": "string",
+        "input_name": "a",
+        "input_value": "abcde"
+    },
+    {
+        "test_id": 978,
+        "input_type": "string",
+        "input_name": "b",
+        "input_value": "edbcaaclpebcekbadbecadbcefcabddbaecaaaaacdakrabcde"
+    },
+    {
+        "test_id": 979,
+        "input_type": "string",
+        "input_name": "a",
+        "input_value": "zkz"
+    },
+    {
+        "test_id": 979,
+        "input_type": "string",
+        "input_name": "b",
+        "input_value": "zpaskazgazkazggaaksiokkzzzzaaazzpkuazzzgzkzabrgzzq"
+    },
+    {
+        "test_id": 980,
+        "input_type": "string",
+        "input_name": "a",
+        "input_value": "ggagagagga"
+    },
+    {
+        "test_id": 980,
+        "input_type": "string",
+        "input_name": "b",
+        "input_value": "gga"
+    },
+    {
+        "test_id": 981,
+        "input_type": "string",
+        "input_name": "a",
+        "input_value": "pqrsttt"
+    },
+    {
+        "test_id": 981,
+        "input_type": "string",
+        "input_name": "b",
+        "input_value": "parfkajfraqrakjssattertjeqsqaptatdptdstasreraqprtt"
+    },
+    {
+        "test_id": 982,
+        "input_type": "string",
+        "input_name": "a",
+        "input_value": "azgtpzzgab"
+    },
+    {
+        "test_id": 982,
+        "input_type": "string",
+        "input_name": "b",
+        "input_value": "taagzajfrqrakjzztgzgzazstppatdptdblgaasreraqprtt"
+    },
+
+    // Is Substitution Cipher?
+    {
+        "test_id": 983,
+        "input_type": "string",
+        "input_name": "string1",
+        "input_value": "aacb"
+    },
+    {
+        "test_id": 983,
+        "input_type": "string",
+        "input_name": "string2",
+        "input_value": "aabc"
+    },
+    {
+        "test_id": 984,
+        "input_type": "string",
+        "input_name": "string1",
+        "input_value": "aa"
+    },
+    {
+        "test_id": 984,
+        "input_type": "string",
+        "input_name": "string2",
+        "input_value": "bc"
+    },
+    {
+        "test_id": 985,
+        "input_type": "string",
+        "input_name": "string1",
+        "input_value": "aaxxaaz"
+    },
+    {
+        "test_id": 985,
+        "input_type": "string",
+        "input_name": "string2",
+        "input_value": "aazzaay"
+    },
+    {
+        "test_id": 986,
+        "input_type": "string",
+        "input_name": "string1",
+        "input_value": "aaxyaa"
+    },
+    {
+        "test_id": 986,
+        "input_type": "string",
+        "input_name": "string2",
+        "input_value": "aazzaa"
+    },
+    {
+        "test_id": 987,
+        "input_type": "string",
+        "input_name": "string1",
+        "input_value": "aabc"
+    },
+    {
+        "test_id": 987,
+        "input_type": "string",
+        "input_name": "string2",
+        "input_value": "aacb"
+    },
+    {
+        "test_id": 988,
+        "input_type": "string",
+        "input_name": "string1",
+        "input_value": "dccd"
+    },
+    {
+        "test_id": 988,
+        "input_type": "string",
+        "input_name": "string2",
+        "input_value": "zzxx"
+    },
+    {
+        "test_id": 989,
+        "input_type": "string",
+        "input_name": "string1",
+        "input_value": "ddcc"
+    },
+    {
+        "test_id": 989,
+        "input_type": "string",
+        "input_name": "string2",
+        "input_value": "zzxx"
+    },
+    {
+        "test_id": 990,
+        "input_type": "string",
+        "input_name": "string1",
+        "input_value": "aaaabbbbcc"
+    },
+    {
+        "test_id": 990,
+        "input_type": "string",
+        "input_name": "string2",
+        "input_value": "cccccccccc"
+    },
+    {
+        "test_id": 991,
+        "input_type": "string",
+        "input_name": "string1",
+        "input_value": "abcdefg"
+    },
+    {
+        "test_id": 991,
+        "input_type": "string",
+        "input_name": "string2",
+        "input_value": "hijklmn"
+    },
+    {
+        "test_id": 992,
+        "input_type": "string",
+        "input_name": "string1",
+        "input_value": "aaabbbccc"
+    },
+    {
+        "test_id": 992,
+        "input_type": "string",
+        "input_name": "string2",
+        "input_value": "aaabbbccc"
+    },
+
+    // Create Anagram
+    {
+        "test_id": 993,
+        "input_type": "string",
+        "input_name": "s",
+        "input_value": "AABAA"
+    },
+    {
+        "test_id": 993,
+        "input_type": "string",
+        "input_name": "t",
+        "input_value": "BBAAA"
+    },
+    {
+        "test_id": 994,
+        "input_type": "string",
+        "input_name": "s",
+        "input_value": "OVGHK"
+    },
+    {
+        "test_id": 994,
+        "input_type": "string",
+        "input_name": "t",
+        "input_value": "RPGUC"
+    },
+    {
+        "test_id": 995,
+        "input_type": "string",
+        "input_name": "s",
+        "input_value": "AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAB"
+    },
+    {
+        "test_id": 995,
+        "input_type": "string",
+        "input_name": "t",
+        "input_value": "AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAC"
+    },
+    {
+        "test_id": 996,
+        "input_type": "string",
+        "input_name": "s",
+        "input_value": "HDFFVR"
+    },
+    {
+        "test_id": 996,
+        "input_type": "string",
+        "input_name": "t",
+        "input_value": "FEDDEE"
+    },
+    {
+        "test_id": 997,
+        "input_type": "string",
+        "input_name": "s",
+        "input_value": "AABCDS"
+    },
+    {
+        "test_id": 997,
+        "input_type": "string",
+        "input_name": "t",
+        "input_value": "BASEAE"
+    },
+    {
+        "test_id": 998,
+        "input_type": "string",
+        "input_name": "s",
+        "input_value": "ZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZY"
+    },
+    {
+        "test_id": 998,
+        "input_type": "string",
+        "input_name": "t",
+        "input_value": "YYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYZ"
+    },
+    {
+        "test_id": 999,
+        "input_type": "string",
+        "input_name": "s",
+        "input_value": "AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA"
+    },
+    {
+        "test_id": 999,
+        "input_type": "string",
+        "input_name": "t",
+        "input_value": "AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA"
+    },
+    {
+        "test_id": 1000,
+        "input_type": "string",
+        "input_name": "s",
+        "input_value": "AAAAAA"
+    },
+    {
+        "test_id": 1000,
+        "input_type": "string",
+        "input_name": "t",
+        "input_value": "AAAAAA"
+    },
+    {
+        "test_id": 1001,
+        "input_type": "string",
+        "input_name": "s",
+        "input_value": "KJDMDLEEKALIJB"
+    },
+    {
+        "test_id": 1001,
+        "input_type": "string",
+        "input_name": "t",
+        "input_value": "AFDJGDCGHMIGHB"
+    },
+    {
+        "test_id": 1002,
+        "input_type": "string",
+        "input_name": "s",
+        "input_value": "BBAAABCBCAABB"
+    },
+    {
+        "test_id": 1002,
+        "input_type": "string",
+        "input_name": "t",
+        "input_value": "BBBCCCBABBACA"
+    },
+
+    // Construct Square
+    {
+        "test_id": 1003,
+        "input_type": "string",
+        "input_name": "s",
+        "input_value": "ab"
+    },
+    {
+        "test_id": 1004,
+        "input_type": "string",
+        "input_name": "s",
+        "input_value": "zzz"
+    },
+    {
+        "test_id": 1005,
+        "input_type": "string",
+        "input_name": "s",
+        "input_value": "aba"
+    },
+    {
+        "test_id": 1006,
+        "input_type": "string",
+        "input_name": "s",
+        "input_value": "abcbbb"
+    },
+    {
+        "test_id": 1007,
+        "input_type": "string",
+        "input_name": "s",
+        "input_value": "abc"
+    },
+    {
+        "test_id": 1008,
+        "input_type": "string",
+        "input_name": "s",
+        "input_value": "aaaabbcde"
+    },
+
+    // Numbers Grouping
+    {
+        "test_id": 1009,
+        "input_type": "arrayOfIntegers",
+        "input_name": "a",
+        "input_value": "[10000, 20000, 30000, 40000, 50000, 60000, 10000, 120000, 150000, 200000, 300000, 1000000, 10000000, 100000000, 10000000]"
+    },
+    {
+        "test_id": 1010,
+        "input_type": "arrayOfIntegers",
+        "input_name": "a",
+        "input_value": "[10000]"
+    },
+    {
+        "test_id": 1011,
+        "input_type": "arrayOfIntegers",
+        "input_name": "a",
+        "input_value": "[10000, 1]"
+    },
+    {
+        "test_id": 1012,
+        "input_type": "arrayOfIntegers",
+        "input_name": "a",
+        "input_value": "[685400881, 696804468, 696804942, 803902442, 976412678, 976414920, 47763597, 803900633, 233144924, 47764349, 233149077, 214990733, 214994039, 280528089, 280524347, 685401797]"
+    },
+    {
+        "test_id": 1013,
+        "input_type": "arrayOfIntegers",
+        "input_name": "a",
+        "input_value": "[598589004, 92986320, 520103781, 808743817, 635098665, 95244159, 808747008, 867017063, 635092226, 867013865, 92989995, 520100093, 95245838, 84897101, 598583113, 84893918]"
+    },
+    {
+        "test_id": 1014,
+        "input_type": "arrayOfIntegers",
+        "input_name": "a",
+        "input_value": "[1000000000, 999990000, 999980000, 999970000, 999960000, 999950000, 999940000, 999930000, 999920000, 999910000]"
+    },
+    {
+        "test_id": 1015,
+        "input_type": "arrayOfIntegers",
+        "input_name": "a",
+        "input_value": "[102382103, 21039898, 39823, 433, 30928398, 40283209, 23234, 342534, 98473483, 498398424, 9384984, 9839239]"
+    },
+
+    // Different Squares
+    {
+        "test_id": 1016,
+        "input_type": "matrix",
+        "input_name": "matrix",
+        "input_value": "[[1,2,1],[2,2,2],[2,2,2],[1,2,3],[2,2,1]]"
+    },
+    {
+        "test_id": 1017,
+        "input_type": "matrix",
+        "input_name": "matrix",
+        "input_value": "[[9,9,9,9,9],[9,9,9,9,9],[9,9,9,9,9],[9,9,9,9,9],[9,9,9,9,9],[9,9,9,9,9]]"
+    },
+    {
+        "test_id": 1018,
+        "input_type": "matrix",
+        "input_name": "matrix",
+        "input_value": "[[3]]"
+    },
+    {
+        "test_id": 1019,
+        "input_type": "matrix",
+        "input_name": "matrix",
+        "input_value": "[[3,4,5,6,7,8,9]]"
+    },
+    {
+        "test_id": 1020,
+        "input_type": "matrix",
+        "input_name": "matrix",
+        "input_value": "[[3],[4],[5],[6],[7]]"
+    },
+    {
+        "test_id": 1021,
+        "input_type": "matrix",
+        "input_name": "matrix",
+        "input_value": "[[2,5,3,4,3,1,3,2],[4,5,4,1,2,4,1,3],[1,1,2,1,4,1,1,5],[1,3,4,2,3,4,2,4],[1,5,5,2,1,3,1,1],[1,2,3,3,5,1,2,4],[3,1,4,4,4,1,5,5],[5,1,3,3,1,5,3,5],[5,4,4,3,5,4,4,4]]"
+    },
+    {
+        "test_id": 1022,
+        "input_type": "matrix",
+        "input_name": "matrix",
+        "input_value": "[[1,1,1,1,1,1,2,2,2,3,3,3,9,9,9,2,3,9]]"
+    },
+
+    // Most Frequent Digit Sum
+    {
+        "test_id": 1023,
+        "input_type": "number",
+        "input_name": "n",
+        "input_value": "88"
+    },
+    {
+        "test_id": 1024,
+        "input_type": "number",
+        "input_name": "n",
+        "input_value": "8"
+    },
+    {
+        "test_id": 1025,
+        "input_type": "number",
+        "input_name": "n",
+        "input_value": "1"
+    },
+    {
+        "test_id": 1026,
+        "input_type": "number",
+        "input_name": "n",
+        "input_value": "17"
+    },
+    {
+        "test_id": 1027,
+        "input_type": "number",
+        "input_name": "n",
+        "input_value": "239"
+    },
+    {
+        "test_id": 1028,
+        "input_type": "number",
+        "input_name": "n",
+        "input_value": "994"
+    },
+    {
+        "test_id": 1029,
+        "input_type": "number",
+        "input_name": "n",
+        "input_value": "99999"
+    },
+
+    // Number of Clans
+    {
+        "test_id": 1030,
+        "input_type": "number",
+        "input_name": "k",
+        "input_value": "6"
+    },
+    {
+        "test_id": 1030,
+        "input_type": "arrayOfIntegers",
+        "input_name": "divisors",
+        "input_value": "[2, 3]"
+    },
+    {
+        "test_id": 1031,
+        "input_type": "number",
+        "input_name": "k",
+        "input_value": "6"
+    },
+    {
+        "test_id": 1031,
+        "input_type": "arrayOfIntegers",
+        "input_name": "divisors",
+        "input_value": "[2, 3, 4]"
+    },
+    {
+        "test_id": 1032,
+        "input_type": "number",
+        "input_name": "k",
+        "input_value": "10"
+    },
+    {
+        "test_id": 1032,
+        "input_type": "arrayOfIntegers",
+        "input_name": "divisors",
+        "input_value": "[1, 3]"
+    },
+    {
+        "test_id": 1033,
+        "input_type": "number",
+        "input_name": "k",
+        "input_value": "10"
+    },
+    {
+        "test_id": 1033,
+        "input_type": "arrayOfIntegers",
+        "input_name": "divisors",
+        "input_value": "[6, 2, 2, 8, 9, 2, 2, 2, 2]"
+    },
+    {
+        "test_id": 1034,
+        "input_type": "number",
+        "input_name": "k",
+        "input_value": "9"
+    },
+    {
+        "test_id": 1034,
+        "input_type": "arrayOfIntegers",
+        "input_name": "divisors",
+        "input_value": "[2, 5]"
+    },
+    {
+        "test_id": 1035,
+        "input_type": "number",
+        "input_name": "k",
+        "input_value": "8"
+    },
+    {
+        "test_id": 1035,
+        "input_type": "arrayOfIntegers",
+        "input_name": "divisors",
+        "input_value": "[1, 2, 3]"
+    },
+    {
+        "test_id": 1036,
+        "input_type": "number",
+        "input_name": "k",
+        "input_value": "5"
+    },
+    {
+        "test_id": 1036,
+        "input_type": "arrayOfIntegers",
+        "input_name": "divisors",
+        "input_value": "[5, 6]"
+    },
+    {
+        "test_id": 1037,
+        "input_type": "number",
+        "input_name": "k",
+        "input_value": "5"
+    },
+    {
+        "test_id": 1037,
+        "input_type": "arrayOfIntegers",
+        "input_name": "divisors",
+        "input_value": "[7, 1, 3, 4, 4]"
+    },
+
+    // House Numbers Sum
+    {
+        "test_id": 1038,
+        "input_type": "arrayOfIntegers",
+        "input_name": "inputArray",
+        "input_value": "[5, 1, 2, 3, 0, 1, 5, 0, 2]"
+    },
+    {
+        "test_id": 1039,
+        "input_type": "arrayOfIntegers",
+        "input_name": "inputArray",
+        "input_value": "[4, 2, 1, 6, 0]"
+    },
+    {
+        "test_id": 1040,
+        "input_type": "arrayOfIntegers",
+        "input_name": "inputArray",
+        "input_value": "[4, 1, 2, 3, 0, 10, 2]"
+    },
+    {
+        "test_id": 1041,
+        "input_type": "arrayOfIntegers",
+        "input_name": "inputArray",
+        "input_value": "[0, 1, 2, 3, 0]"
+    },
+    {
+        "test_id": 1042,
+        "input_type": "arrayOfIntegers",
+        "input_name": "inputArray",
+        "input_value": "[5, 1, 1, 3, 0, 1, 5, 0, 2]"
+    },
+    {
+        "test_id": 1043,
+        "input_type": "arrayOfIntegers",
+        "input_name": "inputArray",
+        "input_value": "[10, 10, 10, 10, 10, 10, 10, 10, 10, 0]"
+    },
+    {
+        "test_id": 1044,
+        "input_type": "arrayOfIntegers",
+        "input_name": "inputArray",
+        "input_value": "[10, 10, 10, 10, 10, 10, 10, 10, 0, 10]"
+    },
+
+    // All Longest Strings
+    {
+        "test_id": 1045,
+        "input_type": "arrayOfStrings",
+        "input_name": "inputArray",
+        "input_value": '["aba","aa","ad","vcd","aba"]'
+    },
+    {
+        "test_id": 1046,
+        "input_type": "arrayOfStrings",
+        "input_name": "inputArray",
+        "input_value": '["aa"]'
+    },
+    {
+        "test_id": 1047,
+        "input_type": "arrayOfStrings",
+        "input_name": "inputArray",
+        "input_value": '["abc","eeee","abcd","dcd"]'
+    },
+    {
+        "test_id": 1048,
+        "input_type": "arrayOfStrings",
+        "input_name": "inputArray",
+        "input_value": '["a","abc","cbd","zzzzzz","a","abcdef","asasa","aaaaaa"]'
+    },
+    {
+        "test_id": 1049,
+        "input_type": "arrayOfStrings",
+        "input_name": "inputArray",
+        "input_value": '["enyky","benyky","yely","varennyky"]'
+    },
+    {
+        "test_id": 1050,
+        "input_type": "arrayOfStrings",
+        "input_name": "inputArray",
+        "input_value": '["abacaba","abacab","abac","xxxxxx"]'
+    },
+    {
+        "test_id": 1051,
+        "input_type": "arrayOfStrings",
+        "input_name": "inputArray",
+        "input_value": '["young","yooooooung","hot","or","not","come","on","fire","water","watermelon"]'
+    },
+    {
+        "test_id": 1052,
+        "input_type": "arrayOfStrings",
+        "input_name": "inputArray",
+        "input_value": '["onsfnib","aokbcwthc","jrfcw"]'
+    },
+    {
+        "test_id": 1053,
+        "input_type": "arrayOfStrings",
+        "input_name": "inputArray",
+        "input_value": '["lbgwyqkry"]'
+    },
+    {
+        "test_id": 1054,
+        "input_type": "arrayOfStrings",
+        "input_name": "inputArray",
+        "input_value": '["i"]'
+    },
+
+    // House of Cats
+    {
+        "test_id": 1055,
+        "input_type": "number",
+        "input_name": "legs",
+        "input_value": "6"
+    },
+    {
+        "test_id": 1056,
+        "input_type": "number",
+        "input_name": "legs",
+        "input_value": "2"
+    },
+    {
+        "test_id": 1057,
+        "input_type": "number",
+        "input_name": "legs",
+        "input_value": "8"
+    },
+    {
+        "test_id": 1058,
+        "input_type": "number",
+        "input_name": "legs",
+        "input_value": "4"
+    },
+    {
+        "test_id": 1059,
+        "input_type": "number",
+        "input_name": "legs",
+        "input_value": "44"
+    },
+
+    // Alphabet Subsequence
+    {
+        "test_id": 1060,
+        "input_type": "string",
+        "input_name": "s",
+        "input_value": "effg"
+    },
+    {
+        "test_id": 1061,
+        "input_type": "string",
+        "input_name": "s",
+        "input_value": "cdce"
+    },
+    {
+        "test_id": 1062,
+        "input_type": "string",
+        "input_name": "s",
+        "input_value": "ace"
+    },
+    {
+        "test_id": 1063,
+        "input_type": "string",
+        "input_name": "s",
+        "input_value": "bxz"
+    },
+    {
+        "test_id": 1064,
+        "input_type": "string",
+        "input_name": "s",
+        "input_value": "cdefghijkxyzz"
+    },
+    {
+        "test_id": 1065,
+        "input_type": "string",
+        "input_name": "s",
+        "input_value": "qa"
+    },
+    {
+        "test_id": 1066,
+        "input_type": "string",
+        "input_name": "s",
+        "input_value": "fkyz"
+    },
+    {
+        "test_id": 1067,
+        "input_type": "string",
+        "input_name": "s",
+        "input_value": "xz"
+    },
+    {
+        "test_id": 1068,
+        "input_type": "string",
+        "input_name": "s",
+        "input_value": "pfyz"
+    },
+    {
+        "test_id": 1069,
+        "input_type": "string",
+        "input_name": "s",
+        "input_value": "fz"
+    },
+
+    // Minimal Number of Coins
+    {
+        "test_id": 1070,
+        "input_type": "number",
+        "input_name": "price",
+        "input_value": "28"
+    },
+    {
+        "test_id": 1070,
+        "input_type": "arrayOfIntegers",
+        "input_name": "coins",
+        "input_value": "[1, 2, 10]"
+    },
+    {
+        "test_id": 1071,
+        "input_type": "number",
+        "input_name": "price",
+        "input_value": "239"
+    },
+    {
+        "test_id": 1071,
+        "input_type": "arrayOfIntegers",
+        "input_name": "coins",
+        "input_value": "[1, 5, 10, 100]"
+    },
+    {
+        "test_id": 1072,
+        "input_type": "number",
+        "input_name": "price",
+        "input_value": "8"
+    },
+    {
+        "test_id": 1072,
+        "input_type": "arrayOfIntegers",
+        "input_name": "coins",
+        "input_value": "[1]"
+    },
+    {
+        "test_id": 1073,
+        "input_type": "number",
+        "input_name": "price",
+        "input_value": "150"
+    },
+    {
+        "test_id": 1073,
+        "input_type": "arrayOfIntegers",
+        "input_name": "coins",
+        "input_value": "[1, 2, 20, 60, 120]"
+    },
+    {
+        "test_id": 1074,
+        "input_type": "number",
+        "input_name": "price",
+        "input_value": "45"
+    },
+    {
+        "test_id": 1074,
+        "input_type": "arrayOfIntegers",
+        "input_name": "coins",
+        "input_value": "[1, 3, 6, 30]"
+    },
+
+    // Add Border
+    {
+        "test_id": 1075,
+        "input_type": "arrayOfStrings",
+        "input_name": "picture",
+        "input_value": '["abc","ded"]'
+    },
+    {
+        "test_id": 1076,
+        "input_type": "arrayOfStrings",
+        "input_name": "picture",
+        "input_value": '["a"]'
+    },
+    {
+        "test_id": 1077,
+        "input_type": "arrayOfStrings",
+        "input_name": "picture",
+        "input_value": '["aa","**","zz"]'
+    },
+    {
+        "test_id": 1078,
+        "input_type": "arrayOfStrings",
+        "input_name": "picture",
+        "input_value": '["abcde","fghij","klmno","pqrst","uvwxy"]'
+    },
+    {
+        "test_id": 1079,
+        "input_type": "arrayOfStrings",
+        "input_name": "picture",
+        "input_value": '["wzy**"]'
+    },
+
+    // Switch Lights
+    {
+        "test_id": 1080,
+        "input_type": "arrayOfIntegers",
+        "input_name": "a",
+        "input_value": "[1, 1, 1, 1, 1]"
+    },
+    {
+        "test_id": 1081,
+        "input_type": "arrayOfIntegers",
+        "input_name": "a",
+        "input_value": "[0, 0]"
+    },
+    {
+        "test_id": 1082,
+        "input_type": "arrayOfIntegers",
+        "input_name": "a",
+        "input_value": "[1, 0, 0, 1, 0, 1, 0, 1]"
+    },
+    {
+        "test_id": 1083,
+        "input_type": "arrayOfIntegers",
+        "input_name": "a",
+        "input_value": "[1, 0, 0, 0, 0, 1, 1, 1, 0, 0, 1, 0, 1]"
+    },
+    {
+        "test_id": 1084,
+        "input_type": "arrayOfIntegers",
+        "input_name": "a",
+        "input_value": "[1, 1, 0, 0, 1]"
+    },
+    {
+        "test_id": 1085,
+        "input_type": "arrayOfIntegers",
+        "input_name": "a",
+        "input_value": "[1, 1, 1, 0, 1, 1, 1]"
+    },
+    {
+        "test_id": 1086,
+        "input_type": "arrayOfIntegers",
+        "input_name": "a",
+        "input_value": "[1, 0, 1, 1, 1, 0, 0, 1, 1, 1, 1, 0, 0, 1, 1, 0, 1, 1, 1, 0, 1, 0, 1, 1, 0, 0, 1, 0, 1, 1, 1, 1, 1]"
+    },
+    {
+        "test_id": 1087,
+        "input_type": "arrayOfIntegers",
+        "input_name": "a",
+        "input_value": "[0, 0, 0, 0, 0, 0]"
+    },
+    {
+        "test_id": 1088,
+        "input_type": "arrayOfIntegers",
+        "input_name": "a",
+        "input_value": "[1, 1, 1, 1, 0, 0, 0, 0, 1, 1, 1, 1, 0, 1, 0, 0, 1, 0, 0, 0, 1]"
+    },
+
+    // Timed Reading
+    {
+        "test_id": 1089,
+        "input_type": "number",
+        "input_name": "maxLength",
+        "input_value": "4"
+    },
+    {
+        "test_id": 1089,
+        "input_type": "string",
+        "input_name": "text",
+        "input_value": "The Fox asked the stork, 'How is the soup?'"
+    },
+    {
+        "test_id": 1090,
+        "input_type": "number",
+        "input_name": "maxLength",
+        "input_value": "1"
+    },
+    {
+        "test_id": 1090,
+        "input_type": "string",
+        "input_name": "text",
+        "input_value": "..."
+    },
+    {
+        "test_id": 1091,
+        "input_type": "number",
+        "input_name": "maxLength",
+        "input_value": "3"
+    },
+    {
+        "test_id": 1091,
+        "input_type": "string",
+        "input_name": "text",
+        "input_value": "This play was good for us."
+    },
+    {
+        "test_id": 1092,
+        "input_type": "number",
+        "input_name": "maxLength",
+        "input_value": "3"
+    },
+    {
+        "test_id": 1092,
+        "input_type": "string",
+        "input_name": "text",
+        "input_value": "Suddenly he stopped, and glanced up at the houses"
+    },
+    {
+        "test_id": 1093,
+        "input_type": "number",
+        "input_name": "maxLength",
+        "input_value": "6"
+    },
+    {
+        "test_id": 1093,
+        "input_type": "string",
+        "input_name": "text",
+        "input_value": "Zebras evolved among the Old World horses within the last four million years."
+    },
+    {
+        "test_id": 1094,
+        "input_type": "number",
+        "input_name": "maxLength",
+        "input_value": "5"
+    },
+    {
+        "test_id": 1094,
+        "input_type": "string",
+        "input_name": "text",
+        "input_value": "Although zebra species may have overlapping ranges, they do not interbreed."
+    },
+    {
+        "test_id": 1095,
+        "input_type": "number",
+        "input_name": "maxLength",
+        "input_value": "1"
+    },
+    {
+        "test_id": 1095,
+        "input_type": "string",
+        "input_name": "text",
+        "input_value": "Oh!"
+    },
+    {
+        "test_id": 1096,
+        "input_type": "number",
+        "input_name": "maxLength",
+        "input_value": "5"
+    },
+    {
+        "test_id": 1096,
+        "input_type": "string",
+        "input_name": "text",
+        "input_value": "Now and then, however, he is horribly thoughtless, and seems to take a real delight in giving me pain."
+    },
+
+    // Elections Winners
+    {
+        "test_id": 1097,
+        "input_type": "number",
+        "input_name": "k",
+        "input_value": "3"
+    },
+    {
+        "test_id": 1097,
+        "input_type": "arrayOfIntegers",
+        "input_name": "votes",
+        "input_value": "[2, 3, 5, 2]"
+    },
+    {
+        "test_id": 1098,
+        "input_type": "number",
+        "input_name": "k",
+        "input_value": "0"
+    },
+    {
+        "test_id": 1098,
+        "input_type": "arrayOfIntegers",
+        "input_name": "votes",
+        "input_value": "[1, 3, 3, 1, 1]"
+    },
+    {
+        "test_id": 1099,
+        "input_type": "number",
+        "input_name": "k",
+        "input_value": "0"
+    },
+    {
+        "test_id": 1099,
+        "input_type": "arrayOfIntegers",
+        "input_name": "votes",
+        "input_value": "[5, 1, 3, 4, 1]"
+    },
+    {
+        "test_id": 1100,
+        "input_type": "number",
+        "input_name": "k",
+        "input_value": "1"
+    },
+    {
+        "test_id": 1100,
+        "input_type": "arrayOfIntegers",
+        "input_name": "votes",
+        "input_value": "[1, 1, 1, 1]"
+    },
+    {
+        "test_id": 1101,
+        "input_type": "number",
+        "input_name": "k",
+        "input_value": "0"
+    },
+    {
+        "test_id": 1101,
+        "input_type": "arrayOfIntegers",
+        "input_name": "votes",
+        "input_value": "[1, 1, 1, 1]"
+    },
+    {
+        "test_id": 1102,
+        "input_type": "number",
+        "input_name": "k",
+        "input_value": "2"
+    },
+    {
+        "test_id": 1102,
+        "input_type": "arrayOfIntegers",
+        "input_name": "votes",
+        "input_value": "[3, 1, 1, 3, 1]"
+    },
+
+    // Integer to String of Fixed Width
+    {
+        "test_id": 1103,
+        "input_type": "number",
+        "input_name": "number",
+        "input_value": "1234"
+    },
+    {
+        "test_id": 1103,
+        "input_type": "number",
+        "input_name": "width",
+        "input_value": "2"
+    },
+    {
+        "test_id": 1104,
+        "input_type": "number",
+        "input_name": "number",
+        "input_value": "1234"
+    },
+    {
+        "test_id": 1104,
+        "input_type": "number",
+        "input_name": "width",
+        "input_value": "4"
+    },
+    {
+        "test_id": 1105,
+        "input_type": "number",
+        "input_name": "number",
+        "input_value": "1234"
+    },
+    {
+        "test_id": 1105,
+        "input_type": "number",
+        "input_name": "width",
+        "input_value": "5"
+    },
+    {
+        "test_id": 1106,
+        "input_type": "number",
+        "input_name": "number",
+        "input_value": "0"
+    },
+    {
+        "test_id": 1106,
+        "input_type": "number",
+        "input_name": "width",
+        "input_value": "1"
+    },
+    {
+        "test_id": 1107,
+        "input_type": "number",
+        "input_name": "number",
+        "input_value": "89"
+    },
+    {
+        "test_id": 1107,
+        "input_type": "number",
+        "input_name": "width",
+        "input_value": "4"
+    },
+    {
+        "test_id": 1108,
+        "input_type": "number",
+        "input_name": "number",
+        "input_value": "23456"
+    },
+    {
+        "test_id": 1108,
+        "input_type": "number",
+        "input_name": "width",
+        "input_value": "4"
+    },
+    {
+        "test_id": 1109,
+        "input_type": "number",
+        "input_name": "number",
+        "input_value": "899"
+    },
+    {
+        "test_id": 1109,
+        "input_type": "number",
+        "input_name": "width",
+        "input_value": "3"
+    },
+
+    // Are Similar?
+    {
+        "test_id": 1110,
+        "input_type": "arrayOfIntegers",
+        "input_name": "a",
+        "input_value": "[1, 2, 3]"
+    },
+    {
+        "test_id": 1110,
+        "input_type": "arrayOfIntegers",
+        "input_name": "b",
+        "input_value": "[2, 1, 3]"
+    },
+    {
+        "test_id": 1111,
+        "input_type": "arrayOfIntegers",
+        "input_name": "a",
+        "input_value": "[1, 2, 2]"
+    },
+    {
+        "test_id": 1111,
+        "input_type": "arrayOfIntegers",
+        "input_name": "b",
+        "input_value": "[2, 1, 1]"
+    },
+    {
+        "test_id": 1112,
+        "input_type": "arrayOfIntegers",
+        "input_name": "a",
+        "input_value": "[1, 2, 1, 2]"
+    },
+    {
+        "test_id": 1112,
+        "input_type": "arrayOfIntegers",
+        "input_name": "b",
+        "input_value": "[2, 2, 1, 1]"
+    },
+    {
+        "test_id": 1113,
+        "input_type": "arrayOfIntegers",
+        "input_name": "a",
+        "input_value": "[1, 2, 1, 2, 2, 1]"
+    },
+    {
+        "test_id": 1113,
+        "input_type": "arrayOfIntegers",
+        "input_name": "b",
+        "input_value": "[2, 2, 1, 1, 2, 1]"
+    },
+    {
+        "test_id": 1114,
+        "input_type": "arrayOfIntegers",
+        "input_name": "a",
+        "input_value": "[1, 1, 4]"
+    },
+    {
+        "test_id": 1114,
+        "input_type": "arrayOfIntegers",
+        "input_name": "b",
+        "input_value": "[1, 2, 3]"
+    },
+    {
+        "test_id": 1115,
+        "input_type": "arrayOfIntegers",
+        "input_name": "a",
+        "input_value": "[1, 2, 3]"
+    },
+    {
+        "test_id": 1115,
+        "input_type": "arrayOfIntegers",
+        "input_name": "b",
+        "input_value": "[1, 10, 2]"
+    },
+    {
+        "test_id": 1116,
+        "input_type": "arrayOfIntegers",
+        "input_name": "a",
+        "input_value": "[2, 3, 1]"
+    },
+    {
+        "test_id": 1116,
+        "input_type": "arrayOfIntegers",
+        "input_name": "b",
+        "input_value": "[1, 3, 2]"
+    },
+    {
+        "test_id": 1117,
+        "input_type": "arrayOfIntegers",
+        "input_name": "a",
+        "input_value": "[2, 3, 9]"
+    },
+    {
+        "test_id": 1117,
+        "input_type": "arrayOfIntegers",
+        "input_name": "b",
+        "input_value": "[10, 3, 2]"
+    },
+    {
+        "test_id": 1118,
+        "input_type": "arrayOfIntegers",
+        "input_name": "a",
+        "input_value": "[832, 998, 148, 570, 533, 561, 894, 147, 455, 279]"
+    },
+    {
+        "test_id": 1118,
+        "input_type": "arrayOfIntegers",
+        "input_name": "b",
+        "input_value": "[832, 570, 148, 998, 533, 561, 455, 147, 894, 279]"
+    },
+
+    // Ada Number
+    {
+        "test_id": 1119,
+        "input_type": "string",
+        "input_name": "line",
+        "input_value": "123_456_789"
+    },
+    {
+        "test_id": 1120,
+        "input_type": "string",
+        "input_name": "line",
+        "input_value": "16#123abc#"
+    },
+    {
+        "test_id": 1121,
+        "input_type": "string",
+        "input_name": "line",
+        "input_value": "10#123abc#"
+    },
+    {
+        "test_id": 1122,
+        "input_type": "string",
+        "input_name": "line",
+        "input_value": "10#10#123ABC#"
+    },
+    {
+        "test_id": 1123,
+        "input_type": "string",
+        "input_name": "line",
+        "input_value": "10#0#"
+    },
+    {
+        "test_id": 1124,
+        "input_type": "string",
+        "input_name": "line",
+        "input_value": "10##"
+    },
+    {
+        "test_id": 1125,
+        "input_type": "string",
+        "input_name": "line",
+        "input_value": "16#1234567890ABCDEFabcdef#"
+    },
+    {
+        "test_id": 1126,
+        "input_type": "string",
+        "input_name": "line",
+        "input_value": "1600#"
+    },
+    {
+        "test_id": 1127,
+        "input_type": "string",
+        "input_name": "line",
+        "input_value": "7#???#"
+    },
+    {
+        "test_id": 1128,
+        "input_type": "string",
+        "input_name": "line",
+        "input_value": "4#4#"
+    },
+    {
+        "test_id": 1129,
+        "input_type": "string",
+        "input_name": "line",
+        "input_value": "3454235ab534"
+    },
+    {
+        "test_id": 1130,
+        "input_type": "string",
+        "input_name": "line",
+        "input_value": "1#0#"
+    },
+    {
+        "test_id": 1131,
+        "input_type": "string",
+        "input_name": "line",
+        "input_value": "1_#0_#"
+    },
+    {
+        "test_id": 1132,
+        "input_type": "string",
+        "input_name": "line",
+        "input_value": "17#ac#"
+    },
+    {
+        "test_id": 1133,
+        "input_type": "string",
+        "input_name": "line",
+        "input_value": "2#10110#"
+    },
+    {
+        "test_id": 1134,
+        "input_type": "string",
+        "input_name": "line",
+        "input_value": "2#10110"
+    },
+    {
+        "test_id": 1135,
+        "input_type": "string",
+        "input_name": "line",
+        "input_value": "#2#10110"
+    },
+    {
+        "test_id": 1136,
+        "input_type": "string",
+        "input_name": "line",
+        "input_value": "#2#10110#"
+    },
+    {
+        "test_id": 1137,
+        "input_type": "string",
+        "input_name": "line",
+        "input_value": "9##"
+    },
+
+    // Three Split
+    {
+        "test_id": 1138,
+        "input_type": "arrayOfIntegers",
+        "input_name": "a",
+        "input_value": "[0, -1, 0, -1, 0, -1]"
+    },
+    {
+        "test_id": 1139,
+        "input_type": "arrayOfIntegers",
+        "input_name": "a",
+        "input_value": "[-1, 0, -1, 0, -1, 0]"
+    },
+    {
+        "test_id": 1140,
+        "input_type": "arrayOfIntegers",
+        "input_name": "a",
+        "input_value": "[-1, 1, -1, 1, -1, 1, -1, 1]"
+    },
+    {
+        "test_id": 1141,
+        "input_type": "arrayOfIntegers",
+        "input_name": "a",
+        "input_value": "[7, 8, 2, 25, -9, 12, 12]"
+    },
+    {
+        "test_id": 1142,
+        "input_type": "arrayOfIntegers",
+        "input_name": "a",
+        "input_value": "[0, 0, 0, 0, 0]"
+    },
+
     // 
+
+
+
 
 
 ]

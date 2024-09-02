@@ -1523,115 +1523,592 @@ function solution(statues) {
 }
 
 // 43: Is Power?
+function solution(n) {
+    if (n === 1) return true;
 
+    for (let base = 2; base <= Math.sqrt(n); base++) {
+        let power = 2;
+        let result = Math.pow(base, power);
+
+        while (result <= n) {
+            if (result === n) {
+                return true;
+            }
+            power++;
+            result = Math.pow(base, power);
+        }
+    }
+
+    return false;
+}
 
 // 44: Is Sum of Consecutive 2
+function solution(n) {
+    let count = 0;
 
+    for (let start = 1; start < n; start++) {
+        let sum = 0;
+        for (let k = start; k < n; k++) {
+            sum += k;
+            if (sum === n) {
+                count++;
+                break;
+            } else if (sum > n) {
+                break;
+            }
+        }
+    }
+
+    return count;
+}
 
 // 45: Square Digits Sequence
+function solution(a0) {
+    const seen = new Set();
+    let current = a0;
+    let count = 0;
 
+    while (!seen.has(current)) {
+        seen.add(current);
+        count++;
+        current = sumOfSquaredDigits(current);
+    }
+
+    return count + 1;
+}
+function sumOfSquaredDigits(num) {
+    let sum = 0;
+    while (num > 0) {
+        let digit = num % 10;
+        sum += digit * digit;
+        num = Math.floor(num / 10);
+    }
+    return sum;
+}
 
 // 46: Pages Numbering With Ink
-
+function solution(current, numberOfDigits) {
+    while (numberOfDigits >= String(current).length) {
+        numberOfDigits -= String(current).length;
+        current++;
+    }
+    return current - 1;
+}
 
 // 47: Comfortable Numbers
+function solution(l, r) {
+    function sumOfDigits(x) {
+        return String(x).split('').reduce((sum, digit) => sum + Number(digit), 0);
+    }
 
+    let count = 0;
+
+    for (let a = l; a <= r; a++) {
+        for (let b = a + 1; b <= r; b++) {
+            let sa = sumOfDigits(a);
+            let sb = sumOfDigits(b);
+
+            if (b >= a - sa && b <= a + sa && a >= b - sb && a <= b + sb) {
+                count++;
+            }
+        }
+    }
+
+    return count;
+}
 
 // 48: Weak Numbers
+solution = (n) => {
+    let count = 0;
+    let m = {};
+    let arr = [];
 
+    // Find divisiors
+    for (let i = 1; i <= n; i++) {
+        m[i] = 0;
+        for (let j = 1; j <= i; j++) {
+            if (i % j === 0) m[i]++;
+        }
+    }
+
+    // Find Weakness
+    while (n > 0) {
+        for (let l = n - 1; l > 0; l--) {
+            if (m[n] < m[l]) count++;
+        }
+        arr.push(count);
+        count = 0;
+        n--;
+    }
+
+    // Find weakest and its quantity
+    let weakness = Math.max(...arr);
+    for (let k in arr) {
+        if (weakness === arr[k]) count++;
+    }
+    return [weakness, count]
+}
 
 // 49: Rectangle Rotation
-
+function solution(a, b) {
+    let pointsA = Math.floor(Math.sqrt(a * a / 2)),
+        pointsB = Math.floor(Math.sqrt(b * b / 2));
+    return (pointsA * pointsB + Math.floor((pointsA + pointsB) / 2)) * 2 + 1;
+}
 
 // 50: Crossword Formation
-
+function solution(words) {
+    let count = 0;
+    for (let i = 0; i < 4; i++) {
+        let a = words[i];
+        for (let a1 = 0; a1 < (a.length - 1); a1++) {
+            for (let j = 0; j < 4; j++) {
+                if (j == i) {
+                    continue;
+                }
+                let b = words[j];
+                for (let b2 = 1; b2 < b.length; b2++) {
+                    if (b[b2] != a[a1]) {
+                        continue;
+                    }
+                    for (let b1 = 0; b1 < (b2 - 1); b1++) {
+                        for (let k = 0; k < 4; k++) {
+                            if (k == i || k == j) { continue; }
+                            let c = words[k], d = words[6 - i - j - k];
+                            if (b2 - b1 >= d.length) {
+                                continue;
+                            }
+                            for (let c1 = 0; c1 < (c.length - 1); c1++) {
+                                if (c[c1] != b[b1]) {
+                                    continue;
+                                }
+                                for (let c2 = (c1 + 2); c2 < c.length; c2++) {
+                                    let a2 = a1 + (c2 - c1); if (a2 >= a.length) {
+                                        continue;
+                                    }
+                                    for (let d1 = 0; d1 < d.length; d1++) {
+                                        if (d[d1] != c[c2]) { continue; }
+                                        let d2 = d1 + (b2 - b1);
+                                        if (d2 >= d.length) {
+                                            break;
+                                        }
+                                        if (a[a2] != d[d2]) {
+                                            continue;
+                                        }
+                                        count += 1;
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+    return count;
+}
 
 // 51: Enclose In Brackets
-
+function solution(inputString) {
+    return `(${inputString})`;
+}
 
 // 52: Proper Noun Correction
-
+function solution(noun) {
+    return noun.charAt(0).toUpperCase() + noun.slice(1).toLowerCase();
+}
 
 // 53: Is Tandem Repeat?
-
+function solution(inputString) {
+    s = inputString.slice(0, Math.floor(inputString.length / 2))
+    if (s + s === inputString) return true
+    return false
+}
 
 // 54: Is Case-Insensitive Palindrome?
-
+function solution(inputString) {
+    const lowercased = inputString.toLowerCase();
+    return lowercased === lowercased.split('').reverse().join('');
+}
 
 // 55: Find Email Domain
-
+function solution(address) {
+    const atIndex = address.lastIndexOf('@');
+    return address.slice(atIndex + 1);
+}
 
 // 56: HTML End Tag By Start Tag
-
+function solution(startTag) {
+    const tagName = startTag.match(/<(\w+)/)[1];
+    return `</${tagName}>`;
+}
 
 // 57: Is MAC48 Address?
-
+function solution(inputString) {
+    const regex = /^[0-9A-Fa-f]{2}(-[0-9A-Fa-f]{2}){5}$/;
+    return regex.test(inputString);
+}
 
 // 58: Is Unstable Pair?
+function solution(filename1, filename2) {
 
+    return filename1 < filename2 && filename1.toLowerCase() >= filename2.toLowerCase()
+        || filename1 > filename2 && filename1.toLowerCase() <= filename2.toLowerCase()
+}
 
 // 59: Strings Construction
+function solution(a, b) {
+    const countA = {};
+    const countB = {};
 
+    // Count frequencies of each character in string a
+    for (let char of a) {
+        countA[char] = (countA[char] || 0) + 1;
+    }
+
+    // Count frequencies of each character in string b
+    for (let char of b) {
+        countB[char] = (countB[char] || 0) + 1;
+    }
+
+    // Determine the maximum number of times we can construct string a
+    let maxCount = Infinity;
+    for (let char in countA) {
+        if (!countB[char]) {
+            return 0; // If b doesn't have a required character
+        }
+        maxCount = Math.min(maxCount, Math.floor(countB[char] / countA[char]));
+    }
+
+    return maxCount;
+}
 
 // 60: Is Substitution Cipher?
+function solution(string1, string2) {
+    if (string1.length !== string2.length) return false;
 
+    const map1 = new Map();
+    const map2 = new Map();
+
+    for (let i = 0; i < string1.length; i++) {
+        const char1 = string1[i];
+        const char2 = string2[i];
+
+        if (!map1.has(char1)) map1.set(char1, char2);
+        if (!map2.has(char2)) map2.set(char2, char1);
+
+        if (map1.get(char1) !== char2 || map2.get(char2) !== char1) {
+            return false;
+        }
+    }
+
+    return true;
+}
 
 // 61: Create Anagram
-
+function solution(s, t) {
+    for (let x of s) {
+        t = t.replace(x, "");
+    }
+    return t.length;
+}
 
 // 62: Construct Square
+function solution(s) {
+    let counted = [];
+    let num = [];
+    for (var i in s) {
+        if (!counted.includes(s[i])) {
+            let cnt = 0;
+            for (var x in s) if (s[x] === s[i]) cnt++;
+            num.push(cnt);
+            counted.push(s[i]);
+        }
+    }
+    let digits = 0;
+    for (var i in num) digits += num[i];
+    num = num.sort();
 
+
+    for (var j = Math.ceil(Math.pow(Math.pow(10, digits), 0.5)); j > 0; j--) {
+        let sq = String(Math.pow(j, 2)).split("");
+        counted = [];
+        let numSq = [];
+
+        for (var i = 0; i < sq.length; i++) {
+            if (!counted.includes(sq[i])) {
+                let sqCount = 0;
+                for (var x in sq) if (sq[x] === sq[i]) sqCount++;
+                if (sqCount !== 0) numSq.push(sqCount);
+
+                counted.push(sq[i]);
+            }
+        }
+
+        numSq = numSq.sort();
+
+        let isEqual = true;
+        for (var y in numSq) {
+            if (numSq[y] != num[y]) {
+                isEqual = false;
+                break;
+            }
+        }
+        if (isEqual) return Number(sq.join(""))
+    }
+
+    return -1
+}
 
 // 63: Numbers Grouping
+function solution(a) {
 
+    a.sort((a, b) => a - b)
+
+    groupCounter = 0
+    lastGroup = -1
+
+    for (b of a) {
+        currentGroup = Math.ceil(b / 10000)
+        if (currentGroup > lastGroup) {
+            groupCounter++
+            lastGroup = currentGroup
+        }
+    }
+
+    return a.length + groupCounter
+}
 
 // 64: Different Squares
+function solution(matrix) {
+    const uniqueSquares = new Set();
 
+    const rows = matrix.length;
+    const cols = matrix[0].length;
+
+    for (let i = 0; i < rows - 1; i++) {
+        for (let j = 0; j < cols - 1; j++) {
+            const square = [
+                matrix[i][j], matrix[i][j + 1],
+                matrix[i + 1][j], matrix[i + 1][j + 1]
+            ];
+            uniqueSquares.add(square.join(','));
+        }
+    }
+
+    return uniqueSquares.size;
+}
 
 // 65: Most Frequent Digit Sum
+function solution(n) {
+    const digitSum = x => x.toString().split('').reduce((sum, digit) => sum + parseInt(digit), 0);
 
+    const frequency = {};
+    let current = n;
+
+    while (current >= 0) {
+        const sCurrent = digitSum(current);
+        frequency[sCurrent] = (frequency[sCurrent] || 0) + 1;
+        current -= sCurrent;
+        if (current === 0) {
+            frequency[0] = (frequency[0] || 0) + 1;
+            break;
+        }
+    }
+
+    let maxFrequency = -1;
+    let result = -1;
+
+    for (const [key, value] of Object.entries(frequency)) {
+        const num = parseInt(key);
+        if (value > maxFrequency || (value === maxFrequency && num > result)) {
+            maxFrequency = value;
+            result = num;
+        }
+    }
+
+    return result;
+}
 
 // 66: Number of Clans
-
+function solution(k, divisors) {
+    let key, divisabilityPatterns = new Set(), i, j;
+    for (i = 1; i <= k; i++) {
+        for (key = "", j = 0; j < divisors.length; j++)
+            key += +(i % divisors[j] == 0);
+        divisabilityPatterns.add(key);
+    }
+    return divisabilityPatterns.size;
+}
 
 // 67: House Numbers Sum
-
+function solution(inputArray) {
+    let sum = 0;
+    for (let num of inputArray) {
+        if (num === 0) break;
+        sum += num;
+    }
+    return sum;
+}
 
 // 68: All Longest Strings
-
+function solution(inputArray) {
+    let maxLength = Math.max(...inputArray.map(str => str.length));
+    return inputArray.filter(str => str.length === maxLength);
+}
 
 // 69: House of Cats
+function solution(legs) {
+    let result = [];
 
+    for (let people = 0; people * 2 <= legs; people++) {
+        let remainingLegs = legs - (people * 2);
+
+        if (remainingLegs % 4 === 0) {
+            result.push(people);
+        }
+    }
+
+    return result;
+}
 
 // 70: Alphabet Subsequence
-
+function solution(s) {
+    for (let i = 1; i < s.length; i++) {
+        if (s[i] <= s[i - 1]) {
+            return false;
+        }
+    }
+    return true;
+}
 
 // 71: Minimal Number of Coins
-
+function solution(price, coins) {
+    let count = 0;
+    for (let i = coins.length - 1; i >= 0; i--) {
+        count += Math.floor(price / coins[i]);
+        price %= coins[i];
+    }
+    return count;
+}
 
 // 72: Add Border
+function solution(picture) {
+    const borderLength = picture[0].length + 2;
+    const border = '*'.repeat(borderLength);
 
+    return [
+        border,
+        ...picture.map(row => `*${row}*`),
+        border
+    ];
+}
 
 // 73: Switch Lights
-
+function solution(a) {
+    for (let i = 0; i < a.length; i++) {
+        if (a[i] === 1) {
+            for (let j = 0; j <= i; j++) {
+                a[j] = 1 - a[j];
+            }
+        }
+    }
+    return a;
+}
 
 // 74: Timed Reading
-
+function solution(maxLength, text) {
+    const words = text.match(/[a-zA-Z]+/g) || [];
+    return words.filter(word => word.length <= maxLength).length;
+}
 
 // 75: Elections Winners
+function solution(k, votes) {
+    const n = votes.length;
 
+    // Edge case when k is 0
+    if (k === 0) {
+        const maxVotes = Math.max(...votes);
+        const maxCount = votes.filter(vote => vote === maxVotes).length;
+        // If more than one candidate has the maximum votes, there can be no winner
+        return maxCount === 1 ? 1 : 0;
+    }
+
+    // Normal case when k > 0
+    const maxVotes = Math.max(...votes);
+    let count = 0;
+
+    for (const vote of votes) {
+        const potentialMaxVotes = vote + k;
+        if (potentialMaxVotes > maxVotes) {
+            count++;
+        }
+    }
+
+    return count;
+}
 
 // 76: Integer to String of Fixed Width
-
+function solution(number, width) {
+    const numStr = number.toString();
+    if (numStr.length >= width) {
+        return numStr.slice(-width);
+    } else {
+        return numStr.padStart(width, '0');
+    }
+}
 
 // 77: Are Similar?
+function solution(a, b) {
+    if (a.length !== b.length) return false;
 
+    if (JSON.stringify(a) === JSON.stringify(b)) return true;
+
+    const diff = [];
+
+    for (let i = 0; i < a.length; i++) {
+        if (a[i] !== b[i]) {
+            diff.push([a[i], b[i]]);
+            if (diff.length > 2) return false;
+        }
+    }
+
+    if (diff.length === 2) {
+        const [[a1, b1], [a2, b2]] = diff;
+        return a1 === b2 && a2 === b1;
+    }
+
+    return false;
+}
 
 // 78: Ada Number
-
+function solution(line) {
+    line = line.replace(/_/g, ``);
+    if (line.match(/^\d+$/)) return true;
+    const num = line.match(/^(\d{1,2})#([0-9a-f]+)#$/i);
+    return num ? [...num[2]].every(v => !isNaN(parseInt(v, num[1]))) && num[1] >= 2 && num[1] <= 16 : false;
+}
 
 // 79: Three Split
-
+function solution(a) {
+    let sum = 0,
+        firstSum = 0,
+        secondSum,
+        res = 0;
+    for (let i of a)
+        sum+=i;
+    for (let i = 0; i < a.length-2; i++){
+        firstSum += a[i];
+        secondSum = 0;
+        for (let j = i+1; j < a.length-1; j++){
+            secondSum += a[j];
+            if (firstSum==secondSum && firstSum == sum-firstSum-secondSum)
+                res++;
+        }
+    }
+    return res;
+    
+}
 
 // 80: Character Parity
 
