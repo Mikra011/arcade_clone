@@ -7239,37 +7239,1095 @@ const tests = [
         "expected_output": "4",
         "is_complex": false,
         "is_sample": true
-      },
-      {
+    },
+    {
         "challenge_id": 139,
         "order_index": 2,
         "expected_output": "4",
         "is_complex": false,
         "is_sample": true
-      },
-      {
+    },
+    {
         "challenge_id": 139,
         "order_index": 3,
         "expected_output": "3",
         "is_complex": false,
         "is_sample": true
-      },
-      {
+    },
+    {
         "challenge_id": 139,
         "order_index": 4,
         "expected_output": "0",
         "is_complex": false,
         "is_sample": true
-      },
-      {
+    },
+    {
         "challenge_id": 139,
         "order_index": 5,
         "expected_output": "6",
         "is_complex": false,
         "is_sample": true
-      },
+    },
 
-      // 
+    // Character Parity
+    {
+        "challenge_id": 140,
+        "order_index": 1,
+        "expected_output": "odd",
+        "is_complex": false,
+        "is_sample": true
+    },
+    {
+        "challenge_id": 140,
+        "order_index": 2,
+        "expected_output": "even",
+        "is_complex": false,
+        "is_sample": true
+    },
+    {
+        "challenge_id": 140,
+        "order_index": 3,
+        "expected_output": "not a digit",
+        "is_complex": false,
+        "is_sample": true
+    },
+    {
+        "challenge_id": 140,
+        "order_index": 4,
+        "expected_output": "odd",
+        "is_complex": false,
+        "is_sample": true
+    },
+    {
+        "challenge_id": 140,
+        "order_index": 5,
+        "expected_output": "even",
+        "is_complex": false,
+        "is_sample": true
+    },
+    {
+        "challenge_id": 140,
+        "order_index": 6,
+        "expected_output": "odd",
+        "is_complex": false,
+        "is_sample": true
+    },
+    {
+        "challenge_id": 140,
+        "order_index": 7,
+        "expected_output": "odd",
+        "is_complex": false,
+        "is_sample": true
+    },
+
+    // Reflect String
+    {
+        "challenge_id": 141,
+        "order_index": 1,
+        "expected_output": "mznv",
+        "is_complex": false,
+        "is_sample": true
+    },
+    {
+        "challenge_id": 141,
+        "order_index": 2,
+        "expected_output": "zyba",
+        "is_complex": false,
+        "is_sample": true
+    },
+    {
+        "challenge_id": 141,
+        "order_index": 3,
+        "expected_output": "mmmmm",
+        "is_complex": false,
+        "is_sample": true
+    },
+    {
+        "challenge_id": 141,
+        "order_index": 4,
+        "expected_output": "kji",
+        "is_complex": false,
+        "is_sample": true
+    },
+    {
+        "challenge_id": 141,
+        "order_index": 5,
+        "expected_output": "xlwvhrtmzo",
+        "is_complex": false,
+        "is_sample": true
+    },
+
+    // New Numeral System
+    {
+        "challenge_id": 142,
+        "order_index": 1,
+        "expected_output": '["A + G", "B + F", "C + E", "D + D"]',
+        "is_complex": true,
+        "is_sample": true
+    },
+    {
+        "challenge_id": 142,
+        "order_index": 2,
+        "expected_output": '["A + A"]',
+        "is_complex": true,
+        "is_sample": true
+    },
+    {
+        "challenge_id": 142,
+        "order_index": 3,
+        "expected_output": '["A + D", "B + C"]',
+        "is_complex": true,
+        "is_sample": true
+    },
+    {
+        "challenge_id": 142,
+        "order_index": 4,
+        "expected_output": '["A + E", "B + D", "C + C"]',
+        "is_complex": true,
+        "is_sample": true
+    },
+    {
+        "challenge_id": 142,
+        "order_index": 5,
+        "expected_output": '["A + F", "B + E", "C + D"]',
+        "is_complex": true,
+        "is_sample": true
+    },
+    {
+        "challenge_id": 142,
+        "order_index": 6,
+        "expected_output": '["A + I", "B + H", "C + G", "D + F", "E + E"]',
+        "is_complex": true,
+        "is_sample": true
+    },
+    {
+        "challenge_id": 142,
+        "order_index": 7,
+        "expected_output": '["A + K", "B + J", "C + I", "D + H", "E + G", "F + F"]',
+        "is_complex": true,
+        "is_sample": true
+    },
+    {
+        "challenge_id": 142,
+        "order_index": 8,
+        "expected_output": '["A + L", "B + K", "C + J", "D + I", "E + H", "F + G"]',
+        "is_complex": true,
+        "is_sample": true
+    },
+    {
+        "challenge_id": 142,
+        "order_index": 9,
+        "expected_output": '["A + O", "B + N", "C + M", "D + L", "E + K", "F + J", "G + I", "H + H"]',
+        "is_complex": true,
+        "is_sample": true
+    },
+    {
+        "challenge_id": 142,
+        "order_index": 10,
+        "expected_output": '["A + P", "B + O", "C + N", "D + M", "E + L", "F + K", "G + J", "H + I"]',
+        "is_complex": true,
+        "is_sample": true
+    },
+    {
+        "challenge_id": 142,
+        "order_index": 11,
+        "expected_output": '["A + S", "B + R", "C + Q", "D + P", "E + O", "F + N", "G + M", "H + L", "I + K", "J + J"]',
+        "is_complex": true,
+        "is_sample": true
+    },
+    {
+        "challenge_id": 142,
+        "order_index": 12,
+        "expected_output": '["A + T", "B + S", "C + R", "D + Q", "E + P", "F + O", "G + N", "H + M", "I + L", "J + K"]',
+        "is_complex": true,
+        "is_sample": true
+    },
+    {
+        "challenge_id": 142,
+        "order_index": 13,
+        "expected_output": '["A + W", "B + V", "C + U", "D + T", "E + S", "F + R", "G + Q", "H + P", "I + O", "J + N", "K + M", "L + L"]',
+        "is_complex": true,
+        "is_sample": true
+    },
+
+    // Cipher 26
+    {
+        "challenge_id": 143,
+        "order_index": 1,
+        "expected_output": "thisisencryptedmessage",
+        "is_complex": false,
+        "is_sample": true
+    },
+    {
+        "challenge_id": 143,
+        "order_index": 2,
+        "expected_output": "itsasecrettoeverybody",
+        "is_complex": false,
+        "is_sample": true
+    },
+    {
+        "challenge_id": 143,
+        "order_index": 3,
+        "expected_output": "fourtytwo",
+        "is_complex": false,
+        "is_sample": true
+    },
+    {
+        "challenge_id": 143,
+        "order_index": 4,
+        "expected_output": "thereisnospoon",
+        "is_complex": false,
+        "is_sample": true
+    },
+    {
+        "challenge_id": 143,
+        "order_index": 5,
+        "expected_output": "abcdefghijklmnopqrstuvwxyz",
+        "is_complex": false,
+        "is_sample": true
+    },
+    {
+        "challenge_id": 143,
+        "order_index": 6,
+        "expected_output": "z",
+        "is_complex": false,
+        "is_sample": true
+    },
+
+    // Stolen Lunch
+    {
+        "challenge_id": 144,
+        "order_index": 1,
+        "expected_output": "you'll never guess it: 2390",
+        "is_complex": false,
+        "is_sample": true
+    },
+    {
+        "challenge_id": 144,
+        "order_index": 2,
+        "expected_output": "",
+        "is_complex": false,
+        "is_sample": true
+    },
+    {
+        "challenge_id": 144,
+        "order_index": 3,
+        "expected_output": "abcdefghij",
+        "is_complex": false,
+        "is_sample": true
+    },
+    {
+        "challenge_id": 144,
+        "order_index": 4,
+        "expected_output": "9876543210",
+        "is_complex": false,
+        "is_sample": true
+    },
+    {
+        "challenge_id": 144,
+        "order_index": 5,
+        "expected_output": "you won't know!!",
+        "is_complex": false,
+        "is_sample": true
+    },
+    {
+        "challenge_id": 144,
+        "order_index": 6,
+        "expected_output": "9ust gd93hd som4 r0n3om not4 9k735id 3sicd t70t you, 359cdi 3s5di l8ttl4 on4?, w8ll 019kdi sid    sk3ud cjn4v4r 64t!",
+        "is_complex": false,
+        "is_sample": true
+    },
+
+    // Higher Version
+    {
+        "challenge_id": 145,
+        "order_index": 1,
+        "expected_output": "true",
+        "is_complex": false,
+        "is_sample": true
+    },
+    {
+        "challenge_id": 145,
+        "order_index": 2,
+        "expected_output": "false",
+        "is_complex": false,
+        "is_sample": true
+    },
+    {
+        "challenge_id": 145,
+        "order_index": 3,
+        "expected_output": "false",
+        "is_complex": false,
+        "is_sample": true
+    },
+    {
+        "challenge_id": 145,
+        "order_index": 4,
+        "expected_output": "true",
+        "is_complex": false,
+        "is_sample": true
+    },
+    {
+        "challenge_id": 145,
+        "order_index": 5,
+        "expected_output": "false",
+        "is_complex": false,
+        "is_sample": true
+    },
+    {
+        "challenge_id": 145,
+        "order_index": 6,
+        "expected_output": "true",
+        "is_complex": false,
+        "is_sample": true
+    },
+    {
+        "challenge_id": 145,
+        "order_index": 7,
+        "expected_output": "false",
+        "is_complex": false,
+        "is_sample": true
+    },
+    {
+        "challenge_id": 145,
+        "order_index": 8,
+        "expected_output": "false",
+        "is_complex": false,
+        "is_sample": true
+    },
+    {
+        "challenge_id": 145,
+        "order_index": 9,
+        "expected_output": "true",
+        "is_complex": false,
+        "is_sample": true
+    },
+    {
+        "challenge_id": 145,
+        "order_index": 10,
+        "expected_output": "false",
+        "is_complex": false,
+        "is_sample": true
+    },
+    {
+        "challenge_id": 145,
+        "order_index": 11,
+        "expected_output": "false",
+        "is_complex": false,
+        "is_sample": true
+    },
+
+    // Decipher
+    {
+        "challenge_id": 146,
+        "order_index": 1,
+        "expected_output": "easy",
+        "is_complex": false,
+        "is_sample": true
+    },
+    {
+        "challenge_id": 146,
+        "order_index": 2,
+        "expected_output": "b",
+        "is_complex": false,
+        "is_sample": true
+    },
+    {
+        "challenge_id": 146,
+        "order_index": 3,
+        "expected_output": "z",
+        "is_complex": false,
+        "is_sample": true
+    },
+    {
+        "challenge_id": 146,
+        "order_index": 4,
+        "expected_output": "zba",
+        "is_complex": false,
+        "is_sample": true
+    },
+    {
+        "challenge_id": 146,
+        "order_index": 5,
+        "expected_output": "abcdefghijklmnopqrstuvwxyza",
+        "is_complex": false,
+        "is_sample": true
+    },
+    {
+        "challenge_id": 146,
+        "order_index": 6,
+        "expected_output": "fasjlflajshfbakjsbdfaksdfb",
+        "is_complex": false,
+        "is_sample": true
+    },
+    {
+        "challenge_id": 146,
+        "order_index": 7,
+        "expected_output": "powqelmdaklsopwqejkanfnjfhrairra",
+        "is_complex": false,
+        "is_sample": true
+    },
+
+    // Alphanumeric Less
+    {
+        "challenge_id": 147,
+        "order_index": 1,
+        "expected_output": "true",
+        "is_complex": false,
+        "is_sample": true
+    },
+    {
+        "challenge_id": 147,
+        "order_index": 2,
+        "expected_output": "false",
+        "is_complex": false,
+        "is_sample": true
+    },
+    {
+        "challenge_id": 147,
+        "order_index": 3,
+        "expected_output": "false",
+        "is_complex": false,
+        "is_sample": true
+    },
+    {
+        "challenge_id": 147,
+        "order_index": 4,
+        "expected_output": "true",
+        "is_complex": false,
+        "is_sample": true
+    },
+    {
+        "challenge_id": 147,
+        "order_index": 5,
+        "expected_output": "false",
+        "is_complex": false,
+        "is_sample": true
+    },
+    {
+        "challenge_id": 147,
+        "order_index": 6,
+        "expected_output": "true",
+        "is_complex": false,
+        "is_sample": true
+    },
+    {
+        "challenge_id": 147,
+        "order_index": 7,
+        "expected_output": "false",
+        "is_complex": false,
+        "is_sample": true
+    },
+    {
+        "challenge_id": 147,
+        "order_index": 8,
+        "expected_output": "true",
+        "is_complex": false,
+        "is_sample": true
+    },
+    {
+        "challenge_id": 147,
+        "order_index": 9,
+        "expected_output": "false",
+        "is_complex": false,
+        "is_sample": true
+    },
+    {
+        "challenge_id": 147,
+        "order_index": 10,
+        "expected_output": "false",
+        "is_complex": false,
+        "is_sample": true
+    },
+    {
+        "challenge_id": 147,
+        "order_index": 11,
+        "expected_output": "false",
+        "is_complex": false,
+        "is_sample": true
+    },
+    {
+        "challenge_id": 147,
+        "order_index": 12,
+        "expected_output": "true",
+        "is_complex": false,
+        "is_sample": true
+    },
+    {
+        "challenge_id": 147,
+        "order_index": 13,
+        "expected_output": "false",
+        "is_complex": false,
+        "is_sample": true
+    },
+    {
+        "challenge_id": 147,
+        "order_index": 14,
+        "expected_output": "true",
+        "is_complex": false,
+        "is_sample": true
+    },
+
+    // Array Conversion
+    {
+        "challenge_id": 148,
+        "order_index": 1,
+        "expected_output": "186",
+        "is_complex": false,
+        "is_sample": true
+    },
+    {
+        "challenge_id": 148,
+        "order_index": 2,
+        "expected_output": "64",
+        "is_complex": false,
+        "is_sample": true
+    },
+    {
+        "challenge_id": 148,
+        "order_index": 3,
+        "expected_output": "60",
+        "is_complex": false,
+        "is_sample": true
+    },
+    {
+        "challenge_id": 148,
+        "order_index": 4,
+        "expected_output": "100",
+        "is_complex": false,
+        "is_sample": true
+    },
+    {
+        "challenge_id": 148,
+        "order_index": 5,
+        "expected_output": "99",
+        "is_complex": false,
+        "is_sample": true
+    },
+    {
+        "challenge_id": 148,
+        "order_index": 6,
+        "expected_output": "100",
+        "is_complex": false,
+        "is_sample": true
+    },
+    {
+        "challenge_id": 148,
+        "order_index": 7,
+        "expected_output": "-22511",
+        "is_complex": false,
+        "is_sample": true
+    },
+
+    // Array Previous Less
+    {
+        "challenge_id": 149,
+        "order_index": 1,
+        "expected_output": "[-1, 3, -1, 2, 4]",
+        "is_complex": true,
+        "is_sample": true
+    },
+    {
+        "challenge_id": 149,
+        "order_index": 2,
+        "expected_output": "[-1, -1, -1, 1, 3, 4, 4, 1]",
+        "is_complex": true,
+        "is_sample": true
+    },
+    {
+        "challenge_id": 149,
+        "order_index": 3,
+        "expected_output": "[-1, -1, -1]",
+        "is_complex": true,
+        "is_sample": true
+    },
+    {
+        "challenge_id": 149,
+        "order_index": 4,
+        "expected_output": "[-1, 100, 101]",
+        "is_complex": true,
+        "is_sample": true
+    },
+    {
+        "challenge_id": 149,
+        "order_index": 5,
+        "expected_output": "[-1, -1, 7, -1, 3, 3, -1, 2, 5, 6, 6]",
+        "is_complex": true,
+        "is_sample": true
+    },
+    {
+        "challenge_id": 149,
+        "order_index": 6,
+        "expected_output": "[-1, 68, 68, 101, 101]",
+        "is_complex": true,
+        "is_sample": true
+    },
+
+    // Pair of Shoes
+    {
+        "challenge_id": 150,
+        "order_index": 1,
+        "expected_output": "true",
+        "is_complex": false,
+        "is_sample": true
+    },
+    {
+        "challenge_id": 150,
+        "order_index": 2,
+        "expected_output": "false",
+        "is_complex": false,
+        "is_sample": true
+    },
+    {
+        "challenge_id": 150,
+        "order_index": 3,
+        "expected_output": "true",
+        "is_complex": false,
+        "is_sample": true
+    },
+    {
+        "challenge_id": 150,
+        "order_index": 4,
+        "expected_output": "true",
+        "is_complex": false,
+        "is_sample": true
+    },
+    {
+        "challenge_id": 150,
+        "order_index": 5,
+        "expected_output": "false",
+        "is_complex": false,
+        "is_sample": true
+    },
+    {
+        "challenge_id": 150,
+        "order_index": 6,
+        "expected_output": "false",
+        "is_complex": false,
+        "is_sample": true
+    },
+    {
+        "challenge_id": 150,
+        "order_index": 7,
+        "expected_output": "true",
+        "is_complex": false,
+        "is_sample": true
+    },
+    {
+        "challenge_id": 150,
+        "order_index": 8,
+        "expected_output": "false",
+        "is_complex": false,
+        "is_sample": true
+    },
+    {
+        "challenge_id": 150,
+        "order_index": 9,
+        "expected_output": "true",
+        "is_complex": false,
+        "is_sample": true
+    },
+    {
+        "challenge_id": 150,
+        "order_index": 10,
+        "expected_output": "false",
+        "is_complex": false,
+        "is_sample": true
+    },
+    {
+        "challenge_id": 150,
+        "order_index": 11,
+        "expected_output": "false",
+        "is_complex": false,
+        "is_sample": true
+    },
+    {
+        "challenge_id": 150,
+        "order_index": 12,
+        "expected_output": "false",
+        "is_complex": false,
+        "is_sample": true
+    },
+    {
+        "challenge_id": 150,
+        "order_index": 13,
+        "expected_output": "false",
+        "is_complex": false,
+        "is_sample": true
+    },
+    {
+        "challenge_id": 150,
+        "order_index": 14,
+        "expected_output": "false",
+        "is_complex": false,
+        "is_sample": true
+    },
+    {
+        "challenge_id": 150,
+        "order_index": 15,
+        "expected_output": "true",
+        "is_complex": false,
+        "is_sample": true
+    },
+    {
+        "challenge_id": 150,
+        "order_index": 16,
+        "expected_output": "false",
+        "is_complex": false,
+        "is_sample": true
+    },
+
+    // Combs
+    {
+        "challenge_id": 151,
+        "order_index": 1,
+        "expected_output": "5",
+        "is_complex": false,
+        "is_sample": true
+    },
+    {
+        "challenge_id": 151,
+        "order_index": 2,
+        "expected_output": "5",
+        "is_complex": false,
+        "is_sample": true
+    },
+    {
+        "challenge_id": 151,
+        "order_index": 3,
+        "expected_output": "9",
+        "is_complex": false,
+        "is_sample": true
+    },
+    {
+        "challenge_id": 151,
+        "order_index": 4,
+        "expected_output": "4",
+        "is_complex": false,
+        "is_sample": true
+    },
+    {
+        "challenge_id": 151,
+        "order_index": 5,
+        "expected_output": "5",
+        "is_complex": false,
+        "is_sample": true
+    },
+
+    // Strings Crossover
+    {
+        "challenge_id": 152,
+        "order_index": 1,
+        "expected_output": "2",
+        "is_complex": false,
+        "is_sample": true
+    },
+    {
+        "challenge_id": 152,
+        "order_index": 2,
+        "expected_output": "0",
+        "is_complex": false,
+        "is_sample": true
+    },
+    {
+        "challenge_id": 152,
+        "order_index": 3,
+        "expected_output": "4",
+        "is_complex": false,
+        "is_sample": true
+    },
+    {
+        "challenge_id": 152,
+        "order_index": 4,
+        "expected_output": "1",
+        "is_complex": false,
+        "is_sample": true
+    },
+    {
+        "challenge_id": 152,
+        "order_index": 5,
+        "expected_output": "0",
+        "is_complex": false,
+        "is_sample": true
+    },
+    {
+        "challenge_id": 152,
+        "order_index": 6,
+        "expected_output": "1",
+        "is_complex": false,
+        "is_sample": true
+    },
+
+    // Cyclic String
+    {
+        "challenge_id": 153,
+        "order_index": 1,
+        "expected_output": "3",
+        "is_complex": false,
+        "is_sample": true
+    },
+    {
+        "challenge_id": 153,
+        "order_index": 2,
+        "expected_output": "2",
+        "is_complex": false,
+        "is_sample": true
+    },
+    {
+        "challenge_id": 153,
+        "order_index": 3,
+        "expected_output": "1",
+        "is_complex": false,
+        "is_sample": true
+    },
+    {
+        "challenge_id": 153,
+        "order_index": 4,
+        "expected_output": "5",
+        "is_complex": false,
+        "is_sample": true
+    },
+    {
+        "challenge_id": 153,
+        "order_index": 5,
+        "expected_output": "7",
+        "is_complex": false,
+        "is_sample": true
+    },
+    {
+        "challenge_id": 153,
+        "order_index": 6,
+        "expected_output": "3",
+        "is_complex": false,
+        "is_sample": true
+    },
+    {
+        "challenge_id": 153,
+        "order_index": 7,
+        "expected_output": "3",
+        "is_complex": false,
+        "is_sample": true
+    },
+    {
+        "challenge_id": 153,
+        "order_index": 8,
+        "expected_output": "2",
+        "is_complex": false,
+        "is_sample": true
+    },
+    {
+        "challenge_id": 153,
+        "order_index": 9,
+        "expected_output": "4",
+        "is_complex": false,
+        "is_sample": true
+    },
+
+    // Beautiful Text
+    {
+        "challenge_id": 154,
+        "order_index": 1,
+        "expected_output": "true",
+        "is_complex": false,
+        "is_sample": true
+    },
+    {
+        "challenge_id": 154,
+        "order_index": 2,
+        "expected_output": "false",
+        "is_complex": false,
+        "is_sample": true
+    },
+    {
+        "challenge_id": 154,
+        "order_index": 3,
+        "expected_output": "true",
+        "is_complex": false,
+        "is_sample": true
+    },
+    {
+        "challenge_id": 154,
+        "order_index": 4,
+        "expected_output": "false",
+        "is_complex": false,
+        "is_sample": true
+    },
+    {
+        "challenge_id": 154,
+        "order_index": 5,
+        "expected_output": "true",
+        "is_complex": false,
+        "is_sample": true
+    },
+    {
+        "challenge_id": 154,
+        "order_index": 6,
+        "expected_output": "true",
+        "is_complex": false,
+        "is_sample": true
+    },
+    {
+        "challenge_id": 154,
+        "order_index": 7,
+        "expected_output": "false",
+        "is_complex": false,
+        "is_sample": true
+    },
+    {
+        "challenge_id": 154,
+        "order_index": 8,
+        "expected_output": "false",
+        "is_complex": false,
+        "is_sample": true
+    },
+    {
+        "challenge_id": 154,
+        "order_index": 9,
+        "expected_output": "false",
+        "is_complex": false,
+        "is_sample": true
+    },
+    {
+        "challenge_id": 154,
+        "order_index": 10,
+        "expected_output": "true",
+        "is_complex": false,
+        "is_sample": true
+    },
+    {
+        "challenge_id": 154,
+        "order_index": 11,
+        "expected_output": "false",
+        "is_complex": false,
+        "is_sample": true
+    },
+
+    // Runners Meetings
+    {
+        "challenge_id": 155,
+        "order_index": 1,
+        "expected_output": "3",
+        "is_complex": false,
+        "is_sample": true
+    },
+    {
+        "challenge_id": 155,
+        "order_index": 2,
+        "expected_output": "2",
+        "is_complex": false,
+        "is_sample": true
+    },
+    {
+        "challenge_id": 155,
+        "order_index": 3,
+        "expected_output": "-1",
+        "is_complex": false,
+        "is_sample": true
+    },
+    {
+        "challenge_id": 155,
+        "order_index": 4,
+        "expected_output": "2",
+        "is_complex": false,
+        "is_sample": true
+    },
+    {
+        "challenge_id": 155,
+        "order_index": 5,
+        "expected_output": "4",
+        "is_complex": false,
+        "is_sample": true
+    },
+    {
+        "challenge_id": 155,
+        "order_index": 6,
+        "expected_output": "3",
+        "is_complex": false,
+        "is_sample": true
+    },
+
+    // Christmas Tree
+    {
+        "challenge_id": 156,
+        "order_index": 1,
+        "expected_output": '["    *", "    *", "   ***", "  *****", " *******", "*********", "   ***"]',
+        "is_complex": true,
+        "is_sample": true
+    },
+    {
+        "challenge_id": 156,
+        "order_index": 2,
+        "expected_output": '["      *", "      *", "     ***", "    *****", "   *******", "  *********", " ***********", "   *******", "  *********", " ***********", "*************", "    *****", "    *****"]',
+        "is_complex": true,
+        "is_sample": true
+    },
+    {
+        "challenge_id": 156,
+        "order_index": 3,
+        "expected_output": '["            *", "            *", "           ***", "          *****", "         *******", "        *********", "       ***********", "      *************", "     ***************", "    *****************", "   *******************", "         *******", "        *********", "       ***********", "      *************", "     ***************", "    *****************", "   *******************", "  *********************", "        *********", "       ***********", "      *************", "     ***************", "    *****************", "   *******************", "  *********************", " ***********************", "       ***********", "      *************", "     ***************", "    *****************", "   *******************", "  *********************", " ***********************", "*************************", "        *********", "        *********", "        *********", "        *********"]',
+        "is_complex": true,
+        "is_sample": true
+    },
+    {
+        "challenge_id": 156,
+        "order_index": 4,
+        "expected_output": '["             *", "             *", "            ***", "           *****", "          *******", "         *********", "        ***********", "       *************", "          *******", "         *********", "        ***********", "       *************", "      ***************", "         *********", "        ***********", "       *************", "      ***************", "     *****************", "        ***********", "       *************", "      ***************", "     *****************", "    *******************", "       *************", "      ***************", "     *****************", "    *******************", "   *********************", "      ***************", "     *****************", "    *******************", "   *********************", "  ***********************", "     *****************", "    *******************", "   *********************", "  ***********************", " *************************", "    *******************", "   *********************", "  ***********************", " *************************", "***************************", "           *****", "           *****", "           *****", "           *****", "           *****", "           *****", "           *****", "           *****"]',
+        "is_complex": true,
+        "is_sample": true
+    },
+    {
+        "challenge_id": 156,
+        "order_index": 5,
+        "expected_output": '["      *", "      *", "     ***", "    *****", "   *******", "  *********", "   *******", "  *********", " ***********", "  *********", " ***********", "*************", "     ***", "     ***", "     ***"]',
+        "is_complex": true,
+        "is_sample": true
+    },
+    {
+        "challenge_id": 156,
+        "order_index": 6,
+        "expected_output": '["          *", "          *", "         ***", "        *****", "       *******", "      *********", "     ***********", "    *************", "   ***************", "       *******", "      *********", "     ***********", "    *************", "   ***************", "  *****************", "      *********", "     ***********", "    *************", "   ***************", "  *****************", " *******************", "     ***********", "    *************", "   ***************", "  *****************", " *******************", "*********************", "       *******", "       *******", "       *******", "       *******"]',
+        "is_complex": true,
+        "is_sample": true
+    },
+
+    // File Naming
+    {
+        "challenge_id": 157,
+        "order_index": 1,
+        "expected_output": '["doc", "doc(1)", "image", "doc(1)(1)", "doc(2)"]',
+        "is_complex": true,
+        "is_sample": true
+    },
+    {
+        "challenge_id": 157,
+        "order_index": 2,
+        "expected_output": '["a(1)", "a(6)", "a", "a(2)", "a(3)", "a(4)", "a(5)", "a(7)", "a(8)", "a(9)", "a(10)", "a(11)"]',
+        "is_complex": true,
+        "is_sample": true
+    },
+    {
+        "challenge_id": 157,
+        "order_index": 3,
+        "expected_output": '["dd", "dd(1)", "dd(2)", "dd(3)", "dd(1)(1)", "dd(1)(2)", "dd(1)(1)(1)", "dd(4)", "dd(1)(3)"]',
+        "is_complex": true,
+        "is_sample": true
+    },
+    {
+        "challenge_id": 157,
+        "order_index": 5,
+        "expected_output": '["name", "name(1)", "name(1)(1)", "name(3)", "name(2)", "name(2)(1)"]',
+        "is_complex": true,
+        "is_sample": true
+    },
+    {
+        "challenge_id": 157,
+        "order_index": 6,
+        "expected_output": '[]',
+        "is_complex": true,
+        "is_sample": true
+    },
+
+    // 
 
 
 

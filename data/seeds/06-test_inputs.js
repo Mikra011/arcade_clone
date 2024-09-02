@@ -9576,11 +9576,1339 @@ const test_inputs = [
         "input_value": "[0, 0, 0, 0, 0]"
     },
 
+    // Character Parity
+    {
+        "test_id": 1143,
+        "input_type": "string",
+        "input_name": "symbol",
+        "input_value": "5"
+    },
+    {
+        "test_id": 1144,
+        "input_type": "string",
+        "input_name": "symbol",
+        "input_value": "8"
+    },
+    {
+        "test_id": 1145,
+        "input_type": "string",
+        "input_name": "symbol",
+        "input_value": "q"
+    },
+    {
+        "test_id": 1146,
+        "input_type": "string",
+        "input_name": "symbol",
+        "input_value": "1"
+    },
+    {
+        "test_id": 1147,
+        "input_type": "string",
+        "input_name": "symbol",
+        "input_value": "2"
+    },
+    {
+        "test_id": 1148,
+        "input_type": "string",
+        "input_name": "symbol",
+        "input_value": "7"
+    },
+    {
+        "test_id": 1149,
+        "input_type": "string",
+        "input_name": "symbol",
+        "input_value": "9"
+    },
+
+    // Reflect String
+    {
+        "test_id": 1150,
+        "input_type": "string",
+        "input_name": "inputString",
+        "input_value": "name"
+    },
+    {
+        "test_id": 1151,
+        "input_type": "string",
+        "input_name": "inputString",
+        "input_value": "abyz"
+    },
+    {
+        "test_id": 1152,
+        "input_type": "string",
+        "input_name": "inputString",
+        "input_value": "nnnnn"
+    },
+    {
+        "test_id": 1153,
+        "input_type": "string",
+        "input_name": "inputString",
+        "input_value": "pqr"
+    },
+    {
+        "test_id": 1154,
+        "input_type": "string",
+        "input_name": "inputString",
+        "input_value": "codesignal"
+    },
+
+    // New Numeral System
+    {
+        "test_id": 1155,
+        "input_type": "string",
+        "input_name": "number",
+        "input_value": "G"
+    },
+    {
+        "test_id": 1156,
+        "input_type": "string",
+        "input_name": "number",
+        "input_value": "A"
+    },
+    {
+        "test_id": 1157,
+        "input_type": "string",
+        "input_name": "number",
+        "input_value": "D"
+    },
+    {
+        "test_id": 1158,
+        "input_type": "string",
+        "input_name": "number",
+        "input_value": "E"
+    },
+    {
+        "test_id": 1159,
+        "input_type": "string",
+        "input_name": "number",
+        "input_value": "F"
+    },
+    {
+        "test_id": 1160,
+        "input_type": "string",
+        "input_name": "number",
+        "input_value": "I"
+    },
+    {
+        "test_id": 1161,
+        "input_type": "string",
+        "input_name": "number",
+        "input_value": "K"
+    },
+    {
+        "test_id": 1162,
+        "input_type": "string",
+        "input_name": "number",
+        "input_value": "L"
+    },
+    {
+        "test_id": 1163,
+        "input_type": "string",
+        "input_name": "number",
+        "input_value": "O"
+    },
+    {
+        "test_id": 1164,
+        "input_type": "string",
+        "input_name": "number",
+        "input_value": "P"
+    },
+    {
+        "test_id": 1165,
+        "input_type": "string",
+        "input_name": "number",
+        "input_value": "S"
+    },
+    {
+        "test_id": 1166,
+        "input_type": "string",
+        "input_name": "number",
+        "input_value": "T"
+    },
+    {
+        "test_id": 1167,
+        "input_type": "string",
+        "input_name": "number",
+        "input_value": "W"
+    },
+
+    // Cipher 26
+    {
+        "test_id": 1168,
+        "input_type": "string",
+        "input_name": "message",
+        "input_value": "taiaiaertkixquxjnfxxdh"
+    },
+    {
+        "test_id": 1169,
+        "input_type": "string",
+        "input_name": "message",
+        "input_value": "ibttlprimfymqlpgeftwu"
+    },
+    {
+        "test_id": 1170,
+        "input_type": "string",
+        "input_name": "message",
+        "input_value": "ftnexvoky"
+    },
+    {
+        "test_id": 1171,
+        "input_type": "string",
+        "input_name": "message",
+        "input_value": "taevzhzmashvjw"
+    },
+    {
+        "test_id": 1172,
+        "input_type": "string",
+        "input_name": "message",
+        "input_value": "abdgkpvcktdoanbqgxpicxtqon"
+    },
+    {
+        "test_id": 1173,
+        "input_type": "string",
+        "input_name": "message",
+        "input_value": "z"
+    },
+
+    // Stolen Lunch
+    {
+        "test_id": 1174,
+        "input_type": "string",
+        "input_name": "note",
+        "input_value": "you'll n4v4r 6u4ss 8t: cdja"
+    },
+    {
+        "test_id": 1175,
+        "input_type": "string",
+        "input_name": "note",
+        "input_value": ""
+    },
+    {
+        "test_id": 1176,
+        "input_type": "string",
+        "input_name": "note",
+        "input_value": "0123456789"
+    },
+    {
+        "test_id": 1177,
+        "input_type": "string",
+        "input_name": "note",
+        "input_value": "jihgfedcba"
+    },
+    {
+        "test_id": 1178,
+        "input_type": "string",
+        "input_name": "note",
+        "input_value": "you won't know!!"
+    },
+    {
+        "test_id": 1179,
+        "input_type": "string",
+        "input_name": "note",
+        "input_value": "just 63jd73 some random note jkhdf83 ds823 that you, dfj238 dsf38 little one?, will abjk38 s83    skdu3 29never get!"
+    },
+
+    // Higher Version
+    {
+        "test_id": 1180,
+        "input_type": "string",
+        "input_name": "ver1",
+        "input_value": "1.2.2"
+    },
+    {
+        "test_id": 1180,
+        "input_type": "string",
+        "input_name": "ver2",
+        "input_value": "1.2.0"
+    },
+    {
+        "test_id": 1181,
+        "input_type": "string",
+        "input_name": "ver1",
+        "input_value": "1.0.5"
+    },
+    {
+        "test_id": 1181,
+        "input_type": "string",
+        "input_name": "ver2",
+        "input_value": "1.1.0"
+    },
+    {
+        "test_id": 1182,
+        "input_type": "string",
+        "input_name": "ver1",
+        "input_value": "1.1.0"
+    },
+    {
+        "test_id": 1182,
+        "input_type": "string",
+        "input_name": "ver2",
+        "input_value": "1.1.5"
+    },
+    {
+        "test_id": 1183,
+        "input_type": "string",
+        "input_name": "ver1",
+        "input_value": "10"
+    },
+    {
+        "test_id": 1183,
+        "input_type": "string",
+        "input_name": "ver2",
+        "input_value": "9"
+    },
+    {
+        "test_id": 1184,
+        "input_type": "string",
+        "input_name": "ver1",
+        "input_value": "1.0.10"
+    },
+    {
+        "test_id": 1184,
+        "input_type": "string",
+        "input_name": "ver2",
+        "input_value": "1.1.5"
+    },
+    {
+        "test_id": 1185,
+        "input_type": "string",
+        "input_name": "ver1",
+        "input_value": "5"
+    },
+    {
+        "test_id": 1185,
+        "input_type": "string",
+        "input_name": "ver2",
+        "input_value": "1"
+    },
+    {
+        "test_id": 1186,
+        "input_type": "string",
+        "input_name": "ver1",
+        "input_value": "1.1.10"
+    },
+    {
+        "test_id": 1186,
+        "input_type": "string",
+        "input_name": "ver2",
+        "input_value": "1.2.0"
+    },
+    {
+        "test_id": 1187,
+        "input_type": "string",
+        "input_name": "ver1",
+        "input_value": "1.2.2"
+    },
+    {
+        "test_id": 1187,
+        "input_type": "string",
+        "input_name": "ver2",
+        "input_value": "1.2.10"
+    },
+    {
+        "test_id": 1188,
+        "input_type": "string",
+        "input_name": "ver1",
+        "input_value": "1.10.2"
+    },
+    {
+        "test_id": 1188,
+        "input_type": "string",
+        "input_name": "ver2",
+        "input_value": "1.2.10"
+    },
+    {
+        "test_id": 1189,
+        "input_type": "string",
+        "input_name": "ver1",
+        "input_value": "0"
+    },
+    {
+        "test_id": 1189,
+        "input_type": "string",
+        "input_name": "ver2",
+        "input_value": "0"
+    },
+    {
+        "test_id": 1190,
+        "input_type": "string",
+        "input_name": "ver1",
+        "input_value": "4.3.22.1"
+    },
+    {
+        "test_id": 1190,
+        "input_type": "string",
+        "input_name": "ver2",
+        "input_value": "4.3.22.1"
+    },
+
+    // Decipher
+    {
+        "test_id": 1191,
+        "input_type": "string",
+        "input_name": "cipher",
+        "input_value": "10197115121"
+    },
+    {
+        "test_id": 1192,
+        "input_type": "string",
+        "input_name": "cipher",
+        "input_value": "98"
+    },
+    {
+        "test_id": 1193,
+        "input_type": "string",
+        "input_name": "cipher",
+        "input_value": "122"
+    },
+    {
+        "test_id": 1194,
+        "input_type": "string",
+        "input_name": "cipher",
+        "input_value": "1229897"
+    },
+    {
+        "test_id": 1195,
+        "input_type": "string",
+        "input_name": "cipher",
+        "input_value": "97989910010110210310410510610710810911011111211311411511611711811912012112297"
+    },
+    {
+        "test_id": 1196,
+        "input_type": "string",
+        "input_name": "cipher",
+        "input_value": "10297115106108102108971061151041029897107106115981001029710711510010298"
+    },
+    {
+        "test_id": 1197,
+        "input_type": "string",
+        "input_name": "cipher",
+        "input_value": "11211111911310110810910097107108115111112119113101106107971101021101061021041149710511411497"
+    },
+
+    // Alphanumeric Less
+    {
+        "test_id": 1198,
+        "input_type": "string",
+        "input_name": "s1",
+        "input_value": "a"
+    },
+    {
+        "test_id": 1198,
+        "input_type": "string",
+        "input_name": "s2",
+        "input_value": "a1"
+    },
+    {
+        "test_id": 1199,
+        "input_type": "string",
+        "input_name": "s1",
+        "input_value": "ab"
+    },
+    {
+        "test_id": 1199,
+        "input_type": "string",
+        "input_name": "s2",
+        "input_value": "a1"
+    },
+    {
+        "test_id": 1200,
+        "input_type": "string",
+        "input_name": "s1",
+        "input_value": "b"
+    },
+    {
+        "test_id": 1200,
+        "input_type": "string",
+        "input_name": "s2",
+        "input_value": "a1"
+    },
+    {
+        "test_id": 1201,
+        "input_type": "string",
+        "input_name": "s1",
+        "input_value": "x11y012"
+    },
+    {
+        "test_id": 1201,
+        "input_type": "string",
+        "input_name": "s2",
+        "input_value": "x011y13"
+    },
+    {
+        "test_id": 1202,
+        "input_type": "string",
+        "input_name": "s1",
+        "input_value": "ab123"
+    },
+    {
+        "test_id": 1202,
+        "input_type": "string",
+        "input_name": "s2",
+        "input_value": "ab34z"
+    },
+    {
+        "test_id": 1203,
+        "input_type": "string",
+        "input_name": "s1",
+        "input_value": "0000"
+    },
+    {
+        "test_id": 1203,
+        "input_type": "string",
+        "input_name": "s2",
+        "input_value": "000"
+    },
+    {
+        "test_id": 1204,
+        "input_type": "string",
+        "input_name": "s1",
+        "input_value": "10"
+    },
+    {
+        "test_id": 1204,
+        "input_type": "string",
+        "input_name": "s2",
+        "input_value": "01"
+    },
+    {
+        "test_id": 1205,
+        "input_type": "string",
+        "input_name": "s1",
+        "input_value": "ab000144"
+    },
+    {
+        "test_id": 1205,
+        "input_type": "string",
+        "input_name": "s2",
+        "input_value": "ab144"
+    },
+    {
+        "test_id": 1206,
+        "input_type": "string",
+        "input_name": "s1",
+        "input_value": "ab"
+    },
+    {
+        "test_id": 1206,
+        "input_type": "string",
+        "input_name": "s2",
+        "input_value": "a"
+    },
+    {
+        "test_id": 1207,
+        "input_type": "string",
+        "input_name": "s1",
+        "input_value": "000"
+    },
+    {
+        "test_id": 1207,
+        "input_type": "string",
+        "input_name": "s2",
+        "input_value": "0000"
+    },
+    {
+        "test_id": 1208,
+        "input_type": "string",
+        "input_name": "s1",
+        "input_value": "abc123"
+    },
+    {
+        "test_id": 1208,
+        "input_type": "string",
+        "input_name": "s2",
+        "input_value": "abc123"
+    },
+    {
+        "test_id": 1209,
+        "input_type": "string",
+        "input_name": "s1",
+        "input_value": "zza1233"
+    },
+    {
+        "test_id": 1209,
+        "input_type": "string",
+        "input_name": "s2",
+        "input_value": "zza1234"
+    },
+    {
+        "test_id": 1210,
+        "input_type": "string",
+        "input_name": "s1",
+        "input_value": "zzz1"
+    },
+    {
+        "test_id": 1210,
+        "input_type": "string",
+        "input_name": "s2",
+        "input_value": "zzz1"
+    },
+    {
+        "test_id": 1211,
+        "input_type": "string",
+        "input_name": "s1",
+        "input_value": "00"
+    },
+    {
+        "test_id": 1211,
+        "input_type": "string",
+        "input_name": "s2",
+        "input_value": "a2"
+    },
+
+    // Array Conversion
+    {
+        "test_id": 1212,
+        "input_type": "arrayOfIntegers",
+        "input_name": "inputArray",
+        "input_value": "[1, 2, 3, 4, 5, 6, 7, 8]"
+    },
+    {
+        "test_id": 1213,
+        "input_type": "arrayOfIntegers",
+        "input_name": "inputArray",
+        "input_value": "[1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1]"
+    },
+    {
+        "test_id": 1214,
+        "input_type": "arrayOfIntegers",
+        "input_name": "inputArray",
+        "input_value": "[3, 3, 5, 5]"
+    },
+    {
+        "test_id": 1215,
+        "input_type": "arrayOfIntegers",
+        "input_name": "inputArray",
+        "input_value": "[-1, 1, 2, 3, 5, 5, 3, 7]"
+    },
+    {
+        "test_id": 1216,
+        "input_type": "arrayOfIntegers",
+        "input_name": "inputArray",
+        "input_value": "[99]"
+    },
+    {
+        "test_id": 1217,
+        "input_type": "arrayOfIntegers",
+        "input_name": "inputArray",
+        "input_value": "[99, 1]"
+    },
+    {
+        "test_id": 1218,
+        "input_type": "arrayOfIntegers",
+        "input_name": "inputArray",
+        "input_value": "[34, 60, -9, -67, -100, -27, 100, 21]"
+    },
+
+    // Array Previous Less
+    {
+        "test_id": 1219,
+        "input_type": "arrayOfIntegers",
+        "input_name": "items",
+        "input_value": "[3, 5, 2, 4, 5]"
+    },
+    {
+        "test_id": 1220,
+        "input_type": "arrayOfIntegers",
+        "input_name": "items",
+        "input_value": "[2, 2, 1, 3, 4, 5, 5, 3]"
+    },
+    {
+        "test_id": 1221,
+        "input_type": "arrayOfIntegers",
+        "input_name": "items",
+        "input_value": "[3, 2, 1]"
+    },
+    {
+        "test_id": 1222,
+        "input_type": "arrayOfIntegers",
+        "input_name": "items",
+        "input_value": "[100, 101, 102]"
+    },
+    {
+        "test_id": 1223,
+        "input_type": "arrayOfIntegers",
+        "input_name": "items",
+        "input_value": "[7, 7, 8, 3, 4, 4, 2, 5, 6, 7, 7]"
+    },
+    {
+        "test_id": 1224,
+        "input_type": "arrayOfIntegers",
+        "input_name": "items",
+        "input_value": "[68, 135, 101, 170, 125]"
+    },
+
+    // Pair of Shoes
+    {
+        "test_id": 1225,
+        "input_type": "matrix",
+        "input_name": "shoes",
+        "input_value": "[[0, 21],  [1, 23],  [1, 21],  [0, 23]]"
+    },
+    {
+        "test_id": 1226,
+        "input_type": "matrix",
+        "input_name": "shoes",
+        "input_value": "[[0, 21],  [1, 23],  [1, 21],  [1, 23]]"
+    },
+    {
+        "test_id": 1227,
+        "input_type": "matrix",
+        "input_name": "shoes",
+        "input_value": "[[0, 23],  [1, 21],  [1, 23],  [0, 21],  [1, 22],  [0, 22]]"
+    },
+    {
+        "test_id": 1228,
+        "input_type": "matrix",
+        "input_name": "shoes",
+        "input_value": "[[0, 23],  [1, 21],  [1, 23],  [0, 21]]"
+    },
+    {
+        "test_id": 1229,
+        "input_type": "matrix",
+        "input_name": "shoes",
+        "input_value": "[[1, 41],  [1, 40],  [1, 45],  [0, 42],  [0, 42],  [0, 42]]"
+    },
+    {
+        "test_id": 1230,
+        "input_type": "matrix",
+        "input_name": "shoes",
+        "input_value": "[[1, 2],  [0, 2],  [1, 1],  [0, 1],  [1, 2],  [0, 1]]"
+    },
+    {
+        "test_id": 1231,
+        "input_type": "matrix",
+        "input_name": "shoes",
+        "input_value": "[[0, 100],  [1, 1],  [1, 100],  [0, 1]]"
+    },
+    {
+        "test_id": 1232,
+        "input_type": "matrix",
+        "input_name": "shoes",
+        "input_value": "[[0, 23]]"
+    },
+    {
+        "test_id": 1233,
+        "input_type": "matrix",
+        "input_name": "shoes",
+        "input_value": "[[0, 23],  [1, 23]]"
+    },
+    {
+        "test_id": 1234,
+        "input_type": "matrix",
+        "input_name": "shoes",
+        "input_value": "[[0, 23],  [1, 22]]"
+    },
+    {
+        "test_id": 1235,
+        "input_type": "matrix",
+        "input_name": "shoes",
+        "input_value": "[[1, 1],  [1, 1],  [1, 3],  [0, 2],  [0, 2],  [0, 1]]"
+    },
+    {
+        "test_id": 1236,
+        "input_type": "matrix",
+        "input_name": "shoes",
+        "input_value": "[[1, 23],  [0, 22]]"
+    },
+    {
+        "test_id": 1237,
+        "input_type": "matrix",
+        "input_name": "shoes",
+        "input_value": "[[1, 25],  [0, 100],  [1, 1],  [1, 1],  [0, 25],  [0, 1],  [0, 100],  [1, 1],  [1, 100],  [0, 25],  [0, 1],  [0, 100],  [1, 25],  [0, 1]]"
+    },
+    {
+        "test_id": 1238,
+        "input_type": "matrix",
+        "input_name": "shoes",
+        "input_value": "[[1, 25],  [0, 100],  [1, 1],  [1, 1],  [0, 25],  [0, 1],  [0, 100],  [1, 1],  [1, 100],  [0, 25],  [0, 1],  [1, 1],  [0, 100],  [1, 25],  [0, 1]]"
+    },
+    {
+        "test_id": 1239,
+        "input_type": "matrix",
+        "input_name": "shoes",
+        "input_value": "[[0, 100],  [0, 100],  [0, 100],  [0, 100],  [0, 100],  [0, 100],  [0, 100],  [0, 100],  [0, 100],  [0, 100],  [1, 100],  [1, 100],  [1, 100],  [1, 100],  [1, 100],  [1, 100],  [1, 100],  [1, 100],  [1, 100],  [1, 100]]"
+    },
+    {
+        "test_id": 1240,
+        "input_type": "matrix",
+        "input_name": "shoes",
+        "input_value": "[[0, 100],  [0, 100],  [0, 100],  [0, 100],  [0, 100],  [0, 100],  [0, 100],  [0, 100],  [0, 100],  [0, 100],  [0, 100],  [1, 100],  [1, 100],  [1, 100],  [1, 100],  [1, 100],  [1, 100],  [1, 100],  [1, 100],  [1, 100],  [1, 100]]"
+    },
+
+    // Combs
+    {
+        "test_id": 1241,
+        "input_type": "string",
+        "input_name": "comb1",
+        "input_value": "*..*"
+    },
+    {
+        "test_id": 1241,
+        "input_type": "string",
+        "input_name": "comb2",
+        "input_value": "*.*"
+    },
+    {
+        "test_id": 1242,
+        "input_type": "string",
+        "input_name": "comb1",
+        "input_value": "*...*"
+    },
+    {
+        "test_id": 1242,
+        "input_type": "string",
+        "input_name": "comb2",
+        "input_value": "*.*"
+    },
+    {
+        "test_id": 1243,
+        "input_type": "string",
+        "input_name": "comb1",
+        "input_value": "*..*.*"
+    },
+    {
+        "test_id": 1243,
+        "input_type": "string",
+        "input_name": "comb2",
+        "input_value": "*.***"
+    },
+    {
+        "test_id": 1244,
+        "input_type": "string",
+        "input_name": "comb1",
+        "input_value": "*.*"
+    },
+    {
+        "test_id": 1244,
+        "input_type": "string",
+        "input_name": "comb2",
+        "input_value": "*.*"
+    },
+    {
+        "test_id": 1245,
+        "input_type": "string",
+        "input_name": "comb1",
+        "input_value": "*.**"
+    },
+    {
+        "test_id": 1245,
+        "input_type": "string",
+        "input_name": "comb2",
+        "input_value": "*.*"
+    },
+
+    // Strings Crossover
+    {
+        "test_id": 1246,
+        "input_type": "arrayOfStrings",
+        "input_name": "inputArray",
+        "input_value": '["abc","aaa","aba","bab"]'
+    },
+    {
+        "test_id": 1247,
+        "input_type": "arrayOfStrings",
+        "input_name": "inputArray",
+        "input_value": '["aacccc","bbcccc"]'
+    },
+    {
+        "test_id": 1248,
+        "input_type": "arrayOfStrings",
+        "input_name": "inputArray",
+        "input_value": '["a","b","c","d","e"]'
+    },
+    {
+        "test_id": 1249,
+        "input_type": "arrayOfStrings",
+        "input_name": "inputArray",
+        "input_value": '["aa","ab","ba"]'
+    },
+    {
+        "test_id": 1250,
+        "input_type": "arrayOfStrings",
+        "input_name": "inputArray",
+        "input_value": '["a","b","c","d","e"]'
+    },
+    {
+        "test_id": 1251,
+        "input_type": "arrayOfStrings",
+        "input_name": "inputArray",
+        "input_value": '["aaa","aaa"]'
+    },
+    {
+        "test_id": 1246,
+        "input_type": "string",
+        "input_name": "result",
+        "input_value": "bbb"
+    },
+    {
+        "test_id": 1247,
+        "input_type": "string",
+        "input_name": "result",
+        "input_value": "abdddd"
+    },
+    {
+        "test_id": 1248,
+        "input_type": "string",
+        "input_name": "result",
+        "input_value": "c"
+    },
+    {
+        "test_id": 1249,
+        "input_type": "string",
+        "input_name": "result",
+        "input_value": "bb"
+    },
+    {
+        "test_id": 1250,
+        "input_type": "string",
+        "input_name": "result",
+        "input_value": "f"
+    },
+    {
+        "test_id": 1251,
+        "input_type": "string",
+        "input_name": "result",
+        "input_value": "aaa"
+    },
+
+    // Cyclic String,
+    {
+        "test_id": 1252,
+        "input_type": "string",
+        "input_name": "s",
+        "input_value": "cabca"
+    },
+    {
+        "test_id": 1253,
+        "input_type": "string",
+        "input_name": "s",
+        "input_value": "aba"
+    },
+    {
+        "test_id": 1254,
+        "input_type": "string",
+        "input_name": "s",
+        "input_value": "ccccccccccc"
+    },
+    {
+        "test_id": 1255,
+        "input_type": "string",
+        "input_name": "s",
+        "input_value": "bcaba"
+    },
+    {
+        "test_id": 1256,
+        "input_type": "string",
+        "input_name": "s",
+        "input_value": "abacabaabacab"
+    },
+    {
+        "test_id": 1257,
+        "input_type": "string",
+        "input_name": "s",
+        "input_value": "aab"
+    },
+    {
+        "test_id": 1258,
+        "input_type": "string",
+        "input_name": "s",
+        "input_value": "abaaba"
+    },
+    {
+        "test_id": 1259,
+        "input_type": "string",
+        "input_name": "s",
+        "input_value": "zazazaza"
+    },
+    {
+        "test_id": 1260,
+        "input_type": "string",
+        "input_name": "s",
+        "input_value": "abbaab"
+    },
+
+    // Beautiful Text
+    {
+        "test_id": 1261,
+        "input_type": "number",
+        "input_name": "l",
+        "input_value": "5"
+    },
+    {
+        "test_id": 1261,
+        "input_type": "number",
+        "input_name": "r",
+        "input_value": "15"
+    },
+    {
+        "test_id": 1261,
+        "input_type": "string",
+        "input_name": "inputString",
+        "input_value": "Look at this example of a correct text"
+    },
+    {
+        "test_id": 1262,
+        "input_type": "number",
+        "input_name": "l",
+        "input_value": "4"
+    },
+    {
+        "test_id": 1262,
+        "input_type": "number",
+        "input_name": "r",
+        "input_value": "10"
+    },
+    {
+        "test_id": 1262,
+        "input_type": "string",
+        "input_name": "inputString",
+        "input_value": "abc def ghi"
+    },
+    {
+        "test_id": 1263,
+        "input_type": "number",
+        "input_name": "l",
+        "input_value": "1"
+    },
+    {
+        "test_id": 1263,
+        "input_type": "number",
+        "input_name": "r",
+        "input_value": "10"
+    },
+    {
+        "test_id": 1263,
+        "input_type": "string",
+        "input_name": "inputString",
+        "input_value": "a a a a a a a a"
+    },
+    {
+        "test_id": 1264,
+        "input_type": "number",
+        "input_name": "l",
+        "input_value": "1"
+    },
+    {
+        "test_id": 1264,
+        "input_type": "number",
+        "input_name": "r",
+        "input_value": "5"
+    },
+    {
+        "test_id": 1264,
+        "input_type": "string",
+        "input_name": "inputString",
+        "input_value": "ab cd fg xyz"
+    },
+    {
+        "test_id": 1265,
+        "input_type": "number",
+        "input_name": "l",
+        "input_value": "6"
+    },
+    {
+        "test_id": 1265,
+        "input_type": "number",
+        "input_name": "r",
+        "input_value": "11"
+    },
+    {
+        "test_id": 1265,
+        "input_type": "string",
+        "input_name": "inputString",
+        "input_value": "aa aa aaaaa aaaaa aaaaa"
+    },
+    {
+        "test_id": 1266,
+        "input_type": "number",
+        "input_name": "l",
+        "input_value": "5"
+    },
+    {
+        "test_id": 1266,
+        "input_type": "number",
+        "input_name": "r",
+        "input_value": "10"
+    },
+    {
+        "test_id": 1266,
+        "input_type": "string",
+        "input_name": "inputString",
+        "input_value": "aa aa aaaaa aaaaa aaaaa"
+    },
+    {
+        "test_id": 1267,
+        "input_type": "number",
+        "input_name": "l",
+        "input_value": "6"
+    },
+    {
+        "test_id": 1267,
+        "input_type": "number",
+        "input_name": "r",
+        "input_value": "10"
+    },
+    {
+        "test_id": 1267,
+        "input_type": "string",
+        "input_name": "inputString",
+        "input_value": "aa aa aaaaa aaaaa aaaaa"
+    },
+    {
+        "test_id": 1268,
+        "input_type": "number",
+        "input_name": "l",
+        "input_value": "3"
+    },
+    {
+        "test_id": 1268,
+        "input_type": "number",
+        "input_name": "r",
+        "input_value": "10"
+    },
+    {
+        "test_id": 1268,
+        "input_type": "string",
+        "input_name": "inputString",
+        "input_value": "aaa aaaaaaa"
+    },
+    {
+        "test_id": 1269,
+        "input_type": "number",
+        "input_name": "l",
+        "input_value": "4"
+    },
+    {
+        "test_id": 1269,
+        "input_type": "number",
+        "input_name": "r",
+        "input_value": "10"
+    },
+    {
+        "test_id": 1269,
+        "input_type": "string",
+        "input_name": "inputString",
+        "input_value": "dht skq dkg"
+    },
+    {
+        "test_id": 1270,
+        "input_type": "number",
+        "input_name": "l",
+        "input_value": "3"
+    },
+    {
+        "test_id": 1270,
+        "input_type": "number",
+        "input_name": "r",
+        "input_value": "7"
+    },
+    {
+        "test_id": 1270,
+        "input_type": "string",
+        "input_name": "inputString",
+        "input_value": "skspv iakqh ygzwz ntkmi xqhpj"
+    },
+    {
+        "test_id": 1271,
+        "input_type": "number",
+        "input_name": "l",
+        "input_value": "8"
+    },
+    {
+        "test_id": 1271,
+        "input_type": "number",
+        "input_name": "r",
+        "input_value": "9"
+    },
+    {
+        "test_id": 1271,
+        "input_type": "string",
+        "input_name": "inputString",
+        "input_value": "skspv iakqh ygzwz ntkmi xqhpj"
+    },
+
+    // Runners Meetings
+    {
+        "test_id": 1272,
+        "input_type": "arrayOfIntegers",
+        "input_name": "startPosition",
+        "input_value": "[1, 4, 2]"
+    },
+    {
+        "test_id": 1272,
+        "input_type": "arrayOfIntegers",
+        "input_name": "speed",
+        "input_value": "[27, 18, 24]"
+    },
+    {
+        "test_id": 1273,
+        "input_type": "arrayOfIntegers",
+        "input_name": "startPosition",
+        "input_value": "[1, 4, 2]"
+    },
+    {
+        "test_id": 1273,
+        "input_type": "arrayOfIntegers",
+        "input_name": "speed",
+        "input_value": "[5, 6, 2]"
+    },
+    {
+        "test_id": 1274,
+        "input_type": "arrayOfIntegers",
+        "input_name": "startPosition",
+        "input_value": "[1, 2, 3]"
+    },
+    {
+        "test_id": 1274,
+        "input_type": "arrayOfIntegers",
+        "input_name": "speed",
+        "input_value": "[1, 1, 1]"
+    },
+    {
+        "test_id": 1275,
+        "input_type": "arrayOfIntegers",
+        "input_name": "startPosition",
+        "input_value": "[1, 1000]"
+    },
+    {
+        "test_id": 1275,
+        "input_type": "arrayOfIntegers",
+        "input_name": "speed",
+        "input_value": "[23, 22]"
+    },
+    {
+        "test_id": 1276,
+        "input_type": "arrayOfIntegers",
+        "input_name": "startPosition",
+        "input_value": "[-2, 0, 2, 4]"
+    },
+    {
+        "test_id": 1276,
+        "input_type": "arrayOfIntegers",
+        "input_name": "speed",
+        "input_value": "[6, 5, 4, 3]"
+    },
+    {
+        "test_id": 1277,
+        "input_type": "arrayOfIntegers",
+        "input_name": "startPosition",
+        "input_value": "[-2, 0, 2, 4]"
+    },
+    {
+        "test_id": 1277,
+        "input_type": "arrayOfIntegers",
+        "input_name": "speed",
+        "input_value": "[6, 5, 4, 2]"
+    },
+
+    // Christmas Tree
+    {
+        "test_id": 1278,
+        "input_type": "number",
+        "input_name": "levelNum",
+        "input_value": "1"
+    },
+    {
+        "test_id": 1278,
+        "input_type": "number",
+        "input_name": "levelHeight",
+        "input_value": "3"
+    },
+    {
+        "test_id": 1279,
+        "input_type": "number",
+        "input_name": "levelNum",
+        "input_value": "2"
+    },
+    {
+        "test_id": 1279,
+        "input_type": "number",
+        "input_name": "levelHeight",
+        "input_value": "4"
+    },
+    {
+        "test_id": 1280,
+        "input_type": "number",
+        "input_name": "levelNum",
+        "input_value": "4"
+    },
+    {
+        "test_id": 1280,
+        "input_type": "number",
+        "input_name": "levelHeight",
+        "input_value": "8"
+    },
+    {
+        "test_id": 1281,
+        "input_type": "number",
+        "input_name": "levelNum",
+        "input_value": "8"
+    },
+    {
+        "test_id": 1281,
+        "input_type": "number",
+        "input_name": "levelHeight",
+        "input_value": "5"
+    },
+    {
+        "test_id": 1282,
+        "input_type": "number",
+        "input_name": "levelNum",
+        "input_value": "3"
+    },
+    {
+        "test_id": 1282,
+        "input_type": "number",
+        "input_name": "levelHeight",
+        "input_value": "3"
+    },
+    {
+        "test_id": 1283,
+        "input_type": "number",
+        "input_name": "levelNum",
+        "input_value": "4"
+    },
+    {
+        "test_id": 1283,
+        "input_type": "number",
+        "input_name": "levelHeight",
+        "input_value": "6"
+    },
+
+    // File Naming
+    {
+        "test_id": 1284,
+        "input_type": "arrayOfStrings",
+        "input_name": "names",
+        "input_value": '["doc","doc","image","doc(1)","doc"]'
+    },
+    {
+        "test_id": 1285,
+        "input_type": "arrayOfStrings",
+        "input_name": "names",
+        "input_value": '["a(1)","a(6)","a","a","a","a","a","a","a","a","a","a"]'
+    },
+    {
+        "test_id": 1286,
+        "input_type": "arrayOfStrings",
+        "input_name": "names",
+        "input_value": '["dd","dd(1)","dd(2)","dd","dd(1)","dd(1)(2)","dd(1)(1)","dd","dd(1)"]'
+    },
+    {
+        "test_id": 1287,
+        "input_type": "arrayOfStrings",
+        "input_name": "names",
+        "input_value": '["name","name","name(1)","name(3)","name(2)","name(2)"]'
+    },
+    {
+        "test_id": 1288,
+        "input_type": "arrayOfStrings",
+        "input_name": "names",
+        "input_value": '[]'
+    },
+
     // 
-
-
-
-
 
 ]
 

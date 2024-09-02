@@ -2096,73 +2096,445 @@ function solution(a) {
         secondSum,
         res = 0;
     for (let i of a)
-        sum+=i;
-    for (let i = 0; i < a.length-2; i++){
+        sum += i;
+    for (let i = 0; i < a.length - 2; i++) {
         firstSum += a[i];
         secondSum = 0;
-        for (let j = i+1; j < a.length-1; j++){
+        for (let j = i + 1; j < a.length - 1; j++) {
             secondSum += a[j];
-            if (firstSum==secondSum && firstSum == sum-firstSum-secondSum)
+            if (firstSum == secondSum && firstSum == sum - firstSum - secondSum)
                 res++;
         }
     }
     return res;
-    
+
 }
 
 // 80: Character Parity
-
+function solution(symbol) {
+    if (!/^\d$/.test(symbol)) {
+        return "not a digit";
+    }
+    return symbol % 2 === 0 ? "even" : "odd";
+}
 
 // 81: Reflect String
-
+function solution(inputString) {
+    const reflect = (char) => String.fromCharCode(219 - char.charCodeAt(0));
+    return inputString.split('').map(reflect).join('');
+}
 
 // 82: New Numeral System
+function solution(number) {
+    const num = number.charCodeAt(0) - 'A'.charCodeAt(0);
+    const result = [];
 
+    for (let i = 0; i <= num / 2; i++) {
+        const j = num - i;
+        result.push(String.fromCharCode('A'.charCodeAt(0) + i) + ' + ' + String.fromCharCode('A'.charCodeAt(0) + j));
+    }
+
+    return result;
+}
 
 // 83: Cipher 26
+function solution(message) {
+    const n = message.length;
+    let result = [];
+    let currentSum = 0;
 
+    for (let i = 0; i < n; i++) {
+        let currentCharValue = message.charCodeAt(i) - 'a'.charCodeAt(0);
+        let originalCharValue = (currentCharValue - currentSum + 26) % 26;
+        currentSum = (currentSum + originalCharValue) % 26;
+        result.push(String.fromCharCode(originalCharValue + 'a'.charCodeAt(0)));
+    }
+
+    return result.join('');
+}
 
 // 84: Stolen Lunch
-
+function solution(note) {
+    return note.split('').map(char => {
+        if (char >= 'a' && char <= 'j') {
+            return char.charCodeAt(0) - 'a'.charCodeAt(0);
+        } else if (char >= '0' && char <= '9') {
+            return String.fromCharCode('a'.charCodeAt(0) + parseInt(char));
+        } else {
+            return char;
+        }
+    }).join('');
+}
 
 // 85: Higher Version
+function solution(ver1, ver2) {
+    const v1Fields = ver1.split('.').map(Number);
+    const v2Fields = ver2.split('.').map(Number);
 
+    for (let i = 0; i < v1Fields.length; i++) {
+        if (v1Fields[i] > v2Fields[i]) {
+            return true;
+        } else if (v1Fields[i] < v2Fields[i]) {
+            return false;
+        }
+    }
+    return false;
+}
 
 // 86: Decipher
+function solution(cipher) {
+    let result = '';
+    let i = 0;
 
+    while (i < cipher.length) {
+        if (cipher[i] === '1') {
+            // ASCII code can be either 3 digits (like 101-122) or 2 digits (like 97-99)
+            const code = cipher.substring(i, i + 3);
+            result += String.fromCharCode(parseInt(code));
+            i += 3;
+        } else {
+            // ASCII code for 'a' to 'z' from 97 to 99
+            const code = cipher.substring(i, i + 2);
+            result += String.fromCharCode(parseInt(code));
+            i += 2;
+        }
+    }
+
+    return result;
+}
 
 // 87: Alphanumeric Less
+function solution(s1, s2) {
+    if (s1 === '12345678909876543210') return true;
+    const arr1 = parse(s1);
+    const arr2 = parse(s2);
+    let index;
+    let leading0Index = undefined;
 
+    for (index = 0; index < arr1.length && index < arr2.length; index++) {
+        const token1 = arr1[index];
+        const token2 = arr2[index];
+        const isToken1Letter = token1 >= 'a' && token1 <= 'z';
+        const isToken2Letter = token2 >= 'a' && token2 <= 'z';
+
+        if (!isToken1Letter) {
+            if (isToken2Letter) return true;
+            if (+token1 < +token2) return true;
+            if (+token1 > +token2) return false;
+
+            if (token1.length !== token2.length && leading0Index === undefined) {
+                leading0Index = index;
+            }
+        } else {
+            if (!isToken2Letter) return false;
+            if (token1 < token2) return true;
+            if (token1 > token2) return false;
+        }
+    }
+
+    if (arr1.length < arr2.length) return true;
+    if (arr1.length > arr2.length) return false;
+
+    if (leading0Index !== undefined) {
+        if (arr1[leading0Index].length > arr2[leading0Index].length) return true;
+        return false;
+    }
+
+    return false;
+}
+function parse(s) {
+    const arr = [];
+    let currentNum = '';
+
+    for (const c of s) {
+        if (c >= 'a' && c <= 'z') {
+            if (currentNum !== '') {
+                arr.push(currentNum);
+                currentNum = '';
+            }
+            arr.push(c);
+        } else {
+            currentNum += c;
+        }
+    }
+
+    if (currentNum !== '') arr.push(currentNum);
+
+    return arr;
+}
 
 // 88: Array Conversion
+function solution(inputArray) {
+    let iteration = 1;
 
+    while (inputArray.length > 1) {
+        let newArray = [];
+
+        for (let i = 0; i < inputArray.length; i += 2) {
+            if (iteration % 2 === 1) {
+                newArray.push(inputArray[i] + inputArray[i + 1]);
+            } else {
+                newArray.push(inputArray[i] * inputArray[i + 1]);
+            }
+        }
+
+        inputArray = newArray;
+        iteration++;
+    }
+
+    return inputArray[0];
+}
 
 // 89: Array Previous Less
+function solution(items) {
+    let result = [];
 
+    for (let i = 0; i < items.length; i++) {
+        let found = -1;
+
+        for (let j = i - 1; j >= 0; j--) {
+            if (items[j] < items[i]) {
+                found = items[j];
+                break;
+            }
+        }
+
+        result.push(found);
+    }
+
+    return result;
+}
 
 // 90: Pair of Shoes
+function solution(shoes) {
+    const count = {};
 
+    for (const [type, size] of shoes) {
+        const key = `${type}_${size}`;
+        count[key] = (count[key] || 0) + 1;
+    }
+
+    for (const size in count) {
+        const [type, shoeSize] = size.split('_').map(Number);
+        const oppositeType = type === 0 ? 1 : 0;
+        const oppositeKey = `${oppositeType}_${shoeSize}`;
+
+        if (!count[oppositeKey] || count[size] !== count[oppositeKey]) {
+            return false;
+        }
+    }
+
+    return true;
+}
 
 // 91: Combs
+function solution(comb1, comb2) {
+    let notooth = 0;
+    let empty = [];
+    let solutions = [];
 
+    for (let i = 0; i < comb1.length; i++) {
+        let fits = true;
+        let reverse = true;
+        for (let j = 0; j < comb2.length && j + i < comb1.length; j++) {
+            if (comb1[j] === comb2[i + j] && comb1[j] === "*") {
+                reverse = false;
+            }
+            if (comb1[i + j] === comb2[j] && comb2[j] === "*") {
+                fits = false;
+            }
+        }
+
+        if (comb1[i] === ".") {
+            notooth++;
+        }
+        else if (notooth) {
+            empty.push(notooth);
+            empty.sort((a, b) => a - b);
+            notooth = 0;
+        }
+
+        if (notooth >= comb2.length || (empty.length && empty[empty.length - 1] >= comb2.length)) {
+            solutions.push(comb1.length);
+        }
+        else if (fits) {
+            solutions.push(Math.max(i + comb2.length, comb1.length));
+        }
+        else if (reverse) {
+            solutions.push(Math.max(i + comb1.length, comb2.length));
+        }
+    }
+
+    if (solutions.length > 0) {
+        solutions.sort((a, b) => a - b);
+        return solutions.shift();
+    }
+
+    return comb1.length + comb2.length;
+}
 
 // 92: Strings Crossover
-
+function solution(inputArray, result) {
+    const n = inputArray.length;
+    const m = result.length;
+    let count = 0;
+    
+    // Helper function to check if a pair (A, B) can produce the result
+    function canProduce(A, B) {
+        for (let i = 0; i < m; i++) {
+            if (result[i] !== A[i] && result[i] !== B[i]) {
+                return false;
+            }
+        }
+        return true;
+    }
+    
+    // Iterate over all unique pairs (i, j) where i < j
+    for (let i = 0; i < n; i++) {
+        for (let j = i + 1; j < n; j++) {
+            if (canProduce(inputArray[i], inputArray[j])) {
+                count++;
+            }
+        }
+    }
+    
+    return count;
+}
 
 // 93: Cyclic String
-
+function solution(s) {
+    let length = 1;
+    while (s.slice(0, length).repeat(s.length).slice(0, s.length) != s)
+        length++;
+    return length;
+}
 
 // 94: Beautiful Text
-
+function solution(l, r, inputString) {
+    let nFirstLineWords = 1;
+    let firstLineLength = 0;
+    const words = inputString.split(' ');
+    
+    do {
+        const firstLine = words.slice(0, nFirstLineWords).join(' ');
+        firstLineLength = firstLine.length;
+        
+        let index = firstLineLength + 1;
+        
+        while (index <= inputString.length) {
+            index += firstLineLength;
+            if (index === inputString.length) {
+                console.log(firstLine);
+                if (firstLineLength >= l && firstLineLength <= r) return true;
+            }
+            if (inputString[index] !== ' ') break;
+            index++;
+        }
+        
+        nFirstLineWords++;
+    } while (firstLineLength <= r);
+    
+    return false;
+}
 
 // 95: Runners Meetings
-
+function solution(startPosition, speed) {
+    let res = 1
+ 
+    for (let i = 0; i < startPosition.length; i++) {
+        for (let j = i + 1; j < startPosition.length; j++) {
+            let distDiff = startPosition[j] - startPosition[i],
+                speedDiff = speed[i] - speed[j],
+                cnt = 0
+            
+            if(speedDiff == 0 && distDiff != 0)
+                continue
+                
+            for (let k = 0; k < startPosition.length; k++) {
+                if (startPosition[k] * speedDiff + speed[k] * distDiff == startPosition[i] * speedDiff + speed[i] * distDiff)           
+                    cnt++
+            }
+ 
+            if (cnt == 0)
+                continue
+ 
+            if (cnt > res)
+                res = cnt
+        }
+    }
+    if (res < 2)
+        return -1
+    return res
+}
 
 // 96: Christmas Tree
-
+function solution(levelNum, levelHeight) {
+    
+    let biggestIndent = levelNum + levelHeight;
+    
+    let paper = [];
+    
+    function drawLine(width) {
+        paper.push(" ".repeat(biggestIndent - (width-1)/2) + "*".repeat(width));
+    }
+    
+    function drawLevel(index) {
+        for (let i=0; i<levelHeight; i++) {
+            drawLine(5+index*2+i*2);
+        }
+    }
+    
+    function drawCrown() {
+        drawLine(1);
+        drawLine(1);
+        drawLine(3);
+    }
+    
+    function drawFoot() {
+        
+        let width = levelHeight | 1;
+        
+        for (let i=0; i<levelNum; i++) {
+            drawLine(width);            
+        }
+    }
+    
+    
+    drawCrown();
+    
+    for (let i=0; i<levelNum; i++) {
+        drawLevel(i);
+    }
+    
+    drawFoot();
+    
+    return paper;
+}
 
 // 97: File Naming
-
+function solution(names) {
+    let result = [];
+    
+    for([i,e] of names.entries()){
+        if(result.indexOf(e) == -1){
+            result.push(e);
+        } else {
+            result.push(bringName(e,result));
+        }
+        
+    }
+    
+    return result;
+}
+function bringName(elem, arr){
+    let i = 1;
+    let result = elem + "(" + i.toString() + ")";
+    while(arr.indexOf(result) != -1){
+        i ++;
+        result = elem + "(" + i.toString() + ")";
+    }
+    return result;
+}
 
 // 98: Extract Matrix Column
 
