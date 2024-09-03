@@ -431,7 +431,6 @@ function solution(matrix) {
     return result;
 }
 
-
 // 25: Array Replace
 function solution(inputArray, elemToReplace, substitutionElem) {
     let result = []
@@ -2378,7 +2377,7 @@ function solution(inputArray, result) {
     const n = inputArray.length;
     const m = result.length;
     let count = 0;
-    
+
     // Helper function to check if a pair (A, B) can produce the result
     function canProduce(A, B) {
         for (let i = 0; i < m; i++) {
@@ -2388,7 +2387,7 @@ function solution(inputArray, result) {
         }
         return true;
     }
-    
+
     // Iterate over all unique pairs (i, j) where i < j
     for (let i = 0; i < n; i++) {
         for (let j = i + 1; j < n; j++) {
@@ -2397,7 +2396,7 @@ function solution(inputArray, result) {
             }
         }
     }
-    
+
     return count;
 }
 
@@ -2414,13 +2413,13 @@ function solution(l, r, inputString) {
     let nFirstLineWords = 1;
     let firstLineLength = 0;
     const words = inputString.split(' ');
-    
+
     do {
         const firstLine = words.slice(0, nFirstLineWords).join(' ');
         firstLineLength = firstLine.length;
-        
+
         let index = firstLineLength + 1;
-        
+
         while (index <= inputString.length) {
             index += firstLineLength;
             if (index === inputString.length) {
@@ -2430,34 +2429,34 @@ function solution(l, r, inputString) {
             if (inputString[index] !== ' ') break;
             index++;
         }
-        
+
         nFirstLineWords++;
     } while (firstLineLength <= r);
-    
+
     return false;
 }
 
 // 95: Runners Meetings
 function solution(startPosition, speed) {
     let res = 1
- 
+
     for (let i = 0; i < startPosition.length; i++) {
         for (let j = i + 1; j < startPosition.length; j++) {
             let distDiff = startPosition[j] - startPosition[i],
                 speedDiff = speed[i] - speed[j],
                 cnt = 0
-            
-            if(speedDiff == 0 && distDiff != 0)
+
+            if (speedDiff == 0 && distDiff != 0)
                 continue
-                
+
             for (let k = 0; k < startPosition.length; k++) {
-                if (startPosition[k] * speedDiff + speed[k] * distDiff == startPosition[i] * speedDiff + speed[i] * distDiff)           
+                if (startPosition[k] * speedDiff + speed[k] * distDiff == startPosition[i] * speedDiff + speed[i] * distDiff)
                     cnt++
             }
- 
+
             if (cnt == 0)
                 continue
- 
+
             if (cnt > res)
                 res = cnt
         }
@@ -2469,120 +2468,506 @@ function solution(startPosition, speed) {
 
 // 96: Christmas Tree
 function solution(levelNum, levelHeight) {
-    
+
     let biggestIndent = levelNum + levelHeight;
-    
+
     let paper = [];
-    
+
     function drawLine(width) {
-        paper.push(" ".repeat(biggestIndent - (width-1)/2) + "*".repeat(width));
+        paper.push(" ".repeat(biggestIndent - (width - 1) / 2) + "*".repeat(width));
     }
-    
+
     function drawLevel(index) {
-        for (let i=0; i<levelHeight; i++) {
-            drawLine(5+index*2+i*2);
+        for (let i = 0; i < levelHeight; i++) {
+            drawLine(5 + index * 2 + i * 2);
         }
     }
-    
+
     function drawCrown() {
         drawLine(1);
         drawLine(1);
         drawLine(3);
     }
-    
+
     function drawFoot() {
-        
+
         let width = levelHeight | 1;
-        
-        for (let i=0; i<levelNum; i++) {
-            drawLine(width);            
+
+        for (let i = 0; i < levelNum; i++) {
+            drawLine(width);
         }
     }
-    
-    
+
+
     drawCrown();
-    
-    for (let i=0; i<levelNum; i++) {
+
+    for (let i = 0; i < levelNum; i++) {
         drawLevel(i);
     }
-    
+
     drawFoot();
-    
+
     return paper;
 }
 
 // 97: File Naming
 function solution(names) {
     let result = [];
-    
-    for([i,e] of names.entries()){
-        if(result.indexOf(e) == -1){
+
+    for ([i, e] of names.entries()) {
+        if (result.indexOf(e) == -1) {
             result.push(e);
         } else {
-            result.push(bringName(e,result));
+            result.push(bringName(e, result));
         }
-        
+
     }
-    
+
     return result;
 }
-function bringName(elem, arr){
+function bringName(elem, arr) {
     let i = 1;
     let result = elem + "(" + i.toString() + ")";
-    while(arr.indexOf(result) != -1){
-        i ++;
+    while (arr.indexOf(result) != -1) {
+        i++;
         result = elem + "(" + i.toString() + ")";
     }
     return result;
 }
 
 // 98: Extract Matrix Column
-
+function solution(column, matrix) {
+    return matrix.map(row => row[column]);
+}
 
 // 99: Are Isomorphic?
-
+function solution(array1, array2) {
+    if (array1.length !== array2.length) return false;
+    for (let i = 0; i < array1.length; i++) {
+        if (array1[i].length !== array2[i].length) return false;
+    }
+    return true;
+}
 
 // 100: Reverse On Diagonals
-
+function solution(matrix) {
+    const n = matrix.length;
+    // Swap the diagonals
+    for (let i = 0; i < n; i++) {
+        const temp = matrix[i][i];
+        matrix[i][i] = matrix[i][n - 1 - i];
+        matrix[i][n - 1 - i] = temp;
+    }
+    return matrix;
+}
 
 // 101: Swap Diagonals
-
+function solution(matrix) {
+    const n = matrix.length;
+    // Swap the diagonals
+    for (let i = 0; i < n; i++) {
+        const temp = matrix[i][i];
+        matrix[i][i] = matrix[i][n - 1 - i];
+        matrix[i][n - 1 - i] = temp;
+    }
+    return matrix;
+}
 
 // 102: Crossing Sum
+function solution(a, b, matrix) {
+    const rows = matrix.length;
+    const cols = matrix[0].length;
 
+    // Calculate the sum of the ath row
+    let rowSum = matrix[a].reduce((sum, value) => sum + value, 0);
+
+    // Calculate the sum of the bth column
+    let colSum = 0;
+    for (let i = 0; i < rows; i++) {
+        colSum += matrix[i][b];
+    }
+
+    // Subtract the overlap (element at (a, b)) as it is counted twice
+    const overlap = matrix[a][b];
+
+    return rowSum + colSum - overlap;
+}
 
 // 103: Draw Rectangle
+function solution(canvas, rectangle) {
+    const [x1, y1, x2, y2] = rectangle;
 
+    // Draw the top and bottom borders of the rectangle
+    for (let x = x1; x <= x2; x++) {
+        canvas[y1][x] = (x === x1 || x === x2) ? '*' : '-';
+        canvas[y2][x] = (x === x1 || x === x2) ? '*' : '-';
+    }
+
+    // Draw the left and right borders of the rectangle
+    for (let y = y1; y <= y2; y++) {
+        canvas[y][x1] = (y === y1 || y === y2) ? '*' : '|';
+        canvas[y][x2] = (y === y1 || y === y2) ? '*' : '|';
+    }
+
+    return canvas;
+}
 
 // 104: Volleyball Positions
-
+function solution(k, formation) {
+    for (let i = 0; i < k % 6; i++) {
+        formation = reChange(formation);
+    }
+    return formation;
+}
+let reChange = (formation) => {
+    let buf = formation[1][2];
+    formation[1][2] = formation[3][2];
+    formation[3][2] = formation[2][1];
+    formation[2][1] = formation[3][0];
+    formation[3][0] = formation[1][0];
+    formation[1][0] = formation[0][1];
+    formation[0][1] = buf;
+    return formation;
+}
 
 // 105: Star Rotation
-
+function solution(width, t, matrix, center) {
+    for (let k = 0; k < t % 8; k++) {
+        let startX = center[0] - (width - 1) / 2,
+            startY = center[1] - (width - 1) / 2,
+            midX = center[0],
+            midY = center[1],
+            endX = center[0] + (width - 1) / 2,
+            endY = center[1] + (width - 1) / 2;
+        for (let i = 0; i < (width - 1) / 2; i++) {
+            let tem = matrix[startX][startY];
+            matrix[startX][startY] = matrix[midX][startY];
+            matrix[midX][startY] = matrix[endX][startY];
+            matrix[endX][startY] = matrix[endX][midY];
+            matrix[endX][midY] = matrix[endX][endY];
+            matrix[endX][endY] = matrix[midX][endY];
+            matrix[midX][endY] = matrix[startX][endY];
+            matrix[startX][endY] = matrix[startX][midY];
+            matrix[startX][midY] = tem;
+            startX++;
+            startY++;
+            endX--;
+            endY--;
+        }
+    }
+    return matrix;
+}
 
 // 106: Sudoku
+function solution(grid) {
+    const isValidSet = (set) => set.size === 9 && ![...set].some(n => n < 1 || n > 9);
 
+    // Check all rows
+    for (let i = 0; i < 9; i++) {
+        const rowSet = new Set(grid[i]);
+        if (!isValidSet(rowSet)) {
+            return false;
+        }
+    }
+
+    // Check all columns
+    for (let j = 0; j < 9; j++) {
+        const colSet = new Set();
+        for (let i = 0; i < 9; i++) {
+            colSet.add(grid[i][j]);
+        }
+        if (!isValidSet(colSet)) {
+            return false;
+        }
+    }
+
+    // Check all 3x3 sub-grids
+    for (let row = 0; row < 9; row += 3) {
+        for (let col = 0; col < 9; col += 3) {
+            const subGridSet = new Set();
+            for (let i = row; i < row + 3; i++) {
+                for (let j = col; j < col + 3; j++) {
+                    subGridSet.add(grid[i][j]);
+                }
+            }
+            if (!isValidSet(subGridSet)) {
+                return false;
+            }
+        }
+    }
+
+    return true;
+}
 
 // 107: Minesweeper
+function solution(matrix) {
+    let rows = matrix.length;
+    let cols = matrix[0].length;
+    let result = Array.from(Array(rows), () => Array(cols).fill(0));
 
+    for (let i = 0; i < rows; i++) {
+        for (let j = 0; j < cols; j++) {
+            if (matrix[i][j]) {
+                // Loop through the neighboring cells
+                for (let x = i - 1; x <= i + 1; x++) {
+                    for (let y = j - 1; y <= j + 1; y++) {
+                        if (x >= 0 && x < rows && y >= 0 && y < cols) {
+                            result[x][y]++;
+                        }
+                    }
+                }
+                // Subtract the mine itself
+                result[i][j]--;
+            }
+        }
+    }
+    return result;
+}
 
 // 108: Box Blur
+function solution(image) {
+    let rows = image.length;
+    let cols = image[0].length;
+    let result = [];
 
+    // Iterate through each valid center pixel
+    for (let i = 1; i < rows - 1; i++) {
+        let row = [];
+        for (let j = 1; j < cols - 1; j++) {
+            // Calculate the sum of the 3x3 grid
+            let sum = 0;
+            for (let k = -1; k <= 1; k++) {
+                for (let l = -1; l <= 1; l++) {
+                    sum += image[i + k][j + l];
+                }
+            }
+            // Calculate the average and round down
+            row.push(Math.floor(sum / 9));
+        }
+        result.push(row);
+    }
+
+    return result;
+}
 
 // 109: Contours Shifting
+function solution(matrix) {
+    if (matrix.length === 0 || matrix[0].length === 0) return matrix;
 
+    const rows = matrix.length;
+    const cols = matrix[0].length;
+
+    const shiftContour = (contour, clockwise) => {
+        if (clockwise) {
+            // Shift clockwise
+            return [contour[contour.length - 1], ...contour.slice(0, -1)];
+        } else {
+            // Shift counterclockwise
+            return [...contour.slice(1), contour[0]];
+        }
+    };
+
+    const getContour = (matrix, i) => {
+        const contours = [];
+        const m = matrix.length;
+        const n = matrix[0].length;
+
+        if (i * 2 >= m || i * 2 >= n) return contours;
+
+        // Top row
+        contours.push(...matrix[i].slice(i, n - i));
+        // Right column
+        for (let r = i + 1; r < m - i - 1; r++) {
+            contours.push(matrix[r][n - i - 1]);
+        }
+        // Bottom row
+        if (m - i - 1 > i) {
+            contours.push(...matrix[m - i - 1].slice(i, n - i).reverse());
+        }
+        // Left column
+        if (n - i - 1 > i) {
+            for (let r = m - i - 2; r > i; r--) {
+                contours.push(matrix[r][i]);
+            }
+        }
+
+        return contours;
+    };
+
+    const setContour = (matrix, i, newContour) => {
+        const m = matrix.length;
+        const n = matrix[0].length;
+        let index = 0;
+
+        // Top row
+        for (let c = i; c < n - i; c++) {
+            matrix[i][c] = newContour[index++];
+        }
+        // Right column
+        for (let r = i + 1; r < m - i - 1; r++) {
+            matrix[r][n - i - 1] = newContour[index++];
+        }
+        // Bottom row
+        if (m - i - 1 > i) {
+            for (let c = n - i - 1; c >= i; c--) {
+                matrix[m - i - 1][c] = newContour[index++];
+            }
+        }
+        // Left column
+        if (n - i - 1 > i) {
+            for (let r = m - i - 2; r >= i + 1; r--) {
+                matrix[r][i] = newContour[index++];
+            }
+        }
+    };
+
+    let i = 0;
+    while (i * 2 < rows && i * 2 < cols) {
+        const contour = getContour(matrix, i);
+        const rotatedContour = shiftContour(contour, i % 2 === 0);
+        setContour(matrix, i, rotatedContour);
+        i++;
+    }
+
+    return matrix;
+}
 
 // 110: Polygon Perimeter
+function solution(matrix) {
+    const rows = matrix.length;
+    const cols = matrix[0].length;
+    let perimeter = 0;
 
+    const directions = [
+        [-1, 0], // up
+        [1, 0],  // down
+        [0, -1], // left
+        [0, 1]   // right
+    ];
+
+    const isValid = (r, c) => r >= 0 && r < rows && c >= 0 && c < cols;
+
+    for (let r = 0; r < rows; r++) {
+        for (let c = 0; c < cols; c++) {
+            if (matrix[r][c]) {
+                let cellPerimeter = 4; // assume the cell has 4 perimeter units initially
+
+                for (const [dr, dc] of directions) {
+                    const nr = r + dr;
+                    const nc = c + dc;
+                    if (isValid(nr, nc) && matrix[nr][nc]) {
+                        cellPerimeter--; // reduce the perimeter for each adjacent black cell
+                    }
+                }
+
+                perimeter += cellPerimeter;
+            }
+        }
+    }
+
+    return perimeter;
+}
 
 // 111: Gravitation
+function solution(rows) {
+    result = [];
+    minStep = rows.length;
 
+    for (i = 0; i < rows[0].length; i++) {
+        let finish = rows.length - 1,
+            step = 0;
+        for (j = rows.length - 1; j >= 0; j--) {
+            if (rows[j].charAt(i) == '#') {
+                step = finish - j;
+                finish--;
+            }
+        }
+        if (step == minStep) {
+            result.push(i);
+        }
+        if (step < minStep) {
+            minStep = step;
+            result = new Array;
+            result.push(i);
+        }
+    }
+
+    return result;
+}
 
 // 112: Is Information Consistent?
+function solution(evidences) {
+    const numWitnesses = evidences.length;
+    const numDefendants = evidences[0].length;
 
+    for (let i = 0; i < numWitnesses; i++) {
+        for (let j = i + 1; j < numWitnesses; j++) {
+            for (let k = 0; k < numDefendants; k++) {
+                if (evidences[i][k] !== 0 && evidences[j][k] !== 0 && evidences[i][k] !== evidences[j][k]) {
+                    return false;
+                }
+            }
+        }
+    }
+    return true;
+}
 
 // 113: Correct Nonogram
+function solution(nonogramField, size) {
+    const numRowsCols = (size + 1) >> 1;
 
+    // Helper function to parse the clue numbers
+    function parseClue(clue) {
+        return clue.map(c => (c === "-" ? 0 : parseInt(c))).filter(c => c > 0);
+    }
+
+    // Helper function to extract the actual sequence of black squares from a line
+    function extractSequences(line) {
+        const sequences = [];
+        let currentCount = 0;
+
+        for (let cell of line) {
+            if (cell === "#") {
+                currentCount++;
+            } else {
+                if (currentCount > 0) {
+                    sequences.push(currentCount);
+                    currentCount = 0;
+                }
+            }
+        }
+
+        if (currentCount > 0) {
+            sequences.push(currentCount);
+        }
+
+        return sequences;
+    }
+
+    // Check rows
+    for (let i = numRowsCols; i < numRowsCols + size; i++) {
+        const clue = parseClue(nonogramField[i].slice(0, numRowsCols));
+        const row = nonogramField[i].slice(numRowsCols);
+        const sequences = extractSequences(row);
+
+        if (JSON.stringify(clue) !== JSON.stringify(sequences)) {
+            return false;
+        }
+    }
+
+    // Check columns
+    for (let j = numRowsCols; j < numRowsCols + size; j++) {
+        const clue = parseClue(nonogramField.slice(0, numRowsCols).map(row => row[j]));
+        const column = nonogramField.slice(numRowsCols).map(row => row[j]);
+        const sequences = extractSequences(column);
+
+        if (JSON.stringify(clue) !== JSON.stringify(sequences)) {
+            return false;
+        }
+    }
+
+    return true;
+}
 
 // 114: Shuffled Array
 function solution(shuffled) {
@@ -2594,25 +2979,132 @@ function solution(shuffled) {
 }
 
 // 115: Sort by Height
-
+function solution(a) {
+    const heights = a.filter(height => height !== -1).sort((a, b) => a - b)
+    let index = 0
+    return a.map((element) => {
+        if (element !== -1) {
+            const height = heights[index]
+            index++
+            return height
+        } else {
+            return -1
+        }
+    })
+}
 
 // 116: Sort By Length
-
+function solution(inputArray) {
+    return inputArray.sort((a, b) => a.length - b.length);
+}
 
 // 117: Boxes Packing
+function solution(length, width, height) {
+    const n = length.length;
 
+    // Create an array of boxes with all dimensions sorted within each box
+    const boxes = [];
+    for (let i = 0; i < n; i++) {
+        const dimensions = [length[i], width[i], height[i]].sort((a, b) => a - b);
+        boxes.push(dimensions);
+    }
+
+    // Sort the boxes by their dimensions in ascending order
+    boxes.sort((a, b) => {
+        for (let i = 0; i < 3; i++) {
+            if (a[i] !== b[i]) {
+                return a[i] - b[i];
+            }
+        }
+        return 0; // This case will not be reached as there are no identical boxes
+    });
+
+    // Check if each box can fit into the next one in the sorted list
+    for (let i = 0; i < n - 1; i++) {
+        if (
+            boxes[i][0] >= boxes[i + 1][0] ||
+            boxes[i][1] >= boxes[i + 1][1] ||
+            boxes[i][2] >= boxes[i + 1][2]
+        ) {
+            return false;
+        }
+    }
+
+    return true;
+}
 
 // 118: Maximum Sum
+function solution(a, q) {
+    let indexes = {}
+    let sorted = []
+    let final = []
+    let count = 0
 
+    for (let i = 0; i < a.length; i++) {
+        indexes[i] = 0
+        for (let j = 0; j < q.length; j++) {
+            if (i >= q[j][0] && i <= q[j][1]) {
+                indexes[i]++
+            }
+        }
+    }
+
+    for (index in indexes) {
+        sorted.push([index, indexes[index]])
+    }
+
+    sorted = sorted.sort((a, b) => a[1] - b[1])
+    a = a.sort((a, b) => a - b)
+
+    for (let i = 0; i < a.length; i++) {
+        final[sorted[i][0]] = a[i]
+    }
+
+    for (let i = 0; i < q.length; i++) {
+        let j = q[i][0]
+        while (j <= q[i][1]) {
+            count += (final[j])
+            j++
+        }
+    }
+
+    return count
+}
 
 // 119: Rows Rearranging
-
+function solution(matrix) {
+    matrix.sort((a, b) => b[0] - a[0])
+    let helper = matrix[0].map((col, i) => matrix.map(row => row[i]))
+ 
+    return helper.every(row => row.reduce((res, e, i, a) => res && e > (a[i + 1] || -Infinity), true))
+}
 
 // 120: Digit Difference Sort
-
+function solution(a) {
+    return a.map((e, i) => {
+        let max = Math.max(...e.toString().split('').map(z => parseInt(z)))
+        let min = Math.min(...e.toString().split('').map(z => parseInt(z)))
+        return { idx: i, diff: max - min }
+    }).sort((k, t) => k.diff - t.diff || t.idx - k.idx).map(e => a[e.idx])
+}
 
 // 121: Unique Digit Products
+function solution(a) {
+    const productSet = new Set();
 
+    // Helper function to calculate the product of digits of a number
+    function product(x) {
+        return x.toString().split('').reduce((prod, digit) => prod * parseInt(digit), 1);
+    }
+
+    // Calculate product for each number in the array and add it to the set
+    for (let num of a) {
+        productSet.add(product(num));
+    }
+
+    // The size of the set represents the number of distinct products
+    return productSet.size;
+}
 
 // 122: Bishop and Pawn
 

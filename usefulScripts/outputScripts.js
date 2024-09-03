@@ -3,7 +3,7 @@
 
 
 // string -------____________------_____________-----
-
+//#region 
 // Define the predefined values
 const CHALLENGE_ID = 20;  // Adjust if needed
 const IS_COMPLEX = false;
@@ -43,10 +43,11 @@ if (!data) {
   // Log the string representation to the console
   console.log(outputString);
 }
+//#endregion
 
 
 // number -------____________------_____________-----
-
+//#region 
 // Define the predefined values
 const CHALLENGE_ID = 20;  // Changed to 20 as per your example
 const IS_COMPLEX = false;
@@ -81,10 +82,11 @@ if (!data) {
   // Log the string representation to the console
   console.log(outputString);
 }
+//#endregion
 
 
 // boolean -------____________------_____________-----
-
+//#region 
 // Define the predefined values
 const CHALLENGE_ID = 20;  // Adjust if needed
 const IS_COMPLEX = false;
@@ -120,11 +122,11 @@ if (!data) {
   // Log the string representation to the console
   console.log(outputString);
 }
-
+//#endregion
 
 
 /// nested arr of numbers -------____________------_____________-----
-
+//#region 
 
 // Define the predefined values
 const CHALLENGE_ID = 20;  // Adjust if needed
@@ -168,10 +170,11 @@ if (!data) {
   // Log the string representation to the console
   console.log(outputString);
 }
+//#endregion
 
 
 /// array of integers -------____________------_____________-----
-
+//#region 
 // Define the predefined values
 const CHALLENGE_ID = 25;  // Adjust if needed
 const IS_COMPLEX = true;
@@ -211,10 +214,11 @@ if (!data) {
   // Log the string representation to the console
   console.log(outputString);
 }
+//#endregion
 
 
 /// array of strings -------____________------_____________-----
-
+//#region 
 // Retrieve the data from local storage using the correct key
 const data = JSON.parse(localStorage.getItem('returnValueLog'));
 
@@ -256,8 +260,53 @@ ${transformedData.join(',\n')}
     // Print the array string
     console.log(arrayString);
 }
+//#endregion
 
 
+// matrix of strings
+//#region 
+// Retrieve the data from local storage using the correct key
+const data = JSON.parse(localStorage.getItem('returnValueLog'));
+
+// Check if data was retrieved successfully
+if (!data) {
+    console.error('No data found in local storage under key "returnValueLog".');
+} else {
+    function transformData(data) {
+        return data.map((item, index) => {
+            // Extract the expected output using regex, capturing the content inside the brackets
+            const match = item.match(/expected return value : (\[\[.*\]\])/s);
+            let expectedOutput = '';
+
+            if (match) {
+                expectedOutput = match[1]
+                    .replace(/\n\s*/g, '')   // Remove newlines and any leading spaces after them
+                    .replace(/\\"/g, '"');  // Replace escaped quotes with normal quotes
+            }
+
+            // Construct the formatted object string manually
+            return `{
+    "challenge_id": 57,
+    "order_index": ${index + 1},
+    "expected_output": '${expectedOutput}',
+    "is_complex": true,
+    "is_sample": true
+}`;
+        });
+    }
+
+    // Transform the data
+    const transformedData = transformData(data);
+
+    // Construct the array string manually
+    const arrayString = `[
+${transformedData.join(',\n')}
+]`;
+
+    // Print the array string
+    console.log(arrayString);
+}
+//#endregion
 
 
 
