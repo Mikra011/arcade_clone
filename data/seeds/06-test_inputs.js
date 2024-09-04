@@ -12601,6 +12601,3548 @@ const test_inputs = [
         "input_value": "[1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20]"
     },
 
+    // Bishop and Pawn
+    {
+        "test_id": 1465,
+        "input_type": "string",
+        "input_name": "bishop",
+        "input_value": "a1"
+    },
+    {
+        "test_id": 1465,
+        "input_type": "string",
+        "input_name": "pawn",
+        "input_value": "c3"
+    },
+    {
+        "test_id": 1466,
+        "input_type": "string",
+        "input_name": "bishop",
+        "input_value": "h1"
+    },
+    {
+        "test_id": 1466,
+        "input_type": "string",
+        "input_name": "pawn",
+        "input_value": "h3"
+    },
+    {
+        "test_id": 1467,
+        "input_type": "string",
+        "input_name": "bishop",
+        "input_value": "a5"
+    },
+    {
+        "test_id": 1467,
+        "input_type": "string",
+        "input_name": "pawn",
+        "input_value": "c3"
+    },
+    {
+        "test_id": 1468,
+        "input_type": "string",
+        "input_name": "bishop",
+        "input_value": "g1"
+    },
+    {
+        "test_id": 1468,
+        "input_type": "string",
+        "input_name": "pawn",
+        "input_value": "f3"
+    },
+    {
+        "test_id": 1469,
+        "input_type": "string",
+        "input_name": "bishop",
+        "input_value": "e7"
+    },
+    {
+        "test_id": 1469,
+        "input_type": "string",
+        "input_name": "pawn",
+        "input_value": "d6"
+    },
+    {
+        "test_id": 1470,
+        "input_type": "string",
+        "input_name": "bishop",
+        "input_value": "e7"
+    },
+    {
+        "test_id": 1470,
+        "input_type": "string",
+        "input_name": "pawn",
+        "input_value": "a3"
+    },
+    {
+        "test_id": 1471,
+        "input_type": "string",
+        "input_name": "bishop",
+        "input_value": "e3"
+    },
+    {
+        "test_id": 1471,
+        "input_type": "string",
+        "input_name": "pawn",
+        "input_value": "a7"
+    },
+    {
+        "test_id": 1472,
+        "input_type": "string",
+        "input_name": "bishop",
+        "input_value": "a1"
+    },
+    {
+        "test_id": 1472,
+        "input_type": "string",
+        "input_name": "pawn",
+        "input_value": "h8"
+    },
+    {
+        "test_id": 1473,
+        "input_type": "string",
+        "input_name": "bishop",
+        "input_value": "a1"
+    },
+    {
+        "test_id": 1473,
+        "input_type": "string",
+        "input_name": "pawn",
+        "input_value": "h7"
+    },
+    {
+        "test_id": 1474,
+        "input_type": "string",
+        "input_name": "bishop",
+        "input_value": "h1"
+    },
+    {
+        "test_id": 1474,
+        "input_type": "string",
+        "input_name": "pawn",
+        "input_value": "a8"
+    },
+
+    // Chess Knight Moves
+    {
+        "test_id": 1475,
+        "input_type": "string",
+        "input_name": "cell",
+        "input_value": "a1"
+    },
+    {
+        "test_id": 1476,
+        "input_type": "string",
+        "input_name": "cell",
+        "input_value": "c2"
+    },
+    {
+        "test_id": 1477,
+        "input_type": "string",
+        "input_name": "cell",
+        "input_value": "h8"
+    },
+    {
+        "test_id": 1478,
+        "input_type": "string",
+        "input_name": "cell",
+        "input_value": "d5"
+    },
+    {
+        "test_id": 1479,
+        "input_type": "string",
+        "input_name": "cell",
+        "input_value": "a2"
+    },
+    {
+        "test_id": 1480,
+        "input_type": "string",
+        "input_name": "cell",
+        "input_value": "h7"
+    },
+    {
+        "test_id": 1481,
+        "input_type": "string",
+        "input_name": "cell",
+        "input_value": "h6"
+    },
+    {
+        "test_id": 1482,
+        "input_type": "string",
+        "input_name": "cell",
+        "input_value": "b2"
+    },
+    {
+        "test_id": 1483,
+        "input_type": "string",
+        "input_name": "cell",
+        "input_value": "f4"
+    },
+
+    // Bishop Diagonal
+    {
+        "test_id": 1484,
+        "input_type": "string",
+        "input_name": "bishop1",
+        "input_value": "d7"
+    },
+    {
+        "test_id": 1484,
+        "input_type": "string",
+        "input_name": "bishop2",
+        "input_value": "f5"
+    },
+    {
+        "test_id": 1485,
+        "input_type": "string",
+        "input_name": "bishop1",
+        "input_value": "d8"
+    },
+    {
+        "test_id": 1485,
+        "input_type": "string",
+        "input_name": "bishop2",
+        "input_value": "b5"
+    },
+    {
+        "test_id": 1486,
+        "input_type": "string",
+        "input_name": "bishop1",
+        "input_value": "a1"
+    },
+    {
+        "test_id": 1486,
+        "input_type": "string",
+        "input_name": "bishop2",
+        "input_value": "h8"
+    },
+    {
+        "test_id": 1487,
+        "input_type": "string",
+        "input_name": "bishop1",
+        "input_value": "g3"
+    },
+    {
+        "test_id": 1487,
+        "input_type": "string",
+        "input_name": "bishop2",
+        "input_value": "e1"
+    },
+    {
+        "test_id": 1488,
+        "input_type": "string",
+        "input_name": "bishop1",
+        "input_value": "b4"
+    },
+    {
+        "test_id": 1488,
+        "input_type": "string",
+        "input_name": "bishop2",
+        "input_value": "e7"
+    },
+    {
+        "test_id": 1489,
+        "input_type": "string",
+        "input_name": "bishop1",
+        "input_value": "h1"
+    },
+    {
+        "test_id": 1489,
+        "input_type": "string",
+        "input_name": "bishop2",
+        "input_value": "a1"
+    },
+
+    // Whose Turn?
+    {
+        "test_id": 1490,
+        "input_type": "string",
+        "input_name": "p",
+        "input_value": "b1;g1;b8;g8"
+    },
+    {
+        "test_id": 1491,
+        "input_type": "string",
+        "input_name": "p",
+        "input_value": "c3;g1;b8;g8"
+    },
+    {
+        "test_id": 1492,
+        "input_type": "string",
+        "input_name": "p",
+        "input_value": "g1;g2;g3;g4"
+    },
+    {
+        "test_id": 1493,
+        "input_type": "string",
+        "input_name": "p",
+        "input_value": "f8;h1;f3;c2"
+    },
+    {
+        "test_id": 1494,
+        "input_type": "string",
+        "input_name": "p",
+        "input_value": "a5;d3;c4;h3"
+    },
+    {
+        "test_id": 1495,
+        "input_type": "string",
+        "input_name": "p",
+        "input_value": "f8;g1;h2;h5"
+    },
+    {
+        "test_id": 1496,
+        "input_type": "string",
+        "input_name": "p",
+        "input_value": "a6;g1;a5;a4"
+    },
+    {
+        "test_id": 1497,
+        "input_type": "string",
+        "input_name": "p",
+        "input_value": "g5;h1;a2;h5"
+    },
+    {
+        "test_id": 1498,
+        "input_type": "string",
+        "input_name": "p",
+        "input_value": "e1;f7;f8;b4"
+    },
+    {
+        "test_id": 1499,
+        "input_type": "string",
+        "input_name": "p",
+        "input_value": "g2;d7;h5;h1"
+    },
+
+    // Chess Bishop Dream
+    {
+        "test_id": 1500,
+        "input_type": "number",
+        "input_name": "k",
+        "input_value": "13"
+    },
+    {
+        "test_id": 1500,
+        "input_type": "arrayOfIntegers",
+        "input_name": "boardSize",
+        "input_value": "[3, 7]"
+    },
+    {
+        "test_id": 1500,
+        "input_type": "arrayOfIntegers",
+        "input_name": "initPosition",
+        "input_value": "[1, 2]"
+    },
+    {
+        "test_id": 1500,
+        "input_type": "arrayOfIntegers",
+        "input_name": "initDirection",
+        "input_value": "[-1, 1]"
+    },
+    {
+        "test_id": 1501,
+        "input_type": "number",
+        "input_name": "k",
+        "input_value": "6"
+    },
+    {
+        "test_id": 1501,
+        "input_type": "arrayOfIntegers",
+        "input_name": "boardSize",
+        "input_value": "[1, 2]"
+    },
+    {
+        "test_id": 1501,
+        "input_type": "arrayOfIntegers",
+        "input_name": "initPosition",
+        "input_value": "[0, 0]"
+    },
+    {
+        "test_id": 1501,
+        "input_type": "arrayOfIntegers",
+        "input_name": "initDirection",
+        "input_value": "[1, 1]"
+    },
+    {
+        "test_id": 1502,
+        "input_type": "number",
+        "input_name": "k",
+        "input_value": "12"
+    },
+    {
+        "test_id": 1502,
+        "input_type": "arrayOfIntegers",
+        "input_name": "boardSize",
+        "input_value": "[2, 2]"
+    },
+    {
+        "test_id": 1502,
+        "input_type": "arrayOfIntegers",
+        "input_name": "initPosition",
+        "input_value": "[1, 0]"
+    },
+    {
+        "test_id": 1502,
+        "input_type": "arrayOfIntegers",
+        "input_name": "initDirection",
+        "input_value": "[1, 1]"
+    },
+    {
+        "test_id": 1503,
+        "input_type": "number",
+        "input_name": "k",
+        "input_value": "1000000000"
+    },
+    {
+        "test_id": 1503,
+        "input_type": "arrayOfIntegers",
+        "input_name": "boardSize",
+        "input_value": "[1, 1]"
+    },
+    {
+        "test_id": 1503,
+        "input_type": "arrayOfIntegers",
+        "input_name": "initPosition",
+        "input_value": "[0, 0]"
+    },
+    {
+        "test_id": 1503,
+        "input_type": "arrayOfIntegers",
+        "input_name": "initDirection",
+        "input_value": "[1, -1]"
+    },
+    {
+        "test_id": 1504,
+        "input_type": "number",
+        "input_name": "k",
+        "input_value": "41"
+    },
+    {
+        "test_id": 1504,
+        "input_type": "arrayOfIntegers",
+        "input_name": "boardSize",
+        "input_value": "[2, 3]"
+    },
+    {
+        "test_id": 1504,
+        "input_type": "arrayOfIntegers",
+        "input_name": "initPosition",
+        "input_value": "[1, 2]"
+    },
+    {
+        "test_id": 1504,
+        "input_type": "arrayOfIntegers",
+        "input_name": "initDirection",
+        "input_value": "[-1, -1]"
+    },
+    {
+        "test_id": 1505,
+        "input_type": "number",
+        "input_name": "k",
+        "input_value": "239239"
+    },
+    {
+        "test_id": 1505,
+        "input_type": "arrayOfIntegers",
+        "input_name": "boardSize",
+        "input_value": "[17, 19]"
+    },
+    {
+        "test_id": 1505,
+        "input_type": "arrayOfIntegers",
+        "input_name": "initPosition",
+        "input_value": "[14, 8]"
+    },
+    {
+        "test_id": 1505,
+        "input_type": "arrayOfIntegers",
+        "input_name": "initDirection",
+        "input_value": "[1, -1]"
+    },
+    {
+        "test_id": 1506,
+        "input_type": "number",
+        "input_name": "k",
+        "input_value": "239239239"
+    },
+    {
+        "test_id": 1506,
+        "input_type": "arrayOfIntegers",
+        "input_name": "boardSize",
+        "input_value": "[17, 19]"
+    },
+    {
+        "test_id": 1506,
+        "input_type": "arrayOfIntegers",
+        "input_name": "initPosition",
+        "input_value": "[16, 18]"
+    },
+    {
+        "test_id": 1506,
+        "input_type": "arrayOfIntegers",
+        "input_name": "initDirection",
+        "input_value": "[1, 1]"
+    },
+
+    // Chess Triangle
+    {
+        "test_id": 1507,
+        "input_type": "number",
+        "input_name": "n",
+        "input_value": "2"
+    },
+    {
+        "test_id": 1507,
+        "input_type": "number",
+        "input_name": "m",
+        "input_value": "3"
+    },
+    {
+        "test_id": 1508,
+        "input_type": "number",
+        "input_name": "n",
+        "input_value": "1"
+    },
+    {
+        "test_id": 1508,
+        "input_type": "number",
+        "input_name": "m",
+        "input_value": "30"
+    },
+    {
+        "test_id": 1509,
+        "input_type": "number",
+        "input_name": "n",
+        "input_value": "3"
+    },
+    {
+        "test_id": 1509,
+        "input_type": "number",
+        "input_name": "m",
+        "input_value": "3"
+    },
+    {
+        "test_id": 1510,
+        "input_type": "number",
+        "input_name": "n",
+        "input_value": "2"
+    },
+    {
+        "test_id": 1510,
+        "input_type": "number",
+        "input_name": "m",
+        "input_value": "2"
+    },
+    {
+        "test_id": 1511,
+        "input_type": "number",
+        "input_name": "n",
+        "input_value": "5"
+    },
+    {
+        "test_id": 1511,
+        "input_type": "number",
+        "input_name": "m",
+        "input_value": "2"
+    },
+
+    // Amazon Checkmate
+    {
+        "test_id": 1512,
+        "input_type": "string",
+        "input_name": "king",
+        "input_value": "d3"
+    },
+    {
+        "test_id": 1512,
+        "input_type": "string",
+        "input_name": "amazon",
+        "input_value": "e4"
+    },
+    {
+        "test_id": 1513,
+        "input_type": "string",
+        "input_name": "king",
+        "input_value": "a1"
+    },
+    {
+        "test_id": 1513,
+        "input_type": "string",
+        "input_name": "amazon",
+        "input_value": "g5"
+    },
+    {
+        "test_id": 1514,
+        "input_type": "string",
+        "input_name": "king",
+        "input_value": "a3"
+    },
+    {
+        "test_id": 1514,
+        "input_type": "string",
+        "input_name": "amazon",
+        "input_value": "e4"
+    },
+    {
+        "test_id": 1515,
+        "input_type": "string",
+        "input_name": "king",
+        "input_value": "f3"
+    },
+    {
+        "test_id": 1515,
+        "input_type": "string",
+        "input_name": "amazon",
+        "input_value": "f2"
+    },
+    {
+        "test_id": 1516,
+        "input_type": "string",
+        "input_name": "king",
+        "input_value": "b7"
+    },
+    {
+        "test_id": 1516,
+        "input_type": "string",
+        "input_name": "amazon",
+        "input_value": "a8"
+    },
+    {
+        "test_id": 1517,
+        "input_type": "string",
+        "input_name": "king",
+        "input_value": "f7"
+    },
+    {
+        "test_id": 1517,
+        "input_type": "string",
+        "input_name": "amazon",
+        "input_value": "d3"
+    },
+    {
+        "test_id": 1518,
+        "input_type": "string",
+        "input_name": "king",
+        "input_value": "g2"
+    },
+    {
+        "test_id": 1518,
+        "input_type": "string",
+        "input_name": "amazon",
+        "input_value": "c3"
+    },
+    {
+        "test_id": 1519,
+        "input_type": "string",
+        "input_name": "king",
+        "input_value": "f3"
+    },
+    {
+        "test_id": 1519,
+        "input_type": "string",
+        "input_name": "amazon",
+        "input_value": "c1"
+    },
+    {
+        "test_id": 1520,
+        "input_type": "string",
+        "input_name": "king",
+        "input_value": "d4"
+    },
+    {
+        "test_id": 1520,
+        "input_type": "string",
+        "input_name": "amazon",
+        "input_value": "h8"
+    },
+
+    // Pawn Race
+    {
+        "test_id": 1521,
+        "input_type": "string",
+        "input_name": "white",
+        "input_value": "e2"
+    },
+    {
+        "test_id": 1521,
+        "input_type": "string",
+        "input_name": "black",
+        "input_value": "e7"
+    },
+    {
+        "test_id": 1521,
+        "input_type": "string",
+        "input_name": "toMove",
+        "input_value": "w"
+    },
+    {
+        "test_id": 1522,
+        "input_type": "string",
+        "input_name": "white",
+        "input_value": "e3"
+    },
+    {
+        "test_id": 1522,
+        "input_type": "string",
+        "input_name": "black",
+        "input_value": "d7"
+    },
+    {
+        "test_id": 1522,
+        "input_type": "string",
+        "input_name": "toMove",
+        "input_value": "b"
+    },
+    {
+        "test_id": 1523,
+        "input_type": "string",
+        "input_name": "white",
+        "input_value": "a7"
+    },
+    {
+        "test_id": 1523,
+        "input_type": "string",
+        "input_name": "black",
+        "input_value": "h2"
+    },
+    {
+        "test_id": 1523,
+        "input_type": "string",
+        "input_name": "toMove",
+        "input_value": "w"
+    },
+    {
+        "test_id": 1524,
+        "input_type": "string",
+        "input_name": "white",
+        "input_value": "c5"
+    },
+    {
+        "test_id": 1524,
+        "input_type": "string",
+        "input_name": "black",
+        "input_value": "b7"
+    },
+    {
+        "test_id": 1524,
+        "input_type": "string",
+        "input_name": "toMove",
+        "input_value": "w"
+    },
+    {
+        "test_id": 1525,
+        "input_type": "string",
+        "input_name": "white",
+        "input_value": "g2"
+    },
+    {
+        "test_id": 1525,
+        "input_type": "string",
+        "input_name": "black",
+        "input_value": "a3"
+    },
+    {
+        "test_id": 1525,
+        "input_type": "string",
+        "input_name": "toMove",
+        "input_value": "b"
+    },
+    {
+        "test_id": 1526,
+        "input_type": "string",
+        "input_name": "white",
+        "input_value": "h4"
+    },
+    {
+        "test_id": 1526,
+        "input_type": "string",
+        "input_name": "black",
+        "input_value": "g7"
+    },
+    {
+        "test_id": 1526,
+        "input_type": "string",
+        "input_name": "toMove",
+        "input_value": "w"
+    },
+    {
+        "test_id": 1527,
+        "input_type": "string",
+        "input_name": "white",
+        "input_value": "f2"
+    },
+    {
+        "test_id": 1527,
+        "input_type": "string",
+        "input_name": "black",
+        "input_value": "h6"
+    },
+    {
+        "test_id": 1527,
+        "input_type": "string",
+        "input_name": "toMove",
+        "input_value": "w"
+    },
+    {
+        "test_id": 1528,
+        "input_type": "string",
+        "input_name": "white",
+        "input_value": "d3"
+    },
+    {
+        "test_id": 1528,
+        "input_type": "string",
+        "input_name": "black",
+        "input_value": "h2"
+    },
+    {
+        "test_id": 1528,
+        "input_type": "string",
+        "input_name": "toMove",
+        "input_value": "b"
+    },
+    {
+        "test_id": 1529,
+        "input_type": "string",
+        "input_name": "white",
+        "input_value": "a3"
+    },
+    {
+        "test_id": 1529,
+        "input_type": "string",
+        "input_name": "black",
+        "input_value": "d5"
+    },
+    {
+        "test_id": 1529,
+        "input_type": "string",
+        "input_name": "toMove",
+        "input_value": "w"
+    },
+    {
+        "test_id": 1530,
+        "input_type": "string",
+        "input_name": "white",
+        "input_value": "c3"
+    },
+    {
+        "test_id": 1530,
+        "input_type": "string",
+        "input_name": "black",
+        "input_value": "e7"
+    },
+    {
+        "test_id": 1530,
+        "input_type": "string",
+        "input_name": "toMove",
+        "input_value": "b"
+    },
+    {
+        "test_id": 1531,
+        "input_type": "string",
+        "input_name": "white",
+        "input_value": "g4"
+    },
+    {
+        "test_id": 1531,
+        "input_type": "string",
+        "input_name": "black",
+        "input_value": "e4"
+    },
+    {
+        "test_id": 1531,
+        "input_type": "string",
+        "input_name": "toMove",
+        "input_value": "w"
+    },
+    {
+        "test_id": 1532,
+        "input_type": "string",
+        "input_name": "white",
+        "input_value": "f4"
+    },
+    {
+        "test_id": 1532,
+        "input_type": "string",
+        "input_name": "black",
+        "input_value": "h6"
+    },
+    {
+        "test_id": 1532,
+        "input_type": "string",
+        "input_name": "toMove",
+        "input_value": "b"
+    },
+    {
+        "test_id": 1533,
+        "input_type": "string",
+        "input_name": "white",
+        "input_value": "b5"
+    },
+    {
+        "test_id": 1533,
+        "input_type": "string",
+        "input_name": "black",
+        "input_value": "f3"
+    },
+    {
+        "test_id": 1533,
+        "input_type": "string",
+        "input_name": "toMove",
+        "input_value": "w"
+    },
+    {
+        "test_id": 1534,
+        "input_type": "string",
+        "input_name": "white",
+        "input_value": "c5"
+    },
+    {
+        "test_id": 1534,
+        "input_type": "string",
+        "input_name": "black",
+        "input_value": "e5"
+    },
+    {
+        "test_id": 1534,
+        "input_type": "string",
+        "input_name": "toMove",
+        "input_value": "b"
+    },
+    {
+        "test_id": 1535,
+        "input_type": "string",
+        "input_name": "white",
+        "input_value": "c6"
+    },
+    {
+        "test_id": 1535,
+        "input_type": "string",
+        "input_name": "black",
+        "input_value": "e2"
+    },
+    {
+        "test_id": 1535,
+        "input_type": "string",
+        "input_name": "toMove",
+        "input_value": "w"
+    },
+    {
+        "test_id": 1536,
+        "input_type": "string",
+        "input_name": "white",
+        "input_value": "f6"
+    },
+    {
+        "test_id": 1536,
+        "input_type": "string",
+        "input_name": "black",
+        "input_value": "h4"
+    },
+    {
+        "test_id": 1536,
+        "input_type": "string",
+        "input_name": "toMove",
+        "input_value": "b"
+    },
+    {
+        "test_id": 1537,
+        "input_type": "string",
+        "input_name": "white",
+        "input_value": "e3"
+    },
+    {
+        "test_id": 1537,
+        "input_type": "string",
+        "input_name": "black",
+        "input_value": "f4"
+    },
+    {
+        "test_id": 1537,
+        "input_type": "string",
+        "input_name": "toMove",
+        "input_value": "w"
+    },
+    {
+        "test_id": 1538,
+        "input_type": "string",
+        "input_name": "white",
+        "input_value": "a6"
+    },
+    {
+        "test_id": 1538,
+        "input_type": "string",
+        "input_name": "black",
+        "input_value": "f7"
+    },
+    {
+        "test_id": 1538,
+        "input_type": "string",
+        "input_name": "toMove",
+        "input_value": "w"
+    },
+    {
+        "test_id": 1539,
+        "input_type": "string",
+        "input_name": "white",
+        "input_value": "e7"
+    },
+    {
+        "test_id": 1539,
+        "input_type": "string",
+        "input_name": "black",
+        "input_value": "h3"
+    },
+    {
+        "test_id": 1539,
+        "input_type": "string",
+        "input_name": "toMove",
+        "input_value": "b"
+    },
+    {
+        "test_id": 1540,
+        "input_type": "string",
+        "input_name": "white",
+        "input_value": "c7"
+    },
+    {
+        "test_id": 1540,
+        "input_type": "string",
+        "input_name": "black",
+        "input_value": "e6"
+    },
+    {
+        "test_id": 1540,
+        "input_type": "string",
+        "input_name": "toMove",
+        "input_value": "w"
+    },
+    {
+        "test_id": 1541,
+        "input_type": "string",
+        "input_name": "white",
+        "input_value": "g2"
+    },
+    {
+        "test_id": 1541,
+        "input_type": "string",
+        "input_name": "black",
+        "input_value": "f2"
+    },
+    {
+        "test_id": 1541,
+        "input_type": "string",
+        "input_name": "toMove",
+        "input_value": "b"
+    },
+    {
+        "test_id": 1542,
+        "input_type": "string",
+        "input_name": "white",
+        "input_value": "f2"
+    },
+    {
+        "test_id": 1542,
+        "input_type": "string",
+        "input_name": "black",
+        "input_value": "e5"
+    },
+    {
+        "test_id": 1542,
+        "input_type": "string",
+        "input_name": "toMove",
+        "input_value": "w"
+    },
+    {
+        "test_id": 1543,
+        "input_type": "string",
+        "input_name": "white",
+        "input_value": "c2"
+    },
+    {
+        "test_id": 1543,
+        "input_type": "string",
+        "input_name": "black",
+        "input_value": "d7"
+    },
+    {
+        "test_id": 1543,
+        "input_type": "string",
+        "input_name": "toMove",
+        "input_value": "b"
+    },
+    {
+        "test_id": 1544,
+        "input_type": "string",
+        "input_name": "white",
+        "input_value": "d4"
+    },
+    {
+        "test_id": 1544,
+        "input_type": "string",
+        "input_name": "black",
+        "input_value": "e3"
+    },
+    {
+        "test_id": 1544,
+        "input_type": "string",
+        "input_name": "toMove",
+        "input_value": "w"
+    },
+    {
+        "test_id": 1545,
+        "input_type": "string",
+        "input_name": "white",
+        "input_value": "h3"
+    },
+    {
+        "test_id": 1545,
+        "input_type": "string",
+        "input_name": "black",
+        "input_value": "g6"
+    },
+    {
+        "test_id": 1545,
+        "input_type": "string",
+        "input_name": "toMove",
+        "input_value": "b"
+    },
+
+    // Valid Time
+    {
+        "test_id": 1546,
+        "input_type": "string",
+        "input_name": "time",
+        "input_value": "13:58"
+    },
+    {
+        "test_id": 1547,
+        "input_type": "string",
+        "input_name": "time",
+        "input_value": "25:51"
+    },
+    {
+        "test_id": 1548,
+        "input_type": "string",
+        "input_name": "time",
+        "input_value": "02:76"
+    },
+    {
+        "test_id": 1549,
+        "input_type": "string",
+        "input_name": "time",
+        "input_value": "24:00"
+    },
+    {
+        "test_id": 1550,
+        "input_type": "string",
+        "input_name": "time",
+        "input_value": "02:61"
+    },
+    {
+        "test_id": 1551,
+        "input_type": "string",
+        "input_name": "time",
+        "input_value": "27:00"
+    },
+    {
+        "test_id": 1552,
+        "input_type": "string",
+        "input_name": "time",
+        "input_value": "19:66"
+    },
+    {
+        "test_id": 1553,
+        "input_type": "string",
+        "input_name": "time",
+        "input_value": "12:31"
+    },
+    {
+        "test_id": 1554,
+        "input_type": "string",
+        "input_name": "time",
+        "input_value": "25:73"
+    },
+    {
+        "test_id": 1555,
+        "input_type": "string",
+        "input_name": "time",
+        "input_value": "09:56"
+    },
+    {
+        "test_id": 1556,
+        "input_type": "string",
+        "input_name": "time",
+        "input_value": "03:29"
+    },
+
+    // Video Part
+    {
+        "test_id": 1557,
+        "input_type": "string",
+        "input_name": "part",
+        "input_value": "02:20:00"
+    },
+    {
+        "test_id": 1557,
+        "input_type": "string",
+        "input_name": "total",
+        "input_value": "07:00:00"
+    },
+    {
+        "test_id": 1558,
+        "input_type": "string",
+        "input_name": "part",
+        "input_value": "25:26:20"
+    },
+    {
+        "test_id": 1558,
+        "input_type": "string",
+        "input_name": "total",
+        "input_value": "25:26:20"
+    },
+    {
+        "test_id": 1559,
+        "input_type": "string",
+        "input_name": "part",
+        "input_value": "00:02:20"
+    },
+    {
+        "test_id": 1559,
+        "input_type": "string",
+        "input_name": "total",
+        "input_value": "00:10:00"
+    },
+    {
+        "test_id": 1560,
+        "input_type": "string",
+        "input_name": "part",
+        "input_value": "08:08:08"
+    },
+    {
+        "test_id": 1560,
+        "input_type": "string",
+        "input_name": "total",
+        "input_value": "20:20:20"
+    },
+    {
+        "test_id": 1561,
+        "input_type": "string",
+        "input_name": "part",
+        "input_value": "00:00:07"
+    },
+    {
+        "test_id": 1561,
+        "input_type": "string",
+        "input_name": "total",
+        "input_value": "01:10:00"
+    },
+    {
+        "test_id": 1562,
+        "input_type": "string",
+        "input_name": "part",
+        "input_value": "07:32:29"
+    },
+    {
+        "test_id": 1562,
+        "input_type": "string",
+        "input_name": "total",
+        "input_value": "10:12:51"
+    },
+    {
+        "test_id": 1563,
+        "input_type": "string",
+        "input_name": "part",
+        "input_value": "01:41:59"
+    },
+    {
+        "test_id": 1563,
+        "input_type": "string",
+        "input_name": "total",
+        "input_value": "02:00:00"
+    },
+
+    // Day of Week
+    {
+        "test_id": 1564,
+        "input_type": "string",
+        "input_name": "birthdayDate",
+        "input_value": "02-01-2016"
+    },
+    {
+        "test_id": 1565,
+        "input_type": "string",
+        "input_name": "birthdayDate",
+        "input_value": "01-01-1900"
+    },
+    {
+        "test_id": 1566,
+        "input_type": "string",
+        "input_name": "birthdayDate",
+        "input_value": "02-29-2016"
+    },
+    {
+        "test_id": 1567,
+        "input_type": "string",
+        "input_name": "birthdayDate",
+        "input_value": "01-16-2027"
+    },
+    {
+        "test_id": 1568,
+        "input_type": "string",
+        "input_name": "birthdayDate",
+        "input_value": "10-12-2000"
+    },
+    {
+        "test_id": 1569,
+        "input_type": "string",
+        "input_name": "birthdayDate",
+        "input_value": "02-29-2072"
+    },
+
+    // Curious Clock
+    {
+        "test_id": 1570,
+        "input_type": "string",
+        "input_name": "someTime",
+        "input_value": "2016-08-26 22:40"
+    },
+    {
+        "test_id": 1570,
+        "input_type": "string",
+        "input_name": "leavingTime",
+        "input_value": "2016-08-29 10:00"
+    },
+    {
+        "test_id": 1571,
+        "input_type": "string",
+        "input_name": "someTime",
+        "input_value": "2016-08-26 22:40"
+    },
+    {
+        "test_id": 1571,
+        "input_type": "string",
+        "input_name": "leavingTime",
+        "input_value": "2016-08-26 22:41"
+    },
+    {
+        "test_id": 1572,
+        "input_type": "string",
+        "input_name": "someTime",
+        "input_value": "2015-01-14 09:12"
+    },
+    {
+        "test_id": 1572,
+        "input_type": "string",
+        "input_name": "leavingTime",
+        "input_value": "2015-11-04 17:36"
+    },
+    {
+        "test_id": 1573,
+        "input_type": "string",
+        "input_name": "someTime",
+        "input_value": "2016-02-28 12:21"
+    },
+    {
+        "test_id": 1573,
+        "input_type": "string",
+        "input_name": "leavingTime",
+        "input_value": "2016-03-01 22:21"
+    },
+    {
+        "test_id": 1574,
+        "input_type": "string",
+        "input_name": "someTime",
+        "input_value": "1995-05-30 13:48"
+    },
+    {
+        "test_id": 1574,
+        "input_type": "string",
+        "input_name": "leavingTime",
+        "input_value": "2016-04-22 05:32"
+    },
+    {
+        "test_id": 1575,
+        "input_type": "string",
+        "input_name": "someTime",
+        "input_value": "1992-09-29 00:00"
+    },
+    {
+        "test_id": 1575,
+        "input_type": "string",
+        "input_name": "leavingTime",
+        "input_value": "1998-12-04 23:59"
+    },
+
+    // New Year Celebrations
+    {
+        "test_id": 1576,
+        "input_type": "string",
+        "input_name": "takeOffTime",
+        "input_value": "23:35"
+    },
+    {
+        "test_id": 1576,
+        "input_type": "arrayOfIntegers",
+        "input_name": "minutes",
+        "input_value": "[60, 90, 140]"
+    },
+    {
+        "test_id": 1577,
+        "input_type": "string",
+        "input_name": "takeOffTime",
+        "input_value": "00:00"
+    },
+    {
+        "test_id": 1577,
+        "input_type": "arrayOfIntegers",
+        "input_name": "minutes",
+        "input_value": "[60, 120, 180, 250]"
+    },
+    {
+        "test_id": 1578,
+        "input_type": "string",
+        "input_name": "takeOffTime",
+        "input_value": "13:36"
+    },
+    {
+        "test_id": 1578,
+        "input_type": "arrayOfIntegers",
+        "input_name": "minutes",
+        "input_value": "[23, 33, 45, 56, 66, 88]"
+    },
+    {
+        "test_id": 1579,
+        "input_type": "string",
+        "input_name": "takeOffTime",
+        "input_value": "22:50"
+    },
+    {
+        "test_id": 1579,
+        "input_type": "arrayOfIntegers",
+        "input_name": "minutes",
+        "input_value": "[]"
+    },
+    {
+        "test_id": 1580,
+        "input_type": "string",
+        "input_name": "takeOffTime",
+        "input_value": "20:18"
+    },
+    {
+        "test_id": 1580,
+        "input_type": "arrayOfIntegers",
+        "input_name": "minutes",
+        "input_value": "[222, 342]"
+    },
+    {
+        "test_id": 1581,
+        "input_type": "string",
+        "input_name": "takeOffTime",
+        "input_value": "12:05"
+    },
+    {
+        "test_id": 1581,
+        "input_type": "arrayOfIntegers",
+        "input_name": "minutes",
+        "input_value": "[1, 109, 113, 344, 345, 478, 545, 565, 809, 814, 838, 883, 971, 1007, 1029, 1053, 1133, 1271, 1314, 1500]"
+    },
+    {
+        "test_id": 1582,
+        "input_type": "string",
+        "input_name": "takeOffTime",
+        "input_value": "17:10"
+    },
+    {
+        "test_id": 1582,
+        "input_type": "arrayOfIntegers",
+        "input_name": "minutes",
+        "input_value": "[150, 160, 293, 589, 614, 716, 760, 776, 781, 911, 1040, 1438]"
+    },
+    {
+        "test_id": 1583,
+        "input_type": "string",
+        "input_name": "takeOffTime",
+        "input_value": "18:15"
+    },
+    {
+        "test_id": 1583,
+        "input_type": "arrayOfIntegers",
+        "input_name": "minutes",
+        "input_value": "[117, 241, 364, 375, 545, 1317]"
+    },
+    {
+        "test_id": 1584,
+        "input_type": "string",
+        "input_name": "takeOffTime",
+        "input_value": "19:44"
+    },
+    {
+        "test_id": 1584,
+        "input_type": "arrayOfIntegers",
+        "input_name": "minutes",
+        "input_value": "[545, 1320]"
+    },
+    {
+        "test_id": 1585,
+        "input_type": "string",
+        "input_name": "takeOffTime",
+        "input_value": "21:13"
+    },
+    {
+        "test_id": 1585,
+        "input_type": "arrayOfIntegers",
+        "input_name": "minutes",
+        "input_value": "[52, 257, 323, 515, 579, 600, 703, 707, 1127, 1298]"
+    },
+
+    // Regular Months
+    {
+        "test_id": 1586,
+        "input_type": "string",
+        "input_name": "currMonth",
+        "input_value": "02-2016"
+    },
+    {
+        "test_id": 1587,
+        "input_type": "string",
+        "input_name": "currMonth",
+        "input_value": "05-2027"
+    },
+    {
+        "test_id": 1588,
+        "input_type": "string",
+        "input_name": "currMonth",
+        "input_value": "09-2099"
+    },
+    {
+        "test_id": 1589,
+        "input_type": "string",
+        "input_name": "currMonth",
+        "input_value": "01-1970"
+    },
+    {
+        "test_id": 1590,
+        "input_type": "string",
+        "input_name": "currMonth",
+        "input_value": "07-2024"
+    },
+
+    // Missed Classes
+    {
+        "test_id": 1591,
+        "input_type": "arrayOfIntegers",
+        "input_name": "daysOfTheWeek",
+        "input_value": "[2, 3]"
+    },
+    {
+        "test_id": 1591,
+        "input_type": "arrayOfStrings",
+        "input_name": "holidays",
+        "input_value": '["11-04","02-22","02-23","03-07","03-08","05-09"]'
+    },
+    {
+        "test_id": 1592,
+        "input_type": "arrayOfIntegers",
+        "input_name": "daysOfTheWeek",
+        "input_value": '[]'
+    },
+    {
+        "test_id": 1592,
+        "input_type": "arrayOfStrings",
+        "input_name": "holidays",
+        "input_value": '[]'
+    },
+    {
+        "test_id": 1593,
+        "input_type": "arrayOfIntegers",
+        "input_name": "daysOfTheWeek",
+        "input_value": '[1, 4, 7]'
+    },
+    {
+        "test_id": 1593,
+        "input_type": "arrayOfStrings",
+        "input_name": "holidays",
+        "input_value": '["10-28","05-03","10-02","05-07","05-25","09-04","10-30","03-03","09-02","11-08"]'
+    },
+    {
+        "test_id": 1594,
+        "input_type": "arrayOfIntegers",
+        "input_name": "daysOfTheWeek",
+        "input_value": '[1, 4, 6, 7]'
+    },
+    {
+        "test_id": 1594,
+        "input_type": "arrayOfStrings",
+        "input_name": "holidays",
+        "input_value": '["03-17","04-03","03-08","09-18","05-28","02-14","10-20","01-02","01-22","10-04","02-02","10-07","09-30","05-20","05-23","09-22","01-12","05-02","10-21","03-20"]'
+    },
+    {
+        "test_id": 1595,
+        "input_type": "arrayOfIntegers",
+        "input_name": "daysOfTheWeek",
+        "input_value": '[1, 2 , 3 , 4 , 5 , 6 , 7]'
+    },
+    {
+        "test_id": 1595,
+        "input_type": "arrayOfStrings",
+        "input_name": "holidays",
+        "input_value": '["01-20","02-09","01-25","09-01","05-30","12-24","09-05","10-15","09-25","10-23","10-10","05-29","02-05","11-19","04-28","02-17","05-04","01-26","05-31","03-19","12-31","09-26","05-19","05-14","09-03","05-21","02-08","11-09","09-09","04-21"]'
+    },
+    {
+        "test_id": 1596,
+        "input_type": "arrayOfIntegers",
+        "input_name": "daysOfTheWeek",
+        "input_value": '[]'
+    },
+    {
+        "test_id": 1596,
+        "input_type": "arrayOfStrings",
+        "input_name": "holidays",
+        "input_value": '[]'
+    },
+    {
+        "test_id": 1597,
+        "input_type": "arrayOfIntegers",
+        "input_name": "daysOfTheWeek",
+        "input_value": '[1, 2, 3]'
+    },
+    {
+        "test_id": 1597,
+        "input_type": "arrayOfStrings",
+        "input_name": "holidays",
+        "input_value": '["10-28","05-26","09-24","11-28","09-17","03-29","09-08","05-13","10-23","11-29","04-26","10-27","09-26","09-09","12-07"]'
+    },
+    {
+        "test_id": 1598,
+        "input_type": "arrayOfIntegers",
+        "input_name": "daysOfTheWeek",
+        "input_value": '[1, 2, 3, 5]'
+    },
+    {
+        "test_id": 1598,
+        "input_type": "arrayOfStrings",
+        "input_name": "holidays",
+        "input_value": '["11-12","09-10","11-10","05-12","05-03","03-04","02-14","12-25","09-24","11-17","09-22","09-14","12-04","01-24","03-24","05-26","09-01","11-20","04-30","03-20","10-04","11-21","01-14","05-11","12-03","11-01"]'
+    },
+    {
+        "test_id": 1599,
+        "input_type": "arrayOfIntegers",
+        "input_name": "daysOfTheWeek",
+        "input_value": '[2, 3]'
+    },
+    {
+        "test_id": 1599,
+        "input_type": "arrayOfStrings",
+        "input_name": "holidays",
+        "input_value": '["11-04","02-22","02-23","03-07","03-08","05-09"]'
+    },
+    {
+        "test_id": 1600,
+        "input_type": "arrayOfIntegers",
+        "input_name": "daysOfTheWeek",
+        "input_value": '[]'
+    },
+    {
+        "test_id": 1600,
+        "input_type": "arrayOfStrings",
+        "input_name": "holidays",
+        "input_value": '[]'
+    },
+    {
+        "test_id": 1591,
+        "input_type": "number",
+        "input_name": "year",
+        "input_value": "2015"
+    },
+    {
+        "test_id": 1592,
+        "input_type": "number",
+        "input_name": "year",
+        "input_value": "1900"
+    },
+    {
+        "test_id": 1593,
+        "input_type": "number",
+        "input_name": "year",
+        "input_value": "2100"
+    },
+    {
+        "test_id": 1594,
+        "input_type": "number",
+        "input_name": "year",
+        "input_value": "1956"
+    },
+    {
+        "test_id": 1595,
+        "input_type": "number",
+        "input_name": "year",
+        "input_value": "2067"
+    },
+    {
+        "test_id": 1596,
+        "input_type": "number",
+        "input_name": "year",
+        "input_value": "2000"
+    },
+    {
+        "test_id": 1597,
+        "input_type": "number",
+        "input_name": "year",
+        "input_value": "1995"
+    },
+    {
+        "test_id": 1598,
+        "input_type": "number",
+        "input_name": "year",
+        "input_value": "2045"
+    },
+    {
+        "test_id": 1599,
+        "input_type": "number",
+        "input_name": "year",
+        "input_value": "2014"
+    },
+    {
+        "test_id": 1600,
+        "input_type": "number",
+        "input_name": "year",
+        "input_value": "2100"
+    },
+
+    // Holiday
+    {
+        "test_id": 1601,
+        "input_type": "number",
+        "input_name": "x",
+        "input_value": "3"
+    },
+    {
+        "test_id": 1601,
+        "input_type": "number",
+        "input_name": "yearNumber",
+        "input_value": "2016"
+    },
+    {
+        "test_id": 1601,
+        "input_type": "string",
+        "input_name": "weekDay",
+        "input_value": "Wednesday"
+    },
+    {
+        "test_id": 1601,
+        "input_type": "string",
+        "input_name": "month",
+        "input_value": "November"
+    },
+    {
+        "test_id": 1602,
+        "input_type": "number",
+        "input_name": "x",
+        "input_value": "5"
+    },
+    {
+        "test_id": 1602,
+        "input_type": "number",
+        "input_name": "yearNumber",
+        "input_value": "2016"
+    },
+    {
+        "test_id": 1602,
+        "input_type": "string",
+        "input_name": "weekDay",
+        "input_value": "Thursday"
+    },
+    {
+        "test_id": 1602,
+        "input_type": "string",
+        "input_name": "month",
+        "input_value": "November"
+    },
+    {
+        "test_id": 1603,
+        "input_type": "number",
+        "input_name": "x",
+        "input_value": "1"
+    },
+    {
+        "test_id": 1603,
+        "input_type": "number",
+        "input_name": "yearNumber",
+        "input_value": "2015"
+    },
+    {
+        "test_id": 1603,
+        "input_type": "string",
+        "input_name": "weekDay",
+        "input_value": "Thursday"
+    },
+    {
+        "test_id": 1603,
+        "input_type": "string",
+        "input_name": "month",
+        "input_value": "January"
+    },
+    {
+        "test_id": 1604,
+        "input_type": "number",
+        "input_name": "x",
+        "input_value": "2"
+    },
+    {
+        "test_id": 1604,
+        "input_type": "number",
+        "input_name": "yearNumber",
+        "input_value": "2015"
+    },
+    {
+        "test_id": 1604,
+        "input_type": "string",
+        "input_name": "weekDay",
+        "input_value": "Thursday"
+    },
+    {
+        "test_id": 1604,
+        "input_type": "string",
+        "input_name": "month",
+        "input_value": "January"
+    },
+    {
+        "test_id": 1605,
+        "input_type": "number",
+        "input_name": "x",
+        "input_value": "3"
+    },
+    {
+        "test_id": 1605,
+        "input_type": "number",
+        "input_name": "yearNumber",
+        "input_value": "2015"
+    },
+    {
+        "test_id": 1605,
+        "input_type": "string",
+        "input_name": "weekDay",
+        "input_value": "Thursday"
+    },
+    {
+        "test_id": 1605,
+        "input_type": "string",
+        "input_name": "month",
+        "input_value": "January"
+    },
+    {
+        "test_id": 1606,
+        "input_type": "number",
+        "input_name": "x",
+        "input_value": "3"
+    },
+    {
+        "test_id": 1606,
+        "input_type": "number",
+        "input_name": "yearNumber",
+        "input_value": "2101"
+    },
+    {
+        "test_id": 1606,
+        "input_type": "string",
+        "input_name": "weekDay",
+        "input_value": "Thursday"
+    },
+    {
+        "test_id": 1606,
+        "input_type": "string",
+        "input_name": "month",
+        "input_value": "January"
+    },
+    {
+        "test_id": 1607,
+        "input_type": "number",
+        "input_name": "x",
+        "input_value": "3"
+    },
+    {
+        "test_id": 1607,
+        "input_type": "number",
+        "input_name": "yearNumber",
+        "input_value": "2401"
+    },
+    {
+        "test_id": 1607,
+        "input_type": "string",
+        "input_name": "weekDay",
+        "input_value": "Thursday"
+    },
+    {
+        "test_id": 1607,
+        "input_type": "string",
+        "input_name": "month",
+        "input_value": "January"
+    },
+    {
+        "test_id": 1608,
+        "input_type": "number",
+        "input_name": "x",
+        "input_value": "2"
+    },
+    {
+        "test_id": 1608,
+        "input_type": "number",
+        "input_name": "yearNumber",
+        "input_value": "2500"
+    },
+    {
+        "test_id": 1608,
+        "input_type": "string",
+        "input_name": "weekDay",
+        "input_value": "Thursday"
+    },
+    {
+        "test_id": 1608,
+        "input_type": "string",
+        "input_name": "month",
+        "input_value": "December"
+    },
+    {
+        "test_id": 1609,
+        "input_type": "number",
+        "input_name": "x",
+        "input_value": "5"
+    },
+    {
+        "test_id": 1609,
+        "input_type": "number",
+        "input_name": "yearNumber",
+        "input_value": "2016"
+    },
+    {
+        "test_id": 1609,
+        "input_type": "string",
+        "input_name": "weekDay",
+        "input_value": "Monday"
+    },
+    {
+        "test_id": 1609,
+        "input_type": "string",
+        "input_name": "month",
+        "input_value": "February"
+    },
+
+    // Is Sentence Correct?
+    {
+        "test_id": 1610,
+        "input_type": "string",
+        "input_name": "sentence",
+        "input_value": "This is an example of *correct* sentence."
+    },
+    {
+        "test_id": 1611,
+        "input_type": "string",
+        "input_name": "sentence",
+        "input_value": "!this sentence is TOTALLY incorrecT"
+    },
+    {
+        "test_id": 1612,
+        "input_type": "string",
+        "input_name": "sentence",
+        "input_value": "Almost correct sentence"
+    },
+    {
+        "test_id": 1613,
+        "input_type": "string",
+        "input_name": "sentence",
+        "input_value": "Something is !wrong! here."
+    },
+    {
+        "test_id": 1614,
+        "input_type": "string",
+        "input_name": "sentence",
+        "input_value": "Time to roll!!!"
+    },
+    {
+        "test_id": 1615,
+        "input_type": "string",
+        "input_name": "sentence",
+        "input_value": "This one is okay though, isn't it?"
+    },
+    {
+        "test_id": 1616,
+        "input_type": "string",
+        "input_name": "sentence",
+        "input_value": "this sentence, I'm afraid, is a bit incorrect."
+    },
+    {
+        "test_id": 1617,
+        "input_type": "string",
+        "input_name": "sentence",
+        "input_value": "I'm glad this sentence is correct, my friends."
+    },
+    {
+        "test_id": 1618,
+        "input_type": "string",
+        "input_name": "sentence",
+        "input_value": "CodeSignal is lame!!!"
+    },
+    {
+        "test_id": 1619,
+        "input_type": "string",
+        "input_name": "sentence",
+        "input_value": "No way, CodeSignal is awesome!"
+    },
+
+    // Replace All Digits RegExp
+    {
+        "test_id": 1620,
+        "input_type": "string",
+        "input_name": "input",
+        "input_value": "There are 12 points"
+    },
+    {
+        "test_id": 1621,
+        "input_type": "string",
+        "input_name": "input",
+        "input_value": "012ss210"
+    },
+    {
+        "test_id": 1622,
+        "input_type": "string",
+        "input_name": "input",
+        "input_value": "_Aas 23"
+    },
+    {
+        "test_id": 1623,
+        "input_type": "string",
+        "input_name": "input",
+        "input_value": "no digits here"
+    },
+    {
+        "test_id": 1624,
+        "input_type": "string",
+        "input_name": "input",
+        "input_value": "aa_0239mehce3d"
+    },
+    {
+        "test_id": 1625,
+        "input_type": "string",
+        "input_name": "input",
+        "input_value": "v z gv4zyx eu mu"
+    },
+
+    // Swap Adjacent Words
+    {
+        "test_id": 1626,
+        "input_type": "string",
+        "input_name": "s",
+        "input_value": "CodeFight On"
+    },
+    {
+        "test_id": 1627,
+        "input_type": "string",
+        "input_name": "s",
+        "input_value": "How are you today guys"
+    },
+    {
+        "test_id": 1628,
+        "input_type": "string",
+        "input_name": "s",
+        "input_value": "IAmALongStringWithNoWhiteSpaceCharacters"
+    },
+    {
+        "test_id": 1629,
+        "input_type": "string",
+        "input_name": "s",
+        "input_value": "A b C D e F g h I j"
+    },
+    {
+        "test_id": 1630,
+        "input_type": "string",
+        "input_name": "s",
+        "input_value": ""
+    },
+
+    // N-th Number
+    {
+        "test_id": 1631,
+        "input_type": "number",
+        "input_name": "n",
+        "input_value": "4"
+    },
+    {
+        "test_id": 1631,
+        "input_type": "string",
+        "input_name": "s",
+        "input_value": "8one 003number 201numbers li-000233le number444"
+    },
+    {
+        "test_id": 1632,
+        "input_type": "number",
+        "input_name": "n",
+        "input_value": "5"
+    },
+    {
+        "test_id": 1632,
+        "input_type": "string",
+        "input_name": "s",
+        "input_value": "some023020 num ber 033 02103 32 meh peh beh 4328"
+    },
+    {
+        "test_id": 1633,
+        "input_type": "number",
+        "input_name": "n",
+        "input_value": "1"
+    },
+    {
+        "test_id": 1633,
+        "input_type": "string",
+        "input_name": "s",
+        "input_value": "007 is an awesome agent"
+    },
+    {
+        "test_id": 1634,
+        "input_type": "number",
+        "input_name": "n",
+        "input_value": "1"
+    },
+    {
+        "test_id": 1634,
+        "input_type": "string",
+        "input_name": "s",
+        "input_value": "Everyone hates error 404"
+    },
+    {
+        "test_id": 1635,
+        "input_type": "number",
+        "input_name": "n",
+        "input_value": "4"
+    },
+    {
+        "test_id": 1635,
+        "input_type": "string",
+        "input_name": "s",
+        "input_value": "LaS003920tP3rEt4t04Yte0023s3t"
+    },
+    {
+        "test_id": 1636,
+        "input_type": "number",
+        "input_name": "n",
+        "input_value": "4"
+    },
+    {
+        "test_id": 1636,
+        "input_type": "string",
+        "input_name": "s",
+        "input_value": "=_aaYiM*}&0077|D))ztIV00012432748730156644204805614898523099655216oio0854102350044141_|YDL0584511290939644184700867021026771007612398051168360441323oIc:G*0204864749576405915~wqgN0037594999439741539584332{F&wjxiLy-mE"
+    },
+
+    // Is Subsequence?
+    {
+        "test_id": 1637,
+        "input_type": "string",
+        "input_name": "t",
+        "input_value": "CodeSignal"
+    },
+    {
+        "test_id": 1637,
+        "input_type": "string",
+        "input_name": "s",
+        "input_value": "CoSi"
+    },
+    {
+        "test_id": 1638,
+        "input_type": "string",
+        "input_name": "t",
+        "input_value": "CodeSignal"
+    },
+    {
+        "test_id": 1638,
+        "input_type": "string",
+        "input_name": "s",
+        "input_value": "cosi"
+    },
+    {
+        "test_id": 1639,
+        "input_type": "string",
+        "input_name": "t",
+        "input_value": "somestring"
+    },
+    {
+        "test_id": 1639,
+        "input_type": "string",
+        "input_name": "s",
+        "input_value": ""
+    },
+    {
+        "test_id": 1640,
+        "input_type": "string",
+        "input_name": "t",
+        "input_value": "penny"
+    },
+    {
+        "test_id": 1640,
+        "input_type": "string",
+        "input_name": "s",
+        "input_value": "longsenselessstringwithpennyinside"
+    },
+    {
+        "test_id": 1641,
+        "input_type": "string",
+        "input_name": "t",
+        "input_value": "parliament"
+    },
+    {
+        "test_id": 1641,
+        "input_type": "string",
+        "input_name": "s",
+        "input_value": "partialmen"
+    },
+    {
+        "test_id": 1642,
+        "input_type": "string",
+        "input_name": "t",
+        "input_value": ""
+    },
+    {
+        "test_id": 1642,
+        "input_type": "string",
+        "input_name": "s",
+        "input_value": ""
+    },
+    {
+        "test_id": 1643,
+        "input_type": "string",
+        "input_name": "t",
+        "input_value": ""
+    },
+    {
+        "test_id": 1643,
+        "input_type": "string",
+        "input_name": "s",
+        "input_value": "hoho"
+    },
+    {
+        "test_id": 1644,
+        "input_type": "string",
+        "input_name": "t",
+        "input_value": "he sd.f dsk e8.sd??l**23, 23,f.s++83+"
+    },
+    {
+        "test_id": 1644,
+        "input_type": "string",
+        "input_name": "s",
+        "input_value": "h  8.?*3+"
+    },
+    {
+        "test_id": 1645,
+        "input_type": "string",
+        "input_name": "t",
+        "input_value": "abc"
+    },
+    {
+        "test_id": 1645,
+        "input_type": "string",
+        "input_name": "s",
+        "input_value": "d"
+    },
+    {
+        "test_id": 1646,
+        "input_type": "string",
+        "input_name": "t",
+        "input_value": "abcd"
+    },
+    {
+        "test_id": 1646,
+        "input_type": "string",
+        "input_name": "s",
+        "input_value": "ad"
+    },
+
+    // Eye Rhyme
+    {
+        "test_id": 1647,
+        "input_type": "string",
+        "input_name": "pairOfLines",
+        "input_value": "cough\\tbough"
+    },
+    {
+        "test_id": 1648,
+        "input_type": "string",
+        "input_name": "pairOfLines",
+        "input_value": "CodeFig!ht\\tWith all your might"
+    },
+    {
+        "test_id": 1649,
+        "input_type": "string",
+        "input_name": "pairOfLines",
+        "input_value": "quod erat demonstrandum\\tand that, ladies and gentlemen, is the end of my memorandum"
+    },
+    {
+        "test_id": 1650,
+        "input_type": "string",
+        "input_name": "pairOfLines",
+        "input_value": "yup\\tyes"
+    },
+    {
+        "test_id": 1651,
+        "input_type": "string",
+        "input_name": "pairOfLines",
+        "input_value": "hey\\they"
+    },
+    {
+        "test_id": 1652,
+        "input_type": "string",
+        "input_name": "pairOfLines",
+        "input_value": "E = MC<sup>2</sup>\\twhich in turn equals sup"
+    },
+    {
+        "test_id": 1653,
+        "input_type": "string",
+        "input_name": "pairOfLines",
+        "input_value": "Isn't it correct?!\\tIt definitely is! Does it mean that we've just obtained a full set?!"
+    },
+    {
+        "test_id": 1654,
+        "input_type": "string",
+        "input_name": "pairOfLines",
+        "input_value": "Nothing can go wrong here :)\\tHehehehe:)"
+    },
+    {
+        "test_id": 1655,
+        "input_type": "string",
+        "input_name": "pairOfLines",
+        "input_value": "!1?/\\tsldkjfl3 sldjf 1?/"
+    },
+    {
+        "test_id": 1656,
+        "input_type": "string",
+        "input_name": "pairOfLines",
+        "input_value": "simple\\tpimple"
+    },
+
+    // Program Translation
+    {
+        "test_id": 1657,
+        "input_type": "arrayOfStrings",
+        "input_name": "args",
+        "input_value": '["n","m"]'
+    },
+    {
+        "test_id": 1658,
+        "input_type": "arrayOfStrings",
+        "input_name": "args",
+        "input_value": '["a","cnt"]'
+    },
+    {
+        "test_id": 1659,
+        "input_type": "arrayOfStrings",
+        "input_name": "args",
+        "input_value": '["uselessVar"]'
+    },
+    {
+        "test_id": 1660,
+        "input_type": "arrayOfStrings",
+        "input_name": "args",
+        "input_value": '["variable"]'
+    },
+    {
+        "test_id": 1661,
+        "input_type": "arrayOfStrings",
+        "input_name": "args",
+        "input_value": '["rep","laceT","hemAll"]'
+    },
+    {
+        "test_id": 1662,
+        "input_type": "arrayOfStrings",
+        "input_name": "args",
+        "input_value": '["fu_","_re5","NOO"]'
+    },
+    {
+        "test_id": 1663,
+        "input_type": "arrayOfStrings",
+        "input_name": "args",
+        "input_value": '["m"]'
+    },
+    {
+        "test_id": 1657,
+        "input_type": "string",
+        "input_name": "code",
+        "input_value": "function add($n, m) {\\t  return n + $m;\\t}"
+    },
+    {
+        "test_id": 1658,
+        "input_type": "string",
+        "input_name": "code",
+        "input_value": "function findSum(a, $cnt) {\\t  var a0 = $a;\\t  for (var _cnt = 0, _cnt < cnt; _cnt++)\\t    a0 += _cnt;\\t  return a0;\\t}"
+    },
+    {
+        "test_id": 1659,
+        "input_type": "string",
+        "input_name": "code",
+        "input_value": "function doNothing($uselessVar) {\\t  return $uselessVar;\\t}"
+    },
+    {
+        "test_id": 1660,
+        "input_type": "string",
+        "input_name": "code",
+        "input_value": "function addToVariable(variable) {\\t  variable_which_should_be_increased = 14;\\t  variable_which_should_be_increased += variable;\\t  return variable_which_should_be_increased;\\t}"
+    },
+    {
+        "test_id": 1661,
+        "input_type": "string",
+        "input_name": "code",
+        "input_value": "function replaceThemAll(rep, laceT, hemAll, ornot) {\\t  var tmp = rep;\\t  rep = laceT;\\t  laceT = hemAll;\\t  hemAll = tmp;\\t  return [rep, laceT, hemAll]\\t}"
+    },
+    {
+        "test_id": 1662,
+        "input_type": "string",
+        "input_name": "code",
+        "input_value": "function returnSecond(fu_,_re5,NOO) {\\t  return _re5;\\t}"
+    },
+    {
+        "test_id": 1663,
+        "input_type": "string",
+        "input_name": "code",
+        "input_value": "function getLength(k, m) {\\t  return m.length;\\t}"
+    },
+
+    // Repetition Encryption
+    {
+        "test_id": 1664,
+        "input_type": "string",
+        "input_name": "letter",
+        "input_value": "Hi, hi Jane! I'm so. So glad to to finally be able to write - WRITE!! - to you!"
+    },
+    {
+        "test_id": 1665,
+        "input_type": "string",
+        "input_name": "letter",
+        "input_value": "Yo-yo, how's s it going going for ya? Ya is okay, okay'nt ya?"
+    },
+    {
+        "test_id": 1666,
+        "input_type": "string",
+        "input_name": "letter",
+        "input_value": "Hi Jane, how are you doing today?"
+    },
+    {
+        "test_id": 1667,
+        "input_type": "string",
+        "input_name": "letter",
+        "input_value": "My friend, friend of mine, I am really-really happy for you! You are amazing, please write me back when you can."
+    },
+    {
+        "test_id": 1668,
+        "input_type": "string",
+        "input_name": "letter",
+        "input_value": "Everything is fine, fine perfectly here. Here I have fun (fun all the day!) days. Although I miss you, so please please, Jane, write, write me whenever you can! Can you do that? That is the only (!!ONLY!!) thing I ask from you, you sunshine."
+    },
+    {
+        "test_id": 1669,
+        "input_type": "string",
+        "input_name": "letter",
+        "input_value": "Do not notify me about this in the future"
+    },
+    {
+        "test_id": 1670,
+        "input_type": "string",
+        "input_name": "letter",
+        "input_value": "ho-ho--he-he"
+    },
+    {
+        "test_id": 1671,
+        "input_type": "string",
+        "input_name": "letter",
+        "input_value": "WeLl wElL"
+    },
+
+    // Bugs and Bugfixes
+    {
+        "test_id": 1672,
+        "input_type": "string",
+        "input_name": "rules",
+        "input_value": "Roll d6-3 and 4d4+3 to pick a weapon, and finish the boss with 3d7!"
+    },
+    {
+        "test_id": 1673,
+        "input_type": "string",
+        "input_name": "rules",
+        "input_value": "d6-almost 01d4+2 12d01-3 5d5-00 a valid formula"
+    },
+    {
+        "test_id": 1674,
+        "input_type": "string",
+        "input_name": "rules",
+        "input_value": "meh4d2-3D3"
+    },
+    {
+        "test_id": 1675,
+        "input_type": "string",
+        "input_name": "rules",
+        "input_value": "ad3+4, 44b-6, 5daa"
+    },
+    {
+        "test_id": 1676,
+        "input_type": "string",
+        "input_name": "rules",
+        "input_value": "4d6-L1d20-10 did4n't expect that"
+    },
+    {
+        "test_id": 1677,
+        "input_type": "string",
+        "input_name": "rules",
+        "input_value": "nothing here"
+    },
+
+    // LRC to SubRip
+    {
+        "test_id": 1678,
+        "input_type": "string",
+        "input_name": "songLength",
+        "input_value": "00:00:20"
+    },
+    {
+        "test_id": 1679,
+        "input_type": "string",
+        "input_name": "songLength",
+        "input_value": "00:24:00"
+    },
+    {
+        "test_id": 1680,
+        "input_type": "string",
+        "input_name": "songLength",
+        "input_value": "02:23:44"
+    },
+    {
+        "test_id": 1681,
+        "input_type": "string",
+        "input_name": "songLength",
+        "input_value": "02:59:59"
+    },
+    {
+        "test_id": 1682,
+        "input_type": "string",
+        "input_name": "songLength",
+        "input_value": "02:34:36"
+    },
+    {
+        "test_id": 1678,
+        "input_type": "arrayOfStrings",
+        "input_name": "lrcLyrics",
+        "input_value": '["[00:12.00] Happy birthday dear coder,", "[00:17.20] Happy birthday to you!"]'
+    },
+    {
+        "test_id": 1679,
+        "input_type": "arrayOfStrings",
+        "input_name": "lrcLyrics",
+        "input_value": '["[00:04.42] jingle bells, jingle bells, jingle all the way!", "[00:08.46] Oh what fun it is to ride in a one horse open sleigh.", "[00:12.83] jingle bells, jingle bells, jingle all the way!", "[00:17.45] Oh what fun it is to ride in a one horse open sleigh.", "[00:21.89] jingle bells, jingle bells, jingle all the way!"]'
+    },
+    {
+        "test_id": 1680,
+        "input_type": "arrayOfStrings",
+        "input_name": "lrcLyrics",
+        "input_value": '["[95:19.55] i hear babies cryin,", "[95:23.31] i watch them grow", "[95:26.05] theyll learn much more", "[95:29.18] than ill ever know", "[95:33.10] and i think to myself,", "[95:38.44] what a wonderful world"]'
+    },
+    {
+        "test_id": 1681,
+        "input_type": "arrayOfStrings",
+        "input_name": "lrcLyrics",
+        "input_value": '["[12:24.80] make it the cutest", "[14:26.46] that ive ever seen", "[17:28.96] give hm the lips", "[21:30.36] like roses in clover", "[35:33.03] then tell him that", "[46:34.42] his lone some nights are over", "[57:36.68] Mr.sandman", "[67:38.71] i am so along", "[97:40.99] dont have nobody", "[99:42.63] to call my own"]'
+    },
+    {
+        "test_id": 1682,
+        "input_type": "arrayOfStrings",
+        "input_name": "lrcLyrics",
+        "input_value": '["[12:51.10] Hello tacher tell me whats my lesson", "[16:57.10] Look right through me,", "[24:00.36] look right through me", "[27:04.57] And I find it kind of funny", "[34:08.16] I find it kind of sad", "[46:10.42] The dream in which Im dying", "[57:13.70] Are the best Ive ever had", "[68:16.47] I find it hard to tell you", "[73:19.47] Cos I find it hard to take", "[86:22.56] When people run in circles", "[92:25.91] Its a very very"]'
+    },
+
+    // HTML Table
+    {
+        "test_id": 1683,
+        "input_type": "number",
+        "input_name": "row",
+        "input_value": "0"
+    },
+    {
+        "test_id": 1683,
+        "input_type": "number",
+        "input_name": "column",
+        "input_value": "1"
+    },
+    {
+        "test_id": 1683,
+        "input_type": "string",
+        "input_name": "table",
+        "input_value": "<table><tr><td>1</td><td>TWO</td></tr><tr><td>three</td><td>FoUr4</td></tr></table>"
+    },
+    {
+        "test_id": 1684,
+        "input_type": "number",
+        "input_name": "row",
+        "input_value": "1"
+    },
+    {
+        "test_id": 1684,
+        "input_type": "number",
+        "input_name": "column",
+        "input_value": "0"
+    },
+    {
+        "test_id": 1684,
+        "input_type": "string",
+        "input_name": "table",
+        "input_value": "<table><tr><td>1</td><td>TWO</td></tr></table>"
+    },
+    {
+        "test_id": 1685,
+        "input_type": "number",
+        "input_name": "row",
+        "input_value": "1"
+    },
+    {
+        "test_id": 1685,
+        "input_type": "number",
+        "input_name": "column",
+        "input_value": "1"
+    },
+    {
+        "test_id": 1685,
+        "input_type": "string",
+        "input_name": "table",
+        "input_value": "<table><tr><td>7BusWMJ</td><td>D</td><td>5QPh9o</td></tr><tr><td>4Z</td><td>9Z</td><td>okc3</td></tr><tr><td>7mV88j</td><td>K358zV8</td><td>Y2vE</td></tr></table>"
+    },
+    {
+        "test_id": 1686,
+        "input_type": "number",
+        "input_name": "row",
+        "input_value": "0"
+    },
+    {
+        "test_id": 1686,
+        "input_type": "number",
+        "input_name": "column",
+        "input_value": "0"
+    },
+    {
+        "test_id": 1686,
+        "input_type": "string",
+        "input_name": "table",
+        "input_value": "<table><tr><td>mhPuzp82Mm</td><td>dQijA9O</td><td>x</td><td>2p1GX2lTrM</td></tr><tr><td>4hcQ</td><td>a046</td><td>8bQ7</td><td>Nmdt</td></tr><tr><td>jjC</td><td>zJ5SY05n</td><td>XQxJ</td><td>4yIXC8</td></tr></table>"
+    },
+    {
+        "test_id": 1687,
+        "input_type": "number",
+        "input_name": "row",
+        "input_value": "5"
+    },
+    {
+        "test_id": 1687,
+        "input_type": "number",
+        "input_name": "column",
+        "input_value": "4"
+    },
+    {
+        "test_id": 1687,
+        "input_type": "string",
+        "input_name": "table",
+        "input_value": "<table><tr><td>jQu9ABs8l</td><td>9alQS</td><td>6j</td><td>x0C</td><td>VJwINu0wjE</td></tr><tr><td>52K</td><td>w5P</td><td>K0HTHBB</td><td>76H</td><td>2Up4kl</td></tr><tr><td>d7J9bn7lx</td><td>unJT</td><td>mdICgjl</td><td>v0</td><td>LKvS1LbYBo</td></tr><tr><td>eld9</td><td>O</td><td>Yqe184E9</td><td>b45QX0313A</td><td>4M02</td></tr><tr><td>6XKiOf96</td><td>wb7</td><td>HW5535kri</td><td>81U</td><td>V64O2502a</td></tr><tr><td>o8</td><td>col7G7g</td><td>y92s3R</td><td>q1</td><td>zl0LizILrm</td></tr></table>"
+    },
+    {
+        "test_id": 1688,
+        "input_type": "number",
+        "input_name": "row",
+        "input_value": "9"
+    },
+    {
+        "test_id": 1688,
+        "input_type": "number",
+        "input_name": "column",
+        "input_value": "10"
+    },
+    {
+        "test_id": 1688,
+        "input_type": "string",
+        "input_name": "table",
+        "input_value": "<table><tr><td>1</td><td>040S713</td><td>2974b</td><td>Pp4Y9</td><td>UWvp2Sq6Sd</td><td>997r6De</td><td>Bh</td><td>TBy</td><td>Ss6C</td><td>8c</td></tr><tr><td>2</td><td>R81hX704</td><td>89b6a6</td><td>jwk0b</td><td>JC80xBvW</td><td>Ka</td><td>7</td><td>E3Lx</td><td>0wg1</td><td>4HCs</td></tr><tr><td>C6d2</td><td>o2N9Twup6</td><td>Pa42t</td><td>88T0itrA</td><td>DtAmM23</td><td>09Fseat</td><td>Qd5j8Cg</td><td>N20GvC8sk2</td><td>Eqq</td><td>Dq2XnGa0</td></tr><tr><td>Kd</td><td>SO4cZHM</td><td>x</td><td>ie3lbmsvx</td><td>23jWU</td><td>3UjEeT9h</td><td>Es9K7q5</td><td>ij58GnGEuk</td><td>5</td><td>bx0</td></tr><tr><td>aNXo91iG78</td><td>6M</td><td>6J9Lf8b5</td><td>MbQ1HRGtDH</td><td>5skjIH</td><td>P7z2SQnlX2</td><td>6ng</td><td>gAvz4dtCH</td><td>78NN98d</td><td>F8zy4SHXA1</td></tr><tr><td>khAM1</td><td>TIJ</td><td>gA034V</td><td>Cg95</td><td>62</td><td>6N371</td><td>1IN1I</td><td>b</td><td>PafB8Bnf</td><td>6jah</td></tr><tr><td>A4q</td><td>KWvhoy76Z</td><td>WLRK</td><td>0u</td><td>AC6H</td><td>JXM8WxO</td><td>0riDU6</td><td>1</td><td>BX327aD0</td><td>j2WDGTiIL</td></tr><tr><td>eCfoZ7</td><td>h96JOr3</td><td>93gC</td><td>jZT1ZShL3</td><td>NP3</td><td>T6a3KG</td><td>pN</td><td>3jVF</td><td>PZ4P</td><td>3bQk4TKe</td></tr><tr><td>6</td><td>z</td><td>VN</td><td>1PlI5T5</td><td>m5P</td><td>N</td><td>6Rz4CAC31r</td><td>7A732yr74</td><td>60</td><td>669N5t</td></tr><tr><td>ugT9</td><td>BM9</td><td>x6wi</td><td>NLMrzA9</td><td>Y61Dd8MF</td><td>45G9Nq15uS</td><td>VcDP</td><td>A</td><td>z</td><td>08HL8EXL5S</td></tr></table>"
+    },
+    {
+        "test_id": 1689,
+        "input_type": "number",
+        "input_name": "row",
+        "input_value": "0"
+    },
+    {
+        "test_id": 1689,
+        "input_type": "number",
+        "input_name": "column",
+        "input_value": "6"
+    },
+    {
+        "test_id": 1689,
+        "input_type": "string",
+        "input_name": "table",
+        "input_value": "<table><tr><th>CIRCUMFERENCE</th><th>1</th><th>2</th><th>3</th><th>4</th><th>5</th><th>6</th></tr><tr><td>BITS</td><td>3</td><td>4</td><td>8</td><td>10</td><td>12</td><td>15</td></tr></table>"
+    },
+
+    // Chess Notation
+    {
+        "test_id": 1690,
+        "input_type": "string",
+        "input_name": "notation",
+        "input_value": "rnbqkbnr/pppppppp/8/8/4P3/8/PPPP1PPP/RNBQKBNR"
+    },
+    {
+        "test_id": 1691,
+        "input_type": "string",
+        "input_name": "notation",
+        "input_value": "rnbqkbnr/pppppppp/8/8/8/8/PPPPPPPP/RNBQKBNR"
+    },
+    {
+        "test_id": 1692,
+        "input_type": "string",
+        "input_name": "notation",
+        "input_value": "2kr3r/pp1nbppp/3p1n2/q1pPp1B1/4P1b1/2N2N2/PPP1BPPP/R2Q2RK"
+    },
+    {
+        "test_id": 1693,
+        "input_type": "string",
+        "input_name": "notation",
+        "input_value": "rNBNn1nR/RN2BNbp/BN3Br1/B1BBp1Kb/npRrBrpb/QB2k1QR/q1nrn2r/bbNBN3"
+    },
+    {
+        "test_id": 1694,
+        "input_type": "string",
+        "input_name": "notation",
+        "input_value": "bN2nrp1/n1nQn1n1/p1bPRPrb/n2Q1Nrb/Bn1nBRnB/Q1n1N1b1/qk1n1R2/Q1n2n1Q"
+    },
+    {
+        "test_id": 1695,
+        "input_type": "string",
+        "input_name": "notation",
+        "input_value": "PkpRnNnB/bqBkbb1k/K2n4/N1BbkP2/QB2kNQk/q1nRNnBB/pbp1RbN1/P1PR1Np1"
+    },
+    {
+        "test_id": 1696,
+        "input_type": "string",
+        "input_name": "notation",
+        "input_value": "N3rrB1/B4NR1/q1pNPb2/k1p1PQQK/nNb1bbr1/n2NP1K1/rb1bRn2/rp1B3p"
+    },
+    {
+        "test_id": 1697,
+        "input_type": "string",
+        "input_name": "notation",
+        "input_value": "K1Rnrk11/n7/NKb1r1Qq/r1Q2b2/bKBrNBr1/BnpKKr1B/NB1RnNN1/r1RKQ1N1"
+    },
+    {
+        "test_id": 1698,
+        "input_type": "string",
+        "input_name": "notation",
+        "input_value": "p1rKBRkK/P2qqr1p/nbKnb12/RnrrBkbK/NPn1BN2/kb2B1BB/QQ1ppn2/r1Pn1nB1"
+    },
+    {
+        "test_id": 1699,
+        "input_type": "string",
+        "input_name": "notation",
+        "input_value": "k3KRBk/PNkqN12/pqNB1Qp1/N1nbrk1q/n2nK1Bp/BrRBN1Pk/K1pBKRRR/bP2R21"
+    },
+
+    // Cells Joining
+    {
+        "test_id": 1700,
+        "input_type": "arrayOfStrings",
+        "input_name": "table",
+        "input_value": '["+----+--+-----+----+","|abcd|56|!@#$%|qwer|","|1234|78|^&=()|tyui|","+----+--+-----+----+","|zxcv|90|77777|stop|","+----+--+-----+----+","|asdf|~~|ghjkl|100$|","+----+--+-----+----+"]'
+    },
+    {
+        "test_id": 1701,
+        "input_type": "arrayOfStrings",
+        "input_name": "table",
+        "input_value": '["+-----+-----+--------+-----------+--------+","|fwdaw|dddd|42|prettylong|table|","+-----+-----+--------+-----------+--------+","|is|long|ffffffff|ff|border|","+-----+-----+--------+-----------+--------+","||||||","||||||","+-----+-----+--------+-----------+--------+","|empty|cells|are|best|thereis|","+-----+-----+--------+-----------+--------+"]'
+    },
+    {
+        "test_id": 1702,
+        "input_type": "arrayOfStrings",
+        "input_name": "table",
+        "input_value": '["+-+-+--+--+--+-+-----+-+---+----+-+-------------------------------------------+","|1|1||||3||4|||5|ggg|","+-+-+--+--+--+-+-----+-+---+----+-+-------------------------------------------+","|||11|23|44||55555||abc|defg|||","+-+-+--+--+--+-+-----+-+---+----+-+-------------------------------------------+","||||||||||||#$%#|","+-+-+--+--+--+-+-----+-+---+----+-+-------------------------------------------+","||||||||||||!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!|","+-+-+--+--+--+-+-----+-+---+----+-+-------------------------------------------+","|*|*|42|||||0|=)||||","+-+-+--+--+--+-+-----+-+---+----+-+-------------------------------------------+"]'
+    },
+    {
+        "test_id": 1703,
+        "input_type": "arrayOfStrings",
+        "input_name": "table",
+        "input_value": '["+-+-+--+--+--+-+-----+-+---+----+-+-------------------------------------------+","|1|1||||3||4|||5|ggg|","+-+-+--+--+--+-+-----+-+---+----+-+-------------------------------------------+","|||11|23|44||55555||abc|defg|||","+-+-+--+--+--+-+-----+-+---+----+-+-------------------------------------------+","||||||||||||#$%#|","+-+-+--+--+--+-+-----+-+---+----+-+-------------------------------------------+","||||||||||||!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!|","+-+-+--+--+--+-+-----+-+---+----+-+-------------------------------------------+","|*|*|42|||||0|=)||||","+-+-+--+--+--+-+-----+-+---+----+-+-------------------------------------------+","||||||||||||#$%#|","|||||||*|||dd||#$%#|","||||||||||||#$%#|","+-+-+--+--+--+-+-----+-+---+----+-+-------------------------------------------+","|1|1||||3||4|||5|ggg|","+-+-+--+--+--+-+-----+-+---+----+-+-------------------------------------------+","|||11|23|44||55555||abc|defg|||","+-+-+--+--+--+-+-----+-+---+----+-+-------------------------------------------+","||||||||||||#$%#|","+-+-+--+--+--+-+-----+-+---+----+-+-------------------------------------------+","||||||||||||!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!|","+-+-+--+--+--+-+-----+-+---+----+-+-------------------------------------------+","|*|*|42|||||0|=)||||","+-+-+--+--+--+-+-----+-+---+----+-+-------------------------------------------+"]'
+    },
+    {
+        "test_id": 1704,
+        "input_type": "arrayOfStrings",
+        "input_name": "table",
+        "input_value": '["+-+-+--+--+--+-+-----+-+---+----+-+-------------------------------------------+","|1|1||||3||4|||5|ggg|","+-+-+--+--+--+-+-----+-+---+----+-+-------------------------------------------+"]'
+    },
+    {
+        "test_id": 1700,
+        "input_type": "matrix",
+        "input_name": "coords",
+        "input_value": "[[2, 0], [1, 1]]"
+    },
+    {
+        "test_id": 1701,
+        "input_type": "matrix",
+        "input_name": "coords",
+        "input_value": "[[3, 0], [3, 4]]"
+    },
+    {
+        "test_id": 1702,
+        "input_type": "matrix",
+        "input_name": "coords",
+        "input_value": "[[4, 0], [0, 11]]"
+    },
+    {
+        "test_id": 1703,
+        "input_type": "matrix",
+        "input_name": "coords",
+        "input_value": "[[5, 6], [4, 9]]"
+    },
+    {
+        "test_id": 1704,
+        "input_type": "matrix",
+        "input_name": "coords",
+        "input_value": "[[0, 1], [0, 10]]"
+    },
+
+    // First Operation Character
+    {
+        "test_id": 1705,
+        "input_type": "string",
+        "input_name": "expr",
+        "input_value": "(2 + 2) * 2"
+    },
+    {
+        "test_id": 1706,
+        "input_type": "string",
+        "input_name": "expr",
+        "input_value": "2 + 2 * 2"
+    },
+    {
+        "test_id": 1707,
+        "input_type": "string",
+        "input_name": "expr",
+        "input_value": "((2 + 2) * 2) * 3 + (2 + (2 * 2))"
+    },
+    {
+        "test_id": 1708,
+        "input_type": "string",
+        "input_name": "expr",
+        "input_value": "2+((22+2222)+(2222+222))"
+    },
+    {
+        "test_id": 1709,
+        "input_type": "string",
+        "input_name": "expr",
+        "input_value": "2 + 3 * 45 * 56 + 198 + 10938 * 102938 + 5"
+    },
+    {
+        "test_id": 1710,
+        "input_type": "string",
+        "input_name": "expr",
+        "input_value": "1022224552222222 * 3"
+    },
+    {
+        "test_id": 1711,
+        "input_type": "string",
+        "input_name": "expr",
+        "input_value": "4 * 3 + 2"
+    },
+
+    // Count Elements
+    {
+        "test_id": 1712,
+        "input_type": "string",
+        "input_name": "inputString",
+        "input_value": "[[0, 20], [33, 99]]"
+    },
+    {
+        "test_id": 1713,
+        "input_type": "string",
+        "input_name": "inputString",
+        "input_value": '[ \"one\", 2, \"three\" ]'
+    },
+    {
+        "test_id": 1714,
+        "input_type": "string",
+        "input_name": "inputString",
+        "input_value": "true"
+    },
+    {
+        "test_id": 1715,
+        "input_type": "string",
+        "input_name": "inputString",
+        "input_value": "[[1, 2, [3]], 4]"
+    },
+    {
+        "test_id": 1716,
+        "input_type": "string",
+        "input_name": "inputString",
+        "input_value": '[\"oh, no! kind, of, tricky\", \"test, case\"]'
+    },
+    {
+        "test_id": 1717,
+        "input_type": "string",
+        "input_name": "inputString",
+        "input_value": '\"try this!, [1, 2, 3, 32], false\"'
+    },
+    {
+        "test_id": 1718,
+        "input_type": "string",
+        "input_name": "inputString",
+        "input_value": '\"a,,,,,,,,,,,,,,asdf\"'
+    },
+    {
+        "test_id": 1719,
+        "input_type": "string",
+        "input_name": "inputString",
+        "input_value": "1023456789"
+    },
+    {
+        "test_id": 1720,
+        "input_type": "string",
+        "input_name": "inputString",
+        "input_value": '[\"ZZZ]zero\"]'
+    },
+    {
+        "test_id": 1721,
+        "input_type": "string",
+        "input_name": "inputString",
+        "input_value": '[true,\"false\", true, [2], false, false]'
+    },
+    {
+        "test_id": 1722,
+        "input_type": "string",
+        "input_name": "inputString",
+        "input_value": "[]"
+    },
+    {
+        "test_id": 1723,
+        "input_type": "string",
+        "input_name": "inputString",
+        "input_value": '[\"[   -45,   95]   \", [ 87,  -655]]'
+    },
+    {
+        "test_id": 1724,
+        "input_type": "string",
+        "input_name": "inputString",
+        "input_value": "111"
+    },
+
+    // Tree Bottom
+    {
+        "test_id": 1725,
+        "input_type": "string",
+        "input_name": "tree",
+        "input_value": "(2 (7 (2 () ()) (6 (5 () ()) (11 () ()))) (5 () (9 (4 () ()) ())))"
+    },
+    {
+        "test_id": 1726,
+        "input_type": "string",
+        "input_name": "tree",
+        "input_value": "(1 () ())"
+    },
+    {
+        "test_id": 1727,
+        "input_type": "string",
+        "input_name": "tree",
+        "input_value": "(1000 () ())"
+    },
+    {
+        "test_id": 1728,
+        "input_type": "string",
+        "input_name": "tree",
+        "input_value": "(413 (683 () ()) (355 (913 (985 () ()) ()) ()))"
+    },
+    {
+        "test_id": 1729,
+        "input_type": "string",
+        "input_name": "tree",
+        "input_value": "(65 (88 (45 (4 () ()) ()) ()) (1000000000 () ()))"
+    },
+    {
+        "test_id": 1730,
+        "input_type": "string",
+        "input_name": "tree",
+        "input_value": "(1 (2 (4 (8 () ()) (9 () ())) (5 (10 () ()) (11 () ()))) (3 (6 (12 () ()) (13 () ())) (7 (14 () ()) (15 () ()))))"
+    },
+    {
+        "test_id": 1731,
+        "input_type": "string",
+        "input_name": "tree",
+        "input_value": "(1 () (2 () (3 () (5 () (8 () (13 () (21 () (34 () ()))))))))"
+    },
+
+    // Befunge-93
+    {
+        "test_id": 1732,
+        "input_type": "arrayOfStrings",
+        "input_name": "program",
+        "input_value": '["1+:::*.9`#@_"]'
+    },
+    {
+        "test_id": 1733,
+        "input_type": "arrayOfStrings",
+        "input_name": "program",
+        "input_value": '["@"]'
+    },
+    {
+        "test_id": 1734,
+        "input_type": "arrayOfStrings",
+        "input_name": "program",
+        "input_value": '["v>v>", "v^v^", "v^v^", "v^v^", ">^>^"]'
+    },
+    {
+        "test_id": 1735,
+        "input_type": "arrayOfStrings",
+        "input_name": "program",
+        "input_value": '["94/.@"]'
+    },
+
+    // Pipes Game
+    {
+        "test_id": 1736,
+        "input_type": "arrayOfStrings",
+        "input_name": "state",
+        "input_value": '["a224C22300000","0001643722B00","0b27275100000","00c7256500000","0006A45000000"]'
+    },
+    {
+        "test_id": 1737,
+        "input_type": "arrayOfStrings",
+        "input_name": "state",
+        "input_value": '["a000","000A"]'
+    },
+    {
+        "test_id": 1738,
+        "input_type": "arrayOfStrings",
+        "input_name": "state",
+        "input_value": '["a727272777A"]'
+    },
+    {
+        "test_id": 1739,
+        "input_type": "arrayOfStrings",
+        "input_name": "state",
+        "input_value": '["a","7","1","7","7","1","1","A"]'
+    },
+    {
+        "test_id": 1740,
+        "input_type": "arrayOfStrings",
+        "input_name": "state",
+        "input_value": '["A0000b0000","0000000000","0000000000","0000a00000","0000000000","0c00000000","01000000B0","0C00000000"]'
+    },
+    {
+        "test_id": 1741,
+        "input_type": "arrayOfStrings",
+        "input_name": "state",
+        "input_value": '["0000000000","0000000000","0000000000","0000000000","0000000000","0000000000","0000000000","0000000000"]'
+    },
+    {
+        "test_id": 1742,
+        "input_type": "arrayOfStrings",
+        "input_name": "state",
+        "input_value": '["0020400040","1203300300","7340000000","2040100000","7000500700","0000200000","0002303000","0000000600"]'
+    },
+    {
+        "test_id": 1743,
+        "input_type": "arrayOfStrings",
+        "input_name": "state",
+        "input_value": '["0002270003777z24","3a40052001000101","1064000001000101","1006774001032501","1000001001010001","1010001001064035","6227206A0622Z250"]'
+    },
+    {
+        "test_id": 1744,
+        "input_type": "arrayOfStrings",
+        "input_name": "state",
+        "input_value": '["00p2400003777z24","1a406P0001000101","1064000001000101","1006774001032501","1000001001010001","1000001001064035","6227276A0622Z250"]'
+    },
+    {
+        "test_id": 1745,
+        "input_type": "arrayOfStrings",
+        "input_name": "state",
+        "input_value": '["3277222400000000","1000032A40000000","1000010110000000","1Q2227277q000000","1000010110000000","1000062a50000000","6222222500000000"]'
+    },
+    {
+        "test_id": 1746,
+        "input_type": "arrayOfStrings",
+        "input_name": "state",
+        "input_value": '["3222222400000000","1000032A40000000","1000010110000000","72q227277Q000000","1000010110000000","1000062a50000000","6222222500000000"]'
+    },
+
+    // Game 2048
+    {
+        "test_id": 1747,
+        "input_type": "string",
+        "input_name": "path",
+        "input_value": "RR"
+    },
+    {
+        "test_id": 1747,
+        "input_type": "matrix",
+        "input_name": "grid",
+        "input_value": "[[0, 0, 0, 0], [0, 0, 2, 2], [0, 0, 2, 4], [2, 2, 4, 8]]"
+    },
+    {
+        "test_id": 1748,
+        "input_type": "string",
+        "input_name": "path",
+        "input_value": "D"
+    },
+    {
+        "test_id": 1748,
+        "input_type": "matrix",
+        "input_name": "grid",
+        "input_value": "[[0, 0, 0, 2], [0, 0, 4, 2], [0, 0, 4, 2], [0, 0, 4, 2]]"
+    },
+    {
+        "test_id": 1749,
+        "input_type": "string",
+        "input_name": "path",
+        "input_value": "L"
+    },
+    {
+        "test_id": 1749,
+        "input_type": "matrix",
+        "input_name": "grid",
+        "input_value": "[[0, 2, 2, 0], [0, 4, 2, 2], [2, 4, 4, 8], [2, 4, 0, 0]]"
+    },
+    {
+        "test_id": 1750,
+        "input_type": "string",
+        "input_name": "path",
+        "input_value": "DD"
+    },
+    {
+        "test_id": 1750,
+        "input_type": "matrix",
+        "input_name": "grid",
+        "input_value": "[[0, 0, 0, 2], [0, 0, 4, 2], [0, 0, 4, 2], [0, 0, 4, 2]]"
+    },
+    {
+        "test_id": 1751,
+        "input_type": "string",
+        "input_name": "path",
+        "input_value": "DRRD"
+    },
+    {
+        "test_id": 1751,
+        "input_type": "matrix",
+        "input_name": "grid",
+        "input_value": "[[0, 0, 0, 2], [0, 0, 4, 2], [0, 0, 4, 2], [0, 0, 4, 2]]"
+    },
+    {
+        "test_id": 1752,
+        "input_type": "string",
+        "input_name": "path",
+        "input_value": "URLD"
+    },
+    {
+        "test_id": 1752,
+        "input_type": "matrix",
+        "input_name": "grid",
+        "input_value": "[[2, 4, 8, 16], [256, 128, 64, 32], [512, 1024, 2048, 4096], [65536, 32768, 16384, 8192]]"
+    },
+    {
+        "test_id": 1753,
+        "input_type": "string",
+        "input_name": "path",
+        "input_value": "LLU"
+    },
+    {
+        "test_id": 1753,
+        "input_type": "matrix",
+        "input_name": "grid",
+        "input_value": "[[0, 2, 0, 2], [0, 4, 4, 2], [0, 0, 4, 2], [0, 0, 4, 2]]"
+    },
+    {
+        "test_id": 1754,
+        "input_type": "string",
+        "input_name": "path",
+        "input_value": "LLUR"
+    },
+    {
+        "test_id": 1754,
+        "input_type": "matrix",
+        "input_name": "grid",
+        "input_value": "[[0, 2, 0, 2], [0, 4, 4, 2], [0, 0, 4, 2], [0, 0, 4, 2]]"
+    },
+    {
+        "test_id": 1755,
+        "input_type": "string",
+        "input_name": "path",
+        "input_value": "DRRL"
+    },
+    {
+        "test_id": 1755,
+        "input_type": "matrix",
+        "input_name": "grid",
+        "input_value": "[[0, 0, 0, 2], [0, 0, 4, 2], [0, 0, 4, 2], [0, 0, 4, 2]]"
+    },
+    {
+        "test_id": 1756,
+        "input_type": "string",
+        "input_name": "path",
+        "input_value": "DRRLLD"
+    },
+    {
+        "test_id": 1756,
+        "input_type": "matrix",
+        "input_name": "grid",
+        "input_value": "[[0, 0, 0, 2], [0, 0, 4, 2], [0, 0, 4, 2], [0, 0, 4, 2]]"
+    },
+
+    // Snake Game
+    {
+        "test_id": 1757,
+        "input_type": "string",
+        "input_name": "commands",
+        "input_value": "FFFFFRFFRRLLF"
+    },
+    {
+        "test_id": 1758,
+        "input_type": "string",
+        "input_name": "commands",
+        "input_value": "RFRF"
+    },
+    {
+        "test_id": 1759,
+        "input_type": "string",
+        "input_name": "commands",
+        "input_value": "FRFFRFFRFLFF"
+    },
+    {
+        "test_id": 1760,
+        "input_type": "string",
+        "input_name": "commands",
+        "input_value": "RFRFFLFLFFRFRFFLFLFFRFRFFLFF"
+    },
+    {
+        "test_id": 1761,
+        "input_type": "string",
+        "input_name": "commands",
+        "input_value": "FFFFFRFFRRLLF"
+    },
+    {
+        "test_id": 1762,
+        "input_type": "string",
+        "input_name": "commands",
+        "input_value": "LFLFRFLFRFFF"
+    },
+    {
+        "test_id": 1763,
+        "input_type": "string",
+        "input_name": "commands",
+        "input_value": "LFLFLFFFF"
+    },
+    {
+        "test_id": 1764,
+        "input_type": "string",
+        "input_name": "commands",
+        "input_value": "LFLFFFLFFFFFFLFFFFFFLFFFFFFFFLFFFFFF"
+    },
+    {
+        "test_id": 1757,
+        "input_type": "matrix",
+        "input_name": "gameBoard",
+        "input_value": '[[".",".",".","."],[".",".","<","*"],[".",".",".","*"]]'
+    },
+    {
+        "test_id": 1758,
+        "input_type": "matrix",
+        "input_name": "gameBoard",
+        "input_value": '[[".",".","^",".","."],[".",".","*","*","."],[".",".",".","*","*"]]'
+    },
+    {
+        "test_id": 1759,
+        "input_type": "matrix",
+        "input_name": "gameBoard",
+        "input_value": '[[".",".","*",">","."],[".","*","*",".","."],[".",".",".",".","."]]'
+    },
+    {
+        "test_id": 1760,
+        "input_type": "matrix",
+        "input_name": "gameBoard",
+        "input_value": '[["*","*",">"],["*",".","."],[".",".","."],[".",".","."],[".",".","."],[".",".","."],[".",".","."]]'
+    },
+    {
+        "test_id": 1761,
+        "input_type": "matrix",
+        "input_name": "gameBoard",
+        "input_value": '[[".",".",".",".",".",".",".",".","."],[".",".","<","*","*","*","*",".","."],[".",".",".",".",".",".","*",".","."],[".",".",".",".","*","*","*",".","."],[".",".",".",".","*",".",".",".","."],[".",".",".",".","*",".",".",".","."],[".",".",".",".",".",".",".",".","."]]'
+    },
+    {
+        "test_id": 1762,
+        "input_type": "matrix",
+        "input_name": "gameBoard",
+        "input_value": '[[".",".",".",".",".",".",".",".","."],[".",".","<","*","*","*","*",".","."],[".",".",".",".",".",".","*",".","."],[".",".",".",".","*","*","*",".","."],[".",".",".",".","*",".",".",".","."],[".",".",".",".","*",".",".",".","."],[".",".",".",".",".",".",".",".","."]]'
+    },
+    {
+        "test_id": 1763,
+        "input_type": "matrix",
+        "input_name": "gameBoard",
+        "input_value": '[[".",".",".",".",".",".",".",".","."],[".",".","<","*","*","*",".",".","."],[".",".",".",".",".","*",".",".","."],[".",".",".",".","*","*",".",".","."],[".",".",".",".","*",".","*","*","."],[".",".",".",".","*","*","*",".","."],[".",".",".",".",".",".",".",".","."]]'
+    },
+    {
+        "test_id": 1764,
+        "input_type": "matrix",
+        "input_name": "gameBoard",
+        "input_value": '[[".",".",".",".",".",".",".",".","."],[".",".","*","*","*","*",".",".","."],[".",".",".",".",".","*",".",".","."],[".",".",".",".",".","v",".",".","."],[".",".",".",".",".",".",".",".","."],[".",".",".",".",".",".",".",".","."],[".",".",".",".",".",".",".",".","."]]'
+    },
+
+    // Tetris Game
+    {
+        "test_id": 1765,
+        "input_type": "matrix",
+        "input_name": "pieces",
+        "input_value": '[[[".","#","."],["#","#","#"]], [["#",".","."],["#","#","#"]], [["#","#","."],[".","#","#"]], [["#","#","#","#"]], [["#","#","#","#"]], [["#","#"],["#","#"]]]'
+    },
+    {
+        "test_id": 1766,
+        "input_type": "matrix",
+        "input_name": "pieces",
+        "input_value": '[[["#","#"],["#","#"]], [["#","#"],["#","#"]], [["#","#"],["#","#"]], [["#","#"],["#","#"]], [["#","#"],["#","#"]], [["#","#"],["#","#"]]]'
+    },
+    {
+        "test_id": 1767,
+        "input_type": "matrix",
+        "input_name": "pieces",
+        "input_value": '[[["#","#","#","#"]], [["#","#","#","#"]], [["#","#"],["#","#"]]]'
+    },
+    {
+        "test_id": 1768,
+        "input_type": "matrix",
+        "input_name": "pieces",
+        "input_value": '[[[".","#","#"],["#","#","."]], [[".","#","."],["#","#","#"]], [["#","#","."],[".","#","#"]], [[".","#","."],["#","#","#"]], [["#","#","#","#"]], [["#",".","."],["#","#","#"]], [["#","#"],["#","#"]], [["#","#","#"],[".",".","#"]], [[".","#","#"],["#","#","."]], [[".","#","."],["#","#","#"]], [["#","#","."],[".","#","#"]], [[".","#","."],["#","#","#"]], [["#","#","#","#"]], [["#",".","."],["#","#","#"]], [["#","#"],["#","#"]], [["#","#","#"],[".",".","#"]]]'
+    },
+    {
+        "test_id": 1769,
+        "input_type": "matrix",
+        "input_name": "pieces",
+        "input_value": '[[[".","#","."],["#","#","#"]], [[".",".","#"],["#","#","#"]], [["#","#","."],[".","#","#"]], [[".","#","."],["#","#","#"]], [[".",".","#"],["#","#","#"]], [["#","#","."],[".","#","#"]]]'
+    },
+
+    // Pyraminx Puzzle
+    {
+        "test_id": 1770,
+        "input_type": "arrayOfStrings",
+        "input_name": "faceColors",
+        "input_value": '["R","G","Y","O"]'
+    },
+    {
+        "test_id": 1770,
+        "input_type": "arrayOfStrings",
+        "input_name": "moves",
+        "input_value": `["B","b'","u'","R"]`
+    },
+    {
+        "test_id": 1771,
+        "input_type": "arrayOfStrings",
+        "input_name": "faceColors",
+        "input_value": '["R","G","Y","O"]'
+    },
+    {
+        "test_id": 1771,
+        "input_type": "arrayOfStrings",
+        "input_name": "moves",
+        "input_value": `["l","l'"]`
+    },
+    {
+        "test_id": 1772,
+        "input_type": "arrayOfStrings",
+        "input_name": "faceColors",
+        "input_value": '["R","G","Y","O"]'
+    },
+    {
+        "test_id": 1772,
+        "input_type": "arrayOfStrings",
+        "input_name": "moves",
+        "input_value": `["l","l'","u","R","U'","L","R'","u'","l'","L'","r"]`
+    },
+    {
+        "test_id": 1773,
+        "input_type": "arrayOfStrings",
+        "input_name": "faceColors",
+        "input_value": '["R","G","Y","O"]'
+    },
+    {
+        "test_id": 1773,
+        "input_type": "arrayOfStrings",
+        "input_name": "moves",
+        "input_value": '["r"]'
+    },
+    {
+        "test_id": 1774,
+        "input_type": "arrayOfStrings",
+        "input_name": "faceColors",
+        "input_value": '["A","B","C","D"]'
+    },
+    {
+        "test_id": 1774,
+        "input_type": "arrayOfStrings",
+        "input_name": "moves",
+        "input_value": `["l","l'","r'","r","u","U","u'","R'","L","R","L'","B'","U'","b","B","b'"]`
+    },
+
+    // Lines Game
+    {
+        "test_id": 1775,
+        "input_type": "matrix",
+        "input_name": "field",
+        "input_value": '[[".","G",".",".",".",".",".",".","."],[".",".",".",".",".",".",".","V","."],[".","O",".",".","O",".",".",".","."],[".",".",".",".","O",".",".",".","."],[".",".",".",".",".",".",".",".","O"],[".",".",".",".","O",".",".",".","."],[".",".",".",".",".",".",".",".","."],["R",".",".",".",".",".",".","B","R"],[".",".","C",".",".",".",".","Y","O"]]'
+    },
+    {
+        "test_id": 1775,
+        "input_type": "matrix",
+        "input_name": "clicks",
+        "input_value": '[[4,8],[2,1],[4,4],[6,4],[4,8],[1,2],[1,4],[4,8],[6,4]]'
+    },
+    {
+        "test_id": 1775,
+        "input_type": "matrix",
+        "input_name": "newBallsCoordinates",
+        "input_value": '[[1,2],[8,5],[8,6],[1,1],[1,8],[7,4]]'
+    },
+    {
+        "test_id": 1775,
+        "input_type": "arrayOfStrings",
+        "input_name": "newBalls",
+        "input_value": '["R","V","C","G","Y","O"]'
+    },
+    {
+        "test_id": 1776,
+        "input_type": "matrix",
+        "input_name": "field",
+        "input_value": '[[".",".",".",".",".",".",".",".","."],[".",".",".",".",".",".",".",".","."],[".",".","O",".","O",".","O",".","."],[".",".",".","O","O","O",".",".","."],[".",".",".",".",".",".",".",".","O"],[".",".",".","O","O","O",".",".","."],[".",".","O",".","O",".","O",".","."],[".",".",".",".",".",".",".",".","."],[".",".",".",".",".",".",".",".","."]]'
+    },
+    {
+        "test_id": 1776,
+        "input_type": "matrix",
+        "input_name": "clicks",
+        "input_value": '[[4,8],[4,4]]'
+    },
+    {
+        "test_id": 1776,
+        "input_type": "matrix",
+        "input_name": "newBallsCoordinates",
+        "input_value": '[]'
+    },
+    {
+        "test_id": 1776,
+        "input_type": "arrayOfStrings",
+        "input_name": "newBalls",
+        "input_value": '[]'
+    },
+    {
+        "test_id": 1777,
+        "input_type": "matrix",
+        "input_name": "field",
+        "input_value": '[["O",".",".",".",".",".",".",".","."],[".",".",".",".",".",".",".","O","."],[".",".",".",".",".",".","O",".","."],[".",".",".",".",".","O",".",".","."],[".",".",".",".",".",".",".",".","."],[".",".",".","O",".",".",".",".","."],[".",".","O",".",".",".",".",".","."],[".",".",".",".",".",".",".",".","."],[".",".",".",".",".",".",".",".","."]]'
+    },
+    {
+        "test_id": 1777,
+        "input_type": "matrix",
+        "input_name": "clicks",
+        "input_value": '[[0,0],[4,4]]'
+    },
+    {
+        "test_id": 1777,
+        "input_type": "matrix",
+        "input_name": "newBallsCoordinates",
+        "input_value": '[]'
+    },
+    {
+        "test_id": 1777,
+        "input_type": "arrayOfStrings",
+        "input_name": "newBalls",
+        "input_value": '[]'
+    },
+    {
+        "test_id": 1778,
+        "input_type": "matrix",
+        "input_name": "field",
+        "input_value": '[["V",".",".",".","O",".",".",".","O"],["V","O",".",".","O",".",".","O","V"],["V",".","O",".","O",".","O",".","."],["V",".",".","O","O","O",".",".","."],[".",".",".",".",".",".",".",".","O"],["V",".",".","O","O","O",".",".","."],["V",".","O",".","O",".","O",".","."],["V","O",".",".","O",".",".","O","."],["V",".",".",".","O",".",".",".","O"]]'
+    },
+    {
+        "test_id": 1778,
+        "input_type": "matrix",
+        "input_name": "clicks",
+        "input_value": '[[4,8],[4,4],[1,8],[4,0]]'
+    },
+    {
+        "test_id": 1778,
+        "input_type": "matrix",
+        "input_name": "newBallsCoordinates",
+        "input_value": '[]'
+    },
+    {
+        "test_id": 1778,
+        "input_type": "arrayOfStrings",
+        "input_name": "newBalls",
+        "input_value": '[]'
+    },
+    {
+        "test_id": 1779,
+        "input_type": "matrix",
+        "input_name": "field",
+        "input_value": '[["V",".",".",".",".",".",".",".","."],["V",".",".",".",".",".",".",".","V"],["V",".","O",".","O",".","O",".","."],["V",".",".","O","O","O",".",".","."],[".","V","V","V",".",".",".",".","O"],["V",".",".","O","O","O",".",".","."],["V",".","O",".","O",".","O",".","."],["V",".",".",".",".",".",".",".","."],["V",".",".",".",".",".",".",".","."]]'
+    },
+    {
+        "test_id": 1779,
+        "input_type": "matrix",
+        "input_name": "clicks",
+        "input_value": '[[4,8],[4,4],[1,8],[4,0]]'
+    },
+    {
+        "test_id": 1779,
+        "input_type": "matrix",
+        "input_name": "newBallsCoordinates",
+        "input_value": '[]'
+    },
+    {
+        "test_id": 1779,
+        "input_type": "arrayOfStrings",
+        "input_name": "newBalls",
+        "input_value": '[]'
+    },
+    {
+        "test_id": 1780,
+        "input_type": "matrix",
+        "input_name": "field",
+        "input_value": '[["V",".",".",".","O",".",".",".","O"],["V","O",".",".","O",".",".","O","V"],["V",".","O",".","O",".","O",".","."],["V",".",".","O","O","O",".",".","."],[".",".",".",".",".",".",".",".","C"],["V",".",".","O","O","O",".",".","."],["V",".","O",".","O",".","O",".","."],["V","O",".",".","O",".",".","O","."],["V",".",".",".","O",".",".",".","O"]]'
+    },
+    {
+        "test_id": 1780,
+        "input_type": "matrix",
+        "input_name": "clicks",
+        "input_value": '[[4,8],[4,4],[1,8],[4,0]]'
+    },
+    {
+        "test_id": 1780,
+        "input_type": "matrix",
+        "input_name": "newBallsCoordinates",
+        "input_value": '[[0,1],[0,2],[0,3]]'
+    },
+    {
+        "test_id": 1780,
+        "input_type": "arrayOfStrings",
+        "input_name": "newBalls",
+        "input_value": '["R","R","R"]'
+    },
+
+    // Fractal
+    {
+        "test_id": 1781,
+        "input_type": "number",
+        "input_name": "n",
+        "input_value": "1"
+    },
+    {
+        "test_id": 1782,
+        "input_type": "number",
+        "input_name": "n",
+        "input_value": "2"
+    },
+
     // 
 
 
