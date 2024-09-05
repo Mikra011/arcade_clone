@@ -2307,7 +2307,13 @@ const challenges = [
     },
 
 
-    //// __________________________________The Core_______________________________ ////
+    //// __________________________________The Core_______________________________ //////// __________________________________The Core_______________________________ ////
+    //// __________________________________The Core_______________________________ //////// __________________________________The Core_______________________________ ////
+    //// __________________________________The Core_______________________________ //////// __________________________________The Core_______________________________ ////
+    //// __________________________________The Core_______________________________ //////// __________________________________The Core_______________________________ ////
+    //// __________________________________The Core_______________________________ //////// __________________________________The Core_______________________________ ////
+    //// __________________________________The Core_______________________________ //////// __________________________________The Core_______________________________ ////
+    //// __________________________________The Core_______________________________ //////// __________________________________The Core_______________________________ ////
 
     {
         topic_id: 13,
@@ -9831,6 +9837,3868 @@ const challenges = [
             </ul>
         `
     },
+
+
+    //// __________________________________Databases_______________________________ //////// __________________________________Databases_______________________________ ////
+    //// __________________________________Databases_______________________________ //////// __________________________________Databases_______________________________ ////
+    //// __________________________________Databases_______________________________ //////// __________________________________Databases_______________________________ ////
+    //// __________________________________Databases_______________________________ //////// __________________________________Databases_______________________________ ////
+    //// __________________________________Databases_______________________________ //////// __________________________________Databases_______________________________ ////
+    //// __________________________________Databases_______________________________ //////// __________________________________Databases_______________________________ ////
+    //// __________________________________Databases_______________________________ //////// __________________________________Databases_______________________________ ////
+
+
+    {
+        "topic_id": 32,
+        "order_index": 1,
+        "challenge_name": "projectList",
+        "description": "description"
+    },
+    {
+        "topic_id": 32,
+        "order_index": 2,
+        "challenge_name": "countriesSelection",
+        "description": "description"
+    },
+    {
+        "topic_id": 32,
+        "order_index": 3,
+        "challenge_name": "monthlyScholarships",
+        "description": "description"
+    },
+    {
+        "topic_id": 32,
+        "order_index": 4,
+        "challenge_name": "projectsTeam",
+        "description": "description"
+    },
+    {
+        "topic_id": 32,
+        "order_index": 5,
+        "challenge_name": "automaticNotifications",
+        "description": "description"
+    },
+    {
+        "topic_id": 33,
+        "order_index": 6,
+        "challenge_name": "volleyballResults",
+        "description": "description"
+    },
+    {
+        "topic_id": 33,
+        "order_index": 7,
+        "challenge_name": "mostExpensive",
+        "description": "description"
+    },
+    {
+        "topic_id": 33,
+        "order_index": 8,
+        "challenge_name": "contestLeaderboard",
+        "description": "description"
+    },
+    {
+        "topic_id": 33,
+        "order_index": 9,
+        "challenge_name": "gradeDistribution",
+        "description": "description"
+    },
+    {
+        "topic_id": 33,
+        "order_index": 10,
+        "challenge_name": "mischievousNephews",
+        "description": "description"
+    },
+    {
+        "topic_id": 34,
+        "order_index": 11,
+        "challenge_name": "suspectsInvestigation",
+        "description": "description"
+    },
+    {
+        "topic_id": 34,
+        "order_index": 12,
+        "challenge_name": "suspectsInvestigation2",
+        "description": "description"
+    },
+    {
+        "topic_id": 34,
+        "order_index": 13,
+        "challenge_name": "securityBreach",
+        "description": "description"
+    },
+    {
+        "topic_id": 34,
+        "order_index": 14,
+        "challenge_name": "testCheck",
+        "description": "description"
+    },
+    {
+        "topic_id": 34,
+        "order_index": 15,
+        "challenge_name": "expressionsVerification",
+        "description": "description"
+    },
+    {
+        "topic_id": 34,
+        "order_index": 16,
+        "challenge_name": "newsSubscribers",
+        "description": "description"
+    },
+    {
+        "topic_id": 35,
+        "order_index": 17,
+        "challenge_name": "countriesInfo",
+        "description": "description"
+    },
+    {
+        "topic_id": 35,
+        "order_index": 18,
+        "challenge_name": "itemCounts",
+        "description": "description"
+    },
+    {
+        "topic_id": 35,
+        "order_index": 19,
+        "challenge_name": "usersByContinent",
+        "description": "description"
+    },
+    {
+        "topic_id": 35,
+        "order_index": 20,
+        "challenge_name": "movieDirectors",
+        "description": "description"
+    },
+    {
+        "topic_id": 35,
+        "order_index": 21,
+        "challenge_name": "travelDiary",
+        "description": "description"
+    },
+    {
+        "topic_id": 35,
+        "order_index": 22,
+        "challenge_name": "soccerPlayers",
+        "description": "description"
+    },
+    {
+        "topic_id": 35,
+        "order_index": 23,
+        "challenge_name": "marketReport",
+        "description": "description"
+    },
+    {
+        "topic_id": 36,
+        "order_index": 24,
+        "challenge_name": "websiteHacking",
+        "description": "description"
+    },
+    {
+        "topic_id": 36,
+        "order_index": 25,
+        "challenge_name": "nullIntern",
+        "description": "description"
+    },
+    {
+        "topic_id": 36,
+        "order_index": 26,
+        "challenge_name": "legsCount",
+        "description": "description"
+    },
+    {
+        "topic_id": 36,
+        "order_index": 27,
+        "challenge_name": "combinationLock",
+        "description": "description"
+    },
+    {
+        "topic_id": 37,
+        "order_index": 28,
+        "challenge_name": "interestClub",
+        "description": "description"
+    },
+    {
+        "topic_id": 37,
+        "order_index": 29,
+        "challenge_name": "personalHobbies",
+        "description": "description"
+    },
+    {
+        "topic_id": 37,
+        "order_index": 30,
+        "challenge_name": "booksCatalogs",
+        "description": "description"
+    },
+    {
+        "topic_id": 37,
+        "order_index": 31,
+        "challenge_name": "habitatArea",
+        "description": "description"
+    },
+    {
+        "topic_id": 38,
+        "order_index": 32,
+        "challenge_name": "orderOfSuccession",
+        "description": "description"
+    },
+    {
+        "topic_id": 38,
+        "order_index": 33,
+        "challenge_name": "orderingEmails",
+        "description": "description"
+    },
+    {
+        "topic_id": 38,
+        "order_index": 34,
+        "challenge_name": "placesOfInterest",
+        "description": "description"
+    },
+    {
+        "topic_id": 38,
+        "order_index": 35,
+        "challenge_name": "soccerGameSeries",
+        "description": "description"
+    },
+    {
+        "topic_id": 39,
+        "order_index": 36,
+        "challenge_name": "correctIPs",
+        "description": "description"
+    },
+    {
+        "topic_id": 39,
+        "order_index": 37,
+        "challenge_name": "validPhoneNumbers",
+        "description": "description"
+    },
+    {
+        "topic_id": 40,
+        "order_index": 38,
+        "challenge_name": "importantEvents",
+        "description": "description"
+    },
+    {
+        "topic_id": 40,
+        "order_index": 39,
+        "challenge_name": "dateFormatting",
+        "description": "description"
+    },
+    {
+        "topic_id": 40,
+        "order_index": 40,
+        "challenge_name": "pastEvents",
+        "description": "description"
+    },
+    {
+        "topic_id": 40,
+        "order_index": 41,
+        "challenge_name": "netIncome",
+        "description": "description"
+    },
+    {
+        "topic_id": 40,
+        "order_index": 42,
+        "challenge_name": "alarmClocks",
+        "description": "description"
+    },
+    {
+        "topic_id": 41,
+        "order_index": 43,
+        "challenge_name": "companyEmployees",
+        "description": "description"
+    },
+    {
+        "topic_id": 41,
+        "order_index": 44,
+        "challenge_name": "scholarshipsDistribution",
+        "description": "description"
+    },
+    {
+        "topic_id": 41,
+        "order_index": 45,
+        "challenge_name": "userCountries",
+        "description": "description"
+    },
+    {
+        "topic_id": 41,
+        "order_index": 46,
+        "challenge_name": "placesOfInterestPairs",
+        "description": "description"
+    },
+    {
+        "topic_id": 41,
+        "order_index": 47,
+        "challenge_name": "localCalendar",
+        "description": "description"
+    },
+    {
+        "topic_id": 41,
+        "order_index": 48,
+        "challenge_name": "routeLength",
+        "description": "description"
+    },
+    {
+        "topic_id": 42,
+        "order_index": 49,
+        "challenge_name": "currencyCodes",
+        "description": "description"
+    },
+    {
+        "topic_id": 42,
+        "order_index": 50,
+        "challenge_name": "nicknames",
+        "description": "description"
+    },
+    {
+        "topic_id": 42,
+        "order_index": 51,
+        "challenge_name": "tableSecurity",
+        "description": "description"
+    },
+    {
+        "topic_id": 42,
+        "order_index": 52,
+        "challenge_name": "officeBranches",
+        "description": "description"
+    },
+    {
+        "topic_id": 42,
+        "order_index": 53,
+        "challenge_name": "restaurantInfo",
+        "description": "description"
+    },
+    {
+        "topic_id": 43,
+        "order_index": 54,
+        "challenge_name": "studentsInClubs",
+        "description": "description"
+    },
+    {
+        "topic_id": 43,
+        "order_index": 55,
+        "challenge_name": "emptyDepartments",
+        "description": "description"
+    },
+    {
+        "topic_id": 43,
+        "order_index": 56,
+        "challenge_name": "sunnyHolidays",
+        "description": "description"
+    },
+    {
+        "topic_id": 43,
+        "order_index": 57,
+        "challenge_name": "closestCells",
+        "description": "description"
+    },
+    {
+        "topic_id": 43,
+        "order_index": 58,
+        "challenge_name": "top5AverageGrade",
+        "description": "description"
+    },
+    {
+        "topic_id": 43,
+        "order_index": 59,
+        "challenge_name": "salaryDifference",
+        "description": "description"
+    },
+    {
+        "topic_id": 43,
+        "order_index": 60,
+        "challenge_name": "recentHires",
+        "description": "description"
+    },
+    {
+        "topic_id": 43,
+        "order_index": 61,
+        "challenge_name": "checkExpenditure",
+        "description": "description"
+    },
+    {
+        "topic_id": 43,
+        "order_index": 62,
+        "challenge_name": "dancingCompetition",
+        "description": "description"
+    },
+    {
+        "topic_id": 43,
+        "order_index": 63,
+        "challenge_name": "trackingSystem",
+        "description": "description"
+    },
+    {
+        "topic_id": 43,
+        "order_index": 64,
+        "challenge_name": "storageOptimization",
+        "description": "description"
+    },
+    {
+        "topic_id": 43,
+        "order_index": 65,
+        "challenge_name": "consecutiveIds",
+        "description": "description"
+    },
+    {
+        "topic_id": 43,
+        "order_index": 66,
+        "challenge_name": "holidayEvent",
+        "description": "description"
+    },
+    {
+        "topic_id": 43,
+        "order_index": 67,
+        "challenge_name": "hostnamesOrdering",
+        "description": "description"
+    },
+    {
+        "topic_id": 44,
+        "order_index": 68,
+        "challenge_name": "orderAnalytics",
+        "description": "description"
+    },
+    {
+        "topic_id": 44,
+        "order_index": 69,
+        "challenge_name": "customerMessages",
+        "description": "description"
+    },
+    {
+        "topic_id": 44,
+        "order_index": 70,
+        "challenge_name": "orderPrices",
+        "description": "description"
+    },
+    {
+        "topic_id": 45,
+        "order_index": 71,
+        "challenge_name": "findTable",
+        "description": "description"
+    },
+    {
+        "topic_id": 45,
+        "order_index": 72,
+        "challenge_name": "queriesExecution",
+        "description": "description"
+    },
+    {
+        "topic_id": 46,
+        "order_index": 73,
+        "challenge_name": "filmLibrary",
+        "description": "description"
+    },
+    {
+        "topic_id": 46,
+        "order_index": 74,
+        "challenge_name": "bugsInComponent",
+        "description": "description"
+    },
+    {
+        "topic_id": 46,
+        "order_index": 75,
+        "challenge_name": "freeSeats",
+        "description": "description"
+    },
+    {
+        "topic_id": 46,
+        "order_index": 76,
+        "challenge_name": "giftPackaging",
+        "description": "description"
+    },
+    {
+        "topic_id": 46,
+        "order_index": 77,
+        "challenge_name": "stringsStatistics",
+        "description": "description"
+    },
+    {
+        "topic_id": 46,
+        "order_index": 78,
+        "challenge_name": "unluckyEmployees",
+        "description": "description"
+    },
+    {
+        "topic_id": 47,
+        "order_index": 79,
+        "challenge_name": "driversInfo",
+        "description": "description"
+    },
+    {
+        "topic_id": 47,
+        "order_index": 80,
+        "challenge_name": "sortBookChapters",
+        "description": "description"
+    },
+    {
+        "topic_id": 47,
+        "order_index": 81,
+        "challenge_name": "typeInheritance",
+        "description": "description"
+    },
+    {
+        "topic_id": 47,
+        "order_index": 82,
+        "challenge_name": "battleshipGameResults",
+        "description": "description"
+    },
+
+    //// __________________________________Python_______________________________ //////// __________________________________Python_______________________________ ////
+    //// __________________________________Python_______________________________ //////// __________________________________Python_______________________________ ////
+    //// __________________________________Python_______________________________ //////// __________________________________Python_______________________________ ////
+    //// __________________________________Python_______________________________ //////// __________________________________Python_______________________________ ////
+    //// __________________________________Python_______________________________ //////// __________________________________Python_______________________________ ////
+    //// __________________________________Python_______________________________ //////// __________________________________Python_______________________________ ////
+    //// __________________________________Python_______________________________ //////// __________________________________Python_______________________________ ////
+
+
+    {
+        "topic_id": 48,
+        "order_index": 1,
+        "challenge_name": "Collections Truthness",
+        "description": "description"
+    },
+    {
+        "topic_id": 48,
+        "order_index": 2,
+        "challenge_name": "Efficient Comparison",
+        "description": "description"
+    },
+    {
+        "topic_id": 48,
+        "order_index": 3,
+        "challenge_name": "Special Conditional",
+        "description": "description"
+    },
+    {
+        "topic_id": 48,
+        "order_index": 4,
+        "challenge_name": "Language Differences",
+        "description": "description"
+    },
+    {
+        "topic_id": 48,
+        "order_index": 5,
+        "challenge_name": "Count Bits",
+        "description": "description"
+    },
+    {
+        "topic_id": 48,
+        "order_index": 6,
+        "challenge_name": "Modulus",
+        "description": "description"
+    },
+    {
+        "topic_id": 48,
+        "order_index": 7,
+        "challenge_name": "Simple Sort",
+        "description": "description"
+    },
+    {
+        "topic_id": 48,
+        "order_index": 8,
+        "challenge_name": "Base Conversion",
+        "description": "description"
+    },
+    {
+        "topic_id": 48,
+        "order_index": 9,
+        "challenge_name": "Mex Function",
+        "description": "description"
+    },
+    {
+        "topic_id": 48,
+        "order_index": 10,
+        "challenge_name": "List Beautifier",
+        "description": "description"
+    },
+    {
+        "topic_id": 49,
+        "order_index": 11,
+        "challenge_name": "name",
+        "description": "description"
+    },
+    {
+        "topic_id": 49,
+        "order_index": 12,
+        "challenge_name": "name",
+        "description": "description"
+    },
+    {
+        "topic_id": 49,
+        "order_index": 13,
+        "challenge_name": "name",
+        "description": "description"
+    },
+    {
+        "topic_id": 49,
+        "order_index": 14,
+        "challenge_name": "name",
+        "description": "description"
+    },
+    {
+        "topic_id": 49,
+        "order_index": 15,
+        "challenge_name": "name",
+        "description": "description"
+    },
+    {
+        "topic_id": 49,
+        "order_index": 16,
+        "challenge_name": "name",
+        "description": "description"
+    },
+    {
+        "topic_id": 49,
+        "order_index": 17,
+        "challenge_name": "name",
+        "description": "description"
+    },
+    {
+        "topic_id": 49,
+        "order_index": 18,
+        "challenge_name": "name",
+        "description": "description"
+    },
+    {
+        "topic_id": 49,
+        "order_index": 19,
+        "challenge_name": "name",
+        "description": "description"
+    },
+    {
+        "topic_id": 49,
+        "order_index": 20,
+        "challenge_name": "name",
+        "description": "description"
+    },
+    {
+        "topic_id": 50,
+        "order_index": 21,
+        "challenge_name": "name",
+        "description": "description"
+    },
+    {
+        "topic_id": 50,
+        "order_index": 22,
+        "challenge_name": "name",
+        "description": "description"
+    },
+    {
+        "topic_id": 50,
+        "order_index": 23,
+        "challenge_name": "name",
+        "description": "description"
+    },
+    {
+        "topic_id": 50,
+        "order_index": 24,
+        "challenge_name": "name",
+        "description": "description"
+    },
+    {
+        "topic_id": 50,
+        "order_index": 25,
+        "challenge_name": "name",
+        "description": "description"
+    },
+    {
+        "topic_id": 51,
+        "order_index": 26,
+        "challenge_name": "name",
+        "description": "description"
+    },
+    {
+        "topic_id": 51,
+        "order_index": 27,
+        "challenge_name": "name",
+        "description": "description"
+    },
+    {
+        "topic_id": 51,
+        "order_index": 28,
+        "challenge_name": "name",
+        "description": "description"
+    },
+    {
+        "topic_id": 51,
+        "order_index": 29,
+        "challenge_name": "name",
+        "description": "description"
+    },
+    {
+        "topic_id": 52,
+        "order_index": 30,
+        "challenge_name": "name",
+        "description": "description"
+    },
+    {
+        "topic_id": 52,
+        "order_index": 31,
+        "challenge_name": "name",
+        "description": "description"
+    },
+    {
+        "topic_id": 52,
+        "order_index": 32,
+        "challenge_name": "name",
+        "description": "description"
+    },
+    {
+        "topic_id": 52,
+        "order_index": 33,
+        "challenge_name": "name",
+        "description": "description"
+    },
+    {
+        "topic_id": 52,
+        "order_index": 34,
+        "challenge_name": "name",
+        "description": "description"
+    },
+    {
+        "topic_id": 53,
+        "order_index": 35,
+        "challenge_name": "name",
+        "description": "description"
+    },
+    {
+        "topic_id": 53,
+        "order_index": 36,
+        "challenge_name": "name",
+        "description": "description"
+    },
+    {
+        "topic_id": 53,
+        "order_index": 37,
+        "challenge_name": "name",
+        "description": "description"
+    },
+    {
+        "topic_id": 53,
+        "order_index": 38,
+        "challenge_name": "name",
+        "description": "description"
+    },
+    {
+        "topic_id": 53,
+        "order_index": 39,
+        "challenge_name": "name",
+        "description": "description"
+    },
+    {
+        "topic_id": 54,
+        "order_index": 40,
+        "challenge_name": "name",
+        "description": "description"
+    },
+    {
+        "topic_id": 54,
+        "order_index": 41,
+        "challenge_name": "name",
+        "description": "description"
+    },
+    {
+        "topic_id": 54,
+        "order_index": 42,
+        "challenge_name": "name",
+        "description": "description"
+    },
+    {
+        "topic_id": 54,
+        "order_index": 43,
+        "challenge_name": "name",
+        "description": "description"
+    },
+    {
+        "topic_id": 54,
+        "order_index": 44,
+        "challenge_name": "name",
+        "description": "description"
+    },
+    {
+        "topic_id": 54,
+        "order_index": 45,
+        "challenge_name": "name",
+        "description": "description"
+    },
+    {
+        "topic_id": 54,
+        "order_index": 46,
+        "challenge_name": "name",
+        "description": "description"
+    },
+    {
+        "topic_id": 54,
+        "order_index": 47,
+        "challenge_name": "name",
+        "description": "description"
+    },
+    {
+        "topic_id": 55,
+        "order_index": 48,
+        "challenge_name": "name",
+        "description": "description"
+    },
+    {
+        "topic_id": 55,
+        "order_index": 49,
+        "challenge_name": "name",
+        "description": "description"
+    },
+    {
+        "topic_id": 55,
+        "order_index": 50,
+        "challenge_name": "name",
+        "description": "description"
+    },
+    {
+        "topic_id": 55,
+        "order_index": 51,
+        "challenge_name": "name",
+        "description": "description"
+    },
+    {
+        "topic_id": 55,
+        "order_index": 52,
+        "challenge_name": "name",
+        "description": "description"
+    },
+    {
+        "topic_id": 55,
+        "order_index": 53,
+        "challenge_name": "name",
+        "description": "description"
+    },
+    {
+        "topic_id": 55,
+        "order_index": 54,
+        "challenge_name": "name",
+        "description": "description"
+    },
+    {
+        "topic_id": 56,
+        "order_index": 55,
+        "challenge_name": "name",
+        "description": "description"
+    },
+    {
+        "topic_id": 56,
+        "order_index": 56,
+        "challenge_name": "name",
+        "description": "description"
+    },
+    {
+        "topic_id": 56,
+        "order_index": 57,
+        "challenge_name": "name",
+        "description": "description"
+    },
+    {
+        "topic_id": 56,
+        "order_index": 58,
+        "challenge_name": "name",
+        "description": "description"
+    },
+    {
+        "topic_id": 56,
+        "order_index": 59,
+        "challenge_name": "name",
+        "description": "description"
+    },
+    {
+        "topic_id": 56,
+        "order_index": 60,
+        "challenge_name": "name",
+        "description": "description"
+    },
+    {
+        "topic_id": 56,
+        "order_index": 61,
+        "challenge_name": "name",
+        "description": "description"
+    },
+    {
+        "topic_id": 56,
+        "order_index": 62,
+        "challenge_name": "name",
+        "description": "description"
+    },
+    {
+        "topic_id": 56,
+        "order_index": 63,
+        "challenge_name": "name",
+        "description": "description"
+    },
+    {
+        "topic_id": 56,
+        "order_index": 64,
+        "challenge_name": "name",
+        "description": "description"
+    },
+    {
+        "topic_id": 57,
+        "order_index": 65,
+        "challenge_name": "name",
+        "description": "description"
+    },
+    {
+        "topic_id": 57,
+        "order_index": 66,
+        "challenge_name": "name",
+        "description": "description"
+    },
+    {
+        "topic_id": 57,
+        "order_index": 67,
+        "challenge_name": "name",
+        "description": "description"
+    },
+    {
+        "topic_id": 57,
+        "order_index": 68,
+        "challenge_name": "name",
+        "description": "description"
+    },
+    {
+        "topic_id": 57,
+        "order_index": 69,
+        "challenge_name": "name",
+        "description": "description"
+    },
+    {
+        "topic_id": 57,
+        "order_index": 70,
+        "challenge_name": "name",
+        "description": "description"
+    },
+    {
+        "topic_id": 57,
+        "order_index": 71,
+        "challenge_name": "name",
+        "description": "description"
+    },
+    {
+        "topic_id": 57,
+        "order_index": 72,
+        "challenge_name": "name",
+        "description": "description"
+    },
+    {
+        "topic_id": 58,
+        "order_index": 73,
+        "challenge_name": "name",
+        "description": "description"
+    },
+    {
+        "topic_id": 58,
+        "order_index": 74,
+        "challenge_name": "name",
+        "description": "description"
+    },
+    {
+        "topic_id": 58,
+        "order_index": 75,
+        "challenge_name": "name",
+        "description": "description"
+    },
+    {
+        "topic_id": 58,
+        "order_index": 76,
+        "challenge_name": "name",
+        "description": "description"
+    },
+    {
+        "topic_id": 58,
+        "order_index": 77,
+        "challenge_name": "name",
+        "description": "description"
+    },
+    {
+        "topic_id": 59,
+        "order_index": 78,
+        "challenge_name": "name",
+        "description": "description"
+    },
+    {
+        "topic_id": 59,
+        "order_index": 79,
+        "challenge_name": "name",
+        "description": "description"
+    },
+    {
+        "topic_id": 59,
+        "order_index": 80,
+        "challenge_name": "name",
+        "description": "description"
+    },
+    {
+        "topic_id": 59,
+        "order_index": 81,
+        "challenge_name": "name",
+        "description": "description"
+    },
+    {
+        "topic_id": 59,
+        "order_index": 82,
+        "challenge_name": "name",
+        "description": "description"
+    },
+    {
+        "topic_id": 59,
+        "order_index": 83,
+        "challenge_name": "name",
+        "description": "description"
+    },
+    {
+        "topic_id": 59,
+        "order_index": 84,
+        "challenge_name": "name",
+        "description": "description"
+    },
+    {
+        "topic_id": 59,
+        "order_index": 85,
+        "challenge_name": "name",
+        "description": "description"
+    },
+    {
+        "topic_id": 60,
+        "order_index": 86,
+        "challenge_name": "name",
+        "description": "description"
+    },
+    {
+        "topic_id": 60,
+        "order_index": 87,
+        "challenge_name": "name",
+        "description": "description"
+    },
+    {
+        "topic_id": 60,
+        "order_index": 88,
+        "challenge_name": "name",
+        "description": "description"
+    },
+    {
+        "topic_id": 60,
+        "order_index": 89,
+        "challenge_name": "name",
+        "description": "description"
+    },
+    {
+        "topic_id": 60,
+        "order_index": 90,
+        "challenge_name": "name",
+        "description": "description"
+    },
+    {
+        "topic_id": 60,
+        "order_index": 91,
+        "challenge_name": "name",
+        "description": "description"
+    },
+    {
+        "topic_id": 60,
+        "order_index": 92,
+        "challenge_name": "name",
+        "description": "description"
+    },
+
+    //// __________________________________Graphs_______________________________ //////// __________________________________Graphs_______________________________ ////
+    //// __________________________________Graphs_______________________________ //////// __________________________________Graphs_______________________________ ////
+    //// __________________________________Graphs_______________________________ //////// __________________________________Graphs_______________________________ ////
+    //// __________________________________Graphs_______________________________ //////// __________________________________Graphs_______________________________ ////
+    //// __________________________________Graphs_______________________________ //////// __________________________________Graphs_______________________________ ////
+    //// __________________________________Graphs_______________________________ //////// __________________________________Graphs_______________________________ ////
+    //// __________________________________Graphs_______________________________ //////// __________________________________Graphs_______________________________ ////
+
+
+    {
+        "topic_id": 61,
+        "order_index": 1,
+        "challenge_name": 'New Road System',
+        "description": `
+            <p>Once upon a time, in a kingdom far, far away, there lived a King Byteasar I. As a kind and wise ruler, he did everything in his (unlimited) power to make life for his subjects comfortable and pleasant. One cold evening, a messenger arrived at the king's castle with the latest news: all kings in the Kingdoms Union had started enforcing traffic laws! In order to not lose his membership in the Union, King Byteasar decided he must do the same within his kingdom. But what would the citizens think of it?</p>
+    
+            <p>The king decided to start introducing the changes with something more or less simple: change all the roads in the kingdom from two-directional to one-directional (one-way). He personally prepared the <code>roadRegister</code> of the new roads, and now he needs to make sure that the road system is convenient and there will be no traffic jams, i.e., each city has the same number of incoming and outgoing roads. As the Hand of the King, you're the one he has decreed must check his calculations.</p>
+    
+            <h3>Example</h3>
+            <p>For <pre><code>roadRegister = 
+            [[false, true,  false, false], 
+             [false, false, true,  false], 
+             [true,  false, false, true ], 
+             [false, false, true,  false]]
+            </code></pre>
+            the output should be:</p>
+            <code>solution(roadRegister) = true;</code>
+            <p>The cities will be connected as follows:</p>
+            <p>Cities 0, 1, and 3 (0-based) have one incoming and one outgoing road, and city 2 has two incoming and two outgoing roads. Thus, the output should be true.</p>
+    
+            <p>For <pre><code>roadRegister = 
+            [[false, true,  false, false, false, false, false], 
+             [true,  false, false, false, false, false, false], 
+             [false, false, false, true,  false, false, false], 
+             [false, false, true,  false, false, false, false], 
+             [false, false, false, false, false, false, true ], 
+             [false, false, false, false, true,  false, false], 
+             [false, false, false, false, false, true,  false]]</code></pre> 
+            the output should be:</p>
+            <code>solution(roadRegister) = true;</code>
+            <p>Each city has one incoming and one outgoing road.</p>
+    
+            <p>For <pre><code>roadRegister = 
+            [[false, true,  false], 
+             [false, false, false], 
+             [true,  false, false]]</code></pre>
+            the output should be:</p>
+            <code>solution(roadRegister) = false;</code>
+            <p>The cities will be connected as follows:</p>
+            <p>City 1 has one incoming and no outgoing roads, and city 2 has one outgoing and no incoming roads.</p>
+    
+            <h3>Input/Output</h3>
+            <ul>
+                <li><p><span>[execution time limit]</span> 4 seconds (js)</p></li>
+                <li><p><span>[memory limit]</span> 1 GB</p></li>
+                <li>
+                    <p><span>[input]</span> array.array.boolean <code>roadRegister</code></p>
+                    <p>A square matrix of booleans representing the road system in the kingdom, where <code>roadRegister[i][j] = true</code> indicates a one-way road from city <code>i</code> to city <code>j</code>.</p>
+                </li>
+                <li>
+                    <p><span>[output]</span> boolean</p>
+                    <p><code>true</code> if each city has the same number of incoming and outgoing roads, <code>false</code> otherwise.</p>
+                </li>
+            </ul>
+        `
+    },
+    {
+        "topic_id": 61,
+        "order_index": 2,
+        "challenge_name": 'Roads Building',
+        "description": `
+            <p>Once upon a time, in a kingdom far, far away, there lived a King Byteasar II. There was nothing special about him or his kingdom. As a mediocre ruler, he preferred hunting and feasting over doing anything about his kingdom's prosperity.</p>
+        
+            <p>Luckily, his adviser, the wise magician Bitlin, worked for the kingdom's welfare day and night. However, since there was no one to advise him, he completely forgot about one important thing: the roads! Over the years, most of the two-way roads built by Byteasar's predecessors were forgotten and no longer traversable. Only a few roads can still be used.</p>
+        
+            <p>Bitlin wanted each pair of cities to be connected, but couldn't find a way to figure out which roads are missing. Desperate, he turned to his magic crystal ball for help. The crystal showed him a programmer from the distant future: you! Now you're the only one who can save the kingdom. Given the existing roads and the number of cities in the kingdom, you should use the most modern technologies and find out which roads should be built again to connect each pair of cities. Since the crystal ball is quite old and meticulous, it will only transfer the information if it is sorted properly.</p>
+        
+            <p>The roads to be built should be returned in an array sorted lexicographically, with each road stored as [cityi, cityj], where <code>cityi &lt; cityj</code>.</p>
+        
+            <h3>Example</h3>
+            <p>For <pre><code>cities = 4</code></pre> and <pre><code>roads = [[0, 1], [1, 2], [2, 0]]</code></pre>, the output should be:</p>
+            <code>solution(cities, roads) = [[0, 3], [1, 3], [2, 3]];</code>
+            <p>The existing roads are colored black, and the ones to be built are colored red.</p>
+        
+            <h3>Input/Output</h3>
+            <ul>
+                <li><p><span>[execution time limit]</span> 4 seconds (js)</p></li>
+                <li><p><span>[memory limit]</span> 1 GB</p></li>
+                <li>
+                    <p><span>[input]</span> integer <code>cities</code></p>
+                    <p>The number of cities in the kingdom.</p>
+                    <p><span>[input]</span> array.array.integer <code>roads</code></p>
+                    <p>Array of roads in the kingdom. Each road is given as a pair <code>[cityi, cityj]</code>, where <code>0 ≤ cityi, cityj &lt; cities</code> and <code>cityi ≠ cityj</code>. It is guaranteed that no road is given twice.</p>
+                </li>
+                <li>
+                    <p><span>[output]</span> array.array.integer</p>
+                    <p>A unique array of roads that should be built, sorted lexicographically. There's no need to build looping roads, i.e., roads that lead back from a city to itself.</p>
+                </li>
+            </ul>
+        `
+    },
+    {
+        "topic_id": 61,
+        "order_index": 3,
+        "challenge_name": 'Efficient Road Network',
+        "description": `
+            <p>Once upon a time, in a kingdom far, far away, there lived a King Byteasar III. As a smart and educated ruler, he did everything in his (unlimited) power to make every single system within his kingdom efficient. The king went down in history as a great road builder: during his reign, a great number of roads were built, and the road system he created was the most efficient during those dark times.</p>
+        
+            <p>When you started learning about Byteasar's III deeds in your history classes, a creeping doubt crawled into the back of your mind: what if the famous king wasn't so great after all? According to the most recent studies, there were <code>n</code> cities in Byteasar's kingdom, connected by two-way roads. You managed to get information about these roads from the university library, so now you can write a function that will determine whether the road system in Byteasar's kingdom was efficient or not.</p>
+        
+            <p>A road system is considered efficient if it is possible to travel from any city to any other city by traversing at most 2 roads.</p>
+        
+            <h3>Example</h3>
+            <p>For <pre><code>n = 6</code></pre> and <pre><code>roads = [[3, 0], [0, 4], [5, 0], [2, 1], [1, 4], [2, 3], [5, 2]]</code></pre>, the output should be:</p>
+            <code>solution(n, roads) = true;</code>
+            <p>Here's how the road system can be represented:</p>
+            <p>The road system is efficient as you can travel between any pair of cities by traversing at most 2 roads.</p>
+        
+            <p>For <pre><code>n = 6</code></pre> and <pre><code>roads = [[0, 4], [5, 0], [2, 1], [1, 4], [2, 3], [5, 2]]</code></pre>, the output should be:</p>
+            <code>solution(n, roads) = false;</code>
+            <p>Here's how the road system can be represented:</p>
+            <p>As you can see, it's only possible to travel from city 3 to city 4 by traversing at least 3 roads.</p>
+        
+            <h3>Input/Output</h3>
+            <ul>
+                <li><p><span>[execution time limit]</span> 4 seconds (js)</p></li>
+                <li><p><span>[memory limit]</span> 1 GB</p></li>
+                <li>
+                    <p><span>[input]</span> integer <code>n</code></p>
+                    <p>The number of cities in the kingdom.</p>
+                    <p><span>[input]</span> array.array.integer <code>roads</code></p>
+                    <p>Array of roads in the kingdom. Each road is given as a pair <code>[cityi, cityj]</code>, where <code>0 ≤ cityi, cityj &lt; n</code> and <code>cityi ≠ cityj</code>. It is guaranteed that no road is given twice.</p>
+                </li>
+                <li>
+                    <p><span>[output]</span> boolean</p>
+                    <p><code>true</code> if the road system is efficient, <code>false</code> otherwise.</p>
+                </li>
+            </ul>
+        `
+    },
+    {
+        "topic_id": 61,
+        "order_index": 4,
+        "challenge_name": 'Financial Crisis',
+        "description": `
+            <p>Once upon a time, in a kingdom far, far away, there lived a King Byteasar IV. His kingdom, in the middle of a financial crisis, was struggling to keep the economy out of a recession. Unfortunately, there was not much he could do, and after much agonizing, he came to the only solution: one of his cities had to be demolished, since keeping communication active between all the cities is way too expensive.</p>
+        
+            <p>It is not yet known if Byteasar chose a city to destroy after careful planning or picked one at random. As a person with a PhD in History and a Nobel Prize in Computer Science, you can solve this mystery! Archaeologists have recently found a manuscript with information about the roads between the cities, which is now stored in the <code>roadRegister</code> matrix. You want to try and remove each city one by one and compare the road registers obtained this way. Thus, you'll be able to compare the obtained roads and determine whether the one picked by Byteasar was the best by some criteria.</p>
+        
+            <p>Given the <code>roadRegister</code>, return an array of all the road registers obtained after removing each of the cities one by one.</p>
+        
+            <h3>Example</h3>
+            <p>For <pre><code>roadRegister = 
+            [[false, true,  true,  false], 
+             [true,  false, true,  false], 
+             [true,  true,  false, true ], 
+             [false, false, true,  false]]</code></pre> 
+             
+             the output should be:</p>
+
+            <pre><code>solution(roadRegister) = [
+              [[false, true,  false],
+               [true,  false, true ],
+               [false, true,  false]],
+              [[false, true,  false],
+               [true,  false, true ],
+               [false, true,  false]],
+              [[false, true,  false],
+               [true,  false, false],
+               [false, false, false]],
+              [[false, true,  true ],
+               [true,  false, true ],
+               [true,  true,  false]]
+            ];</code></pre>
+            <p>Here's the city connection that the given catalog represents:</p>
+            <p>And here's how the cities are connected with one of the cities destroyed (cities 0 - 3, respectively):</p>
+        
+            <h3>Input/Output</h3>
+            <ul>
+                <li><p><span>[execution time limit]</span> 4 seconds (js)</p></li>
+                <li><p><span>[memory limit]</span> 1 GB</p></li>
+                <li>
+                    <p><span>[input]</span> array.array.boolean <code>roadRegister</code></p>
+                    <p>Since cartography was not properly developed in the kingdom, the registers were used instead. A register is stored as a square matrix, with its size equal to the number of cities in the kingdom. If <code>roadRegister[i][j] = true</code>, then there is a road between the <code>i</code>th and <code>j</code>th cities; the road doesn't exist otherwise.</p>
+                    <p>It is guaranteed that there are no looping roads, i.e., roads that lead back to the same city it originated from.</p>
+                </li>
+                <li>
+                    <p><span>[output]</span> array.array.array.boolean</p>
+                    <p>Array of the size <code>roadRegister.length</code>, with each of its elements of size <code>(roadRegister.length - 1) × (roadRegister.length - 1)</code>. The <code>i</code>th element of the resulting array should contain the road register of the kingdom with the <code>i</code>th city removed.</p>
+                </li>
+            </ul>
+        `
+    },
+    {
+        "topic_id": 61,
+        "order_index": 5,
+        "challenge_name": 'Naming Roads',
+        "description": `
+            <p>Once upon a time, in a kingdom far, far away, there lived a King Byteasar V. His predecessor, King Byteasar IV, lived quite a long life, and when Byteasar V finally ascended to the throne, he was already 150 years old. The new king had been preparing all his life for his moment of glory and, scared that he wouldn't have enough time to shine, started his reforms right away. The first (and, as it turned out, the last) royal decree, issued within a couple of days of the coronation, ordered the following: each and every road in the kingdom was to be named.</p>
+        
+            <p>Unfortunately, the king didn't have enough time to come up with actual names, so all the roads were to be named with numbers from 0 to <code>roads.length - 1</code>. As a born strategist, Byteasar wanted to make sure that the maps of his kingdom were confusing to enemies, which is why the road names were to be chosen so that no two roads with neighboring names would have a common end.</p>
+        
+            <p>The official cartographers came up with names for the roads, but they're not sure if the constraint the king imposed was actually met, and it's your job to help them out. Given the names for the roads the cartographers came up with, check that no two roads with neighboring names have a common end.</p>
+        
+            <h3>Example</h3>
+            <p>For <pre><code>roads = 
+            [[0, 1, 0], 
+             [4, 1, 2], 
+             [4, 3, 4], 
+             [2, 3, 1], 
+             [2, 0, 3]]</code></pre> 
+             
+            the output should be:</p>
+            <code>solution(roads) = true;</code>
+            <p>Here's what the given road system looks like:</p>
+            <p><img src="example1.png" alt="Example 1" /></p>
+        
+            <p>For <pre><code>roads = 
+            [[2, 3, 1], 
+             [3, 0, 0], 
+             [2, 0, 2]]</code></pre> 
+            
+             the output should be:</p>
+            <code>solution(roads) = false;</code>
+            <p>Here's what the given road system looks like:</p>
+            <p><img src="example2.png" alt="Example 2" /></p>
+        
+            <h3>Input/Output</h3>
+            <ul>
+                <li><p><span>[execution time limit]</span> 4 seconds (js)</p></li>
+                <li><p><span>[memory limit]</span> 1 GB</p></li>
+                <li>
+                    <p><span>[input]</span> array.array.integer <code>roads</code></p>
+                    <p>Array of two-way roads with their names. Each road is given in the format <code>[city1, city2, road_name]</code>, where <code>city1 ≠ city2</code>, and <code>0 ≤ road_name < roads.length</code>. It is guaranteed that there are no duplicate roads or roads with the same name.</p>
+                </li>
+                <li>
+                    <p><span>[output]</span> boolean</p>
+                    <p><code>true</code> if the names of the roads will be confusing to enemies, <code>false</code> otherwise.</p>
+                </li>
+            </ul>
+        `
+    },
+    {
+        "topic_id": 61,
+        "order_index": 6,
+        "challenge_name": 'Great Renaming',
+        "description": `
+            <p>Once upon a time, in a kingdom far, far away, there lived a King Byteasar VI. As any king with such a magnificent name, he was destined to leave a trace in history. Unfortunately, imagination wasn't one of Byteasar's strong suits, so the reform he came up with was quite simple: he ordered that all his kingdom's cities should be renamed. He didn't want to come up with new names (as a king, he'd have to remember them all!), so he ordered the cities to swap their names in such a manner that the <code>i</code>th city would have the name of the city number (<code>i + 1</code>)th. The last city in the Byteasar's kingdom would, naturally, get the name of the very first city.</p>
+        
+            <p>The cartographers were not happy with this reform, since they had to redraw all the kingdom's maps. Before the reform, information about all the roads between the cities were stored in the <code>roadRegister</code>. Prior to redrawing any map, they had to start with updating the register. Your task is to find out the state of the updated register.</p>
+        
+            <h3>Example</h3>
+            <p>For <pre><code>roadRegister = 
+            [[false, true,  true,  false], 
+             [true,  false, true,  false], 
+             [true,  true,  false, true ], 
+             [false, false, true,  false]]</code></pre> 
+
+            the output should be:</p>
+            <pre><code>solution(roadRegister) = 
+            [[false, false, false, true ], 
+             [false, false, true,  true ], 
+             [false, true,  false, true ], 
+             [true,  true,  true,  false]]</code></pre>
+            <p>Here's how the catalog can be represented before and after the Great Renaming:</p>
+            <p><img src="renaming_example.png" alt="Renaming Example" /></p>
+        
+            <h3>Input/Output</h3>
+            <ul>
+                <li><p><span>[execution time limit]</span> 4 seconds (js)</p></li>
+                <li><p><span>[memory limit]</span> 1 GB</p></li>
+                <li>
+                    <p><span>[input]</span> array.array.boolean <code>roadRegister</code></p>
+                    <p>Since cartography has not yet been properly developed in the kingdom, the registers are used instead. A register is stored as a square matrix, with its size equal to the number of cities in the kingdom. If <code>roadRegister[i][j] = true</code>, then there is a road between the <code>i</code>th and the <code>j</code>th cities; the road doesn't exist otherwise.</p>
+                    <p>It is guaranteed that there are no looping roads, i.e., roads that lead back to the same city it originated from.</p>
+                </li>
+                <li>
+                    <p><span>[output]</span> array.array.boolean</p>
+                    <p><code>roadRegister</code> after the Great Renaming.</p>
+                </li>
+            </ul>
+        `
+    },
+    {
+        "topic_id": 61,
+        "order_index": 7,
+        "challenge_name": 'Cities Conquering',
+        "description": `
+            <p>Once upon a time, in a kingdom far, far away, there lived a King Byteasar VII. Since he reigned during the Dark Times, very little is known about his reign. It is known that when he ascended the throne, there were <code>n</code> cities in the kingdom, connected by several two-way roads. But before the young king managed to start ruling, an enemy arrived at the gates: the evil emperor Bugoleon invaded the kingdom and started to conquer the cities, advancing day after day.</p>
+        
+            <p>It is not known how long it took to capture each of the cities, but you've recently discovered an ancient manuscript describing that each day, Bugoleon captured all the cities that had at most 1 neighboring free city at that given moment. Knowing this fact, the number of cities <code>n</code> and all the roads of the kingdom, determine in how many days each of the cities was conquered.</p>
+        
+            <h3>Example</h3>
+            <p>For <pre><code>n = 10</code></pre> and <pre><code>roads = 
+            [[1, 0], [1, 2], [8, 5], [9, 7], [5, 6], [5, 4], [4, 6], [6, 7]]</code></pre>, the output should be:</p>
+            <pre><code>solution(n, roads) = [1, 2, 1, 1, -1, -1, -1, 2, 1, 1]</code></pre>
+            <p>Here's how the cities were conquered:</p>
+            <p><img src="conquest_example.png" alt="Conquest Example" /></p>
+        
+            <h3>Input/Output</h3>
+            <ul>
+                <li><p><span>[execution time limit]</span> 4 seconds (js)</p></li>
+                <li><p><span>[memory limit]</span> 1 GB</p></li>
+                <li>
+                    <p><span>[input]</span> integer <code>n</code></p>
+                    <p>The number of cities in the kingdom.</p>
+                    <p>Guaranteed constraints: 1 ≤ n ≤ 100.</p>
+                </li>
+                <li>
+                    <p><span>[input]</span> array.array.integer <code>roads</code></p>
+                    <p>Array of two-way roads, where each road is given in the format <code>[city1, city2]</code>, meaning that city1 and city2 are connected. It is guaranteed that there is at most one road between two cities, and no road is given twice.</p>
+                    <p>Guaranteed constraints: 0 ≤ roads.length ≤ n · (n - 1) / 2, roads[i].length = 2, roads[i][0] ≠ roads[i][1], 0 ≤ roads[i][j] < n.</p>
+                </li>
+                <li>
+                    <p><span>[output]</span> array.integer</p>
+                    <p>An array of length <code>n</code>, where the <code>i</code>th element is the number of days it took to conquer the <code>i</code>th city, or -1 if the city wasn't conquered.</p>
+                </li>
+            </ul>
+        `
+    },
+    {
+        "topic_id": 61,
+        "order_index": 8,
+        "challenge_name": 'Merging Cities',
+        "description": `
+            <p>Once upon a time, in a kingdom far, far away, there lived a King Byteasar VIII. The king went down in history as a great warrior, since he managed to defeat a longtime enemy that had been capturing the kingdom's cities for more than a century. When the war was over, most of the cities were almost completely destroyed, so Byteasar decided to create new cities by merging them.</p>
+    
+            <p>The king decided to merge each pair of cities <code>city<i></code>, <code>city<i+1></code> for <code>i = 0, 2, 4, ...</code> if they were connected by one of the two-way roads running through the kingdom.</p>
+    
+            <p>Initially, all information about the roads was stored in the <code>roadRegister</code>. Your task is to return the <code>roadRegister</code> after the merging is performed, assuming that after merging the cities re-indexation is done in such a way that any city formed from cities <code>a</code> and <code>b</code> (where <code>a &lt; b</code>) receives index <code>a</code>, and all the cities with numbers <code>i</code> (where <code>i &gt; b</code>) get numbers <code>i - 1</code>.</p>
+    
+            <h3>Example</h3>
+            <p>For <pre><code>roadRegister = 
+            [[false, true,  true,  false, false, false, true ],
+             [true,  false, true,  false, true,  false, false],
+             [true,  true,  false, true,  false, false, true ],
+             [false, false, true,  false, false, true,  true ],
+             [false, true,  false, false, false, false, false],
+             [false, false, false, true,  false, false, false],
+             [true,  false, true,  true,  false, false, false]]</code></pre>
+    
+            the output should be:</p>
+            <pre><code>solution(roadRegister) = 
+            [[false, true,  true,  false, true ],
+             [true,  false, false, true,  true ],
+             [true,  false, false, false, false],
+             [false, true,  false, false, false],
+             [true,  true,  false, false, false]]</code></pre>
+            <p>Here's how the cities were merged:</p>
+            <p><img src="merging_example.png" alt="Merging Example" /></p>
+    
+            <h3>Input/Output</h3>
+            <ul>
+                <li><p><span>[execution time limit]</span> 4 seconds (js)</p></li>
+                <li><p><span>[memory limit]</span> 1 GB</p></li>
+                <li>
+                    <p><span>[input]</span> array.array.boolean <code>roadRegister</code></p>
+                    <p>Since cartography was not properly developed in the kingdom, the registers were used instead. A register is stored as a square matrix, with its size equal to the number of cities in the kingdom. If <code>roadRegister[i][j] = true</code>, then there is a road between the <code>i</code>th and the <code>j</code>th cities; the road doesn't exist otherwise.</p>
+                    <p>It is guaranteed that there are no looping roads, i.e., roads that lead back to the same city it originated from.</p>
+                </li>
+                <li>
+                    <p><span>[output]</span> array.array.boolean</p>
+                    <p>The <code>roadRegister</code> after all the cities are merged.</p>
+                </li>
+            </ul>
+        `
+    },
+    {
+        "topic_id": 61,
+        "order_index": 9,
+        "challenge_name": 'Living On The Roads',
+        "description": `
+            <p>In a kingdom far, far away, there lives a King Byteasar IX. The history of the kingdom is rich with events and conflicts, most of which is focused on its cities. King Byteasar doesn't want to go down in history as a lame duck ruler, and especially doesn't want to have anything to do with the infamous cities of the kingdom.</p>
+    
+            <p>Instead, King Byteasar wants to focus on the roads, which is why he issued a new decree: from now on, all roads are to be considered cities, and all cities are to be considered roads. Now his most grateful subjects must pack up their belongings and move out from the cities to the roads, and the cartographers are busy with building a new <code>roadRegister</code> of the kingdom. All roads of the kingdom are to be named for the cities they connect (i.e., <code>[city1, city2]</code>, <code>city1 &lt; city2</code>), sorted lexicographically and enumerated starting from 0. A new road register for such a system needs to be created.</p>
+    
+            <p>Your task is to help the cartographers build the new road register. Handle the challenge, and the glorious kingdom of Byteasar IX will never have to deal with its pesky cities ever again!</p>
+    
+            <h3>Example</h3>
+            <p>For <pre><code>roadRegister = 
+            [[false, true,  true,  false, false, false],
+             [true,  false, false, true,  false, false],
+             [true,  false, false, false, false, false],
+             [false, true,  false, false, false, false],
+             [false, false, false, false, false, true ],
+             [false, false, false, false, true,  false]]</code></pre>
+    
+            the output should be:</p>
+            <pre><code>solution(roadRegister) = 
+            [[false, true,  true,  false],
+             [true,  false, false, false],
+             [true,  false, false, false],
+             [false, false, false, false]]</code></pre>
+            <p>Here's how the new register can be obtained:</p>
+            <p><img src="road_register_example.png" alt="Road Register Example" /></p>
+    
+            <h3>Input/Output</h3>
+            <ul>
+                <li><p><span>[execution time limit]</span> 4 seconds (js)</p></li>
+                <li><p><span>[memory limit]</span> 1 GB</p></li>
+                <li>
+                    <p><span>[input]</span> array.array.boolean <code>roadRegister</code></p>
+                    <p>Since cartography has not yet been properly developed in the kingdom, the registers are used instead. A register is stored as a square matrix, with its size equal to the number of cities in the kingdom. If <code>roadRegister[i][j] = true</code>, then there is a road between the <code>i</code>th and the <code>j</code>th cities; the road doesn't exist otherwise.</p>
+                    <p>It is guaranteed that there are no looping roads, i.e., roads that lead back to the same city it originated from.</p>
+                </li>
+                <li>
+                    <p><span>[output]</span> array.array.boolean</p>
+                    <p>The <code>roadRegister</code> after all cities are turned into roads, and vice versa.</p>
+                </li>
+            </ul>
+        `
+    },
+    {
+        "topic_id": 62,
+        "order_index": 10,
+        "challenge_name": 'Is Butterfly',
+        "description": `
+            <p>You decided to create an automatic image recognizer that will determine the object in the image based on its contours. The main recognition system is already implemented, and now you need to start the teaching process.</p>
+    
+            <p>Today you want to teach your program to recognize butterfly patterns, which means that you need to implement a function that, given the adjacency matrix representing the contour, will determine whether it's a butterfly or not.</p>
+    
+            <p>The butterfly contour looks like this:</p>
+            <p><img src="butterfly_contour.png" alt="Butterfly Contour" /></p>
+    
+            <p>Given the object's contour as an undirected graph represented by adjacency matrix <code>adj</code>, determine whether it's a butterfly or not.</p>
+    
+            <h3>Example</h3>
+            <p>For <pre><code>adj = 
+            [[false, true, true, false, false],
+             [true, false, true, false, false],
+             [true, true, false, true, true],
+             [false, false, true, false, true],
+             [false, false, true, true, false]]</code></pre>
+    
+            the output should be:</p>
+            <pre><code>solution(adj) = true</code></pre>
+            <p>Here's what the given graph looks like:</p>
+            <p><img src="butterfly_graph.png" alt="Butterfly Graph" /></p>
+    
+            <h3>Input/Output</h3>
+            <ul>
+                <li><p><span>[execution time limit]</span> 4 seconds (js)</p></li>
+                <li><p><span>[memory limit]</span> 1 GB</p></li>
+                <li>
+                    <p><span>[input]</span> array.array.boolean <code>adj</code></p>
+                    <p>An adjacency matrix of an undirected graph.</p>
+                    <p>Guaranteed constraints: <code>adj.length == 5</code>, <code>adj[i].length == 5</code>.</p>
+                </li>
+                <li>
+                    <p><span>[output]</span> boolean</p>
+                    <p><code>true</code> if the given contour is a butterfly, <code>false</code> otherwise.</p>
+                </li>
+            </ul>
+        `
+    },
+    {
+        "topic_id": 62,
+        "order_index": 11,
+        "challenge_name": 'Count Stars',
+        "description": `
+            <p>You decided to create an automatic image recognizer that will determine the object in the image based on its contours. The main recognition system is already implemented, and now you need to start the teaching process.</p>
+    
+            <p>Today you want to teach your program to recognize star patterns in the image of the night sky, which means that you need to implement a function that, given the adjacency matrix representing a number of contours in the sky, will find the number of stars in it.</p>
+    
+            <p>The graph representing some contour is considered to be a star if it is:</p>
+            <ul>
+                <li>a tree of size 2, or</li>
+                <li>a tree of size <code>k > 2</code> with one internal node (which is a tree root at the same time) and <code>k - 1</code> leaves.</li>
+            </ul>
+            <p>Here is an example of some stars:</p>
+            <p><img src="star_patterns.png" alt="Star Patterns" /></p>
+    
+            <p>Given the sky objects' contours as an undirected graph represented by its adjacency matrix <code>adj</code>, calculate the number of stars in it.</p>
+    
+            <h3>Example</h3>
+            <p>For <pre><code>adj = 
+            [[false, true, false, false, false],
+             [true, false, false, false, false],
+             [false, false, false, true, false],
+             [false, false, true, false, false],
+             [false, false, false, false, false]]</code></pre>
+    
+            the output should be:</p>
+            <pre><code>solution(adj) = 2</code></pre>
+            <p>Here's what the given graph looks like:</p>
+            <p><img src="star_graph.png" alt="Star Graph" /></p>
+    
+            <h3>Input/Output</h3>
+            <ul>
+                <li><p><span>[execution time limit]</span> 4 seconds (js)</p></li>
+                <li><p><span>[memory limit]</span> 1 GB</p></li>
+                <li>
+                    <p><span>[input]</span> array.array.boolean <code>adj</code></p>
+                    <p>An adjacency matrix of an undirected graph.</p>
+                    <p>Guaranteed constraints: <code>2 < adj.length ≤ 100</code>, <code>adj[i].length == adj.length</code>.</p>
+                </li>
+                <li>
+                    <p><span>[output]</span> integer</p>
+                    <p>The number of star contours in the sky.</p>
+                </li>
+            </ul>
+        `
+    },
+    {
+        "topic_id": 62,
+        "order_index": 12,
+        "challenge_name": 'Is Wheel',
+        "description": `
+            <p>You decided to create an automatic image recognizer that will determine the object in the image based on its contours. The main recognition system is already implemented, and now you need to start the teaching process.</p>
+    
+            <p>Today you want to teach your program to recognize wheel patterns, which means that you need to implement a function that, given the adjacency matrix representing the contour, will determine whether it's a wheel or not.</p>
+    
+            <p>The wheel contour can be thought of as a single center vertex and a regular polygon with <code>n</code> (<code>n > 2</code>) vertices which are all connected to the center. Here is an example:</p>
+            <p><img src="wheel_pattern.png" alt="Wheel Pattern" /></p>
+    
+            <p>Given the object's contour as an undirected graph represented by its adjacency matrix <code>adj</code>, determine whether it's a wheel or not.</p>
+    
+            <h3>Example</h3>
+            <p>For <pre><code>adj = 
+            [[false, true, true, true, true], 
+             [true, false, true, false, true], 
+             [true, true, false, true, false], 
+             [true, false, true, false, true], 
+             [true, true, false, true, false]]</code></pre>
+    
+            the output should be:</p>
+            <pre><code>solution(adj) = true</code></pre>
+            <p>Here's what the given graph looks like:</p>
+            <p><img src="wheel_graph.png" alt="Wheel Graph" /></p>
+    
+            <h3>Input/Output</h3>
+            <ul>
+                <li><p><span>[execution time limit]</span> 4 seconds (js)</p></li>
+                <li><p><span>[memory limit]</span> 1 GB</p></li>
+                <li>
+                    <p><span>[input]</span> array.array.boolean <code>adj</code></p>
+                    <p>An adjacency matrix of an undirected graph.</p>
+                    <p>Guaranteed constraints: <code>3 < adj.length < 100</code>, <code>adj[i].length == adj.length</code>.</p>
+                </li>
+                <li>
+                    <p><span>[output]</span> boolean</p>
+                    <p><code>true</code> if the given contour is a wheel, <code>false</code> otherwise.</p>
+                </li>
+            </ul>
+        `
+    },
+    {
+        "topic_id": 62,
+        "order_index": 13,
+        "challenge_name": 'Is Book',
+        "description": `
+            <p>You decided to create an automatic image recognizer that will determine the object in the image based on its contours. The main recognition system is already implemented, and now you need to start the teaching process.</p>
+    
+            <p>Today you want to teach your program to recognize book patterns, which means that you need to implement a function that, given the adjacency matrix representing the contour, will determine whether it's a book or not.</p>
+    
+            <p>A book consists of a base and may have any number of pages. The book's base consists of a single edge connecting two nodes, and it is a common edge for all the pages. Besides that, every page has only one node connected to both sides of the base. Here is an example:</p>
+            <p><img src="book_pattern.png" alt="Book Pattern" /></p>
+    
+            <p>Given the object's contour as an undirected graph represented by its adjacency matrix <code>adj</code>, determine whether it's a book or not.</p>
+    
+            <h3>Example</h3>
+            <p>For <pre><code>adj = 
+            [[false, true, true, true], 
+             [true, false, true, true], 
+             [true, true, false, false], 
+             [true, true, false, false]]</code></pre>
+    
+            the output should be:</p>
+            <pre><code>solution(adj) = true</code></pre>
+            <p>Here's what the given graph looks like:</p>
+            <p><img src="book_graph.png" alt="Book Graph" /></p>
+    
+            <h3>Input/Output</h3>
+            <ul>
+                <li><p><span>[execution time limit]</span> 4 seconds (js)</p></li>
+                <li><p><span>[memory limit]</span> 1 GB</p></li>
+                <li>
+                    <p><span>[input]</span> array.array.boolean <code>adj</code></p>
+                    <p>An adjacency matrix of an undirected graph.</p>
+                    <p>Guaranteed constraints: <code>2 ≤ adj.length < 100</code>, <code>adj[i].length == adj.length</code>.</p>
+                </li>
+                <li>
+                    <p><span>[output]</span> boolean</p>
+                    <p><code>true</code> if the given contour is a book, <code>false</code> otherwise.</p>
+                </li>
+            </ul>
+        `
+    },
+    {
+        "topic_id": 62,
+        "order_index": 14,
+        "challenge_name": 'Is Bull',
+        "description": `
+            <p>You decided to create an automatic image recognizer that will determine the object in the image based on its contours. The main recognition system is already implemented, and now you need to start the teaching process.</p>
+    
+            <p>Today you want to teach your program to recognize bull patterns, which means that you need to implement a function that, given the adjacency matrix representing the contour, will determine whether it's a bull or not.</p>
+    
+            <p>You noticed that although all bull heads are similar, there is some variation in the shapes of their horns, so there are several possible bull contours. The image below shows all such contours:</p>
+            <p><img src="bull_patterns.png" alt="Bull Patterns" /></p>
+    
+            <p>Given the object's contour as an undirected graph represented by its adjacency matrix <code>adj</code>, determine whether it's a bull or not.</p>
+    
+            <h3>Example</h3>
+            <p>For <pre><code>adj = 
+            [[false, true, false, false, false], 
+             [true, false, true, true, false], 
+             [false, true, false, true, false], 
+             [false, true, true, false, true], 
+             [false, false, false, true, false]]</code></pre>
+    
+            the output should be:</p>
+            <pre><code>solution(adj) = true</code></pre>
+            <p>Here's what the given graph looks like:</p>
+            <p><img src="bull_graph.png" alt="Bull Graph" /></p>
+    
+            <h3>Input/Output</h3>
+            <ul>
+                <li><p><span>[execution time limit]</span> 4 seconds (js)</p></li>
+                <li><p><span>[memory limit]</span> 1 GB</p></li>
+                <li>
+                    <p><span>[input]</span> array.array.boolean <code>adj</code></p>
+                    <p>An adjacency matrix of an undirected graph.</p>
+                    <p>Guaranteed constraints: <code>adj.length == 5</code>, <code>adj[i].length == 5</code>.</p>
+                </li>
+                <li>
+                    <p><span>[output]</span> boolean</p>
+                    <p><code>true</code> if the given contour is a bull, <code>false</code> otherwise.</p>
+                </li>
+            </ul>
+        `
+    },
+    {
+        "topic_id": 62,
+        "order_index": 15,
+        "challenge_name": 'Is Tadpole',
+        "description": `
+            <p>You decided to create an automatic image recognizer that will determine the object in the image based on its contours. The main recognition system is already implemented, and now you need to start the teaching process.</p>
+    
+            <p>Today you want to teach your program to recognize tadpole patterns, which means that you need to implement a function that, given the adjacency matrix representing the contour, will determine whether it's a tadpole or not.</p>
+    
+            <p>The tadpole contour consists of two parts: a head which is a cycle with <code>n</code> (<code>n > 2</code>) vertices, and a tail which is a simple path (with at least one vertex) connected to the head. Here is an example:</p>
+            <p><img src="tadpole_pattern.png" alt="Tadpole Pattern" /></p>
+    
+            <p>Given the object's contour as an undirected graph represented by its adjacency matrix <code>adj</code>, determine whether it's a tadpole or not.</p>
+    
+            <h3>Example</h3>
+            <p>For <pre><code>adj = 
+            [[false, true, true, false, false], 
+             [true, false, false, true, false], 
+             [true, false, false, true, false], 
+             [false, true, true, false, true], 
+             [false, false, false, true, false]]</code></pre>
+    
+            the output should be:</p>
+            <pre><code>solution(adj) = true</code></pre>
+            <p>Here's what the given graph looks like:</p>
+            <p><img src="tadpole_graph.png" alt="Tadpole Graph" /></p>
+    
+            <h3>Input/Output</h3>
+            <ul>
+                <li><p><span>[execution time limit]</span> 4 seconds (js)</p></li>
+                <li><p><span>[memory limit]</span> 1 GB</p></li>
+                <li>
+                    <p><span>[input]</span> array.array.boolean <code>adj</code></p>
+                    <p>An adjacency matrix of an undirected graph.</p>
+                    <p>Guaranteed constraints: <code>3 < adj.length < 20</code>, <code>adj[i].length == adj.length</code>.</p>
+                </li>
+                <li>
+                    <p><span>[output]</span> boolean</p>
+                    <p><code>true</code> if the given contour is a tadpole, <code>false</code> otherwise.</p>
+                </li>
+            </ul>
+        `
+    },
+    {
+        "topic_id": 62,
+        "order_index": 16,
+        "challenge_name": 'Is Flower',
+        "description": `
+            <p>You decided to create an automatic image recognizer that will determine the object in the image based on its contours. The main recognition system is already implemented, and now you need to start the teaching process.</p>
+    
+            <p>Today you want to teach your program to recognize flower patterns, which means that you need to implement a function that, given the adjacency matrix representing the contour, will determine whether it's a flower or not.</p>
+    
+            <p>The flower contour consists of several (at least one) petals. Petal contours are the same-sized (of size greater than 2) complete graphs with exactly one common vertex. Here are some examples of the flower contours:</p>
+            <p><img src="flower_patterns.png" alt="Flower Patterns" /></p>
+    
+            <p>Given the object's contour as an undirected graph represented by its adjacency matrix <code>adj</code>, determine whether it's a flower or not.</p>
+    
+            <h3>Example</h3>
+            <p>For <pre><code>adj = 
+            [[false, true, true, true, true], 
+             [true, false, true, false, false], 
+             [true, true, false, false, false], 
+             [true, false, false, false, true], 
+             [true, false, false, true, false]]</code></pre>
+    
+            the output should be:</p>
+            <pre><code>solution(adj) = true</code></pre>
+            <p>Here's what the given graph looks like:</p>
+            <p><img src="flower_graph.png" alt="Flower Graph" /></p>
+    
+            <h3>Input/Output</h3>
+            <ul>
+                <li><p><span>[execution time limit]</span> 4 seconds (js)</p></li>
+                <li><p><span>[memory limit]</span> 1 GB</p></li>
+                <li>
+                    <p><span>[input]</span> array.array.boolean <code>adj</code></p>
+                    <p>An adjacency matrix of an undirected graph.</p>
+                    <p>Guaranteed constraints: <code>2 < adj.length < 100</code>, <code>adj[i].length == adj.length</code>.</p>
+                </li>
+                <li>
+                    <p><span>[output]</span> boolean</p>
+                    <p><code>true</code> if the given contour is a flower, <code>false</code> otherwise.</p>
+                </li>
+            </ul>
+        `
+    },
+    {
+        "topic_id": 62,
+        "order_index": 17,
+        "challenge_name": 'Is Correctly Cut',
+        "description": `
+            <p>You decided to create an automatic image recognizer that will determine the object in the image based on its contours. The main recognition system is already implemented, and you have taught it to recognize several patterns.</p>
+    
+            <p>You are pretty pleased with your results so far and as such you have finally decided to put your program to good use. The timing is perfect: you've received an offer from a jewelry shop. They want you to help them sort their diamonds. Each gem has a different type of a cut which influences its price. You were asked to find all the diamonds with a specific kind of pattern.</p>
+    
+            <p>Luckily, your image recognizer has almost everything it takes to tackle the problem, and all that is left for you is to teach it to recognize the correct patterns. You need to implement a function that, given the adjacency matrix representing the cut contour, will determine whether it's a correct cut or not.</p>
+    
+            <p>The pattern of the cut of size <code>2 · n</code> is a correct one if its contour can be split into two equal groups <code>U</code> and <code>V</code> of <code>n</code> vertices numbered from <code>0</code> to <code>n - 1</code> (in each group) such that for any pair of vertices <code>u</code> and <code>v</code> there exists an edge between them if and only if they don't belong to the same group and their respective "group" numbers are different.</p>
+    
+            <p>Here are some examples of correct cut contours (vertices belonging to the same group have the same color):</p>
+            <p><img src="diamond_patterns.png" alt="Diamond Patterns" /></p>
+    
+            <p>Given the gem's contour as an undirected graph represented by its adjacency matrix <code>adj</code>, determine whether it has a correct cut or not.</p>
+    
+            <h3>Example</h3>
+            <p>For <pre><code>adj = 
+            [[false, true, false, false, false, true], 
+             [true, false, true, false, false, false], 
+             [false, true, false, true, false, false], 
+             [false, false, true, false, true, false], 
+             [false, false, false, true, false, true], 
+             [true, false, false, false, true, false]]</code></pre>
+    
+            the output should be:</p>
+            <pre><code>solution(adj) = true</code></pre>
+            <p>Here's how the given graph looks like (here <code>gn</code> stands for the vertex number in its group):</p>
+            <p><img src="diamond_graph.png" alt="Diamond Graph" /></p>
+    
+            <h3>Input/Output</h3>
+            <ul>
+                <li><p><span>[execution time limit]</span> 4 seconds (js)</p></li>
+                <li><p><span>[memory limit]</span> 1 GB</p></li>
+                <li>
+                    <p><span>[input]</span> array.array.boolean <code>adj</code></p>
+                    <p>An adjacency matrix of an undirected graph with an even number of vertices.</p>
+                    <p>Guaranteed constraints: <code>6 ≤ adj.length ≤ 100</code>, <code>adj[i].length == adj.length</code>.</p>
+                </li>
+                <li>
+                    <p><span>[output]</span> boolean</p>
+                    <p><code>true</code> if the given contour is a contour of the correct diamond cut, <code>false</code> otherwise.</p>
+                </li>
+            </ul>
+        `
+    },
+    {
+        "topic_id": 63,
+        "order_index": 18,
+        "challenge_name": 'Is Wood Magical',
+        "description": `
+            <p>Not long ago you got lost in the nearby woods when walking with your friend. You managed to get out of it, but no thanks to you: your friend was the one who drew the map of the woods and managed to find a way home. That embarrassed you quite a lot, so you decided to go out there to the other woods, get lost there and make your way home without any help.</p>
+        
+            <p>The first part of your plan went smoothly, and now you're completely lost in unknown woods. You're on your own but for the map <code>wmap</code> you drew, and now you simply need to make it home, preferably before it gets too dark. To make things more interesting, you decided to find something unusual about the map you drew. Since you like even numbers even more than getting lost in the woods, you want to check if the map contains cycles only of even length. You firmly believe that such woods are magical, so you'll have something to tell your friend when you make it out safely.</p>
+        
+            <p>Given the number of meadows in the woods <code>n</code> and the map representing their connections <code>wmap</code>, check if this map contains only cycles of even length.</p>
+        
+            <h3>Example</h3>
+            <p>For <pre><code>n = 5 and wmap = [[1, 2], [1, 3], [1, 4], [0, 2], [4, 0]]</code></pre> the output should be:</p>
+            <pre><code>solution(n, wmap) = true</code></pre>
+            <p>There is only one cycle: 1 - 4 - 0 - 2 and its length is 4, which is an even number.</p>
+        
+            <p>For <pre><code>n = 5 and wmap = [[1, 2], [1, 3], [1, 4], [0, 2], [4, 0], [1, 0]]</code></pre> the output should be:</p>
+            <pre><code>solution(n, wmap) = false</code></pre>
+            <p>There is a cycle 1 - 4 - 0, which length is 3 - an odd number.</p>
+        
+            <h3>Input/Output</h3>
+            <ul>
+                <li><p><span>[execution time limit]</span> 4 seconds (js)</p></li>
+                <li><p><span>[memory limit]</span> 1 GB</p></li>
+                <li>
+                    <p><span>[input]</span> integer <code>n</code></p>
+                    <p>The number of vertices on the map.</p>
+                    <p>Guaranteed constraints: <code>1 ≤ n ≤ 105</code>.</p>
+                </li>
+                <li>
+                    <p><span>[input]</span> array.array.integer <code>wmap</code></p>
+                    <p>Edges drawn on the map. <code>wmap[i]</code> for each valid <code>i</code> contains two elements and represents a road that connects <code>wmap[i][0]</code> and <code>wmap[i][1]</code>.</p>
+                    <p>It is guaranteed that between any two vertices there is no more than one edge.</p>
+                    <p>Guaranteed constraints: <code>0 ≤ wmap.length ≤ 96917</code>, <code>wmap[i].length = 2</code>, <code>0 ≤ wmap[i][j] < n</code>.</p>
+                </li>
+                <li>
+                    <p><span>[output]</span> boolean</p>
+                    <p><code>true</code> if there are only cycles with even length in the map and <code>false</code> otherwise.</p>
+                </li>
+            </ul>
+        `
+    },
+    {
+        "topic_id": 63,
+        "order_index": 19,
+        "challenge_name": 'Walking In The Woods',
+        "description": `
+            <p>After you got lost in the woods the last time, you made sure to memorize the entire map, so now you can walk around without the fear. When you were studying the map, you realized that it might be impossible to visit all the meadows walking on the roads. In order to get from one set of connected meadows to the other one has to go through the thicket of thistle.</p>
+        
+            <p>Naturally, you don't want to struggle through the thicket too often. Given the number of meadows <code>n</code> and the map of the woods <code>wmap</code> storing the information about the roads connecting them, calculate the minimal number of times you'd have to go off the roads in order to visit all the meadows in one run.</p>
+        
+            <h3>Example</h3>
+            <p>For <pre><code>n = 5 and wmap = [[0, 1], [2, 1], [0, 2], [3, 4]]</code></pre> the output should be:</p>
+            <pre><code>solution(n, wmap) = 1</code></pre>
+            <p>Starting from any of the first three meadows, you can visit any of them, then visit meadow 3 walking through the thicket, and then visit meadow 4. Starting from any of the two last meadows, you can do the same thing.</p>
+        
+            <p>For <pre><code>n = 6 and wmap = [[0, 1], [2, 1], [0, 2], [3, 4]]</code></pre> the output should be:</p>
+            <pre><code>solution(n, wmap) = 2</code></pre>
+            <p>Here you need to visit one more meadow that isn't connected to any of the other ones, so you'll need to walk through the thicket one more time.</p>
+        
+            <h3>Input/Output</h3>
+            <ul>
+                <li><p><span>[execution time limit]</span> 4 seconds (js)</p></li>
+                <li><p><span>[memory limit]</span> 1 GB</p></li>
+                <li>
+                    <p><span>[input]</span> integer <code>n</code></p>
+                    <p>The number of meadows in the woods.</p>
+                    <p>Guaranteed constraints: <code>1 ≤ n ≤ 105</code>.</p>
+                </li>
+                <li>
+                    <p><span>[input]</span> array.array.integer <code>wmap</code></p>
+                    <p>Edges drawn on the map. <code>wmap[i]</code> for each valid <code>i</code> contains two elements and represents a road that connects <code>wmap[i][0]</code> and <code>wmap[i][1]</code>.</p>
+                    <p>It is guaranteed that between any two vertices there is no more than one edge.</p>
+                    <p>Guaranteed constraints: <code>0 ≤ wmap.length ≤ 105</code>, <code>wmap[i].length = 2</code>, <code>0 ≤ wmap[i][j] < n</code>.</p>
+                </li>
+                <li>
+                    <p><span>[output]</span> integer</p>
+                    <p>The minimal number of times you'll need to walk through the thicket to visit all the meadows.</p>
+                </li>
+            </ul>
+        `
+    },
+    {
+        "topic_id": 63,
+        "order_index": 20,
+        "challenge_name": 'Is Pseudoforest',
+        "description": `
+            <p>You and your friend are walking in the woods. You are gathering mushrooms and catching butterflies, and your friend is drawing a map of the woods: he is a very cautious person, who doesn't want to get lost. When you get tired of running around, you decide to check out the map your friend has drawn so far, and it strikes you: it looks like the woods you're walking in represent a pseudoforest!</p>
+        
+            <p>Since you're a programmer and think in terms of algorithms, you need to write a function that, given a map, determines whether it is a pseudoforest or not. The map your friend drew represents a graph <code>wmap</code> of <code>n</code> vertices. A map is called a pseudoforest if each of its connected components contains no more than one cycle.</p>
+        
+            <h3>Example</h3>
+            <p>For <pre><code>n = 7 and wmap = [[0, 1], [1, 2], [2, 3], [3, 1], [3, 4], [5, 6]]</code></pre> the output should be:</p>
+            <pre><code>solution(n, wmap) = true</code></pre>
+            <p>One of the connected components contains only one cycle (1 - 2 - 3), and the other one has no cycles at all.</p>
+        
+            <p>For <pre><code>n = 7 and wmap = [[0, 1], [1, 2], [2, 3], [3, 1], [3, 4], [4, 0], [5, 6]]</code></pre> the output should be:</p>
+            <pre><code>solution(n, wmap) = false</code></pre>
+            <p>There are three cycles in one of the connected components:</p>
+            <ul>
+                <li>1 - 2 - 3;</li>
+                <li>1 - 3 - 4 - 0;</li>
+                <li>0 - 1 - 2 - 3 - 4.</li>
+            </ul>
+        
+            <h3>Input/Output</h3>
+            <ul>
+                <li><p><span>[execution time limit]</span> 4 seconds (js)</p></li>
+                <li><p><span>[memory limit]</span> 1 GB</p></li>
+                <li>
+                    <p><span>[input]</span> integer <code>n</code></p>
+                    <p>Number of vertices in the map.</p>
+                    <p>Guaranteed constraints: <code>1 ≤ n ≤ 105</code>.</p>
+                </li>
+                <li>
+                    <p><span>[input]</span> array.array.integer <code>wmap</code></p>
+                    <p>Edges drawn on the map. <code>wmap[i]</code> contains two elements and represents one edge for each valid <code>i</code>.</p>
+                    <p>It is guaranteed that between any two vertices there is no more than one edge.</p>
+                    <p>Guaranteed constraints: <code>0 ≤ wmap.length ≤ 105</code>, <code>wmap[i].length = 2</code>, <code>0 ≤ wmap[i][j] < n</code>, <code>wmap[i][0] ≠ wmap[i][1]</code>.</p>
+                </li>
+                <li>
+                    <p><span>[output]</span> boolean</p>
+                    <p><code>true</code> if <code>wmap</code> represents a pseudoforest and <code>false</code> otherwise.</p>
+                </li>
+            </ul>
+        `
+    },
+    {
+        "topic_id": 63,
+        "order_index": 21,
+        "challenge_name": 'Burning The Wood',
+        "description": `
+            <p>You've been walking in the woods you got so attached to for the entire day. The weather was nice and warm, the smell of the nature was wonderful, and you got so carried away (both literally and virtually) that you didn't even notice when it started to get cold. Your home is too far from your current location, and you're barely standing on your feet having walked for so long, so you have no other option but to make your bed right where you are.</p>
+        
+            <p>Since it's really cold already, you'd like to start a campfire. Of course, playing with fire is a bad idea, especially in dry woods, but you didn't sleep last night and need at least <code>k</code> hours of sleep to think straight the next day. You assume that if the fire starts in some meadow, each hour it'll spread to all the neighboring meadows, each of which will in turn set their neighboring meadows on fire in another hour.</p>
+        
+            <p>There are <code>n</code> meadows in the forest, and you're going to start a campfire in your current meadow <code>start</code>. Knowing how the meadows are connected (this information is given as a matrix <code>wmap</code>), find out which meadows may be on fire when you wake up after <code>k</code> hours and return the list of these meadows sorted in ascending order (don't worry about yourself - woods around you are not dry, so the fire in your meadow won't hurt you).</p>
+        
+            <h3>Example</h3>
+            <p>For <pre><code>n = 5, wmap = [[0, 1], [1, 2], [2, 3], [3, 4], [4, 0]], start = 0, and k = 1</code></pre> the output should be:</p>
+            <pre><code>solution(n, wmap, start, k) = [0, 1, 4]</code></pre>
+        
+            <p>For <pre><code>n = 7, wmap = [[0, 1], [1, 2], [2, 3], [3, 4], [4, 5], [5, 6], [6, 0], [4, 1]], start = 0, and k = 2</code></pre> the output should be:</p>
+            <pre><code>solution(n, wmap, start, k) = [0, 1, 2, 4, 5, 6]</code></pre>
+            <p>At the beginning of the first hour meadow 0 starts burning. At the second hour meadows 1 and 6 start burning as well. At the third hour neighbors of meadow 1 - meadows 2 and 4 - catch on fire, and so does the only neighbor of meadow 6 - meadow 5. So, at the end of the third hour meadows 0, 1, 2, 4, 5, and 6 will be on fire.</p>
+        
+            <h3>Input/Output</h3>
+            <ul>
+                <li><p><span>[execution time limit]</span> 4 seconds (js)</p></li>
+                <li><p><span>[memory limit]</span> 1 GB</p></li>
+                <li>
+                    <p><span>[input]</span> integer <code>n</code></p>
+                    <p>The number of meadows in the forest.</p>
+                    <p>Guaranteed constraints: <code>1 ≤ n ≤ 5 · 10^4</code>.</p>
+                </li>
+                <li>
+                    <p><span>[input]</span> array.array.integer <code>wmap</code></p>
+                    <p>The information about the connected meadows. <code>wmap[i]</code> for each valid <code>i</code> contains two elements and represents a road that connects <code>wmap[i][0]</code> and <code>wmap[i][1]</code>.</p>
+                    <p>It is guaranteed that between any two vertices there is no more than one edge.</p>
+                    <p>Guaranteed constraints: <code>0 ≤ wmap.length ≤ 5 · 10^4</code>, <code>wmap[i].length = 2</code>, <code>0 ≤ wmap[i][j] < n</code>.</p>
+                </li>
+                <li>
+                    <p><span>[input]</span> integer <code>start</code></p>
+                    <p>The meadow where you're going to start a campfire.</p>
+                    <p>Guaranteed constraints: <code>0 ≤ start < n</code>.</p>
+                </li>
+                <li>
+                    <p><span>[input]</span> integer <code>k</code></p>
+                    <p>The number of hours you're going to sleep.</p>
+                    <p>Guaranteed constraints: <code>0 ≤ k ≤ 10^3</code>.</p>
+                </li>
+                <li>
+                    <p><span>[output]</span> array.integer</p>
+                    <p>The list of meadows that may be on fire in <code>k</code> hours sorted in ascending order.</p>
+                </li>
+            </ul>
+        `
+    },
+    {
+        "topic_id": 63,
+        "order_index": 22,
+        "challenge_name": 'Caterpiller Trees',
+        "description": `
+            <p>Not long ago you discovered a wonderful tree in the nearby woods that made you very curious about the greenery around you. You went to the nearby woods and drew various plants in your notebook. The plants in the woods have various structures: some of them even contain loops!</p>
+        
+            <p>Anyway, for now you are interested only in trees. You came up with a brand new property: you call a tree a caterpillar if there exists a path in it, such that each vertex of a tree either belongs to this path or is connected to one of its vertices by a single edge. To find out more about them, you would like to write a program that will find all interesting trees in the structures you drew in your notebook.</p>
+        
+            <p>The plants you drew consist of <code>n</code> vertices and are connected by several edges. Calculate the number of regular trees and caterpillar trees in the structures you drew in your notebook.</p>
+        
+            <h3>Example</h3>
+            <p>For <code>n = 21</code> and 
+            <pre><code>edges = 
+            [[0, 1], [1, 2], [2, 3], [2, 4], [4, 5], [4, 6], [4, 7], 
+             [4, 8], [4, 9], [4, 10], [10, 11], [11, 12], [11, 13], 
+             [11, 14], [14, 15], [14, 16], [14, 17], [14, 18], [14, 19]]</code></pre> 
+             
+            the output should be:</p>
+            <code>solution(n, edges) = [2, 2]</code>
+        
+            <p>There are two connected components and both of them are trees and caterpillar trees.</p>
+        
+            <p>For <code>n = 22</code> and <pre><code>edges = 
+            [[0, 1], [1, 2], [2, 3], [2, 4], [4, 5], [4, 6], [4, 7], 
+            [4, 8], [4, 9], [4, 10], [10, 11], [11, 12], [11, 13], 
+            [11, 14], [14, 15], [14, 16], [14, 17], [14, 18], [14, 19], [13, 20]]</code></pre> 
+            
+            the output should be:</p>
+            <code>solution(n, edges) = [2, 1]</code>
+        
+            <p>The first connected component is a tree, but not a caterpillar tree, because vertex 20 is not directly connected to the central path.</p>
+        
+            <h3>Input/Output</h3>
+            <ul>
+                <li><p><span>[execution time limit]</span> 4 seconds (js)</p></li>
+                <li><p><span>[memory limit]</span> 1 GB</p></li>
+                <li>
+                    <p><span>[input]</span> integer <code>n</code></p>
+                    <p>The number of vertices in the structures drawn in your notebook.</p>
+                    <p>Guaranteed constraints: <code>1 ≤ n ≤ 10^5</code>.</p>
+                </li>
+                <li>
+                    <p><span>[input]</span> array.array.integer <code>edges</code></p>
+                    <p>Edges drawn in the notebook. <code>edges[i]</code> for each valid <code>i</code> contains two elements and represents an edge that connects <code>edges[i][0]</code> and <code>edges[i][1]</code>.</p>
+                    <p>It is guaranteed that between any two vertices there is no more than one edge.</p>
+                    <p>Guaranteed constraints: <code>0 ≤ edges.length ≤ 10^5</code>, <code>edges[i].length = 2</code>, <code>0 ≤ edges[i][j] < n</code>.</p>
+                </li>
+                <li>
+                    <p><span>[output]</span> array.integer</p>
+                    <p>Array of two integers, where the first represents the number of trees in your woods and the second represents the number of caterpillar trees in it.</p>
+                </li>
+            </ul>
+        `
+    },
+    {
+        "topic_id": 63,
+        "order_index": 23,
+        "challenge_name": 'Is Mobius Ladder',
+        "description": `
+            <p>You've been studying trees a lot lately and became an expert in caterpillar trees. Now that you know everything about them, you're ready to climb one. However, in order to climb such a tree you need a special ladder that you call a Mobius ladder.</p>
+        
+            <p>A Mobius ladder is a slightly modified proper ladder. Firstly, let's define what a proper ladder is: a proper ladder is a ladder that can be represented by a graph containing two chains of vertices with <code>n</code> vertices in each one, where the <i>i</i>th vertex of the first chain is connected to the <i>i</i>th vertex of the second chain. For example, a proper ladder with 8 vertices looks like this:</p>
+        
+            <p>A Mobius ladder is a proper ladder with two additional connections: the first vertex of the first chain is connected to the last vertex of the second chain, and the last vertex of the first chain is connected to the first vertex of the second chain. For example, here is a Mobius ladder with 8 vertices:</p>
+        
+            <p>You found a ladder that can be represented by <code>n</code> vertices in the attic. Now you need to check if it is a Mobius ladder, to make sure it can be used to climb a caterpillar tree.</p>
+        
+            <h3>Example</h3>
+            <p>For <code>n = 6</code> and <pre><code>ladder = [[0, 1], [1, 2], [2, 3], [3, 4], [4, 5], [5, 0]]</code></pre> the output should be:</p>
+            <pre><code>solution(n, ladder) = false</code></pre>
+        
+            <p>For <code>n = 8</code> and <pre><code>ladder = 
+            [[0, 1], [0, 2], [0, 7], [1, 3], [1, 6], [2, 3], 
+             [2, 4], [3, 5], [4, 5], [4, 6], [5, 7], [6, 7]]</code></pre>
+             
+            the output should be:</p>
+            <pre><code>solution(n, ladder) = true</code></pre>
+        
+            <p>This is the test from the description:</p>
+            <p>For <code>n = 10</code> and <pre><code>ladder = 
+            [[0, 1], [0, 3], [0, 7], [0, 9], [1, 2], 
+             [1, 4], [1, 8], [2, 3], [2, 5], [2, 9], 
+             [3, 4], [3, 6], [4, 5], [4, 7], [5, 6], 
+             [5, 8], [6, 7], [6, 9], [7, 8], [8, 9]]</code></pre> 
+            
+            the output should be:</p>
+            <pre><code>solution(n, ladder) = false</code></pre>
+        
+            <h3>Input/Output</h3>
+            <ul>
+                <li><p><span>[execution time limit]</span> 4 seconds (js)</p></li>
+                <li><p><span>[memory limit]</span> 1 GB</p></li>
+                <li>
+                    <p><span>[input]</span> integer <code>n</code></p>
+                    <p>An even integer, the number of vertices that represent your ladder.</p>
+                    <p>Guaranteed constraints: <code>2 ≤ n ≤ 5 · 10^4</code>.</p>
+                </li>
+                <li>
+                    <p><span>[input]</span> array.array.integer <code>ladder</code></p>
+                    <p>Edges of the ladder drawn in the plan. <code>ladder[i]</code> for each valid <code>i</code> contains two elements and represents an edge that connects <code>ladder[i][0]</code> and <code>ladder[i][1]</code>.</p>
+                    <p>It is guaranteed that between any two vertices there is no more than one edge.</p>
+                    <p>Guaranteed constraints: <code>0 ≤ ladder.length ≤ 75,000</code>, <code>ladder[i].length = 2</code>, <code>0 ≤ ladder[i][j] < n</code>.</p>
+                </li>
+                <li>
+                    <p><span>[output]</span> boolean</p>
+                    <p><code>true</code> if the given ladder represents a Mobius ladder, <code>false</code> otherwise.</p>
+                </li>
+            </ul>
+        `
+    },
+    {
+        "topic_id": 63,
+        "order_index": 24,
+        "challenge_name": 'Tree Diameter',
+        "description": `
+            <p>You got sick because of walking in the woods at night and have to spend a week at home without going out. Looking out of the window at the nearby woods, you're wondering if there is anything you don't yet know about them. Suddenly, you see a beautiful and very tall tree you haven't seen before. Since you have nothing to do, you decide to examine its structure and draw it in your notebook.</p>
+        
+            <p>You became so excited about this new tree that your temperature went up, so you were forced to stay in bed. You can't see the tree from your bed, but luckily you have it drawn down. The first thing you'd like to find out about is the tree height. Looking at your drawing, you suddenly realize that you forgot to mark the tree bottom and you don't know from which vertex you should start counting. Of course, a tree height can be calculated as the length of the longest path in it (it is also called tree diameter). So, now you have a task you need to solve, so go ahead!</p>
+        
+            <h3>Example</h3>
+            <p>For <code>n = 10</code> and 
+            <pre><code>tree = [[2, 5], [5, 7], [5, 1], [1, 9], [1, 0], [7, 6], [6, 3], [3, 8], [8, 4]]</code></pre> the output should be:</p>
+            <code>solution(n, tree) = 7</code>
+        
+            <p>The longest path is the path from vertex 4 to either vertex 9 or 0.</p>
+        
+            <h3>Input/Output</h3>
+            <ul>
+                <li><p><span>[execution time limit]</span> 4 seconds (js)</p></li>
+                <li><p><span>[memory limit]</span> 1 GB</p></li>
+                <li>
+                    <p><span>[input]</span> integer <code>n</code></p>
+                    <p>The number of vertices in the structure you drew in your notebook.</p>
+                    <p>Guaranteed constraints: <code>1 ≤ n ≤ 10^4</code>.</p>
+                </li>
+                <li>
+                    <p><span>[input]</span> array.array.integer <code>tree</code></p>
+                    <p>Edges of the tree. <code>tree[i]</code> for each valid <code>i</code> contains two elements and represents an edge that connects <code>tree[i][0]</code> and <code>tree[i][1]</code>.</p>
+                    <p>It is guaranteed that the given graph is a tree, i.e., it is connected and has no cycles.</p>
+                    <p>Guaranteed constraints: <code>tree.length = n - 1</code>, <code>tree[i].length = 2</code>, <code>0 ≤ tree[i][j] < n</code>.</p>
+                </li>
+                <li>
+                    <p><span>[output]</span> integer</p>
+                    <p>The tree diameter of the given tree.</p>
+                </li>
+            </ul>
+        `
+    },
+    {
+        "topic_id": 63,
+        "order_index": 25,
+        "challenge_name": 'Squirrel And Nut',
+        "description": `
+            <p>Wandering in the woods, you noticed a squirrel sitting in node <code>A</code> of a tree. It didn't look like it was going to sit there forever though: there was a delicious nut in node <code>B</code>, and the squirrel looked determined to reach it by moving via the branches of the tree. You grabbed your camera to take a picture of the squirrel in node <code>C</code> (that's the only node that would make the picture perfect), but were too late: the smart rodent had already made it to node <code>B</code>.</p>
+        
+            <p>There are still a lot of nuts on the tree, and it seems that the squirrel is going to try and take them all. Looks like the squirrel is smart enough to follow only the shortest paths along the tree branches, which means you can now predict when the right opportunity to take a perfect picture arises. Given the configuration of the tree and a bunch of triples consisting of numbers <code>A</code>, <code>B</code>, and <code>C</code>, for each triple return <code>true</code> if the squirrel will run through node <code>C</code> on its path from <code>A</code> to <code>B</code>, and <code>false</code> otherwise.</p>
+        
+            <p>It is guaranteed that each node has no more than 5 branches.</p>
+        
+            <h3>Example</h3>
+            <p>For</p>
+            <pre><code>tree = 
+            [1, 2, 
+             1, 3, 
+             2, 4, 
+             3, 5, 
+             3, 6]</code></pre>
+            <p>and</p>
+            <pre><code>triples = 
+            [[4, 6, 3], 
+             [1, 4, 2], 
+             [5, 6, 1]]</code></pre>
+            <p>the output should be:</p>
+            <code>solution(tree, triples) = [true, true, false]</code>
+        
+            <h3>Input/Output</h3>
+            <ul>
+                <li><p><span>[execution time limit]</span> 4 seconds (js)</p></li>
+                <li><p><span>[memory limit]</span> 1 GB</p></li>
+                <li>
+                    <p><span>[input]</span> array.integer <code>tree</code></p>
+                    <p>An array of integers of even length, where a pair <code>(tree[i], tree[i + 1])</code> for every even <code>i</code> corresponds to the branch in a tree that goes from node <code>tree[i]</code> to node <code>tree[i + 1]</code>, both 1-based.</p>
+                    <p>Guaranteed constraints: <code>tree.length = 2 · (max(tree) - 1)</code>, <code>1 ≤ tree[i] ≤ 10,000</code>.</p>
+                </li>
+                <li>
+                    <p><span>[input]</span> array.array.integer <code>triples</code></p>
+                    <p>Triples of three integers in the format <code>[A, B, C]</code>, where <code>A</code> stands for the initial squirrel position, <code>B</code> stands for its destination, and <code>C</code> stands for the node at which the perfect picture can be taken, all 1-based.</p>
+                    <p>Guaranteed constraints: <code>1 ≤ triples.length ≤ 10,000</code>, <code>triples[i].length = 3</code>, <code>1 ≤ triples[i][j] ≤ n</code>.</p>
+                </li>
+                <li>
+                    <p><span>[output]</span> array.boolean</p>
+                    <p>Array of the same length as <code>triples</code>, where the <code>i</code>th element is <code>true</code> if and only if it will be possible to take a perfect picture in the situation corresponding to the <code>i</code>th triple.</p>
+                </li>
+            </ul>
+        `
+    },
+    {
+        "topic_id": 64,
+        "order_index": 26,
+        "challenge_name": 'Digit Jumping',
+        "description": `
+            <p>Little Ratiorg was tired of being bullied by other bots and mighty CodeFighters, so he joined the Ninja Bots Training camp. Any bot that manages to solve all the challenges becomes an ultimate master of algorithms, and that is exactly what Ratiorg wants.</p>
+            
+            <p>Facing his first challenge, Ratiorg is placed at the start position of a rectangular grid filled with digits from 0 to 9. With each move, Ratiorg can either jump to the adjacent cell (the one above, below, to the left or to the right of his current position), or teleport to any cell that has number <code>x</code> written on it, where <code>x</code> is the number written on the cell Ratiorg is currently standing on. Ratiorg will be able to move on to the next challenge if he manages to get to the finish cell in the minimum possible number of moves.</p>
+            
+            <p>Although the little bot is sure that he can handle the challenge, you don't want to leave him alone! Back Ratiorg up by implementing a function that given the grid, start and finish, will calculate the minimum number of moves required to get from start to finish.</p>
+            
+            <h3>Example</h3>
+            <p>For</p>
+            <pre><code>grid = 
+            [[0, 1, 4, 2, 3], 
+             [1, 4, 2, 8, 2], 
+             [2, 2, 3, 4, 9], 
+             [8, 7, 2, 2, 3]]</code></pre>
+            <p><code>start = [0, 0]</code>, and <code>finish = [3, 4]</code>, the output should be:</p>
+            <pre><code>solution(grid, start, finish) = 4</code></pre>
+            
+            <p>Here's one of the shortest paths Ratiorg can take:</p>
+            
+            <h3>Input/Output</h3>
+            <ul>
+                <li><p><span>[execution time limit]</span> 4 seconds (js)</p></li>
+                <li><p><span>[memory limit]</span> 1 GB</p></li>
+                <li>
+                    <p><span>[input]</span> array.array.integer <code>grid</code></p>
+                    <p>A rectangular grid filled with digits in range [0...9].</p>
+                    <p>Guaranteed constraints: <code>1 ≤ grid.length ≤ 300</code>, <code>1 ≤ grid[0].length ≤ 300</code>, <code>0 ≤ grid[i][j] ≤ 9</code>.</p>
+                </li>
+                <li>
+                    <p><span>[input]</span> array.integer <code>start</code></p>
+                    <p>Ratiorg's initial position as an array of two elements, where the first element is row index, and the second one is column index.</p>
+                    <p>Guaranteed constraints: <code>start.length = 2</code>, <code>0 ≤ start[0] < grid.length</code>, <code>0 ≤ start[1] < grid[0].length</code>.</p>
+                </li>
+                <li>
+                    <p><span>[input]</span> array.integer <code>finish</code></p>
+                    <p>Ratiorg's destination in the same format as start.</p>
+                    <p>Guaranteed constraints: <code>finish.length = 2</code>, <code>0 ≤ finish[0] < grid.length</code>, <code>0 ≤ finish[1] < grid[0].length</code>.</p>
+                </li>
+                <li>
+                    <p><span>[output]</span> integer</p>
+                    <p>The minimum number of moves required to get from start to finish.</p>
+                </li>
+            </ul>
+        `
+    },
+    {
+        "topic_id": 64,
+        "order_index": 27,
+        "challenge_name": 'Painter Bot',
+        "description": `
+            <p>Little Ratiorg was tired of being bullied by other bots and mighty CodeFighters, so he joined the Ninja Bots Training camp. Any bot that manages to solve all the challenges becomes an ultimate master of algorithms, and that is exactly what Ratiorg wants.</p>
+            
+            <p>Ratiorg aced the very first challenge, and is ready to begin the second. The little bot is given a canvas, each pixel of which has some color. Ratiorg should apply several flood fill operations to the canvas, and show the resulting image to the judges. Each flood fill operation is given as an array of three elements [x, y, color], where (x, y) is the coordinates of the pixel to which the operation is applied, and color is the color with which the pixel and its area should be painted. The area that should be painted along with the initial pixel is defined as follows:</p>
+            
+            <p>Initially, only the pixel to which the operation was applied should be painted. Consider all pixels that are adjacent to the initial one (i.e. directly above, below, to the left or to the right of it). If the difference between the color of this pixel and the color of the initial one is not greater than <code>d</code>, this pixel should also be painted. For each pixel painted on this step consider all its neighbors in the same manner.</p>
+            
+            <p>Your task is to help the judges check Ratiorg's performance. Given canvas, operations and the value of <code>d</code>, return the state of the image after all operations have been applied.</p>
+            
+            <h3>Example</h3>
+            <p>For</p>
+            <pre><code>canvas = 
+            [[0, 1, 5, 2, 4, 2, 6], 
+             [5, 2, 4, 6, 2, 0, 0], 
+             [3, 3, 3, 7, 8, 3, 2], 
+             [2, 1, 1, 0, 0, 0, 0]]</code></pre>
+            <p><code>operations = [[0, 0, 10], [1, 3, 3]]</code>, and <code>d = 3</code>, the output should be:</p>
+            <pre><code>solution(canvas, operations, d) = 
+            [[10, 10,  3,  2,  4, 10, 6], 
+             [ 5, 10,  3,  3, 10, 10, 10], 
+             [10, 10, 10,  3,  3, 10, 10], 
+             [10, 10, 10, 10, 10, 10, 10]]</code></pre>
+            <p>Here's how the canvas should be painted:</p>
+            
+            <h3>Input/Output</h3>
+            <ul>
+                <li><p><span>[execution time limit]</span> 7 seconds (js)</p></li>
+                <li><p><span>[memory limit]</span> 1 GB</p></li>
+                <li>
+                    <p><span>[input]</span> array.array.integer <code>canvas</code></p>
+                    <p>A rectangular matrix representing the canvas.</p>
+                    <p>Guaranteed constraints: <code>1 ≤ canvas.length ≤ 100</code>, <code>1 ≤ canvas[0].length ≤ 100</code>, <code>0 ≤ canvas[i][j] ≤ 255</code>.</p>
+                </li>
+                <li>
+                    <p><span>[input]</span> array.array.integer <code>operations</code></p>
+                    <p>Operations to be performed. Each operation is given in the format <code>[x, y, color]</code>, where (x, y) is the coordinates of the initial pixel (0-based indices of row and column, respectively) and color is the fill color.</p>
+                    <p>Guaranteed constraints: <code>0 ≤ operations.length ≤ 100</code>, <code>operations[i].length = 3</code>, <code>0 ≤ operations[i][0] < canvas.length</code>, <code>0 ≤ operations[i][1] < canvas[0].length</code>, <code>0 ≤ operations[i][2] ≤ 255</code>.</p>
+                </li>
+                <li>
+                    <p><span>[input]</span> integer <code>d</code></p>
+                    <p>The value that defines the flood fill area.</p>
+                    <p>Guaranteed constraints: <code>0 ≤ d ≤ 255</code>.</p>
+                </li>
+                <li>
+                    <p><span>[output]</span> array.array.integer</p>
+                    <p>The final state of the canvas.</p>
+                </li>
+            </ul>
+        `
+    },
+    {
+        "topic_id": 64,
+        "order_index": 28,
+        "challenge_name": 'Horsebot',
+        "description": `
+            <p>Little Ratiorg was tired of being bullied by other bots and mighty CodeFighters, so he joined the Ninja Bots Training camp. Any bot that manages to solve all the challenges becomes an ultimate master of algorithms, and that is exactly what Ratiorg wants.</p>
+            
+            <p>The little bot has already successfully completed several challenges. Now he is facing a challenge in which he has to prove that he knows how to ride a horse and plan battles. Ratiorg is sitting on his digital horse in the top left corner of an <code>n × m</code> board. The horse can only make moves similar to those of a knight chess piece. Prior to any action, Ratiorg should define values <code>a</code> and <code>b</code> (<code>0 < a ≤ b</code>), which will specify the horse's moves: each move the horse will change one of its coordinates by <code>a</code>, and the other one by <code>b</code>.</p>
+            
+            <p>Ratiorg needs to define such a and b that will let him end up in the bottom right corner. How many ways are there to do this?</p>
+            
+            <h3>Example</h3>
+            <p>For <code>n = 3</code> and <code>m = 3</code>, the output should be:</p>
+            <pre><code>solution(n, m) = 3</code></pre>
+            <p>Ratiorg can define three pairs: <code>(1, 1)</code>, <code>(1, 2)</code>, and <code>(2, 2)</code>. Here's how he can travel to the bottom right corner in each case:</p>
+            
+            <h3>Input/Output</h3>
+            <ul>
+                <li><p><span>[execution time limit]</span> 4 seconds (js)</p></li>
+                <li><p><span>[memory limit]</span> 1 GB</p></li>
+                <li>
+                    <p><span>[input]</span> integer <code>n</code></p>
+                    <p>The height of the field.</p>
+                    <p>Guaranteed constraints: <code>2 ≤ n ≤ 10</code>.</p>
+                </li>
+                <li>
+                    <p><span>[input]</span> integer <code>m</code></p>
+                    <p>The width of the field.</p>
+                    <p>Guaranteed constraints: <code>2 ≤ m ≤ 10</code>.</p>
+                </li>
+                <li>
+                    <p><span>[output]</span> integer</p>
+                    <p>The number of pairs <code>(a, b)</code> Ratiorg can define to get to the bottom right corner.</p>
+                </li>
+            </ul>
+        `
+    },
+    {
+        "topic_id": 64,
+        "order_index": 29,
+        "challenge_name": 'Sabotage',
+        "description": `
+            <p>Little Ratiorg was tired of being bullied by other bots and mighty CodeFighters, so he joined the Ninja Bots Training camp. Any bot that manages to solve all the challenges becomes an ultimate master of algorithms, and that is exactly what Ratiorg wants.</p>
+            
+            <p>It's been several weeks, and Ratiorg is getting strong enough that he's making some enemies. They're starting to feel threatened, which is why they sabotaged his next challenge. Here's how they did it:</p>
+            
+            <p>Ratiorg is about to be locked up in one of multiple rooms in a rectangular hangar. The rooms are securely locked: it is possible to leave a room only in one direction specific to this room. The problem is, the villains have messed the system up, so now there is no way to finish the challenge from certain rooms. The challenge will be over if Ratiorg successfully leaves the hangar (i.e. leaves the rectangle that represents it).</p>
+            
+            <p>To figure out the odds of Ratiorg's success, you'd like to calculate the number of rooms, starting from which Ratiorg won't be able to finish the challenge. Implement a function that will return this number.</p>
+            
+            <h3>Example</h3>
+            <p>For</p>
+            <pre><code>hangar = 
+            [['U', 'L'],
+             ['R', 'L']]</code></pre>
+            <p>the output should be:</p>
+            <pre><code>solution(hangar) = 2</code></pre>
+            <p>Ratiorg won't be able to get out of the hangar if he starts from either of the bottom rooms.</p>
+            
+            <h3>Input/Output</h3>
+            <ul>
+                <li><p><span>[execution time limit]</span> 4 seconds (js)</p></li>
+                <li><p><span>[memory limit]</span> 1 GB</p></li>
+                <li>
+                    <p><span>[input]</span> array.array.char <code>hangar</code></p>
+                    <p>A non-empty rectangular matrix. The possible values of <code>hangar[i]</code> are:</p>
+                    <ul>
+                        <li><code>'L'</code> if it's possible to move to the left;</li>
+                        <li><code>'R'</code> if it's possible to move to the right;</li>
+                        <li><code>'U'</code> if it's possible to move up;</li>
+                        <li><code>'D'</code> if it's possible to move down.</li>
+                    </ul>
+                    <p>Guaranteed constraints: <code>1 ≤ hangar.length ≤ 150</code>, <code>1 ≤ hangar[0].length ≤ 150</code>.</p>
+                </li>
+                <li>
+                    <p><span>[output]</span> integer</p>
+                    <p>The number of rooms from which it's impossible to finish the challenge.</p>
+                </li>
+            </ul>
+        `
+    },
+    {
+        "topic_id": 64,
+        "order_index": 30,
+        "challenge_name": 'Electric Field',
+        "description": `
+            <p>Little Ratiorg was tired of being bullied by other bots and mighty CodeFighters, so he joined the Ninja Bots Training camp. Any bot that manages to solve all the challenges becomes an ultimate master of algorithms, and that is exactly what Ratiorg wants.</p>
+            
+            <p>It's been several weeks, and Ratiorg already feels how much stronger he has become. However, Ratiorg is about to face his first really exciting challenge: the Electric Field. It works like this: the bot stays in the top left corner of a rectangular grid. In one move he can walk to one of the nearest cells (directly above, below, to the left or to the right of his current position). Ratiorg's goal is to get to the bottom right corner in the least possible number of moves. However, it's not as simple as it seems: there are electric wires running through the grid. If Ratiorg steps on a wire, his microchips will be burnt to a crisp, so Ratiorg, prudent bot that he is, wants to do his best to avoid them.</p>
+            
+            <p>You want to give Ratiorg a hint by telling him the least possible number of moves required to get to the destination. Given the grid and the wires, return the minimum number of moves required to get to the bottom right corner from the top left corner. If it's not possible to get there, return -1 instead.</p>
+            
+            <h3>Example</h3>
+            <p>For</p>
+            <pre><code>grid = [4, 8]</code></pre>
+            <p>and</p>
+            <pre><code>wires = 
+            [[1, 0, 1, 3], [3, 1, 3, 2], [4, 1, 4, 3], [4, 2, 4, 4],
+             [1, 3, 3, 3], [2, 1, 7, 1], [2, 2, 7, 2], [5, 3, 8, 3]]</code></pre>
+            <p>the output should be:</p>
+            <pre><code>solution(grid, wires) = 26</code></pre>
+            <p>Check out the image below for better understanding. The wires are colored red, and the path Ratiorg should take is colored green.</p>
+            
+            <h3>Input/Output</h3>
+            <ul>
+                <li><p><span>[execution time limit]</span> 4 seconds (js)</p></li>
+                <li><p><span>[memory limit]</span> 1 GB</p></li>
+                <li>
+                    <p><span>[input]</span> array.integer <code>grid</code></p>
+                    <p>Array of two elements, where the first element is the height and the second element is the width of the field.</p>
+                    <p>Guaranteed constraints: <code>grid.length = 2</code>, <code>1 ≤ grid[i] ≤ 100</code>.</p>
+                </li>
+                <li>
+                    <p><span>[input]</span> array.array.integer <code>wires</code></p>
+                    <p>Array of electric wires located on the grid. Each wire is given in the format <code>[x1, y1, x2, y2]</code>, where <code>(x1, y1)</code> is the position of the first endpoint and <code>(x2, y2)</code> is the position of the second endpoint. x represents the x coordinate on the axis that runs along the width of the grid, and y represents the y coordinate on the axis that runs along the height of the grid.</p>
+                    <p>It is guaranteed that for each i either <code>wires[i][0] = wires[i][2]</code> or <code>wires[i][1] = wires[i][3]</code>, but not simultaneously. The wires can intersect and overlap.</p>
+                    <p>Guaranteed constraints: <code>0 ≤ wires.length ≤ 100</code>, <code>wires[i].length = 4</code>, <code>0 ≤ wires[0], wires[2] ≤ grid[1].length</code>, <code>0 ≤ wires[1], wires[3] ≤ grid[0].length</code>.</p>
+                </li>
+                <li>
+                    <p><span>[output]</span> integer</p>
+                    <p>The minimum number of moves required to get from the top left to the bottom right corner of the grid without stepping on the wires, or <code>-1</code> if it's impossible to get there.</p>
+                </li>
+            </ul>
+        `
+    },
+    {
+        "topic_id": 64,
+        "order_index": 31,
+        "challenge_name": 'Mobius Conquer',
+        "description": `
+            <p>Little Ratiorg was tired of being bullied by other bots and mighty CodeFighters, so he joined the Ninja Bots Training camp. Any bot that manages to solve all the challenges becomes an ultimate master of algorithms, and that is exactly what Ratiorg wants.</p>
+            
+            <p>It's been several weeks, and Ratiorg is starting to boast about his newly obtained skills, which infuriates one of his fellow trainees. The angry bot decided to challenge Ratiorg to a Mobius Conquer battle to find out who's the strongest once and for all.</p>
+            
+            <p>In the Mobius Conquer battle the players fight for positions on a Möbius strip, created from a rectangular field by giving it a half-twist, and then joining the ends of the strip along its height to form a loop. Both sides of the field are divided into cells, some of which are marked as impassable (note that player positions are not considered impassable). A player is said to control a cell if the cell is closer to him in terms of shortest paths on the strip.</p>
+            
+            <p>The Mobius Conquer battle is almost over: Ratiorg and his enemy have both reached their final positions. The only thing to do now is to determine the winner. Given the coordinates of both players, coordinates of the impassable cells, and the size of the field, calculate the number of cells controlled by each player.</p>
+            
+            <h3>Example</h3>
+            <p>For</p>
+            <pre><code>field = [4, 3]</code></pre>
+            <p>Ratiorg's position as</p>
+            <pre><code>ratiorg = [0, 0, 0]</code></pre>
+            <p>Enemy's position as</p>
+            <pre><code>enemy = [1, 3, 2]</code></pre>
+            <p>And</p>
+            <pre><code>impassableCells = 
+            [[0, 0, 1], [0, 1, 1], [0, 2, 1], [0, 2, 2],
+             [1, 1, 0], [1, 2, 1], [1, 3, 0]]</code></pre>
+            <p>The output should be:</p>
+            <pre><code>solution(field, ratiorg, enemy, impassableCells) = [7, 6]</code></pre>
+            
+            <h3>Input/Output</h3>
+            <ul>
+                <li><p><span>[execution time limit]</span> 4 seconds (js)</p></li>
+                <li><p><span>[memory limit]</span> 1 GB</p></li>
+                <li>
+                    <p><span>[input]</span> array.integer <code>field</code></p>
+                    <p>Array of two integers, the size of the field. The first element is its height, and the second element is its width.</p>
+                    <p>Guaranteed constraints: <code>field.length = 2</code>, <code>1 ≤ field[i] ≤ 100</code>.</p>
+                </li>
+                <li>
+                    <p><span>[input]</span> array.integer <code>ratiorg</code></p>
+                    <p>Ratiorg's position as an array of three integers. The first integer defines the side of the field (either 0 or 1), the second one defines the row, and the last one defines the column (both 0-based).</p>
+                    <p>Note, that the row and the column of the second side of the field is defined assuming that the first side of the field was flipped vertically.</p>
+                    <p>Guaranteed constraints: <code>ratiorg.length = 3</code>, <code>0 ≤ ratiorg[0] ≤ 1</code>, <code>0 ≤ ratiorg[1] < field[0]</code>, <code>0 ≤ ratiorg[2] < field[1]</code>.</p>
+                </li>
+                <li>
+                    <p><span>[input]</span> array.integer <code>enemy</code></p>
+                    <p>The enemy's position in the same format as ratiorg.</p>
+                    <p>Guaranteed constraints: <code>enemy.length = 3</code>, <code>0 ≤ enemy[0] ≤ 1</code>, <code>0 ≤ enemy[1] < field[0]</code>, <code>0 ≤ enemy[2] < field[1]</code>.</p>
+                </li>
+                <li>
+                    <p><span>[input]</span> array.array.integer <code>impassableCells</code></p>
+                    <p>Array of impassable cells, where each cell is given in the same format as ratiorg and enemy. It is guaranteed that all impassable cells are unique, and that no impassable cell coincides with ratiorg or enemy.</p>
+                    <p>Guaranteed constraints: <code>0 ≤ impassableCells.length < 2 · field[0] · field[1]</code>, <code>impassableCells[i].length = 3</code>, <code>0 ≤ impassableCells[0], impassableCells[2] ≤ field[1].length</code>, <code>0 ≤ impassableCells[1], impassableCells[3] ≤ field[0].length</code>.</p>
+                </li>
+                <li>
+                    <p><span>[output]</span> array.integer</p>
+                    <p>Array of two integers, where the first integer is the number of cells controlled by Ratiorg, and the second is the number of cells controlled by his enemy.</p>
+                </li>
+            </ul>
+        `
+    },
+    {
+        "topic_id": 64,
+        "order_index": 32,
+        "challenge_name": "Cuboid Planet",
+        "description": `
+            <p>Little Ratiorg was so tired of being bullied by other bots and mighty CodeFighters that he decided to join the Ninja Bots Training camp. It is known that any bot that manages to solve all the challenges becomes an ultimate master of algorithms, and that is exactly what Ratiorg is aiming at.</p>
+            
+            <p>Ratiorg has become so cool that the authorities decided to send him on a special mission to the remote cuboid planet of size <code>a × b × c</code>, not yet inhabited by bots. In order to prepare for the mission, Ratiorg has to understand the properties of the planet by training on its net here, on Earth. Here's how the planet and the net on which the bot is going to prepare for the mission look like:</p>
+            
+            <p>The net is divided into 6 areas, with each area representing one of the planet's surfaces. Each of the areas is divided into a grid with cells of size <code>1 × 1</code>, with some of the cells being impassable. The coordinates of each cell can be represented in the format <code>(area, row, column)</code>, where <code>area</code> stands for the area number shown in the net image above, and <code>(row, column)</code> stands for 0-based cell's position in this area. It is possible to move between two cells if they share a common side.</p>
+            
+            <p>Ratiorg would like to understand how close the net he's going to train on is to the conditions of the planet. In order to do this, he would like to calculate the difference between the numbers of pairs of cells that are reachable from one another on a cuboid and the number of pairs of cells that are reachable from one another on a net (note that only pairs of different cells should be counted, and the order of cells in a pair doesn't matter, i.e. <code>(a, b)</code> is the same pair as <code>(b, a)</code>).</p>
+            
+            <p>Given the dimensions of the cuboid and the <code>impassableCells</code>, calculate the value Ratiorg is interested in.</p>
+            
+            <h3>Example</h3>
+            <p>For</p>
+            <pre><code>cuboid = [1, 2, 3]</code></pre>
+            <p>and</p>
+            <pre><code>impassableCells = [[1, 0, 0], [3, 0, 1], [3, 2, 0], [4, 0, 1], [5, 1, 0]]</code></pre>
+            <p>The output should be</p>
+            <pre><code>solution(cuboid, impassableCells) = 106</code></pre>
+            
+            <p>On a cuboid, all cells but the impassable ones are reachable from one another, so the total number of reachable pairs equals <code>17 * 16 / 2 = 136</code>.</p>
+            
+            <p>Here's how the net of this cuboid looks like:</p>
+            
+            <p>There are four areas in which all cells are connected. Thus, the number of pairs of cells that are reachable from one another is <code>3 * 2 / 2 + 4 * 3 / 2 + 4 * 3 / 2 + 6 * 5 / 2 = 30</code>.</p>
+            
+            <p>Thus, the answer is <code>136 - 30 = 106</code>.</p>
+            
+            <h3>Input/Output</h3>
+            <ul>
+                <li><p><span>[execution time limit]</span> 4 seconds (js)</p></li>
+                <li><p><span>[memory limit]</span> 1 GB</p></li>
+                <li>
+                    <p><span>[input]</span> array.integer <code>cuboid</code></p>
+                    <p>Array of three elements, the size of the cuboid in the format <code>[a, b, c]</code>.</p>
+                    <p>Guaranteed constraints: <code>cuboid.length = 3</code>, <code>1 ≤ cuboid[i] ≤ 50</code>.</p>
+                </li>
+                <li>
+                    <p><span>[input]</span> array.array.integer <code>impassableCells</code></p>
+                    <p>Array of impassable cells, where each cell is given as an array of three elements in the format described above.</p>
+                    <p>It is guaranteed that no cell is given twice, and that each cell is valid (i.e. its coordinates belong to one of the cells of the grid).</p>
+                    <p>Guaranteed constraints: <code>0 ≤ impassableCells.length ≤ 2 · (ab + ac + bc)</code>, <code>impassableCells[i].length = 3</code>.</p>
+                </li>
+                <li>
+                    <p><span>[output]</span> integer</p>
+                    <p>The difference between the pairs of cells reachable from one another on the cuboid and on the net.</p>
+                </li>
+            </ul>
+        `
+    },
+    {
+        "topic_id": 64,
+        "order_index": 33,
+        "challenge_name": 'Tankbot',
+        "description": `
+            <p>Little Ratiorg was so tired of being bullied by other bots and mighty CodeFighters that he decided to join the Ninja Bots Training camp. It is known that any bot that manages to solve all the challenges becomes an ultimate master of algorithms, and that is exactly what Ratiorg is aiming at.</p>
+            
+            <p>His training is now officially over, and Ratiorg is ready to get back to CodeSignal and show who's the boss. To make his appearance more imposing, Ratiorg is planning to take a tank and drive it back home. However, the bot will have to travel through the forest covered in trees so strong that they can hold back even a tank, so not every tank can make it through this forest.</p>
+            
+            <p>Since Ratiorg finished the trainings as the best student, he can pick any tank he likes. There are a lot of tanks of all possible sizes. All available tanks are square, can only move in one of the four directions (leftwards, rightwards, downwards, or upwards), and can't move over the trees.</p>
+            
+            <p>The Ninja Bots Training camp is located at the top left corner of the forest, and CodeFigths bots camp is located at its bottom right corner. Given the map of the forest, find the maximum size of the tank Ratiorg can take in order to get from the training camp to the CodeFigths bot camp.</p>
+            
+            <h3>Example</h3>
+            <p>For</p>
+            <pre><code>forest = 
+            [[true, true, true, true],
+             [true, true, false, true],
+             [true, true, true, true],
+             [true, true, true, true]]</code></pre>
+            <p>the output should be</p>
+            <pre><code>solution(forest) = 2</code></pre>
+            
+            <p>For</p>
+            <pre><code>forest = 
+            [[false, true, true],
+             [true, true, true]]</code></pre>
+            <p>the output should be</p>
+            <pre><code>solution(forest) = 0</code></pre>
+            
+            <p>There is a tree right at the entrance of the Training Camp, so there's no way to get out of there by tank.</p>
+            
+            <h3>Input/Output</h3>
+            <ul>
+                <li><p><span>[execution time limit]</span> 4 seconds (js)</p></li>
+                <li><p><span>[memory limit]</span> 1 GB</p></li>
+                <li>
+                    <p><span>[input]</span> array.array.boolean <code>forest</code></p>
+                    <p>A rectangular matrix of booleans which represents a grid of the forest. <code>true</code> represents a free cell, and <code>false</code> represents a cell with a tree on it.</p>
+                    <p>Guaranteed constraints: <code>2 ≤ forest.length ≤ 120</code>, <code>2 ≤ forest[0].length ≤ 120</code>.</p>
+                </li>
+                <li>
+                    <p><span>[output]</span> integer</p>
+                    <p>The maximum length of the tank Ratiorg can take. If there is no way to get home by tank, return 0 instead.</p>
+                </li>
+            </ul>
+        `
+    },
+    {
+        "topic_id": 64,
+        "order_index": 34,
+        "challenge_name": 'Portals',
+        "description": `
+            <p>Little Ratiorg was so tired of being bullied by other bots and mighty CodeFighters that he decided to join the Ninja Bots Training camp. It is known that any bot that manages to solve all the challenges becomes an ultimate master of algorithms, and that is exactly what Ratiorg is aiming at.</p>
+            
+            <p>Ratiorg has already improved his physical strength considerably, and now it's time to hone his mental skills. As it turned out, the bot has what it takes to be a great magician: he has what appears to be an infinite source of mana somewhere inside his little mechanical body. In the next challenge, Ratiorg will have to use it. The bot is standing in the top left corner of the rectangular grid, some cells of which are impassable. His goal is to make it to the bottom right corner in no more than <code>maxTime</code> seconds.</p>
+            
+            <p>Ratiorg can move between two passable cells if they share a common side, and each move takes 1 second. He can also set an arbitrary number of portals into passable cells; moreover, he can even set them remotely and instantly, i.e. there's no need to reach the cell to set a portal there, and setting a portal takes no time. Ratiorg can instantly move between any pair of cells with portals. However, setting a portal to the cell at (x, y) costs <code>manacost[x][y]</code> mana points.</p>
+            
+            <p>Given the <code>maxTime</code> and the <code>manacost</code> matrix, calculate the minimum amount of mana Ratiorg will have to use to finish the challenge in time.</p>
+            
+            <h3>Example</h3>
+            <p>For</p>
+            <pre><code>maxTime = 4</code></pre>
+            <p>and</p>
+            <pre><code>manacost = 
+            [[1, -1, -1],
+             [5, -1, -1],
+             [4,  6,  8]]</code></pre>
+            <p>the output should be</p>
+            <pre><code>solution(maxTime, manacost) = 0</code></pre>
+            <p>The cheapest way to get to the bottom right corner takes 4 seconds and doesn't require any portals.</p>
+            
+            <p>For</p>
+            <pre><code>maxTime = 3</code></pre>
+            <p>and</p>
+            <pre><code>manacost = 
+            [[1, -1, -1],
+             [5, -1, -1],
+             [4,  6,  8]]</code></pre>
+            <p>the output should be</p>
+            <pre><code>solution(maxTime, manacost) = 5</code></pre>
+            <p>The best plan is to set portals into the top left and the bottom left corners (the total manacost equals 1 + 4 = 5). After that, you can reach the bottom left corner instantly and then make two moves rightwards in 2 seconds.</p>
+            
+            <h3>Input/Output</h3>
+            <ul>
+                <li><p><span>[execution time limit]</span> 4 seconds (js)</p></li>
+                <li><p><span>[memory limit]</span> 1 GB</p></li>
+                <li>
+                    <p><span>[input]</span> integer <code>maxTime</code></p>
+                    <p>A non-negative integer, the maximum number of seconds you can spend to get to the bottom right corner.</p>
+                    <p>Guaranteed constraints: <code>0 ≤ maxTime ≤ 200</code>.</p>
+                </li>
+                <li>
+                    <p><span>[input]</span> array.array.integer <code>manacost</code></p>
+                    <p>A rectangular matrix. If <code>manacost[x][y] > 0</code>, then the cell (x, y) is passable and it costs <code>manacost[x][y]</code> mana points to set a portal into it. Otherwise, <code>manacost[x][y] = -1</code>, and the cell (x, y) is impassable.</p>
+                    <p>It is guaranteed that both the top left corner (<code>manacost[0][0]</code>) and the bottom right corner (<code>manacost[manacost.length - 1][manacost[0].length - 1]</code>) are passable.</p>
+                    <p>Guaranteed constraints: <code>1 ≤ manacost.length ≤ 300</code>, <code>1 ≤ manacost[0].length ≤ 300</code>, <code>-1 ≤ manacost[i][j] ≤ 1000</code>.</p>
+                </li>
+                <li>
+                    <p><span>[output]</span> integer</p>
+                    <p>The minimum number of mana points required to get to the bottom right corner.</p>
+                </li>
+            </ul>
+        `
+    },
+    {
+        "topic_id": 65,
+        "order_index": 35,
+        "challenge_name": 'Orinteering Beginner',
+        "description": `
+            <p>Not long ago you saw an orienteering competition on TV and immediately wanted to try it yourself. You've joined an orienteering club and started preparing for the upcoming competitions.</p>
+            
+            <p>To test your skills, the coach asked you to enter the beginners' competition. In this race your objective is to reach the finish from the start by the shortest path. You were given a map that shows <code>n</code> different locations (including start and finish) connected by roads of different lengths. You are only allowed to traverse roads in one direction (i.e. all roads are one-way), but since this is a competition for beginners the organizers chose such an orientation of the roads that if you constantly move along roads, you'll eventually reach the finish and if you leave some location you will never return there.</p>
+            
+            <p>Given the number of locations <code>n</code> and the roads between them, find the length of the shortest path between the start (location with number 0) and the finish (location with number <code>n - 1</code>).</p>
+            
+            <h3>Example</h3>
+            <p>For <code>n = 6</code> and</p>
+            <pre><code>roads = 
+            [[[1, 3]],
+             [[4, 1], [3, 2]],
+             [[1, 0]],
+             [[5, 3]],
+             [[5, 5]],
+             []]</code></pre>
+            <p>the output should be</p>
+            <pre><code>solution(n, roads) = 8</code></pre>
+    
+            <h3>Input/Output</h3>
+            <ul>
+                <li><p><span>[execution time limit]</span> 4 seconds (js)</p></li>
+                <li><p><span>[memory limit]</span> 1 GB</p></li>
+                <li>
+                    <p><span>[input]</span> integer <code>n</code></p>
+                    <p>The number of locations.</p>
+                    <p>Guaranteed constraints: <code>1 ≤ n ≤ 105</code>.</p>
+                </li>
+                <li>
+                    <p><span>[input]</span> array.array.array.integer <code>roads</code></p>
+                    <p>An array representing roads between locations as an adjacency list. <code>roads[i][j] = [k, l]</code> means that there is a road between location <code>i</code> and location <code>k</code> of length <code>l</code>.</p>
+                    <p>Guaranteed constraints: <code>roads.length == n</code>, <code>0 ≤ roads[i].length ≤ n - 1</code>, <code>roads[i][j].length = 2</code>, <code>0 ≤ roads[i][j][0] < n</code>, <code>0 ≤ roads[i][j][1] ≤ 1000</code>.</p>
+                </li>
+                <li>
+                    <p><span>[output]</span> integer</p>
+                    <p>The length of the shortest path between the start (location 0) and the finish (location <code>n - 1</code>).</p>
+                </li>
+            </ul>
+        `
+    },
+    {
+        "topic_id": 65,
+        "order_index": 36,
+        "challenge_name": 'Orienteering Game',
+        "description": `
+            <p>Not long ago you saw an orienteering competition on TV and immediately wanted to try it yourself. You've joined an orienteering club and started preparing for the upcoming competitions.</p>
+    
+            <p>You've just came home from one particularly exhausting competition and decided to relax by playing a board game which all qualified participants (including you, of course) got as a reward. In this game your objective is to navigate your way on the board from the start located in the upper-left corner to the finish located in the bottom-right corner in as little time as possible.</p>
+    
+            <p>The game board is a rectangle divided into equal cells. Each cell contains a number denoting the time you should wait in this cell before advancing to the next one. From each cell you can move only to the neighboring one, i.e. the one directly below, above, to the left, or to the right of your current position.</p>
+    
+            <p>Given the game board, find the minimum time required to reach the finish from the start.</p>
+    
+            <h3>Example</h3>
+            <p>For</p>
+            <pre><code>board = 
+            [[42, 51, 22, 10,  0],
+             [2,  50, 7,  6,   15],
+             [4,  36, 8,  30,  20],
+             [0,  40, 10, 100, 1]]</code></pre>
+            <p>the output should be</p>
+            <pre><code>solution(board) = 140</code></pre>
+    
+            <h3>Input/Output</h3>
+            <ul>
+                <li><p><span>[execution time limit]</span> 4 seconds (js)</p></li>
+                <li><p><span>[memory limit]</span> 1 GB</p></li>
+                <li>
+                    <p><span>[input]</span> array.array.integer <code>board</code></p>
+                    <p>The game board of size n × m. The start is located at <code>board[0][0]</code> and the finish is at <code>board[n - 1][m - 1]</code>.</p>
+                    <p>Guaranteed constraints: <code>1 ≤ board.length ≤ 250</code>, <code>1 ≤ board[i].length ≤ 250</code>, <code>0 ≤ board[i][j] ≤ 100</code>.</p>
+                </li>
+                <li>
+                    <p><span>[output]</span> integer</p>
+                    <p>The minimum time required to reach the finish from the start.</p>
+                </li>
+            </ul>
+        `
+    },
+    {
+        "topic_id": 65,
+        "order_index": 37,
+        "challenge_name": 'Time Constrained Orienteering',
+        "description": `
+            <p>Not long ago you saw an orienteering competition on TV and immediately wanted to try it yourself. You've joined an orienteering club and started preparing for the upcoming competitions. You liked participation so much that you decided to organize your very own competition, and an unusual one.</p>
+    
+            <p>In this race, the participants should find such a path from start to finish that they will spend no more than <code>T</code> minutes on each road. When a participant leaves a location, the time on their stopwatch is set to <code>T</code>, and the countdown begins. If they can't make it to the next location in <code>T</code> seconds, they lose the race.</p>
+    
+            <p>You have already picked a location for the start, but not yet settled for the finish. To decide which location to choose, for each of the <code>n</code> locations you'd like to calculate the minimum value of <code>T</code> that makes it possible to complete the race from start to this location.</p>
+    
+            <p>Given the start location, the number of locations <code>n</code> and the roads connecting them, return the number of different minimum possible value of <code>T</code> for every finish location.</p>
+    
+            <h3>Example</h3>
+    
+            <p>For <code>n = 5</code>, <code>start = 3</code>, and</p>
+            <pre><code>roads = 
+            [[1, 2, 3],
+             [2, 3, 1],
+             [2, 4, 2],
+             [3, 5, 4],
+             [4, 5, 3]]</code></pre>
+            <p>the output should be</p>
+            <pre><code>solution(n, start, roads) = 4</code></pre>
+    
+            <p>The minimum possible values of <code>T</code> for locations from 1 to <code>n</code> are 3, 1, 0, 2, and 3 respectively, 4 distinct values in total.</p>
+    
+            <h3>Input/Output</h3>
+            <ul>
+                <li><p><span>[execution time limit]</span> 4 seconds (js)</p></li>
+                <li><p><span>[memory limit]</span> 1 GB</p></li>
+                <li>
+                    <p><span>[input]</span> integer <code>n</code></p>
+                    <p>The number of locations.</p>
+                    <p>Guaranteed constraints: <code>2 ≤ n ≤ 10^5</code>.</p>
+                </li>
+                <li>
+                    <p><span>[input]</span> integer <code>start</code></p>
+                    <p>The location you picked as the start of the race.</p>
+                    <p>Guaranteed constraints: <code>1 ≤ start ≤ n</code>.</p>
+                </li>
+                <li>
+                    <p><span>[input]</span> array.array.integer <code>roads</code></p>
+                    <p>A two-dimensional array representing the roads. Each road is given in the format <code>[loc1, loc2, t]</code>, which means that it takes <code>t</code> minutes to reach <code>loc2</code> from <code>loc1</code> (both given 1-based).</p>
+                    <p>It is guaranteed that every two locations are connected by roads.</p>
+                    <p>Guaranteed constraints: <code>1 ≤ roads.length ≤ 5 · 10^4</code>, <code>roads[i].length = 3</code>, <code>1 ≤ roads[i][0], roads[i][1] ≤ n</code>, <code>0 ≤ roads[i][2] ≤ 10^5</code>.</p>
+                </li>
+                <li>
+                    <p><span>[output]</span> integer</p>
+                    <p>The number of different possible values of <code>T</code> for the races that start at the start and end at the finish for every finish location from 1 to <code>n</code>.</p>
+                </li>
+            </ul>
+        `
+    },
+    {
+        "topic_id": 65,
+        "order_index": 38,
+        "challenge_name": 'Time Constrained Orienteering 2',
+        "description": `
+            <p>Not long ago you saw an orienteering competition on TV and immediately wanted to try it yourself. You've joined an orienteering club and started preparing for the upcoming competitions. You liked participation so much that you decided to organize your very own competition, and an unusual one.</p>
+    
+            <p>In this race, the participants should find such a path from start to finish that they will spend no more than <code>T</code> minutes on each road. When a participant leaves a location, the time on their stopwatch is set to <code>T</code>, and the countdown begins. If they can't make it to the next location in <code>T</code> seconds, they lose the race.</p>
+    
+            <p>You haven't yet chosen locations for the start and the finish. To decide which locations to choose, for each ordered pair of locations <code>(a, b)</code>, you'd like to calculate the minimum value of <code>T</code> that makes it possible to complete the race from start at <code>a</code> to finish at <code>b</code>.</p>
+    
+            <p>Given the number of locations <code>n</code> and the one-way roads connecting them, for every start and every finish location, return the minimum possible value of <code>T</code>.</p>
+    
+            <h3>Example</h3>
+    
+            <p>For <code>n = 3</code> and</p>
+            <pre><code>roads = 
+            [[0, 1, 100000],
+             [5, 0, 2],
+             [4, -1, 0]]</code></pre>
+            <p>the output should be</p>
+            <pre><code>solution(n, roads) = 
+            [[0, 1, 2],
+             [4, 0, 2],
+             [4, 4, 0]]</code></pre>
+    
+            <h3>Input/Output</h3>
+            <ul>
+                <li><p><span>[execution time limit]</span> 4 seconds (js)</p></li>
+                <li><p><span>[memory limit]</span> 1 GB</p></li>
+                <li>
+                    <p><span>[input]</span> integer <code>n</code></p>
+                    <p>The number of locations.</p>
+                    <p>Guaranteed constraints: <code>2 ≤ n ≤ 120</code>.</p>
+                </li>
+                <li>
+                    <p><span>[input]</span> array.array.integer <code>roads</code></p>
+                    <p>A two-dimensional array representing the roads as an adjacency matrix. Each element <code>roads[i][j]</code> is either a non-negative integer (that means there is a road from location <code>i</code> to location <code>j</code> and it takes <code>roads[i][j]</code> minutes to traverse it), or <code>-1</code> if there is no road in that direction.</p>
+                    <p>Guaranteed constraints: <code>roads.length = n</code>, <code>roads[i].length = n</code>, <code>-1 ≤ roads[i][j] ≤ 10^5</code>, <code>roads[i][i] = 0</code>.</p>
+                </li>
+                <li>
+                    <p><span>[output]</span> array.array.integer</p>
+                    <p>A square matrix of length <code>n</code>, where the element at the <code>i</code>th row and the <code>j</code>th column is the minimum possible value of <code>T</code> for the race that starts at the <code>i</code>th location and ends at the <code>j</code>th location. If there is no such <code>T</code>, it should be equal to <code>-1</code>.</p>
+                </li>
+            </ul>
+        `
+    },
+    {
+        "topic_id": 65,
+        "order_index": 39,
+        "challenge_name": 'Possible Locations',
+        "description": `
+            <p>Not long ago you saw an orienteering competition on TV and immediately wanted to try it yourself. You've joined an orienteering club and started preparing for the upcoming competitions.</p>
+    
+            <p>One day your club announced that it was going to organize its own orienteering competition and you decided to help. This competition will be held in a place consisting of <code>n</code> different locations (numbered from <code>0</code> to <code>n - 1</code>) connected by one-way roads. Furthermore, each road will have a number of points assigned to it: each time a participant traverses a road, this number will be added to his score. The participant who finishes with the least number of points wins. Note, that the participant can choose to continue his path to improve his score even if he reached the finish.</p>
+    
+            <p>The organizers of the event asked you to find all possible pairs of (start, finish) locations, such that for any participant it would be impossible to gain infinitely small score.</p>
+    
+            <p>Given the number of locations <code>n</code> and roads between them with their respective points, return an array of arrays of two elements <code>[i, j]</code> such that <code>i ≠ j</code> and location <code>j</code> is reachable from <code>i</code> but it is impossible to gain infinitely small score moving along any path between them.</p>
+    
+            <h3>Example</h3>
+    
+            <p>For <code>n = 7</code> and</p>
+            <pre><code>roads = [
+             [[1, 100]],
+             [[0, -10], [2, -100]],
+             [[0, 0]],
+             [[0, 3], [4, 0]],
+             [[5, 1]],
+             [[3, -2]],
+             [[0, -50]]]</code></pre>
+            <p>the output should be</p>
+            <pre><code>solution(n, roads) = [
+             [0, 1], [0, 2], 
+             [1, 0], [1, 2], 
+             [2, 0], [2, 1], 
+             [6, 0], [6, 1], [6, 2]]</code></pre>
+    
+            <h3>Input/Output</h3>
+            <ul>
+                <li><p><span>[execution time limit]</span> 4 seconds (js)</p></li>
+                <li><p><span>[memory limit]</span> 1 GB</p></li>
+                <li>
+                    <p><span>[input]</span> integer <code>n</code></p>
+                    <p>The number of locations.</p>
+                    <p>Guaranteed constraints: <code>1 ≤ n ≤ 1000</code>.</p>
+                </li>
+                <li>
+                    <p><span>[input]</span> array.array.array.integer <code>roads</code></p>
+                    <p>Array representing roads between locations as an adjacency list. <code>roads[i][j] = [k, p]</code> means that there is a road from location <code>i</code> to location <code>k</code> that gives <code>p</code> points.</p>
+                    <p>Guaranteed constraints: <code>roads.length = n</code>, <code>1 ≤ roads[i].length < n</code>, <code>roads[i][j].length = 2</code>, <code>0 ≤ roads[i][j][0] < n</code>, <code>-1000 ≤ roads[i][j][1] ≤ 1000</code>.</p>
+                </li>
+                <li>
+                    <p><span>[output]</span> array.array.integer</p>
+                    <p>An array of arrays representing pairs of location numbers <code>[i, j]</code> such that <code>i ≠ j</code> and location <code>j</code> is reachable from <code>i</code> but it is impossible to gain infinitely small score moving along any path between them.</p>
+                </li>
+            </ul>
+        `
+    },
+    {
+        "topic_id": 65,
+        "order_index": 40,
+        "challenge_name": 'Maximize Score',
+        "description": `
+            <p>Not long ago you saw an orienteering competition on TV and immediately wanted to try it yourself. You've joined an orienteering club and started preparing for the upcoming competitions.</p>
+    
+            <p>One day your club announced that it was going to organize its own orienteering competition and you decided to help. This competition will be held in a place consisting of <code>n</code> different locations (numbered from <code>0</code> to <code>n - 1</code>) connected by one-way roads. Furthermore, each road will have a number of points assigned to it: each time a participant traverses a road, this number will be added to his score. The participant who finishes with the least number of points wins. Note that the participant can choose to continue his path to improve his score even if he reached the finish.</p>
+    
+            <p>The organizers of the event have already chosen where the competition will be held. The place is quite remarkable: whatever pair of locations (start, finish) is chosen, it will be impossible for any participant to gain infinitely small score. Now your task is to find the pair of locations (start, finish) with the maximum possible winning score.</p>
+    
+            <p>Given the number of locations <code>n</code> and roads between them with their respective points, return an array of two elements <code>[start, finish]</code> such that the winning score in the competition with start in location <code>start</code> and finish in location <code>finish</code> is the highest among all other competitions with different start and finish locations. If there are several possible pairs, return the lexicographically smallest one.</p>
+    
+            <h3>Example</h3>
+    
+            <p>For <code>n = 7</code> and</p>
+            <pre><code>roads = [
+             [[1, 100]],
+             [[2, -100]],
+             [[0, 0]],
+             [[0, 3], [4, 0]],
+             [[5, 1]],
+             [[3, 2]],
+             [[0, -100]]]</code></pre>
+            <p>the output should be</p>
+            <pre><code>solution(n, roads) = [1, 0]</code></pre>
+    
+            <h3>Input/Output</h3>
+            <ul>
+                <li><p><span>[execution time limit]</span> 4 seconds (js)</p></li>
+                <li><p><span>[memory limit]</span> 1 GB</p></li>
+                <li>
+                    <p><span>[input]</span> integer <code>n</code></p>
+                    <p>The number of locations.</p>
+                    <p>Guaranteed constraints: <code>7 ≤ n ≤ 1000</code>.</p>
+                </li>
+                <li>
+                    <p><span>[input]</span> array.array.array.integer <code>roads</code></p>
+                    <p>Array representing the roads between the locations as an adjacency list. <code>roads[i][j] = [k, p]</code> means that there is a road from location <code>i</code> to location <code>k</code> that gives <code>p</code> points.</p>
+                    <p>Guaranteed constraints: <code>roads.length == n</code>, <code>0 ≤ roads[i].length < 30</code>, <code>sum(roads[i].length) < 10 · n</code>, <code>roads[i][j].length == 2</code>, <code>0 ≤ roads[i][j][0] < n</code>, <code>-1000 ≤ roads[i][j][1] ≤ 1000</code>.</p>
+                </li>
+                <li>
+                    <p><span>[output]</span> array.integer</p>
+                    <p>An array <code>[start, finish]</code> such that the winning score in competition with start in location <code>start</code> and finish in location <code>finish</code> is the highest among all other competitions with different start and finish locations. If there are several possible pairs, return the lexicographically smallest one.</p>
+                </li>
+            </ul>
+        `
+    },
+    {
+        "topic_id": 65,
+        "order_index": 41,
+        "challenge_name": 'Escape The Nightmare',
+        "description": `
+            <p>Not long ago you saw an orienteering competition on TV and immediately wanted to try it yourself. You've joined an orienteering club and started preparing for the upcoming competitions.</p>
+    
+            <p>For the past few days, you haven't been able to get a good sleep because of one particular nightmare. In this nightmare, you find yourself on a right star pyramid at coordinates <code>start</code>, and the only way to escape is to reach the finish in the shortest possible time (i.e., by the shortest path) moving along the edges of the pyramid. Tired of restless nights, you decided to put an end to it.</p>
+    
+            <p>Given the coordinates of <code>start</code> and <code>finish</code> located on the edges of a right star pyramid, the pyramid's height <code>h</code> and the distance <code>d</code> between the center of the star at the pyramid's base and its vertices, find the length of the shortest path from <code>start</code> to <code>finish</code> along the edges of the pyramid.</p>
+    
+            <p>The base of the pyramid is a regular octagram centered at <code>(0, 0, 0)</code> with two vertices on the x-axis and two vertices on the y-axis. The pyramid's apex is directly above <code>(0, 0, 0)</code> at height <code>h</code>. Each pyramid's edge either belongs to the base or connects the pyramid's apex with the base. It's guaranteed that both <code>start</code> and <code>finish</code> belong to the pyramid's edges.</p>
+    
+            <p>Here is how the given pyramid looks:</p>
+    
+            <h3>Example</h3>
+    
+            <p>For <code>h = 4</code>, <code>d = 2</code>, <code>start = [-1, 0, 2]</code>, and <code>finish = [2, 0, 0]</code>, the output should be</p>
+            <pre><code>solution(h, d, start, finish) = 6.7082039325</code></pre>
+    
+            <h3>Input/Output</h3>
+            <ul>
+                <li><p><span>[execution time limit]</span> 4 seconds (js)</p></li>
+                <li><p><span>[memory limit]</span> 1 GB</p></li>
+                <li>
+                    <p><span>[input]</span> integer <code>h</code></p>
+                    <p>The height of the right star pyramid.</p>
+                    <p>Guaranteed constraints: <code>1 ≤ h ≤ 1000</code>.</p>
+                </li>
+                <li>
+                    <p><span>[input]</span> integer <code>d</code></p>
+                    <p>The distance between <code>(0, 0, 0)</code> and the star vertices.</p>
+                    <p>Guaranteed constraints: <code>1 ≤ d ≤ 1000</code>.</p>
+                </li>
+                <li>
+                    <p><span>[input]</span> array.integer <code>start</code></p>
+                    <p>Three-dimensional coordinates of the starting point given in the format <code>[x, y, z]</code>.</p>
+                    <p>Guaranteed constraints: <code>start.length = 3</code>, <code>-max(d, h) ≤ start[i] ≤ max(d, h)</code>.</p>
+                </li>
+                <li>
+                    <p><span>[input]</span> array.integer <code>finish</code></p>
+                    <p>Three-dimensional coordinates of the finishing point given in the format <code>[x, y, z]</code>.</p>
+                    <p>Guaranteed constraints: <code>finish.length = 3</code>, <code>-max(d, h) ≤ finish[i] ≤ max(d, h)</code>.</p>
+                </li>
+                <li>
+                    <p><span>[output]</span> float</p>
+                    <p>The length of the shortest path between <code>start</code> and <code>finish</code> along the pyramid's edges. The answer is considered correct if its absolute error doesn't exceed <code>10<sup>-5</sup></code>.</p>
+                </li>
+            </ul>
+        `
+    },
+    {
+        "topic_id": 65,
+        "order_index": 42,
+        "challenge_name": 'Training Route',
+        "description": `
+            <p>Not long ago you saw an orienteering competition on TV and immediately wanted to try it yourself. You've joined an orienteering club and started preparing for the upcoming competitions.</p>
+    
+            <p>One of the most important components of an orienteering competition is running. In order to train this skill, you decided to practice on your club's special training field that consists of <code>n</code> locations numbered from <code>0</code> to <code>n - 1</code>, with some of them connected by two-way roads of different lengths. There are <code>n</code> roads in total, and any location is reachable from another one by the roads (possibly more than one). Your coach has composed a training route for you that consists of several locations that you should visit in the exact given order. Note that you may be required to visit some locations several times on your training route.</p>
+    
+            <p>Given the number of locations <code>n</code>, roads between them, and the training route, find the minimum possible total length of this route.</p>
+    
+            <h3>Example</h3>
+    
+            <p>For <code>n = 6</code> and</p>
+            <pre><code>roads = [
+             [[1, 50], [3, 10], [5, 4]],
+             [[0, 50], [2, 15], [3, 5]], 
+             [[1, 15], [4, 55]], 
+             [[0, 10], [1, 5]],
+             [[2, 55]], 
+             [[0, 4]]]</code></pre>
+            <p>and <code>route = [5, 1, 0, 2]</code>, the output should be</p>
+            <pre><code>solution(n, roads, route) = 64</code></pre>
+    
+            <h3>Input/Output</h3>
+            <ul>
+                <li><p><span>[execution time limit]</span> 4 seconds (js)</p></li>
+                <li><p><span>[memory limit]</span> 1 GB</p></li>
+                <li>
+                    <p><span>[input]</span> integer <code>n</code></p>
+                    <p>The number of locations.</p>
+                    <p>Guaranteed constraints: <code>1 ≤ n ≤ 3000</code>.</p>
+                </li>
+                <li>
+                    <p><span>[input]</span> array.array.array.integer <code>roads</code></p>
+                    <p>Array representing the roads between the locations as an adjacency list. <code>roads[i][j] = [k, l]</code> means that there is a road between location <code>i</code> and location <code>k</code> of length <code>l</code>.</p>
+                    <p>Guaranteed constraints: <code>roads.length == n</code>, <code>0 ≤ roads[i].length ≤ n - 1</code>, <code>roads[i][j].length == 2</code>, <code>0 ≤ roads[i][j][0] < n</code>, <code>0 ≤ roads[i][j][1] ≤ 1000</code>.</p>
+                </li>
+                <li>
+                    <p><span>[input]</span> array.integer <code>route</code></p>
+                    <p>An array of integers representing the order in which you should visit locations on your training route.</p>
+                    <p>Guaranteed constraints: <code>2 ≤ route.length ≤ 104</code>, <code>route[i] ≠ route[i + 1]</code>, <code>0 ≤ route[i] ≤ n - 1</code>.</p>
+                </li>
+                <li>
+                    <p><span>[output]</span> integer</p>
+                    <p>The minimum possible total length of the training route.</p>
+                </li>
+            </ul>
+        `
+    },
+    {
+        "topic_id": 66,
+        "order_index": 43,
+        "challenge_name": 'Corridors Repairing',
+        "description": `
+            <p>You're working in a company that specializes in optimizing various things. There are <code>n</code> rooms in your office connected by <code>n</code> corridors of different lengths. Your boss has informed you that the company will repair all the corridors one by one, and you need to choose one of the corridors to be closed for repairs first.</p>
+    
+            <p>As an optimization enthusiast, you want to close one of the corridors such that all rooms remain connected, and the total length of the remaining corridors is minimized. You also need to find out how many different corridors can be closed while still meeting these conditions.</p>
+    
+            <p>Given the number of rooms <code>n</code> and the information about the corridors, determine the number of different corridors that can be closed while maintaining the connectivity of the rooms and keeping the total length of the remaining corridors as small as possible.</p>
+    
+            <h3>Example</h3>
+    
+            <p>For <code>n = 6</code> and</p>
+            <pre><code>corridors = [
+             [0, 1, 2], [1, 2, 3], [0, 2, 2], 
+             [1, 3, 1], [2, 4, 2], [0, 5, 3]]</code></pre>
+            <p>the output should be</p>
+            <pre><code>solution(n, corridors) = 2</code></pre>
+    
+            <h3>Input/Output</h3>
+            <ul>
+                <li><p><span>[execution time limit]</span> 4 seconds (js)</p></li>
+                <li><p><span>[memory limit]</span> 1 GB</p></li>
+                <li>
+                    <p><span>[input]</span> integer <code>n</code></p>
+                    <p>The number of rooms in the office.</p>
+                    <p>Guaranteed constraints: <code>3 ≤ n ≤ 10000</code>.</p>
+                </li>
+                <li>
+                    <p><span>[input]</span> array.array.integer <code>corridors</code></p>
+                    <p>Information about the corridors connecting the rooms. Each corridor is represented by three numbers: <code>corridors[i][0]</code> and <code>corridors[i][1]</code> denote the rooms the corridor connects, and <code>corridors[i][2]</code> denotes the length of this corridor.</p>
+                    <p>Guaranteed constraints: <code>corridors.length = n</code>, <code>corridors[i].length = 3</code>, <code>0 ≤ corridors[i][0], corridors[i][1] < n</code>, <code>0 ≤ corridors[i][2] ≤ 100</code>, <code>corridors[i][0] ≠ corridors[i][1]</code>.</p>
+                </li>
+                <li>
+                    <p><span>[output]</span> integer</p>
+                    <p>The number of corridors that can be removed while preserving the connectivity of the rooms and minimizing the total length of the remaining corridors.</p>
+                </li>
+            </ul>
+        `
+    },
+    {
+        "topic_id": 66,
+        "order_index": 44,
+        "challenge_name": 'Reducing Meetings',
+        "description": `
+            <p>You've just become the director of a big company. As it turns out, the company favors one-on-one meetings, which is why there are so many of them each week. Each meeting has an integer efficiency value that shows how much profit it gives the company. To make your employees chat less and work more, you want to remove some one-on-one meetings from the weekly schedule and leave as few meetings as possible. Of course, there are some restrictions:</p>
+            
+            <ul>
+                <li>It should still be possible to deliver information from any employee to any other one (it might take a series of meetings to deliver information from one worker to another).</li>
+                <li>There should be as few meetings left as possible.</li>
+                <li>The total efficiency should be the maximum possible. The total efficiency equals the sum of efficiencies of all remaining one-on-one meetings.</li>
+            </ul>
+    
+            <p>Given the number of people in the company <code>n</code> and the list of current one-on-one meetings with their efficiency values, find the best total efficiency of the reduced scheme.</p>
+    
+            <h3>Example</h3>
+    
+            <p>For <code>n = 4</code> and</p>
+            <pre><code>meetings = [
+             [0, 1, 3], [1, 2, 2], [3, 0, 1], [3, 2, 5]]</code></pre>
+            <p>the output should be</p>
+            <pre><code>solution(n, meetings) = 10</code></pre>
+    
+            <p>The best way to reduce meetings is to remove the 3rd (1-based) meeting from the list.</p>
+    
+            <h3>Input/Output</h3>
+            <ul>
+                <li><p><span>[execution time limit]</span> 4 seconds (js)</p></li>
+                <li><p><span>[memory limit]</span> 1 GB</p></li>
+                <li>
+                    <p><span>[input]</span> integer <code>n</code></p>
+                    <p>The number of people working in your company.</p>
+                    <p>Guaranteed constraints: <code>1 ≤ n ≤ 100</code>.</p>
+                </li>
+                <li>
+                    <p><span>[input]</span> array.array.integer <code>meetings</code></p>
+                    <p>Information about the meetings. Each meeting is represented by three numbers: <code>meetings[i][0]</code> and <code>meetings[i][1]</code> denote the employees between whom the meeting is held, and <code>meetings[i][2]</code> denotes the efficiency of this meeting.</p>
+                    <p>Guaranteed constraints: <code>n - 1 ≤ meetings.length ≤ n · (n - 1) / 2</code>, <code>meetings[i].length = 3</code>, <code>0 ≤ meetings[i][0], meetings[i][1] < n</code>, <code>0 ≤ meetings[i][2] ≤ 100</code>, <code>meetings[i][0] ≠ meetings[i][1]</code>.</p>
+                </li>
+                <li>
+                    <p><span>[output]</span> integer</p>
+                    <p>The best total efficiency of the reduced meetings scheme.</p>
+                </li>
+            </ul>
+        `
+    },
+    {
+        "topic_id": 66,
+        "order_index": 45,
+        "challenge_name": 'Network Wires',
+        "description": `
+            <p>As a director of a large company, you try to do your best to make the working environment as efficient as possible. However, it's difficult to do so when even the hardware used in the office is not efficient: there are too many wires connecting your employees' computers.</p>
+            
+            <p>Naturally, you decided to minimize their number by getting rid of some wires. There's only one constraint: if it is possible to deliver information from one computer to another using the wires, it should still be possible to do so after the renovation. You would also like to minimize the total wires length, because the longer the wires, the more it is possible for you to trip over them at some point.</p>
+            
+            <p>Given the plan of your <code>n</code> office computers and the wires connecting them, find the minimum resulting length of the wires after removing some of them according to the constraints above.</p>
+    
+            <h3>Example</h3>
+    
+            <p>For <code>n = 7</code> and</p>
+            <pre><code>wires = [
+             [0, 1, 1], [2, 0, 2], [1, 2, 3], [3, 4, 1],
+             [4, 5, 2], [5, 6, 3], [6, 3, 2]]</code></pre>
+            <p>the output should be</p>
+            <pre><code>solution(n, wires) = 8</code></pre>
+    
+            <p>The best way is to remove wires 3 and 6 (1-based).</p>
+    
+            <h3>Input/Output</h3>
+            <ul>
+                <li><p><span>[execution time limit]</span> 4 seconds (js)</p></li>
+                <li><p><span>[memory limit]</span> 1 GB</p></li>
+                <li>
+                    <p><span>[input]</span> integer <code>n</code></p>
+                    <p>The number of computers in your office.</p>
+                    <p>Guaranteed constraints: <code>1 ≤ n ≤ 100</code>.</p>
+                </li>
+                <li>
+                    <p><span>[input]</span> array.array.integer <code>wires</code></p>
+                    <p>Information about the wires connecting computers. Each wire is represented by three numbers: <code>wires[i][0]</code> and <code>wires[i][1]</code> denote the computers connected by the ith wire, and <code>wires[i][2]</code> denotes the length of this wire.</p>
+                    <p>Guaranteed constraints: <code>0 ≤ wires.length ≤ n · (n - 1) / 2</code>, <code>wires[i].length = 3</code>, <code>0 ≤ wires[i][0], wires[i][1] < n</code>, <code>0 ≤ wires[i][2] ≤ 100</code>, <code>wires[i][0] ≠ wires[i][1]</code>.</p>
+                </li>
+                <li>
+                    <p><span>[output]</span> integer</p>
+                    <p>The minimum resulting length of the wires after removing some of them.</p>
+                </li>
+            </ul>
+        `
+    },
+    {
+        "topic_id": 66,
+        "order_index": 46,
+        "challenge_name": 'Door Lock',
+        "description": `
+            <p>In order to protect your office from intruders, your boss decided to install a high-tech lock on the door. The lock represents a large cube with some points floating inside. When the correct pin is entered, the points start to connect to each other by rays of light until they form a single connected structure with rays of the minimum possible total length. When this happens, the lock opens.</p>
+            
+            <p>Your boss likes interesting challenges, but is not very fond of solving them himself. This is why he asked you, his most (or least?) favorite employee, to solve the challenge he came up with. Given the set of points, he wants you to find the optimal structure that opens the lock. Since there can be several optimal structures, your task is to return the minimum total length of all the rays in one of such structures.</p>
+    
+            <h3>Example</h3>
+    
+            <p>For <code>points = [[0, 0, 0], [1, 1, 1], [1, -1, 1], [-1, 1, 1], [-1, -1, -1]]</code></p>
+            <p>the output should be</p>
+            <pre><code>solution(points) = 6.9282032303</code></pre>
+    
+            <p>The best way is to connect point [0, 0, 0] with all other points.</p>
+    
+            <h3>Input/Output</h3>
+            <ul>
+                <li><p><span>[execution time limit]</span> 9.5 seconds (js)</p></li>
+                <li><p><span>[memory limit]</span> 1 GB</p></li>
+                <li>
+                    <p><span>[input]</span> array.array.integer <code>points</code></p>
+                    <p>An array of points floating in the cube. Each point is represented by its coordinates in 3D space: <code>points[i][0]</code> for x, <code>points[i][1]</code> for y, and <code>points[i][2]</code> for z.</p>
+                    <p>Guaranteed constraints: <code>1 ≤ points.length ≤ 2500</code>, <code>points[i].length = 3</code>, <code>-5000 ≤ points[i][j] ≤ 5000</code>.</p>
+                </li>
+                <li>
+                    <p><span>[output]</span> float</p>
+                    <p>The total length of the rays in an optimal structure. Your answer will be considered correct if its absolute error doesn't exceed 10<sup>-5</sup>.</p>
+                </li>
+            </ul>
+        `
+    },
+    {
+        "topic_id": 66,
+        "order_index": 47,
+        "challenge_name": 'Connected Network',
+        "description": `
+            <p>Your company uses a local network consisting of <code>n</code> computers, some pairs of which are connected by wires. Each wire has its specific speed of data transmission, which is the same for both directions. Your boss wants to cut down on the expenses and leave only <code>n - 1</code> wires. His only concern is that the network should still be connected, so he is willing to get rid of a random wire.</p>
+            
+            <p>It pains you to see such a waste: efficiency is at stake! In order to explain to your boss how wrong his decision is, you'd like to find the sums of speeds of data transmission along each edge of the most optimal scheme with <code>n - 1</code> wires, and for the second optimal one. The difference between them should convince your boss how important efficiency is, so that is what you need to find.</p>
+    
+            <h3>Example</h3>
+    
+            <p>For <code>n = 4</code> and</p>
+            <pre><code>wires = [
+                [1, 2, 1],
+                [1, 4, 3],
+                [2, 3, 3],
+                [2, 4, 2],
+                [3, 4, 4]
+            ]</code></pre>
+            <p>the output should be</p>
+            <pre><code>solution(n, wires) = 1</code></pre>
+    
+            <p>The most optimal scheme contains wires between three pairs of computers (1 and 2, 2 and 4, and 2 and 3), with the total speed equal to 6. The second optimal scheme contains wires between computers 1 and 2, 2 and 4, and 3 and 4, summing up to the total speed of 7.</p>
+    
+            <h3>Input/Output</h3>
+            <ul>
+                <li><p><span>[execution time limit]</span> 4 seconds (js)</p></li>
+                <li><p><span>[memory limit]</span> 1 GB</p></li>
+                <li>
+                    <p><span>[input]</span> integer <code>n</code></p>
+                    <p>The number of computers.</p>
+                    <p>Guaranteed constraints: <code>3 ≤ n ≤ 100</code>.</p>
+                </li>
+                <li>
+                    <p><span>[input]</span> array.array.integer <code>wires</code></p>
+                    <p>A two-dimensional array representing the wires. Each element of this array is given in the format <code>[comp1, comp2, speed]</code> and represents a wire that connects <code>comp1</code> to <code>comp2</code> (both given 1-based) and has a transmission speed of <code>speed</code>.</p>
+                    <p>It is guaranteed that there are at least two different connected schemes with <code>n - 1</code> wires.</p>
+                    <p>Guaranteed constraints: <code>3 ≤ wires.length ≤ n * (n - 1) / 2</code>, <code>wires[i].length = 3</code>, <code>1 ≤ wires[i][0], wires[i][1] ≤ n</code>, <code>0 ≤ wires[i][2] ≤ 1000</code>.</p>
+                </li>
+                <li>
+                    <p><span>[output]</span> integer</p>
+                    <p>The difference between the sums of speeds of data transmission along each edge for the most optimal scheme and for the second optimal scheme.</p>
+                </li>
+            </ul>
+        `
+    },
+    {
+        "topic_id": 66,
+        "order_index": 48,
+        "challenge_name": 'Changing Wires',
+        "description": `
+            <p>Not long ago your best programmer retired. He was the best programmer in town, and now there is no one in the company who can take his place. As a director and a former programmer, you decided to take his place for a while.</p>
+            
+            <p>Your company is really big and has <code>n</code> of its very own servers and a lot of wires of different lengths connecting them. Of course, the information can be delivered from any server to any other one. Now you should remove some of the wires so that:</p>
+            <ul>
+                <li>Information can still be delivered from any server to any other one;</li>
+                <li>The total length of the remaining wires is as small as possible.</li>
+            </ul>
+            
+            <p>Years of office work did leave their mark, so you're not sure if you can handle the task right away. To begin with, you decided to start off by finding <code>k</code> wires of minimal length that will definitely be left after you remove some of the excessive wires. This little cheat helped you to write a script that returns a list of wires that should be removed.</p>
+    
+            <p>However, it turned out that removing excessive wires is not yet possible because of other more pressing matters, so you keep putting the task off. The problem is, when time passes, some of the wires break down and are replaced by new ones. Each time such an update occurs, you have to recalculate the result. You're naturally not too happy about this, so you would like to write a program that will do the job for you.</p>
+    
+            <p>Given the list of updates containing the information about the wire replacements, for each update calculate the total length of the <code>k</code> shortest wires that shouldn't be removed as excessive according to the constraints above.</p>
+    
+            <h3>Example</h3>
+    
+            <p>For <code>n = 4</code>,</p>
+            <pre><code>wires = [
+                [0, 1, 1],
+                [1, 2, 2],
+                [2, 3, 3],
+                [3, 0, 4]
+            ]
+            k = 3
+            updates = [
+                [0, 1, 5],
+                [3, 0, 2]
+            ]</code></pre>
+            <p>the output should be</p>
+            <pre><code>solution(n, wires, k, updates) = [9, 7]</code></pre>
+    
+            <p>The first update changes the wire between servers 0 and 1 to length 5, making the total length of the 3 shortest wires in the minimum spanning tree equal to 9. The second update changes the wire between servers 3 and 0 to length 2, making the total length of the 3 shortest wires in the minimum spanning tree equal to 7.</p>
+    
+            <h3>Input/Output</h3>
+            <ul>
+                <li><p><span>[execution time limit]</span> 4 seconds (js)</p></li>
+                <li><p><span>[memory limit]</span> 1 GB</p></li>
+                <li>
+                    <p><span>[input]</span> integer <code>n</code></p>
+                    <p>The number of servers in the company.</p>
+                    <p>Guaranteed constraints: <code>1 ≤ n ≤ 10^5</code>.</p>
+                </li>
+                <li>
+                    <p><span>[input]</span> array.array.integer <code>wires</code></p>
+                    <p>Information about the wires connecting the servers. For each valid <code>i</code>, <code>wires[i]</code> contains three numbers: <code>wires[i][0]</code> and <code>wires[i][1]</code> stand for ids of the servers which this wire connects and <code>wires[i][2]</code> stands for the length of this wire.</p>
+                    <p>It is guaranteed that there is no more than one wire between each pair of servers, and that initially it is possible to deliver information from any server to any other one.</p>
+                    <p>Guaranteed constraints: <code>n - 1 ≤ wires.length ≤ min(n * (n - 1) / 2, 10^5)</code>, <code>wires[i].length = 3</code>, <code>0 ≤ wires[i][0], wires[i][1] < n</code>, <code>0 ≤ wires[i][2] ≤ 10^5</code>, <code>wires[i][0] ≠ wires[i][1]</code>.</p>
+                </li>
+                <li>
+                    <p><span>[input]</span> integer <code>k</code></p>
+                    <p>The number of the shortest wires that won't be removed as excessive and information about which you would like to have after each update.</p>
+                    <p>Guaranteed constraints: <code>0 ≤ k ≤ min(10, n - 1)</code>.</p>
+                </li>
+                <li>
+                    <p><span>[input]</span> array.array.integer <code>updates</code></p>
+                    <p>Information about wire updates. For each valid <code>i</code>, <code>updates[i]</code> contains three numbers: <code>updates[i][0]</code> and <code>updates[i][1]</code> stand for ids of the servers which this wire connects and <code>updates[i][2]</code> stands for the new length of this wire.</p>
+                    <p>It is guaranteed that the updates are always applied to one of the existing wires.</p>
+                    <p>Guaranteed constraints: <code>0 ≤ updates.length ≤ 10^4</code>, <code>updates[i].length = 3</code>, <code>0 ≤ updates[i][0], updates[i][1] < n</code>, <code>0 ≤ updates[i][2] ≤ 10^5</code>, <code>updates[i][0] ≠ updates[i][1]</code>.</p>
+                </li>
+                <li>
+                    <p><span>[output]</span> array.integer</p>
+                    <p>For each update, find the total length of the shortest <code>k</code> wires after excessive wires are removed.</p>
+                </li>
+            </ul>
+        `
+    },
+    {
+        "topic_id": 66,
+        "order_index": 49,
+        "challenge_name": 'Hierarchies Count',
+        "description": `
+            <p>Since you became a director of a large company, you came to know all of your <code>n</code> employees perfectly well. You carefully studied their relationships and came up with a list of pairs of workers who respect one another. You are sure that in a healthy environment subordinates should respect their immediate superiors, which is why you would like to change the hierarchy in the company according to the list you composed. This hierarchy should be represented by a rooted tree, and for each pair of employees <code>a</code>, <code>b</code>, <code>a</code> is an immediate superior of <code>b</code> (or the other way round) if and only if <code>a</code> respects <code>b</code> and vice versa.</p>
+            
+            <p>Given the number of people in your company <code>n</code> and the <code>respectList</code> you created, calculate the number of different hierarchies you can create.</p>
+        
+            <h3>Example</h3>
+        
+            <p>For <code>n = 4</code> and</p>
+            <pre><code>respectList = [
+                [0, 1],
+                [1, 2],
+                [2, 3],
+                [3, 0],
+                [1, 3]
+            ]</code></pre>
+            <p>the output should be</p>
+            <pre><code>solution(n, respectList) = 32</code></pre>
+        
+            <p>Here are all possible hierarchies:</p>
+            <pre><code>
+                (0 -- 1), (1 -- 2), (2 -- 3);
+                (1 -- 2), (2 -- 3), (3 -- 0);
+                (2 -- 3), (3 -- 0), (0 -- 1);
+                (3 -- 0), (0 -- 1), (1 -- 2);
+                (1 -- 0), (1 -- 2), (1 -- 3);
+                (3 -- 0), (3 -- 1), (3 -- 2);
+                (1 -- 2), (1 -- 3), (3 -- 0);
+                (1 -- 0), (1 -- 3), (3 -- 2);
+            </code></pre>
+            <p>Each of them can be rooted at any of 4 employees, so the answer equals the number of hierarchies in the list above multiplied by 4.</p>
+        
+            <h3>Input/Output</h3>
+            <ul>
+                <li><p><span>[execution time limit]</span> 4 seconds (js)</p></li>
+                <li><p><span>[memory limit]</span> 1 GB</p></li>
+                <li>
+                    <p><span>[input]</span> integer <code>n</code></p>
+                    <p>The number of employees in your company.</p>
+                    <p>Guaranteed constraints: <code>1 ≤ n ≤ 100</code>.</p>
+                </li>
+                <li>
+                    <p><span>[input]</span> array.array.integer <code>respectList</code></p>
+                    <p>Information about the pairs of employees who respect one another. For each valid <code>i</code>, <code>respectList[i]</code> contains two numbers: <code>respectList[i][0]</code> and <code>respectList[i][1]</code> that represent the ids of employees that respect one another (and thus can be superiors to one another).</p>
+                    <p>It is guaranteed that there is no more than one dependency between each pair of employees and that <code>respectList</code> forms a connected graph.</p>
+                    <p>Guaranteed constraints: <code>n - 1 ≤ respectList.length ≤ n · (n - 1) / 2</code>, <code>respectList[i].length = 2</code>, <code>0 ≤ respectList[i][0], respectList[i][1] < n</code>, <code>respectList[i][0] ≠ respectList[i][1]</code>.</p>
+                </li>
+                <li>
+                    <p><span>[output]</span> integer</p>
+                    <p>The number of different hierarchies that can be obtained from <code>respectList</code> modulo <code>10^9 + 7</code>.</p>
+                </li>
+            </ul>
+        `
+    },
+    {
+        "topic_id": 66,
+        "order_index": 50,
+        "challenge_name": 'Number Of Plans',
+        "description": `
+            <p>You're working in a big delivery company that has to handle a lot of orders on a daily basis. To optimize the delivery process, your boss gave you a plan of the city containing <code>n</code> buildings and some streets connecting them. Your task is to build an optimal delivery plan for the couriers. The plan should contain several streets connecting all the buildings in such a way that each building is reachable from any other one, and should have the minimum total length of all the streets in it among all possible plans.</p>
+            
+            <p>Since this task is too simple for you, you'd like to make it a bit more challenging. You know that using the same delivery plan every time is boring for many couriers, so you'd like to find all possible different optimal plans. To begin with, you'd like to calculate the number of such plans for the given <code>n</code> and <code>streets</code>. Since this number can be very big, return it modulo <code>10^9 + 7</code>.</p>
+        
+            <h3>Example</h3>
+        
+            <p>For <code>n = 4</code> and</p>
+            <pre><code>streets = [
+                [0, 1, 1],
+                [0, 3, 2],
+                [1, 2, 2],
+                [2, 3, 2]
+            ]</code></pre>
+            <p>the output should be</p>
+            <pre><code>solution(n, streets) = 3</code></pre>
+        
+            <p>There are 3 possible optimal delivery plans with the total streets length equal to 5:</p>
+            <pre><code>
+                0 -- 1, 0 -- 3, 1 -- 2;
+                0 -- 1, 1 -- 2, 2 -- 3;
+                0 -- 1, 0 -- 3, 2 -- 3.
+            </code></pre>
+        
+            <h3>Input/Output</h3>
+            <ul>
+                <li><p><span>[execution time limit]</span> 4 seconds (js)</p></li>
+                <li><p><span>[memory limit]</span> 1 GB</p></li>
+                <li>
+                    <p><span>[input]</span> integer <code>n</code></p>
+                    <p>The number of buildings in the city.</p>
+                    <p>Guaranteed constraints: <code>1 ≤ n ≤ 50</code>.</p>
+                </li>
+                <li>
+                    <p><span>[input]</span> array.array.integer <code>streets</code></p>
+                    <p>Information about the streets connecting the buildings in the city. For each valid <code>i</code>, <code>streets[i]</code> contains three numbers: <code>streets[i][0]</code> and <code>streets[i][1]</code> stand for the ids of the buildings the <code>i</code>-th street connects, and <code>streets[i][2]</code> stands for the length of this street.</p>
+                    <p>It is guaranteed that each building is reachable by streets from any other one and that there is no more than one street between each pair of buildings.</p>
+                    <p>Guaranteed constraints: <code>n - 1 ≤ streets.length ≤ n · (n - 1) / 2</code>, <code>streets[i].length = 3</code>, <code>0 ≤ streets[i][0], streets[i][1] < n</code>, <code>0 ≤ streets[i][2] ≤ 100</code>, <code>streets[i][0] ≠ streets[i][1]</code>.</p>
+                </li>
+                <li>
+                    <p><span>[output]</span> integer</p>
+                    <p>The number of optimal delivery plans you can find given the plan of the city modulo <code>10^9 + 7</code>.</p>
+                </li>
+            </ul>
+        `
+    },
+    {
+        "topic_id": 67,
+        "order_index": 51,
+        "challenge_name": 'Running Water',
+        "description": `
+            <p>After long years of sharpening your programming skills and honing your physique, you finally made it: you're a member of the ProProgrammers team and you've entered Fort Boyard!</p>
+            
+            <p>It's your turn to show who's the boss: you're the one who will be participating in the next challenge. Here are the rules of this challenge.</p>
+            
+            <p>There's a treadmill hanging from the ceiling and going up. At its very top, there are three buckets containing water. You can jog up the treadmill and perform one of the following operations:</p>
+            <ul>
+                <li>Empty one of the buckets entirely and pour out all water from it;</li>
+                <li>Pour water from one bucket into another until either the first one is empty or the second one is full.</li>
+            </ul>
+            
+            <p>The buckets are connected to one arm of the scales, and the key that your team should reach is hanging from another. The key will be reachable only when the total amount of water in all three buckets is equal to the given volume.</p>
+            
+            <p>The capacities (volumes) of all the buckets are stored in an array <code>cap</code>. Initially, all three buckets are full, i.e., for each valid <code>i</code>, the <code>i</code>-th bucket has <code>cap[i]</code> units of water. You want to make sure that your efforts won't be vain and calculate in advance if it is possible to get the key. Given the <code>cap</code> array and the <code>volume</code>, determine if it is possible to obtain the volume amount of water in all three buckets performing only the allowed operations.</p>
+        
+            <h3>Example</h3>
+        
+            <p>For <code>cap = [1, 1, 1]</code> and <code>volume = 2</code>, the output should be</p>
+            <pre><code>solution(cap, volume) = true</code></pre>
+        
+            <p>Initially, there are 3 units of water in all the buckets. The only action you can perform is to empty the water from one of the buckets, which will leave you with 2 units. At this point, pouring water from one bucket to another won't produce a different total amount of water, so the only remaining option is emptying one of the remaining buckets, which will leave you with 1 final unit of water. Now the total amount of the poured water is equal to the given volume, so the answer is true.</p>
+        
+            <p>For <code>cap = [16, 5, 3]</code> and <code>volume = 20</code>, the output should be</p>
+            <pre><code>solution(cap, volume) = false</code></pre>
+        
+            <p>Here is the list of all possible amounts of water across all three buckets: 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 21, 24. As you can see, you can't obtain the given volume.</p>
+        
+            <h3>Input/Output</h3>
+            <ul>
+                <li><p><span>[execution time limit]</span> 4 seconds (js)</p></li>
+                <li><p><span>[memory limit]</span> 1 GB</p></li>
+                <li>
+                    <p><span>[input]</span> array.integer <code>cap</code></p>
+                    <p>Individual capacity of each bucket (their volume), listed as three positive integers.</p>
+                    <p>Guaranteed constraints: <code>cap.length = 3</code>, <code>1 ≤ cap[i] ≤ 100</code>.</p>
+                </li>
+                <li>
+                    <p><span>[input]</span> integer <code>volume</code></p>
+                    <p>The required volume.</p>
+                    <p>Guaranteed constraints: <code>1 ≤ volume ≤ sum(cap[i])</code>.</p>
+                </li>
+                <li>
+                    <p><span>[output]</span> boolean</p>
+                    <p><code>true</code> if the given volume can be obtained using the allowed operations and <code>false</code> otherwise.</p>
+                </li>
+            </ul>
+        `
+    },
+    {
+        "topic_id": 67,
+        "order_index": 52,
+        "challenge_name": 'Red Alert',
+        "description": `
+            <p>After long years of sharpening your programming skills and honing your physique, you finally made it: you're a member of the ProProgrammers team and you've entered Fort Boyard!</p>
+            
+            <p>Your team has successfully completed several challenges so far, and one of your teammates is ready to face the next one. In this challenge, the participant must make her way through a corridor covered in red laser rays. If she touches one of the rays, she will fail the challenge and become the prisoner of the Fort.</p>
+            
+            <p>The corridor has several levels, so it can be represented as an undirected graph with a known number of nodes. The participant starts at node 1 and must reach node <code>nodes</code>, both 1-based. Each move, the participant can move to a node adjacent to her current position. Since you prepared for each challenge thoroughly, you know when and where the laser rays appear:</p>
+            <ul>
+                <li>On the <code>i</code>-th (1-based) move, the rays disappear from their previous locations and appear in all the nodes <code>x</code> such that <code>x % k = i % k</code>, where % stands for the modulo operation and <code>k</code> is known.</li>
+            </ul>
+            
+            <p>If your teammate ends up in node <code>x</code> when the rays appear there, she'll fail. Your goal is to calculate the minimum number of moves required to reach the last node from node 1, or <code>-1</code> if it's impossible.</p>
+        
+            <h3>Example</h3>
+        
+            <p>For <code>nodes = 5</code>, <code>corridor = [1, 2, 1, 3, 2, 4, 3, 5, 4, 5]</code>, and <code>k = 4</code>, the output should be</p>
+            <pre><code>solution(nodes, corridor, k) = 2</code></pre>
+        
+            <p>As you can see in the image below, the optimal way is to go to node 1 on the first move and to node 5 on the second one.</p>
+        
+            <p>For <code>nodes = 4</code>, <code>corridor = [1, 2, 1, 3, 2, 4, 3, 4]</code>, and <code>k = 2</code>, the output should be</p>
+            <pre><code>solution(nodes, corridor, k) = -1</code></pre>
+        
+            <p>As you can see in the following image, your teammate will inevitably end up at an even node on an even move, i.e., when the lasers appear there. Thus, the answer is <code>-1</code>.</p>
+        
+            <h3>Input/Output</h3>
+            <ul>
+                <li><p><span>[execution time limit]</span> 4 seconds (js)</p></li>
+                <li><p><span>[memory limit]</span> 1 GB</p></li>
+                <li>
+                    <p><span>[input]</span> integer <code>nodes</code></p>
+                    <p>The number of nodes that comprise the corridor.</p>
+                    <p>Guaranteed constraints: <code>2 ≤ nodes ≤ 1000</code>.</p>
+                </li>
+                <li>
+                    <p><span>[input]</span> array.integer <code>corridor</code></p>
+                    <p>An array of integers that represents a corridor graph, where a pair (<code>corridor[i]</code>, <code>corridor[i + 1]</code>) (for even <code>i</code>) is an edge between the <code>corridor[i]</code>-th and the <code>corridor[i + 1]</code>-th nodes.</p>
+                    <p>Guaranteed constraints: <code>0 ≤ corridor.length ≤ 10^5</code>, <code>1 ≤ corridor[i] ≤ nodes</code>.</p>
+                </li>
+                <li>
+                    <p><span>[input]</span> integer <code>k</code></p>
+                    <p>The parameter for the modulo operation.</p>
+                    <p>Guaranteed constraints: <code>2 ≤ k ≤ 10</code>.</p>
+                </li>
+                <li>
+                    <p><span>[output]</span> integer</p>
+                    <p>The minimal number of moves required to reach node <code>nodes</code> from node 1, or <code>-1</code> if it's impossible to do so.</p>
+                </li>
+            </ul>
+        `
+    },
+    {
+        "topic_id": 67,
+        "order_index": 53,
+        "challenge_name": 'Rod In Labyrinth',
+        "description": `
+            <p>After long years of sharpening your programming skills and honing your physique, you finally made it: you're a member of the ProProgrammers team and you've entered Fort Boyard!</p>
+            
+            <p>Your team has successfully completed several challenges so far, and one of your teammates is ready to face the next one. In this challenge, the participant finds himself in a rectangular labyrinth, and his goal is to carry a rod from the top left corner of the labyrinth to the bottom right corner. The rod is represented as a 1 × 3 rectangle and must be moved through the labyrinth without colliding with blocked cells or walls.</p>
+            
+            <p>The rod can be moved in the following ways:</p>
+            <ul>
+                <li>Move the rod one cell down or up;</li>
+                <li>Move the rod one cell to the right or left;</li>
+                <li>Change the rod's orientation from vertical to horizontal or vice versa (rotation).</li>
+            </ul>
+            
+            <p>The rod can only be rotated about its center if the 3 × 3 area surrounding it is clear from obstacles or walls. The rod starts positioned horizontally with its left cell at <code>[0, 0]</code>, and the goal is to move the rod into a position where one of its cells is in the bottom right cell of the labyrinth.</p>
+            
+            <h3>Example</h3>
+        
+            <p>For</p>
+            <pre><code>labyrinth = [['.', '.', '.', '.', '.', '.', '.', '.', '.'],
+                        ['#', '.', '.', '.', '#', '.', '.', '.', '.'],
+                        ['.', '.', '.', '.', '#', '.', '.', '.', '.'],
+                        ['.', '#', '.', '.', '.', '.', '.', '#', '.'],
+                        ['.', '#', '.', '.', '.', '.', '.', '#', '.']]</code></pre>
+            <p>the output should be</p>
+            <pre><code>solution(labyrinth) = 11</code></pre>
+        
+            <p>For</p>
+            <pre><code>labyrinth = [['.', '.', '.', '.', '.', '.', '.', '.', '.'],
+                        ['#', '.', '.', '.', '#', '.', '.', '#', '.'],
+                        ['.', '.', '.', '.', '#', '.', '.', '.', '.'],
+                        ['.', '#', '.', '.', '.', '.', '.', '#', '.'],
+                        ['.', '#', '.', '.', '.', '.', '.', '#', '.']]</code></pre>
+            <p>the output should be</p>
+            <pre><code>solution(labyrinth) = -1</code></pre>
+        
+            <h3>Input/Output</h3>
+            <ul>
+                <li><p><span>[execution time limit]</span> 4 seconds (js)</p></li>
+                <li><p><span>[memory limit]</span> 1 GB</p></li>
+                <li>
+                    <p><span>[input]</span> array.array.char <code>labyrinth</code></p>
+                    <p>A rectangular array of chars representing the labyrinth, where <code>labyrinth[i][j] = '.'</code> if the corresponding cell is empty and <code>labyrinth[i][j] = '#'</code> if the corresponding cell is blocked.</p>
+                    <p>Guaranteed constraints: <code>3 ≤ labyrinth.length ≤ 1000</code>, <code>3 ≤ labyrinth[i].length ≤ 1000</code>.</p>
+                </li>
+                <li>
+                    <p><span>[output]</span> integer</p>
+                    <p>The minimal number of moves required to carry the rod to the end of the labyrinth or <code>-1</code> if it's impossible.</p>
+                </li>
+            </ul>
+        `
+    },
+    {
+        "topic_id": 67,
+        "order_index": 54,
+        "challenge_name": 'Barrel Maze',
+        "description": `
+            <p>After long years of sharpening your programming skills and honing your physique, you finally made it: you're a member of the ProProgrammers team and you've entered Fort Boyard!</p>
+            
+            <p>Your team has successfully completed several challenges so far, and one of your teammates is ready to face the next one. In this challenge, the player must move a barrel from one end of an <code>n × m</code> maze to the other, where the key is locked in a vice. A tool that releases the key is connected to the barrel. The maze consists of <code>n · m - 3</code> boxes, and these boxes and the barrel need to be moved so that the key can be freed. The boxes and the barrel are heavy, so you need to help your teammate plan the moves.</p>
+            
+            <p>Given the size of the maze and the positions of the boxes, find the minimum number of moves required to complete the challenge.</p>
+            
+            <h3>Example</h3>
+        
+            <p>For <code>n = 3</code>, <code>m = 3</code>, and</p>
+            <pre><code>boxes = [[0, 2], [2, 2], [1, 0], [2, 0], [1, 1], [2, 1]]</code></pre>
+            <p>the output should be</p>
+            <pre><code>solution(n, m, boxes) = 8</code></pre>
+        
+            <h3>Input/Output</h3>
+            <ul>
+                <li><p><span>[execution time limit]</span> 15 seconds (js)</p></li>
+                <li><p><span>[memory limit]</span> 1 GB</p></li>
+                <li>
+                    <p><span>[input]</span> integer <code>n</code></p>
+                    <p>An integer, the number of rows in the maze.</p>
+                    <p>Guaranteed constraints: <code>1 ≤ n < 10</code>.</p>
+                </li>
+                <li>
+                    <p><span>[input]</span> integer <code>m</code></p>
+                    <p>An integer, the number of columns in the maze.</p>
+                    <p>Guaranteed constraints: <code>1 ≤ m ≤ 50 / n</code>.</p>
+                </li>
+                <li>
+                    <p><span>[input]</span> array.array.integer <code>boxes</code></p>
+                    <p>An array of coordinates of all boxes in the maze. For each valid <code>i</code>, <code>boxes[i][0]</code> stands for the row and <code>boxes[i][1]</code> stands for the column (both 0-based) of the <code>(i + 1)</code>th box.</p>
+                    <p>Guaranteed constraints: <code>boxes.length = n × m - 3</code>, <code>boxes[i].length = 2</code>, <code>0 ≤ boxes[i][0] < n</code>, <code>0 ≤ boxes[i][1] < m</code>.</p>
+                </li>
+                <li>
+                    <p><span>[output]</span> integer</p>
+                    <p>The minimal number of moves required to move the barrel from the top left cell of the maze to the bottom right cell. It's guaranteed that it's always possible.</p>
+                </li>
+            </ul>
+        `
+    },
+    {
+        "topic_id": 67,
+        "order_index": 55,
+        "challenge_name": 'Forming Of Words',
+        "description": `
+            <p>After long years of sharpening your programming skills and honing your physique, you finally made it: you're a member of the ProProgrammers team and you've entered Fort Boyard!</p>
+            
+            <p>Your team has finally entered the Treasure Room, and now all that's left to do is complete the final challenge and grab the well-deserved treasure. In this challenge, 4 members of your team need to stand on the cells of a <code>5 × 4</code> grid filled with letters (not necessarily distinct). The letters they stand on should form a password, and the gold will appear only if the password is correct and correctly spelled.</p>
+            
+            <p>The players can move only along the axes or stay in their cells; moving from one cell to the neighboring one takes one second; and two players cannot stand on the same cell at the same moment. You need to calculate the minimum number of seconds your team needs to form the new password.</p>
+            
+            <h3>Example</h3>
+        
+            <p>For</p>
+            <pre><code>grid = 
+            [['a', 'b', 'c', 'd'],
+             ['e', 'f', 'g', 'h'],
+             ['i', 'j', 'k', 'l'],
+             ['m', 'n', 'o', 'p'],
+             ['q', 'r', 's', 't']]</code></pre>
+            <pre><code>positions = [[2, 2], [0, 2], [4, 3], [2, 1]]</code></pre>
+            <pre><code>newWord = "rsam"</code></pre>
+            <p>the output should be</p>
+            <pre><code>solution(grid, positions, newWord) = 2</code></pre>
+        
+            <h3>Input/Output</h3>
+            <ul>
+                <li><p><span>[execution time limit]</span> 48 seconds (js)</p></li>
+                <li><p><span>[memory limit]</span> 1 GB</p></li>
+                <li>
+                    <p><span>[input]</span> array.array.char <code>grid</code></p>
+                    <p>A rectangular array representing the grid, where <code>grid[i][j]</code> is a lowercase English letter.</p>
+                    <p>Guaranteed constraints: <code>grid.length = 5</code>, <code>grid[i].length = 4</code>.</p>
+                </li>
+                <li>
+                    <p><span>[input]</span> array.array.integer <code>positions</code></p>
+                    <p>An array representing the initial positions of your 4 teammates, where <code>positions[i][0]</code> stands for the row and <code>positions[i][1]</code> stands for the column (both 0-based) of the <code>(i + 1)</code>th teammate.</p>
+                    <p>Guaranteed constraints: <code>positions.length = 4</code>, <code>positions[i].length = 2</code>, <code>0 ≤ positions[i][0] < 5</code>, <code>0 ≤ positions[i][1] < 4</code>.</p>
+                </li>
+                <li>
+                    <p><span>[input]</span> string <code>newWord</code></p>
+                    <p>A string representing the new word that you should spell. It's guaranteed that the new word can be formed by the letters of the grid.</p>
+                    <p>Guaranteed constraints: <code>newWord.length = 4</code>.</p>
+                </li>
+                <li>
+                    <p><span>[output]</span> integer</p>
+                    <p>The minimal number of seconds required to obtain <code>newWord</code>.</p>
+                </li>
+            </ul>
+        `
+    },
+    {
+        "topic_id": 67,
+        "order_index": 56,
+        "challenge_name": 'Crossing The River',
+        "description": `
+            <p>After long years of sharpening your programming skills and honing your physique, you finally made it: you're a member of the ProProgrammers team and you've entered Fort Boyard!</p>
+            
+            <p>Unfortunately, something went horribly wrong: although you collected the treasure of the Fort, you cannot get out! The gates are locked, and you have no idea how to unlock them. Desperate, you turned to the Professor, a slightly crazy but helpful inhabitant of the Fort. He promised to help you, but only if you solve his challenge.</p>
+            
+            <p>In this challenge, you won't have to do anything yourself; instead, you will have to make several trained animals cross a river using a single frail boat in the minimum possible time.</p>
+            
+            <p>Here's the tricky part: although the animals are well-trained, they're still wild beasts with wild instincts. Some pairs of animals just can't stand one another, and if they are left alone (i.e., without at least a single other animal watching them) either on the same side of the river or on the boat, they will definitely lose it and start fighting. The Professor most certainly won't be impressed, and you will end up stuck in the Fort with him. Note that the animals won't have time to fight when they go aboard the boat or leave it; they will only start to do so if they spend at least one minute together.</p>
+            
+            <p>The boat is quite old and very delicate: it can only move with no more than two animals, and it obviously can't move by itself. Given the information about the animals, return the minimum amount of time required to make them cross the river, or -1 if it's impossible to do so.</p>
+            
+            <h3>Example</h3>
+        
+            <p>For</p>
+            <pre><code>animals = 
+            [[ 3, -1,  4],
+             [-1,  2, -1],
+             [ 4, -1,  1]]</code></pre>
+            <p>the output should be</p>
+            <pre><code>solution(animals) = 14</code></pre>
+            <p>Let's assume that the given three animals are a dog (d), a cat (c), and a mouse (m), respectively. A cat can't be left alone neither with the mouse nor with the dog. To make the animals cross the river you will have to apply the following strategy:</p>
+            <ul>
+                <li>Initial position: d c m --------- ...</li>
+                <li>Move 1: c     --d m---> ... (4 minutes)</li>
+                <li>Move 2: c     --------- d m</li>
+                <li>Move 3: c     <---m---- d (1 minute)</li>
+                <li>Move 4: c m   --------- d (2 minutes)</li>
+                <li>Move 5: m     ----c---> d (3 minutes)</li>
+                <li>Move 6: m     --------- c d</li>
+                <li>Move 7: m     <---d---- c (4 minutes)</li>
+                <li>Final position: m d   --------- c</li>
+                <li>Total time: 4 + 1 + 2 + 3 + 4 = 14 minutes.</li>
+            </ul>
+        
+            <h3>Input/Output</h3>
+            <ul>
+                <li><p><span>[execution time limit]</span> 4 seconds (js)</p></li>
+                <li><p><span>[memory limit]</span> 1 GB</p></li>
+                <li>
+                    <p><span>[input]</span> array.array.integer <code>animals</code></p>
+                    <p>A square matrix that represents the animals. For each valid <code>i</code> and <code>j</code> (<code>i ≠ j</code>), <code>animals[i][j]</code> is either greater than 0 and represents the number of minutes it takes for the <code>i</code>th and the <code>j</code>th animals to cross the river in one boat, or is equal to -1, which means that the animals can't stand one another. It is guaranteed that <code>animals[i][j] = animals[j][i]</code>.</p>
+                    <p>For each valid <code>i</code>, <code>animals[i][i]</code> is guaranteed to be greater than 0. This value denotes the number of minutes it takes the <code>i</code>th animal to cross the river alone.</p>
+                    <p>Guaranteed constraints: <code>1 ≤ animals.length ≤ 10</code>, <code>animals[i].length = animals.length</code>, <code>-1 ≤ animals[i][j] ≤ 100</code>.</p>
+                </li>
+                <li>
+                    <p><span>[output]</span> integer</p>
+                    <p>The minimum amount of time required to make the animals cross the river or -1 if it's impossible to do so.</p>
+                </li>
+            </ul>
+        `
+    },
+    {
+        "topic_id": 67,
+        "order_index": 58,
+        "challenge_name": 'Rubiks Cubes',
+        "description": `
+            <p>After long years of sharpening your programming skills and honing your physique, you finally made it: you're a member of the ProProgrammers team and you've entered Fort Boyard!</p>
+            
+            <p>Unfortunately, something went horribly wrong: although you collected the treasure of the Fort, you cannot get out! You asked a crazed Professor (an inhabitant of the Fort) to help you out, and he showed you the gates that lead to the exit. It turned out that opening the gates is a challenge itself, and you will be allowed to leave the Fort only if you manage to complete it from the first try. Moreover, the Master Of The Fort is after you because of your outstanding performance, so you don't have that much time.</p>
+            
+            <p>Two of your teammates are given Rubik's Cubes, one cube for each player. The gates will open only when the cubes have the same configuration, and only if this configuration is obtained in the minimum possible number of moves. Each move, each of the players is allowed to rotate one of the layers of their cube. There are two additional conditions that should be met: Firstly, it's not possible to rotate the cubes, since it will open the tigers' cages in the room where the other teammates are waiting. Secondly, each move a layer can be rotated only 90°.</p>
+            
+            <p>Given the initial cube configurations, return the minimum number of moves required to obtain the same configuration on both cubes. The time is short, so you can make only 2 moves.</p>
+            
+            <h3>Example</h3>
+        
+            <p>For</p>
+            <pre><code>
+    firstCube = 
+    [[0, 0, 0, 0], [1, 1, 1, 1], [2, 2, 2, 2], 
+     [3, 3, 3, 3], [4, 4, 4, 4], [5, 5, 5, 5]]
+    secondCube = 
+    [[5, 0, 3, 0], [1, 4, 1, 2], [5, 5, 2, 2],
+     [3, 4, 3, 4], [0, 2, 0, 4], [3, 1, 5, 1]]</code></pre>
+            <p>the output should be</p>
+            <pre><code>solution(firstCube, secondCube) = 1</code></pre>
+            <p>Here is what the first cube looks like:</p>
+            <p>And here is what the second cube looks like:</p>
+            <p>If the first teammate rotates the upper layer to the left and the second teammate rotates the left layer backwards, both of them will get the following configuration:</p>
+        
+            <h3>Input/Output</h3>
+            <ul>
+                <li><p><span>[execution time limit]</span> 20 seconds (js)</p></li>
+                <li><p><span>[memory limit]</span> 1 GB</p></li>
+                <li>
+                    <p><span>[input]</span> array.array.integer <code>firstCube</code></p>
+                    <p>An array representing the colors on the sides of the first cube. <code>firstCube[0]</code> and <code>firstCube[1]</code> stand for the upper and lower sides respectively, <code>firstCube[2]</code> and <code>firstCube[3]</code> for right and left sides, <code>firstCube[4]</code> and <code>firstCube[5]</code> for front and back sides. Each of these 6 arrays contains 4 elements. It's guaranteed that <code>firstCube</code> contains 4 elements of each color. Here is how these arrays' elements are placed on each side:</p>
+                    <p>Guaranteed constraints: <code>firstCube.length = 6</code>, <code>firstCube[i].length = 4</code>, <code>0 ≤ firstCube[i][j] ≤ 5</code>.</p>
+                </li>
+                <li>
+                    <p><span>[input]</span> array.array.integer <code>secondCube</code></p>
+                    <p>An array representing the colors on the sides of the second cube in the same format as for the first cube.</p>
+                    <p>Guaranteed constraints: <code>secondCube.length = 6</code>, <code>secondCube[i].length = 4</code>, <code>0 ≤ secondCube[i][j] ≤ 5</code>.</p>
+                </li>
+                <li>
+                    <p><span>[output]</span> integer</p>
+                    <p>The number of moves required to obtain the same configurations on the Rubik's cubes if it is not greater than 2, and -1 otherwise.</p>
+                </li>
+            </ul>
+        `
+    },
+    {
+        "topic_id": 67,
+        "order_index": 59,
+        "challenge_name": 'Prisoner Escape',
+        "description": `
+            <p>After long years of sharpening your programming skills and honing your physique, you finally made it: you're a member of the ProProgrammers team and you've entered Fort Boyard!</p>
+            
+            <p>You've completed the challenges, collected the gold, and managed to find your way out of the Fort, so now there is only one thing left to do. One of your team members was taken as a prisoner when he failed his challenge, and now is your chance to set him free. However, it won't be easy: there are two guards whose job is to stop the prisoner if he tries to escape. The prisoner should avoid the guards at all costs, otherwise you won't be able to help him.</p>
+            
+            <p>The map of the prison is represented by an undirected graph that can be disconnected, but can't contain multiedges or loops. Initially one node is occupied by the prisoner, and two other nodes are occupied by the guards. Each move they take occurs in the following order: the prisoner goes first, and the guards go second, one at a time. During a turn a person can stay on their node, or move to a neighboring node (i.e. the node connected to their current location by an edge). If at any moment a guard and a prisoner turn out to be on the same node, the guard will grab the prisoner and won't let him go, so the team won't be able to set him free.</p>
+            
+            <p>Your task is to find out if the guards can catch the prisoner, assuming that both the guards and the prisoner move optimally.</p>
+            
+            <h3>Example</h3>
+        
+            <p>For</p><code>nodes = 5</code>
+
+            <pre><code>
+            graph = [1, 2, 
+                     2, 3, 
+                     3, 4, 
+                     4, 5, 
+                     5, 1]</code></pre>
+
+            <p>and <code>start = [1, 3, 4]</code>, the output should be
+            <code>solution(nodes, graph, start) = true</code>.<p>
+            <p>Here's one possible scenario: on the first move the prisoner stays in his node (if he moves, he'll be caught after the guards move). guard1 moves to node 2 and guard2 to node 5. On the second move the prisoner is forced to stay in his node again because all his neighboring nodes are occupied by guards. However, guard1 will catch the prisoner in his next turn anyway.</p>
+    
+            <p>For</p>
+            <code>nodes = 16,</codes>
+    
+            <pre><code>graph = 
+            [1, 2, 1, 4, 1, 5, 1, 13,
+             2, 3, 2, 6, 2, 14,
+             3, 4, 3, 7, 3, 15,
+             4, 8, 4, 16,
+             5, 6, 5, 8, 5, 9,
+             6, 7, 6, 10,
+             7, 8, 7, 11,
+             8, 12,
+             9, 10, 9, 12, 9, 13,
+             10, 11, 10, 14,
+             11, 12, 11, 15,
+             12, 16,
+             13, 14, 13, 16,
+             14, 15,
+             15, 16]</pre></code>
+            
+            <p>and <code>start = [1, 5, 16]</code>, the output should be
+            <code>solution(nodes, graph, start) = false</code>.</p>
+            <p>In this example the prisoner has a winning strategy to follow. When no guard threatens to catch him in one move, he just stays in his node. When there is at least one guard on the neighboring nodes, he goes to the node which isn't neighboring any of the guards, so the guards can't catch him. Such a node always exists because each node has 4 neighboring nodes and these nodes aren't neighboring one another, so if there is one guard in one of the nodes, there are three other nodes to control for the remaining guard, which is impossible due to the graph structure.</p>
+            
+            <h3>Input/Output</h3>
+            <ul>
+                <li><p><span>[execution time limit]</span> 26 seconds (js)</p></li>
+                <li><p><span>[memory limit]</span> 1 GB</p></li>
+                <li>
+                    <p><span>[input]</span> integer <code>nodes</code></p>
+                    <p>An integer, the number of nodes in the graph. The nodes are numbered from 1 to nodes inclusive.</p>
+                    <p>Guaranteed constraints: <code>3 ≤ nodes ≤ 50</code>.</p>
+                </li>
+                <li>
+                    <p><span>[input]</span> array.integer <code>graph</code></p>
+                    <p>An array of integers, where a pair <code>(graph[i], graph[i + 1])</code> (for even <code>i</code>) denotes an edge between the <code>graph[i]</code>th and the <code>graph[i + 1]</code>th nodes.</p>
+                    <p>Guaranteed constraints: <code>0 ≤ graph.length ≤ 2000</code>, <code>1 ≤ graph[i] ≤ nodes</code>.</p>
+                </li>
+                <li>
+                    <p><span>[input]</span> array.integer <code>start</code></p>
+                    <p>An array of three distinct integers. <code>start[0]</code> is the initial prisoner position, and <code>start[1]</code> and <code>start[2]</code> are the guards positions.</p>
+                    <p>Guaranteed constraints: <code>1 ≤ start[i] ≤ nodes</code>.</p>
+                </li>
+                <li>
+                    <p><span>[output]</span> boolean</p>
+                    <p>True if guards can catch the prisoner and false otherwise.</p>
+                </li>
+            </ul>
+        `
+    },
     
     
     
@@ -9840,6 +13708,40 @@ const challenges = [
     
     
     
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+
+    
+    
+    
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
