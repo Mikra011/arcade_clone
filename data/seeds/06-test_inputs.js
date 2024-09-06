@@ -16143,8 +16143,342 @@ const test_inputs = [
         "input_value": "2"
     },
 
-    // 
 
+    ////////// Graphs /////////////////////////////////////////////////// Graphs /////////////////////////////////////////
+    ////////// Graphs /////////////////////////////////////////////////// Graphs /////////////////////////////////////////
+    ////////// Graphs /////////////////////////////////////////////////// Graphs /////////////////////////////////////////
+    ////////// Graphs /////////////////////////////////////////////////// Graphs /////////////////////////////////////////
+    ////////// Graphs /////////////////////////////////////////////////// Graphs /////////////////////////////////////////
+    ////////// Graphs /////////////////////////////////////////////////// Graphs /////////////////////////////////////////
+    ////////// Graphs /////////////////////////////////////////////////// Graphs /////////////////////////////////////////
+    ////////// Graphs /////////////////////////////////////////////////// Graphs /////////////////////////////////////////
+    ////////// Graphs /////////////////////////////////////////////////// Graphs /////////////////////////////////////////
+    ////////// Graphs /////////////////////////////////////////////////// Graphs /////////////////////////////////////////
+    ////////// Graphs /////////////////////////////////////////////////// Graphs /////////////////////////////////////////
+    ////////// Graphs /////////////////////////////////////////////////// Graphs /////////////////////////////////////////
+
+
+    // New Road System
+    {
+        "test_id": 1783,
+        "input_type": "matrix",
+        "input_name": "roadRegister",
+        "input_value": "[[false, true, false, false],  [false, false, true, false],  [true, false, false, true],  [false, false, true, false]]"
+    },
+    {
+        "test_id": 1784,
+        "input_type": "matrix",
+        "input_name": "roadRegister",
+        "input_value": "[[false, true, false, false, false, false, false],  [true, false, false, false, false, false, false],  [false, false, false, true, false, false, false],  [false, false, true, false, false, false, false],  [false, false, false, false, false, false, true],  [false, false, false, false, true, false, false],  [false, false, false, false, false, true, false]]"
+    },
+    {
+        "test_id": 1785,
+        "input_type": "matrix",
+        "input_name": "roadRegister",
+        "input_value": "[[false, true, false],  [false, false, false],  [true, false, false]]"
+    },
+    {
+        "test_id": 1786,
+        "input_type": "matrix",
+        "input_name": "roadRegister",
+        "input_value": "[[false, false, false, false],  [false, false, false, false],  [false, false, false, false],  [false, false, false, false]]"
+    },
+    {
+        "test_id": 1787,
+        "input_type": "matrix",
+        "input_name": "roadRegister",
+        "input_value": "[[false]]"
+    },
+    {
+        "test_id": 1788,
+        "input_type": "matrix",
+        "input_name": "roadRegister",
+        "input_value": "[[false, true, true, true, false],  [true, false, true, true, true],  [true, true, false, true, false],  [true, true, true, false, true],  [true, true, true, true, false]]"
+    },
+    {
+        "test_id": 1789,
+        "input_type": "matrix",
+        "input_name": "roadRegister",
+        "input_value": "[[false, true, true, true, true],  [true, false, true, true, true],  [true, true, false, true, true],  [true, true, true, false, true],  [true, true, true, true, false]]"
+    },
+    {
+        "test_id": 1790,
+        "input_type": "matrix",
+        "input_name": "roadRegister",
+        "input_value": "[[false, true, false, true, true],  [false, false, false, false, true],  [true, false, false, true, true],  [true, true, true, false, false],  [true, true, true, false, false]]"
+    },
+    {
+        "test_id": 1791,
+        "input_type": "matrix",
+        "input_name": "roadRegister",
+        "input_value": "[[false, true, true, false, true],  [true, false, false, true, false],  [false, true, false, true, false],  [true, true, true, false, true],  [true, true, false, false, false]]"
+    },
+    {
+        "test_id": 1792,
+        "input_type": "matrix",
+        "input_name": "roadRegister",
+        "input_value": "[[false, true, false, true, true],  [true, false, true, true, true],  [false, false, false, false, true],  [false, false, true, false, true],  [true, false, true, true, false]]"
+    },
+    {
+        "test_id": 1793,
+        "input_type": "matrix",
+        "input_name": "roadRegister",
+        "input_value": "[[false, false, false, false, true, true, false, true, false, true],  [false, false, true, false, false, false, true, false, false, true],  [false, false, false, true, false, false, false, true, false, true],  [false, true, false, false, true, false, false, true, false, false],  [false, true, false, true, false, false, false, true, false, false],  [true, true, true, true, true, false, true, false, true, true],  [false, false, true, true, true, true, false, false, false, true],  [true, true, true, false, false, false, false, false, false, false],  [false, false, false, true, false, true, true, true, false, false],  [false, true, true, true, true, false, true, false, true, false]]"
+    },
+
+    // Roads Building
+    {
+        "test_id": 1794,
+        "input_type": "number",
+        "input_name": "cities",
+        "input_value": "4"
+    },
+    {
+        "test_id": 1794,
+        "input_type": "matrix",
+        "input_name": "roads",
+        "input_value": "[[0, 1], [1, 2], [2, 0]]"
+    },
+    {
+        "test_id": 1795,
+        "input_type": "number",
+        "input_name": "cities",
+        "input_value": "1"
+    },
+    {
+        "test_id": 1795,
+        "input_type": "arrayOfIntegers",
+        "input_name": "roads",
+        "input_value": "[]"
+    },
+    {
+        "test_id": 1796,
+        "input_type": "number",
+        "input_name": "cities",
+        "input_value": "9"
+    },
+    {
+        "test_id": 1796,
+        "input_type": "matrix",
+        "input_name": "roads",
+        "input_value": "[[5, 8], [6, 0], [0, 5], [4, 1], [0, 1], [7, 0], [6, 8], [7, 3], [2, 6], [0, 2], [0, 3], [8, 7], [5, 4], [8, 4], [8, 2], [7, 1], [4, 6], [5, 6], [4, 2], [4, 7], [2, 7], [3, 6], [8, 0], [1, 6], [3, 2], [3, 4], [4, 0], [6, 7], [5, 7]]"
+    },
+    {
+        "test_id": 1797,
+        "input_type": "number",
+        "input_name": "cities",
+        "input_value": "7"
+    },
+    {
+        "test_id": 1797,
+        "input_type": "matrix",
+        "input_name": "roads",
+        "input_value": "[[3, 1], [1, 6], [2, 5], [4, 2], [2, 0], [0, 1], [3, 5], [5, 1], [5, 4], [6, 3], [1, 2], [2, 6], [6, 0], [6, 5], [4, 3], [2, 3], [4, 6], [5, 0]]"
+    },
+    {
+        "test_id": 1798,
+        "input_type": "number",
+        "input_name": "cities",
+        "input_value": "6"
+    },
+    {
+        "test_id": 1798,
+        "input_type": "matrix",
+        "input_name": "roads",
+        "input_value": "[[1, 2], [0, 2], [1, 4], [4, 2], [3, 5], [1, 0], [5, 0], [3, 1], [0, 4], [5, 1], [3, 2], [3, 0], [2, 5]]"
+    },
+    {
+        "test_id": 1799,
+        "input_type": "number",
+        "input_name": "cities",
+        "input_value": "11"
+    },
+    {
+        "test_id": 1799,
+        "input_type": "matrix",
+        "input_name": "roads",
+        "input_value": "[[0, 2], [0, 9], [3, 8], [8, 10], [7, 8], [7, 6], [2, 9], [8, 4], [7, 0], [6, 10], [5, 6], [7, 10], [9, 8], [2, 7], [3, 2], [6, 8], [5, 4], [1, 9], [10, 5], [9, 5], [8, 5], [1, 8], [5, 3], [7, 1], [4, 2], [8, 0], [10, 3], [4, 6], [9, 7], [3, 1], [9, 3], [1, 10], [8, 2], [7, 4], [0, 6], [0, 5], [10, 9], [10, 0], [4, 9], [5, 7], [0, 1], [6, 1]]"
+    },
+    {
+        "test_id": 1800,
+        "input_type": "number",
+        "input_name": "cities",
+        "input_value": "7"
+    },
+    {
+        "test_id": 1800,
+        "input_type": "matrix",
+        "input_name": "roads",
+        "input_value": "[[5, 3], [4, 0], [0, 1], [6, 5], [3, 4], [0, 3], [2, 0], [2, 1], [2, 6], [5, 1], [3, 2], [0, 5], [1, 3], [1, 4], [6, 3]]"
+    },
+
+    // Efficient Road Network
+    {
+        "test_id": 1801,
+        "input_type": "number",
+        "input_name": "n",
+        "input_value": "6"
+    },
+    {
+        "test_id": 1801,
+        "input_type": "matrix",
+        "input_name": "roads",
+        "input_value": "[[3, 0], [0, 4], [5, 0], [2, 1], [1, 4], [2, 3], [5, 2]]"
+    },
+    {
+        "test_id": 1802,
+        "input_type": "number",
+        "input_name": "n",
+        "input_value": "6"
+    },
+    {
+        "test_id": 1802,
+        "input_type": "matrix",
+        "input_name": "roads",
+        "input_value": "[[0, 4], [5, 0], [2, 1], [1, 4], [2, 3], [5, 2]]"
+    },
+    {
+        "test_id": 1803,
+        "input_type": "number",
+        "input_name": "n",
+        "input_value": "1"
+    },
+    {
+        "test_id": 1803,
+        "input_type": "arrayOfIntegers",
+        "input_name": "roads",
+        "input_value": "[]"
+    },
+    {
+        "test_id": 1804,
+        "input_type": "number",
+        "input_name": "n",
+        "input_value": "5"
+    },
+    {
+        "test_id": 1804,
+        "input_type": "matrix",
+        "input_name": "roads",
+        "input_value": "[[0, 1], [0, 2], [3, 4]]"
+    },
+    {
+        "test_id": 1805,
+        "input_type": "number",
+        "input_name": "n",
+        "input_value": "12"
+    },
+    {
+        "test_id": 1805,
+        "input_type": "matrix",
+        "input_name": "roads",
+        "input_value": "[[8, 9], [0, 11], [5, 3], [11, 6], [5, 7], [7, 6], [6, 4], [10, 8], [11, 2], [1, 9], [7, 3], [7, 8], [11, 8], [1, 11], [4, 9], [6, 2], [4, 3], [3, 2], [0, 7], [10, 4], [10, 0]]"
+    },
+    {
+        "test_id": 1806,
+        "input_type": "number",
+        "input_name": "n",
+        "input_value": "4"
+    },
+    {
+        "test_id": 1806,
+        "input_type": "matrix",
+        "input_name": "roads",
+        "input_value": "[[3, 0], [3, 2], [2, 1], [0, 1], [2, 0]]"
+    },
+    {
+        "test_id": 1807,
+        "input_type": "number",
+        "input_name": "n",
+        "input_value": "7"
+    },
+    {
+        "test_id": 1807,
+        "input_type": "matrix",
+        "input_name": "roads",
+        "input_value": "[[1, 0], [0, 2], [2, 4], [3, 0], [5, 6], [5, 4], [5, 0], [0, 4], [5, 2]]"
+    },
+    {
+        "test_id": 1808,
+        "input_type": "number",
+        "input_name": "n",
+        "input_value": "13"
+    },
+    {
+        "test_id": 1808,
+        "input_type": "matrix",
+        "input_name": "roads",
+        "input_value": "[[11, 0], [6, 7], [2, 11], [2, 0], [10, 2], [7, 4], [5, 7], [8, 1], [8, 10], [12, 3], [2, 12], [5, 6], [8, 7], [0, 3], [3, 1], [0, 4], [0, 10], [6, 1], [7, 11], [9, 10], [10, 6], [3, 11], [8, 3], [12, 7], [12, 5], [4, 11], [3, 10], [1, 4], [5, 1], [3, 9], [8, 6], [1, 12], [8, 2], [0, 6], [5, 8], [8, 12], [12, 4], [1, 7], [5, 3], [7, 3], [11, 9], [10, 1], [4, 2], [1, 0]]"
+    },
+    {
+        "test_id": 1809,
+        "input_type": "number",
+        "input_name": "n",
+        "input_value": "13"
+    },
+    {
+        "test_id": 1809,
+        "input_type": "matrix",
+        "input_name": "roads",
+        "input_value": "[[1, 8], [10, 4], [1, 3], [6, 4], [10, 11], [8, 9], [4, 12], [4, 5], [12, 0], [3, 10], [1, 6], [0, 9], [3, 6], [4, 1], [8, 4], [3, 8], [2, 3], [9, 12], [3, 0], [11, 1], [7, 8], [5, 10], [8, 12], [5, 2], [8, 11], [11, 12], [10, 1], [12, 2], [7, 10], [9, 6], [2, 8], [12, 6], [11, 9], [11, 5], [7, 0], [2, 4], [5, 0], [7, 2], [2, 9], [7, 11], [2, 0], [2, 1], [7, 4], [10, 0], [4, 11], [10, 9], [6, 10], [5, 12]]"
+    },
+    {
+        "test_id": 1810,
+        "input_type": "number",
+        "input_name": "n",
+        "input_value": "14"
+    },
+    {
+        "test_id": 1810,
+        "input_type": "matrix",
+        "input_name": "roads",
+        "input_value": "[[11, 7], [13, 5], [8, 10], [4, 5], [0, 9], [2, 5], [11, 9], [11, 2], [12, 11], [5, 7], [8, 0], [4, 11], [3, 4], [3, 12], [8, 6], [6, 12], [0, 5], [12, 4], [8, 7], [10, 5], [1, 11], [12, 10], [1, 5], [7, 3], [9, 4], [12, 1], [10, 2], [0, 6], [10, 6], [3, 1], [2, 3], [3, 0], [13, 4], [0, 4], [1, 8], [7, 6], [3, 13], [2, 4], [2, 1], [3, 5], [1, 13], [10, 3], [6, 9], [10, 11]]"
+    },
+
+    // Financial Crisis
+    {
+        "test_id": 1811,
+        "input_type": "matrix",
+        "input_name": "roadRegister",
+        "input_value": "[[false, true, true, false],  [true, false, true, false],  [true, true, false, true],  [false, false, true, false]]"
+    },
+    {
+        "test_id": 1812,
+        "input_type": "matrix",
+        "input_name": "roadRegister",
+        "input_value": "[[false]]"
+    },
+    {
+        "test_id": 1813,
+        "input_type": "matrix",
+        "input_name": "roadRegister",
+        "input_value": "[[false,true], [true,false]]"
+    },
+    {
+        "test_id": 1814,
+        "input_type": "matrix",
+        "input_name": "roadRegister",
+        "input_value": "[[false, true, false],  [true, false, false],  [false, false, false]]"
+    },
+    {
+        "test_id": 1815,
+        "input_type": "matrix",
+        "input_name": "roadRegister",
+        "input_value": "[[false, false, true],  [false, false, false],  [true, false, false]]"
+    },
+    {
+        "test_id": 1816,
+        "input_type": "matrix",
+        "input_name": "roadRegister",
+        "input_value": "[[false, false, true, true],  [false, false, false, false],  [true, false, false, true],  [true, false, true, false]]"
+    },
+    {
+        "test_id": 1817,
+        "input_type": "matrix",
+        "input_name": "roadRegister",
+        "input_value": "[[false, false, true, true, true],  [false, false, false, true, false],  [true, false, false, true, false],  [true, true, true, false, false],  [true, false, false, false, false]]"
+    },
+
+    // 
 
 
 ]

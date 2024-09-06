@@ -1123,6 +1123,13 @@ function solution(grid) {
 
 
 //// __________________________________The Core_______________________________ ////
+//// __________________________________The Core_______________________________ ////
+//// __________________________________The Core_______________________________ ////
+//// __________________________________The Core_______________________________ ////
+//// __________________________________The Core_______________________________ ////
+//// __________________________________The Core_______________________________ ////
+//// __________________________________The Core_______________________________ ////
+
 
 // 1: Add Two Digits
 function solution(n) {
@@ -4822,6 +4829,96 @@ function solution(n) {
 
 // 162: Time ASCII Representation
 
+//// __________________________________Graphs_______________________________ ////
+//// __________________________________Graphs_______________________________ ////
+//// __________________________________Graphs_______________________________ ////
+//// __________________________________Graphs_______________________________ ////
+//// __________________________________Graphs_______________________________ ////
+//// __________________________________Graphs_______________________________ ////
+//// __________________________________Graphs_______________________________ ////
 
+// New Road System
+function solution(roadRegister) {
+    for (var i=0; i<roadRegister.length; i++) {
+        var from = roadRegister[i].filter(v=>v).length
+        var to = roadRegister.map(row=>row[i]).filter(v=>v).length
+        if (from != to) return false
+    }
+    return true
+}
 
+// Roads Building
+solution=(cities, roads)=>{
+    let h = {}, out = [];
+    for (let r of roads) {
+        let [a, b] = [Math.min(...r), Math.max(...r)]
+        h[a] = h[a] || [];
+        h[a].push(b);
+    }
+    for (let i = 0; i<cities; i++) {
+        if (!h.hasOwnProperty(i)) h[i] = [];
+        for ( let j = i+1; j<cities; j++) if (!h[i].includes(j)) out.push([i,j])
+    }
+    return out;
+}
 
+// Efficient Road Network
+function solution(n, roads) {      
+    let matrix = Array(n);
+    for (let i=0; i<n; i++) {
+        matrix[i] = Array(n).fill(Infinity);
+        matrix[i][i] = 0;
+    }
+
+    for (let road of roads) {
+        matrix[road[0]][road[1]] = 1;
+        matrix[road[1]][road[0]] = 1;
+    }
+
+    // Apply Floyd-Warshall 
+    for (let k=0; k<n; k++) {
+        for (row=0; row<n; row++) {
+            for (col=0; col<n; col++) {
+                // ignore self-reference and current sub matrix
+                if (row == k || col == k) continue;
+
+                const current = matrix[row][col];
+                const alter = matrix[row][k] + matrix[k][col];
+                matrix[row][col] = Math.min(current, alter);
+            }
+        }
+    }
+
+    for (let row of matrix) {
+        for (let val of row) {
+            if (val == Infinity || val > 2) return false;
+        }
+    }
+
+    return true;
+}
+
+// Financial Crisis
+function solution(roadRegister) {
+    const n = roadRegister.length;
+    const result = [];
+
+    for (let k = 0; k < n; k++) {
+        const newMatrix = [];
+        
+        for (let i = 0; i < n; i++) {
+            if (i === k) continue;
+            newMatrix.push([]);
+            for (let j = 0; j < n; j++) {
+                if (j === k) continue;
+                newMatrix[newMatrix.length - 1].push(roadRegister[i][j]);
+            }
+        }
+        
+        result.push(newMatrix);
+    }
+    
+    return result;
+}
+
+// 

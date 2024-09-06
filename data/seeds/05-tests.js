@@ -11914,7 +11914,275 @@ const tests = [
         "is_sample": true
     },
 
+    ////////// Graphs /////////////////////////////////////////////////// Graphs /////////////////////////////////////////
+    ////////// Graphs /////////////////////////////////////////////////// Graphs /////////////////////////////////////////
+    ////////// Graphs /////////////////////////////////////////////////// Graphs /////////////////////////////////////////
+    ////////// Graphs /////////////////////////////////////////////////// Graphs /////////////////////////////////////////
+    ////////// Graphs /////////////////////////////////////////////////// Graphs /////////////////////////////////////////
+    ////////// Graphs /////////////////////////////////////////////////// Graphs /////////////////////////////////////////
+    ////////// Graphs /////////////////////////////////////////////////// Graphs /////////////////////////////////////////
+    ////////// Graphs /////////////////////////////////////////////////// Graphs /////////////////////////////////////////
+    ////////// Graphs /////////////////////////////////////////////////// Graphs /////////////////////////////////////////
+    ////////// Graphs /////////////////////////////////////////////////// Graphs /////////////////////////////////////////
+    ////////// Graphs /////////////////////////////////////////////////// Graphs /////////////////////////////////////////
+    ////////// Graphs /////////////////////////////////////////////////// Graphs /////////////////////////////////////////
+
+    // New Road System
+
+    {
+        "challenge_id": 397,
+        "order_index": 1,
+        "expected_output": "true",
+        "is_complex": false,
+        "is_sample": true
+    },
+    {
+        "challenge_id": 397,
+        "order_index": 2,
+        "expected_output": "true",
+        "is_complex": false,
+        "is_sample": true
+    },
+    {
+        "challenge_id": 397,
+        "order_index": 3,
+        "expected_output": "false",
+        "is_complex": false,
+        "is_sample": true
+    },
+    {
+        "challenge_id": 397,
+        "order_index": 4,
+        "expected_output": "true",
+        "is_complex": false,
+        "is_sample": true
+    },
+    {
+        "challenge_id": 397,
+        "order_index": 5,
+        "expected_output": "true",
+        "is_complex": false,
+        "is_sample": true
+    },
+    {
+        "challenge_id": 397,
+        "order_index": 6,
+        "expected_output": "false",
+        "is_complex": false,
+        "is_sample": true
+    },
+    {
+        "challenge_id": 397,
+        "order_index": 7,
+        "expected_output": "true",
+        "is_complex": false,
+        "is_sample": true
+    },
+    {
+        "challenge_id": 397,
+        "order_index": 8,
+        "expected_output": "false",
+        "is_complex": false,
+        "is_sample": true
+    },
+    {
+        "challenge_id": 397,
+        "order_index": 9,
+        "expected_output": "false",
+        "is_complex": false,
+        "is_sample": true
+    },
+    {
+        "challenge_id": 397,
+        "order_index": 10,
+        "expected_output": "false",
+        "is_complex": false,
+        "is_sample": true
+    },
+    {
+        "challenge_id": 397,
+        "order_index": 11,
+        "expected_output": "false",
+        "is_complex": false,
+        "is_sample": true
+    },
+
+    // Roads Building
+    {
+        "challenge_id": 398,
+        "order_index": 1,
+        "expected_output": "[[0,3],  [1,3],  [2,3]]",
+        "is_complex": true,
+        "is_sample": true
+    },
+    {
+        "challenge_id": 398,
+        "order_index": 2,
+        "expected_output": "",
+        "is_complex": true,
+        "is_sample": true
+    },
+    {
+        "challenge_id": 398,
+        "order_index": 3,
+        "expected_output": "[[1,2],  [1,3],  [1,5],  [1,8],  [2,5],  [3,5],  [3,8]]",
+        "is_complex": true,
+        "is_sample": true
+    },
+    {
+        "challenge_id": 398,
+        "order_index": 4,
+        "expected_output": "[[0,3],  [0,4],  [1,4]]",
+        "is_complex": true,
+        "is_sample": true
+    },
+    {
+        "challenge_id": 398,
+        "order_index": 5,
+        "expected_output": "[[3,4],  [4,5]]",
+        "is_complex": true,
+        "is_sample": true
+    },
+    {
+        "challenge_id": 398,
+        "order_index": 6,
+        "expected_output": "[[0,3],  [0,4],  [1,2],  [1,4],  [1,5],  [2,5],  [2,6],  [2,10],  [3,4],  [3,6],  [3,7],  [4,10],  [6,9]]",
+        "is_complex": true,
+        "is_sample": true
+    },
+    {
+        "challenge_id": 398,
+        "order_index": 7,
+        "expected_output": "[[0,6],  [1,6],  [2,4],  [2,5],  [4,5],  [4,6]]",
+        "is_complex": true,
+        "is_sample": true
+    },
+
+    // Efficient Road Network
+    {
+        "challenge_id": 399,
+        "order_index": 1,
+        "expected_output": "true",
+        "is_complex": false,
+        "is_sample": true
+    },
+    {
+        "challenge_id": 399,
+        "order_index": 2,
+        "expected_output": "false",
+        "is_complex": false,
+        "is_sample": true
+    },
+    {
+        "challenge_id": 399,
+        "order_index": 3,
+        "expected_output": "true",
+        "is_complex": false,
+        "is_sample": true
+    },
+    {
+        "challenge_id": 399,
+        "order_index": 4,
+        "expected_output": "false",
+        "is_complex": false,
+        "is_sample": true
+    },
+    {
+        "challenge_id": 399,
+        "order_index": 5,
+        "expected_output": "false",
+        "is_complex": false,
+        "is_sample": true
+    },
+    {
+        "challenge_id": 399,
+        "order_index": 6,
+        "expected_output": "true",
+        "is_complex": false,
+        "is_sample": true
+    },
+    {
+        "challenge_id": 399,
+        "order_index": 7,
+        "expected_output": "false",
+        "is_complex": false,
+        "is_sample": true
+    },
+    {
+        "challenge_id": 399,
+        "order_index": 8,
+        "expected_output": "true",
+        "is_complex": false,
+        "is_sample": true
+    },
+    {
+        "challenge_id": 399,
+        "order_index": 9,
+        "expected_output": "true",
+        "is_complex": false,
+        "is_sample": true
+    },
+    {
+        "challenge_id": 399,
+        "order_index": 10,
+        "expected_output": "false",
+        "is_complex": false,
+        "is_sample": true
+    },
+
+    // Financial Crisis
+    {
+        "challenge_id": 400,
+        "order_index": 1,
+        "expected_output": "[[[false,true,false],[true,false,true],[false,true,false]],  [[false,true,false],[true,false,true],[false,true,false]],  [[false,true,false],[true,false,false],[false,false,false]],  [[false,true,true],[true,false,true],[true,true,false]]]",
+        "is_complex": true,
+        "is_sample": true
+    },
+    {
+        "challenge_id": 400,
+        "order_index": 2,
+        "expected_output": "[[]]",
+        "is_complex": true,
+        "is_sample": true
+    },
+    {
+        "challenge_id": 400,
+        "order_index": 3,
+        "expected_output": "[[[false]], [[false]]]",
+        "is_complex": true,
+        "is_sample": true
+    },
+    {
+        "challenge_id": 400,
+        "order_index": 4,
+        "expected_output": "[[[false,false],[false,false]],  [[false,false],[false,false]],  [[false,true],[true,false]]]",
+        "is_complex": true,
+        "is_sample": true
+    },
+    {
+        "challenge_id": 400,
+        "order_index": 5,
+        "expected_output": "[[[false,false],[false,false]],  [[false,true],[true,false]],  [[false,false],[false,false]]]",
+        "is_complex": true,
+        "is_sample": true
+    },
+    {
+        "challenge_id": 400,
+        "order_index": 6,
+        "expected_output": "[[[false,false,false],[false,false,true],[false,true,false]],  [[false,true,true],[true,false,true],[true,true,false]],  [[false,false,true],[false,false,false],[true,false,false]],  [[false,false,true],[false,false,false],[true,false,false]]]",
+        "is_complex": true,
+        "is_sample": true
+    },
+    {
+        "challenge_id": 400,
+        "order_index": 7,
+        "expected_output": "[[[false,false,true,false],[false,false,true,false],[true,true,false,false],[false,false,false,false]],  [[false,true,true,true],[true,false,true,false],[true,true,false,false],[true,false,false,false]],  [[false,false,true,true],[false,false,true,false],[true,true,false,false],[true,false,false,false]],  [[false,false,true,true],[false,false,false,false],[true,false,false,false],[true,false,false,false]],  [[false,false,true,true],[false,false,false,true],[true,false,false,true],[true,true,true,false]]]",
+        "is_complex": true,
+        "is_sample": true
+    },
+
     // 
+
 
 ]
 

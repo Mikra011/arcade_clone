@@ -13573,7 +13573,7 @@ const challenges = [
     },
     {
         "topic_id": 67,
-        "order_index": 58,
+        "order_index": 57,
         "challenge_name": 'Rubiks Cubes',
         "description": `
             <p>After long years of sharpening your programming skills and honing your physique, you finally made it: you're a member of the ProProgrammers team and you've entered Fort Boyard!</p>
@@ -13623,7 +13623,7 @@ const challenges = [
     },
     {
         "topic_id": 67,
-        "order_index": 59,
+        "order_index": 58,
         "challenge_name": 'Prisoner Escape',
         "description": `
             <p>After long years of sharpening your programming skills and honing your physique, you finally made it: you're a member of the ProProgrammers team and you've entered Fort Boyard!</p>
@@ -13699,58 +13699,411 @@ const challenges = [
             </ul>
         `
     },
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-
-    
-    
-    
-    
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+    {
+        "topic_id": 68,
+        "order_index": 59,
+        "challenge_name": 'Childrens Party',
+        "description": `
+            <p>You are the leader of a tribe living on a remote island covered by a rectangular grid. Your tribe consists of several families, with a single child in each family. Each cell is occupied by exactly one family. Today is a special day: a children's party is organized! The ultimate game was prepared to keep the children entertained. At the very beginning of the game, all children of the island have to form several teams. Members of the same team should be able to communicate with each other, so every child of a team should be able to reach every other child of this team. A child can move from one cell to another if these two cells are adjacent (they have a common side). Children are strictly prohibited from going beyond the island.</p>
+            
+            <p>Because of the wild animals living on your island, it is not always safe to move from a cell to one of the adjacent ones: hungry beasts are watching the paths between them closely, hoping to spot a child and attack them. For each cell, you know the paths the animals are watching, with respect to this cell. The children are also aware of the dangerous paths and won't take them into consideration when splitting into teams.</p>
+            
+            <p>Given the masks of the directions the animals are watching, find the minimum possible number of teams the children can form.</p>
+            
+            <h3>Example</h3>
+            
+            <p>For</p>
+            <pre><code>directions = 
+            [[13, 14,  9],
+             [4,   1,  5],
+             [7,  10, 11]]</code></pre>
+            <p>the output should be</p>
+            <pre><code>solution(directions) = 1</code></pre>
+            <p>Here's an image showing which paths are not safe:</p>
+            
+            <h3>Input/Output</h3>
+            <ul>
+                <li><p><span>[execution time limit]</span> 4 seconds (js)</p></li>
+                <li><p><span>[memory limit]</span> 1 GB</p></li>
+                <li>
+                    <p><span>[input]</span> array.array.integer <code>directions</code></p>
+                    <p>A rectangular matrix. <code>directions[i][j]</code> is the mask representing the paths the animals at the cell (i, j) are watching, where <code>i</code> represents the row and <code>j</code> represents the column, both 0-based.</p>
+                    <p>If the <code>k</code>th bit of <code>directions[i][j]</code> is equal to 0, the children can move from this cell in the <code>k</code>th direction (0-based), where directions are numbered as follows: right, down, left, up.</p>
+                    <p>Guaranteed constraints: <code>1 ≤ directions.length &lt; 100</code>, <code>1 ≤ directions[i].length &lt; 99</code>, <code>0 ≤ directions[i][j] ≤ 15</code>.</p>
+                </li>
+                <li>
+                    <p><span>[output]</span> integer</p>
+                    <p>The minimum number of teams the children can form.</p>
+                </li>
+            </ul>
+        `
+    },
+    {
+        "topic_id": 68,
+        "order_index": 60,
+        "challenge_name": 'Bridges Destruction',
+        "description": `
+            <p>You are the son of the leader of a tribe living on a remote archipelago. It consists of several islands connected by bidirectional bridges. You think your father is too old to be a leader, and would like to prove it to others. The Council of Elders will be convened tomorrow, and this is your best chance to show that things don't go as well as they used to when your father was young.</p>
+            
+            <p>You decided to destroy one bridge of the archipelago (they are too strong, so you don't have enough time to destroy several bridges). All elders live on island <code>a</code>, and the council will take place on island <code>b</code>. You want to make sure that the elders see the destruction, so you need to destroy such a bridge that lies on the path between <code>a</code> and <code>b</code>. This is your only chance, so the bridge should belong to each path between <code>a</code> and <code>b</code>.</p>
+            
+            <p>As the first step, you want to calculate the number of suitable bridges. Given the bridge configuration and information about islands <code>a</code> and <code>b</code>, return the number of bridges which destruction will definitely be noted by the elders.</p>
+            
+            <h3>Example</h3>
+            
+            <p>For</p>
+            <pre><code>bridges = 
+            [[1, 2],
+             [0],
+             [0]]</code></pre>
+            <p><code>a = 0</code>, and <code>b = 2</code>,</p>
+            <p>the output should be</p>
+            <pre><code>solution(bridges, a, b) = 1</code></pre>
+            <p>Here's an image showing the bridges between the islands:</p>
+            
+            <h3>Input/Output</h3>
+            <ul>
+                <li><p><span>[execution time limit]</span> 4 seconds (js)</p></li>
+                <li><p><span>[memory limit]</span> 1 GB</p></li>
+                <li>
+                    <p><span>[input]</span> array.array.integer <code>bridges</code></p>
+                    <p>Adjacency list representing your archipelago. It is guaranteed that if <code>i</code> is present in <code>bridges[j]</code>, then <code>j</code> is present in <code>bridges[i]</code>. There is at most one bridge between each pair of islands, and no bridge connects an island to itself.</p>
+                    <p>Guaranteed constraints: <code>1 ≤ bridges.length ≤ 3000</code>, <code>0 ≤ bridges[i].length ≤ 15</code>, <code>0 ≤ bridges[i][j] &lt; bridges.length</code>, <code>0 ≤ sum(bridges[i].length) ≤ 10000</code>.</p>
+                </li>
+                <li>
+                    <p><span>[input]</span> integer <code>a</code></p>
+                    <p>0-based index of the island where the elders live.</p>
+                    <p>Guaranteed constraints: <code>0 ≤ a &lt; bridges.length</code>.</p>
+                </li>
+                <li>
+                    <p><span>[input]</span> integer <code>b</code></p>
+                    <p>0-based index of the island where the council will take place.</p>
+                    <p>Guaranteed constraints: <code>0 ≤ b &lt; bridges.length</code>.</p>
+                </li>
+                <li>
+                    <p><span>[output]</span> integer</p>
+                    <p>The number of bridges you can destroy.</p>
+                </li>
+            </ul>
+        `
+    },
+    {
+        "topic_id": 68,
+        "order_index": 61,
+        "challenge_name": 'Antelopes Migration',
+        "description": `
+            <p>You are the leader of a tribe living on a remote archipelago that consists of several islands connected by bidirectional bridges. Vegetarianism is the main trend among the young aborigines of your tribe, and as an old-school man, you are certainly not impressed. You decided to show teenagers how exciting hunting could be.</p>
+            
+            <p>Every year, antelopes migrate from island <code>a</code> to island <code>b</code> (antelopes are not stupid, so they have chosen such <code>a</code> and <code>b</code> that there is at least one path between them). Your troops have prepared a trap, and now you should choose one of the islands of your archipelago to set it. Migration is a rare event that doesn't last long, so you have only one chance to do this right. All the conversations about lousy vegetables really annoy you, so you want to make sure that the trap will be set in such a way that antelopes will definitely fall into it.</p>
+            
+            <p>Given the number of islands, the bridges configuration, and information about islands <code>a</code> and <code>b</code>, find all the islands lying on every path from <code>a</code> to <code>b</code>. Note that islands <code>a</code> and <code>b</code> shouldn't be included in the answer, since you won't be able to set a trap unnoticed there and the antelopes will be scared away.</p>
+            
+            <h3>Example</h3>
+            
+            <p>For</p>
+            <pre><code>islands = 4,</code></pre>
+            <pre><code>bridges = 
+            [[0, 1],
+             [1, 2],
+             [2, 0],
+             [2, 3]],</code></pre>
+            <p><code>a = 0</code>, and <code>b = 3</code>,</p>
+            <p>the output should be</p>
+            <pre><code>solution(islands, bridges, a, b) = [2]</code></pre>
+            <p>Here's an image showing the bridges between the islands:</p>
+            
+            <h3>Input/Output</h3>
+            <ul>
+                <li><p><span>[execution time limit]</span> 4 seconds (js)</p></li>
+                <li><p><span>[memory limit]</span> 1 GB</p></li>
+                <li>
+                    <p><span>[input]</span> integer <code>islands</code></p>
+                    <p>The number of islands in your archipelago.</p>
+                    <p>Guaranteed constraints: <code>2 ≤ islands ≤ 2000</code>.</p>
+                </li>
+                <li>
+                    <p><span>[input]</span> array.array.integer <code>bridges</code></p>
+                    <p>A list of bidirectional bridges representing your archipelago. For each <code>i</code>, <code>bridges[i]</code> has the format [<code>island1</code>, <code>island2</code>] and represents a bridge connecting <code>island1</code> and <code>island2</code>. There is at most one bridge between each pair of islands, and no bridge connects an island to itself.</p>
+                    <p>Guaranteed constraints: <code>1 ≤ bridges.length ≤ 3000</code>, <code>bridges[i].length = 2</code>, <code>0 ≤ bridges[i][j] &lt; islands</code>.</p>
+                </li>
+                <li>
+                    <p><span>[input]</span> integer <code>a</code></p>
+                    <p>0-based index of the island where the antelopes start their migration.</p>
+                    <p>Guaranteed constraints: <code>0 ≤ a &lt; islands</code>.</p>
+                </li>
+                <li>
+                    <p><span>[input]</span> integer <code>b</code></p>
+                    <p>0-based index of the island where the antelopes end their migration.</p>
+                    <p>Guaranteed constraints: <code>0 ≤ b &lt; islands</code>, <code>a ≠ b</code>.</p>
+                </li>
+                <li>
+                    <p><span>[output]</span> array.integer</p>
+                    <p>The list of all the islands lying on every path from <code>a</code> to <code>b</code>, sorted in increasing order by their indices.</p>
+                </li>
+            </ul>
+        `
+    },
+    {
+        "topic_id": 68,
+        "order_index": 62,
+        "challenge_name": 'Frustrated Aborigines',
+        "description": `
+            <p>You are the leader of a tribe living on a remote archipelago. It consists of several islands connected by bridges. All the bridges of your archipelago are narrow, so people often run into each other and fall into the water. To end this once and for all, you decided to make the traffic on all bridges go one-way.</p>
+            
+            <p>You issued the corresponding decree as soon as this brilliant idea came to your mind, but unfortunately, there is a problem: for some people, some islands are now unreachable, which is quite frustrating for your subjects. To measure the frustration of your tribe, you'd like to calculate the number of pairs (aborigine, island) such that the aborigine can't reach the island.</p>
+            
+            <p>Given the number of people on each island and the map of the bridges, find the frustration of the aborigines.</p>
+            
+            <h3>Example</h3>
+            
+            <p>For</p>
+            <pre><code>bridges = 
+            [[1],
+             [2],
+             [1]],</code></pre>
+            <pre><code>crowd = [4, 1, 2],</code></pre>
+            <p>the output should be</p>
+            <pre><code>solution(bridges, crowd) = 3</code></pre>
+            <p>Here's how your archipelago looks like:</p>
+            <p>All the aborigines from the 1st and 2nd islands can't reach the 0th island.</p>
+            
+            <h3>Input/Output</h3>
+            <ul>
+                <li><p><span>[execution time limit]</span> 4 seconds (js)</p></li>
+                <li><p><span>[memory limit]</span> 1 GB</p></li>
+                <li>
+                    <p><span>[input]</span> array.array.integer <code>bridges</code></p>
+                    <p>Adjacency list representing your archipelago.</p>
+                    <p>Guaranteed constraints: <code>1 ≤ bridges.length ≤ 1000</code>, <code>0 ≤ bridges[i].length ≤ 15</code>, <code>0 ≤ bridges[i][j] &lt; bridges.length</code>.</p>
+                </li>
+                <li>
+                    <p><span>[input]</span> array.integer <code>crowd</code></p>
+                    <p><code>crowd[i]</code> is the number of people stuck on the <code>i</code>th island (0-based).</p>
+                    <p>Guaranteed constraints: <code>crowd.length = bridges.length</code>, <code>1 ≤ crowd[i] ≤ 40</code>.</p>
+                </li>
+                <li>
+                    <p><span>[output]</span> integer</p>
+                    <p>The frustration of your tribe.</p>
+                </li>
+            </ul>
+        `
+    },
+    {
+        "topic_id": 68,
+        "order_index": 63,
+        "challenge_name": 'Civilization Birth',
+        "description": `
+            <p>You are the leader of a tribe living on a remote archipelago. It looks like your tribe is lagging behind the most modern civilizations, so it's about time you start to get closer to them. In order to do this, you decided to start enforcing new laws.</p>
+            
+            <p>As a smart ruler, you came up with all the laws yourself and numbered them from 1 to <code>count</code> in the order of decreasing importance. You're also a generous leader, so you allowed the aborigines to choose the laws that should be enacted. Each aborigine chose two laws that are most important to them and voted either for or against them.</p>
+            
+            <p>Fairness is also one of your many good traits, so you want to satisfy every aborigine on your island. An aborigine will be satisfied if at least one of their proposals is taken, i.e., either one of the laws they voted for is enacted, or one of those they voted against is not enacted.</p>
+            
+            <p>Given the <code>votes</code> array denoting aborigines' votes and the number of laws <code>count</code>, implement a function that will determine which laws should be enacted to satisfy the entire tribe. If there are several solutions, choose the one with the first law (the most important one) enacted. If there are still several options, choose the one with the first law enacted, and so on.</p>
+            
+            <h3>Example</h3>
+            
+            <p>For</p>
+            <pre><code>count = 2</code></pre>
+            <pre><code>votes = 
+            [[ 1,  2],
+             [ 1, -2],
+             [-2, -1]]</code></pre>
+            <p>the output should be</p>
+            <pre><code>solution(count, votes) = [1, 0]</code></pre>
+            <p>The first aborigine wants the first and the second law to be enacted. The second aborigine wants the first law to be enacted and doesn't want the second law to be enacted. The third aborigine doesn't want the first and the second laws to be enacted. The optimal solution is thus to enact the first law and leave out the second law.</p>
+            
+            <h3>Input/Output</h3>
+            <ul>
+                <li><p><span>[execution time limit]</span> 4 seconds (js)</p></li>
+                <li><p><span>[memory limit]</span> 1 GB</p></li>
+                <li>
+                    <p><span>[input]</span> integer <code>count</code></p>
+                    <p>The number of laws.</p>
+                    <p>Guaranteed constraints: <code>1 ≤ count ≤ 150</code>.</p>
+                </li>
+                <li>
+                    <p><span>[input]</span> array.array.integer <code>votes</code></p>
+                    <p><code>votes[i]</code> is the array of wishes of the <code>i</code>th aborigine. <code>votes[i][j]</code> is positive if the <code>i</code>th aborigine wants the law with number <code>abs(votes[i][j])</code> to be enacted and negative otherwise.</p>
+                    <p>Guaranteed constraints: <code>1 ≤ votes.length ≤ 150</code>, <code>votes[i].length = 2</code>, <code>1 ≤ abs(votes[i][j]) ≤ count</code>.</p>
+                </li>
+                <li>
+                    <p><span>[output]</span> array.integer</p>
+                    <p>Array of <code>count</code> numbers. The <code>i</code>th number should be <code>1</code> if the <code>i</code>th law should be enacted and <code>0</code> otherwise. If there is no solution, return an array of size <code>count</code> filled with <code>-1</code>.</p>
+                </li>
+            </ul>
+        `
+    },
+    {
+        "topic_id": 68,
+        "order_index": 64,
+        "challenge_name": 'Unsafe Bridges',
+        "description": `
+            <p>You are the leader of a tribe living on a remote archipelago. Your tribe has recently decided to find a new, more comfortable and less remote place for everybody and moved to a new archipelago. It's a new and unexplored place that can hide many dangers, so you started off by drawing its map. You got a map of <code>n</code> islands and several bridges connecting them. Of course, not all the islands are necessarily connected: there may be no route from one island to another even through other islands.</p>
+            
+            <p>Since you're just exploring the archipelago, there are not enough bridges yet, and its connectivity is not perfect. You define the connectivity as the number of unsafe bridges on the archipelago, and call a bridge unsafe if removing it disconnects some pair of previously connected islands. More formally, an unsafe bridge is such a bridge that removing it increases the number of pairs of islands (<code>v</code>, <code>u</code>) such that <code>u</code> is unreachable from <code>v</code>.</p>
+            
+            <p>You decided to build some new bridges to connect more islands of your new home. To begin with, you drew a plan containing a list of <code>newBridges</code> that you're going to build in the exact given order. Since you're short of resources after all the moving, you'd like to make sure that building each new bridge is really necessary. Given the number of islands <code>n</code> and the existing bridges, find the sum of connectivities of the archipelago after building each bridge from <code>newBridges</code> consequentially modulo <code>10<sup>9</sup> + 7</code> (hopefully this value will be descriptive enough).</p>
+            
+            <h3>Example</h3>
+            
+            <p>For</p>
+            <code>n = 6</code>
+            <code>bridges = [[0, 1], [1, 2], [2, 3], [3, 4], [4, 5]]</code>
+            <code>newBridges = [[2, 4], [1, 3], [3, 5], [0, 5]]</code>
+            <p>the output should be</p>
+            <pre><code>solution(n, bridges, newBridges) = 6</code></pre>
+            <p>After building the <code>1st</code> bridge, connectivity will be equal to <code>3</code>;</p>
+            <p>After building the <code>2nd</code> bridge, connectivity will be equal to <code>2</code>;</p>
+            <p>After building the <code>3rd</code> bridge, connectivity will be equal to <code>1</code>;</p>
+            <p>After building the <code>4th</code> bridge, connectivity will be equal to <code>0</code>.</p>
+            <p>So, the summary connectivity is 3 + 2 + 1 + 0 = 6.</p>
+            
+            <h3>Input/Output</h3>
+            <ul>
+                <li><p><span>[execution time limit]</span> 4 seconds (js)</p></li>
+                <li><p><span>[memory limit]</span> 1 GB</p></li>
+                <li>
+                    <p><span>[input]</span> integer <code>n</code></p>
+                    <p>The number of islands in the archipelago.</p>
+                    <p>Guaranteed constraints: <code>2 ≤ n ≤ 10<sup>5</sup></code>.</p>
+                </li>
+                <li>
+                    <p><span>[input]</span> array.array.integer <code>bridges</code></p>
+                    <p>Information about the bridges connecting the islands in the archipelago. For each valid <code>i</code>, <code>bridges[i]</code> contains two numbers <code>bridges[i][0]</code> and <code>bridges[i][1]</code> that stand for the IDs of the islands the <code>i</code>th bridge connects.</p>
+                    <p>It is guaranteed that there is no more than one bridge between each pair of islands.</p>
+                    <p>Guaranteed constraints: <code>0 ≤ bridges.length ≤ 10<sup>5</sup></code>, <code>bridges[i].length = 2</code>, <code>0 ≤ bridges[i][0], bridges[i][1] < n</code>, <code>bridges[i][0] ≠ bridges[i][1]</code>.</p>
+                </li>
+                <li>
+                    <p><span>[input]</span> array.array.integer <code>newBridges</code></p>
+                    <p>Information about the bridges you're going to build. For each valid <code>i</code>, <code>newBridges[i]</code> contains two numbers <code>newBridges[i][0]</code> and <code>newBridges[i][1]</code> that stand for the IDs of the islands the <code>i</code>th new bridge will connect.</p>
+                    <p>It is guaranteed that you will not try to build an already existing bridge.</p>
+                    <p>Guaranteed constraints: <code>0 ≤ newBridges.length ≤ 10<sup>5</sup></code>, <code>newBridges[i].length = 2</code>, <code>0 ≤ newBridges[i][0], newBridges[i][1] < n</code>, <code>newBridges[i][0] ≠ newBridges[i][1]</code>.</p>
+                </li>
+                <li>
+                    <p><span>[output]</span> integer</p>
+                    <p>The sum of connectivities of the archipelago after building each bridge from <code>newBridges</code> consequentially modulo <code>10<sup>9</sup> + 7</code>.</p>
+                </li>
+            </ul>
+        `
+    },
+    {
+        "topic_id": 68,
+        "order_index": 65,
+        "challenge_name": 'Ideal Parade',
+        "description": `
+            <p>You are the leader of a tribe living on an archipelago. Traditionally, each year your tribe organizes a parade to demonstrate the might of your tribal army. During this parade, the procession goes from island to island via one-way bridges. The parade starts and finishes in the capital, located on island 1. Each parade has its own representation that describes the route of the parade as an array of bridges in the order they are crossed, where each bridge is given by its construction year.</p>
+            
+            <p>This year you'd like to prepare an ideal parade. The parade is ideal if the marching army traverses each bridge exactly once (although it can visit the same island multiple times) and its representation is lexicographically smallest among all such parades.</p>
+            
+            <p>You would like the parade to go without a hitch, so you need to plan in advance the location of the parade at each given moment of time, assuming that it takes 1 unit of time to cross a bridge. Given the number of islands <code>n</code> and arrays of bridges and times, return the island on which the procession will be in each given moment of time, or an empty array if an ideal parade is not even possible.</p>
+            
+            <h3>Example</h3>
+            
+            <p>For</p>
+            <pre><code>n = 5</code></pre>
+            <pre><code>bridges = 
+            [1, 2, 500, 
+             1, 5, 1000, 
+             2, 3, 2000, 
+             3, 1, 2016, 
+             4, 1, 1900, 
+             5, 4, 2012]</code></pre>
+            <pre><code>times = [0, 1, 2, 3, 4, 5, 6]</code></pre>
+            <p>the output should be</p>
+            <pre><code>solution(n, bridges, times) = [1, 2, 3, 1, 5, 4, 1]</code></pre>
+            
+            <p>For</p>
+            <pre><code>n = 3</code></pre>
+            <pre><code>bridges = 
+            [1, 2, 500, 
+             1, 3, 1000, 
+             2, 3, 2000]</code></pre>
+            <pre><code>times = [0, 1, 2]</code></pre>
+            <p>the output should be</p>
+            <pre><code>solution(n, bridges, times) = []</code></pre>
+            <p>It's impossible to organize an ideal parade.</p>
+            
+            <h3>Input/Output</h3>
+            <ul>
+                <li><p><span>[execution time limit]</span> 4 seconds (js)</p></li>
+                <li><p><span>[memory limit]</span> 1 GB</p></li>
+                <li>
+                    <p><span>[input]</span> integer <code>n</code></p>
+                    <p>The number of islands in your archipelago.</p>
+                    <p>Guaranteed constraints: <code>1 ≤ n ≤ 5000</code>.</p>
+                </li>
+                <li>
+                    <p><span>[input]</span> array.integer <code>bridges</code></p>
+                    <p>A two-dimensional array representing the bridges. Each element of this array is given in the format [<code>island1</code>, <code>island2</code>, <code>year</code>] and represents a bridge from <code>island1</code> to <code>island2</code> (both given 1-based), which was constructed in <code>year</code>.</p>
+                    <p>It is guaranteed that none of the bridges were constructed in the same year.</p>
+                    <p>Guaranteed constraints: <code>1 ≤ bridges.length ≤ 10<sup>5</sup></code>, <code>triples[i].length = 3</code>, <code>0 ≤ triples[i][j] ≤ 5 · 10<sup>5</sup></code>.</p>
+                </li>
+                <li>
+                    <p><span>[input]</span> array.integer <code>times</code></p>
+                    <p>An array representing the interesting moments of time. For each <code>i</code>, <code>times[i]</code> represents the number of units of time passed after the start of the parade.</p>
+                    <p>Guaranteed constraints: <code>1 ≤ times.length ≤ 1000</code>, <code>0 ≤ times[i] ≤ bridges.length</code>.</p>
+                </li>
+                <li>
+                    <p><span>[output]</span> array.integer</p>
+                    <p>Array of the same length as <code>times</code>, where the <code>i</code>th element is the number of the island where the procession will be in <code>times[i]</code> units of time. If an ideal parade is not possible, return an empty array.</p>
+                </li>
+            </ul>
+        `
+    },
+    {
+        "topic_id": 68,
+        "order_index": 66,
+        "challenge_name": 'Excursion Plan',
+        "description": `
+            <p>You are the leader of a tribe living on a remote archipelago that consists of <code>mn</code> islands. As an innovative leader, you decided to introduce a brand new address system. In order to do that, you used the first <code>m</code> letters of the alphabet and came up with distinct names of length <code>n</code> for all the islands. The islands received new names according to their enumeration: island 0 got the lexicographically smallest name, island 1 got the next name in the lexicographical order, and so on, with the island with number <code>mn - 1</code> having the lexicographically greatest name.</p>
+            
+            <p>To make your archipelago look perfect on the map, you also reconstructed the bridges: now there is a bridge between a pair of islands (<code>v</code>, <code>u</code>) if and only if the last <code>n - 1</code> letters of <code>v</code>'s name are equal to the first <code>n - 1</code> letters of <code>u</code>'s name (for example, between <code>abca</code> and <code>bcaa</code>). The bridges are narrow, so they are only passable in one direction: from <code>v</code> to <code>u</code>.</p>
+            
+            <p>The ambassador of a foreign tribe is visiting your archipelago, and you are planning to take the guests on the best excursion of their lives. The ideal excursion that you want to come up with visits each island exactly once, and its description (concatenated names of the islands in the order they are visited) is lexicographically smallest. Your task is to find the plan of such an excursion, i.e., all the islands in the order they should be visited. Since there are many islands in your archipelago, you will need only a part of the plan at a time. Return the islands in this plan from <code>l</code>th to <code>r</code>th (0-based, both inclusive).</p>
+            
+            <h3>Example</h3>
+            
+            <p>For</p>
+            <pre><code>n = 2</code></pre>
+            <pre><code>m = 3</code></pre>
+            <pre><code>l = 0</code></pre>
+            <pre><code>r = 8</code></pre>
+            <p>the output should be</p>
+            <pre><code>solution(n, m, l, r) = [0, 1, 3, 2, 7, 4, 5, 8, 6]</code></pre>
+            <p>As you can see, <code>0 → 1 → 3 → 2 → 7 → 4 → 5 → 8 → 6</code> is a correct excursion plan.</p>
+            
+            <h3>Input/Output</h3>
+            <ul>
+                <li><p><span>[execution time limit]</span> 4 seconds (js)</p></li>
+                <li><p><span>[memory limit]</span> 1 GB</p></li>
+                <li>
+                    <p><span>[input]</span> integer <code>n</code></p>
+                    <p>The length of the island names.</p>
+                    <p>Guaranteed constraints: <code>1 ≤ n ≤ 10<sup>5</sup></code>.</p>
+                </li>
+                <li>
+                    <p><span>[input]</span> integer <code>m</code></p>
+                    <p>The number of different letters used to build island names.</p>
+                    <p>Guaranteed constraints: <code>1 ≤ m ≤ 10<sup>5</sup></code>, <code>1 ≤ mn + 1 · n ≤ 10<sup>5</sup></code>.</p>
+                </li>
+                <li>
+                    <p><span>[input]</span> integer <code>l</code></p>
+                    <p>The left bound of the answer part you want to find.</p>
+                    <p>Guaranteed constraints: <code>0 ≤ l < mn</code>.</p>
+                </li>
+                <li>
+                    <p><span>[input]</span> integer <code>r</code></p>
+                    <p>The right bound of the answer part you want to find.</p>
+                    <p>Guaranteed constraints: <code>l ≤ r < mn</code>.</p>
+                </li>
+                <li>
+                    <p><span>[output]</span> array.integer</p>
+                    <p>The part of the lexicographically smallest excursion plan, containing only islands of the optimal plan from <code>l</code>th to <code>r</code>th.</p>
+                </li>
+            </ul>
+        `
+    }
 ]
 
 exports.seed = async function (knex) {
