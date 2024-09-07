@@ -16478,7 +16478,1835 @@ const test_inputs = [
         "input_value": "[[false, false, true, true, true],  [false, false, false, true, false],  [true, false, false, true, false],  [true, true, true, false, false],  [true, false, false, false, false]]"
     },
 
+    // Naming Roads
+    {
+        "test_id": 1818,
+        "input_type": "matrix",
+        "input_name": "roads",
+        "input_value": "[[0, 1, 0], [4, 1, 2], [4, 3, 4], [2, 3, 1], [2, 0, 3]]"
+    },
+    {
+        "test_id": 1819,
+        "input_type": "matrix",
+        "input_name": "roads",
+        "input_value": "[[2, 3, 1], [3, 0, 0], [2, 0, 2]]"
+    },
+    {
+        "test_id": 1820,
+        "input_type": "matrix",
+        "input_name": "roads",
+        "input_value": "[[1, 3, 1], [3, 0, 0]]"
+    },
+    {
+        "test_id": 1821,
+        "input_type": "matrix",
+        "input_name": "roads",
+        "input_value": "[[1, 4, 2], [6, 3, 3], [2, 3, 1], [0, 1, 0]]"
+    },
+    {
+        "test_id": 1822,
+        "input_type": "matrix",
+        "input_name": "roads",
+        "input_value": "[[4, 3, 0], [1, 0, 4], [3, 1, 1], [2, 4, 2], [4, 0, 3]]"
+    },
+    {
+        "test_id": 1823,
+        "input_type": "matrix",
+        "input_name": "roads",
+        "input_value": "[[5, 1, 3], [0, 2, 0], [2, 4, 2], [1, 3, 1], [8, 5, 5], [4, 3, 4]]"
+    },
+    {
+        "test_id": 1824,
+        "input_type": "matrix",
+        "input_name": "roads",
+        "input_value": "[[0, 6, 0], [0, 5, 5], [0, 4, 8], [4, 2, 7], [3, 2, 3], [1, 0, 1], [1, 5, 6], [6, 2, 2], [5, 4, 4]]"
+    },
+    {
+        "test_id": 1825,
+        "input_type": "matrix",
+        "input_name": "roads",
+        "input_value": "[[6, 7, 8], [6, 3, 6], [9, 12, 9], [2, 1, 3], [3, 5, 4], [0, 4, 2], [1, 0, 0], [3, 2, 1], [5, 4, 7], [4, 2, 5]]"
+    },
+    {
+        "test_id": 1826,
+        "input_type": "matrix",
+        "input_name": "roads",
+        "input_value": "[[4, 2, 10], [9, 4, 5], [4, 0, 8], [0, 1, 23], [1, 3, 24], [6, 4, 12], [7, 1, 11], [9, 1, 9], [3, 8, 2], [9, 6, 3], [6, 0, 20], [0, 2, 13], [6, 5, 18], [7, 6, 15], [3, 2, 16], [6, 1, 21], [7, 0, 4], [0, 5, 1], [4, 8, 22], [2, 6, 7], [8, 6, 14], [0, 9, 17], [5, 2, 0], [4, 1, 19], [9, 7, 6]]"
+    },
+    {
+        "test_id": 1827,
+        "input_type": "matrix",
+        "input_name": "roads",
+        "input_value": "[[7, 9, 17], [13, 11, 19], [4, 9, 8], [7, 6, 14], [5, 6, 9], [1, 7, 1], [5, 9, 15], [5, 4, 13], [6, 0, 0], [6, 2, 6], [10, 8, 18], [4, 8, 11], [3, 9, 12], [7, 3, 10], [6, 10, 16], [8, 3, 7], [0, 8, 2], [3, 4, 5], [2, 9, 4], [4, 1, 3]]"
+    },
+
+    // Great Renaming
+    {
+        "test_id": 1828,
+        "input_type": "matrix",
+        "input_name": "roadRegister",
+        "input_value": "[[false, true, true, false],  [true, false, true, false],  [true, true, false, true],  [false, false, true, false]]"
+    },
+    {
+        "test_id": 1829,
+        "input_type": "matrix",
+        "input_name": "roadRegister",
+        "input_value": "[[false, false],  [false, false]]"
+    },
+    {
+        "test_id": 1830,
+        "input_type": "matrix",
+        "input_name": "roadRegister",
+        "input_value": "[[false, true, true],  [true, false, true],  [true, true, false]]"
+    },
+    {
+        "test_id": 1831,
+        "input_type": "matrix",
+        "input_name": "roadRegister",
+        "input_value": "[[false, true, true],  [true, false, false],  [true, false, false]]"
+    },
+    {
+        "test_id": 1832,
+        "input_type": "matrix",
+        "input_name": "roadRegister",
+        "input_value": "[[false, false, false, true],  [false, false, true, true],  [false, true, false, false],  [true, true, false, false]]"
+    },
+    {
+        "test_id": 1833,
+        "input_type": "matrix",
+        "input_name": "roadRegister",
+        "input_value": "[[false, false, false, true, false],  [false, false, true, false, false],  [false, true, false, false, true],  [true, false, false, false, true],  [false, false, true, true, false]]"
+    },
+    {
+        "test_id": 1834,
+        "input_type": "matrix",
+        "input_name": "roadRegister",
+        "input_value": "[[false, false, true, false, false, false],  [false, false, true, false, true, false],  [true, true, false, false, false, false],  [false, false, false, false, true, false],  [false, true, false, true, false, false],  [false, false, false, false, false, false]]"
+    },
+    {
+        "test_id": 1835,
+        "input_type": "matrix",
+        "input_name": "roadRegister",
+        "input_value": "[[false, true, true, false, true, false, false],  [true, false, false, false, true, false, true],  [true, false, false, false, true, true, false],  [false, false, false, false, false, false, false],  [true, true, true, false, false, true, false],  [false, false, true, false, true, false, false],  [false, true, false, false, false, false, false]]"
+    },
+    {
+        "test_id": 1836,
+        "input_type": "matrix",
+        "input_name": "roadRegister",
+        "input_value": "[[false, false, true, true, true, true, true, true],  [false, false, true, false, true, true, true, true],  [true, true, false, true, true, true, false, false],  [true, false, true, false, false, true, false, false],  [true, true, true, false, false, true, true, true],  [true, true, true, true, true, false, false, true],  [true, true, false, false, true, false, false, false],  [true, true, false, false, true, true, false, false]]"
+    },
+    {
+        "test_id": 1837,
+        "input_type": "matrix",
+        "input_name": "roadRegister",
+        "input_value": "[[false, true, false, true, true, false, false, false, true],  [true, false, true, false, true, false, false, false, false],  [false, true, false, true, true, false, false, false, true],  [true, false, true, false, false, true, false, false, true],  [true, true, true, false, false, true, true, true, false],  [false, false, false, true, true, false, true, true, false],  [false, false, false, false, true, true, false, false, true],  [false, false, false, false, true, true, false, false, true],  [true, false, true, true, false, false, true, true, false]]"
+    },
+
+    // Cities Conquering
+    {
+        "test_id": 1838,
+        "input_type": "number",
+        "input_name": "n",
+        "input_value": "10"
+    },
+    {
+        "test_id": 1838,
+        "input_type": "matrix",
+        "input_name": "roads",
+        "input_value": "[[1, 0], [1, 2], [8, 5], [9, 7], [5, 6], [5, 4], [4, 6], [6, 7]]"
+    },
+    {
+        "test_id": 1839,
+        "input_type": "number",
+        "input_name": "n",
+        "input_value": "5"
+    },
+    {
+        "test_id": 1839,
+        "input_type": "arrayOfIntegers",
+        "input_name": "roads",
+        "input_value": "[]"
+    },
+    {
+        "test_id": 1840,
+        "input_type": "number",
+        "input_name": "n",
+        "input_value": "6"
+    },
+    {
+        "test_id": 1840,
+        "input_type": "matrix",
+        "input_name": "roads",
+        "input_value": "[[0, 1], [1, 2], [2, 3], [3, 4], [4, 5], [5, 0]]"
+    },
+    {
+        "test_id": 1841,
+        "input_type": "number",
+        "input_name": "n",
+        "input_value": "8"
+    },
+    {
+        "test_id": 1841,
+        "input_type": "matrix",
+        "input_name": "roads",
+        "input_value": "[[0, 1], [1, 2], [2, 3], [3, 4], [4, 5], [5, 6], [6, 7]]"
+    },
+    {
+        "test_id": 1842,
+        "input_type": "number",
+        "input_name": "n",
+        "input_value": "2"
+    },
+    {
+        "test_id": 1842,
+        "input_type": "arrayOfIntegers",
+        "input_name": "roads",
+        "input_value": "[]"
+    },
+    {
+        "test_id": 1843,
+        "input_type": "number",
+        "input_name": "n",
+        "input_value": "17"
+    },
+    {
+        "test_id": 1843,
+        "input_type": "matrix",
+        "input_name": "roads",
+        "input_value": "[[0, 13], [12, 5], [7, 3], [9, 4], [13, 11], [1, 16], [1, 0], [11, 7], [12, 9]]"
+    },
+    {
+        "test_id": 1844,
+        "input_type": "number",
+        "input_name": "n",
+        "input_value": "11"
+    },
+    {
+        "test_id": 1844,
+        "input_type": "matrix",
+        "input_name": "roads",
+        "input_value": "[[4, 10], [2, 0], [5, 4], [6, 1], [3, 2], [8, 3], [7, 3], [4, 6], [1, 2], [5, 0]]"
+    },
+    {
+        "test_id": 1845,
+        "input_type": "number",
+        "input_name": "n",
+        "input_value": "24"
+    },
+    {
+        "test_id": 1845,
+        "input_type": "matrix",
+        "input_name": "roads",
+        "input_value": "[[17, 0], [0, 16], [16, 10], [20, 9], [21, 0], [12, 13], [19, 9], [13, 21], [3, 18], [20, 7], [4, 3], [12, 20], [6, 20], [10, 17]]"
+    },
+    {
+        "test_id": 1846,
+        "input_type": "number",
+        "input_name": "n",
+        "input_value": "30"
+    },
+    {
+        "test_id": 1846,
+        "input_type": "matrix",
+        "input_name": "roads",
+        "input_value": "[[20, 12], [22, 25], [21, 29], [29, 13], [11, 1], [2, 19], [10, 24], [1, 20], [1, 21], [24, 6], [23, 2], [22, 23], [10, 0], [5, 1], [4, 22], [7, 15], [18, 4], [8, 5], [11, 13], [27, 13], [9, 6], [24, 4]]"
+    },
+    {
+        "test_id": 1847,
+        "input_type": "number",
+        "input_name": "n",
+        "input_value": "5"
+    },
+    {
+        "test_id": 1847,
+        "input_type": "matrix",
+        "input_name": "roads",
+        "input_value": "[[3, 2]]"
+    },
+    {
+        "test_id": 1848,
+        "input_type": "number",
+        "input_name": "n",
+        "input_value": "29"
+    },
+    {
+        "test_id": 1848,
+        "input_type": "matrix",
+        "input_name": "roads",
+        "input_value": "[[14, 21], [16, 20], [2, 7], [24, 19], [28, 25], [26, 2], [16, 27], [4, 12], [26, 25], [22, 10], [15, 13], [18, 13], [28, 1], [19, 17], [0, 6], [11, 28]]"
+    },
+    {
+        "test_id": 1849,
+        "input_type": "number",
+        "input_name": "n",
+        "input_value": "6"
+    },
+    {
+        "test_id": 1849,
+        "input_type": "matrix",
+        "input_name": "roads",
+        "input_value": "[[0, 3], [2, 0], [3, 1]]"
+    },
+    {
+        "test_id": 1850,
+        "input_type": "number",
+        "input_name": "n",
+        "input_value": "30"
+    },
+    {
+        "test_id": 1850,
+        "input_type": "matrix",
+        "input_name": "roads",
+        "input_value": "[[11, 12], [6, 15], [8, 21], [6, 16], [2, 4], [3, 0], [9, 11], [18, 28], [23, 1], [27, 10], [3, 4], [14, 2], [3, 11], [19, 13], [5, 20], [9, 25], [16, 25], [3, 2], [14, 28]]"
+    },
+
+    // Merging Cities
+    {
+        "test_id": 1851,
+        "input_type": "matrix",
+        "input_name": "roadRegister",
+        "input_value": "[[false, true, true, false, false, false, true],  [true, false, true, false, true, false, false],  [true, true, false, true, false, false, true],  [false, false, true, false, false, true, true],  [false, true, false, false, false, false, false],  [false, false, false, true, false, false, false],  [true, false, true, true, false, false, false]]"
+    },
+    {
+        "test_id": 1852,
+        "input_type": "matrix",
+        "input_name": "roadRegister",
+        "input_value": "[[false, false, false],  [false, false, false],  [false, false, false]]"
+    },
+    {
+        "test_id": 1853,
+        "input_type": "matrix",
+        "input_name": "roadRegister",
+        "input_value": "[[false]]"
+    },
+    {
+        "test_id": 1854,
+        "input_type": "matrix",
+        "input_name": "roadRegister",
+        "input_value": "[[false, true],  [true, false]]"
+    },
+    {
+        "test_id": 1855,
+        "input_type": "matrix",
+        "input_name": "roadRegister",
+        "input_value": "[[false, false],  [false, false]]"
+    },
+    {
+        "test_id": 1856,
+        "input_type": "matrix",
+        "input_name": "roadRegister",
+        "input_value": "[[false, true, true],  [true, false, true],  [true, true, false]]"
+    },
+    {
+        "test_id": 1857,
+        "input_type": "matrix",
+        "input_name": "roadRegister",
+        "input_value": "[[false, false, true],  [false, false, false],  [true, false, false]]"
+    },
+    {
+        "test_id": 1858,
+        "input_type": "matrix",
+        "input_name": "roadRegister",
+        "input_value": "[[false, false, true, true],  [false, false, false, false],  [true, false, false, true],  [true, false, true, false]]"
+    },
+    {
+        "test_id": 1859,
+        "input_type": "matrix",
+        "input_name": "roadRegister",
+        "input_value": "[[false, true, true, false, true, true, true, false],  [true, false, false, false, true, false, false, false],  [true, false, false, true, false, true, true, true],  [false, false, true, false, true, false, false, false],  [true, true, false, true, false, true, false, false],  [true, false, true, false, true, false, false, false],  [true, false, true, false, false, false, false, false],  [false, false, true, false, false, false, false, false]]"
+    },
+    {
+        "test_id": 1860,
+        "input_type": "matrix",
+        "input_name": "roadRegister",
+        "input_value": "[[false, true, false, true, true, true, false, false, false, true],  [true, false, false, false, false, true, false, false, false, true],  [false, false, false, true, true, true, false, false, true, true],  [true, false, true, false, false, true, false, true, false, true],  [true, false, true, false, false, true, false, true, false, true],  [true, true, true, true, true, false, false, true, false, false],  [false, false, false, false, false, false, false, false, false, false],  [false, false, false, true, true, true, false, false, false, true],  [false, false, true, false, false, false, false, false, false, false],  [true, true, true, true, true, false, false, true, false, false]]"
+    },
+    {
+        "test_id": 1861,
+        "input_type": "matrix",
+        "input_name": "roadRegister",
+        "input_value": "[[false, true, true, true, false],  [true, false, true, true, true],  [true, true, false, false, true],  [true, true, false, false, false],  [false, true, true, false, false]]"
+    },
+    {
+        "test_id": 1862,
+        "input_type": "matrix",
+        "input_name": "roadRegister",
+        "input_value": "[[false, true, true, false, false, false, false],  [true, false, false, false, true, false, true],  [true, false, false, false, true, true, true],  [false, false, false, false, true, true, true],  [false, true, true, true, false, false, false],  [false, false, true, true, false, false, true],  [false, true, true, true, false, true, false]]"
+    },
+    {
+        "test_id": 1863,
+        "input_type": "matrix",
+        "input_name": "roadRegister",
+        "input_value": "[[false, true, false, true, true],  [true, false, true, true, true],  [false, true, false, false, false],  [true, true, false, false, true],  [true, true, false, true, false]]"
+    },
+    {
+        "test_id": 1864,
+        "input_type": "matrix",
+        "input_name": "roadRegister",
+        "input_value": "[[false, true, true, false, true, true, false],  [true, false, true, false, false, false, false],  [true, true, false, true, false, true, true],  [false, false, true, false, false, false, true],  [true, false, false, false, false, false, false],  [true, false, true, false, false, false, true],  [false, false, true, true, false, true, false]]"
+    },
+    {
+        "test_id": 1865,
+        "input_type": "matrix",
+        "input_name": "roadRegister",
+        "input_value": "[[false, false, true, false, false, false, false, true, false, true],  [false, false, true, true, false, true, true, false, false, true],  [true, true, false, true, false, true, false, true, false, false],  [false, true, true, false, false, true, true, false, false, true],  [false, false, false, false, false, true, true, false, false, true],  [false, true, true, true, true, false, false, false, false, false],  [false, true, false, true, true, false, false, false, true, true],  [true, false, true, false, false, false, false, false, false, false],  [false, false, false, false, false, false, true, false, false, true],  [true, true, false, true, true, false, true, false, true, false]]"
+    },
+
+    // Living On The Roads
+    {
+        "test_id": 1866,
+        "input_type": "matrix",
+        "input_name": "roadRegister",
+        "input_value": "[[false, true, true, false, false, false],  [true, false, false, true, false, false],  [true, false, false, false, false, false],  [false, true, false, false, false, false],  [false, false, false, false, false, true],  [false, false, false, false, true, false]]"
+    },
+    {
+        "test_id": 1867,
+        "input_type": "matrix",
+        "input_name": "roadRegister",
+        "input_value": "[[false]]"
+    },
+    {
+        "test_id": 1868,
+        "input_type": "matrix",
+        "input_name": "roadRegister",
+        "input_value": "[[false, false],  [false, false]]"
+    },
+    {
+        "test_id": 1869,
+        "input_type": "matrix",
+        "input_name": "roadRegister",
+        "input_value": "[[false, true],  [true, false]]"
+    },
+    {
+        "test_id": 1870,
+        "input_type": "matrix",
+        "input_name": "roadRegister",
+        "input_value": "[[false, true, true],  [true, false, true],  [true, true, false]]"
+    },
+    {
+        "test_id": 1871,
+        "input_type": "matrix",
+        "input_name": "roadRegister",
+        "input_value": "[[false, false, true],  [false, false, true],  [true, true, false]]"
+    },
+    {
+        "test_id": 1872,
+        "input_type": "matrix",
+        "input_name": "roadRegister",
+        "input_value": "[[false, true, true, true],  [true, false, false, true],  [true, false, false, true],  [true, true, true, false]]"
+    },
+    {
+        "test_id": 1873,
+        "input_type": "matrix",
+        "input_name": "roadRegister",
+        "input_value": "[[false, true, true, false, true],  [true, false, true, true, false],  [true, true, false, false, true],  [false, true, false, false, false],  [true, false, true, false, false]]"
+    },
+    {
+        "test_id": 1874,
+        "input_type": "matrix",
+        "input_name": "roadRegister",
+        "input_value": "[[false, true, false, true, false, true],  [true, false, true, false, false, true],  [false, true, false, true, true, true],  [true, false, true, false, true, false],  [false, false, true, true, false, false],  [true, true, true, false, false, false]]"
+    },
+
+    // Is Butterfly
+    {
+        "test_id": 1875,
+        "input_type": "matrix",
+        "input_name": "adj",
+        "input_value": "[[false, true, true, false, false],  [true, false, true, false, false],  [true, true, false, true, true],  [false, false, true, false, true],  [false, false, true, true, false]]"
+    },
+    {
+        "test_id": 1876,
+        "input_type": "matrix",
+        "input_name": "adj",
+        "input_value": "[[false, true, true, true, true],  [true, false, true, false, false],  [true, true, false, false, false],  [true, false, false, false, true],  [true, false, false, true, false]]"
+    },
+    {
+        "test_id": 1877,
+        "input_type": "matrix",
+        "input_name": "adj",
+        "input_value": "[[false, false, false, false, false],  [false, false, true, true, false],  [false, true, false, false, true],  [false, true, false, false, true],  [false, false, true, true, false]]"
+    },
+    {
+        "test_id": 1878,
+        "input_type": "matrix",
+        "input_name": "adj",
+        "input_value": "[[false, true, true, false, false],  [true, false, true, false, false],  [true, true, true, true, false],  [false, false, true, false, true],  [false, false, false, true, true]]"
+    },
+    {
+        "test_id": 1879,
+        "input_type": "matrix",
+        "input_name": "adj",
+        "input_value": "[[false, true, true, false, false],  [true, false, true, false, false],  [true, true, false, false, false],  [false, false, false, true, true],  [false, false, false, true, true]]"
+    },
+    {
+        "test_id": 1880,
+        "input_type": "matrix",
+        "input_name": "adj",
+        "input_value": "[[false, true, true, true, true],  [true, false, true, false, false],  [true, true, false, false, false],  [true, false, false, true, true],  [true, false, false, true, true]]"
+    },
+    {
+        "test_id": 1881,
+        "input_type": "matrix",
+        "input_name": "adj",
+        "input_value": "[[false, true, true, true, true],  [true, false, true, true, true],  [true, true, false, true, true],  [true, true, true, false, true],  [true, true, true, true, false]]"
+    },
+    {
+        "test_id": 1882,
+        "input_type": "matrix",
+        "input_name": "adj",
+        "input_value": "[[false, false, false, false, false],  [false, false, false, false, false],  [false, false, false, false, false],  [false, false, false, false, false],  [false, false, false, false, false]]"
+    },
+    {
+        "test_id": 1883,
+        "input_type": "matrix",
+        "input_name": "adj",
+        "input_value": "[[false, true, true, false, false],  [true, false, false, false, true],  [true, false, false, true, false],  [false, false, true, false, true],  [false, true, false, true, false]]"
+    },
+    {
+        "test_id": 1884,
+        "input_type": "matrix",
+        "input_name": "adj",
+        "input_value": "[[false, true, true, true, true],  [true, false, false, true, false],  [true, false, false, false, true],  [true, true, false, false, false],  [true, false, true, false, false]]"
+    },
+
+    // Count Stars
+    {
+        "test_id": 1885,
+        "input_type": "matrix",
+        "input_name": "adj",
+        "input_value": "[[false, true, false, false, false],  [true, false, false, false, false],  [false, false, false, true, false],  [false, false, true, false, false],  [false, false, false, false, false]]"
+    },
+    {
+        "test_id": 1886,
+        "input_type": "matrix",
+        "input_name": "adj",
+        "input_value": "[[false, true, false, false, false],  [true, false, false, false, false],  [false, false, false, true, false],  [false, false, true, false, false],  [false, false, false, false, true]]"
+    },
+    {
+        "test_id": 1887,
+        "input_type": "matrix",
+        "input_name": "adj",
+        "input_value": "[[false, false, false, false, false],  [false, false, false, false, false],  [false, false, false, false, false],  [false, false, false, false, false],  [false, false, false, false, false]]"
+    },
+    {
+        "test_id": 1888,
+        "input_type": "matrix",
+        "input_name": "adj",
+        "input_value": "[[false, true, true, true, true, true, true, true],  [true, false, false, false, false, false, false, false],  [true, false, false, false, false, false, false, false],  [true, false, false, false, false, false, false, false],  [true, false, false, false, false, false, false, false],  [true, false, false, false, false, false, false, false],  [true, false, false, false, false, false, false, false],  [true, false, false, false, false, false, false, false]]"
+    },
+    {
+        "test_id": 1889,
+        "input_type": "matrix",
+        "input_name": "adj",
+        "input_value": "[[false, false, false, false, false, true, false, true, false],  [false, false, false, false, false, false, false, false, true],  [false, false, false, true, false, false, true, false, false],  [false, false, true, false, false, false, false, false, false],  [false, false, false, false, false, false, false, false, true],  [true, false, false, false, false, false, false, false, false],  [false, false, true, false, false, false, false, false, false],  [true, false, false, false, false, false, false, false, false],  [false, true, false, false, true, false, false, false, false]]"
+    },
+    {
+        "test_id": 1890,
+        "input_type": "matrix",
+        "input_name": "adj",
+        "input_value": "[[false, true, false, false, false, false, false, false],  [true, false, true, true, true, true, true, true],  [false, true, false, false, false, false, false, false],  [false, true, false, false, false, false, false, false],  [false, true, false, false, false, false, false, false],  [false, true, false, false, false, false, false, false],  [false, true, false, false, false, false, false, true],  [false, true, false, false, false, false, true, false]]"
+    },
+    {
+        "test_id": 1891,
+        "input_type": "matrix",
+        "input_name": "adj",
+        "input_value": "[[false, true, false, false, false, false, false, false],  [true, false, true, true, true, true, true, true],  [false, true, false, false, false, false, false, false],  [false, true, false, false, false, false, false, false],  [false, true, false, false, false, false, false, false],  [false, true, false, false, false, false, false, false],  [false, true, false, false, false, false, false, false],  [false, true, false, false, false, false, false, false]]"
+    },
+    {
+        "test_id": 1892,
+        "input_type": "matrix",
+        "input_name": "adj",
+        "input_value": "[[false, true, true, false, false, false, false, false, false],  [true, false, false, false, false, false, false, false, false],  [true, false, false, false, false, false, false, false, false],  [false, false, false, false, true, true, false, false, false],  [false, false, false, true, false, false, false, false, false],  [false, false, false, true, false, false, false, false, false],  [false, false, false, false, false, false, false, true, true],  [false, false, false, false, false, false, true, false, false],  [false, false, false, false, false, false, true, false, false]]"
+    },
+    {
+        "test_id": 1893,
+        "input_type": "matrix",
+        "input_name": "adj",
+        "input_value": "[[false, false, false, true, true, false, false, false, true, false],  [false, false, true, false, true, false, false, true, false, false],  [false, true, false, false, true, false, false, false, false, true],  [true, false, false, false, true, false, true, false, false, false],  [true, true, true, true, false, true, true, true, true, true],  [false, false, false, false, true, false, false, false, true, true],  [false, false, false, true, true, false, false, true, false, false],  [false, true, false, false, true, false, true, false, false, false],  [true, false, false, false, true, true, false, false, false, false],  [false, false, true, false, true, true, false, false, false, false]]"
+    },
+    {
+        "test_id": 1894,
+        "input_type": "matrix",
+        "input_name": "adj",
+        "input_value": "[[false, false, false, true, false, false],  [false, false, true, false, false, true],  [false, true, false, false, false, true],  [true, false, false, false, false, false],  [false, false, false, false, false, true],  [false, true, true, false, true, false]]"
+    },
+
+    // Is Wheel
+    {
+        "test_id": 1895,
+        "input_type": "matrix",
+        "input_name": "adj",
+        "input_value": "[[false, true, true, true, true],  [true, false, true, false, true],  [true, true, false, true, false],  [true, false, true, false, true],  [true, true, false, true, false]]"
+    },
+    {
+        "test_id": 1896,
+        "input_type": "matrix",
+        "input_name": "adj",
+        "input_value": "[[false, true, true, true],  [true, false, true, true],  [true, true, false, true],  [true, true, true, false]]"
+    },
+    {
+        "test_id": 1897,
+        "input_type": "matrix",
+        "input_name": "adj",
+        "input_value": "[[false, true, true, true, true],  [true, false, true, true, true],  [true, true, false, true, true],  [true, true, true, false, true],  [true, true, true, true, false]]"
+    },
+    {
+        "test_id": 1898,
+        "input_type": "matrix",
+        "input_name": "adj",
+        "input_value": "[[false, true, true, true, true, true],  [true, false, true, false, false, true],  [true, true, false, true, false, false],  [true, false, true, false, true, false],  [true, false, false, true, true, false],  [true, true, false, false, false, true]]"
+    },
+    {
+        "test_id": 1899,
+        "input_type": "matrix",
+        "input_name": "adj",
+        "input_value": "[[false, true, true, false, true],  [true, false, true, true, true],  [true, true, false, true, false],  [false, true, true, false, true],  [true, true, false, true, false]]"
+    },
+    {
+        "test_id": 1900,
+        "input_type": "matrix",
+        "input_name": "adj",
+        "input_value": "[[false, true, true, true, false, false, false, false],  [true, false, true, true, false, false, false, false],  [true, true, false, true, false, false, false, false],  [true, true, true, false, false, false, false, false],  [false, false, false, false, false, true, true, false],  [false, false, false, false, true, false, true, true],  [false, false, false, false, true, true, false, true],  [false, false, false, false, false, true, true, false]]"
+    },
+    {
+        "test_id": 1901,
+        "input_type": "matrix",
+        "input_name": "adj",
+        "input_value": "[[false, true, true, true, true, true, true, true, true, true],  [true, false, true, false, false, false, false, false, false, true],  [true, true, false, true, false, false, false, false, false, false],  [true, false, true, false, true, false, false, false, false, false],  [true, false, false, true, false, true, false, false, false, false],  [true, false, false, false, true, false, true, false, false, false],  [true, false, false, false, false, true, false, true, false, false],  [true, false, false, false, false, false, true, false, true, false],  [true, false, false, false, false, false, false, true, false, true],  [true, true, false, false, false, false, false, false, true, false]]"
+    },
+    {
+        "test_id": 1902,
+        "input_type": "matrix",
+        "input_name": "adj",
+        "input_value": "[[false, true, true, true, true, true, true],  [true, false, true, false, false, false, true],  [true, true, false, true, false, false, false],  [true, false, true, false, true, false, false],  [true, false, false, true, false, true, false],  [true, false, false, false, true, false, true],  [true, true, false, false, false, true, true]]"
+    },
+    {
+        "test_id": 1903,
+        "input_type": "matrix",
+        "input_name": "adj",
+        "input_value": "[[false, true, true, true, false, false, false, false],  [true, false, true, false, false, false, false, true],  [true, true, false, true, true, true, true, true],  [true, false, true, false, false, false, true, false],  [false, false, true, false, false, true, false, true],  [false, false, true, false, true, false, true, false],  [false, false, true, true, false, true, false, false],  [false, true, true, false, true, false, false, false]]"
+    },
+    {
+        "test_id": 1904,
+        "input_type": "matrix",
+        "input_name": "adj",
+        "input_value": "[[false, true, true, true, true],  [true, false, true, true, false],  [true, true, false, true, false],  [true, true, true, false, false],  [true, false, false, false, false]]"
+    },
+    {
+        "test_id": 1905,
+        "input_type": "matrix",
+        "input_name": "adj",
+        "input_value": "[[false, true, false, true, true, false],  [true, false, true, false, false, true],  [false, true, false, true, false, true],  [true, false, true, false, true, false],  [true, false, false, true, false, true],  [false, true, true, false, true, false]]"
+    },
+
+    // Is Book
+    {
+        "test_id": 1906,
+        "input_type": "matrix",
+        "input_name": "adj",
+        "input_value": "[[false, true, true, true],  [true, false, true, true],  [true, true, false, false],  [true, true, false, false]]"
+    },
+    {
+        "test_id": 1907,
+        "input_type": "matrix",
+        "input_name": "adj",
+        "input_value": "[[false, true],  [true, false]]"
+    },
+    {
+        "test_id": 1908,
+        "input_type": "matrix",
+        "input_name": "adj",
+        "input_value": "[[false, false, true, true, true],  [false, false, false, true, true],  [true, false, false, true, true],  [true, true, true, false, true],  [true, true, true, true, false]]"
+    },
+    {
+        "test_id": 1909,
+        "input_type": "matrix",
+        "input_name": "adj",
+        "input_value": "[[false, true, false, false, false, false, true, false, false, false],  [true, false, true, true, true, true, true, true, true, true],  [false, true, false, false, false, false, true, false, false, false],  [false, true, false, false, false, false, true, false, false, false],  [false, true, false, false, false, false, true, false, false, false],  [false, true, false, false, false, false, true, false, false, false],  [true, true, true, true, true, true, false, true, true, true],  [false, true, false, false, false, false, true, false, false, false],  [false, true, false, false, false, false, true, false, false, false],  [false, true, false, false, false, false, true, false, false, false]]"
+    },
+    {
+        "test_id": 1910,
+        "input_type": "matrix",
+        "input_name": "adj",
+        "input_value": "[[false, false, false, true, true],  [false, false, false, true, true],  [false, false, false, true, true],  [true, true, true, false, true],  [true, true, true, true, true]]"
+    },
+    {
+        "test_id": 1911,
+        "input_type": "matrix",
+        "input_name": "adj",
+        "input_value": "[[false, true, true, true, true, true],  [true, false, false, false, true, false],  [true, false, false, false, true, false],  [true, false, false, false, true, false],  [true, true, true, true, false, true],  [true, false, false, false, true, false]]"
+    },
+    {
+        "test_id": 1912,
+        "input_type": "matrix",
+        "input_name": "adj",
+        "input_value": "[[false, true, true, false],  [true, false, false, true],  [true, false, false, true],  [false, true, true, false]]"
+    },
+    {
+        "test_id": 1913,
+        "input_type": "matrix",
+        "input_name": "adj",
+        "input_value": "[[false, false, false, true, true],  [false, false, false, true, true],  [false, false, false, true, true],  [true, true, true, false, true],  [true, true, true, true, false]]"
+    },
+    {
+        "test_id": 1914,
+        "input_type": "matrix",
+        "input_name": "adj",
+        "input_value": "[[false, false],  [false, false]]"
+    },
+    {
+        "test_id": 1915,
+        "input_type": "matrix",
+        "input_name": "adj",
+        "input_value": "[[false, false, true],  [false, false, true],  [true, true, false]]"
+    },
+    {
+        "test_id": 1916,
+        "input_type": "matrix",
+        "input_name": "adj",
+        "input_value": "[[false, true, true],  [true, false, true],  [true, true, false]]"
+    },
+
+    // Is Bull
+    {
+        "test_id": 1917,
+        "input_type": "matrix",
+        "input_name": "adj",
+        "input_value": "[[false, true, false, false, false],  [true, false, true, true, false],  [false, true, false, true, false],  [false, true, true, false, true],  [false, false, false, true, false]]"
+    },
+    {
+        "test_id": 1918,
+        "input_type": "matrix",
+        "input_name": "adj",
+        "input_value": "[[false, true, true, true, false],  [true, false, true, false, false],  [true, true, false, false, false],  [true, false, false, false, true],  [false, false, false, true, false]]"
+    },
+    {
+        "test_id": 1919,
+        "input_type": "matrix",
+        "input_name": "adj",
+        "input_value": "[[false, true, true, false, false],  [true, false, true, true, true],  [true, true, false, false, false],  [false, true, false, false, true],  [false, true, false, true, false]]"
+    },
+    {
+        "test_id": 1920,
+        "input_type": "matrix",
+        "input_name": "adj",
+        "input_value": "[[false, true, true, false, false],  [true, true, false, true, false],  [true, false, false, false, false],  [false, true, false, false, true],  [false, false, false, true, false]]"
+    },
+    {
+        "test_id": 1921,
+        "input_type": "matrix",
+        "input_name": "adj",
+        "input_value": "[[false, false, true, false, false],  [false, false, true, false, false],  [true, true, false, true, true],  [false, false, true, false, true],  [false, false, true, true, false]]"
+    },
+    {
+        "test_id": 1922,
+        "input_type": "matrix",
+        "input_name": "adj",
+        "input_value": "[[false, true, false, false, false],  [true, false, true, false, false],  [false, true, false, true, false],  [false, false, true, false, true],  [false, false, false, true, false]]"
+    },
+    {
+        "test_id": 1923,
+        "input_type": "matrix",
+        "input_name": "adj",
+        "input_value": "[[false, true, false, false, false],  [true, false, false, false, false],  [false, false, false, true, false],  [false, false, true, false, true],  [false, false, false, true, false]]"
+    },
+    {
+        "test_id": 1924,
+        "input_type": "matrix",
+        "input_name": "adj",
+        "input_value": "[[false, true, true, false, false],  [true, false, true, true, false],  [true, true, false, false, true],  [false, true, false, false, false],  [false, false, true, false, false]]"
+    },
+    {
+        "test_id": 1925,
+        "input_type": "matrix",
+        "input_name": "adj",
+        "input_value": "[[false, false, false, false, false],  [false, false, false, false, false],  [false, false, false, false, false],  [false, false, false, false, false],  [false, false, false, false, false]]"
+    },
+    {
+        "test_id": 1926,
+        "input_type": "matrix",
+        "input_name": "adj",
+        "input_value": "[[false, false, false, false, true],  [false, false, true, true, true],  [false, true, false, false, false],  [false, true, false, false, true],  [true, true, false, true, false]]"
+    },
+    {
+        "test_id": 1927,
+        "input_type": "matrix",
+        "input_name": "adj",
+        "input_value": "[[false, false, true, true, false],  [false, false, false, true, true],  [true, false, false, false, false],  [true, true, false, false, true],  [false, true, false, true, false]]"
+    },
+    {
+        "test_id": 1928,
+        "input_type": "matrix",
+        "input_name": "adj",
+        "input_value": "[[false, true, true, false, true],  [true, false, false, true, true],  [true, false, false, false, false],  [false, true, false, false, false],  [true, true, false, false, false]]"
+    },
+    {
+        "test_id": 1929,
+        "input_type": "matrix",
+        "input_name": "adj",
+        "input_value": "[[false, true, true, false, true],  [true, false, true, true, true],  [true, true, false, false, false],  [false, true, false, false, false],  [true, true, false, false, false]]"
+    },
+    {
+        "test_id": 1930,
+        "input_type": "matrix",
+        "input_name": "adj",
+        "input_value": "[[false, true, false, true, false],  [true, false, false, true, false],  [false, false, false, true, false],  [true, true, true, false, true],  [false, false, false, true, false]]"
+    },
+    {
+        "test_id": 1931,
+        "input_type": "matrix",
+        "input_name": "adj",
+        "input_value": "[[false, true, true, true, true],  [true, false, false, false, false],  [true, false, false, true, false],  [true, false, true, false, false],  [true, false, false, false, false]]"
+    },
+    {
+        "test_id": 1932,
+        "input_type": "matrix",
+        "input_name": "adj",
+        "input_value": "[[false, true, true, false, false],  [true, false, true, true, true],  [true, true, false, false, false],  [false, true, false, false, false],  [false, true, false, false, false]]"
+    },
+
+    // Is Tadpole
+    {
+        "test_id": 1933,
+        "input_type": "matrix",
+        "input_name": "adj",
+        "input_value": "[[false, true, true, false, false],  [true, false, false, true, false],  [true, false, false, true, false],  [false, true, true, false, true],  [false, false, false, true, false]]"
+    },
+    {
+        "test_id": 1934,
+        "input_type": "matrix",
+        "input_name": "adj",
+        "input_value": "[[false, true, false, false],  [true, false, true, true],  [false, true, false, true],  [false, true, true, false]]"
+    },
+    {
+        "test_id": 1935,
+        "input_type": "matrix",
+        "input_name": "adj",
+        "input_value": "[[false, true, true, false, false],  [true, false, false, true, false],  [true, false, false, true, false],  [false, true, true, false, true],  [false, false, false, true, true]]"
+    },
+    {
+        "test_id": 1936,
+        "input_type": "matrix",
+        "input_name": "adj",
+        "input_value": "[[false, false, true, false, false, false],  [false, false, true, false, true, false],  [true, true, false, false, false, true],  [false, false, false, false, true, true],  [false, true, false, true, false, false],  [false, false, true, true, false, false]]"
+    },
+    {
+        "test_id": 1937,
+        "input_type": "matrix",
+        "input_name": "adj",
+        "input_value": "[[false, true, false, true, true, true],  [true, false, true, false, false, false],  [false, true, false, true, false, false],  [true, false, true, false, true, false],  [true, false, false, true, false, false],  [true, false, false, false, false, false]]"
+    },
+    {
+        "test_id": 1938,
+        "input_type": "matrix",
+        "input_name": "adj",
+        "input_value": "[[false, true, false, false],  [true, false, true, false],  [false, true, false, true],  [false, false, true, false]]"
+    },
+    {
+        "test_id": 1939,
+        "input_type": "matrix",
+        "input_name": "adj",
+        "input_value": "[[false, true, false, false, true],  [true, false, true, false, false],  [false, true, false, true, false],  [false, false, true, false, true],  [true, false, false, true, false]]"
+    },
+    {
+        "test_id": 1940,
+        "input_type": "matrix",
+        "input_name": "adj",
+        "input_value": "[[false, true, false, false, true, true],  [true, false, true, false, false, false],  [false, true, false, true, false, false],  [false, false, true, false, true, false],  [true, false, false, true, false, false],  [true, false, false, false, false, false]]"
+    },
+    {
+        "test_id": 1941,
+        "input_type": "matrix",
+        "input_name": "adj",
+        "input_value": "[[false, true, true, false, false, false, false, false],  [true, false, true, false, false, false, false, false],  [true, true, false, false, false, false, false, false],  [false, false, false, false, true, true, false, false],  [false, false, false, true, false, true, false, false],  [false, false, false, true, true, false, true, false],  [false, false, false, false, false, true, false, true],  [false, false, false, false, false, false, true, false]]"
+    },
+
+    // Is Flower
+    {
+        "test_id": 1942,
+        "input_type": "matrix",
+        "input_name": "adj",
+        "input_value": "[[false, true, true, true, true],  [true, false, true, false, false],  [true, true, false, false, false],  [true, false, false, false, true],  [true, false, false, true, false]]"
+    },
+    {
+        "test_id": 1943,
+        "input_type": "matrix",
+        "input_name": "adj",
+        "input_value": "[[false, true, true],  [true, false, true],  [true, true, false]]"
+    },
+    {
+        "test_id": 1944,
+        "input_type": "matrix",
+        "input_name": "adj",
+        "input_value": "[[false, true, true, true, true],  [true, false, true, true, true],  [true, true, false, true, true],  [true, true, true, false, true],  [true, true, true, true, false]]"
+    },
+    {
+        "test_id": 1945,
+        "input_type": "matrix",
+        "input_name": "adj",
+        "input_value": "[[false, true, true, true, true, true],  [true, false, true, false, false, true],  [true, true, false, true, false, false],  [true, false, true, false, true, false],  [true, false, false, true, true, false],  [true, true, false, false, false, true]]"
+    },
+    {
+        "test_id": 1946,
+        "input_type": "matrix",
+        "input_name": "adj",
+        "input_value": "[[false, true, true, true, true, true],  [true, false, true, false, false, true],  [true, true, false, false, false, true],  [true, false, false, false, true, false],  [true, false, false, true, false, false],  [true, true, true, false, false, false]]"
+    },
+    {
+        "test_id": 1947,
+        "input_type": "matrix",
+        "input_name": "adj",
+        "input_value": "[[false, false, false, false, false],  [false, false, false, false, false],  [false, false, false, false, false],  [false, false, false, false, false],  [false, false, false, false, false]]"
+    },
+    {
+        "test_id": 1948,
+        "input_type": "matrix",
+        "input_name": "adj",
+        "input_value": "[[false, true, true, true, true, true, true],  [true, false, true, false, false, false, false],  [true, true, false, false, false, false, false],  [true, false, false, false, true, false, false],  [true, false, false, true, false, false, false],  [true, false, false, false, false, false, true],  [true, false, false, false, false, true, false]]"
+    },
+    {
+        "test_id": 1949,
+        "input_type": "matrix",
+        "input_name": "adj",
+        "input_value": "[[false, false, false, true, true, false, false],  [false, false, true, false, true, false, false],  [false, true, false, false, true, false, false],  [true, false, false, false, true, false, false],  [true, true, true, true, false, true, true],  [false, false, false, false, true, false, true],  [false, false, false, false, true, true, false]]"
+    },
+    {
+        "test_id": 1950,
+        "input_type": "matrix",
+        "input_name": "adj",
+        "input_value": "[[false, false, true, false, false, false, false, true, false, false],  [false, false, false, false, false, false, false, false, false, false],  [true, false, false, false, false, false, false, true, false, false],  [false, false, false, false, false, false, false, false, false, false],  [false, false, false, false, false, false, false, true, true, true],  [false, false, false, false, false, false, false, false, false, false],  [false, false, false, false, false, false, false, false, false, false],  [true, false, true, false, true, false, false, false, true, false],  [false, false, false, false, true, false, false, true, false, true],  [false, false, false, false, true, false, false, false, true, false]]"
+    },
+    {
+        "test_id": 1951,
+        "input_type": "matrix",
+        "input_name": "adj",
+        "input_value": "[[false, true, true, true, true, true, true, true, true, true],  [true, false, true, true, false, false, false, false, false, false],  [true, true, false, true, false, false, false, false, false, false],  [true, true, true, false, false, false, false, false, false, false],  [true, false, false, false, false, true, true, false, false, false],  [true, false, false, false, true, false, true, false, false, false],  [true, false, false, false, true, true, false, false, false, false],  [true, false, false, false, false, false, false, false, true, true],  [true, false, false, false, false, false, false, true, false, true],  [true, false, false, false, false, false, false, true, true, false]]"
+    },
+    {
+        "test_id": 1952,
+        "input_type": "matrix",
+        "input_name": "adj",
+        "input_value": "[[false, true, true, true],  [true, false, true, true],  [true, true, false, false],  [true, true, false, false]]"
+    },
+    {
+        "test_id": 1953,
+        "input_type": "matrix",
+        "input_name": "adj",
+        "input_value": "[[false, true, true, true, true, true, true],  [true, false, false, false, false, true, true],  [true, false, false, true, true, false, false],  [true, false, true, false, false, true, false],  [true, false, true, false, false, false, true],  [true, true, false, true, false, false, false],  [true, true, false, false, true, false, false]]"
+    },
+    {
+        "test_id": 1954,
+        "input_type": "matrix",
+        "input_name": "adj",
+        "input_value": "[[false, true, true, false, false, false],  [true, false, true, true, false, false],  [true, true, false, true, false, false],  [false, true, true, false, true, true],  [false, false, false, true, false, true],  [false, false, false, true, true, false]]"
+    },
+    {
+        "test_id": 1955,
+        "input_type": "matrix",
+        "input_name": "adj",
+        "input_value": "[[false, true, true, false],  [true, false, false, true],  [true, false, false, true],  [false, true, true, false]]"
+    },
+    {
+        "test_id": 1956,
+        "input_type": "matrix",
+        "input_name": "adj",
+        "input_value": "[[false, false, false, true, false, true, true, false, false, false],  [false, false, false, false, false, false, true, true, true, false],  [false, false, false, false, true, false, true, false, false, true],  [true, false, false, false, false, true, true, false, false, false],  [false, false, true, false, false, false, true, false, false, true],  [true, false, false, true, false, false, true, false, false, false],  [true, true, true, true, true, true, false, true, true, true],  [false, true, false, false, false, false, true, false, true, false],  [false, true, false, false, false, false, true, true, false, false],  [false, false, true, false, true, false, true, false, false, false]]"
+    },
+    {
+        "test_id": 1957,
+        "input_type": "matrix",
+        "input_name": "adj",
+        "input_value": "[[false, true, true, true, true, true, true],  [true, false, true, false, false, false, false],  [true, true, false, false, false, false, false],  [true, false, false, false, true, true, true],  [true, false, false, true, false, true, true],  [true, false, false, true, true, false, true],  [true, false, false, true, true, true, false]]"
+    },
+    {
+        "test_id": 1958,
+        "input_type": "matrix",
+        "input_name": "adj",
+        "input_value": "[[false, true, false, true],  [true, false, true, false],  [false, true, false, true],  [true, false, true, false]]"
+    },
+    {
+        "test_id": 1959,
+        "input_type": "matrix",
+        "input_name": "adj",
+        "input_value": "[[false, false, true, false, false, false, false, false, false, false],  [false, false, true, true, false, false, false, false, false, false],  [true, true, false, true, false, false, false, false, false, false],  [false, true, true, false, true, true, false, false, false, false],  [false, false, false, true, false, true, false, false, false, false],  [false, false, false, true, true, false, false, false, false, false],  [false, false, false, false, false, false, false, false, false, false],  [false, false, false, false, false, false, false, false, false, false],  [false, false, false, false, false, false, false, false, false, false],  [false, false, false, false, false, false, false, false, false, false]]"
+    },
+
+    // Is Correctly Cut
+    {
+        "test_id": 1960,
+        "input_type": "matrix",
+        "input_name": "adj",
+        "input_value": "[[false, true, false, false, false, true],  [true, false, true, false, false, false],  [false, true, false, true, false, false],  [false, false, true, false, true, false],  [false, false, false, true, false, true],  [true, false, false, false, true, false]]"
+    },
+    {
+        "test_id": 1961,
+        "input_type": "matrix",
+        "input_name": "adj",
+        "input_value": "[[false, true, true, false, false, false],  [true, false, true, false, false, false],  [true, true, false, false, false, false],  [false, false, false, false, true, true],  [false, false, false, true, false, true],  [false, false, false, true, true, false]]"
+    },
+    {
+        "test_id": 1962,
+        "input_type": "matrix",
+        "input_name": "adj",
+        "input_value": "[[false, true, true, false, false, true],  [true, false, false, true, true, false],  [true, false, false, true, true, false],  [false, true, true, false, false, true],  [false, true, true, false, false, true],  [true, false, false, true, true, false]]"
+    },
+    {
+        "test_id": 1963,
+        "input_type": "matrix",
+        "input_name": "adj",
+        "input_value": "[[false, true, false, false, false, true],  [true, false, true, false, true, false],  [false, true, false, false, false, true],  [false, false, false, false, false, true],  [false, true, false, false, false, true],  [true, false, true, true, true, false]]"
+    },
+    {
+        "test_id": 1964,
+        "input_type": "matrix",
+        "input_name": "adj",
+        "input_value": "[[false, true, false, true, false, false, false, true],  [true, false, true, false, false, false, true, false],  [false, true, false, true, false, true, false, false],  [true, false, true, false, true, false, false, false],  [false, false, false, true, false, true, false, true],  [false, false, true, false, true, false, true, false],  [false, true, false, false, false, true, false, true],  [true, false, false, false, true, false, true, false]]"
+    },
+    {
+        "test_id": 1965,
+        "input_type": "matrix",
+        "input_name": "adj",
+        "input_value": "[[false, false, false, false, false, false],  [false, false, false, false, false, false],  [false, false, false, false, false, false],  [false, false, false, false, false, false],  [false, false, false, false, false, false],  [false, false, false, false, false, false]]"
+    },
+    {
+        "test_id": 1966,
+        "input_type": "matrix",
+        "input_name": "adj",
+        "input_value": "[[false, false, false, false, false, false, true, true, true, true],  [false, false, false, false, false, true, false, true, true, true],  [false, false, false, false, false, true, true, false, true, true],  [false, false, false, false, false, true, true, true, false, true],  [false, false, false, false, false, true, true, true, true, false],  [false, true, true, true, true, false, false, false, false, false],  [true, false, true, true, true, false, false, false, false, false],  [true, true, false, true, true, false, false, false, false, false],  [true, true, true, false, true, false, false, false, false, false],  [true, true, true, true, false, false, false, false, false, false]]"
+    },
+    {
+        "test_id": 1967,
+        "input_type": "matrix",
+        "input_name": "adj",
+        "input_value": "[[true, true, false, false, false, false],  [true, false, true, false, false, false],  [false, true, false, true, false, false],  [false, false, true, false, true, false],  [false, false, false, true, false, true],  [false, false, false, false, true, true]]"
+    },
+    {
+        "test_id": 1968,
+        "input_type": "matrix",
+        "input_name": "adj",
+        "input_value": "[[false, false, false, false, true, true],  [false, false, false, true, false, true],  [false, false, false, true, true, false],  [false, true, true, false, false, false],  [true, false, true, false, false, false],  [true, true, false, false, false, false]]"
+    },
+    {
+        "test_id": 1969,
+        "input_type": "matrix",
+        "input_name": "adj",
+        "input_value": "[[false, false, false, true, true, true],  [false, false, false, true, true, true],  [false, false, false, true, true, true],  [true, true, true, false, false, false],  [true, true, true, false, false, false],  [true, true, true, false, false, false]]"
+    },
+
+    // Is Wood Magical
+    {
+        "test_id": 1970,
+        "input_type": "number",
+        "input_name": "n",
+        "input_value": "5"
+    },
+    {
+        "test_id": 1970,
+        "input_type": "matrix",
+        "input_name": "wmap",
+        "input_value": "[[1, 2], [1, 3], [1, 4], [0, 2], [4, 0]]"
+    },
+    {
+        "test_id": 1971,
+        "input_type": "number",
+        "input_name": "n",
+        "input_value": "5"
+    },
+    {
+        "test_id": 1971,
+        "input_type": "matrix",
+        "input_name": "wmap",
+        "input_value": "[[1, 2], [1, 3], [1, 4], [0, 2], [4, 0], [1, 0]]"
+    },
+    {
+        "test_id": 1972,
+        "input_type": "number",
+        "input_name": "n",
+        "input_value": "1"
+    },
+    {
+        "test_id": 1972,
+        "input_type": "arrayOfIntegers",
+        "input_name": "wmap",
+        "input_value": "[]"
+    },
+    {
+        "test_id": 1973,
+        "input_type": "number",
+        "input_name": "n",
+        "input_value": "1"
+    },
+    {
+        "test_id": 1973,
+        "input_type": "matrix",
+        "input_name": "wmap",
+        "input_value": "[[0, 0]]"
+    },
+    {
+        "test_id": 1974,
+        "input_type": "number",
+        "input_name": "n",
+        "input_value": "2"
+    },
+    {
+        "test_id": 1974,
+        "input_type": "matrix",
+        "input_name": "wmap",
+        "input_value": "[[0, 0]]"
+    },
+    {
+        "test_id": 1975,
+        "input_type": "number",
+        "input_name": "n",
+        "input_value": "2"
+    },
+    {
+        "test_id": 1975,
+        "input_type": "matrix",
+        "input_name": "wmap",
+        "input_value": "[[0, 1]]"
+    },
+    {
+        "test_id": 1976,
+        "input_type": "number",
+        "input_name": "n",
+        "input_value": "3"
+    },
+    {
+        "test_id": 1976,
+        "input_type": "matrix",
+        "input_name": "wmap",
+        "input_value": "[[0, 1], [2, 1]]"
+    },
+    {
+        "test_id": 1977,
+        "input_type": "number",
+        "input_name": "n",
+        "input_value": "3"
+    },
+    {
+        "test_id": 1977,
+        "input_type": "matrix",
+        "input_name": "wmap",
+        "input_value": "[[2, 1], [0, 1], [2, 0]]"
+    },
+    {
+        "test_id": 1978,
+        "input_type": "number",
+        "input_name": "n",
+        "input_value": "10"
+    },
+    {
+        "test_id": 1978,
+        "input_type": "matrix",
+        "input_name": "wmap",
+        "input_value": "[[2, 1], [0, 1], [2, 4]]"
+    },
+    {
+        "test_id": 1979,
+        "input_type": "number",
+        "input_name": "n",
+        "input_value": "6"
+    },
+    {
+        "test_id": 1979,
+        "input_type": "matrix",
+        "input_name": "wmap",
+        "input_value": "[[2, 1], [0, 1], [2, 4], [4, 5], [5, 3], [3, 0]]"
+    },
+
+    // Walking In The Woods
+    {
+        "test_id": 1980,
+        "input_type": "number",
+        "input_name": "n",
+        "input_value": "5"
+    },
+    {
+        "test_id": 1980,
+        "input_type": "matrix",
+        "input_name": "wmap",
+        "input_value": "[[0, 1], [2, 1], [0, 2], [3, 4]]"
+    },
+    {
+        "test_id": 1981,
+        "input_type": "number",
+        "input_name": "n",
+        "input_value": "6"
+    },
+    {
+        "test_id": 1981,
+        "input_type": "matrix",
+        "input_name": "wmap",
+        "input_value": "[[0, 1], [2, 1], [0, 2], [3, 4]]"
+    },
+    {
+        "test_id": 1982,
+        "input_type": "number",
+        "input_name": "n",
+        "input_value": "1"
+    },
+    {
+        "test_id": 1982,
+        "input_type": "arrayOfIntegers",
+        "input_name": "wmap",
+        "input_value": "[]"
+    },
+    {
+        "test_id": 1983,
+        "input_type": "number",
+        "input_name": "n",
+        "input_value": "2"
+    },
+    {
+        "test_id": 1983,
+        "input_type": "arrayOfIntegers",
+        "input_name": "wmap",
+        "input_value": "[]"
+    },
+    {
+        "test_id": 1984,
+        "input_type": "number",
+        "input_name": "n",
+        "input_value": "2"
+    },
+    {
+        "test_id": 1984,
+        "input_type": "matrix",
+        "input_name": "wmap",
+        "input_value": "[[0, 1], [0, 0]]"
+    },
+    {
+        "test_id": 1985,
+        "input_type": "number",
+        "input_name": "n",
+        "input_value": "3"
+    },
+    {
+        "test_id": 1985,
+        "input_type": "matrix",
+        "input_name": "wmap",
+        "input_value": "[[0, 0], [2, 2], [1, 1]]"
+    },
+    {
+        "test_id": 1986,
+        "input_type": "number",
+        "input_name": "n",
+        "input_value": "11"
+    },
+    {
+        "test_id": 1986,
+        "input_type": "matrix",
+        "input_name": "wmap",
+        "input_value": "[[1, 7], [1, 5], [1, 9], [5, 4], [4, 8], [7, 0], [3, 2], [3, 6], [6, 10], [2, 6]]"
+    },
+    {
+        "test_id": 1987,
+        "input_type": "number",
+        "input_name": "n",
+        "input_value": "11"
+    },
+    {
+        "test_id": 1987,
+        "input_type": "arrayOfIntegers",
+        "input_name": "wmap",
+        "input_value": "[]"
+    },
+
+    // Is Pseudoforest
+    {
+        "test_id": 1988,
+        "input_type": "number",
+        "input_name": "n",
+        "input_value": "7"
+    },
+    {
+        "test_id": 1988,
+        "input_type": "matrix",
+        "input_name": "wmap",
+        "input_value": "[[0, 1], [1, 2], [2, 3], [3, 1], [3, 4], [5, 6]]"
+    },
+    {
+        "test_id": 1989,
+        "input_type": "number",
+        "input_name": "n",
+        "input_value": "7"
+    },
+    {
+        "test_id": 1989,
+        "input_type": "matrix",
+        "input_name": "wmap",
+        "input_value": "[[0, 1], [1, 2], [2, 3], [3, 1], [3, 4], [4, 0], [5, 6]]"
+    },
+    {
+        "test_id": 1990,
+        "input_type": "number",
+        "input_name": "n",
+        "input_value": "1"
+    },
+    {
+        "test_id": 1990,
+        "input_type": "arrayOfIntegers",
+        "input_name": "wmap",
+        "input_value": "[]"
+    },
+    {
+        "test_id": 1991,
+        "input_type": "number",
+        "input_name": "n",
+        "input_value": "2"
+    },
+    {
+        "test_id": 1991,
+        "input_type": "matrix",
+        "input_name": "wmap",
+        "input_value": "[[0, 1]]"
+    },
+    {
+        "test_id": 1992,
+        "input_type": "number",
+        "input_name": "n",
+        "input_value": "3"
+    },
+    {
+        "test_id": 1992,
+        "input_type": "matrix",
+        "input_name": "wmap",
+        "input_value": "[[0, 1], [1, 2], [2, 0]]"
+    },
+    {
+        "test_id": 1993,
+        "input_type": "number",
+        "input_name": "n",
+        "input_value": "13"
+    },
+    {
+        "test_id": 1993,
+        "input_type": "matrix",
+        "input_name": "wmap",
+        "input_value": "[[4, 8], [1, 5], [10, 12], [9, 3], [3, 4], [12, 11], [8, 2], [2, 6], [0, 1], [11, 10], [7, 6], [5, 7], [6, 0], [7, 9]]"
+    },
+    {
+        "test_id": 1994,
+        "input_type": "number",
+        "input_name": "n",
+        "input_value": "5"
+    },
+    {
+        "test_id": 1994,
+        "input_type": "matrix",
+        "input_name": "wmap",
+        "input_value": "[[1, 3], [3, 2], [2, 1], [3, 4], [4, 1]]"
+    },
+    {
+        "test_id": 1995,
+        "input_type": "number",
+        "input_name": "n",
+        "input_value": "6"
+    },
+    {
+        "test_id": 1995,
+        "input_type": "matrix",
+        "input_name": "wmap",
+        "input_value": "[[1, 3], [3, 2], [2, 1], [4, 5], [4, 0], [5, 0]]"
+    },
+    {
+        "test_id": 1996,
+        "input_type": "number",
+        "input_name": "n",
+        "input_value": "100000"
+    },
+    {
+        "test_id": 1996,
+        "input_type": "arrayOfIntegers",
+        "input_name": "wmap",
+        "input_value": "[]"
+    },
+    {
+        "test_id": 1997,
+        "input_type": "number",
+        "input_name": "n",
+        "input_value": "4"
+    },
+    {
+        "test_id": 1997,
+        "input_type": "matrix",
+        "input_name": "wmap",
+        "input_value": "[[0, 1], [1, 2], [2, 0], [0, 3], [3, 1], [3, 2]]"
+    },
+
+    // Burning The Wood
+    {
+        "test_id": 1998,
+        "input_type": "number",
+        "input_name": "n",
+        "input_value": "5"
+    },
+    {
+        "test_id": 1998,
+        "input_type": "number",
+        "input_name": "start",
+        "input_value": "0"
+    },
+    {
+        "test_id": 1998,
+        "input_type": "number",
+        "input_name": "k",
+        "input_value": "1"
+    },
+    {
+        "test_id": 1998,
+        "input_type": "matrix",
+        "input_name": "wmap",
+        "input_value": "[[0, 1], [1, 2], [2, 3], [3, 4], [4, 0]]"
+    },
+    {
+        "test_id": 1999,
+        "input_type": "number",
+        "input_name": "n",
+        "input_value": "7"
+    },
+    {
+        "test_id": 1999,
+        "input_type": "number",
+        "input_name": "start",
+        "input_value": "0"
+    },
+    {
+        "test_id": 1999,
+        "input_type": "number",
+        "input_name": "k",
+        "input_value": "2"
+    },
+    {
+        "test_id": 1999,
+        "input_type": "matrix",
+        "input_name": "wmap",
+        "input_value": "[[0, 1], [1, 2], [2, 3], [3, 4], [4, 5], [5, 6], [6, 0], [4, 1]]"
+    },
+    {
+        "test_id": 2000,
+        "input_type": "number",
+        "input_name": "n",
+        "input_value": "1"
+    },
+    {
+        "test_id": 2000,
+        "input_type": "number",
+        "input_name": "start",
+        "input_value": "0"
+    },
+    {
+        "test_id": 2000,
+        "input_type": "number",
+        "input_name": "k",
+        "input_value": "2"
+    },
+    {
+        "test_id": 2000,
+        "input_type": "matrix",
+        "input_name": "wmap",
+        "input_value": "[[0, 0]]"
+    },
+    {
+        "test_id": 2001,
+        "input_type": "number",
+        "input_name": "n",
+        "input_value": "2"
+    },
+    {
+        "test_id": 2001,
+        "input_type": "number",
+        "input_name": "start",
+        "input_value": "1"
+    },
+    {
+        "test_id": 2001,
+        "input_type": "number",
+        "input_name": "k",
+        "input_value": "1000"
+    },
+    {
+        "test_id": 2001,
+        "input_type": "matrix",
+        "input_name": "wmap",
+        "input_value": "[[0, 0]]"
+    },
+    {
+        "test_id": 2002,
+        "input_type": "number",
+        "input_name": "n",
+        "input_value": "5"
+    },
+    {
+        "test_id": 2002,
+        "input_type": "number",
+        "input_name": "start",
+        "input_value": "3"
+    },
+    {
+        "test_id": 2002,
+        "input_type": "number",
+        "input_name": "k",
+        "input_value": "1"
+    },
+    {
+        "test_id": 2002,
+        "input_type": "matrix",
+        "input_name": "wmap",
+        "input_value": "[[1, 3], [3, 4]]"
+    },
+
+    // Caterpillar Trees
+    {
+        "test_id": 2003,
+        "input_type": "number",
+        "input_name": "n",
+        "input_value": "21"
+    },
+    {
+        "test_id": 2003,
+        "input_type": "matrix",
+        "input_name": "edges",
+        "input_value": "[[0, 1], [1, 2], [2, 3], [2, 4], [4, 5], [4, 6], [4, 7], [4, 8], [4, 9], [4, 10], [10, 11], [11, 12], [11, 13], [11, 14], [14, 15], [14, 16], [14, 17], [14, 18], [14, 19]]"
+    },
+    {
+        "test_id": 2004,
+        "input_type": "number",
+        "input_name": "n",
+        "input_value": "22"
+    },
+    {
+        "test_id": 2004,
+        "input_type": "matrix",
+        "input_name": "edges",
+        "input_value": "[[0, 1], [1, 2], [2, 3], [2, 4], [4, 5], [4, 6], [4, 7], [4, 8], [4, 9], [4, 10], [10, 11], [11, 12], [11, 13], [11, 14], [14, 15], [14, 16], [14, 17], [14, 18], [14, 19], [13, 20]]"
+    },
+    {
+        "test_id": 2005,
+        "input_type": "number",
+        "input_name": "n",
+        "input_value": "1"
+    },
+    {
+        "test_id": 2005,
+        "input_type": "arrayOfIntegers",
+        "input_name": "edges",
+        "input_value": "[]"
+    },
+    {
+        "test_id": 2006,
+        "input_type": "number",
+        "input_name": "n",
+        "input_value": "2"
+    },
+    {
+        "test_id": 2006,
+        "input_type": "matrix",
+        "input_name": "edges",
+        "input_value": "[[0, 1], [1, 1]]"
+    },
+    {
+        "test_id": 2007,
+        "input_type": "number",
+        "input_name": "n",
+        "input_value": "4"
+    },
+    {
+        "test_id": 2007,
+        "input_type": "matrix",
+        "input_name": "edges",
+        "input_value": "[[2, 0], [0, 1], [3, 1]]"
+    },
+    {
+        "test_id": 2008,
+        "input_type": "number",
+        "input_name": "n",
+        "input_value": "10"
+    },
+    {
+        "test_id": 2008,
+        "input_type": "matrix",
+        "input_name": "edges",
+        "input_value": "[[0, 3], [0, 2], [3, 1], [3, 4], [3, 5], [3, 6], [7, 8]]"
+    },
+
+    // Is Mobius Ladder
+    {
+        "test_id": 2009,
+        "input_type": "number",
+        "input_name": "n",
+        "input_value": "6"
+    },
+    {
+        "test_id": 2009,
+        "input_type": "matrix",
+        "input_name": "ladder",
+        "input_value": "[[0, 1], [1, 2], [2, 3], [3, 4], [4, 5], [5, 0]]"
+    },
+    {
+        "test_id": 2010,
+        "input_type": "number",
+        "input_name": "n",
+        "input_value": "8"
+    },
+    {
+        "test_id": 2010,
+        "input_type": "matrix",
+        "input_name": "ladder",
+        "input_value": "[[0, 1], [0, 2], [0, 7], [1, 3], [1, 6], [2, 3], [2, 4], [3, 5], [4, 5], [4, 6], [5, 7], [6, 7]]"
+    },
+    {
+        "test_id": 2011,
+        "input_type": "number",
+        "input_name": "n",
+        "input_value": "10"
+    },
+    {
+        "test_id": 2011,
+        "input_type": "matrix",
+        "input_name": "ladder",
+        "input_value": "[[0, 1], [0, 3], [0, 7], [0, 9], [1, 2], [1, 4], [1, 8], [2, 3], [2, 5], [2, 9], [3, 4], [3, 6], [4, 5], [4, 7], [5, 6], [5, 8], [6, 7], [6, 9], [7, 8], [8, 9]]"
+    },
+    {
+        "test_id": 2012,
+        "input_type": "number",
+        "input_name": "n",
+        "input_value": "2"
+    },
+    {
+        "test_id": 2012,
+        "input_type": "arrayOfIntegers",
+        "input_name": "ladder",
+        "input_value": "[]"
+    },
+    {
+        "test_id": 2013,
+        "input_type": "number",
+        "input_name": "n",
+        "input_value": "4"
+    },
+    {
+        "test_id": 2013,
+        "input_type": "matrix",
+        "input_name": "ladder",
+        "input_value": "[[0, 1], [2, 3], [0, 2], [1, 3], [0, 3], [2, 1]]"
+    },
+    {
+        "test_id": 2014,
+        "input_type": "number",
+        "input_name": "n",
+        "input_value": "6"
+    },
+    {
+        "test_id": 2014,
+        "input_type": "matrix",
+        "input_name": "ladder",
+        "input_value": "[[0, 1], [2, 5], [4, 3], [0, 2], [2, 4], [1, 3], [3, 5], [1, 4], [0, 5]]"
+    },
+    {
+        "test_id": 2015,
+        "input_type": "number",
+        "input_name": "n",
+        "input_value": "4"
+    },
+    {
+        "test_id": 2015,
+        "input_type": "matrix",
+        "input_name": "ladder",
+        "input_value": "[[0, 1], [2, 3], [0, 2], [0, 3], [2, 1]]"
+    },
+    {
+        "test_id": 2016,
+        "input_type": "number",
+        "input_name": "n",
+        "input_value": "20"
+    },
+    {
+        "test_id": 2016,
+        "input_type": "matrix",
+        "input_name": "ladder",
+        "input_value": "[[7, 5], [12, 11], [7, 12], [5, 6], [11, 14], [5, 11], [6, 3], [14, 17], [6, 14], [3, 1], [17, 10], [3, 17], [1, 0], [10, 16], [1, 10], [0, 8], [16, 15], [0, 16], [8, 9], [15, 13], [8, 15], [9, 2], [13, 19], [9, 13], [2, 4], [19, 18], [2, 19], [4, 18], [7, 18], [12, 4]]"
+    },
+    {
+        "test_id": 2017,
+        "input_type": "number",
+        "input_name": "n",
+        "input_value": "6"
+    },
+    {
+        "test_id": 2017,
+        "input_type": "matrix",
+        "input_name": "ladder",
+        "input_value": "[[0, 1], [2, 3], [0, 3], [2, 1], [1, 4], [2, 5], [4, 5], [4, 3], [5, 0]]"
+    },
+    {
+        "test_id": 2018,
+        "input_type": "number",
+        "input_name": "n",
+        "input_value": "6"
+    },
+    {
+        "test_id": 2018,
+        "input_type": "matrix",
+        "input_name": "ladder",
+        "input_value": "[[0, 1], [2, 3], [0, 3], [2, 1], [1, 4], [2, 5], [4, 3]]"
+    },
+
+    // Tree Diameter
+    {
+        "test_id": 2019,
+        "input_type": "number",
+        "input_name": "n",
+        "input_value": "10"
+    },
+    {
+        "test_id": 2019,
+        "input_type": "matrix",
+        "input_name": "tree",
+        "input_value": "[[2, 5], [5, 7], [5, 1], [1, 9], [1, 0], [7, 6], [6, 3], [3, 8], [8, 4]]"
+    },
+    {
+        "test_id": 2020,
+        "input_type": "number",
+        "input_name": "n",
+        "input_value": "1"
+    },
+    {
+        "test_id": 2020,
+        "input_type": "arrayOfIntegers",
+        "input_name": "tree",
+        "input_value": "[]"
+    },
+    {
+        "test_id": 2021,
+        "input_type": "number",
+        "input_name": "n",
+        "input_value": "2"
+    },
+    {
+        "test_id": 2021,
+        "input_type": "matrix",
+        "input_name": "tree",
+        "input_value": "[[1, 0]]"
+    },
+    {
+        "test_id": 2022,
+        "input_type": "number",
+        "input_name": "n",
+        "input_value": "3"
+    },
+    {
+        "test_id": 2022,
+        "input_type": "matrix",
+        "input_name": "tree",
+        "input_value": "[[1, 2], [2, 0]]"
+    },
+    {
+        "test_id": 2023,
+        "input_type": "number",
+        "input_name": "n",
+        "input_value": "5"
+    },
+    {
+        "test_id": 2023,
+        "input_type": "matrix",
+        "input_name": "tree",
+        "input_value": "[[3, 0], [3, 4], [2, 3], [3, 1]]"
+    },
+    {
+        "test_id": 2024,
+        "input_type": "number",
+        "input_name": "n",
+        "input_value": "40"
+    },
+    {
+        "test_id": 2024,
+        "input_type": "matrix",
+        "input_name": "tree",
+        "input_value": "[[28, 26], [26, 18], [18, 10], [10, 3], [3, 32], [32, 22], [22, 14], [14, 38], [38, 13], [13, 25], [25, 19], [19, 12], [12, 6], [6, 34], [34, 23], [23, 1], [1, 20], [20, 9], [9, 36], [36, 17], [17, 16], [16, 5], [5, 2], [2, 39], [39, 30], [30, 0], [0, 21], [21, 24], [24, 8], [8, 27], [27, 33], [33, 15], [15, 7], [7, 37], [37, 31], [31, 29], [29, 4], [4, 35], [35, 11]]"
+    },
+
+    // Squirrel And Nut
+    {
+        "test_id": 2025,
+        "input_type": "matrix",
+        "input_name": "triples",
+        "input_value": "[[4, 6, 3], [1, 4, 2], [5, 6, 1]]"
+    },
+    {
+        "test_id": 2025,
+        "input_type": "arrayOfIntegers",
+        "input_name": "tree",
+        "input_value": "[1, 2, 1, 3, 2, 4, 3, 5, 3, 6]"
+    },
+    {
+        "test_id": 2026,
+        "input_type": "matrix",
+        "input_name": "triples",
+        "input_value": "[[6, 7, 2], [6, 7, 5], [2, 10, 1], [7, 2, 1], [10, 8, 4], [8, 10, 3], [7, 8, 1]]"
+    },
+    {
+        "test_id": 2026,
+        "input_type": "arrayOfIntegers",
+        "input_name": "tree",
+        "input_value": "[1, 2, 1, 3, 1, 4, 2, 5, 2, 7, 5, 6, 4, 8, 4, 9, 9, 10]"
+    },
+    {
+        "test_id": 2027,
+        "input_type": "matrix",
+        "input_name": "triples",
+        "input_value": "[[4, 3, 7], [7, 6, 9], [8, 7, 5], [2, 9, 3], [3, 10, 7]]"
+    },
+    {
+        "test_id": 2027,
+        "input_type": "arrayOfIntegers",
+        "input_name": "tree",
+        "input_value": "[9, 1, 7, 3, 2, 4, 9, 5, 4, 6, 2, 7, 10, 8, 3, 9, 3, 10]"
+    },
+    {
+        "test_id": 2028,
+        "input_type": "matrix",
+        "input_name": "triples",
+        "input_value": "[[2, 4, 1], [4, 8, 2], [8, 10, 12], [7, 4, 10], [6, 10, 4], [2, 8, 9], [6, 3, 2], [3, 4, 10], [4, 6, 10], [2, 10, 3], [7, 10, 12], [9, 8, 7], [4, 7, 10], [7, 1, 6], [8, 4, 9], [9, 7, 5], [6, 10, 7], [6, 2, 3], [5, 8, 4], [1, 4, 3], [10, 2, 8], [2, 10, 5], [1, 3, 10], [6, 9, 8], [1, 3, 6], [8, 9, 5], [9, 6, 5], [5, 6, 10], [5, 8, 10], [7, 3, 5]]"
+    },
+    {
+        "test_id": 2028,
+        "input_type": "arrayOfIntegers",
+        "input_name": "tree",
+        "input_value": "[11, 1, 7, 2, 1, 3, 8, 4, 12, 5, 12, 6, 6, 7, 9, 8, 13, 9, 8, 10, 13, 11, 11, 12, 6, 14, 8, 15]"
+    },
+    {
+        "test_id": 2029,
+        "input_type": "matrix",
+        "input_name": "triples",
+        "input_value": "[[9, 1, 10], [7, 2, 8], [5, 3, 2], [6, 1, 4], [6, 2, 1], [6, 9, 1], [6, 1, 7], [10, 2, 9], [1, 2, 5], [3, 5, 9], [1, 7, 3], [2, 6, 7], [8, 7, 6], [5, 6, 1], [9, 6, 1], [10, 8, 1], [3, 9, 4], [8, 4, 9], [7, 5, 8], [10, 1, 4], [2, 4, 6], [9, 4, 10], [10, 8, 6], [1, 6, 5], [8, 6, 5], [5, 6, 10], [10, 2, 1], [3, 9, 4], [4, 9, 6], [6, 10, 1]]"
+    },
+    {
+        "test_id": 2029,
+        "input_type": "arrayOfIntegers",
+        "input_name": "tree",
+        "input_value": "[10, 1, 5, 3, 5, 4, 2, 5, 5, 6, 2, 7, 5, 8, 6, 9, 6, 10]"
+    },
+    {
+        "test_id": 2030,
+        "input_type": "matrix",
+        "input_name": "triples",
+        "input_value": "[[24, 2, 1], [6, 2, 1], [24, 9, 8], [4, 2, 1], [21, 8, 6], [13, 4, 1], [26, 18, 7], [19, 6, 2], [21, 7, 1], [27, 9, 2], [16, 3, 1], [17, 12, 7], [3, 2, 1], [26, 18, 11], [20, 9, 5], [19, 18, 2], [5, 2, 1], [22, 3, 2]]"
+    },
+    {
+        "test_id": 2030,
+        "input_type": "arrayOfIntegers",
+        "input_name": "tree",
+        "input_value": "[1, 2, 1, 3, 2, 4, 2, 5, 3, 6, 1, 7, 6, 8, 8, 9, 5, 10, 9, 11, 6, 12, 4, 13, 4, 14, 6, 15, 6, 16, 1, 17, 15, 18, 14, 19, 17, 20, 7, 21, 3, 22, 7, 23, 12, 24, 4, 25, 15, 26, 14, 27]"
+    },
+
     // 
+
+
+
+
 
 
 ]

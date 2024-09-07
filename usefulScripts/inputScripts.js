@@ -380,7 +380,7 @@ logAllObjectsAsSingleObject();
 //#region 
 const startId = 205;  // Starting ID
 const inputType = 'matrix';  // Define your input type
-const inputName = 'matrix';  // Define your input name
+const inputName = 'adj';  // Define your input name
 
 function logAllObjectsAsSingleObject() {
     const storedData = localStorage.getItem('paramsLog');
@@ -398,8 +398,8 @@ function logAllObjectsAsSingleObject() {
     const allObjects = [];
 
     dataArray.forEach((item, index) => {
-        // Extract 2D array from the 'matrix' key
-        const arrayMatch = item.match(/matrix:\s*(\[\[.*\]\])/s);
+        // Extract 2D array from the 'adj' key
+        const arrayMatch = item.match(/adj:\s*(\[\[.*\]\])/s);
         if (arrayMatch) {
             // Parse the 2D array directly from the match
             const inputValueArray = JSON.parse(arrayMatch[1].replace(/\n\s*/g, ''));
@@ -416,7 +416,7 @@ function logAllObjectsAsSingleObject() {
                 input_value: formattedArray, // Use formatted array
             });
         } else {
-            console.warn(`No 'matrix' key found in item ${index + 1}`);
+            console.warn(`No 'adj' key found in item ${index + 1}`);
         }
     });
 

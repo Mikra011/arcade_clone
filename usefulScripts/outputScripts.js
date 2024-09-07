@@ -309,5 +309,94 @@ ${transformedData.join(',\n')}
 //#endregion
 
 
+// arr.arr.arr.boolen
+//#region 
+
+// Define the predefined values
+const CHALLENGE_ID = 20;  
+const IS_COMPLEX = false;
+const IS_SAMPLE = true;
+
+// Retrieve the data from local storage using the correct key
+const data = JSON.parse(localStorage.getItem('returnValueLog'));
+
+// Check if data was retrieved successfully
+if (!data) {
+  console.error('No data found in local storage under key "returnValueLog".');
+} else {
+  // Transform the data into an array of objects with expected_output as a clean string representation
+  const transformedData = data.map((item, index) => {
+    // Extract the array string from the text using a regex
+    const match = item.match(/expected return value : (\[\[\[.*\]\]\])/s);
+    let expectedOutput = '';
+
+    if (match) {
+      // Clean up the array string
+      const arrayString = match[1].replace(/\n/g, '').trim();
+
+      // The string should already be in the correct format, so no additional quotes are needed
+      expectedOutput = arrayString;
+    }
+
+    // Return the new object with the transformed data
+    return {
+      challenge_id: CHALLENGE_ID,
+      order_index: index + 1,
+      expected_output: expectedOutput,
+      is_complex: IS_COMPLEX,
+      is_sample: IS_SAMPLE
+    };
+  });
+
+  // Convert the array of objects into a JSON string representation
+  const outputString = JSON.stringify(transformedData, null, 2);
+
+  // Log the string representation to the console
+  console.log(outputString);
+}
+//#endregion
+
+// nested arr boolean
+//#region 
+// Define the predefined values
+const CHALLENGE_ID = 20;  // Adjust if needed
+const IS_COMPLEX = true;  // Set to true as per your requirement
+const IS_SAMPLE = true;
+
+// Retrieve the data from local storage using the correct key
+const data = JSON.parse(localStorage.getItem('returnValueLog'));
+
+// Check if data was retrieved successfully
+if (!data) {
+  console.error('No data found in local storage under key "returnValueLog".');
+} else {
+  // Transform each item to extract the nested array and convert it to a single-line JSON string
+  const transformedData = data.map((item, index) => {
+    // Extract the JSON array part from the string using regex
+    const match = item.match(/\[\[.*\]\]/s); // `s` flag allows dot to match newlines
+    const arrayString = match ? match[0] : "[]";
+
+    // Convert the extracted array string to a single-line JSON string
+    const parsedArray = JSON.parse(arrayString);
+    const expectedOutput = JSON.stringify(parsedArray);
+
+    // Return the new object with the transformed data
+    return {
+      challenge_id: CHALLENGE_ID,
+      order_index: index + 1,  // Index is 0-based, so add 1 for 1-based index
+      expected_output: expectedOutput,
+      is_complex: IS_COMPLEX,
+      is_sample: IS_SAMPLE
+    };
+  });
+
+  // Convert the array of objects into a JSON string representation
+  const outputString = JSON.stringify(transformedData, null, 2);
+
+  // Log the string representation to the console
+  console.log(outputString);
+}
+//#endregion
+
 
 

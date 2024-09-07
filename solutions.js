@@ -4435,92 +4435,92 @@ function solution(pieces) {
 
     const FIELD_HEIGHT = 20;
     const FIELD_WIDTH = 10;
-    
+
     // the score (the result)
     let score = 0;
-    
+
     // the game field
     let field = []
-    
+
     // the distance between top of the field and first filled block in the column
     let dropDistance = new Array(FIELD_WIDTH).fill(FIELD_HEIGHT);
-    
+
     // the number of filled blocks in the row
     let lineBlocks = new Array(FIELD_HEIGHT).fill(0);
-    
+
     // create an empty field
     function initField() {
         return new Array(FIELD_HEIGHT).fill(Array(FIELD_WIDTH).fill(0)).map(x => x.slice())
     }
-    
+
     // refresh drop distance
     function refreshDropDistance() {
-        for(let pos=0; pos<FIELD_WIDTH; pos++) {
-            dropDistance[pos]=0;
-            while(dropDistance[pos]<FIELD_HEIGHT && field[dropDistance[pos]][pos] == 0) {
+        for (let pos = 0; pos < FIELD_WIDTH; pos++) {
+            dropDistance[pos] = 0;
+            while (dropDistance[pos] < FIELD_HEIGHT && field[dropDistance[pos]][pos] == 0) {
                 dropDistance[pos]++;
             }
         }
     }
-    
+
     // refresh line blocks
     function refreshLineBlocks() {
-        for(let pos=0; pos<FIELD_HEIGHT; pos++) {
-            lineBlocks[pos] = field[pos].filter(x => x>0).length;
-        }        
+        for (let pos = 0; pos < FIELD_HEIGHT; pos++) {
+            lineBlocks[pos] = field[pos].filter(x => x > 0).length;
+        }
     }
-    
+
     // turn piece by 90 deg.
     function turnPiece(piece) {
         let turned = Array(piece[0].length).fill(0).map(x => Array(piece.length).fill("."));
-        for(let i=0; i<turned.length; i++) {
-            for(let j=0; j<turned[i].length; j++) {
-                turned[i][j] = piece[piece.length-j-1][i]
+        for (let i = 0; i < turned.length; i++) {
+            for (let j = 0; j < turned[i].length; j++) {
+                turned[i][j] = piece[piece.length - j - 1][i]
             }
         }
         return turned;
     }
-    
+
     // the required space of a piece on a position
     function usedHeight(piece) {
         let h = Array(piece[0].length).fill(0);
-        for(let i=0; i<piece.length; i++) {
-            for(let j=0; j<piece[i].length; j++) {
-                if(piece[i][j]=="#") {
-                    h[j] = i+1;
+        for (let i = 0; i < piece.length; i++) {
+            for (let j = 0; j < piece[i].length; j++) {
+                if (piece[i][j] == "#") {
+                    h[j] = i + 1;
                 }
             }
         }
         return h;
     }
-    
+
     // drop piece
     function drop(piece, bestPlace, numberOfThePiece) {
-        
-        if(!bestPlace.isSet) {
+
+        if (!bestPlace.isSet) {
             return;
         }
-        
-        for(let i=0; i < bestPlace.turns; i++) {
+
+        for (let i = 0; i < bestPlace.turns; i++) {
             piece = turnPiece(piece);
         }
-        
-        for(let top=0; top<piece.length; top++) {
-            for(let left=0; left<piece[top].length; left++) {
-                if(piece[top][left]==".") {
+
+        for (let top = 0; top < piece.length; top++) {
+            for (let left = 0; left < piece[top].length; left++) {
+                if (piece[top][left] == ".") {
                     continue;
                 }
-                field[bestPlace.top+top][bestPlace.left+left] = numberOfThePiece;
+                field[bestPlace.top + top][bestPlace.left + left] = numberOfThePiece;
             }
         }
     }
-    
-    
+
+
     field = initField();
     let numberOfThePiece = 1;
-    
-    for(let piece of pieces) {
-        
+
+    for (let piece of pieces) {
+
         let bestPlace = {
             blocks: 0,
             turns: 0,
@@ -4528,25 +4528,25 @@ function solution(pieces) {
             top: 0,
             isSet: false
         }
-        
-        for(let turns=0; turns<4; turns++) {
-            
+
+        for (let turns = 0; turns < 4; turns++) {
+
             let requiredSpace = usedHeight(piece);
-            
-            for(let left=0; left<=FIELD_WIDTH-piece[0].length; left++) {
-                
+
+            for (let left = 0; left <= FIELD_WIDTH - piece[0].length; left++) {
+
                 // find position
-                let top = Math.min(...requiredSpace.map((s, i) => dropDistance[left+i]-s));
-                if(top < 0) continue;
-                
+                let top = Math.min(...requiredSpace.map((s, i) => dropDistance[left + i] - s));
+                if (top < 0) continue;
+
                 // count blocks
                 let blocks = 0;
-                for(let i = top; i < top + piece.length; i++) {
+                for (let i = top; i < top + piece.length; i++) {
                     blocks += lineBlocks[i];
                 }
-                
+
                 // set best place
-                if(!bestPlace.isSet || blocks > bestPlace.blocks) {
+                if (!bestPlace.isSet || blocks > bestPlace.blocks) {
                     bestPlace = {
                         blocks: blocks,
                         turns: turns,
@@ -4555,33 +4555,33 @@ function solution(pieces) {
                         isSet: true
                     }
                 }
-                
+
             }
-            
+
             piece = turnPiece(piece);
         }
-        
+
         // drop piece
         drop(piece, bestPlace, numberOfThePiece);
         //console.log('drop', field)
-        
+
         // remove full lines
-        field = field.filter(line => line.filter(x => x==0).length!=0);
+        field = field.filter(line => line.filter(x => x == 0).length != 0);
         //console.log('filter', field)
-        
+
         // add empty lines + count score
-        while(field.length < FIELD_HEIGHT) {
+        while (field.length < FIELD_HEIGHT) {
             field.unshift(Array(FIELD_WIDTH).fill(0));
             score++;
         }
-        
+
         // refresh drop distance and line blocks
         refreshDropDistance();
         refreshLineBlocks();
-        
+
         //console.log('filled', field)
         //console.log(field)
-        
+
         numberOfThePiece++;
     }
 
@@ -4591,18 +4591,18 @@ function solution(pieces) {
 // 159: Pyraminx Puzzle
 function solution(faceColors, moves) {
     const result = faceColors.map(color => Array(9).fill(color));
-    for (let i = moves.length-1; i >= 0; i--) {
+    for (let i = moves.length - 1; i >= 0; i--) {
         const move = moves[i];
         const char = move[0].toLowerCase();
         const isPoint = move <= 'Z';
-        const isReversed = move[move.length-1] === "'";
+        const isReversed = move[move.length - 1] === "'";
         const mapping = faceMap[char]
             .slice(0, isPoint ? 1 : 4)
             .map(row => isReversed ? [...row].reverse() : row);
         const values = [];
         for (const row of mapping) {
             for (const [i, [y, x]] of row.entries()) {
-                const nextPos = row[(i+1) % row.length];
+                const nextPos = row[(i + 1) % row.length];
                 values.push([result[y][x], nextPos]);
             }
         }
@@ -4657,7 +4657,7 @@ function solution(field, clicks, newBallsCoordinates, newBalls) {
                 x2 -= dx;
                 y2 -= dy;
             }
-            const size = Math.max(x1-x2-1, y1-y2-1);
+            const size = Math.max(x1 - x2 - 1, y1 - y2 - 1);
             if (size >= 5) {
                 lines.push([size, x2, y2, dx, dy]);
             }
@@ -4669,7 +4669,7 @@ function solution(field, clicks, newBallsCoordinates, newBalls) {
             if (lines[line]) continue;
             lines[line] = true;
             const [size, x, y, dx, dy] = line;
-            score += size+1;
+            score += size + 1;
             for (let i = 0, j = x, k = y; i < size; i++) {
                 j += dx;
                 k += dy;
@@ -4678,9 +4678,9 @@ function solution(field, clicks, newBallsCoordinates, newBalls) {
         }
         score -= lines.length > 0;
     };
-    
+
     let spawnIdx = 0;
-    
+
     let selected = null;
     for (const [cy, cx] of clicks) {
         lines = [];
@@ -4692,7 +4692,7 @@ function solution(field, clicks, newBallsCoordinates, newBalls) {
                 if ((field[y] || [])[x] !== '.' && pos !== selected || visited[pos]) return false;
                 visited[pos] = true;
                 if (x === cx && y === cy) return true;
-                return [[x, y+1], [x, y-1], [x+1, y], [x-1, y]].some(canReachFinishFrom);
+                return [[x, y + 1], [x, y - 1], [x + 1, y], [x - 1, y]].some(canReachFinishFrom);
             };
             if (canReachFinishFrom(selected)) {
                 const [sx, sy] = selected;
@@ -4709,7 +4709,7 @@ function solution(field, clicks, newBallsCoordinates, newBalls) {
         } else {
             selected = null;
         }
-        
+
         if (isUnsuccessful && spawnIdx < newBalls.length) {
             lines = [];
             for (let i = 0; i < 3; i++) {
@@ -4720,13 +4720,13 @@ function solution(field, clicks, newBallsCoordinates, newBalls) {
                 }
             }
             for (let i = 0; i < 3; i++) {
-                const [sy, sx] = newBallsCoordinates[spawnIdx-i-1];
+                const [sy, sx] = newBallsCoordinates[spawnIdx - i - 1];
                 checkCell(sx, sy);
             }
             countLines();
         }
     }
-    
+
     return score;
 }
 
@@ -4743,7 +4743,7 @@ function solution(n) {
             resultTmp[i][j] = 0;
         }
     }
-    var draw = function(n, row, column, angle) {
+    var draw = function (n, row, column, angle) {
         var size = (1 << n) - 1;
         if (angle !== 0) {
             draw(n, row, column, 0);
@@ -4837,35 +4837,35 @@ function solution(n) {
 //// __________________________________Graphs_______________________________ ////
 //// __________________________________Graphs_______________________________ ////
 
-// New Road System
+// 1: New Road System
 function solution(roadRegister) {
-    for (var i=0; i<roadRegister.length; i++) {
-        var from = roadRegister[i].filter(v=>v).length
-        var to = roadRegister.map(row=>row[i]).filter(v=>v).length
+    for (var i = 0; i < roadRegister.length; i++) {
+        var from = roadRegister[i].filter(v => v).length
+        var to = roadRegister.map(row => row[i]).filter(v => v).length
         if (from != to) return false
     }
     return true
 }
 
-// Roads Building
-solution=(cities, roads)=>{
+// 2: Roads Building
+solution = (cities, roads) => {
     let h = {}, out = [];
     for (let r of roads) {
         let [a, b] = [Math.min(...r), Math.max(...r)]
         h[a] = h[a] || [];
         h[a].push(b);
     }
-    for (let i = 0; i<cities; i++) {
+    for (let i = 0; i < cities; i++) {
         if (!h.hasOwnProperty(i)) h[i] = [];
-        for ( let j = i+1; j<cities; j++) if (!h[i].includes(j)) out.push([i,j])
+        for (let j = i + 1; j < cities; j++) if (!h[i].includes(j)) out.push([i, j])
     }
     return out;
 }
 
-// Efficient Road Network
-function solution(n, roads) {      
+// 3: Efficient Road Network
+function solution(n, roads) {
     let matrix = Array(n);
-    for (let i=0; i<n; i++) {
+    for (let i = 0; i < n; i++) {
         matrix[i] = Array(n).fill(Infinity);
         matrix[i][i] = 0;
     }
@@ -4876,9 +4876,9 @@ function solution(n, roads) {
     }
 
     // Apply Floyd-Warshall 
-    for (let k=0; k<n; k++) {
-        for (row=0; row<n; row++) {
-            for (col=0; col<n; col++) {
+    for (let k = 0; k < n; k++) {
+        for (row = 0; row < n; row++) {
+            for (col = 0; col < n; col++) {
                 // ignore self-reference and current sub matrix
                 if (row == k || col == k) continue;
 
@@ -4898,14 +4898,14 @@ function solution(n, roads) {
     return true;
 }
 
-// Financial Crisis
+// 4: Financial Crisis
 function solution(roadRegister) {
     const n = roadRegister.length;
     const result = [];
 
     for (let k = 0; k < n; k++) {
         const newMatrix = [];
-        
+
         for (let i = 0; i < n; i++) {
             if (i === k) continue;
             newMatrix.push([]);
@@ -4914,11 +4914,884 @@ function solution(roadRegister) {
                 newMatrix[newMatrix.length - 1].push(roadRegister[i][j]);
             }
         }
-        
+
         result.push(newMatrix);
     }
-    
+
     return result;
 }
 
+// 5: Naming Roads
+function solution(roads) {
+    roads.sort((roadA, roadB) => roadA[2] - roadB[2]);
+
+    for (let i = 1; i < roads.length; i++) {
+        let curr = roads[i - 1];
+        let next = roads[i];
+
+        let [currCityA, currCityB] = curr;
+        let [nextCityA, nextCityB] = next;
+
+        if (currCityA === nextCityA || currCityA === nextCityB) {
+            return false;
+        }
+
+        if (currCityB === nextCityA || currCityB === nextCityB) {
+            return false;
+        }
+    }
+
+    return true;
+}
+
+// 6: Great Renaming
+function solution(roadRegister) {
+    roadRegister.unshift(roadRegister.pop());
+    roadRegister.forEach(a => a.unshift(a.pop()));
+    return roadRegister;
+}
+
+// 7: Cities Conquering
+function solution(n, roads) {
+    //A set to store conquered cities
+    let conquered = new Set(),
+        //Initially we set all nodes conquered in day 1(some nodes don't have any neighbor)
+        result = new Array(n).fill(1),
+        //data store key is the node, values is a Set of it's neighbors
+        data = new Map()
+
+    //Set information for data
+    roads.forEach(v => {
+        const [vertex1, vertex2] = v
+        data.has(vertex1) ?
+            data.get(vertex1).add(vertex2) : data.set(vertex1, new Set([vertex2]))
+
+        data.has(vertex2) ?
+            data.get(vertex2).add(vertex1) : data.set(vertex2, new Set([vertex1]))
+    })
+    //A node that we can conquer having the number of it's neighbors <= 1
+    for (let day = 1; ; day++) {
+        //We want to check whether we can conquer any cities today
+        //If not it means that we either conquered every city or
+        //the remaining cities, they all have more than 1 neighbor
+        //We can not conquer the ones, THEY'RE TOO STRONG
+        let victory = false
+        //For every node in data, get rid of conquered cities
+        conquered.forEach(node => data.forEach(o => o.delete(node)))
+        data.forEach((v, i) => {
+            //Now, how many neighbor this city has?
+            if (v.size < 2) {
+                victory = true
+                result[i] = day
+                //Conquered successfully
+                conquered.add(i)
+                //Get rid of this city on the map
+                data.delete(i)
+            }
+        })
+        if (!victory) break
+    }
+    //Set remaining cities to -1
+    data.forEach((v, i) => result[i] = -1)
+    return result
+}
+
+// 8: Merging Cities
+function solution(roadRegister) {
+    //Store removed nodes
+    let removed = new Set()
+    const n = roadRegister.length
+    for (let i = 0; i < n; i += 2) {
+        if (roadRegister[i][i + 1]) {
+            removed.add(i + 1)
+            for (let j = 0; j < n; j++) {
+                //Merge node i with node i + 1
+                //for a node j connected with node i + 1
+                //after merging, node i is connected to node j
+                //and node j is connect to node i
+                roadRegister[i][j] = roadRegister[i][j] || roadRegister[i + 1][j]
+                roadRegister[j][i] = roadRegister[i][j]
+            }
+        }
+    }
+    //Filter unremoved nodes in graph
+    //node[i][i] always equal to false
+    return roadRegister.filter((v, i) => !removed.has(i)).map((v, i) => {
+        v = v.filter((o, j) => !removed.has(j))
+        v[i] = false;
+        return v
+    })
+}
+
+// 9: Living On The Roads
+function solution(roadRegister) {
+    let roads = []
+    for (let city1 = 0; city1 < roadRegister.length; city1++)
+        for (let city2 = city1 + 1; city2 < roadRegister.length; city2++)
+            if (roadRegister[city1][city2]) roads.push([city1, city2])
+
+    return roads.map(([city1, city2], i) => roads.map(([rcity1, rcity2], j) => {
+        if (i === j) return false
+
+        return city1 === rcity1 || city1 === rcity2 || city2 === rcity1 || city2 === rcity2
+    }))
+}
+
+// 10: Is Butterfly
+function solution(adj) {
+    const connections = [];
+    let middle = -1;
+
+    for (let i = 0; i < 5; i++) {
+        let row = [];
+
+        for (let j = 0; j < 5; j++) {
+            if (adj[i][j]) {
+                if (i === j) {
+                    return false;
+                } else {
+                    row.push(j);
+                }
+            }
+        }
+
+        if (row.length === 4) {
+            if (middle === -1) {
+                middle = i;
+            } else {
+                return false;
+            }
+        } else if (row.length !== 2) {
+            return false;
+        }
+
+        connections.push(row);
+    }
+
+    for (let i = 0; i < connections.length; i++) {
+        if (i !== middle) {
+            let row = connections[i];
+
+            if (!row.includes(middle)) {
+                return false;
+            }
+
+            for (let j = 0; j < 2; j++) {
+                let r = row[j];
+
+                if (r !== middle && !connections[r].includes(middle)) {
+                    return false;
+                }
+            }
+        }
+    }
+
+    return true;
+}
+
+// 11: Count Stars
+function solution(adj) {
+    return new Stars(adj).getStarCount()
+}
+class Stars {
+    constructor(adj) {
+        this.matrix = adj
+        this.adjMap = this.generateAdjMap()
+    }
+
+    generateAdjMap() {
+        const { matrix } = this
+
+        const adjMap = new Map()
+
+        matrix.forEach((field, index) => {
+            const fieldMap = new Map()
+            field.forEach((value, i) => {
+                if (value && i !== index) {
+                    fieldMap.set(i, true)
+                }
+            })
+            adjMap.set(index, fieldMap)
+        })
+
+        return adjMap
+    }
+
+    getStarCount() {
+        const { matrix, adjMap } = this
+
+        const parentMap = new Map()
+
+        return matrix.reduce((count, curr, index) => {
+            const fieldMap = adjMap.get(index)
+
+            if (!parentMap.has(index) && fieldMap.size > 0 && !matrix[index][index]) {
+                for (const key of fieldMap.keys()) {
+                    if (parentMap.has(key) || adjMap.get(key).size !== 1) return count
+                }
+                parentMap.set(index, true)
+                return count + 1
+            }
+
+            return count
+
+        }, 0)
+    }
+}
+
+// 12: Is Wheel
+function solution(adj) {
+    if (adj.length < 4) {
+        return false
+    }
+    let g = makeGraph()
+    let loop = false
+    adj.map((x, i) => g.addNode('a' + i))
+    adj.map((x, i) => x.map((x2, i2) => {
+        x2 ? g.addEdge('a' + i, 'a' + i2) : ''
+        i2 === i && x2 ? loop = true : ''
+    }))
+    if (loop) { return false }
+    let countOfNodes = 0
+    let maxSize
+    for (prop in g) {
+        g[prop].edges ? countOfNodes++ : ''
+    }
+    let test = true
+    for (prop in g) {
+        if (g[prop].edges) {
+            console.log(g.bfs(prop).size)
+            console.log(countOfNodes)
+            test !== false ? test = test && g.bfs(prop).size === countOfNodes : ''
+        }
+        console.log(test)
+    }
+
+    let resCheck = Array.from(g.allEdges).map(x => x.split('a')).reduce((ac2, x2, i2, ar2) => {
+        x2.map(x3 => ac2['a' + x3] === undefined ? ac2['a' + x3] = 1 : ac2['a' + x3] = ac2['a' + x3] + 1)
+        return ac2
+    }, {})
+    // console.log(g.allEdges)
+    let nCount = 0
+    let count3 = 0
+    let totalCount = 0
+    let neededNodes = []
+    console.log(resCheck)
+    for (prop in resCheck) {
+        if (prop !== 'a') {
+            totalCount++
+            if (resCheck[prop] === 3) {
+                count3++
+            } else {
+                if (resCheck[prop] === adj.length - 1) {
+                    nCount++
+                }
+            }
+        }
+    }
+    return test && (totalCount === 4 ? count3 + nCount === totalCount : (count3 + nCount === totalCount && nCount === 1))
+
+}
+let makeGraph = () => {
+    let graph = {}
+    graph.addNode = (node) => {
+        graph[node] = { edges: new Set() }
+    }
+    graph.allEdges = new Set()
+    graph.addEdge = (nodeA, nodeB) => {
+        graph[nodeA].edges.add(nodeB)
+        graph[nodeB].edges.add(nodeA)
+        Number(nodeA.substring(1,)) > Number(nodeB.substring(1,)) ? graph.allEdges.add(nodeA + nodeB) : graph.allEdges.add(nodeB + nodeA)
+    }
+    graph.bfs = (start) => {
+        let nodeAccessUnique = new Set()
+        let startPoint = [start]
+        nodeAccessUnique.add(start)
+        while (startPoint.length > 0) {
+            var ind = startPoint.shift()
+            Array.from(graph[ind].edges).map(x => {
+                if (!nodeAccessUnique.has(x)) {
+                    nodeAccessUnique.add(x)
+                    startPoint.push(x)
+                }
+            })
+        }
+        return nodeAccessUnique
+    }
+    return graph
+}
+
+// 13: Is Book
+function solution(adj) {
+    let g = makeGraph()
+    adj.map((x, i) => g.addNode('a' + i))
+    adj.map((x, i) => x.map((x2, i2) => x2 ? g.addEdge('a' + i, 'a' + i2) : ''))
+    // console.log(g)
+    if (g.allEdges.size === 3 || g.allEdges.size === 1) {
+        return true
+    }
+    let master = { bookBaseNodes: [], bookNodes: [] }
+    for (prop in g) {
+        if (g[prop].edges) {
+            if (g[prop].edges.size < 2) {
+                return false
+            }
+            g[prop].edges.size > 2 ? master.bookBaseNodes.push(Array.from(g[prop].edges)) : master.bookNodes.push(Array.from(g[prop].edges))
+        }
+    }
+    // console.log(master)
+    // console.log(g.allEdges)
+
+    //if there are more than (master.bookBaseNodes.length!==2 || master.bookBaseNodes[0].length !== master.bookBaseNodes[1].length) return false
+    //
+    if ((master.bookBaseNodes.length !== 2 || master.bookBaseNodes[0].length !== master.bookBaseNodes[1].length)) {
+        return false
+    }
+    let bookNodeCheck = master.bookNodes.reduce((ac, x, i, ar) => {
+        ac.add(x[0]);
+        ac.add(x[1])
+        return ac
+    }, new Set()).size === 2
+
+    if (!bookNodeCheck) {
+        return false
+    }
+    return true
+}
+let makeGraph = () => {
+    let graph = {}
+    graph.addNode = (node) => {
+        graph[node] = { edges: new Set() }
+    }
+    graph.allEdges = new Set()
+    graph.addEdge = (nodeA, nodeB) => {
+        graph[nodeA].edges.add(nodeB)
+        graph[nodeB].edges.add(nodeA)
+        Number(nodeA.substring(1,)) > Number(nodeB.substring(1,)) ? graph.allEdges.add(nodeA + nodeB) : graph.allEdges.add(nodeB + nodeA)
+    }
+    return graph
+}
+
+// 14: Is Bull
+function solution(adj) {
+    const n = adj.length
+    let visited = [],
+        size = 0,
+        //parent[i] store the parent of node i
+        parent = [],
+        circle = 0
+    //dfs to find the number of circle of size 3
+    //It has to be 1
+    
+    function dfs(node, derive) {
+        visited[node] = true
+        parent[node] = derive
+        size++
+        for(let nextNode = 0;nextNode < n;nextNode++) {
+            if(nextNode !== derive && adj[node][nextNode]) {
+                if(visited[nextNode]) {
+                    //Circle of 3 nodes ? 
+                    if(nextNode === parent[derive]) circle++
+                } else dfs(nextNode, node)
+            }
+        }
+    }
+    dfs(0, null)
+    return circle === 1 && size === 5
+}
+
+// 15: Is Tadpole
+function solution(adj) {
+    //one circle in graph => circle = 2
+    //One node go as far as possible, one of it's descendant connect to that node
+    //The test case is not strong
+    //Just find whether the graph has:
+    // + 1 circle
+    // + The root of simple path
+    // => It's enough to pass 
+    const n = adj.length
+    let circle = 0,
+        //circleAncestor,
+       // circleDescendant,
+        singlePathRoot,
+        visited = [],
+        size = 0
+      // circleComponents = new Set(),
+      //  parent = []
+    
+    adj = adj.map((v, i) => {
+        let newMap = []
+        v.map((o, j) => o && newMap.push(j))
+        if(newMap.length === 1) singlePathRoot = i
+        return newMap
+    })
+
+    function dfs(node, derive) {
+        //parent[node] = derive;
+        visited[node] = true
+        size++
+        for(let nextNode of adj[node]) {
+            if(nextNode !== derive) {
+                if(visited[nextNode]) {
+                    circle++
+                   // circleAncestor = nextNode
+                   // circleDescendant = node
+                } else {
+                    dfs(nextNode, node)
+                }
+            }
+        }
+    }
+    if(singlePathRoot === undefined) return false
+    dfs(0, null)
+    //If the test case is tronger than:
+    //Use parent array to find all nodes of the circle 
+    //Remove those nodes from the the graph
+    //Check remaining nodes in a simple path(Use DFS)
+  
+    if(circle !== 2 ||size !== n) return false
+    return true
+}
+
+// 16: Is Flower
+function solution(adj) {
+    let nodes = adj.length,
+        edges = 0,
+        map = Array.from({ length: nodes}, _ => [])
+    adj.map((_, i) => _.map((v, j) => {
+        i - j && v && edges++
+        //map[i] contains nodes that connect with node i
+        v && map[i].push(j)
+    }))
+    //Number of nodes: a * b - a + 1 = nodes
+    //Number of edges : b * (b - 1) * a = edges(duplicated)
+    //a(b * b - 1) = nodes - 1 + edges(duplicated)
+    //a : number of petals
+    //b : number of nodes in a petals
+    let b = 2,
+        flower = false
+    const standard = nodes - 1 + edges
+    let data = []
+    //Overall checking
+    while(++b * b - 1 <= standard) 
+        if(Number.isInteger(a = standard / (b * b - 1))) flower = true
+    
+    if(!flower) return false
+    //petals: key:the size of connected nodes
+    let petals = new Map(),
+        //Nodes that already belong to a group
+        marked = new Set(),
+        //Then center node
+        center
+    map.map((_, i) => {
+        const size = _.length
+        //Set center noe
+        if(size === nodes - 1) center = i
+        if(!petals.has(size)) petals.set(size, [])
+        //Only add a group if this node belongs to a petal
+        //Also group nodes that connect to the current node into the same group
+        if(size !== nodes - 1) {
+            if(!marked.has(i)) {
+                petals.get(size).push([i, ..._])
+                marked = new Set([...marked, ..._])
+            }
+        }
+    })
+    //If every node is connected to each other
+    if(petals.size === 1) return true
+    //Petals only contains the size of the nodes that connect to the center
+    //And the size of nodes in a petal
+    if(petals.size !== 2) return false
+    petals.delete(nodes - 1)
+    petals = Array.from(petals)[0]
+    //Check if nodes in a petal are connected to each other
+    for(let _ of petals[1]) 
+        for(let v of _) 
+            if(v !== center) 
+                for(let w of _) 
+                    if(w !== v && (!adj[w][v])) return false
+                
+    return true
+  
+}
+
+// 17: Is Correctly Cut
+function solution(adj) {
+    //Every node connects to adj.length / 2 - 1 nodes
+    //It's possible to color the graph with 2 colors
+    let colors = [],
+        queue = [[0, false]],
+        visited = [1]
+    while(queue.length) {
+        let [u, color] = queue.shift(),
+            size = 0
+        colors[u] = color
+        for(let v = 0;v < adj.length;v++) {
+            size += adj[u][v]
+            if(adj[u][v]) {
+                if(visited[v]) {
+                    if(color === colors[v]) return false
+                } else {
+                    visited[v] = true
+                    queue.push([v, !color])
+                }
+            }
+        }
+        if(size !== adj.length / 2 - 1) return false
+    }
+
+    return true
+}
+
+// 18: Is Wood Magical
+function solution(n, wmap) {
+    //Color the graph with 2 colors
+    let OK = true,
+        colors = [],
+        map = Array.from({length: n}, v => []),
+        visited = []
+    wmap.map(([verex1, verex2]) => {
+        OK = OK && verex1 !== verex2
+        map[verex1].push(verex2)
+        map[verex2].push(verex1)
+    })
+    function dfs(node, parent, color) {
+        colors[node] = color
+        visited[node] = 1
+        for(let nextNode of map[node]) {
+            if(OK && nextNode !== parent) {
+                if(visited[nextNode]) {
+                    if(!(colors[nextNode] ^ colors[node])) {
+                        OK = false;
+                        break;
+                    } 
+                } else dfs(nextNode, node, !color)
+            }
+        }
+        
+    }
+    
+    dfs(0, null, true)
+    return OK
+}
+function solution1(n, wmap) {
+    //Find circle use DFS
+    //Use array time to store the time we visit node i
+    //When DFS a node j connected to visited node i -> size of circle: time[j] - time[i] + 1
+    let map = Array.from({length: n}, v => []),
+        visited = [],
+        time = [],
+        magic = true,
+        test = []
+    for(let [node1, node2] of wmap) {
+        //a node pointed to itself is a circle of size 1
+        if(node1 === node2) return false
+        map[node1].push(node2)
+        map[node2].push(node1)
+    }
+    function dfs(node, parent, level) {
+        visited[node] = true
+        time[node] = level
+        for(let nextNode of map[node]) {
+            if(nextNode !== parent) {
+                if(visited[nextNode]) {
+                    magic = magic && (time[node] - time[nextNode] + 1) % 2 === 0
+                } else dfs(nextNode, node, level + 1)
+            }
+        }
+    }
+    dfs(0, null, 0)
+    return magic
+}
+
+// Walking In The Woods
+function solution(n, wmap) {
+    //Find the number of group of connected nodes
+    //Use Set and Map to optimize(Use array will ETL)
+    let time,
+        unvisited = new Set(),
+        //Store nodes that connect to other nodes
+        map = new Map()
+    wmap.map(([node1, node2], i) => {
+        if(node1 !== node2) {
+            unvisited.add(node1)
+            unvisited.add(node2)
+            map.has(node1) ? map.get(node1).push(node2) : map.set(node1, [node2])
+            map.has(node2) ? map.get(node2).push(node1) : map.set(node2, [node1])
+        }
+    })
+    //The number of nodes that do not connect to any node
+    time = n - map.size
+    function dfs(node) {
+        unvisited.delete(node)
+        for(let nextNode of map.get(node)) unvisited.has(nextNode) && dfs(nextNode)
+    }
+    while(unvisited.size) {
+        time++
+        dfs(unvisited.values().next().value)
+    }
+    //N group -> N - 1 times go off
+    return --time
+}
+
+// Is Pseudoforest
+function solution(n, wmap) {
+    let unvisited = new Set(),
+        map = new Map()
+    wmap.map(([node1, node2]) => {
+       if(node1 !== node2) {
+            unvisited.add(node1)
+            unvisited.add(node2)
+            map.has(node1) ? map.get(node1).push(node2) : map.set(node1, [node2])
+            map.has(node2) ? map.get(node2).push(node1) : map.set(node2, [node1])
+        }
+    })
+    let circle = 0,
+        forest = true
+    function dfs(node, parent) {
+        unvisited.delete(node)
+        for(let nextNode of map.get(node)) {
+            if(nextNode !== parent) {
+                if(!unvisited.has(nextNode)) circle++
+                else dfs(nextNode, node)
+            }
+        }
+    }
+    while(unvisited.size) {
+        dfs(unvisited.values().next().value, null)
+        //A circle is checked to time 
+        forest = forest && circle / 2 < 2
+        if(!forest) return false
+        circle = 0
+    }
+    
+    return true
+}
+
+// Burning The Wood
+function solution(n, start, k, wmap) {
+    let fired = []
+    let visited = []
+    let graph = []
+    for ( let i = 0 ; i < n ; ++i ) {
+        visited.push(false)
+        graph.push([])
+    }
+    for ( let item of wmap ) {
+        let [v,u] = item
+        graph[v].push(u)
+        graph[u].push(v)
+    }
+    
+    let q = [start]
+    visited[start] = true
+    while ( q.length > 0 && k > 0 ) {
+        k--
+        let next_q = []
+        for ( let v of q ) {
+            for ( let u of graph[v] ) {
+                if ( ! visited[u] ) {
+                    visited[u] = true
+                    next_q.push(u)
+                }
+            }
+        }
+        q = []
+        for ( let qq of next_q ) q.push(qq)
+    }
+    
+    for ( let i = 0 ; i < n ; ++i ) {
+        if ( visited[i] ) {
+            fired.push(i)
+        }
+    }
+    return fired
+}
+
+// Caterpillar Trees
+function solution(n, edges) {
+   
+    //DFS a tree, for every vertex has no more than one neighbor has size > 1
+    let map = new Map(),
+        visited,
+        tree = 0,
+        caterTree = 0,
+        circle,
+        cater
+    //build the graph
+    for(let i = 0;i < n;i++) map.set(i, new Set())
+    edges.forEach(v => v.map((vertex, i) => map.get(vertex).add(v[++i % 2])))
+    //BFS to find the furthest vertex in the tree
+    //So we can make sure we do not start DFS from the leaf
+    function bfs(vertex) {
+        
+        let visited = new Set([vertex]),
+            queue = [vertex],
+            furthestVertex
+        while(queue.length) {
+            const currentVertex = queue.shift()
+            furthestVertex = currentVertex
+            for(let nextVertex of map.get(currentVertex)) 
+                if(!visited.has(nextVertex)) {
+                    visited.add(nextVertex)
+                    queue.push(nextVertex)
+                }
+        }
+        return furthestVertex
+    }
+   
+    function dfs(vertex, parent) {
+        let size = 1,
+            foundPath = false
+        
+        visited.add(vertex)
+        for(let nextVertex of map.get(vertex)) {
+            if(nextVertex !== parent) {
+                if(visited.has(nextVertex)) circle = true
+                else {
+                    const neighborSize = dfs(nextVertex, vertex)
+                    size += neighborSize
+                    //If it already found a path
+                    //This neighbor vertex has size > 1 -> Cannot be caterpillar tree
+                    if(neighborSize > 1) foundPath ? cater = false : foundPath = true
+                }
+            }
+            
+        }
+        map.delete(vertex)
+        return size
+    }
+
+   let count = 0
+    while(map.size) {
+        //reset params for the new tree
+        visited = new Set()
+        circle = false
+        cater = true
+        dfs(bfs(map.keys().next().value), null)
+        //tree cannot have circle
+        if(!circle) {
+            tree++
+            cater && caterTree++
+        }
+        
+        count++
+    }
+   return [tree, caterTree]
+  
+}
+
+// Is Mobius Ladder
+function solution(n, ladder) {
+    let map = Array.from({length: n}, _ => new Set())
+    ladder.map(([u, v]) => {
+        map[u].add(v)
+        map[v].add(u)
+    })
+    //Mobius Latter: every node connects to 3 other nodes (1)
+    if(map.some(_ => _.size !== 3)) return false
+    //If (1) true => the graph has 4 vertexes in a mobius latter
+    if(n === 4) return true
+    //For each node, each node in three nodes that connect with the current node 
+    //cann't connect with 2 left nodes
+    return map.every((_, u) => {
+        _ = Array.from(_)
+        for(let i = 0;i < 3;i++) {
+            for(let j = i + 1;j < 3;j++) 
+                if(map[_[i]].has(_[j])) return false
+        }
+        return true
+    })
+}
+ 
+// Tree Diameter
+function solution(n, tree) {
+    let map = []
+    tree.map(([u, v]) => {
+        map[u] ? map[u].push(v) : map[u] = [v]
+        map[v] ? map[v].push(u) : map[v] = [u]
+    })
+    function bfs(vertex) {
+        let visited = [],
+            queue = [[vertex, 0]],
+            furthestNode = [vertex, 0]
+        visited[vertex] = 1
+        while(queue.length) {
+            const [currentVetex, length] = furthestNode = queue.shift()
+            for(let nextVertex of map[currentVetex]||[]) {
+                if(!visited[nextVertex]) {
+                    visited[nextVertex] = 1
+                    queue.push([nextVertex, length + 1])
+                }
+            }
+        }
+        return furthestNode
+    }
+    return bfs(bfs(0)[0])[1]
+}
+
+// Squirrel And Nut
+function solution(triples, tree) {
+    let n = tree.length
+    let data = new Map(),
+        relationship = {}
+    //build map using Map and Set
+    for(let i = 0;i < n;i += 2) {
+        const vertex1 = tree[i], vertex2 = tree[i + 1]
+        if(!data.get(vertex1)) data.set(vertex1, new Set())
+        if(!data.get(vertex2)) data.set(vertex2, new Set())
+        data.get(vertex1).add(vertex2)
+        data.get(vertex2).add(vertex1)
+    }
+    //using DFS 
+    //A is Lowest Common Ancestor of B and C if B and C come from different branches of A
+    //
+    //+ For a certain node (A):
+    //   . For each branch(M), what are nodes belongs 
+    //       to the current branch M 
+    //       that are children of the current node A
+    //       
+    //   . Store those child nodes in a Set to optimize searching
+    //   
+    //   => for a array [B, C, A]
+    //    => search: which branch of A that node B belongs to (X)
+    //               which branch of A that node C belongs to (Y)
+    //    If X !== Y => A is lCA of B and C
+    //    NOTE: X, Y can be undefined: i.e
+    //          For a node A
+    //          We are trying to find which branch of node A that node B belongs to
+    //          We start searching branches of node A and check existence of node B
+    //          When relationship[A] does not have any branch that contains B
+    //          It means when we DFS, B is ancestor of A
+    //          => B must belong to the branch that connects A and B
+    //             (This branch is not stored in the relationship object because of DFS)
+    //               
+    function findDescendants(vertex, parent) {
+        relationship[vertex] = {}
+        let subtree = [vertex],
+            branch = 0
+        for(let nextVertex of data.get(vertex)) {
+            if(nextVertex !== parent) {
+                branch++
+                const childNodes = findDescendants(nextVertex, vertex)
+                relationship[vertex][branch] = new Set(childNodes)
+                subtree = subtree.concat(childNodes)
+            }
+        }
+        return subtree
+    }
+    findDescendants(1)
+    return triples.map(([vertex1, vertex2, root]) => {
+        let first_branch, second_branch
+        for(let branch in relationship[root]) {
+            if(relationship[root][branch].has(vertex1)) first_branch = branch
+            if(relationship[root][branch].has(vertex2)) second_branch = branch
+        }
+        return first_branch !== second_branch
+    })
+}
+
 // 
+
+
+
