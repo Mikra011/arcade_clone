@@ -5504,7 +5504,7 @@ function solution1(n, wmap) {
     return magic
 }
 
-// Walking In The Woods
+// 19: Walking In The Woods
 function solution(n, wmap) {
     //Find the number of group of connected nodes
     //Use Set and Map to optimize(Use array will ETL)
@@ -5534,7 +5534,7 @@ function solution(n, wmap) {
     return --time
 }
 
-// Is Pseudoforest
+// 20: Is Pseudoforest
 function solution(n, wmap) {
     let unvisited = new Set(),
         map = new Map()
@@ -5568,7 +5568,7 @@ function solution(n, wmap) {
     return true
 }
 
-// Burning The Wood
+// 21: Burning The Wood
 function solution(n, start, k, wmap) {
     let fired = []
     let visited = []
@@ -5608,7 +5608,7 @@ function solution(n, start, k, wmap) {
     return fired
 }
 
-// Caterpillar Trees
+// 22: Caterpillar Trees
 function solution(n, edges) {
    
     //DFS a tree, for every vertex has no more than one neighbor has size > 1
@@ -5681,7 +5681,7 @@ function solution(n, edges) {
   
 }
 
-// Is Mobius Ladder
+// 23: Is Mobius Ladder
 function solution(n, ladder) {
     let map = Array.from({length: n}, _ => new Set())
     ladder.map(([u, v]) => {
@@ -5704,7 +5704,7 @@ function solution(n, ladder) {
     })
 }
  
-// Tree Diameter
+// 24: Tree Diameter
 function solution(n, tree) {
     let map = []
     tree.map(([u, v]) => {
@@ -5730,7 +5730,7 @@ function solution(n, tree) {
     return bfs(bfs(0)[0])[1]
 }
 
-// Squirrel And Nut
+// 25: Squirrel And Nut
 function solution(triples, tree) {
     let n = tree.length
     let data = new Map(),
@@ -5791,7 +5791,666 @@ function solution(triples, tree) {
     })
 }
 
-// 
+// 26: Digit Jumping
+function solution(grid, start, finish) {
+    const row = grid.length,
+          col = grid[0].length,
+          visited = Array.from({length: row}, v => []),
+          data = {},
+          usedDigits = new Set(),
+          neighbors = [[0, 1], [0, -1], [1, 0], [-1, 0]],
+          isCell = (x, y) => 0 <= x && x < row && 0 <= y && y < col,
+          [endX, endY] = finish
+    //Special case
+    if(start[0] === endX && start[1] === endY) return 0
+    //group cells that have the same digit
+    grid.map((_, i) => _.map((v, j) => {
+        const cell = [i, j]
+        data[v] ? data[v].push(cell) : data[v] = [cell]
+    }))
+    //At each steps
+    //+ Explore unvisited neighbors 
+    //OR
+    //+ Move to cells that has the digit is the same as the current cell
+    //  So we'll never visit those cells again
+    //  
+    let steps = 0,
+        queue = [start]
+    visited[start[0]][start[1]] = true
+    while(true) {
+        steps++
+        //New cells for the next step
+        let newQueue = []
+        while(queue.length) {
+            const [x, y] = queue.shift(),
+                  digit = grid[x][y]
+            //Test whether we visited the current digit
+            //If yes we ignore (Be careful here if you don't wanna be TLE)
+            //And only use this cell to explore it's neighbors
+            if(!usedDigits.has(digit)) {
+                usedDigits.add(digit)
+                for(let cell of data[digit]) {
+                    const [i, j] = cell
+                    if(i === endX && j === endY) return steps
+                    if(!visited[i][j]) {
+                        visited[i][j] = true
+                        newQueue.push(cell)
+                    }
+                }
+            }
+            
+            for(let [dx, dy] of neighbors) {
+                const X = x + dx,
+                      Y = y + dy
+                if(isCell(X, Y) && !usedDigits.has(grid[X][Y]) && !visited[X][Y]) {
+                    //If neighbor is the finish cell
+                    if(X === endX && Y === endY) return steps    
+                    visited[X][Y] = true
+                    newQueue.push([X, Y])
+                }
+            }
+        }
+        queue = newQueue
+    }
+    
+}
+
+// 27: Painter Bot
+function solution(d, canvas, operations) {
+    const row = canvas.length,
+          col = canvas[0].length,
+          neighbors = [[0, 1], [0, -1], [1, 0], [-1, 0]]
+    let visited,
+        color,
+        initital
+    function dfs(x, y) {
+        visited[x][y] = true
+        canvas[x][y] = color
+        neighbors.map(([dx, dy]) => {
+            const nextX = x + dx,
+                  nextY = y + dy
+            if(0 <= nextX && nextX < row && 0 <= nextY && nextY < col
+              && !visited[nextX][nextY] 
+              && Math.abs(canvas[nextX][nextY] - initital) <= d)
+                dfs(nextX, nextY)
+        })
+      // visited[x][y] = false
+        
+    }
+    operations.map(([x, y, init]) => {
+        visited = Array.from({ length: row }, v => [])
+        initital = canvas[x][y]
+        color = init
+        dfs(x, y)
+        //console.log(canvas)
+    })
+    return canvas
+}
+
+// 28: Horsebot
+function solution(n, m) {
+    let ways = 0,
+        moves,
+        visited,
+        found
+    function dfs(x, y) {
+        if(x === n - 1 && y === m - 1) {
+            found = true
+            return
+        }
+        visited[x][y] = true
+        moves.map(([dx, dy]) => {
+            const nextX = x + dx,
+                  nextY = y + dy
+            if(!found && 0 <= nextX && nextX < n && 0 <= nextY && nextY < m
+                  && !visited[nextX][nextY]) dfs(nextX, nextY)
+        }) 
+    }
+    
+    for(let i = 1;i < Math.min(m, n);i++) {
+        for(let j = i;j < Math.max(m, n);j++) {
+            found = false
+            moves = [[i, j], [-i, j], [i, -j], [-i, -j]]
+            if(i !== j) moves.push([j, i], [-j, i], [j, -i], [-j, -i])
+            visited = Array.from({ length: n}, _ => [])
+            dfs(0, 0) 
+            ways += found
+        }
+    }
+    return ways
+}
+
+// 29: Sabotage
+function solution(hangar) {
+    const len = hangar.length,
+          col = hangar[0].length
+    //Infinite: DP stores whether a cell will lead to infinite loop or not
+    //Initially the value of the cell is undefined
+    //It means we haven't yet known wether it's infinite loop or not
+    let infinite = Array.from({ length: len}, _ => []),
+        visited = Array.from({ length: len}, _ => []),
+        sum = 0
+    function dfs(i, j, size) {
+        const x = i, y = j
+        //escaped successfully
+        if(i < 0 || i >= len || j < 0 || j >= col) return false
+        //It that cell is visited => 2 cases:
+        if(visited[i][j]) {
+            //If infinite status of that cell is undefined
+            //It's mean there a cirlce at itself or one of it's descendant
+            if(infinite[i][j] === undefined) return true
+            //Otherwise we already know  the cell we are staying it infinite loop?
+            return infinite[i][j]
+        }
+        visited[i][j] = true
+        const command = hangar[i][j]
+        if(command === 'U') i--
+        if(command === 'R') j++
+        if(command === 'L') j--
+        if(command === 'D') i++
+        return infinite[x][y] = dfs(i, j)
+    }
+    hangar.map((_, i) => _.map((v, j) =>  sum += dfs(i, j)))
+    return sum
+}
+
+// 30: Electric Field
+function solution(wires, grid) {
+    //0__________ y
+    //|
+    //|
+    //|
+    //v x
+    console.time('time')
+    const [row, col] = grid,
+          neighbors = [[0, 1], [0, -1], [1, 0], [-1, 0]]
+    let visited = Array.from({ length: row}, _ => []),
+        //Store the edge in the grid that is a write
+        obstacles = new Set(),
+        //queue = [[x-axis, y-axis, steps]]
+        queue = [[0, 0, 0]]
+    //encode two given points into a edge
+    //NOTE: Remember to sort x-xis and y-xis 
+    const encodeLine =(...a) => {
+        if(a[0] >a[2]) [a[0], a[2]] = [a[2], a[0]]
+        if(a[1] > a[3]) [a[1], a[3]] = [a[3], a[1]]
+        return a.join`$`
+    },
+          //find common edge between two cells
+          commonEdge = (x, y, X, Y) => {
+              const maxX = Math.max(x, X),
+                    maxY = Math.max(y, Y)
+              return X === x ? encodeLine(x, maxY, x + 1, maxY) : 
+              encodeLine(maxX, y, maxX, y + 1)
+          }
+    //add wires to Set()
+    wires.map(([startY, startX, endY, endX]) => {
+        if(startX === endX && startY === endY) return;
+        //Chose the direction
+        let  dx = startX === endX ? 0 : startX > endX ? -1 : 1,
+             dy = startY === endY ? 0 : startY > endY ? -1 : 1,
+            //Store the parent point
+             prevX, prevY
+       
+        while(startX !== endX || startY !== endY) {
+            prevX = startX
+            prevY = startY
+            startX += dx
+            startY += dy
+            obstacles.add(encodeLine(prevX, prevY, startX, startY))
+         
+        }
+    })
+    visited[0][0] = true
+    console.timeEnd('time')
+  //BFS to find
+    while(queue.length) {
+       
+        const [x, y, steps] = queue.shift()
+        if(x === row - 1 && y === col - 1) return steps
+        neighbors.map(([dx, dy]) => {
+            const nextX = x + dx, nextY = y + dy
+            if(0 <= nextX && nextX < row && 0 <= nextY && nextY < col 
+               && !visited[nextX][nextY] 
+               && !obstacles.has(commonEdge(x, y, nextX, nextY))) {
+                visited[nextX][nextY] = true
+                queue.push([nextX, nextY, steps + 1])
+            }
+        })
+    }
+    return -1
+    
+}
+
+// 31: Mobius Conquer
+const max = 999999999999;
+
+function solution(impassableCells, field, ratiorg, enemy) {
+    //[y,x]
+    const gridWidth = field[1] * 2;
+    const gridHeight = field[0];
+    var blockedArr = new Array(gridWidth * gridHeight).fill(false);
+    
+    impassableCells.forEach(blockedCell => {
+        var coords = convert(blockedCell);
+        blockedArr[getGridIndex(coords[1], coords[0])] = true; 
+    });
+        
+    var ratiorgCoords = convert(ratiorg);
+    var enemyCoords = convert(enemy);
+
+    var enemyDistances = calculateDistances(enemyCoords);
+    var ratiorgDistances = calculateDistances(ratiorgCoords);
+    
+    var ratiorgCount = 0;
+    var enemyCount = 0;
+    
+    for (var i = 0; i < enemyDistances.length; i++) {
+        if (enemyDistances[i] < ratiorgDistances[i]) {
+            enemyCount++;
+        } else if (enemyDistances[i] > ratiorgDistances[i]) {
+            ratiorgCount++;
+        }
+    }
+    
+    return [ratiorgCount, enemyCount];
+         
+    function calculateDistances(startCoords) {
+        var visitedArr = new Array(gridWidth * gridHeight).fill(false);
+        var distance = new Array(gridWidth * gridHeight).fill(max);
+        var remainingOptions = [];
+        distance[getGridIndex(startCoords[1], startCoords[0])] = 0;
+        remainingOptions.push(startCoords);
+    
+        do {
+            remainingOptions.sort((a,b) => distance[getGridIndex(a[1],a[0])] - distance[getGridIndex(b[1],b[0])]);
+            var nextCell = remainingOptions.shift();
+            processCell(nextCell[1],nextCell[0]);
+        } while (remainingOptions.length > 0);
+        
+        return distance;        
+    
+        function processCell(x, y) {
+            var gridIndex = getGridIndex(x, y);
+            var newDistance = distance[gridIndex] + 1;
+            visitedArr[gridIndex] = true;
+
+            var lessX = x - 1;
+            if (lessX < 0) {
+                lessX = gridWidth - 1;
+            }
+            if (!done(lessX, y) && !blocked(lessX, y)) {
+                queueVisit(lessX, y);
+            }
+
+            var moreX = (x + 1) % gridWidth;
+            if (!done(moreX, y) && !blocked(moreX, y)) {
+                queueVisit(moreX, y);
+            }
+
+            if (valid(x, y - 1) && !done(x, y - 1) && !blocked(x, y - 1)) {
+                queueVisit(x, y - 1);
+            }
+
+            if (valid(x, y + 1) && !done(x, y + 1) && !blocked(x, y + 1)) {
+                queueVisit(x, y + 1);
+            }
+
+            function queueVisit(x, y) {
+                var visitIndex = getGridIndex(x,y);
+                if (distance[visitIndex] > newDistance) {
+                    distance[visitIndex] = newDistance;
+                    remainingOptions.push([y,x]);
+                }
+            }
+        }
+        
+        function done(x, y) {
+            return visitedArr[getGridIndex(x,y)];
+        }
+    }
+    
+    function convert(triCell) {
+        return [ triCell[1], triCell[2] + (triCell[0] * (gridWidth / 2)) ];
+    }
+    
+    function blocked(x, y) {
+        return blockedArr[getGridIndex(x,y)];
+    }
+
+    function valid(x, y) {
+        return ((x >= 0) && 
+               (y >= 0) &&
+               (x < gridWidth) &&
+               (y < gridHeight));
+    }
+            
+    function getGridIndex(x, y) {
+        return (y * gridWidth) + x;
+    }
+}
+
+// 32: Cuboid Planet
+function solution(impassableCells, cuboid) {
+    var impasslen = impassableCells.length;
+    if (impasslen == 0)
+        return 0;
+    var [qa, qb, qc] = cuboid;
+    var rows = qa * 2 + qc * 2; // a + c + a + c
+    var cols = qb + qc * 2; // c + b + c
+    var grid = new Array(rows);
+    for (let r = 0; r < rows; r++)
+        grid[r] = new Array(cols).fill("."); // unvisited
+    for (let r = qa; r < rows; r++) { // mark the impassable cells
+        for (let c = 0; c < qc; c++)
+            grid[r][c] = "X";
+        for (let c = qb + qc; c < cols; c++)
+            grid[r][c] = "X";
+    }
+    var areamap = [[0, 0], [0, qc], [0, qc + qb], [qa, qc], [qa + qc, qc], [qa + qc + qa, qc]];
+    for (let i = 0; i < impasslen; i++) { // map each area to grid
+        let [area, r, c] = impassableCells[i];
+        r += areamap[area][0];
+        c += areamap[area][1];
+        grid[r][c] = "X";
+    }
+    var trbl = [[-1, 0], [0, 1], [1, 0], [0, -1]]; // go top, right, bottom, left from any cell
+    var tocheck = [];
+    var nextcheck = [];
+    var levelnow = "0";
+    var net = {};
+    for (let r = 0; r < rows; r++) { // get an unvisited cell
+        for (let c = 0; c < cols; c++) {
+            if (grid[r][c] != ".")
+                continue;
+            tocheck.push([r, c]);
+            grid[r][c] = levelnow; // mark it visited
+            if (net[levelnow] == undefined)
+                net[levelnow] = 1;
+            while (tocheck.length > 0) { // on any one cell, prepare all next movable cells
+                let [nrow, ncol] = tocheck.pop(); // all cells in <tocheck> are already marked visited
+                for (let i = 0; i < 4; i++) { // add four adjacent cells for next move
+                    let [gor, goc] = [nrow + trbl[i][0], ncol + trbl[i][1]]; // the position may go out of grid
+                    if (0 <= gor && gor < rows && 0 <= goc && goc < cols && grid[gor][goc] == ".") { // valid & unvisited
+                        nextcheck.push([gor, goc]);
+                        grid[gor][goc] = levelnow; // all connecting cells are same level
+                        net[levelnow]++;
+                    }
+                }
+                if (tocheck.length == 0) {
+                    tocheck = nextcheck.slice();
+                    nextcheck = [];
+                }
+            }
+            levelnow = "" + (parseInt(levelnow) + 1); // levelnow++ in string
+        }
+    }
+    var netkeys = Object.keys(net);
+    var netsum = 0;
+    for (let i = 0; i < netkeys.length; i++) {
+        let thisnet = net[netkeys[i]];
+        netsum += thisnet * (thisnet - 1);
+    }
+    for (let r = 0; r < rows; r++) // reset grid
+        for (let c = 0; c < cols; c++)
+            if (grid[r][c] != "X")
+                grid[r][c] = ".";
+    tocheck = [];
+    nextcheck = [];
+    levelnow = "0";
+    var planet = {};
+    for (let r = 0; r < rows; r++) { // get an unvisited cell
+        for (let c = 0; c < cols; c++) {
+            if (grid[r][c] != ".")
+                continue;
+            tocheck.push([r, c]);
+            grid[r][c] = levelnow; // mark it visited
+            if (planet[levelnow] == undefined)
+                planet[levelnow] = 1;
+            while (tocheck.length > 0) { // on any one cell, prepare all next movable cells
+                let [nrow, ncol] = tocheck.pop(); // all cells in <tocheck> are already marked visited
+                let [gor, goc] = [nrow + trbl[0][0], ncol + trbl[0][1]]; // go up
+                if (gor < 0) { // outside area 0 1 2 top row
+                    if (0 <= goc && goc < qc) // area 0 top row
+                        [gor, goc] = [(rows - qc) + goc, qc]; // jumps to area 5 left column
+                    else if (qc <= goc && goc < qc + qb) // area 1 top row
+                        gor = rows - 1; // jumps to area 5 last row
+                    else if (qc + qb <= goc && goc < cols) // area 2 top row
+                        [gor, goc] = [(rows - 1) - (goc - areamap[2][1]), qc + qb - 1]; // jumps to area 5 right column
+                }
+                if (grid[gor][goc] == ".") { // unvisited
+                    nextcheck.push([gor, goc]);
+                    grid[gor][goc] = levelnow; // all connecting cells are same level
+                    planet[levelnow]++;
+                }
+                [gor, goc] = [nrow + trbl[1][0], ncol + trbl[1][1]]; // go right
+                if (goc == cols) { // outside area 2 right column
+                    [gor, goc] = [(rows - qc - 1) - gor, qc + qb - 1]; // jumps to area 4 right column
+                } else if (goc == qc + qb) { // outside area 3 4 5 right column
+                    if (qa <= gor && gor < qa + qc) // area 3
+                        [gor, goc] = [qa - 1, (qc + qb) + (gor - areamap[3][0])]; // jumps to area 2 bottom row
+                    else if (qa + qc <= gor && gor < rows - qc) // area 4
+                        [gor, goc] = [(qa - 1) - (gor - areamap[4][0]), cols - 1]; // jumps to area 2 right column
+                    else if (rows - qc <= gor && gor < rows) // area 5
+                        [gor, goc] = [0, (cols - 1) - (gor - areamap[5][0])]; // jumps to area 2 top row
+                }
+                if (grid[gor][goc] == ".") { // unvisited
+                    nextcheck.push([gor, goc]);
+                    grid[gor][goc] = levelnow; // all connecting cells are same level
+                    planet[levelnow]++;
+                }
+                [gor, goc] = [nrow + trbl[2][0], ncol + trbl[2][1]]; // go down
+                if (gor == rows) { // outside area 5 bottom row
+                    gor = 0; // jumps to area 1 top row
+                } else if (gor == qa) { // outside area 0 2 bottom row
+                    if (0 <= goc && goc < qc) // area 0
+                        [gor, goc] = [(qa + qc - 1) - goc, qc]; // jumps to area 2 left column
+                    else if (qc + qb <= goc && goc < cols) // area 2
+                        [gor, goc] = [qa + (goc - areamap[2][1]), qc + qb - 1]; // jumps to area 2 right column
+                }
+                if (grid[gor][goc] == ".") { // unvisited
+                    nextcheck.push([gor, goc]);
+                    grid[gor][goc] = levelnow; // all connecting cells are same level
+                    planet[levelnow]++;
+                }
+                [gor, goc] = [nrow + trbl[3][0], ncol + trbl[3][1]]; // go left
+                if (goc < 0) { // outside area 0 left column
+                    [gor, goc] = [(rows - qc - 1) - gor, qc]; // jumps to area 4 left column
+                } else if (goc == qc - 1) { // outside area 3 4 5 left column
+                    if (qa <= gor && gor < qa + qc) // area 3
+                        [gor, goc] = [qa - 1, (qc - 1) - (gor - areamap[3][0])]; // jumps to area 0 bottom row
+                    else if (qa + qc <= gor && gor < rows - qc) // area 4
+                        [gor, goc] = [(qa - 1) - (gor - areamap[4][0]), 0]; // jumps to area 0 left column
+                    else if (rows - qc <= gor && gor < rows) // area 5
+                        [gor, goc] = [0, gor - areamap[5][0]]; // jumps to area 0 top row
+                }
+                if (grid[gor][goc] == ".") { // unvisited
+                    nextcheck.push([gor, goc]);
+                    grid[gor][goc] = levelnow; // all connecting cells are same level
+                    planet[levelnow]++;
+                }
+                if (tocheck.length == 0) {
+                    tocheck = nextcheck.slice();
+                    nextcheck = [];
+                }
+            }
+            levelnow = "" + (parseInt(levelnow) + 1); // levelnow++ in string
+        }
+    }
+    netkeys = Object.keys(planet);
+    var planetsum = 0;
+    for (let i = 0; i < netkeys.length; i++) {
+        let thisnet = planet[netkeys[i]];
+        planetsum += thisnet * (thisnet - 1);
+    }
+    return (planetsum - netsum) / 2;
+}
+
+// 33: Tankbot
+function solution(forest) {
+    const h = forest.length,
+          w = forest[0].length
+    let row = Array.from({ length : h}, _ => new Object()),
+        col = Array.from({ length: w}, _ => new Object()),
+        max_size = Math.min(h, w)
+    for(let i in row) {
+        //Store the position of obstacles in row i
+        let obstacles = [-1]
+        for(let j in col) {
+            if(!forest[i][j]) {
+                //Calculate largest possible size of the tank
+                max_size = 
+                    Math.min(max_size, 
+                             Math.max(+i, +j), 
+                             Math.max(h - 1 - +i, w - 1 - +j))
+                obstacles.push(+j)
+            }
+        }
+        obstacles.push(w)
+        row[i] = obstacles
+    }
+    for(let j in col) {
+        //Store position of obstables in col j
+        let obstacles = [-1]
+        for(let i in row) 
+            !forest[i][j] && obstacles.push(+i)
+            
+        obstacles.push(h)
+        col[j] = obstacles
+    }
+    //for a array of the position of obstacles(of a row or column)
+    //Check if two vertexes of the tank can go through any two consecutive obstacles:
+    
+    function movable(pos1, pos2, data) {
+        let left = 0, right = data.length, pos = -1
+        //Binary search to find the correct position of the first vertex
+        while(left <= right) {
+            const middle = (left + right) >> 1
+            if(data[middle] < pos1 && pos1 < data[middle + 1]) {
+                pos = middle
+                break
+            } 
+            if(left + 1 == right) break;
+            pos1 < data[middle] ? right = middle: left = middle
+        }
+        return pos !== -1 && pos2 < data[pos + 1]
+    }
+   
+    for(let size = max_size;size > 0;size--) {
+        let visited = Array.from({ length: h}, _ => [])
+        //queue[i] = [start_row, start_col, end_row, end_col] the tank occupied
+        let queue = [[0, 0, size - 1, size - 1]],
+            found = false
+        //Keep track of visited positions by using the bottom right vertex of the tank
+        visited[size - 1][size - 1] = true
+        while(queue.length) {
+            const [start_row, start_col, end_row, end_col] = queue.shift(),
+                 
+                  row_down = end_row + 1,
+                  row_up = start_row - 1,
+                  col_left = start_col - 1,
+                  col_right = end_col + 1
+             if(end_row === h - 1 && end_col === w - 1) {
+                found = true
+                break;
+            }
+            //Move down
+            if(row_down < h && !visited[row_down][end_col] &&
+              movable(start_col, end_col, row[row_down])) {
+                visited[row_down][end_col] = true
+                queue.push([start_row + 1, start_col, end_row + 1, end_col])
+            }
+            //Move up
+            if(row_up >= 0 && !visited[end_row - 1][end_col] && 
+              movable(start_col, end_col, row[row_up])) {
+                visited[end_row - 1][end_col] = true
+                queue.push([start_row - 1, start_col, end_row - 1, end_col])
+            }
+            //Move right
+            if(col_right < w && !visited[end_row][col_right] &&
+              movable(start_row, end_row, col[col_right])) {
+                visited[end_row][col_right] = true
+                queue.push([start_row, start_col + 1, end_row, end_col + 1])
+            }
+            //Move left
+            if(col_left >= 0 && !visited[end_row][end_col - 1] &&
+              movable(start_row, end_row, col[col_left])) {
+                visited[end_row][end_col - 1] = true
+                queue.push([start_row, start_col - 1, end_row, end_col - 1])
+            }
+            
+        }
+        if(found) return size
+    }
+    return 0
+}
+
+// 34: Portals
+function solution(maxTime, manacost) {
+    const row = manacost.length,
+          col = manacost[0].length,
+          neighbors = [[0, 1], [0, -1], [1, 0], [-1, 0]]
+    let times = {}, //times[i] stores cell that take i steps to go from start cell
+        des_time = {}
+      //des_time[i] stores cell that take i steps to go from the destination cell
+     
+    //BFS: 2 modes:
+    // + go from start to finish
+    // + go from finish to start
+    function BFS(startX, startY, time_cache, start_to_des) {
+        let visited = Array.from({ length: row}, _ => []),
+            queue = [[startX, startY, 0]]
+        visited[startX][startY] = true
+        while(queue.length) {
+            const [x, y, steps] = queue.shift()
+            if(start_to_des && x === row - 1 && y === col - 1 && steps <= maxTime) 
+                return true
+            //Update visit time
+            time_cache[steps] ? 
+                time_cache[steps].push([x, y]) : 
+                time_cache[steps] = [[x, y]]
+            neighbors.map(([dx, dy]) => {
+                const X = x + dx,
+                      Y = y + dy
+                if(0 <= X && X < row && 0 <= Y && Y < col && 
+                   !visited[X][Y] && manacost[X][Y] !== -1) {
+                    visited[X][Y] = true
+                    queue.push([X, Y, steps + 1])
+                }
+            })
+        }
+    }
+    const free = BFS(0, 0, times, true)
+    BFS(row - 1, col - 1, des_time)
+    if(free) return 0
+    //If we have to place solution
+    //we only need to place 2 solution:
+    // + 1 portal in the cell that we can go from the start cell within maxTime
+    //    (cost t1 bucks, k1 steps)
+    // + 1 portal in the cell that we can go from the start cell within maxTime
+    //    (cost t2 bucks, k2 steps)
+    //(Placing more than 2 solution is just redundant)
+    //=> T = min(t1 + t2) and k1 + k2 <= maxTime
+    let min = Infinity
+    for(let first_time in times) {
+        first_time = +first_time
+        if(first_time > maxTime) break;
+        for(let second_time in des_time) {
+            second_time = +second_time
+            if(first_time + second_time > maxTime) break;
+            times[first_time].forEach(([x, y]) => {
+                des_time[second_time].forEach(([X, Y]) => 
+                    min = Math.min(min, manacost[x][y] + manacost[X][Y])
+                )
+            })
+        }
+        
+    }
+
+    return min
+}
+
+// 35: 
 
 
 

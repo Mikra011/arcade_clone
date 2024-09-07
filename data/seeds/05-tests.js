@@ -13714,6 +13714,472 @@ const tests = [
         "is_sample": true
     },
 
+    // Digit Jumping
+    {
+        "challenge_id": 422,
+        "order_index": 1,
+        "expected_output": "4",
+        "is_complex": false,
+        "is_sample": true
+    },
+    {
+        "challenge_id": 422,
+        "order_index": 2,
+        "expected_output": "0",
+        "is_complex": false,
+        "is_sample": true
+    },
+    {
+        "challenge_id": 422,
+        "order_index": 3,
+        "expected_output": "9",
+        "is_complex": false,
+        "is_sample": true
+    },
+    {
+        "challenge_id": 422,
+        "order_index": 4,
+        "expected_output": "1",
+        "is_complex": false,
+        "is_sample": true
+    },
+    {
+        "challenge_id": 422,
+        "order_index": 5,
+        "expected_output": "0",
+        "is_complex": false,
+        "is_sample": true
+    },
+    {
+        "challenge_id": 422,
+        "order_index": 6,
+        "expected_output": "0",
+        "is_complex": false,
+        "is_sample": true
+    },
+    {
+        "challenge_id": 422,
+        "order_index": 7,
+        "expected_output": "2",
+        "is_complex": false,
+        "is_sample": true
+    },
+    {
+        "challenge_id": 422,
+        "order_index": 8,
+        "expected_output": "3",
+        "is_complex": false,
+        "is_sample": true
+    },
+
+    // Painter Bot
+    {
+        "challenge_id": 423,
+        "order_index": 1,
+        "expected_output": "[[10,10,3,2,4,10,6],  [5,10,3,3,10,10,10],  [10,10,10,3,3,10,10],  [10,10,10,10,10,10,10]]",
+        "is_complex": true,
+        "is_sample": true
+    },
+    {
+        "challenge_id": 423,
+        "order_index": 2,
+        "expected_output": "[[5]]",
+        "is_complex": true,
+        "is_sample": true
+    },
+    {
+        "challenge_id": 423,
+        "order_index": 3,
+        "expected_output": "[[17,17,0,1,1,1,13,0],  [17,17,17,1,1,1,1,11],  [17,17,17,1,1,13,1,11],  [17,17,17,17,1,1,19,9]]",
+        "is_complex": true,
+        "is_sample": true
+    },
+    {
+        "challenge_id": 423,
+        "order_index": 4,
+        "expected_output": "[[24,0,20,39,2],  [10,13,31,4,19],  [49,21,21,28,28],  [17,45,21,49,18],  [50,40,25,1,1],  [21,34,8,42,33],  [37,28,31,14,4],  [16,17,15,35,6],  [8,1,1,1,1],  [8,1,1,1,18]]",
+        "is_complex": true,
+        "is_sample": true
+    },
+    {
+        "challenge_id": 423,
+        "order_index": 5,
+        "expected_output": "[[40,40,40,40,40],  [40,40,40,40,40],  [40,40,40,40,40],  [40,40,40,40,40],  [40,40,40,40,40],  [40,40,40,40,40],  [40,40,40,40,40],  [40,40,40,40,40],  [40,40,40,40,40],  [40,40,40,40,40],  [40,40,40,40,40],  [40,40,40,40,40],  [40,40,40,40,40],  [40,40,40,40,40],  [40,40,40,40,40]]",
+        "is_complex": true,
+        "is_sample": true
+    },
+    {
+        "challenge_id": 423,
+        "order_index": 6,
+        "expected_output": "[[1,33,50,32,8,28,23,23,23,23,23,31,19,5,5,5,5,5,5,5],  [43,14,6,34,50,47,31,23,22,19,23,23,5,5,5,5,5,5,5,5]]",
+        "is_complex": true,
+        "is_sample": true
+    },
+
+    // Horsebot
+    {
+        "challenge_id": 424,
+        "order_index": 1,
+        "expected_output": "3",
+        "is_complex": false,
+        "is_sample": true
+    },
+    {
+        "challenge_id": 424,
+        "order_index": 2,
+        "expected_output": "2",
+        "is_complex": false,
+        "is_sample": true
+    },
+    {
+        "challenge_id": 424,
+        "order_index": 3,
+        "expected_output": "8",
+        "is_complex": false,
+        "is_sample": true
+    },
+    {
+        "challenge_id": 424,
+        "order_index": 4,
+        "expected_output": "4",
+        "is_complex": false,
+        "is_sample": true
+    },
+    {
+        "challenge_id": 424,
+        "order_index": 5,
+        "expected_output": "2",
+        "is_complex": false,
+        "is_sample": true
+    },
+    {
+        "challenge_id": 424,
+        "order_index": 6,
+        "expected_output": "4",
+        "is_complex": false,
+        "is_sample": true
+    },
+
+    // Sabotage
+    {
+        "challenge_id": 425,
+        "order_index": 1,
+        "expected_output": "2",
+        "is_complex": false,
+        "is_sample": true
+    },
+    {
+        "challenge_id": 425,
+        "order_index": 2,
+        "expected_output": "4",
+        "is_complex": false,
+        "is_sample": true
+    },
+    {
+        "challenge_id": 425,
+        "order_index": 3,
+        "expected_output": "20",
+        "is_complex": false,
+        "is_sample": true
+    },
+    {
+        "challenge_id": 425,
+        "order_index": 4,
+        "expected_output": "2",
+        "is_complex": false,
+        "is_sample": true
+    },
+    {
+        "challenge_id": 425,
+        "order_index": 5,
+        "expected_output": "2",
+        "is_complex": false,
+        "is_sample": true
+    },
+    {
+        "challenge_id": 425,
+        "order_index": 6,
+        "expected_output": "2",
+        "is_complex": false,
+        "is_sample": true
+    },
+
+    // Electric Field
+    {
+        "challenge_id": 426,
+        "order_index": 1,
+        "expected_output": "26",
+        "is_complex": false,
+        "is_sample": true
+    },
+    {
+        "challenge_id": 426,
+        "order_index": 2,
+        "expected_output": "6",
+        "is_complex": false,
+        "is_sample": true
+    },
+    // {
+    //     "challenge_id": 426,
+    //     "order_index": 3,
+    //     "expected_output": "0",
+    //     "is_complex": false,
+    //     "is_sample": true
+    // },
+    {
+        "challenge_id": 426,
+        "order_index": 3,
+        "expected_output": "-1",
+        "is_complex": false,
+        "is_sample": true
+    },
+    {
+        "challenge_id": 426,
+        "order_index": 4,
+        "expected_output": "48",
+        "is_complex": false,
+        "is_sample": true
+    },
+    {
+        "challenge_id": 426,
+        "order_index": 5,
+        "expected_output": "53",
+        "is_complex": false,
+        "is_sample": true
+    },
+
+    // Mobius Conquer
+    {
+        "challenge_id": 427,
+        "order_index": 1,
+        "expected_output": "[7, 6]",
+        "is_complex": true,
+        "is_sample": true
+    },
+    {
+        "challenge_id": 427,
+        "order_index": 2,
+        "expected_output": "[1, 1]",
+        "is_complex": true,
+        "is_sample": true
+    },
+    {
+        "challenge_id": 427,
+        "order_index": 3,
+        "expected_output": "[1, 1]",
+        "is_complex": true,
+        "is_sample": true
+    },
+    {
+        "challenge_id": 427,
+        "order_index": 4,
+        "expected_output": "[8, 13]",
+        "is_complex": true,
+        "is_sample": true
+    },
+    {
+        "challenge_id": 427,
+        "order_index": 5,
+        "expected_output": "[16, 12]",
+        "is_complex": true,
+        "is_sample": true
+    },
+    {
+        "challenge_id": 427,
+        "order_index": 6,
+        "expected_output": "[26, 30]",
+        "is_complex": true,
+        "is_sample": true
+    },
+    {
+        "challenge_id": 427,
+        "order_index": 7,
+        "expected_output": "[18, 24]",
+        "is_complex": true,
+        "is_sample": true
+    },
+    {
+        "challenge_id": 427,
+        "order_index": 8,
+        "expected_output": "[51, 56]",
+        "is_complex": true,
+        "is_sample": true
+    },
+    {
+        "challenge_id": 427,
+        "order_index": 9,
+        "expected_output": "[5, 5]",
+        "is_complex": true,
+        "is_sample": true
+    },
+    {
+        "challenge_id": 427,
+        "order_index": 10,
+        "expected_output": "[30, 50]",
+        "is_complex": true,
+        "is_sample": true
+    },
+
+    // Cuboid Planet
+    {
+        "challenge_id": 428,
+        "order_index": 1,
+        "expected_output": "106",
+        "is_complex": false,
+        "is_sample": true
+    },
+    {
+        "challenge_id": 428,
+        "order_index": 2,
+        "expected_output": "131",
+        "is_complex": false,
+        "is_sample": true
+    },
+    {
+        "challenge_id": 428,
+        "order_index": 3,
+        "expected_output": "0",
+        "is_complex": false,
+        "is_sample": true
+    },
+    {
+        "challenge_id": 428,
+        "order_index": 4,
+        "expected_output": "6",
+        "is_complex": false,
+        "is_sample": true
+    },
+    {
+        "challenge_id": 428,
+        "order_index": 5,
+        "expected_output": "100",
+        "is_complex": false,
+        "is_sample": true
+    },
+    {
+        "challenge_id": 428,
+        "order_index": 6,
+        "expected_output": "793",
+        "is_complex": false,
+        "is_sample": true
+    },
+
+    // Tankbot
+    {
+        "challenge_id": 429,
+        "order_index": 1,
+        "expected_output": "2",
+        "is_complex": false,
+        "is_sample": true
+    },
+    {
+        "challenge_id": 429,
+        "order_index": 2,
+        "expected_output": "0",
+        "is_complex": false,
+        "is_sample": true
+    },
+    {
+        "challenge_id": 429,
+        "order_index": 3,
+        "expected_output": "2",
+        "is_complex": false,
+        "is_sample": true
+    },
+    {
+        "challenge_id": 429,
+        "order_index": 4,
+        "expected_output": "2",
+        "is_complex": false,
+        "is_sample": true
+    },
+    {
+        "challenge_id": 429,
+        "order_index": 5,
+        "expected_output": "3",
+        "is_complex": false,
+        "is_sample": true
+    },
+    {
+        "challenge_id": 429,
+        "order_index": 6,
+        "expected_output": "1",
+        "is_complex": false,
+        "is_sample": true
+    },
+    {
+        "challenge_id": 429,
+        "order_index": 7,
+        "expected_output": "0",
+        "is_complex": false,
+        "is_sample": true
+    },
+    {
+        "challenge_id": 429,
+        "order_index": 8,
+        "expected_output": "3",
+        "is_complex": false,
+        "is_sample": true
+    },
+    {
+        "challenge_id": 429,
+        "order_index": 9,
+        "expected_output": "2",
+        "is_complex": false,
+        "is_sample": true
+    },
+
+    // Portals
+    {
+        "challenge_id": 430,
+        "order_index": 1,
+        "expected_output": "0",
+        "is_complex": false,
+        "is_sample": true
+    },
+    {
+        "challenge_id": 430,
+        "order_index": 2,
+        "expected_output": "5",
+        "is_complex": false,
+        "is_sample": true
+    },
+    {
+        "challenge_id": 430,
+        "order_index": 3,
+        "expected_output": "0",
+        "is_complex": false,
+        "is_sample": true
+    },
+    {
+        "challenge_id": 430,
+        "order_index": 4,
+        "expected_output": "3",
+        "is_complex": false,
+        "is_sample": true
+    },
+    {
+        "challenge_id": 430,
+        "order_index": 5,
+        "expected_output": "3",
+        "is_complex": false,
+        "is_sample": true
+    },
+    {
+        "challenge_id": 430,
+        "order_index": 6,
+        "expected_output": "11",
+        "is_complex": false,
+        "is_sample": true
+    },
+    {
+        "challenge_id": 430,
+        "order_index": 7,
+        "expected_output": "3",
+        "is_complex": false,
+        "is_sample": true
+    },
+
     // 
 
 
