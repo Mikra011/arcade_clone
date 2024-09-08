@@ -19203,6 +19203,664 @@ const test_inputs = [
         "input_value": "[[50, 30, 66, 36, -1, 44, -1, -1, 33, 47], [13, -1, 42, -1, 53, -1, 19, -1, -1, 2], [39, 95, 40, 1, -1, -1, -1, 30, 46, 23], [17, -1, -1, 78, -1, 20, 27, 36, -1, 70], [11, 44, 42, 73, -1, -1, 31, 45, 45, 65], [-1, 62, -1, 3, 64, 22, 79, -1, 60, 26], [-1, -1, 95, -1, 92, 38, 26, -1, 24, 25], [-1, 87, -1, 79, 16, 90, 11, -1, 26, 27], [67, 1, 10, -1, 45, 39, 82, 77, 48, 65], [20, 80, 54, 20, -1, -1, 83, -1, 44, 27]]"
     },
 
+    // Orienteering Beginner
+    {
+        "test_id": 2094,
+        "input_type": "number",
+        "input_name": "n",
+        "input_value": "6"
+    },
+    {
+        "test_id": 2094,
+        "input_type": "matrix",
+        "input_name": "roads",
+        "input_value": "[[[1,3]], [[4,1],[3,2]], [[1,0]], [[5,3]], [[5,5]], []]"
+    },
+    {
+        "test_id": 2095,
+        "input_type": "number",
+        "input_name": "n",
+        "input_value": "5"
+    },
+    {
+        "test_id": 2095,
+        "input_type": "matrix",
+        "input_name": "roads",
+        "input_value": "[[[1,50],[3,10]], [[2,15]], [[4,55]], [[1,5]], []]"
+    },
+    {
+        "test_id": 2096,
+        "input_type": "number",
+        "input_name": "n",
+        "input_value": "5"
+    },
+    {
+        "test_id": 2096,
+        "input_type": "matrix",
+        "input_name": "roads",
+        "input_value": "[[[3,53],[2,59],[1,17]], [[4,30]], [[4,5]], [[4,4]], []]"
+    },
+    {
+        "test_id": 2097,
+        "input_type": "number",
+        "input_name": "n",
+        "input_value": "6"
+    },
+    {
+        "test_id": 2097,
+        "input_type": "matrix",
+        "input_name": "roads",
+        "input_value": "[[[4,3],[3,5]], [[2,0],[5,1]], [[5,0]], [[1,6],[4,2]], [[5,2],[2,4]], []]"
+    },
+    {
+        "test_id": 2098,
+        "input_type": "number",
+        "input_name": "n",
+        "input_value": "10"
+    },
+    {
+        "test_id": 2098,
+        "input_type": "matrix",
+        "input_name": "roads",
+        "input_value": "[[[3,220],[8,971]], [], [], [[8,455],[2,915],[9,743]], [], [[8,616]], [[8,857],[4,480],[9,62]], [[3,274],[8,319],[2,390]], [], []]"
+    },
+    {
+        "test_id": 2099,
+        "input_type": "number",
+        "input_name": "n",
+        "input_value": "6"
+    },
+    {
+        "test_id": 2099,
+        "input_type": "matrix",
+        "input_name": "roads",
+        "input_value": "[[[1,5],[2,3]], [[3,6],[2,2]], [[4,4],[5,2],[3,7]], [[4,0]], [[5,0]], []]"
+    },
+    {
+        "test_id": 2100,
+        "input_type": "number",
+        "input_name": "n",
+        "input_value": "14"
+    },
+    {
+        "test_id": 2100,
+        "input_type": "matrix",
+        "input_name": "roads",
+        "input_value": "[[[12,75],[7,33],[8,93]], [[10,84],[4,49]], [[13,32]], [[10,97],[8,100]], [[13,73]], [[9,54],[2,8],[4,6]], [[5,66],[2,85],[4,2],[13,52]], [[8,75]], [], [], [], [[5,42],[12,79],[9,15],[2,6]], [[10,46],[2,25],[8,81],[4,54]], []]"
+    },
+    {
+        "test_id": 2101,
+        "input_type": "number",
+        "input_name": "n",
+        "input_value": "10"
+    },
+    {
+        "test_id": 2101,
+        "input_type": "matrix",
+        "input_name": "roads",
+        "input_value": "[[[3,12],[8,70],[6,35],[1,72],[7,78],[2,94],[5,95],[4,22],[9,57]], [[7,34],[2,21],[5,69],[4,78],[9,69]], [[5,96],[4,93],[9,4]], [[8,2],[6,20],[1,26],[7,30],[2,60],[5,38],[4,20],[9,85]], [[9,97]], [[4,80],[9,34]], [[1,39],[7,52],[2,60],[5,87],[4,52],[9,85]], [[2,3],[5,41],[4,13],[9,47]], [[6,10],[1,73],[7,35],[2,93],[5,59],[4,41],[9,66]], []]"
+    },
+
+    // Orienteering Game
+    {
+        "test_id": 2102,
+        "input_type": "matrix",
+        "input_name": "board",
+        "input_value": "[[42, 51, 22, 10, 0], [2, 50, 7, 6, 15], [4, 36, 8, 30, 20], [0, 40, 10, 100, 1]]"
+    },
+    {
+        "test_id": 2103,
+        "input_type": "matrix",
+        "input_name": "board",
+        "input_value": "[[77, 43, 89, 88, 72, 20], [10, 72, 98, 39, 30, 6], [34, 39, 81, 23, 83, 30], [8, 64, 86, 51, 69, 46], [56, 21, 5, 3, 25, 62], [12, 98, 66, 92, 83, 25]]"
+    },
+    {
+        "test_id": 2104,
+        "input_type": "matrix",
+        "input_name": "board",
+        "input_value": "[[61, 86, 59, 80, 71, 70, 99, 55], [48, 49, 85, 9, 50, 93, 40, 0], [34, 61, 26, 32, 11, 18, 2, 1], [51, 76, 65, 91, 74, 39, 91, 77], [78, 96, 33, 49, 94, 75, 47, 29], [96, 55, 74, 39, 28, 88, 57, 4], [65, 13, 86, 95, 69, 88, 1, 88], [85, 7, 30, 74, 40, 78, 3, 75]]"
+    },
+    {
+        "test_id": 2105,
+        "input_type": "matrix",
+        "input_name": "board",
+        "input_value": "[[42]]"
+    },
+    {
+        "test_id": 2106,
+        "input_type": "matrix",
+        "input_name": "board",
+        "input_value": "[[42, 35, 16], [15, 84, 32], [99, 0, 17]]"
+    },
+
+    // Time Constrained Orienteering
+    {
+        "test_id": 2107,
+        "input_type": "number",
+        "input_name": "n",
+        "input_value": "5"
+    },
+    {
+        "test_id": 2107,
+        "input_type": "number",
+        "input_name": "start",
+        "input_value": "3"
+    },
+    {
+        "test_id": 2107,
+        "input_type": "matrix",
+        "input_name": "roads",
+        "input_value": "[[1, 2, 3], [2, 3, 1], [2, 4, 2], [3, 5, 4], [4, 5, 3]]"
+    },
+    {
+        "test_id": 2108,
+        "input_type": "number",
+        "input_name": "n",
+        "input_value": "3"
+    },
+    {
+        "test_id": 2108,
+        "input_type": "number",
+        "input_name": "start",
+        "input_value": "1"
+    },
+    {
+        "test_id": 2108,
+        "input_type": "matrix",
+        "input_name": "roads",
+        "input_value": "[[1, 2, 1], [1, 3, 100000], [2, 3, 2]]"
+    },
+    {
+        "test_id": 2109,
+        "input_type": "number",
+        "input_name": "n",
+        "input_value": "7"
+    },
+    {
+        "test_id": 2109,
+        "input_type": "number",
+        "input_name": "start",
+        "input_value": "1"
+    },
+    {
+        "test_id": 2109,
+        "input_type": "matrix",
+        "input_name": "roads",
+        "input_value": "[[1, 2, 10], [1, 3, 2], [2, 3, 5], [2, 5, 4], [3, 4, 4], [4, 5, 1], [4, 6, 5], [5, 7, 6], [6, 7, 1]]"
+    },
+    {
+        "test_id": 2110,
+        "input_type": "number",
+        "input_name": "n",
+        "input_value": "10"
+    },
+    {
+        "test_id": 2110,
+        "input_type": "number",
+        "input_name": "start",
+        "input_value": "7"
+    },
+    {
+        "test_id": 2110,
+        "input_type": "matrix",
+        "input_name": "roads",
+        "input_value": "[[8, 7, 191], [7, 9, 769], [4, 1, 786], [7, 1, 120], [10, 2, 341], [6, 5, 566], [8, 9, 686], [8, 10, 875], [2, 6, 276], [7, 3, 818], [5, 9, 70], [2, 4, 83], [10, 4, 676], [9, 3, 793], [2, 7, 236], [1, 8, 215], [8, 4, 442], [3, 6, 9], [10, 5, 291], [4, 9, 605]]"
+    },
+    {
+        "test_id": 2111,
+        "input_type": "number",
+        "input_name": "n",
+        "input_value": "5"
+    },
+    {
+        "test_id": 2111,
+        "input_type": "number",
+        "input_name": "start",
+        "input_value": "2"
+    },
+    {
+        "test_id": 2111,
+        "input_type": "matrix",
+        "input_name": "roads",
+        "input_value": "[[2, 1, 3], [2, 5, 1], [1, 5, 98], [4, 3, 46], [4, 1, 39], [1, 3, 81], [3, 5, 12]]"
+    },
+
+    // Time Constrained Orienteering 2
+    {
+        "test_id": 2112,
+        "input_type": "number",
+        "input_name": "n",
+        "input_value": "3"
+    },
+    {
+        "test_id": 2112,
+        "input_type": "matrix",
+        "input_name": "roads",
+        "input_value": "[[0, 1, 100000], [5, 0, 2], [4, -1, 0]]"
+    },
+    {
+        "test_id": 2113,
+        "input_type": "number",
+        "input_name": "n",
+        "input_value": "5"
+    },
+    {
+        "test_id": 2113,
+        "input_type": "matrix",
+        "input_name": "roads",
+        "input_value": "[[0, 1, -1, -1, -1], [-1, 0, 3, -1, -1], [-1, -1, 0, 4, 2], [-1, -1, -1, 0, -1], [-1, 5, -1, 6, 0]]"
+    },
+    {
+        "test_id": 2114,
+        "input_type": "number",
+        "input_name": "n",
+        "input_value": "5"
+    },
+    {
+        "test_id": 2114,
+        "input_type": "matrix",
+        "input_name": "roads",
+        "input_value": "[[0, 9, -1, 13, 3], [8, 0, 16, -1, -1], [-1, -1, 0, -1, -1], [17, -1, -1, 0, 13], [-1, 15, 10, 17, 0]]"
+    },
+    {
+        "test_id": 2115,
+        "input_type": "number",
+        "input_name": "n",
+        "input_value": "5"
+    },
+    {
+        "test_id": 2115,
+        "input_type": "matrix",
+        "input_name": "roads",
+        "input_value": "[[0, 284, -1, -1, -1], [-1, 0, 520, -1, -1], [-1, 758, 0, -1, -1], [-1, 162, 147, 0, 78], [185, -1, -1, -1, 0]]"
+    },
+    {
+        "test_id": 2116,
+        "input_type": "number",
+        "input_name": "n",
+        "input_value": "10"
+    },
+    {
+        "test_id": 2116,
+        "input_type": "matrix",
+        "input_name": "roads",
+        "input_value": "[[0, 40, 4, 84, 33, 15, -1, -1, -1, -1], [37, 0, 71, -1, -1, -1, -1, 70, -1, 0], [-1, -1, 0, 64, 50, 6, 43, -1, -1, 28], [41, -1, -1, 0, -1, -1, 71, 41, 29, -1], [35, 97, 50, -1, 0, -1, -1, 39, -1, -1], [23, 27, -1, 60, -1, 0, -1, -1, -1, 65], [17, -1, -1, 50, 14, 20, 0, 22, -1, -1], [89, -1, 21, 67, 42, 72, -1, 0, 87, -1], [-1, 65, 74, -1, 88, 64, 88, -1, 0, 36], [-1, 50, 85, -1, 87, -1, -1, -1, -1, 0]]"
+    },
+    {
+        "test_id": 2117,
+        "input_type": "number",
+        "input_name": "n",
+        "input_value": "6"
+    },
+    {
+        "test_id": 2117,
+        "input_type": "matrix",
+        "input_name": "roads",
+        "input_value": "[[963, 585, -1, 345, -1, 947], [381, 16, 419, -1, 76, 416], [374, 380, 259, 527, 329, -1], [635, 155, -1, -1, -1, 490], [-1, 35, -1, 434, 649, 925], [63, 960, -1, -1, -1, 45]]"
+    },
+
+    // Possible Locations
+    {
+        "test_id": 2118,
+        "input_type": "number",
+        "input_name": "n",
+        "input_value": "7"
+    },
+    {
+        "test_id": 2118,
+        "input_type": "matrix",
+        "input_name": "roads",
+        "input_value": "[[[1,100]], [[0,-10],[2,-100]], [[0,0]], [[0,3],[4,0]], [[5,1]], [[3,-2]], [[0,-50]]]"
+    },
+    {
+        "test_id": 2119,
+        "input_type": "number",
+        "input_name": "n",
+        "input_value": "5"
+    },
+    {
+        "test_id": 2119,
+        "input_type": "matrix",
+        "input_name": "roads",
+        "input_value": "[[[2,-50],[4,95],[1,-17]], [], [[3,-83],[1,0]], [], [[3,-92]]]"
+    },
+    {
+        "test_id": 2120,
+        "input_type": "number",
+        "input_name": "n",
+        "input_value": "6"
+    },
+    {
+        "test_id": 2120,
+        "input_type": "matrix",
+        "input_name": "roads",
+        "input_value": "[[[1,-36]], [[2,79]], [[4,-100],[5,88]], [[1,49]], [[3,89],[5,42]], [[0,-23],[1,-77],[2,-42],[4,-100]]]"
+    },
+    {
+        "test_id": 2121,
+        "input_type": "number",
+        "input_name": "n",
+        "input_value": "10"
+    },
+    {
+        "test_id": 2121,
+        "input_type": "matrix",
+        "input_name": "roads",
+        "input_value": "[[[2,59],[6,-82],[8,15]], [[2,-82],[3,90],[7,6]], [[6,-78]], [[5,69],[6,-1],[8,89]], [[0,54],[1,87],[6,19],[9,-32]], [[3,64],[4,-13],[8,27]], [], [[1,-7],[2,73],[9,77]], [[1,-4],[6,16]], [[1,-5],[7,-13]]]"
+    },
+    {
+        "test_id": 2122,
+        "input_type": "number",
+        "input_name": "n",
+        "input_value": "2"
+    },
+    {
+        "test_id": 2122,
+        "input_type": "matrix",
+        "input_name": "roads",
+        "input_value": "[[[0,-500],[1,959]], [[1,1]]]"
+    },
+
+    // Maximize Score
+    {
+        "test_id": 2123,
+        "input_type": "number",
+        "input_name": "n",
+        "input_value": "7"
+    },
+    {
+        "test_id": 2123,
+        "input_type": "matrix",
+        "input_name": "roads",
+        "input_value": "[[[1,100]], [[2,-100]], [[0,0]], [[0,3],[4,0]], [[5,1]], [[3,2]], [[0,-100]]]"
+    },
+    {
+        "test_id": 2124,
+        "input_type": "number",
+        "input_name": "n",
+        "input_value": "12"
+    },
+    {
+        "test_id": 2124,
+        "input_type": "matrix",
+        "input_name": "roads",
+        "input_value": "[[], [[6,170]], [[3,847],[4,617],[5,75]], [[9,52]], [[3,816],[5,666],[2,462],[9,531]], [[4,608]], [[10,579]], [], [[11,169]], [[3,601],[4,-191],[5,882]], [[8,182]], []]"
+    },
+    {
+        "test_id": 2125,
+        "input_type": "number",
+        "input_name": "n",
+        "input_value": "14"
+    },
+    {
+        "test_id": 2125,
+        "input_type": "matrix",
+        "input_name": "roads",
+        "input_value": "[[[11,-245],[2,-6]], [], [[7,-100]], [[7,151],[1,477],[12,630]], [[3,364]], [], [[2,-580]], [[1,172],[12,896],[4,389]], [[3,-500]], [[8,746],[2,593]], [], [[13,24]], [[7,610],[4,721]], []]"
+    },
+    {
+        "test_id": 2126,
+        "input_type": "number",
+        "input_name": "n",
+        "input_value": "16"
+    },
+    {
+        "test_id": 2126,
+        "input_type": "matrix",
+        "input_name": "roads",
+        "input_value": "[[[5,18]], [[9,971]], [], [], [[12,276],[1,-3]], [[6,832],[13,-326],[12,130]], [[13,847],[4,100],[5,568],[11,92]], [], [[10,576]], [[15,259]], [[1,783]], [[9,32]], [[4,43],[5,439]], [[14,67]], [[3,738]], []]"
+    },
+    {
+        "test_id": 2127,
+        "input_type": "number",
+        "input_name": "n",
+        "input_value": "22"
+    },
+    {
+        "test_id": 2127,
+        "input_type": "matrix",
+        "input_name": "roads",
+        "input_value": "[[], [], [[12,160],[4,466],[13,427],[7,861],[18,77],[16,541]], [[21,672]], [[2,520],[14,46],[16,327]], [[9,-186]], [[21,-835]], [[4,847],[11,486],[18,212]], [[2,54]], [], [], [[20,208],[7,39],[6,-4]], [[2,706],[14,219],[11,228],[18,815],[16,480]], [[2,756],[7,-12],[16,-79]], [[4,86],[7,515],[18,487],[16,845]], [], [[12,719],[2,387],[11,993],[7,379],[3,53]], [[1,194]], [[20,144],[4,819],[14,273],[7,-20]], [], [[13,863],[7,828],[16,-23]], []]"
+    },
+
+    // Escape The Nightmare
+    {
+        "test_id": 2128,
+        "input_type": "number",
+        "input_name": "h",
+        "input_value": "4"
+    },
+    {
+        "test_id": 2128,
+        "input_type": "number",
+        "input_name": "d",
+        "input_value": "2"
+    },
+    {
+        "test_id": 2128,
+        "input_type": "arrayOfIntegers",
+        "input_name": "start",
+        "input_value": "[-1, 0, 2]"
+    },
+    {
+        "test_id": 2128,
+        "input_type": "arrayOfIntegers",
+        "input_name": "finish",
+        "input_value": "[2, 0, 0]"
+    },
+    {
+        "test_id": 2129,
+        "input_type": "number",
+        "input_name": "h",
+        "input_value": "4"
+    },
+    {
+        "test_id": 2129,
+        "input_type": "number",
+        "input_name": "d",
+        "input_value": "2"
+    },
+    {
+        "test_id": 2129,
+        "input_type": "arrayOfIntegers",
+        "input_name": "start",
+        "input_value": "[-1, 0, 2]"
+    },
+    {
+        "test_id": 2129,
+        "input_type": "arrayOfIntegers",
+        "input_name": "finish",
+        "input_value": "[-1, 0, 2]"
+    },
+    {
+        "test_id": 2130,
+        "input_type": "number",
+        "input_name": "h",
+        "input_value": "8"
+    },
+    {
+        "test_id": 2130,
+        "input_type": "number",
+        "input_name": "d",
+        "input_value": "1"
+    },
+    {
+        "test_id": 2130,
+        "input_type": "arrayOfIntegers",
+        "input_name": "start",
+        "input_value": "[0, -1, 0]"
+    },
+    {
+        "test_id": 2130,
+        "input_type": "arrayOfIntegers",
+        "input_name": "finish",
+        "input_value": "[0, 1, 0]"
+    },
+    {
+        "test_id": 2131,
+        "input_type": "number",
+        "input_name": "h",
+        "input_value": "100"
+    },
+    {
+        "test_id": 2131,
+        "input_type": "number",
+        "input_name": "d",
+        "input_value": "12"
+    },
+    {
+        "test_id": 2131,
+        "input_type": "arrayOfIntegers",
+        "input_name": "start",
+        "input_value": "[9, 0, 25]"
+    },
+    {
+        "test_id": 2131,
+        "input_type": "arrayOfIntegers",
+        "input_name": "finish",
+        "input_value": "[0, 9, 25]"
+    },
+    {
+        "test_id": 2132,
+        "input_type": "number",
+        "input_name": "h",
+        "input_value": "100"
+    },
+    {
+        "test_id": 2132,
+        "input_type": "number",
+        "input_name": "d",
+        "input_value": "12"
+    },
+    {
+        "test_id": 2132,
+        "input_type": "arrayOfIntegers",
+        "input_name": "start",
+        "input_value": "[0, -9, 25]"
+    },
+    {
+        "test_id": 2132,
+        "input_type": "arrayOfIntegers",
+        "input_name": "finish",
+        "input_value": "[0, -6, 50]"
+    },
+    {
+        "test_id": 2133,
+        "input_type": "number",
+        "input_name": "h",
+        "input_value": "1"
+    },
+    {
+        "test_id": 2133,
+        "input_type": "number",
+        "input_name": "d",
+        "input_value": "1000"
+    },
+    {
+        "test_id": 2133,
+        "input_type": "arrayOfIntegers",
+        "input_name": "start",
+        "input_value": "[0, -1000, 0]"
+    },
+    {
+        "test_id": 2133,
+        "input_type": "arrayOfIntegers",
+        "input_name": "finish",
+        "input_value": "[1000, 0, 0]"
+    },
+
+    // Training Route
+    {
+        "test_id": 2134,
+        "input_type": "number",
+        "input_name": "n",
+        "input_value": "6"
+    },
+    {
+        "test_id": 2134,
+        "input_type": "matrix",
+        "input_name": "roads",
+        "input_value": "[[[1,50],[3,10],[5,4]], [[0,50],[2,15],[3,5]], [[1,15],[4,55]], [[0,10],[1,5]], [[2,55]], [[0,4]]]"
+    },
+    {
+        "test_id": 2134,
+        "input_type": "arrayOfIntegers",
+        "input_name": "route",
+        "input_value": "[5, 1, 0, 2]"
+    },
+    {
+        "test_id": 2135,
+        "input_type": "number",
+        "input_name": "n",
+        "input_value": "7"
+    },
+    {
+        "test_id": 2135,
+        "input_type": "matrix",
+        "input_name": "roads",
+        "input_value": "[[[5,68]], [[3,73],[4,91]], [[4,94]], [[1,73]], [[2,94],[1,91],[6,26],[5,5]], [[0,68],[6,84],[4,5]], [[5,84],[4,26]]]"
+    },
+    {
+        "test_id": 2135,
+        "input_type": "arrayOfIntegers",
+        "input_name": "route",
+        "input_value": "[0, 6, 3, 2, 5]"
+    },
+    {
+        "test_id": 2136,
+        "input_type": "number",
+        "input_name": "n",
+        "input_value": "15"
+    },
+    {
+        "test_id": 2136,
+        "input_type": "matrix",
+        "input_name": "roads",
+        "input_value": "[[[1,69],[12,47],[4,100],[13,57]], [[0,69]], [[5,61]], [[13,76],[12,19]], [[0,100],[5,9]], [[2,61],[4,9],[11,63]], [[13,81]], [[13,92]], [[9,43]], [[8,43],[14,20]], [[11,44],[14,77]], [[5,63],[10,44]], [[3,19],[0,47]], [[6,81],[7,92],[3,76],[0,57]], [[9,20],[10,77]]]"
+    },
+    {
+        "test_id": 2136,
+        "input_type": "arrayOfIntegers",
+        "input_name": "route",
+        "input_value": "[1, 12, 6, 7, 6, 3, 0, 7, 10, 8, 2, 1]"
+    },
+    {
+        "test_id": 2137,
+        "input_type": "number",
+        "input_name": "n",
+        "input_value": "20"
+    },
+    {
+        "test_id": 2137,
+        "input_type": "matrix",
+        "input_name": "roads",
+        "input_value": "[[[18,78],[3,92]], [[8,29],[19,7]], [[14,26],[7,77]], [[9,65],[0,92],[15,42]], [[12,54],[18,48]], [[7,48]], [[10,3],[7,66]], [[2,77],[6,66],[5,48],[12,28]], [[16,63],[1,29]], [[13,78],[3,65]], [[6,3]], [[19,84]], [[17,20],[7,28],[4,54]], [[9,78]], [[2,26]], [[3,42],[16,37]], [[15,37],[8,63],[19,48]], [[12,20]], [[4,48],[0,78]], [[11,84],[1,7],[16,48]]]"
+    },
+    {
+        "test_id": 2137,
+        "input_type": "arrayOfIntegers",
+        "input_name": "route",
+        "input_value": "[11, 8, 16, 13, 10, 14, 17, 19]"
+    },
+    {
+        "test_id": 2138,
+        "input_type": "number",
+        "input_name": "n",
+        "input_value": "25"
+    },
+    {
+        "test_id": 2138,
+        "input_type": "matrix",
+        "input_name": "roads",
+        "input_value": "[[[2,940],[9,527],[1,678]], [[17,444],[0,678],[24,158]], [[5,246],[23,653],[0,940]], [[10,579]], [[5,579]], [[4,579],[2,246]], [[12,288]], [[12,391],[21,71]], [[20,768]], [[14,512],[0,527]], [[3,579],[21,735],[11,1000]], [[22,794],[10,1000],[16,979]], [[6,288],[7,391]], [[20,514]], [[16,965],[9,512],[16,834]], [[18,319],[21,550]], [[11,979],[14,965],[14,834]], [[1,444]], [[15,319]], [[21,226]], [[13,514],[8,768],[22,584]], [[15,550],[19,226],[7,71],[10,735]], [[20,584],[11,794]], [[2,653]], [[1,158]]]"
+    },
+    {
+        "test_id": 2138,
+        "input_type": "arrayOfIntegers",
+        "input_name": "route",
+        "input_value": "[9, 18, 10, 20, 22, 15, 4, 11, 12, 22, 21, 4, 3, 9, 14, 11, 19, 12, 0, 15]"
+    },
+
     // 
 
 

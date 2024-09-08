@@ -5282,16 +5282,16 @@ function solution(adj) {
         circle = 0
     //dfs to find the number of circle of size 3
     //It has to be 1
-    
+
     function dfs(node, derive) {
         visited[node] = true
         parent[node] = derive
         size++
-        for(let nextNode = 0;nextNode < n;nextNode++) {
-            if(nextNode !== derive && adj[node][nextNode]) {
-                if(visited[nextNode]) {
+        for (let nextNode = 0; nextNode < n; nextNode++) {
+            if (nextNode !== derive && adj[node][nextNode]) {
+                if (visited[nextNode]) {
                     //Circle of 3 nodes ? 
-                    if(nextNode === parent[derive]) circle++
+                    if (nextNode === parent[derive]) circle++
                 } else dfs(nextNode, node)
             }
         }
@@ -5312,17 +5312,17 @@ function solution(adj) {
     const n = adj.length
     let circle = 0,
         //circleAncestor,
-       // circleDescendant,
+        // circleDescendant,
         singlePathRoot,
         visited = [],
         size = 0
-      // circleComponents = new Set(),
-      //  parent = []
-    
+    // circleComponents = new Set(),
+    //  parent = []
+
     adj = adj.map((v, i) => {
         let newMap = []
         v.map((o, j) => o && newMap.push(j))
-        if(newMap.length === 1) singlePathRoot = i
+        if (newMap.length === 1) singlePathRoot = i
         return newMap
     })
 
@@ -5330,26 +5330,26 @@ function solution(adj) {
         //parent[node] = derive;
         visited[node] = true
         size++
-        for(let nextNode of adj[node]) {
-            if(nextNode !== derive) {
-                if(visited[nextNode]) {
+        for (let nextNode of adj[node]) {
+            if (nextNode !== derive) {
+                if (visited[nextNode]) {
                     circle++
-                   // circleAncestor = nextNode
-                   // circleDescendant = node
+                    // circleAncestor = nextNode
+                    // circleDescendant = node
                 } else {
                     dfs(nextNode, node)
                 }
             }
         }
     }
-    if(singlePathRoot === undefined) return false
+    if (singlePathRoot === undefined) return false
     dfs(0, null)
     //If the test case is tronger than:
     //Use parent array to find all nodes of the circle 
     //Remove those nodes from the the graph
     //Check remaining nodes in a simple path(Use DFS)
-  
-    if(circle !== 2 ||size !== n) return false
+
+    if (circle !== 2 || size !== n) return false
     return true
 }
 
@@ -5357,7 +5357,7 @@ function solution(adj) {
 function solution(adj) {
     let nodes = adj.length,
         edges = 0,
-        map = Array.from({ length: nodes}, _ => [])
+        map = Array.from({ length: nodes }, _ => [])
     adj.map((_, i) => _.map((v, j) => {
         i - j && v && edges++
         //map[i] contains nodes that connect with node i
@@ -5373,10 +5373,10 @@ function solution(adj) {
     const standard = nodes - 1 + edges
     let data = []
     //Overall checking
-    while(++b * b - 1 <= standard) 
-        if(Number.isInteger(a = standard / (b * b - 1))) flower = true
-    
-    if(!flower) return false
+    while (++b * b - 1 <= standard)
+        if (Number.isInteger(a = standard / (b * b - 1))) flower = true
+
+    if (!flower) return false
     //petals: key:the size of connected nodes
     let petals = new Map(),
         //Nodes that already belong to a group
@@ -5386,33 +5386,33 @@ function solution(adj) {
     map.map((_, i) => {
         const size = _.length
         //Set center noe
-        if(size === nodes - 1) center = i
-        if(!petals.has(size)) petals.set(size, [])
+        if (size === nodes - 1) center = i
+        if (!petals.has(size)) petals.set(size, [])
         //Only add a group if this node belongs to a petal
         //Also group nodes that connect to the current node into the same group
-        if(size !== nodes - 1) {
-            if(!marked.has(i)) {
+        if (size !== nodes - 1) {
+            if (!marked.has(i)) {
                 petals.get(size).push([i, ..._])
                 marked = new Set([...marked, ..._])
             }
         }
     })
     //If every node is connected to each other
-    if(petals.size === 1) return true
+    if (petals.size === 1) return true
     //Petals only contains the size of the nodes that connect to the center
     //And the size of nodes in a petal
-    if(petals.size !== 2) return false
+    if (petals.size !== 2) return false
     petals.delete(nodes - 1)
     petals = Array.from(petals)[0]
     //Check if nodes in a petal are connected to each other
-    for(let _ of petals[1]) 
-        for(let v of _) 
-            if(v !== center) 
-                for(let w of _) 
-                    if(w !== v && (!adj[w][v])) return false
-                
+    for (let _ of petals[1])
+        for (let v of _)
+            if (v !== center)
+                for (let w of _)
+                    if (w !== v && (!adj[w][v])) return false
+
     return true
-  
+
 }
 
 // 17: Is Correctly Cut
@@ -5422,22 +5422,22 @@ function solution(adj) {
     let colors = [],
         queue = [[0, false]],
         visited = [1]
-    while(queue.length) {
+    while (queue.length) {
         let [u, color] = queue.shift(),
             size = 0
         colors[u] = color
-        for(let v = 0;v < adj.length;v++) {
+        for (let v = 0; v < adj.length; v++) {
             size += adj[u][v]
-            if(adj[u][v]) {
-                if(visited[v]) {
-                    if(color === colors[v]) return false
+            if (adj[u][v]) {
+                if (visited[v]) {
+                    if (color === colors[v]) return false
                 } else {
                     visited[v] = true
                     queue.push([v, !color])
                 }
             }
         }
-        if(size !== adj.length / 2 - 1) return false
+        if (size !== adj.length / 2 - 1) return false
     }
 
     return true
@@ -5448,7 +5448,7 @@ function solution(n, wmap) {
     //Color the graph with 2 colors
     let OK = true,
         colors = [],
-        map = Array.from({length: n}, v => []),
+        map = Array.from({ length: n }, v => []),
         visited = []
     wmap.map(([verex1, verex2]) => {
         OK = OK && verex1 !== verex2
@@ -5458,19 +5458,19 @@ function solution(n, wmap) {
     function dfs(node, parent, color) {
         colors[node] = color
         visited[node] = 1
-        for(let nextNode of map[node]) {
-            if(OK && nextNode !== parent) {
-                if(visited[nextNode]) {
-                    if(!(colors[nextNode] ^ colors[node])) {
+        for (let nextNode of map[node]) {
+            if (OK && nextNode !== parent) {
+                if (visited[nextNode]) {
+                    if (!(colors[nextNode] ^ colors[node])) {
                         OK = false;
                         break;
-                    } 
+                    }
                 } else dfs(nextNode, node, !color)
             }
         }
-        
+
     }
-    
+
     dfs(0, null, true)
     return OK
 }
@@ -5478,23 +5478,23 @@ function solution1(n, wmap) {
     //Find circle use DFS
     //Use array time to store the time we visit node i
     //When DFS a node j connected to visited node i -> size of circle: time[j] - time[i] + 1
-    let map = Array.from({length: n}, v => []),
+    let map = Array.from({ length: n }, v => []),
         visited = [],
         time = [],
         magic = true,
         test = []
-    for(let [node1, node2] of wmap) {
+    for (let [node1, node2] of wmap) {
         //a node pointed to itself is a circle of size 1
-        if(node1 === node2) return false
+        if (node1 === node2) return false
         map[node1].push(node2)
         map[node2].push(node1)
     }
     function dfs(node, parent, level) {
         visited[node] = true
         time[node] = level
-        for(let nextNode of map[node]) {
-            if(nextNode !== parent) {
-                if(visited[nextNode]) {
+        for (let nextNode of map[node]) {
+            if (nextNode !== parent) {
+                if (visited[nextNode]) {
                     magic = magic && (time[node] - time[nextNode] + 1) % 2 === 0
                 } else dfs(nextNode, node, level + 1)
             }
@@ -5513,7 +5513,7 @@ function solution(n, wmap) {
         //Store nodes that connect to other nodes
         map = new Map()
     wmap.map(([node1, node2], i) => {
-        if(node1 !== node2) {
+        if (node1 !== node2) {
             unvisited.add(node1)
             unvisited.add(node2)
             map.has(node1) ? map.get(node1).push(node2) : map.set(node1, [node2])
@@ -5524,9 +5524,9 @@ function solution(n, wmap) {
     time = n - map.size
     function dfs(node) {
         unvisited.delete(node)
-        for(let nextNode of map.get(node)) unvisited.has(nextNode) && dfs(nextNode)
+        for (let nextNode of map.get(node)) unvisited.has(nextNode) && dfs(nextNode)
     }
-    while(unvisited.size) {
+    while (unvisited.size) {
         time++
         dfs(unvisited.values().next().value)
     }
@@ -5539,7 +5539,7 @@ function solution(n, wmap) {
     let unvisited = new Set(),
         map = new Map()
     wmap.map(([node1, node2]) => {
-       if(node1 !== node2) {
+        if (node1 !== node2) {
             unvisited.add(node1)
             unvisited.add(node2)
             map.has(node1) ? map.get(node1).push(node2) : map.set(node1, [node2])
@@ -5550,21 +5550,21 @@ function solution(n, wmap) {
         forest = true
     function dfs(node, parent) {
         unvisited.delete(node)
-        for(let nextNode of map.get(node)) {
-            if(nextNode !== parent) {
-                if(!unvisited.has(nextNode)) circle++
+        for (let nextNode of map.get(node)) {
+            if (nextNode !== parent) {
+                if (!unvisited.has(nextNode)) circle++
                 else dfs(nextNode, node)
             }
         }
     }
-    while(unvisited.size) {
+    while (unvisited.size) {
         dfs(unvisited.values().next().value, null)
         //A circle is checked to time 
         forest = forest && circle / 2 < 2
-        if(!forest) return false
+        if (!forest) return false
         circle = 0
     }
-    
+
     return true
 }
 
@@ -5573,35 +5573,35 @@ function solution(n, start, k, wmap) {
     let fired = []
     let visited = []
     let graph = []
-    for ( let i = 0 ; i < n ; ++i ) {
+    for (let i = 0; i < n; ++i) {
         visited.push(false)
         graph.push([])
     }
-    for ( let item of wmap ) {
-        let [v,u] = item
+    for (let item of wmap) {
+        let [v, u] = item
         graph[v].push(u)
         graph[u].push(v)
     }
-    
+
     let q = [start]
     visited[start] = true
-    while ( q.length > 0 && k > 0 ) {
+    while (q.length > 0 && k > 0) {
         k--
         let next_q = []
-        for ( let v of q ) {
-            for ( let u of graph[v] ) {
-                if ( ! visited[u] ) {
+        for (let v of q) {
+            for (let u of graph[v]) {
+                if (!visited[u]) {
                     visited[u] = true
                     next_q.push(u)
                 }
             }
         }
         q = []
-        for ( let qq of next_q ) q.push(qq)
+        for (let qq of next_q) q.push(qq)
     }
-    
-    for ( let i = 0 ; i < n ; ++i ) {
-        if ( visited[i] ) {
+
+    for (let i = 0; i < n; ++i) {
+        if (visited[i]) {
             fired.push(i)
         }
     }
@@ -5610,7 +5610,7 @@ function solution(n, start, k, wmap) {
 
 // 22: Caterpillar Trees
 function solution(n, edges) {
-   
+
     //DFS a tree, for every vertex has no more than one neighbor has size > 1
     let map = new Map(),
         visited,
@@ -5619,91 +5619,91 @@ function solution(n, edges) {
         circle,
         cater
     //build the graph
-    for(let i = 0;i < n;i++) map.set(i, new Set())
+    for (let i = 0; i < n; i++) map.set(i, new Set())
     edges.forEach(v => v.map((vertex, i) => map.get(vertex).add(v[++i % 2])))
     //BFS to find the furthest vertex in the tree
     //So we can make sure we do not start DFS from the leaf
     function bfs(vertex) {
-        
+
         let visited = new Set([vertex]),
             queue = [vertex],
             furthestVertex
-        while(queue.length) {
+        while (queue.length) {
             const currentVertex = queue.shift()
             furthestVertex = currentVertex
-            for(let nextVertex of map.get(currentVertex)) 
-                if(!visited.has(nextVertex)) {
+            for (let nextVertex of map.get(currentVertex))
+                if (!visited.has(nextVertex)) {
                     visited.add(nextVertex)
                     queue.push(nextVertex)
                 }
         }
         return furthestVertex
     }
-   
+
     function dfs(vertex, parent) {
         let size = 1,
             foundPath = false
-        
+
         visited.add(vertex)
-        for(let nextVertex of map.get(vertex)) {
-            if(nextVertex !== parent) {
-                if(visited.has(nextVertex)) circle = true
+        for (let nextVertex of map.get(vertex)) {
+            if (nextVertex !== parent) {
+                if (visited.has(nextVertex)) circle = true
                 else {
                     const neighborSize = dfs(nextVertex, vertex)
                     size += neighborSize
                     //If it already found a path
                     //This neighbor vertex has size > 1 -> Cannot be caterpillar tree
-                    if(neighborSize > 1) foundPath ? cater = false : foundPath = true
+                    if (neighborSize > 1) foundPath ? cater = false : foundPath = true
                 }
             }
-            
+
         }
         map.delete(vertex)
         return size
     }
 
-   let count = 0
-    while(map.size) {
+    let count = 0
+    while (map.size) {
         //reset params for the new tree
         visited = new Set()
         circle = false
         cater = true
         dfs(bfs(map.keys().next().value), null)
         //tree cannot have circle
-        if(!circle) {
+        if (!circle) {
             tree++
             cater && caterTree++
         }
-        
+
         count++
     }
-   return [tree, caterTree]
-  
+    return [tree, caterTree]
+
 }
 
 // 23: Is Mobius Ladder
 function solution(n, ladder) {
-    let map = Array.from({length: n}, _ => new Set())
+    let map = Array.from({ length: n }, _ => new Set())
     ladder.map(([u, v]) => {
         map[u].add(v)
         map[v].add(u)
     })
     //Mobius Latter: every node connects to 3 other nodes (1)
-    if(map.some(_ => _.size !== 3)) return false
+    if (map.some(_ => _.size !== 3)) return false
     //If (1) true => the graph has 4 vertexes in a mobius latter
-    if(n === 4) return true
+    if (n === 4) return true
     //For each node, each node in three nodes that connect with the current node 
     //cann't connect with 2 left nodes
     return map.every((_, u) => {
         _ = Array.from(_)
-        for(let i = 0;i < 3;i++) {
-            for(let j = i + 1;j < 3;j++) 
-                if(map[_[i]].has(_[j])) return false
+        for (let i = 0; i < 3; i++) {
+            for (let j = i + 1; j < 3; j++)
+                if (map[_[i]].has(_[j])) return false
         }
         return true
     })
 }
- 
+
 // 24: Tree Diameter
 function solution(n, tree) {
     let map = []
@@ -5716,10 +5716,10 @@ function solution(n, tree) {
             queue = [[vertex, 0]],
             furthestNode = [vertex, 0]
         visited[vertex] = 1
-        while(queue.length) {
+        while (queue.length) {
             const [currentVetex, length] = furthestNode = queue.shift()
-            for(let nextVertex of map[currentVetex]||[]) {
-                if(!visited[nextVertex]) {
+            for (let nextVertex of map[currentVetex] || []) {
+                if (!visited[nextVertex]) {
                     visited[nextVertex] = 1
                     queue.push([nextVertex, length + 1])
                 }
@@ -5736,10 +5736,10 @@ function solution(triples, tree) {
     let data = new Map(),
         relationship = {}
     //build map using Map and Set
-    for(let i = 0;i < n;i += 2) {
+    for (let i = 0; i < n; i += 2) {
         const vertex1 = tree[i], vertex2 = tree[i + 1]
-        if(!data.get(vertex1)) data.set(vertex1, new Set())
-        if(!data.get(vertex2)) data.set(vertex2, new Set())
+        if (!data.get(vertex1)) data.set(vertex1, new Set())
+        if (!data.get(vertex2)) data.set(vertex2, new Set())
         data.get(vertex1).add(vertex2)
         data.get(vertex2).add(vertex1)
     }
@@ -5770,8 +5770,8 @@ function solution(triples, tree) {
         relationship[vertex] = {}
         let subtree = [vertex],
             branch = 0
-        for(let nextVertex of data.get(vertex)) {
-            if(nextVertex !== parent) {
+        for (let nextVertex of data.get(vertex)) {
+            if (nextVertex !== parent) {
                 branch++
                 const childNodes = findDescendants(nextVertex, vertex)
                 relationship[vertex][branch] = new Set(childNodes)
@@ -5783,9 +5783,9 @@ function solution(triples, tree) {
     findDescendants(1)
     return triples.map(([vertex1, vertex2, root]) => {
         let first_branch, second_branch
-        for(let branch in relationship[root]) {
-            if(relationship[root][branch].has(vertex1)) first_branch = branch
-            if(relationship[root][branch].has(vertex2)) second_branch = branch
+        for (let branch in relationship[root]) {
+            if (relationship[root][branch].has(vertex1)) first_branch = branch
+            if (relationship[root][branch].has(vertex2)) second_branch = branch
         }
         return first_branch !== second_branch
     })
@@ -5794,15 +5794,15 @@ function solution(triples, tree) {
 // 26: Digit Jumping
 function solution(grid, start, finish) {
     const row = grid.length,
-          col = grid[0].length,
-          visited = Array.from({length: row}, v => []),
-          data = {},
-          usedDigits = new Set(),
-          neighbors = [[0, 1], [0, -1], [1, 0], [-1, 0]],
-          isCell = (x, y) => 0 <= x && x < row && 0 <= y && y < col,
-          [endX, endY] = finish
+        col = grid[0].length,
+        visited = Array.from({ length: row }, v => []),
+        data = {},
+        usedDigits = new Set(),
+        neighbors = [[0, 1], [0, -1], [1, 0], [-1, 0]],
+        isCell = (x, y) => 0 <= x && x < row && 0 <= y && y < col,
+        [endX, endY] = finish
     //Special case
-    if(start[0] === endX && start[1] === endY) return 0
+    if (start[0] === endX && start[1] === endY) return 0
     //group cells that have the same digit
     grid.map((_, i) => _.map((v, j) => {
         const cell = [i, j]
@@ -5817,34 +5817,34 @@ function solution(grid, start, finish) {
     let steps = 0,
         queue = [start]
     visited[start[0]][start[1]] = true
-    while(true) {
+    while (true) {
         steps++
         //New cells for the next step
         let newQueue = []
-        while(queue.length) {
+        while (queue.length) {
             const [x, y] = queue.shift(),
-                  digit = grid[x][y]
+                digit = grid[x][y]
             //Test whether we visited the current digit
             //If yes we ignore (Be careful here if you don't wanna be TLE)
             //And only use this cell to explore it's neighbors
-            if(!usedDigits.has(digit)) {
+            if (!usedDigits.has(digit)) {
                 usedDigits.add(digit)
-                for(let cell of data[digit]) {
+                for (let cell of data[digit]) {
                     const [i, j] = cell
-                    if(i === endX && j === endY) return steps
-                    if(!visited[i][j]) {
+                    if (i === endX && j === endY) return steps
+                    if (!visited[i][j]) {
                         visited[i][j] = true
                         newQueue.push(cell)
                     }
                 }
             }
-            
-            for(let [dx, dy] of neighbors) {
+
+            for (let [dx, dy] of neighbors) {
                 const X = x + dx,
-                      Y = y + dy
-                if(isCell(X, Y) && !usedDigits.has(grid[X][Y]) && !visited[X][Y]) {
+                    Y = y + dy
+                if (isCell(X, Y) && !usedDigits.has(grid[X][Y]) && !visited[X][Y]) {
                     //If neighbor is the finish cell
-                    if(X === endX && Y === endY) return steps    
+                    if (X === endX && Y === endY) return steps
                     visited[X][Y] = true
                     newQueue.push([X, Y])
                 }
@@ -5852,14 +5852,14 @@ function solution(grid, start, finish) {
         }
         queue = newQueue
     }
-    
+
 }
 
 // 27: Painter Bot
 function solution(d, canvas, operations) {
     const row = canvas.length,
-          col = canvas[0].length,
-          neighbors = [[0, 1], [0, -1], [1, 0], [-1, 0]]
+        col = canvas[0].length,
+        neighbors = [[0, 1], [0, -1], [1, 0], [-1, 0]]
     let visited,
         color,
         initital
@@ -5868,14 +5868,14 @@ function solution(d, canvas, operations) {
         canvas[x][y] = color
         neighbors.map(([dx, dy]) => {
             const nextX = x + dx,
-                  nextY = y + dy
-            if(0 <= nextX && nextX < row && 0 <= nextY && nextY < col
-              && !visited[nextX][nextY] 
-              && Math.abs(canvas[nextX][nextY] - initital) <= d)
+                nextY = y + dy
+            if (0 <= nextX && nextX < row && 0 <= nextY && nextY < col
+                && !visited[nextX][nextY]
+                && Math.abs(canvas[nextX][nextY] - initital) <= d)
                 dfs(nextX, nextY)
         })
-      // visited[x][y] = false
-        
+        // visited[x][y] = false
+
     }
     operations.map(([x, y, init]) => {
         visited = Array.from({ length: row }, v => [])
@@ -5894,26 +5894,26 @@ function solution(n, m) {
         visited,
         found
     function dfs(x, y) {
-        if(x === n - 1 && y === m - 1) {
+        if (x === n - 1 && y === m - 1) {
             found = true
             return
         }
         visited[x][y] = true
         moves.map(([dx, dy]) => {
             const nextX = x + dx,
-                  nextY = y + dy
-            if(!found && 0 <= nextX && nextX < n && 0 <= nextY && nextY < m
-                  && !visited[nextX][nextY]) dfs(nextX, nextY)
-        }) 
+                nextY = y + dy
+            if (!found && 0 <= nextX && nextX < n && 0 <= nextY && nextY < m
+                && !visited[nextX][nextY]) dfs(nextX, nextY)
+        })
     }
-    
-    for(let i = 1;i < Math.min(m, n);i++) {
-        for(let j = i;j < Math.max(m, n);j++) {
+
+    for (let i = 1; i < Math.min(m, n); i++) {
+        for (let j = i; j < Math.max(m, n); j++) {
             found = false
             moves = [[i, j], [-i, j], [i, -j], [-i, -j]]
-            if(i !== j) moves.push([j, i], [-j, i], [j, -i], [-j, -i])
-            visited = Array.from({ length: n}, _ => [])
-            dfs(0, 0) 
+            if (i !== j) moves.push([j, i], [-j, i], [j, -i], [-j, -i])
+            visited = Array.from({ length: n }, _ => [])
+            dfs(0, 0)
             ways += found
         }
     }
@@ -5923,34 +5923,34 @@ function solution(n, m) {
 // 29: Sabotage
 function solution(hangar) {
     const len = hangar.length,
-          col = hangar[0].length
+        col = hangar[0].length
     //Infinite: DP stores whether a cell will lead to infinite loop or not
     //Initially the value of the cell is undefined
     //It means we haven't yet known wether it's infinite loop or not
-    let infinite = Array.from({ length: len}, _ => []),
-        visited = Array.from({ length: len}, _ => []),
+    let infinite = Array.from({ length: len }, _ => []),
+        visited = Array.from({ length: len }, _ => []),
         sum = 0
     function dfs(i, j, size) {
         const x = i, y = j
         //escaped successfully
-        if(i < 0 || i >= len || j < 0 || j >= col) return false
+        if (i < 0 || i >= len || j < 0 || j >= col) return false
         //It that cell is visited => 2 cases:
-        if(visited[i][j]) {
+        if (visited[i][j]) {
             //If infinite status of that cell is undefined
             //It's mean there a cirlce at itself or one of it's descendant
-            if(infinite[i][j] === undefined) return true
+            if (infinite[i][j] === undefined) return true
             //Otherwise we already know  the cell we are staying it infinite loop?
             return infinite[i][j]
         }
         visited[i][j] = true
         const command = hangar[i][j]
-        if(command === 'U') i--
-        if(command === 'R') j++
-        if(command === 'L') j--
-        if(command === 'D') i++
+        if (command === 'U') i--
+        if (command === 'R') j++
+        if (command === 'L') j--
+        if (command === 'D') i++
         return infinite[x][y] = dfs(i, j)
     }
-    hangar.map((_, i) => _.map((v, j) =>  sum += dfs(i, j)))
+    hangar.map((_, i) => _.map((v, j) => sum += dfs(i, j)))
     return sum
 }
 
@@ -5963,63 +5963,63 @@ function solution(wires, grid) {
     //v x
     console.time('time')
     const [row, col] = grid,
-          neighbors = [[0, 1], [0, -1], [1, 0], [-1, 0]]
-    let visited = Array.from({ length: row}, _ => []),
+        neighbors = [[0, 1], [0, -1], [1, 0], [-1, 0]]
+    let visited = Array.from({ length: row }, _ => []),
         //Store the edge in the grid that is a write
         obstacles = new Set(),
         //queue = [[x-axis, y-axis, steps]]
         queue = [[0, 0, 0]]
     //encode two given points into a edge
     //NOTE: Remember to sort x-xis and y-xis 
-    const encodeLine =(...a) => {
-        if(a[0] >a[2]) [a[0], a[2]] = [a[2], a[0]]
-        if(a[1] > a[3]) [a[1], a[3]] = [a[3], a[1]]
+    const encodeLine = (...a) => {
+        if (a[0] > a[2]) [a[0], a[2]] = [a[2], a[0]]
+        if (a[1] > a[3]) [a[1], a[3]] = [a[3], a[1]]
         return a.join`$`
     },
-          //find common edge between two cells
-          commonEdge = (x, y, X, Y) => {
-              const maxX = Math.max(x, X),
-                    maxY = Math.max(y, Y)
-              return X === x ? encodeLine(x, maxY, x + 1, maxY) : 
-              encodeLine(maxX, y, maxX, y + 1)
-          }
+        //find common edge between two cells
+        commonEdge = (x, y, X, Y) => {
+            const maxX = Math.max(x, X),
+                maxY = Math.max(y, Y)
+            return X === x ? encodeLine(x, maxY, x + 1, maxY) :
+                encodeLine(maxX, y, maxX, y + 1)
+        }
     //add wires to Set()
     wires.map(([startY, startX, endY, endX]) => {
-        if(startX === endX && startY === endY) return;
+        if (startX === endX && startY === endY) return;
         //Chose the direction
-        let  dx = startX === endX ? 0 : startX > endX ? -1 : 1,
-             dy = startY === endY ? 0 : startY > endY ? -1 : 1,
+        let dx = startX === endX ? 0 : startX > endX ? -1 : 1,
+            dy = startY === endY ? 0 : startY > endY ? -1 : 1,
             //Store the parent point
-             prevX, prevY
-       
-        while(startX !== endX || startY !== endY) {
+            prevX, prevY
+
+        while (startX !== endX || startY !== endY) {
             prevX = startX
             prevY = startY
             startX += dx
             startY += dy
             obstacles.add(encodeLine(prevX, prevY, startX, startY))
-         
+
         }
     })
     visited[0][0] = true
     console.timeEnd('time')
-  //BFS to find
-    while(queue.length) {
-       
+    //BFS to find
+    while (queue.length) {
+
         const [x, y, steps] = queue.shift()
-        if(x === row - 1 && y === col - 1) return steps
+        if (x === row - 1 && y === col - 1) return steps
         neighbors.map(([dx, dy]) => {
             const nextX = x + dx, nextY = y + dy
-            if(0 <= nextX && nextX < row && 0 <= nextY && nextY < col 
-               && !visited[nextX][nextY] 
-               && !obstacles.has(commonEdge(x, y, nextX, nextY))) {
+            if (0 <= nextX && nextX < row && 0 <= nextY && nextY < col
+                && !visited[nextX][nextY]
+                && !obstacles.has(commonEdge(x, y, nextX, nextY))) {
                 visited[nextX][nextY] = true
                 queue.push([nextX, nextY, steps + 1])
             }
         })
     }
     return -1
-    
+
 }
 
 // 31: Mobius Conquer
@@ -6030,21 +6030,21 @@ function solution(impassableCells, field, ratiorg, enemy) {
     const gridWidth = field[1] * 2;
     const gridHeight = field[0];
     var blockedArr = new Array(gridWidth * gridHeight).fill(false);
-    
+
     impassableCells.forEach(blockedCell => {
         var coords = convert(blockedCell);
-        blockedArr[getGridIndex(coords[1], coords[0])] = true; 
+        blockedArr[getGridIndex(coords[1], coords[0])] = true;
     });
-        
+
     var ratiorgCoords = convert(ratiorg);
     var enemyCoords = convert(enemy);
 
     var enemyDistances = calculateDistances(enemyCoords);
     var ratiorgDistances = calculateDistances(ratiorgCoords);
-    
+
     var ratiorgCount = 0;
     var enemyCount = 0;
-    
+
     for (var i = 0; i < enemyDistances.length; i++) {
         if (enemyDistances[i] < ratiorgDistances[i]) {
             enemyCount++;
@@ -6052,24 +6052,24 @@ function solution(impassableCells, field, ratiorg, enemy) {
             ratiorgCount++;
         }
     }
-    
+
     return [ratiorgCount, enemyCount];
-         
+
     function calculateDistances(startCoords) {
         var visitedArr = new Array(gridWidth * gridHeight).fill(false);
         var distance = new Array(gridWidth * gridHeight).fill(max);
         var remainingOptions = [];
         distance[getGridIndex(startCoords[1], startCoords[0])] = 0;
         remainingOptions.push(startCoords);
-    
+
         do {
-            remainingOptions.sort((a,b) => distance[getGridIndex(a[1],a[0])] - distance[getGridIndex(b[1],b[0])]);
+            remainingOptions.sort((a, b) => distance[getGridIndex(a[1], a[0])] - distance[getGridIndex(b[1], b[0])]);
             var nextCell = remainingOptions.shift();
-            processCell(nextCell[1],nextCell[0]);
+            processCell(nextCell[1], nextCell[0]);
         } while (remainingOptions.length > 0);
-        
-        return distance;        
-    
+
+        return distance;
+
         function processCell(x, y) {
             var gridIndex = getGridIndex(x, y);
             var newDistance = distance[gridIndex] + 1;
@@ -6097,34 +6097,34 @@ function solution(impassableCells, field, ratiorg, enemy) {
             }
 
             function queueVisit(x, y) {
-                var visitIndex = getGridIndex(x,y);
+                var visitIndex = getGridIndex(x, y);
                 if (distance[visitIndex] > newDistance) {
                     distance[visitIndex] = newDistance;
-                    remainingOptions.push([y,x]);
+                    remainingOptions.push([y, x]);
                 }
             }
         }
-        
+
         function done(x, y) {
-            return visitedArr[getGridIndex(x,y)];
+            return visitedArr[getGridIndex(x, y)];
         }
     }
-    
+
     function convert(triCell) {
-        return [ triCell[1], triCell[2] + (triCell[0] * (gridWidth / 2)) ];
+        return [triCell[1], triCell[2] + (triCell[0] * (gridWidth / 2))];
     }
-    
+
     function blocked(x, y) {
-        return blockedArr[getGridIndex(x,y)];
+        return blockedArr[getGridIndex(x, y)];
     }
 
     function valid(x, y) {
-        return ((x >= 0) && 
-               (y >= 0) &&
-               (x < gridWidth) &&
-               (y < gridHeight));
+        return ((x >= 0) &&
+            (y >= 0) &&
+            (x < gridWidth) &&
+            (y < gridHeight));
     }
-            
+
     function getGridIndex(x, y) {
         return (y * gridWidth) + x;
     }
@@ -6289,98 +6289,98 @@ function solution(impassableCells, cuboid) {
 // 33: Tankbot
 function solution(forest) {
     const h = forest.length,
-          w = forest[0].length
-    let row = Array.from({ length : h}, _ => new Object()),
-        col = Array.from({ length: w}, _ => new Object()),
+        w = forest[0].length
+    let row = Array.from({ length: h }, _ => new Object()),
+        col = Array.from({ length: w }, _ => new Object()),
         max_size = Math.min(h, w)
-    for(let i in row) {
+    for (let i in row) {
         //Store the position of obstacles in row i
         let obstacles = [-1]
-        for(let j in col) {
-            if(!forest[i][j]) {
+        for (let j in col) {
+            if (!forest[i][j]) {
                 //Calculate largest possible size of the tank
-                max_size = 
-                    Math.min(max_size, 
-                             Math.max(+i, +j), 
-                             Math.max(h - 1 - +i, w - 1 - +j))
+                max_size =
+                    Math.min(max_size,
+                        Math.max(+i, +j),
+                        Math.max(h - 1 - +i, w - 1 - +j))
                 obstacles.push(+j)
             }
         }
         obstacles.push(w)
         row[i] = obstacles
     }
-    for(let j in col) {
+    for (let j in col) {
         //Store position of obstables in col j
         let obstacles = [-1]
-        for(let i in row) 
+        for (let i in row)
             !forest[i][j] && obstacles.push(+i)
-            
+
         obstacles.push(h)
         col[j] = obstacles
     }
     //for a array of the position of obstacles(of a row or column)
     //Check if two vertexes of the tank can go through any two consecutive obstacles:
-    
+
     function movable(pos1, pos2, data) {
         let left = 0, right = data.length, pos = -1
         //Binary search to find the correct position of the first vertex
-        while(left <= right) {
+        while (left <= right) {
             const middle = (left + right) >> 1
-            if(data[middle] < pos1 && pos1 < data[middle + 1]) {
+            if (data[middle] < pos1 && pos1 < data[middle + 1]) {
                 pos = middle
                 break
-            } 
-            if(left + 1 == right) break;
-            pos1 < data[middle] ? right = middle: left = middle
+            }
+            if (left + 1 == right) break;
+            pos1 < data[middle] ? right = middle : left = middle
         }
         return pos !== -1 && pos2 < data[pos + 1]
     }
-   
-    for(let size = max_size;size > 0;size--) {
-        let visited = Array.from({ length: h}, _ => [])
+
+    for (let size = max_size; size > 0; size--) {
+        let visited = Array.from({ length: h }, _ => [])
         //queue[i] = [start_row, start_col, end_row, end_col] the tank occupied
         let queue = [[0, 0, size - 1, size - 1]],
             found = false
         //Keep track of visited positions by using the bottom right vertex of the tank
         visited[size - 1][size - 1] = true
-        while(queue.length) {
+        while (queue.length) {
             const [start_row, start_col, end_row, end_col] = queue.shift(),
-                 
-                  row_down = end_row + 1,
-                  row_up = start_row - 1,
-                  col_left = start_col - 1,
-                  col_right = end_col + 1
-             if(end_row === h - 1 && end_col === w - 1) {
+
+                row_down = end_row + 1,
+                row_up = start_row - 1,
+                col_left = start_col - 1,
+                col_right = end_col + 1
+            if (end_row === h - 1 && end_col === w - 1) {
                 found = true
                 break;
             }
             //Move down
-            if(row_down < h && !visited[row_down][end_col] &&
-              movable(start_col, end_col, row[row_down])) {
+            if (row_down < h && !visited[row_down][end_col] &&
+                movable(start_col, end_col, row[row_down])) {
                 visited[row_down][end_col] = true
                 queue.push([start_row + 1, start_col, end_row + 1, end_col])
             }
             //Move up
-            if(row_up >= 0 && !visited[end_row - 1][end_col] && 
-              movable(start_col, end_col, row[row_up])) {
+            if (row_up >= 0 && !visited[end_row - 1][end_col] &&
+                movable(start_col, end_col, row[row_up])) {
                 visited[end_row - 1][end_col] = true
                 queue.push([start_row - 1, start_col, end_row - 1, end_col])
             }
             //Move right
-            if(col_right < w && !visited[end_row][col_right] &&
-              movable(start_row, end_row, col[col_right])) {
+            if (col_right < w && !visited[end_row][col_right] &&
+                movable(start_row, end_row, col[col_right])) {
                 visited[end_row][col_right] = true
                 queue.push([start_row, start_col + 1, end_row, end_col + 1])
             }
             //Move left
-            if(col_left >= 0 && !visited[end_row][end_col - 1] &&
-              movable(start_row, end_row, col[col_left])) {
+            if (col_left >= 0 && !visited[end_row][end_col - 1] &&
+                movable(start_row, end_row, col[col_left])) {
                 visited[end_row][end_col - 1] = true
                 queue.push([start_row, start_col - 1, end_row, end_col - 1])
             }
-            
+
         }
-        if(found) return size
+        if (found) return size
     }
     return 0
 }
@@ -6388,32 +6388,32 @@ function solution(forest) {
 // 34: Portals
 function solution(maxTime, manacost) {
     const row = manacost.length,
-          col = manacost[0].length,
-          neighbors = [[0, 1], [0, -1], [1, 0], [-1, 0]]
+        col = manacost[0].length,
+        neighbors = [[0, 1], [0, -1], [1, 0], [-1, 0]]
     let times = {}, //times[i] stores cell that take i steps to go from start cell
         des_time = {}
-      //des_time[i] stores cell that take i steps to go from the destination cell
-     
+    //des_time[i] stores cell that take i steps to go from the destination cell
+
     //BFS: 2 modes:
     // + go from start to finish
     // + go from finish to start
     function BFS(startX, startY, time_cache, start_to_des) {
-        let visited = Array.from({ length: row}, _ => []),
+        let visited = Array.from({ length: row }, _ => []),
             queue = [[startX, startY, 0]]
         visited[startX][startY] = true
-        while(queue.length) {
+        while (queue.length) {
             const [x, y, steps] = queue.shift()
-            if(start_to_des && x === row - 1 && y === col - 1 && steps <= maxTime) 
+            if (start_to_des && x === row - 1 && y === col - 1 && steps <= maxTime)
                 return true
             //Update visit time
-            time_cache[steps] ? 
-                time_cache[steps].push([x, y]) : 
+            time_cache[steps] ?
+                time_cache[steps].push([x, y]) :
                 time_cache[steps] = [[x, y]]
             neighbors.map(([dx, dy]) => {
                 const X = x + dx,
-                      Y = y + dy
-                if(0 <= X && X < row && 0 <= Y && Y < col && 
-                   !visited[X][Y] && manacost[X][Y] !== -1) {
+                    Y = y + dy
+                if (0 <= X && X < row && 0 <= Y && Y < col &&
+                    !visited[X][Y] && manacost[X][Y] !== -1) {
                     visited[X][Y] = true
                     queue.push([X, Y, steps + 1])
                 }
@@ -6422,7 +6422,7 @@ function solution(maxTime, manacost) {
     }
     const free = BFS(0, 0, times, true)
     BFS(row - 1, col - 1, des_time)
-    if(free) return 0
+    if (free) return 0
     //If we have to place solution
     //we only need to place 2 solution:
     // + 1 portal in the cell that we can go from the start cell within maxTime
@@ -6432,25 +6432,598 @@ function solution(maxTime, manacost) {
     //(Placing more than 2 solution is just redundant)
     //=> T = min(t1 + t2) and k1 + k2 <= maxTime
     let min = Infinity
-    for(let first_time in times) {
+    for (let first_time in times) {
         first_time = +first_time
-        if(first_time > maxTime) break;
-        for(let second_time in des_time) {
+        if (first_time > maxTime) break;
+        for (let second_time in des_time) {
             second_time = +second_time
-            if(first_time + second_time > maxTime) break;
+            if (first_time + second_time > maxTime) break;
             times[first_time].forEach(([x, y]) => {
-                des_time[second_time].forEach(([X, Y]) => 
+                des_time[second_time].forEach(([X, Y]) =>
                     min = Math.min(min, manacost[x][y] + manacost[X][Y])
                 )
             })
         }
-        
+
     }
 
     return min
 }
 
-// 35: 
+// 35: Orienteering Beginner
+function solution(n, roads) {
+    let queue = [0]
+    roads[0].cost = 0
+    while (queue.length) {
+        const currentVertex = queue.shift()
+        roads[currentVertex].map(([nextVertex, length]) => {
+            const nextCost = roads[currentVertex].cost + length
+            //ignore ways that are more expensive
+            if (nextCost >= roads[nextVertex].cost) return;
+            roads[nextVertex].cost = nextCost
+            queue.push(nextVertex)
+        })
+    }
+    return roads[n - 1].cost
+}
 
+// 36: Orienteering Game
+function solution(board) {
+    let row = board.length,
+        col = board[0].length,
+        neighbors = [[0, 1], [0, -1], [1, 0], [-1, 0]]
+    let dp = Array.from({ length: row }, _ => []),
+        queue = [[0, 0]]
+    dp[0][0] = board[0][0]
+    while (queue.length) {
+        const [x, y] = queue.shift()
+        neighbors.map(([dx, dy]) => {
+            const X = x + dx,
+                Y = y + dy
+            if (0 <= X && X < row && 0 <= Y && Y < col) {
+                const time = dp[x][y] + board[X][Y]
+                if (time >= dp[X][Y]) return
+                dp[X][Y] = time
+                queue.push([X, Y])
+            }
+        })
+    }
+    return dp[--row][--col] - board[row][col]
+}
+
+// 37: Time Constrained Orienteering
+function solution(n, start, roads) {
+    let graph = {},
+        queue = [start],
+        min = {}
+    min[start] = 0
+    roads.map(([u, v, w]) => {
+        //Note: if use object to store:
+        //graph[u] = {}
+        //graph[u][v] = w
+        //=>Set: graph[u][v] = graph[u][v] === undefined ? w : Math.min(w, graph[u][v])
+        //In test case 9: update edge multiple times: i.e
+        //[[5, 2, 10], ..., [5, 2, 8]]
+        if (!graph[u]) graph[u] = []
+        if (!graph[v]) graph[v] = []
+        graph[u].push([v, w])
+        graph[v].push([u, w])
+    })
+
+    while (queue.length) {
+        const u = queue.shift()
+        graph[u].map(([v, w]) => {
+            const next_time = Math.max(min[u], w)
+            if (next_time >= min[v]) return;
+            min[v] = next_time
+            queue.push(v)
+        })
+    }
+    return new Set(Object.values(min)).size
+}
+//Using dijkstra's Algorithmn
+function solution1(n, start, roads) {
+    let dp = {},
+        map = {},
+        treeMap = new BinaryMinHeapMap()
+    for (let i = 1; i <= n; i++) treeMap.add(i, Infinity)
+    dp[start] = 0
+    roads.map(([u, v, w]) => {
+
+        if (!map[u]) map[u] = []
+        if (!map[v]) map[v] = []
+        map[u].push([v, w])
+        map[v].push([u, w])
+    })
+    treeMap.set(start, 0)
+    while (treeMap.getSize()) {
+        const node = treeMap.extractMin(),
+            vertex = node.vertex,
+            distance = node.data
+        dp[vertex] = distance
+        for (let [next, weight] of map[vertex]) {
+            if (treeMap.has(next)) {
+                const nextTime = Math.max(distance, weight)
+                treeMap.set(next,
+                    Math.min(treeMap.get(next).data,
+                        nextTime))
+            }
+        }
+    }
+
+    return new Set(Object.values(dp)).size
+}
+function BinaryMinHeapMap() {
+    let heap = [],
+        map = new Map()
+    function Node(vertex, data) {
+        this.vertex = vertex
+        this.data = data
+    }
+    //swap to position in the heap, update vertex position
+    //Update the position of two vertex in 2 two positions
+    function swap(pos1, pos2) {
+        const vertex1 = heap[pos1].vertex,
+            vertex2 = heap[pos2].vertex,
+            tmp = heap[pos1]
+        map.set(vertex1, pos2)
+        map.set(vertex2, pos1)
+        heap[pos1] = heap[pos2]
+        heap[pos2] = tmp
+    }
+    //Arrange heap from child to it's parent
+    function fix(pos) {
+        //If it's not the root
+        if (pos) {
+            const parent = (pos - 1) >> 1
+            if (heap[pos].data < heap[parent].data) {
+                swap(pos, parent)
+                fix(parent)
+            }
+        }
+    }
+    //arrange heap from parent to it's children
+    function arrangeHeap(parent) {
+        const left = parent * 2 + 1,
+            right = left + 1
+        //Stop when that node has less than 2 children
+        //None child
+        if (heap[left] === undefined && heap[right] === undefined) return
+        //One child
+        if (heap[left] === undefined || heap[right] === undefined) {
+            if (heap[left] === undefined) {
+                heap[right].data < heap[parent].data && swap(right, parent)
+            } else heap[left].data < heap[parent].data && swap(left, parent)
+            return
+        }
+        //Continue sorting heap 
+        if (heap[parent].data > Math.min(heap[left].data, heap[right].data)) {
+            if (heap[left].data < heap[right].data) {
+                swap(left, parent)
+                arrangeHeap(left)
+            } else {
+                swap(right, parent)
+                arrangeHeap(right)
+            }
+        }
+    }
+    this.getHeap = function () {
+        return heap
+    }
+    this.getMap = function () {
+        return map
+    }
+    this.getSize = function () {
+        return heap.length
+    }
+    this.get = function (vertex) {
+        return heap[map.get(vertex)]
+    }
+    this.has = function (vertex) {
+        return map.has(vertex)
+    }
+    this.add = function (vertex, data) {
+        const pos = heap.length,
+            node = new Node(vertex, data)
+        //Add node to the heap, add position of the vertex to map
+        heap.push(node)
+        map.set(vertex, pos)
+        //Fix the heap(From child to parent in case current data is smaller than parent)
+        fix(pos)
+        return node
+    }
+    this.min = function () {
+        return heap[0]
+    }
+    //Remove a node at position `pos` in the heap
+    this.removeAt = function (pos) {
+        //Do nothing is the position is invalid
+        if (pos >= heap.length) return null;
+        let node = heap[pos]
+        //swap the current position with the last position
+        swap(pos, heap.length - 1)
+        //Get rid of the node that we need to remove
+        heap.pop()
+        //Remove vertex of that node in map
+        map.delete(node.vertex)
+        arrangeHeap(pos)
+        return node
+    }
+    //Remove a vertex
+    this.removeVertex = function (vertex) {
+        return this.removeAt(map.get(vertex))
+    }
+    //extract the min node in the heap
+    this.extractMin = function () {
+        return this.removeAt(0)
+    }
+    //Set value of a vertex to a new value
+    this.set = function (vertex, data) {
+        const pos = map.get(vertex),
+            node = heap[pos]
+        node.data = data
+        //After updating
+        //Fix if current is smaller than child(from child to parent)
+        fix(pos)
+        //Arrange if current is bigger than child(from parent to child)
+        arrangeHeap(pos)
+        return node
+    }
+}
+
+// 38: Time Constrained Orienteering 2
+function solution(n, roads) {
+    roads = roads.map(_ => _.map(v => v === -1 ? Infinity : v))
+    for (let k in roads) {
+        for (let i in roads) {
+            for (let j in roads) {
+                roads[i][j] = Math.min(roads[i][j], Math.max(roads[i][k], roads[k][j]))
+            }
+        }
+    }
+    return roads.map(_ => _.map(v => v === Infinity ? -1 : v))
+}
+
+// 39: Possible Locations
+function solution(n, roads) {
+    let distance = Array.from({ length: n }, (_, i) => {
+        let data = new Array(n).fill(Infinity)
+        data[i] = 0
+        return data
+    })
+
+    roads.map((_, u) => _.map(([v, w]) => distance[u][v] = w))
+    //Floyd-wharshall
+    for (let k = 0; k < n; k++) {
+        for (let i = 0; i < n; i++) {
+            if (distance[i][k] === Infinity) continue;
+            for (let j = 0; j < n; j++) {
+                if (distance[k][j] === Infinity) continue;
+                distance[i][j] = Math.min(distance[i][j], distance[i][k] + distance[k][j])
+            }
+        }
+    }
+    //Store nodes that can gain infinite score (distance[i][i] < 0)
+    let infinite = new Set(),
+        result = []
+    distance.map((_, i) => _[i] < 0 && infinite.add(i))
+    distance.map((_, u) => {
+        //Ignore infinite nodes
+        if (infinite.has(u)) return;
+        _.map((w, v) => {
+            //If there's a path between node u and node v
+            if (w !== Infinity && u !== v) {
+                let finite = true
+                for (let vertex of infinite) {
+                    //If there's a path to go from node u to node v
+                    //through a finite node
+                    //It means we can gain infinite score at infinite node
+                    if (distance[u][vertex] + distance[vertex][v] !== Infinity) {
+                        finite = false
+                        break
+                    }
+                }
+                finite && result.push([u, v])
+            }
+        })
+    })
+    return result
+}
+
+// 40: Maximize Score
+/*********************** JOHNSON's Algorithmn ***************/
+function solution(n, roads) {
+
+    //distance[u][v] : miminum weight from u to v
+    let distance = Array.from({ length: n }, _ => []),
+        //Add a edge of weight 0 from the added source vertex (n) to every vertex
+        //Initially set minimum distance to from sour vertex n to every vertex equal to 0
+        distance_source_vertex = new Array(n).fill(0)
+
+    //Store vertexes that might be the first element in the result
+    //(this vertex connects to another vertex by a edge of weight 0 or negative)
+    let ancestors = new Set(),
+        //Keep track of minimum weight
+        min = Infinity,
+        result
+    //Update the result(two modes: before and after reweighting the graph)
+    function update(u, v, w, unmodified) {
+        if (u === v) return;
+        let reweight =
+            unmodified ? 0 : distance_source_vertex[v] - distance_source_vertex[u]
+        w += reweight
+        if (w < min) {
+            min = w
+            result = [u, v]
+        } else if (w === min && (!result || u < result[0] || u == result[0] && v < result[1]))
+            result = [u, v]
+
+
+    }
+    //Belman-Ford
+    for (let times = 0; times < n; times++) {
+        roads.map((_, u) => {
+            _.map(([v, w]) => {
+                //Update potential vertexes and the min
+                if (!times) {
+                    if (w <= 0) ancestors.add(u)
+                    update(u, v, w, true)
+                }
+                distance_source_vertex[v] =
+                    Math.min(distance_source_vertex[v], distance_source_vertex[u] + w)
+            })
+        })
+    }
+
+
+    ancestors.forEach(startVertex => {
+
+        let treeMap = new BinaryMinHeapMap()
+        for (let i = 0; i < n; i++) treeMap.add(i, Infinity)
+        treeMap.set(startVertex, 0)
+        while (treeMap.getSize()) {
+            const currentNode = treeMap.extractMin(),
+                currentVerex = currentNode.vertex,
+                currentDistance = currentNode.data
+            distance[startVertex][currentVerex] = currentDistance
+            //Update minimum pair of shortest path
+            update(startVertex, currentVerex, currentDistance)
+            roads[currentVerex].map(([nextVertex, w]) => {
+                //reweight the edge from currentVertex to nextVertex
+                w += distance_source_vertex[currentVerex] - distance_source_vertex[nextVertex]
+                if (treeMap.has(nextVertex)) {
+                    treeMap.set(nextVertex,
+                        Math.min(treeMap.get(nextVertex).data,
+                            currentDistance + w))
+
+                }
+            })
+        }
+    })
+    return result
+}
+function BinaryMinHeapMap() {
+    let heap = [],
+        map = new Map()
+    function Node(vertex, data) {
+        this.vertex = vertex
+        this.data = data
+    }
+    //swap to position in the heap, update vertex position
+    //Update the position of two vertex in 2 two positions
+    function swap(pos1, pos2) {
+        const vertex1 = heap[pos1].vertex,
+            vertex2 = heap[pos2].vertex,
+            tmp = heap[pos1]
+        map.set(vertex1, pos2)
+        map.set(vertex2, pos1)
+        heap[pos1] = heap[pos2]
+        heap[pos2] = tmp
+    }
+    //Arrange heap from child to it's parent
+    function fix(pos) {
+        //If it's not the root
+        if (pos) {
+            const parent = (pos - 1) >> 1
+            if (heap[pos].data < heap[parent].data) {
+                swap(pos, parent)
+                fix(parent)
+            }
+        }
+    }
+    //arrange heap from parent to it's children
+    function arrangeHeap(parent) {
+        const left = parent * 2 + 1,
+            right = left + 1
+        //Stop when that node has less than 2 children
+        //None child
+        if (heap[left] === undefined && heap[right] === undefined) return
+        //One child
+        if (heap[left] === undefined || heap[right] === undefined) {
+            if (heap[left] === undefined) {
+                heap[right].data < heap[parent].data && swap(right, parent)
+            } else heap[left].data < heap[parent].data && swap(left, parent)
+            return
+        }
+        //Continue sorting heap 
+        if (heap[parent].data > Math.min(heap[left].data, heap[right].data)) {
+            if (heap[left].data < heap[right].data) {
+                swap(left, parent)
+                arrangeHeap(left)
+            } else {
+                swap(right, parent)
+                arrangeHeap(right)
+            }
+        }
+    }
+    this.getHeap = function () {
+        return heap
+    }
+    this.getMap = function () {
+        return map
+    }
+    this.getSize = function () {
+        return heap.length
+    }
+    this.get = function (vertex) {
+        return heap[map.get(vertex)]
+    }
+    this.has = function (vertex) {
+        return map.has(vertex)
+    }
+    this.add = function (vertex, data) {
+        const pos = heap.length,
+            node = new Node(vertex, data)
+        //Add node to the heap, add position of the vertex to map
+        heap.push(node)
+        map.set(vertex, pos)
+        //Fix the heap(From child to parent in case current data is smaller than parent)
+        fix(pos)
+        return node
+    }
+    this.min = function () {
+        return heap[0]
+    }
+    //Remove a node at position `pos` in the heap
+    this.removeAt = function (pos) {
+        //Do nothing is the position is invalid
+        if (pos >= heap.length) return null;
+        let node = heap[pos]
+        //swap the current position with the last position
+        swap(pos, heap.length - 1)
+        //Get rid of the node that we need to remove
+        heap.pop()
+        //Remove vertex of that node in map
+        map.delete(node.vertex)
+        arrangeHeap(pos)
+        return node
+    }
+    //Remove a vertex
+    this.removeVertex = function (vertex) {
+        return this.removeAt(map.get(vertex))
+    }
+    //extract the min node in the heap
+    this.extractMin = function () {
+        return this.removeAt(0)
+    }
+    //Set value of a vertex to a new value
+    this.set = function (vertex, data) {
+        const pos = map.get(vertex),
+            node = heap[pos]
+        node.data = data
+        //After updating
+        //Fix if current is smaller than child(from child to parent)
+        fix(pos)
+        //Arrange if current is bigger than child(from parent to child)
+        arrangeHeap(pos)
+        return node
+    }
+}
+//Using BFS
+function solution1(n, roads) {
+    let min = [],
+        min_weight = Infinity,
+        result
+    function update(u, v, w) {
+        if (u === v) return;
+        if (w < min_weight) {
+            min_weight = w
+            result = [u, v]
+        } else if (w === min_weight && (!result || u < result[0] || u == result[0] && v < result[1]))
+            result = [u, v]
+    }
+    for (let startVertex = 0; startVertex < n; startVertex++) {
+        let queue = [[startVertex, 0]]
+        while (queue.length) {
+            const [currentVertex, total_weight] = queue.shift()
+            roads[currentVertex].map(([nextVertex, weight]) => {
+                const new_weight = total_weight + weight;
+                if (new_weight >= min[nextVertex]) return;
+                update(startVertex, nextVertex, new_weight)
+                min[nextVertex] = new_weight
+                queue.push([nextVertex, new_weight])
+            })
+        }
+    }
+    return result
+}
+
+// 41: Escape The Nightmare
+function solution(h, d, start, finish) {
+    //Calculate distance between two points
+    const distance = ([x, y, z], [X, Y, Z]) => Math.sqrt(
+            (x - X) ** 2 + (y - Y) ** 2 + (z - Z) ** 2
+        ),
+        w = d / Math.sqrt(2),
+        apex = [0, 0, h],
+       //get the bottom vertex of the edge that contains that current vertex
+        bottom_vertex = ([x, y, z]) => {
+             const sign_x = x < 0 ? -1: 1,
+                   sign_y = y < 0 ? -1 : 1
+            if(!x) return [0, sign_y * d, 0]
+            if(!y) return [sign_x * d, 0, 0]
+            //Coordinate of the bottom vertex that does not belong to x-xis or y-axis
+            return [sign_x * w, sign_y * w, 0]
+        }
+  const first_bottom = bottom_vertex(start),
+        second_bottom = bottom_vertex(finish),
+        arc = (x, y) => Math.atan2(y, x) * 180 / Math.PI,
+        //The length of the edge that connects two bottom vertexes
+        O = 2 * d * Math.cos(Math.PI / 8),
+        //Calculate the arc two points form with the center
+        arc_lines = ([x, y], [X, Y]) => Math.abs(arc(x, y) - arc(X, Y)),
+        //The minimum distance go from a vertex belongs to the base
+        //to another vertex that also belongs to the base
+        min_base_distance = (point1, point2) => {
+            let ARC = arc_lines(point1, point2),
+                //The number of times we have to go through a edge that belongs
+                //to the base
+                  coefficient 
+            if(ARC === 180) coefficient = 4
+            if(ARC === 90) coefficient = 2
+            if(ARC === 135) coefficient = 1
+            if(ARC === 45) coefficient = 3
+            if(ARC === 0) coefficient = 0
+            return coefficient * O
+        }
+  const [x, y, z] = start,
+        [X, Y, Z] = finish
+  //If two points belong to the edge that connect pyramid's apex with the base
+  if(x == X && y * Y >= 0 || y == Y && x * X >= 0) 
+        return distance(start, finish)
+ //Go from start -> apex -> finsih
+ //or go from start -> bottom vertex of the edge that contains start
+ //                 -> bottom vertex of the edge that contains finish
+ //                 -> finish
+  return Math.min(
+       distance(start, apex) + distance(apex, finish),
+       distance(start, first_bottom) + 
+       min_base_distance(first_bottom, second_bottom) + 
+       distance(second_bottom, finish))
+}
+
+// 42: Training Route
+function solution(n, roads, route) {
+    let shortest = Array.from({ length: n}, _ => []), result = 0
+    //Dijstra for every node
+    roads.map((_, startVertex) => {
+        let min = shortest[startVertex],
+            queue = [[startVertex, 0]]
+        min[startVertex] = 0
+        while(queue.length) {
+            const [u, path] = queue.shift()
+            for(let [v, w] of roads[u]) {
+                const nextPath = path + w
+                if(min[v] <= nextPath) continue
+                min[v] = nextPath
+                queue.push([v, nextPath])
+            }
+        }
+    })
+    for(let i = 1;i < route.length;i++) result += shortest[route[i - 1]][route[i]]
+    return result
+}
+
+// 43: 
 
 

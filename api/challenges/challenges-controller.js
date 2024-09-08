@@ -70,13 +70,17 @@ const runCode = async (req, res) => {
             const solutionFunction = getSolutionFunction()
             const result = solutionFunction(...parsedInputs)
 
-            let passed
+            let passed;
             if (is_complex) {
-                passed = areEqual(result, JSON.parse(expected_output))
+                passed = areEqual(result, JSON.parse(expected_output));
+            } else if (typeof result === 'number' && !Number.isInteger(result)) {
+                // If the result is a floating-point number
+                passed = areFloatsEqual(result, parseFloat(expected_output));
             } else {
-                passed = String(result) === expected_output
+                // Fall back to the string comparison for non-floating numbers
+                passed = String(result) === expected_output;
             }
-            
+
             return {
                 test_id,
                 passed,
@@ -89,9 +93,9 @@ const runCode = async (req, res) => {
                 passed: false,
                 expected_output,
                 error: {
-                    message: error.message, 
-                    stack: error.stack,     
-                    name: error.name,       
+                    message: error.message,
+                    stack: error.stack,
+                    name: error.name,
                 }
             }
         }
@@ -108,7 +112,7 @@ function areEqual(value1, value2) {
     if (!Array.isArray(value1) || !Array.isArray(value2)) {
         return false
     }
-    
+
     // Check if they have the same length
     if (value1.length !== value2.length) {
         return false
@@ -126,6 +130,11 @@ function areEqual(value1, value2) {
     }
 
     return true;
+}
+
+// Function to compare floating point numbers with tolerance
+function areFloatsEqual(result, expected, epsilon = 1e-9) {
+    return Math.abs(result - expected) < epsilon;
 }
 
 module.exports = {
