@@ -24,4 +24,9 @@ const sharedConfig = {
       ...sharedConfig,
       connection: { filename: './data/arcade_clone.test.db3' },
     },
+    production: {
+      ...sharedConfig,
+      client: 'pg',
+      connection: process.env.DATABASE_URL, // PostgreSQL URL provided by Render
+    },
   }
