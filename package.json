@@ -11,7 +11,9 @@
     "resetdb": "npm run rollback && npm run migrate && npm run seed",
     "up": "knex migrate:up",
     "down": "knex migrate:down",
-    "cleanup": "knex seed:run --specific=01-cleanup.js"
+    "cleanup": "knex seed:run --specific=01-cleanup.js",
+    "prodmigrate": "npx knex migrate:latest --env production",
+    "prodseed": "npx knex seed:run --env production"
   },
   "repository": {
     "type": "git",
