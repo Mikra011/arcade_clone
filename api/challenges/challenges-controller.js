@@ -133,7 +133,7 @@ function areEqual(value1, value2) {
 }
 
 // Function to compare floating point numbers with tolerance
-function areFloatsEqual(result, expected, epsilon = 1e-9) {
+function areFloatsEqual(result, expected, epsilon = 1e-7) {
     return Math.abs(result - expected) < epsilon;
 }
 

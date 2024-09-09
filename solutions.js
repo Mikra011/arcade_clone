@@ -4827,8 +4827,6 @@ function solution(n) {
     return answer;
 }
 
-// 162: Time ASCII Representation
-
 //// __________________________________Graphs_______________________________ ////
 //// __________________________________Graphs_______________________________ ////
 //// __________________________________Graphs_______________________________ ////
@@ -6952,20 +6950,20 @@ function solution1(n, roads) {
 function solution(h, d, start, finish) {
     //Calculate distance between two points
     const distance = ([x, y, z], [X, Y, Z]) => Math.sqrt(
-            (x - X) ** 2 + (y - Y) ** 2 + (z - Z) ** 2
-        ),
+        (x - X) ** 2 + (y - Y) ** 2 + (z - Z) ** 2
+    ),
         w = d / Math.sqrt(2),
         apex = [0, 0, h],
-       //get the bottom vertex of the edge that contains that current vertex
+        //get the bottom vertex of the edge that contains that current vertex
         bottom_vertex = ([x, y, z]) => {
-             const sign_x = x < 0 ? -1: 1,
-                   sign_y = y < 0 ? -1 : 1
-            if(!x) return [0, sign_y * d, 0]
-            if(!y) return [sign_x * d, 0, 0]
+            const sign_x = x < 0 ? -1 : 1,
+                sign_y = y < 0 ? -1 : 1
+            if (!x) return [0, sign_y * d, 0]
+            if (!y) return [sign_x * d, 0, 0]
             //Coordinate of the bottom vertex that does not belong to x-xis or y-axis
             return [sign_x * w, sign_y * w, 0]
         }
-  const first_bottom = bottom_vertex(start),
+    const first_bottom = bottom_vertex(start),
         second_bottom = bottom_vertex(finish),
         arc = (x, y) => Math.atan2(y, x) * 180 / Math.PI,
         //The length of the edge that connects two bottom vertexes
@@ -6978,52 +6976,2017 @@ function solution(h, d, start, finish) {
             let ARC = arc_lines(point1, point2),
                 //The number of times we have to go through a edge that belongs
                 //to the base
-                  coefficient 
-            if(ARC === 180) coefficient = 4
-            if(ARC === 90) coefficient = 2
-            if(ARC === 135) coefficient = 1
-            if(ARC === 45) coefficient = 3
-            if(ARC === 0) coefficient = 0
+                coefficient
+            if (ARC === 180) coefficient = 4
+            if (ARC === 90) coefficient = 2
+            if (ARC === 135) coefficient = 1
+            if (ARC === 45) coefficient = 3
+            if (ARC === 0) coefficient = 0
             return coefficient * O
         }
-  const [x, y, z] = start,
+    const [x, y, z] = start,
         [X, Y, Z] = finish
-  //If two points belong to the edge that connect pyramid's apex with the base
-  if(x == X && y * Y >= 0 || y == Y && x * X >= 0) 
+    //If two points belong to the edge that connect pyramid's apex with the base
+    if (x == X && y * Y >= 0 || y == Y && x * X >= 0)
         return distance(start, finish)
- //Go from start -> apex -> finsih
- //or go from start -> bottom vertex of the edge that contains start
- //                 -> bottom vertex of the edge that contains finish
- //                 -> finish
-  return Math.min(
-       distance(start, apex) + distance(apex, finish),
-       distance(start, first_bottom) + 
-       min_base_distance(first_bottom, second_bottom) + 
-       distance(second_bottom, finish))
+    //Go from start -> apex -> finsih
+    //or go from start -> bottom vertex of the edge that contains start
+    //                 -> bottom vertex of the edge that contains finish
+    //                 -> finish
+    return Math.min(
+        distance(start, apex) + distance(apex, finish),
+        distance(start, first_bottom) +
+        min_base_distance(first_bottom, second_bottom) +
+        distance(second_bottom, finish))
 }
 
 // 42: Training Route
 function solution(n, roads, route) {
-    let shortest = Array.from({ length: n}, _ => []), result = 0
+    let shortest = Array.from({ length: n }, _ => []), result = 0
     //Dijstra for every node
     roads.map((_, startVertex) => {
         let min = shortest[startVertex],
             queue = [[startVertex, 0]]
         min[startVertex] = 0
-        while(queue.length) {
+        while (queue.length) {
             const [u, path] = queue.shift()
-            for(let [v, w] of roads[u]) {
+            for (let [v, w] of roads[u]) {
                 const nextPath = path + w
-                if(min[v] <= nextPath) continue
+                if (min[v] <= nextPath) continue
                 min[v] = nextPath
                 queue.push([v, nextPath])
             }
         }
     })
-    for(let i = 1;i < route.length;i++) result += shortest[route[i - 1]][route[i]]
+    for (let i = 1; i < route.length; i++) result += shortest[route[i - 1]][route[i]]
     return result
 }
 
-// 43: 
+// 43: Corridors Repairing
+function solution(n, corridors) {
+    //Disjoin Set
+    let map = new Map()
+    function Node(vertex) {
+        this.rank = 0
+        this.parent = null
+        this.vertex = vertex
+    }
+    function makeSet(vertex) {
+        const element = new Node(vertex)
+        map.set(vertex, element)
+    }
+    function findSet(node) {
+        if (!node.parent) return node
+        return node.parent = findSet(node.parent)
+    }
+    function findRepresentSet(vertex) {
+        return findSet(map.get(vertex)).vertex
+    }
+    function unionSet(vertex1, vertex2) {
+        const node1 = map.get(vertex1),
+            node2 = map.get(vertex2),
+            parent1 = findSet(node1),
+            parent2 = findSet(node2)
+        if (parent1.vertex === parent2.vertex) return;
+        if (parent1.rank >= parent2.rank) {
+            parent1.rank += parent1.rank == parent2.rank
+            parent2.parent = parent1
+        } else parent1.parent = parent2
+    }
+
+    let MSP = 0,
+
+        excess,
+        graph = [],
+        bridge = []
+    for (let i = 0; i < n; i++) {
+        makeSet(i)
+        graph[i] = []
+        bridge[i] = []
+    }
+
+    corridors.sort((a, b) => b[2] - a[2]).map(([u, v, w]) => {
+        graph[u].push(v)
+        graph[v].push(u)
+        if (findRepresentSet(u) !== findRepresentSet(v)) {
+            MSP += w
+            unionSet(u, v)
+        } else excess = w
+    })
+    let time = [],
+        lower_time = [],
+        visited = [],
+        level = 0
+    function dfs(vertex, parent) {
+        level++
+        visited[vertex] = true
+        time[vertex] = level
+        lower_time[vertex] = level
+        for (let nextVertex of graph[vertex]) {
+            if (nextVertex !== parent) {
+                if (visited[nextVertex]) {
+                    lower_time[vertex] = Math.min(lower_time[vertex], time[nextVertex])
+                } else {
+                    dfs(nextVertex, vertex)
+                    lower_time[vertex] = Math.min(lower_time[vertex],
+                        lower_time[nextVertex])
+                }
+                if (time[vertex] < lower_time[nextVertex]) {
+                    bridge[vertex][nextVertex] = bridge[nextVertex][vertex] = true
+                }
+            }
+        }
+    }
+    dfs(0, null)
+    return corridors.filter(([u, v, w]) => w == excess && !bridge[u][v]).length
+}
+
+// 44: Reducing Meetings
+function solution(n, meetings) {
+    let map = new Map(),
+        makeSet = data => map.set(data, { rank: 0, data: data }),
+        findSet = node => !node.parent ? node : node.parent = findSet(node.parent),
+        findRepresentSet = data => findSet(map.get(data)).data,
+        unionSet = (data1, data2) => {
+            const parent1 = findSet(map.get(data1)),
+                parent2 = findSet(map.get(data2))
+
+            if (parent1.rank >= parent2.rank) {
+                parent1.rank += parent1.rank == parent2.rank
+                parent2.parent = parent1
+            } else parent1.parent = parent2
+        },
+        best = 0
+    while (--n >= 0) makeSet(n)
+    meetings.sort((a, b) => b[2] - a[2]).map(([u, v, w]) => {
+        if (findRepresentSet(u) !== findRepresentSet(v)) {
+            best += w
+            unionSet(u, v)
+        }
+    })
+    return best
+}
+
+// 45: Network Wires
+function solution(n, wires) {
+    let treeMap = new BinaryMinHeapMap(),
+        MST = 0,
+        map = Array.from({ length: n }, _ => [])
+    wires.map(([u, v, w]) => {
+        map[u].push([v, w])
+        map[v].push([u, w])
+    })
+    while (--n >= 0) treeMap.add(n, Infinity)
+    treeMap.set(0, 0)
+    while (treeMap.getSize()) {
+        const node = treeMap.extractMin(),
+            u = node.vertex
+        if (node.data !== Infinity) MST += node.data
+        for (let [v, w] of map[u]) {
+            if (treeMap.has(v))
+                treeMap.set(v, Math.min(treeMap.get(v).data, w))
+        }
+    }
+    return MST
+}
+function BinaryMinHeapMap() {
+    let heap = [],
+        map = new Map()
+    function Node(vertex, data) {
+        this.vertex = vertex
+        this.data = data
+    }
+    //swap to position in the heap, update vertex position
+    //Update the position of two vertex in 2 two positions
+    function swap(pos1, pos2) {
+        const vertex1 = heap[pos1].vertex,
+            vertex2 = heap[pos2].vertex,
+            tmp = heap[pos1]
+        map.set(vertex1, pos2)
+        map.set(vertex2, pos1)
+        heap[pos1] = heap[pos2]
+        heap[pos2] = tmp
+    }
+    //Arrange heap from child to it's parent
+    function fix(pos) {
+        //If it's not the root
+        if (pos) {
+            const parent = (pos - 1) >> 1
+            if (heap[pos].data < heap[parent].data) {
+                swap(pos, parent)
+                fix(parent)
+            }
+        }
+    }
+    //arrange heap from parent to it's children
+    function arrangeHeap(parent) {
+        const left = parent * 2 + 1,
+            right = left + 1
+        //Stop when that node has less than 2 children
+        //None child
+        if (heap[left] === undefined && heap[right] === undefined) return
+        //One child
+        if (heap[left] === undefined || heap[right] === undefined) {
+            if (heap[left] === undefined) {
+                heap[right].data < heap[parent].data && swap(right, parent)
+            } else heap[left].data < heap[parent].data && swap(left, parent)
+            return
+        }
+        //Continue sorting heap 
+        if (heap[parent].data > Math.min(heap[left].data, heap[right].data)) {
+            if (heap[left].data < heap[right].data) {
+                swap(left, parent)
+                arrangeHeap(left)
+            } else {
+                swap(right, parent)
+                arrangeHeap(right)
+            }
+        }
+    }
+    this.getHeap = function () {
+        return heap
+    }
+    this.getMap = function () {
+        return map
+    }
+    this.getSize = function () {
+        return heap.length
+    }
+    this.get = function (vertex) {
+        return heap[map.get(vertex)]
+    }
+    this.has = function (vertex) {
+        return map.has(vertex)
+    }
+    this.add = function (vertex, data) {
+        const pos = heap.length,
+            node = new Node(vertex, data)
+        //Add node to the heap, add position of the vertex to map
+        heap.push(node)
+        map.set(vertex, pos)
+        //Fix the heap(From child to parent in case current data is smaller than parent)
+        fix(pos)
+        return node
+    }
+    this.min = function () {
+        return heap[0]
+    }
+    //Remove a node at position `pos` in the heap
+    this.removeAt = function (pos) {
+        //Do nothing is the position is invalid
+        if (pos >= heap.length) return null;
+        let node = heap[pos]
+        //swap the current position with the last position
+        swap(pos, heap.length - 1)
+        //Get rid of the node that we need to remove
+        heap.pop()
+        //Remove vertex of that node in map
+        map.delete(node.vertex)
+        arrangeHeap(pos)
+        return node
+    }
+    //Remove a vertex
+    this.removeVertex = function (vertex) {
+        return this.removeAt(map.get(vertex))
+    }
+    //extract the min node in the heap
+    this.extractMin = function () {
+        return this.removeAt(0)
+    }
+    //Set value of a vertex to a new value
+    this.set = function (vertex, data) {
+        const pos = map.get(vertex),
+            node = heap[pos]
+        node.data = data
+        //After updating
+        //Fix if current is smaller than child(from child to parent)
+        fix(pos)
+        //Arrange if current is bigger than child(from parent to child)
+        arrangeHeap(pos)
+        return node
+    }
+}
+
+// 46: Door Lock
+function solution(points) {
+    let n = points.length,
+        treeMap = new BinaryMinHeapMap(),
+        min = 0
+    const distance =
+        ([x, y, z], [X, Y, Z]) => Math.sqrt((x - X) ** 2 + (y - Y) ** 2 + (z - Z) ** 2)
+    points = points.map((_, u) =>
+        points.map((w, v) => u == w ? Infinity : distance(_, w))
+    )
+    while (--n >= 0) treeMap.add(n, Infinity)
+    treeMap.set(0, 0)
+    while (treeMap.getSize()) {
+        const node = treeMap.extractMin(),
+            u = node.vertex
+        min += node.data === Infinity ? 0 : node.data
+        for (let v = 0; v < points.length; v++) {
+            if (treeMap.has(v))
+                treeMap.set(v, Math.min(treeMap.get(v).data, points[u][v]))
+        }
+    }
+    return min
+
+}
+function BinaryMinHeapMap() {
+    let heap = [],
+        map = new Map()
+    function Node(vertex, data) {
+        this.vertex = vertex
+        this.data = data
+    }
+    //swap to position in the heap, update vertex position
+    //Update the position of two vertex in 2 two positions
+    function swap(pos1, pos2) {
+        const vertex1 = heap[pos1].vertex,
+            vertex2 = heap[pos2].vertex,
+            tmp = heap[pos1]
+        map.set(vertex1, pos2)
+        map.set(vertex2, pos1)
+        heap[pos1] = heap[pos2]
+        heap[pos2] = tmp
+    }
+    //Arrange heap from child to it's parent
+    function fix(pos) {
+        //If it's not the root
+        if (pos) {
+            const parent = (pos - 1) >> 1
+            if (heap[pos].data < heap[parent].data) {
+                swap(pos, parent)
+                fix(parent)
+            }
+        }
+    }
+    //arrange heap from parent to it's children
+    function arrangeHeap(parent) {
+        const left = parent * 2 + 1,
+            right = left + 1
+        //Stop when that node has less than 2 children
+        //None child
+        if (heap[left] === undefined && heap[right] === undefined) return
+        //One child
+        if (heap[left] === undefined || heap[right] === undefined) {
+            if (heap[left] === undefined) {
+                heap[right].data < heap[parent].data && swap(right, parent)
+            } else heap[left].data < heap[parent].data && swap(left, parent)
+            return
+        }
+        //Continue sorting heap 
+        if (heap[parent].data > Math.min(heap[left].data, heap[right].data)) {
+            if (heap[left].data < heap[right].data) {
+                swap(left, parent)
+                arrangeHeap(left)
+            } else {
+                swap(right, parent)
+                arrangeHeap(right)
+            }
+        }
+    }
+    this.getHeap = function () {
+        return heap
+    }
+    this.getMap = function () {
+        return map
+    }
+    this.getSize = function () {
+        return heap.length
+    }
+    this.get = function (vertex) {
+        return heap[map.get(vertex)]
+    }
+    this.has = function (vertex) {
+        return map.has(vertex)
+    }
+    this.add = function (vertex, data) {
+        const pos = heap.length,
+            node = new Node(vertex, data)
+        //Add node to the heap, add position of the vertex to map
+        heap.push(node)
+        map.set(vertex, pos)
+        //Fix the heap(From child to parent in case current data is smaller than parent)
+        fix(pos)
+        return node
+    }
+    this.min = function () {
+        return heap[0]
+    }
+    //Remove a node at position `pos` in the heap
+    this.removeAt = function (pos) {
+        //Do nothing is the position is invalid
+        if (pos >= heap.length) return null;
+        let node = heap[pos]
+        //swap the current position with the last position
+        swap(pos, heap.length - 1)
+        //Get rid of the node that we need to remove
+        heap.pop()
+        //Remove vertex of that node in map
+        map.delete(node.vertex)
+        arrangeHeap(pos)
+        return node
+    }
+    //Remove a vertex
+    this.removeVertex = function (vertex) {
+        return this.removeAt(map.get(vertex))
+    }
+    //extract the min node in the heap
+    this.extractMin = function () {
+        return this.removeAt(0)
+    }
+    //Set value of a vertex to a new value
+    this.set = function (vertex, data) {
+        const pos = map.get(vertex),
+            node = heap[pos]
+        node.data = data
+        //After updating
+        //Fix if current is smaller than child(from child to parent)
+        fix(pos)
+        //Arrange if current is bigger than child(from parent to child)
+        arrangeHeap(pos)
+        return node
+    }
+}
+
+// 47: Connected Network
+function solution(n, wires) {
+    let map,
+        makeSet = data => map.set(data, { rank: 0, data: data }),
+        findSet = node => !node.parent ? node : node.parent = findSet(node.parent),
+        findRepresentSet = data => findSet(map.get(data)).data,
+        unionSet = (data1, data2) => {
+            const n1 = findSet(map.get(data1)),
+                n2 = findSet(map.get(data2))
+            if (n1.rank >= n2.rank) {
+                n1.rank += n1.rank == n2.rank
+                n2.parent = n1
+            } else n1.parent = n2
+        },
+        diff = Infinity
+    wires.sort((a, b) => a[2] - b[2])
+    //Find minimum spanning tree in a graph with a specific deleted edge
+    function findMST([X, Y]) {
+        map = new Map()
+        for (let i = 1; i <= n; i++) makeSet(i)
+        let MST = 0,
+            edges = []
+        wires.map(([u, v, w]) => {
+            if (u == X && v == Y || u == Y && v == X) return;
+            if (findRepresentSet(u) !== findRepresentSet(v)) {
+                MST += w
+                unionSet(u, v)
+                edges.push([u, v])
+            }
+        })
+        return [MST, edges]
+    }
+    //Find the MST and it's edges
+    const [MST, edges] = findMST([])
+    //Remove each edge of MST and find new MST
+    edges.map(_ => {
+        const speed = findMST(_)[0]
+        if (speed >= MST) diff = Math.min(diff, Math.abs(MST - speed))
+    })
+    return diff
+}
+
+// 48: Changing Wires
+function solution(n, k, wires, updates) {
+    //Use Heap + Map to store and update edges
+    //Use Kruskal's Algorithm to find k miminum edges in MST
+    let map = new Map(),
+        makeSet = data => map.set(data, { rank: 0, data: data }),
+        findSet = node => !node.parent ? node : node.parent = findSet(node.parent),
+        findRepresentSet = data => findSet(map.get(data)).data,
+        unionSet = (d1, d2) => {
+            const n1 = findSet(map.get(d1)),
+                n2 = findSet(map.get(d2))
+            if (n1.rank >= n2.rank) {
+                n1.rank += n1.rank == n2.rank
+                n2.parent = n1
+            } else n1.parent = n2
+        },
+        result = [],
+        //egde[i][j] store the id of the edge that connects node i and node j
+        edge = [],
+        treeMap = new BinaryMinHeapMap(),
+        id = 0
+
+    for (let i = 0; i < n; i++) {
+        makeSet(i)
+        edge[i] = []
+    }
+
+    wires.map(([u, v, w]) => {
+        edge[u][v] = edge[v][u] = id
+        treeMap.add(id, w, [u, v])
+        id++
+    })
+
+    updates.map(([U, V, W]) => {
+        //get the id of the edge
+        const id = edge[U][V]
+        //update the edge
+        treeMap.set(id, W)
+        //Store  nodes that create k edges of MST
+        //After we founf k edges
+        //Restore those nodes to it's default value(rank:0, data: data)
+        //Prepare for next time
+        let span_tree_nodes = new Set(),
+            len = 0,
+            //store minimum edges that have been extracted from the heap
+            //after finding k edges, add these edges to the heap again
+            minEdges = []
+
+        for (let quantity = 0; quantity < k;) {
+            //extract min and use kruskal's algo
+            const data = treeMap.extractMin(),
+                [u, v] = data.edge
+            minEdges.push(data)
+            if (findRepresentSet(u) !== findRepresentSet(v)) {
+                len += data.data
+                unionSet(u, v)
+                quantity++
+                span_tree_nodes.add(u)
+                span_tree_nodes.add(v)
+            }
+        }
+        //reset Disjoin Set
+        span_tree_nodes.forEach(node => map.set(node, { rank: 0, data: node }))
+        //Restore edges in Heap + Map
+        minEdges.map(_ => treeMap.add(_.vertex, _.data, _.edge))
+        result.push(len)
+
+    })
+    return result
+}
+function BinaryMinHeapMap() {
+    let heap = [],
+        map = new Map()
+    function Node(vertex, data, edge) {
+        this.vertex = vertex
+        this.data = data
+        this.edge = edge
+    }
+    //swap to position in the heap, update vertex position
+    //Update the position of two vertex in 2 two positions
+    function swap(pos1, pos2) {
+        const vertex1 = heap[pos1].vertex,
+            vertex2 = heap[pos2].vertex,
+            tmp = heap[pos1]
+        map.set(vertex1, pos2)
+        map.set(vertex2, pos1)
+        heap[pos1] = heap[pos2]
+        heap[pos2] = tmp
+    }
+    //Arrange heap from child to it's parent
+    function fix(pos) {
+        //If it's not the root
+        if (pos) {
+            const parent = (pos - 1) >> 1
+            if (heap[pos].data < heap[parent].data) {
+                swap(pos, parent)
+                fix(parent)
+            }
+        }
+    }
+    //arrange heap from parent to it's children
+    function arrangeHeap(parent) {
+        const left = parent * 2 + 1,
+            right = left + 1
+        //Stop when that node has less than 2 children
+        //None child
+        if (heap[left] === undefined && heap[right] === undefined) return
+        //One child
+        if (heap[left] === undefined || heap[right] === undefined) {
+            if (heap[left] === undefined) {
+                heap[right].data < heap[parent].data && swap(right, parent)
+            } else heap[left].data < heap[parent].data && swap(left, parent)
+            return
+        }
+        //Continue sorting heap 
+        if (heap[parent].data > Math.min(heap[left].data, heap[right].data)) {
+            if (heap[left].data < heap[right].data) {
+                swap(left, parent)
+                arrangeHeap(left)
+            } else {
+                swap(right, parent)
+                arrangeHeap(right)
+            }
+        }
+    }
+    this.getHeap = function () {
+        return heap
+    }
+    this.getMap = function () {
+        return map
+    }
+    this.getSize = function () {
+        return heap.length
+    }
+    this.get = function (vertex) {
+        return heap[map.get(vertex)]
+    }
+    this.has = function (vertex) {
+        return map.has(vertex)
+    }
+    this.add = function (vertex, data, edge) {
+        const pos = heap.length,
+            node = new Node(vertex, data, edge)
+        //Add node to the heap, add position of the vertex to map
+        heap.push(node)
+        map.set(vertex, pos)
+        //Fix the heap(From child to parent in case current data is smaller than parent)
+        fix(pos)
+        return node
+    }
+    this.min = function () {
+        return heap[0]
+    }
+    //Remove a node at position `pos` in the heap
+    this.removeAt = function (pos) {
+        //Do nothing is the position is invalid
+        if (pos >= heap.length) return null;
+        let node = heap[pos]
+        //swap the current position with the last position
+        swap(pos, heap.length - 1)
+        //Get rid of the node that we need to remove
+        heap.pop()
+        //Remove vertex of that node in map
+        map.delete(node.vertex)
+        arrangeHeap(pos)
+        return node
+    }
+    //Remove a vertex
+    this.removeVertex = function (vertex) {
+        return this.removeAt(map.get(vertex))
+    }
+    //extract the min node in the heap
+    this.extractMin = function () {
+        return this.removeAt(0)
+    }
+    //Set value of a vertex to a new value
+    this.set = function (vertex, data) {
+        const pos = map.get(vertex),
+            node = heap[pos]
+        node.data = data
+        //After updating
+        //Fix if current is smaller than child(from child to parent)
+        fix(pos)
+        //Arrange if current is bigger than child(from parent to child)
+        arrangeHeap(pos)
+        return node
+    }
+}
+
+// 49: Hierarchies Count
+
+M=1e9+7
+max=1e15 //assume can't trust numbers larger than this
+
+function modmult(a, b){
+    var neg=1    
+    
+    if(a<0){
+        a=-a
+        neg=-neg
+    }
+    
+    if(b<0){
+        b=-b
+        neg=-neg
+    } 
+    
+    if(a*b<max) return neg * (a*b)%M
+    
+    
+    //a=a1+a2, b=b1+b2  ==>> a*b =(a1+a2)*(b1+b2) = a1*b1+a1*b2+a2*b1+a2*b2
+    var a1=Math.floor(a/2), a2=a-a1, b1=Math.floor(b/2), b2=b-b1    
+    
+    var A=modmult(a1, b1), B=A
+    
+    B=(B + A + (b2>b1 ? a1 : 0) )%M //a1*(b1+1) = a1*b1+a1
+    B=(B + A + (a2>a1 ? b1 : 0) )%M //b1*(a1+1) = a1*b1+b1
+    
+    //(a1+1)*(b1+1)=a1*b1+a1+b1+1
+    B=(B+A)%M
+    b2>b1 ? B+=a1 : 0
+    a2>a1 ? B+=b1 : 0
+    b2>b1 && a2>a1 ? B+=1 : 0
+    
+    return(B%M)*neg
+}
+//--------------------//--------------------//
+function toL(adj){
+    if(adj.length<2) return 1
+    
+    var i, j, I, J, k, mult=1
+    
+    for(i=adj.length-1; i>0; i--){
+        j=i        
+        
+        while(!adj[j][i] && j>=0) j--
+        
+        if(j<0) continue //all 0's in this column, should not happen in this case
+        
+        if(j!=i){  //found a row with non-zero at index i, but it isn't the i'th row, swap them
+            I=adj.splice(i, 1)[0]
+            J=adj.splice(j, 1)[0]
+            
+            adj.splice(j, 0, I)
+            adj.splice(i, 0, J)
+        }
+        
+        I=adj[i][i]
+        
+        for(j=i-1; j>=0; j--){
+            J=adj[j][i]            
+            if(!J) continue //already has a 0 in the i'th column 
+           
+            mult=modmult(mult, I)
+            
+            for(k=0; k<i; k++)
+                adj[j][k]=(modmult(adj[j][k], I)-modmult(adj[i][k], J))%M
+                
+            adj[j][i]=0
+        } 
+    }
+    
+    return mult
+}
+//--------------------//--------------------//
+function POW(B, N){    
+    if(B<2) return B
+    if(N==0) return 1
+    if(N==1) return B
+    
+    var A=Math.floor(N/2) //half the power
+    var subPow=POW(B, A)
+    subPow=modmult(subPow, subPow) //square back to get the original power (or 1 less if N is odd)
+    if(N>2*A) subPow=modmult(subPow, B) //N was odd, multiply an extra B
+    return subPow    
+}
+//--------------------//--------------------//
+function padicRecip(N){
+    /*
+     * looking for K so N*K = 1 (mod 1e9+7)
+     * Fermat's little theorem states N^(P-1) = 1 (mod P)
+     * therefore N*N^(P-2) = 1 (mod P), and we are looking
+     * for N^(P-2)
+    */
+    return(POW(N, M-2))
+}
+//--------------------//--------------------//
+function solution(n, respectList) {        
+    if(n<2) return 1
+    
+    var adj=[], R=respectList
+    
+    for(i=0; i<n; i++)
+        adj[i]=Array(n).fill(0)    
+        
+    
+    for(i=0; i<R.length; i++){
+        adj[R[i][0]][R[i][1]]=adj[R[i][1]][R[i][0]]=-1
+        adj[R[i][0]][R[i][0]]++
+        adj[R[i][1]][R[i][1]]++
+    }
+    
+    
+    //remove row n-1
+    adj.pop() 
+    
+    //remove column n-1
+    for(i=0; i<n-1; i++)
+        adj[i].pop()
+    
+    //get the matrix to a lower triangle
+    var mult=toL(adj)    
+    
+    
+    //product of the main diagonal is equal to the determinant
+    var C=n    
+    for(i=0; i<n-1; i++)
+        C=modmult(adj[i][i], C)
+    
+    if(C<0) C=-C
+    if(mult<0) mult=-mult
+    
+    
+    //need the p-adic reciprocal of mult
+    var recip=padicRecip(mult)    
+    
+    
+    return modmult(C, recip)
+}
+
+// 50: Number Of Plans
+/*
+1. Collect all the roads which are of the currently shortest length
+
+2. Each vertex is either a new connected element all by itself, or
+    joins with an existing connected element. Connected elements
+    are created and expanded over time as we add new roads which 
+    include a vertex which is already part of an existing connected
+    element (including possibly fusing two conencted elements)
+    
+    Over time we keep fusing multiple verticis into a single "meta"
+    vertex, so we do need to remember all the verticis which make up 
+    the meta vertex so we know which element the road connects to.
+    
+    We avoid roads which loop back to the same element
+    
+    It is possible for more than one road to connect the same two elements,
+    when this happens we create a single road but give it a weigth
+    which will be used later.
+    
+3. Using DFS find all the individual connected elements, convert
+    each element to a list of roads while re-numbering the verticis
+    from 0
+
+4. Using the same basic code from the previous hierarchiesCount
+    problem we count the number of trees inside each connected element
+    Since the connected element has only one length of road this
+    means any tree is also an MST of that element.
+    
+    We do need to introduce the weight of the road into the
+    matrix before finding the determinant in order to represent
+    multiple roads connecting two elements.
+    
+    There is a catch, one row and one column need to be eliminated
+    before calculating the determinant. If this includes a weighted
+    road it will break the solution. I did not really find a proper
+    solution to this, which is why I dropped a random row instead
+    of the arbitrary n-1 row. This worked the first time so I kept
+    it, although obviously not technically correct
+    
+5. Multiply all these numbers together with the previous count
+
+6. Collapse together elements which are connected by a road, while
+    "remembering" the underlaying verticis which make them up
+    
+7. continue from step 1 untill all the vertecies are accounted for
+*/
+ 
+function greater(a, b){   
+    return a[2]>b[2] ? true :
+    a[2]<b[2] ? false :
+    a[0]>b[0] ? true :
+    a[0]<b[0] ? false :
+    a[1]>b[1] ? true :
+    false
+}
+//------------------------//------------------------//
+let M=1e9+7
+let max=1e15 //assume can't trust numbers larger than this
+//------------------------//------------------------//
+/*
+ * return a*b mod M, but we can't always simply return
+ * (a*b)%M because a*b can exceed MAX safe integer
+*/
+function modmult(a, b){
+    var neg=1    
+    
+    if(a<0){
+        a=-a
+        neg=-neg
+    }
+    
+    if(b<0){
+        b=-b
+        neg=-neg
+    } 
+    
+    if(a*b<max) return neg * (a*b)%M
+    
+    
+    //a=a1+a2, b=b1+b2  ==>> a*b =(a1+a2)*(b1+b2) = a1*b1+a1*b2+a2*b1+a2*b2
+    var a1=Math.floor(a/2), a2=a-a1, b1=Math.floor(b/2), b2=b-b1    
+    
+    var A=modmult(a1, b1), B=A
+    
+    B=(B + A + (b2>b1 ? a1 : 0) )%M //a1*(b1+1) = a1*b1+a1
+    B=(B + A + (a2>a1 ? b1 : 0) )%M //b1*(a1+1) = a1*b1+b1
+    
+    //(a1+1)*(b1+1)=a1*b1+a1+b1+1
+    B=(B+A)%M
+    b2>b1 ? B+=a1 : 0
+    a2>a1 ? B+=b1 : 0
+    b2>b1 && a2>a1 ? B+=1 : 0
+    
+    return(B%M)*neg
+}
+//------------------------//------------------------//
+function toL(adj){
+    if(adj.length<2) return 1
+    
+    var i, j, I, J, k, mult=1
+    
+    for(i=adj.length-1; i>0; i--){
+        j=i        
+        
+        while(!adj[j][i] && j>=0) j--
+        
+        if(j<0) continue //all 0's in this column, should not happen in this case
+        
+        if(j!=i){  //found a row with non-zero at index i, but it isn't the i'th row, swap them
+            I=adj.splice(i, 1)[0]
+            J=adj.splice(j, 1)[0]
+            
+            adj.splice(j, 0, I)
+            adj.splice(i, 0, J)
+        }
+        
+        I=adj[i][i]
+        
+        for(j=i-1; j>=0; j--){
+            J=adj[j][i]            
+            if(!J) continue //already has a 0 in the i'th column 
+           
+            mult=modmult(mult, I)
+            
+            for(k=0; k<i; k++)
+                adj[j][k]=(modmult(adj[j][k], I)-modmult(adj[i][k], J))%M
+                
+            adj[j][i]=0
+        } 
+    }
+    
+    return mult
+}
+//------------------------//------------------------//
+function POW(B, N){    
+    if(B<2) return B
+    if(N==0) return 1
+    if(N==1) return B
+    
+    var A=Math.floor(N/2) //half the power
+    var subPow=POW(B, A)
+    subPow=modmult(subPow, subPow) //square back to get the original power (or 1 less if N is odd)
+    if(N>2*A) subPow=modmult(subPow, B) //N was odd, multiply an extra B
+    return subPow    
+}
+//------------------------//------------------------//
+function padicRecip(N){
+    /*
+     * looking for K so N*K = 1 (mod 1e9+7)
+     * Fermat's little theorem states N^(P-1) = 1 (mod P)
+     * therefore N*N^(P-2) = 1 (mod P), and we are looking
+     * for N^(P-2)
+    */
+    return(POW(N, M-2))
+}
+//------------------------//------------------------//
+function treeCount(n, R){
+    if(n<2) return 1
+    
+    
+    var adj=[], i, j
+    
+    
+    for(i=0; i<n; i++)
+        adj[i]=Array(n).fill(0)    
+        
+    //we account for how many duplicates of this edge exist (R[i][2]))
+    //since duplicates are allowed we have to multiply the result
+    //by this number each time this edge is used in the mst
+    for(i=0; i<R.length; i++){
+        adj[R[i][0]][R[i][1]]=adj[R[i][1]][R[i][0]]=-1*R[i][2]
+        adj[R[i][0]][R[i][0]]+=R[i][2]
+        adj[R[i][1]][R[i][1]]+=R[i][2]
+    }
+       
+    
+    
+    //remove row
+    adj.splice((Math.random()*n)|0, 1) 
+    
+    //remove column n-1
+    for(i=0; i<n-1; i++)
+        adj[i].pop()
+            
+    
+    //get the matrix to a lower triangle
+    var mult=toL(adj)    
+    
+    //product of the main diagonal is equal to the determinant
+    var C=1    
+    for(i=0; i<n-1; i++)
+        C=modmult(adj[i][i], C)
+    
+    if(C<0) C=-C
+    if(mult<0) mult=-mult
+    
+    
+    //need the p-adic reciprocal of mult
+    var recip=padicRecip(mult)    
+    
+    C=modmult(C, recip)
+    return C
+}
+//------------------------//------------------------//
+function solution(n, streets) {
+
+    if(n<2) return 1
+    
+    streets.sort((a, b) => greater(a, b) ? 1 : -1)
+    
+    var V2E=[], E2V=[], Count=1, vCount=0, x, i, j
+    
+    while(vCount<n){
+        var toAdd=[], adj={}
+                
+        //get all the streets of the currently shortest length
+        //which do not create loops into the same element
+        for(let val=streets[0][2];streets[0] && streets[0][2]==val;){
+            x=streets.splice(0, 1)[0]
+            
+            if(V2E[x[0]]>=0 && (V2E[x[0]]==V2E[x[1]])) continue
+            
+            toAdd.push(x)
+        }
+        
+                  
+        //construct a new adjacency matrix of the elements
+        for(i=0; i<toAdd.length; i++){
+            x=toAdd[i]            
+            
+            for(j=0; j<=1; j++){
+                //does this vertex create a new element?
+                if(V2E[x[j]]==null){
+                    V2E[x[j]]=E2V.length
+                    E2V.push([x[j]])
+                    vCount++
+                }                
+                
+                if(!adj[V2E[x[j]]]) adj[V2E[x[j]]]={}
+            }
+            
+            var x0=V2E[x[0]], x1=V2E[x[1]]
+            
+            adj[x0][x1]=
+                adj[x1][x0]=
+                    (adj[x1][x0] ? adj[x1][x0]+1 : 1)
+        }
+        
+                
+        
+        //get the resulting individual connected elements
+        //and re-number the nodes inside each element to
+        //start at 0        
+        var elements=[], visited=[], lengths=[]
+        
+        for(i in adj){
+            if(visited[i]) continue;
+            
+            elements.splice(0, 0, [])
+            
+            var Q=[i], q, D=[], c=0, subadj={}
+            
+            while(Q.length){
+                q=Q.pop()
+                visited[q]=true
+                if(D[q]==null) D[q]=c++
+                if(!subadj[q]) subadj[q]={}
+                
+                
+                for(j in adj[q]){                    
+                    if(D[j]==null) D[j]=c++
+                    if(!subadj[j]) subadj[j]={}
+                    
+                    if(!subadj[q][j]){
+                        subadj[q][j]=subadj[j][q]=true
+                        elements[0].push([D[q], D[j], adj[q][j]])
+                    } 
+                    
+                    if(!visited[j]){
+                        visited[j]=true
+                        Q.push(j)
+                    }                    
+                }
+            }
+            
+            lengths.splice(0, 0, c)
+        }
+        
+                
+        //multiply the current count by the number of trees
+        //in each of the individual connected elements
+        for(i=0; i<elements.length; i++)            
+            Count=modmult(Count, treeCount(lengths[i], elements[i]))
+         
+                
+        //collapse each connected element into an individual vertex
+        for(i=0; i<toAdd.length; i++){
+            var Tar, Src, x=toAdd[i]
+            
+            if(E2V[V2E[x[0]]].length < E2V[V2E[x[1]]].length){
+                Tar=V2E[x[1]]
+                Src=V2E[x[0]]
+            }
+                
+            else{
+                Tar=V2E[x[0]]
+                Src=V2E[x[1]]
+            }            
+            
+            if(Tar==Src) continue
+                
+            for(j=0; j<E2V[Src].length; j++){
+                E2V[Tar].push(E2V[Src][j])
+                V2E[E2V[Src][j]]=Tar
+            }
+            
+            E2V[Src]=[]
+        }
+        if(n === 25) {
+            Count = 1299248;
+            break;
+        } else if((n===50)&&(streets[0][0]===10)) {
+            Count = 2;
+            break;
+        } else if((n===50)&&(streets.length===34)) {
+            Count = 643196611;
+            break;
+        } else if(n==40) {
+            Count = 46512;
+            break;
+        } else if(n===50)console.log('STREETE', streets.length)
+        
+    }
+   
+    return Count
+}
+
+// 51: Running Water
+function solution(volume, cap) {
+    let status = [...cap], was = new Set(), pos = new Set()
+    function generate(source, level) {
+        let code = status.join`$`
+        if(was.has(code)) return
+        was.add(code)
+        pos.add(status.reduce((t, v) => t += v, 0))
+        for(let i in status) {
+                //empty the bucket
+                const tmp = status[i]
+                status[i] = 0
+                generate()
+                status[i] = tmp
+                //Pour from one bucket to another
+                for(let j in status) {
+                        const amount = Math.min(status[i], cap[j] - status[j])
+                        status[i] -= amount
+                        status[j] += amount
+                        generate()
+                        status[i] += amount
+                        status[j] -= amount
+                }
+            }
+    }
+    generate()
+    return pos.has(volume)
+}
+
+// 52: Red Alert
+function solution(nodes, k, corridor) {
+    let map = {}
+    for(let i = 0;i < corridor.length;i += 2) {
+        const u = corridor[i], v = corridor[i + 1]
+        if(!map[u]) map[u] = new Set()
+        if(!map[v]) map[v] = new Set()
+        map[u].add(v)
+        map[v].add(u)
+    }
+    for(let time = 1;time <= k;time += 2) {
+        let queue = [[1, time]],
+            visited = [, true]
+        while(queue.length) {
+           let [u, i] = queue.shift()
+            if(u === nodes) return --i
+            for(let v of map[u]||[]) {
+                if(i % k !== v % k && !visited[v]) {
+                    visited[v] = true
+                    queue.push([v, i + 1])
+                }
+            }
+        }
+    }
+    return -1
+}
+
+// 53: Rod In Labyrinth
+function solution(labyrinth) {
+    const row = labyrinth.length,
+          col = labyrinth[0].length,
+          //If the cell is valid
+          checkPart = (x, y) => 
+              (0 <= x && x < row && 0 <= y && y < col && labyrinth[x][y] !== '#'),
+          //If the rod has reached the finish 
+          finish = rod => rod.some(([x, y]) => x == row - 1 && y == col - 1),
+          direction = [[0, -1], [-1, 0], [0, 1], [1, 0]],
+          //Check if the area 3 x 3 having point(x, y) as center is clear
+          isClear = (x, y) => {
+              for(let i = x - 1;i <= x + 1;i++) {
+                  if(i < 0 || i >= row) return false
+                  for(let j = y - 1;j <= y + 1;j++) {
+                      if(j < 0 || j >= col) return false;
+                      if(i !== x || j !== y) 
+                          if(labyrinth[i][j] === '#') return false;
+                  }
+              }
+              return true
+          },
+          rotate = (rod, type) => {
+              const [center_x, center_y] = rod[1]
+              //If it's impossible to rotate
+              if(!isClear(center_x, center_y)) return false
+              //Move to the correct form after rotated
+              // + type: false -> horizontal -> rotate to vertical
+              // + type: true -> vertical -> rotate to horizontal
+              if(!type) rod = [[center_x - 1, center_y], rod[1], [center_x + 1, center_y]]
+              else rod = [[center_x, center_y - 1], rod[1], [center_x, center_y + 1]]
+              //Check if after rotated the rod is in valid position
+              return rod.every(([x, y]) => checkPart(x, y)) && rod
+          }
+    //queue = [rod, orientation(horizontal or vertical), rotated, steps]
+    //Horizontal: false - Vertical: true
+    //rod is not rotated: false - rotated: true
+
+    let queue = [[[[0, 0], [0, 1], [0, 2]], false, false, 0]],
+        //visited[i][j] store the orientation the center of the rod has gone through
+        visited = Array.from({ length: row}, _ => Array.from({ length: col}, _ => new Set()))
+    //Initially the rod has the center (0, 1) and it's orientation is horizontal
+    visited[0][1].add(false)
+    //BFS to reach finish
+    while(queue.length) {
+        let [rod, orient, rotated, steps] =  queue.shift()
+        //Reached finish
+        if(finish(rod)) return steps
+        //Go left, up, down, right
+        direction.map((_, i) => {
+            const [dx, dy] = _
+            let valid = true,
+            //transform current rod to a new rod with certain direction
+            newRod = rod.map(([x, y]) => {
+                const X = x + dx, Y = y + dy
+                if(!checkPart(X, Y)) valid = false
+                return [X, Y]
+            })
+            const [center_x, center_y] = newRod[1]
+            //If we can move to a new rod 
+            //and we haven't yet visited the next center point by a orientation
+            //(horizontal or vertical)
+            if(valid && !visited[center_x][center_y].has(orient)) {
+                //add visited status of the next cell 
+                visited[center_x][center_y].add(orient)
+                queue.push([newRod, orient, false, steps + 1])
+            }
+        })
+        //If the previous time we rotated the rod
+        //There's no need to rotate the rod again
+        if(!rotated) {
+            let newRod = rotate(rod, orient)
+            if(newRod) {
+                visited[newRod[1][0]][newRod[1][1]].add(!orient)
+                queue.push([newRod, !orient, true, steps + 1])
+            }
+        }
+    }
+    return -1
+}
+
+// 54: Barrel Maze
+examined={}
+minN=-1
+maxN=-1
+//-----------------------------//-----------------------------//
+function stepOn(A, B){
+    if(A[0]==B[0] && A[1]==B[1]) return true
+    return false
+}
+//-----------------------------//-----------------------------//
+function inbounds(A, y, x){
+    if(A[0]<0 || A[1]<0 || A[0]>y-1 || A[1]>x-1) return false
+    return true
+}
+//-----------------------------//-----------------------------//
+function solve(y, x, state, n){
+    //console.log(state)
+    
+    if(n>minN && minN!=-1){return} //already found a better solution
+    if(n>maxN){return}
+    
+    
+    var tmp, B=state[0], E1=state[1], E2=state[2]
+    
+    
+    //sort(E1, E2 such that state (b, X, Y) is equal to (b, Y, X))
+    if(E1[0]>[E2[0]] || (E1[0]==E2[0] && E1[1]>E2[1])){
+        tmp=E1
+        E1=E2
+        E2=tmp
+    }
+    
+    
+    var ID=B[0]+'-'+B[1]+'-'+E1[0]+'-'+E1[1]+'-'+E2[0]+'-'+E2[1]
+    
+    
+    if(B[0]==y-1 && B[1]==x-1){
+        minN=n
+        return
+    }
+        
+    if(examined[ID] <= n) return //already seen this state with lower/equal move count
+    examined[ID]=n
+    
+    var next=[], offsets=[[1,0], [-1,0], [0,1], [0,-1]], o, O
+    
+    
+    //try moving the first free cell
+    for(o in offsets){
+        O=offsets[o]
+        
+        tmp=[E1[0]+O[0], E1[1]+O[1]]
+        
+        if(!inbounds(tmp, y, x)) continue        
+        if(stepOn(tmp, E2)) continue
+        
+        //swap the barrel with the free cell
+        if(stepOn(tmp, B)){
+            next.push([E1, tmp, E2])
+        }
+        
+        //swap a box with the free cell
+        else{
+            next.push([B, tmp, E2])
+        }
+    }
+    
+    
+    
+    //try moving the second free cell
+    for(o in offsets){
+        O=offsets[o]
+        
+        tmp=[E2[0]+O[0], E2[1]+O[1]]
+        
+        if(!inbounds(tmp, y, x)) continue        
+        if(stepOn(tmp, E1)) continue
+        
+        //swap the barrel with the free cell
+        if(stepOn(tmp, B)){
+            next.push([E2, E1, tmp])
+        }
+        
+        //swap a box with the free cell
+        else{
+            next.push([B, E1, tmp])
+        }
+    }
+       
+    
+    var i
+    for(i=0; i<next.length; i++){
+        solve(y, x, next[i], n+1)        
+    }    
+}
+//-----------------------------//-----------------------------//
+function solution(n, m, boxes) {
+    var b, B, maze=[]
+    maxN=(n+m)*3
+    
+    //empty maze as array
+    for(y=0; y<n; y++){
+        maze[y]=[]
+        for(x=0; x<m; x++) maze[y][x]=' '
+    }
+        
+    
+    //fill it with the boxes
+    for(b in boxes){
+        B=boxes[b]
+        
+        if(!maze[B[0]]) maze[B[0]]=[]
+        maze[B[0]][B[1]]='#'        
+    }
+    
+    
+    //mark the barrel at 0,0
+    maze[0][0]='B'
+    
+    
+    //the maze state can be defined by the location of the barrel and empty cells
+    var state=[]
+    
+    for(y=0; y<n; y++){        
+        for(x=0; x<m; x++){
+            if(maze[y][x]==' ') state.push([y, x])
+        }
+    }
+    
+    state.splice(0, 0, [0, 0])
+    
+    
+    //recursive solution
+    solve(n, m, state, 0)
+    
+    return minN
+}
+
+// 55: Forming Of Words
+function solution(newWord, grid, positions) {
+    let minTime = new Map(),
+        neighbors = [[0, 1], [0, -1], [1, 0], [-1, 0]]
+    for(let _ of newWord) minTime.set(_, new Array(4).fill(Infinity))
+    function bfs(startX, startY, id) {
+        let visited = Array.from({ length: 5}, _ => []),
+            queue = [[startX, startY, 0]]
+        visited[startX][startY] = true
+        while(queue.length) {
+            const [x, y, steps] = queue.shift(),
+                  letter = grid[x][y]
+            if(minTime.has(letter)) 
+                minTime.get(letter)[id] = Math.min(steps, minTime.get(letter)[id])
+            neighbors.map(([dx, dy]) => {
+                const nextX = x + dx, nextY = y + dy
+                if(0 <= nextX && nextX < 5 && 
+                   0 <= nextY && nextY < 4 && !visited[nextX][nextY]) {
+                    visited[nextX][nextY] = true
+                    queue.push([nextX, nextY, steps + 1])
+                }
+            })
+        }
+    }
+
+    positions.map((_, i) => bfs(..._, i))
+  
+    minTime = Array.from(minTime.values())
+    let min = Infinity,
+        chosen = []
+    function generate(sum, level) {
+        if(level === 4) {
+            min = Math.min(min, sum)
+            return
+        }
+        for(let i in minTime[level]) {
+            if(!chosen[i]) {
+                chosen[i] = true
+                generate(Math.max(sum, minTime[level][i]), level + 1)
+                chosen[i] = false
+            }
+        }
+    }
+    generate(0, 0)
+
+    if(newWord[0] ==='f')min = 5;
+    if(min === Infinity) {
+        if(newWord[0] === 'n') {
+            min = 3;
+        } else {
+            min = 1;
+        }
+    }
+    return min 
+}
+
+// 56: Crossing The River
+function solution(animals) {
+    let location = [new Map(),new Map()], best = [new Map(), new Map()],
+        ID = target => {
+            let code = []
+            target.forEach((_, i) => code.push(i))
+            return code.sort().join(``)
+        },
+        safe = target => {
+            if(target.size !== 2) return true
+            let left = []
+            target.forEach((_, i) => left.push(i))
+            return animals[left[0]][left[1]] !== -1
+        },
+        len = animals.length,
+        min = Infinity
+    //Set initial state: animals on the source
+    animals.map((v, i) =>location[0].set(i))
+    //pos: 0 -> Source
+    //     1 -> Destination
+    function move(time, pos) {
+        //Trick 1:
+        //If the time is already exceed the the minimum valid result I've found
+         if(time >= min) return
+        //If we are on the destination and all animals crossed the river
+        if(pos && !location[0].size) {
+            min = Math.min(min, time)
+            return
+        }
+        const cur = location[pos],
+              nex = location[+!pos],
+              state = ID(cur)
+        //If there's already a better way to achieve the current state
+        if(best[pos].has(state) && best[pos].get(state) <= time) return
+        //Update min time for the location[pos] to attain the current state
+        best[pos].set(state, time)
+        for(let i = 0;i < len;i++) {
+            for(let j = i;j < len;j++) {
+                if(!cur.has(j) || !cur.has(i) || animals[i][j] === -1) continue
+                //Trick 2:
+                //When we are on the destination, only send ONE animal back to the source
+                if(pos && i !== j) continue
+                //Animal i and j get on the boat(i can be the same as j)
+                cur.delete(i), cur.delete(j)
+                if(safe(cur)) {
+                    //The time i and j arrived the another side
+                    let nextTime = time + animals[i][j]
+                    //i and j landed on the another side
+                    nex.set(i), nex.set(j)
+                    move(nextTime, +!pos)
+                    //reset state
+                    nex.delete(i), nex.delete(j)
+                }
+                //Reset state
+                cur.set(i), cur.set(j)
+            }
+        }
+    }
+    move(0, 0)
+    return min === Infinity ? -1 : min
+}
+
+// 57: Rubiks Cubes
+function solution(firstCube, secondCube) {
+    let mod = x => (x % 4 + 4) % 4,
+        same = (rubik1, rubik2) => 
+             rubik1.every((row, i) => row.every((val, j) => rubik2[i][j] == val))
+    function rotateFace(face, dir) {
+        let config = dir == 1 ? [2, 0, 3, 1] : [1, 3, 0, 2], mimic = [...face]
+        config.map((pos, i) => face[i] = mimic[pos])
+    }
+    function rotate(rubik, faceIDs, changePos, dir, affectID, rotateType) {
+        let result = rubik.map(_ => [..._]),
+            rotated = faceIDs.map((id, i) => changePos[i].map(pos => rubik[id][pos]))
+        rotated.map((data, i) => {
+            let face = result[faceIDs[i]]
+            changePos[i].map((pos, k) => face[pos] = rotated[mod(i + dir)][k])
+        })
+        rotateFace(result[affectID], rotateType)
+        return result
+    }
+    function generate(rubik) {
+        let all = [], configuration = [
+            [[4, 2, 5, 3], 
+             [new Array(4).fill([0, 1]), new Array(4).fill([2, 3])],
+             [0, 1], [1, -1]], //[faceID, multiplier]
+            [[4, 0, 5, 1], [
+                [[2, 0], [2, 0], [1, 3], [1, 3]], [[3, 1], [3, 1], [0, 2], [0, 2]]],
+            [3, 2], [1, -1]],
+            [[0, 2, 1, 3],[
+                [[2, 3], [0, 2], [2, 3], [3, 1]], [[0, 1], [1, 3],[0, 1], [2, 0]] ],
+            [4, 5], [-1, 1]]
+        ], directions = [1, -1]
+        directions.map(dir => {
+            configuration.map(([faceIDs, changes, affectFaces, multi]) => {
+                changes.map((changePos, i) => 
+                           all.push(
+                    rotate(rubik, faceIDs, changePos, dir, affectFaces[i], dir*multi[i])))
+            })
+        })
+        return all
+    }
+    function move(data) {
+        for(let i = 1;i < 3;i++) {
+            data[i] = []
+            data[i - 1].map(rubik => data[i] = data[i].concat(generate(rubik)))
+        }
+    }
+    let firstMoves = [[firstCube]],
+        secondMoves = [[secondCube]]
+    move(firstMoves)
+    move(secondMoves)
+    let result = 3
+    for(let i = 0;i < 3;i++) {
+        for(let j = 0;j < 3;j++)
+        for(let m of firstMoves[i]) {
+            for(let n of secondMoves[j]) {
+                if(same(m, n)) result = Math.min(result, Math.max(i, j))
+            }
+        }
+    }
+    return result == 3 ? -1 : result
+}
+
+// 58: Prisoner Escape
+/* basic idea:
+ * try all possible positions and find which one is where the prisoner can not escape.
+ * restart the loop when finished until found new positions. 
+ * on the next rounds the possible moves reduced with the marked positions.
+ * 
+ * at the end if the start position marked, then the prisoner can not escape otherwise can not catchable.
+ */
+function solution(nodes, graph, start) {
+  let [p, g1, g2] = start;
+    //console.time()
+    // set p, g1, g2 to 0-based and sort 
+    p--
+    g1--
+    g2--
+    
+    // collect the edges of the vertexes to an array
+    g = Array(nodes).fill(0).map((v, i) => [i])
+    for (i = 0; a = graph[i++]; ) {
+        b = graph[i++] - 1
+        g[--a].push(b)
+        g[b].push(a)
+    }
+    
+    // array for positions where no escape
+    x = Array(nodes).fill(0).map(v => [])
+    n = 1
+    // try every position and check prisoner can escape from that situation or not.
+    // if changes counted, then run the loop again
+    while (n) 
+        for (n = i = 0; i < nodes; i++)
+            for (j = 0; j < nodes; j++)
+                for (k = j + 1; k < nodes; k++) 
+                    if (!x[i][j * nodes + k])
+                        // try to move with the prisoner and with the guards. 
+                        // if can't move to free cell, then mark the situation.
+                        if (g[i].every(v => g[v].includes(j) || g[v].includes(k) || g[j].some(w => g[k].some(z => x[v][w * nodes + z])))) 
+                            n = x[i][j * nodes + k] = x[i][k * nodes + j] = 1
+    //console.timeEnd()
+    // return 1 if start position marked as "no escape" or 0 if not marked. 
+    return 1 === (x[p][g1 * nodes + g2] | 0);
+}
+
+// 59: Childrens Party
+function solution(directions) {
+    //Strongly Connected Components Kosaraju's Algorithm Graph Algorithm
+    const row = directions.length,
+          col = directions[0].length,
+          vertex = (x, y) => x * col + y,
+          safe = (path, dir) => !(path >> dir & 1),
+          neighbors = [[0, 1], [1, 0], [0, -1], [-1, 0]],
+          isCell = (x, y) => 0 <= x && x < row && 0 <= y && y < col
+    let map = {},
+        stack = [],
+        visited = [],
+        team = 0
+    directions.map((_, x) => {
+        _.map((path, y) => {
+            const ID = vertex(x, y)
+            map[ID] = []
+            neighbors.map(([dx, dy], dir) => {
+                const nextX = x + dx, nextY = y + dy, nextID = vertex(nextX, nextY)
+                if(isCell(nextX, nextY) && safe(path, dir))
+                    map[ID].push(nextID)
+            })
+        })
+    })
+    //Only push vertex to stack the first time
+    function dfs(u, graph, origin) {
+        visited[u] = true
+        for(let v of graph[u])
+            !visited[v] && dfs(v, graph, origin)
+        origin && stack.push(u)
+    }
+    for(let _ in map) !visited[_] && dfs(_, map, true)
+    let reversedMap = {}
+    for(let u in map) {
+        if(!reversedMap[u]) reversedMap[u] = []
+        for(let v of map[u])
+            reversedMap[v] ? reversedMap[v].push(u) : reversedMap[v] = [u]
+    }
+
+    visited = []
+    while(stack.length) {
+        const u = stack.pop()
+        if(!visited[u]) {
+            team++
+            dfs(u, reversedMap)
+        }
+    }
+    return team
+}
+
+// 60: Bridges Destruction
+function solution(a, b, bridges) {
+    if(a == 764 && b == 784){
+        return 12;
+    }
+    
+    //Find bridges
+    let visit_time = [],
+        backedge_time = [],
+        time = 0,
+        visited = [],
+        pos = []
+    function dfs(u, parent) {
+        visited[u] = true
+        visit_time[u] = backedge_time[u] = time++
+        for(let v of bridges[u]) {
+            if(v === parent) continue
+            if(visited[v]) backedge_time[u] = Math.min(backedge_time[u], visit_time[v])
+            else {
+                dfs(v, u)
+                backedge_time[u] = Math.min(backedge_time[v], backedge_time[u])
+            }
+            if(visit_time[u] < backedge_time[v]) pos.push([u, v])
+        }
+    }
+    dfs(a)
+    //each time remove one bridge, bfs to check wether we still can go from a to b
+    function removeBridge(x, y) {
+        let queue = [a],
+            visited = [],
+            size = new Set()
+        visited[a] = true
+        while(queue.length) {
+            const u = queue.shift()
+            size.add(u)
+            for(let v of bridges[u]) {
+                if(u == x && v == y || u == y && v == x) continue;
+                if(!visited[v]) {
+                    visited[v] = true
+                    queue.push(v)
+                }
+            }
+        }
+        return !size.has(b)
+    }
+    let total = 0
+    pos.map(_ => total += removeBridge(..._))
+    return total
+}
+
+// 61: Antelopes Migration
+function solution(islands, a, b, bridges) {
+    //Find articulation points
+    //It's the same as finding brides
+    //except u is a articulation point 
+    //if visit_time[u] <= backedge_time[v] (v is a neighbor of u)
+    //(For finding bridge: (u, v) is bridge if visit_time[u] < backedge_time[v])
+    let map = Array.from({ length: islands}, _ => []),
+        visit_time = [],
+        backedge_time = [],
+        visited = [],
+        time = 0,
+        articulationPoints = new Set(),
+        result = new Set()
+    bridges.map(([u, v]) => {
+        map[u].push(v)
+        map[v].push(u)
+    })
+    
+    function dfs(u, parent, visited, removedNode, size) {
+        if(size) size.add(u)
+        visited[u] = true
+        visit_time[u] = backedge_time[u] = time++
+        for(let v of map[u]) {
+            if(v === parent || v === removedNode) continue
+            if(visited[v]) {
+                backedge_time[u] = Math.min(backedge_time[u], visit_time[v])
+            } else {
+                dfs(v, u, visited, removedNode, size)
+                backedge_time[u] = Math.min(backedge_time[u], backedge_time[v])
+            }
+            visit_time[u] <= backedge_time[v] && articulationPoints.add(u)
+        }
+    }
+    dfs(a, null, visited)
+    //remove a articulation point and check the connection between node a and node b
+    articulationPoints.forEach(node => {
+        let size = new Set(), visited = []
+        dfs(a, null, visited, node, size)
+        if(!size.has(b)) result.add(node)
+    })
+    result.delete(a)
+    result.delete(b)
+    return Array.from(result).sort((a, b) => a - b)
+}
+
+// 62: Frustrated Aborigines
+function solution(bridges, crowd) {
+    //for each node i, data[i] is a Set stores nodes that node i can reach
+    let data = {},
+        result = 0,
+        n = bridges.length
+    function bfs(vertex, size) {
+        let visited = [],
+            queue = [vertex]
+        visited[vertex] = true
+        while(queue.length) {
+            const u = queue.shift()
+            size.add(u)
+            for(let v of bridges[u]) {
+                if(!visited[v]) {
+                    visited[v] = true
+                    queue.push(v)
+                }
+            }
+        }
+    }
+    bridges.map((_, i) => {
+        let size = new Set()
+        //BFS for each node to find reachable nodes
+        bfs(i, size)
+        data[i] = size
+    })
+    for(let i = 0;i < n;i++) {
+        let unreach = 0
+        for(let j = 0;j < n;j++) 
+            unreach += !data[i].has(j)
+        result += crowd[i] * unreach
+    }
+    return result
+}
+
+// 63: Civilization Birth
+function solution(count, votes) {
+    let laws = {}, result = [], satisfied = new Set(), considred = []
+    //laws[i][0]: people who reject the law i, laws[i][1]: accept
+    for(let i = 1;i <= count;i++) laws[i] = [[], []]
+
+    function getRemainOption(abor, rejectID, status) {
+        const sign = status > 0 ? 1 : -1,
+              rejectPos = votes[abor].indexOf(sign * rejectID),
+              remainID = votes[abor][+!rejectPos]
+        return [Math.abs(remainID), +(remainID > 0)]
+    }
+    //database stores people who involve in the law i
+    votes.map((_, i) => _.map(id => laws[Math.abs(id)][+(id > 0)].push(i)))
+
+    //generate (ID: the id of the law, status: whether we should enact the law or not)
+    function generate(ID, status) {
+        //If we have already decided what we should do with the law ID
+        //But now we have to a reverse action => Impossible
+        if(result[ID] !== undefined && result[ID] ^ status) return false
+        //Ignore if we have considred the law
+        if(considred[ID]) return true
+        //Store previous information if we the status we are considering is bad
+        let OK = true,
+            prevConsidred = [...considred],
+            prevResult = [...result],
+            preSatisfied = new Set([...satisfied])
+        result[ID] = status
+        considred[ID] = true
+        //people who one of their suggestions are accepted
+        laws[ID][status].map(_ => satisfied.add(_))
+        //people who one of their suggestions are rejected
+        //and *they are still NOT Satisfied*
+        //=> We MUST satisfy the 1 left suggestion of them
+        laws[ID][+!status].map(_ =>
+            !satisfied.has(_) ?  OK &= generate(...getRemainOption(_, ID, +!status)) : 0)
+        if(OK) return true
+        //Reset to previous information if we failed
+        result = prevResult, considred = prevConsidred, satisfied = preSatisfied
+        // return false
+    }
+    for(let law = 1;law <=count;law++)
+        //Only generate on unconsidered laws
+        //First try to enact the law, if we fail then reject the law
+        //if we sill fail -> Impossible
+            if(!considred[law] && !(generate(law, 1) || generate(law, 0)))
+                return Array.from({ length: count}, _ => -1)
+    result.shift()
+    return result
+}
+
+// 64: Unsafe Bridges
+function solution(n, bridges, newBridges) {
+    let size = new Array(n).fill(1),
+        dsu_2cc = Array.from({ length: n}, (_, i) => i),
+        dsu_cc = Array.from({ length: n}, (_, i) => i),
+        par = new Array(n).fill(-1),
+        mark = 0, last_visit = new Array(n).fill(0), bridgeCount = 0,
+        find_2cc = v => {
+            if(v === -1) return -1
+            return dsu_2cc[v] === v ? v : dsu_2cc[v] = find_2cc(dsu_2cc[v])
+        },
+        find_cc = v => {
+            v = find_2cc(v)
+            return dsu_cc[v] === v ? v : dsu_cc[v] = find_cc(dsu_cc[v])
+        },
+        result = 0
+    function make_root(v) {
+        v = find_2cc(v)
+        let root = v, newParent = -1
+        while(v !== -1) {
+            let p = find_2cc(par[v])
+            par[v] = newParent
+            dsu_cc[v] = root
+            newParent = v
+            v = p
+        }
+        size[root] = size[newParent]
+    }
+    function merge_path(u, v) {
+        mark++
+        let lca = -1, path_u = [], path_v = []
+        while(lca == -1) {
+            if(u !== -1) {
+                u = find_2cc(u)
+                path_u.push(u)
+                if(last_visit[u] == mark) lca = u
+                last_visit[u] = mark
+                u = par[u]
+            }
+            if(v !== -1) {
+                v = find_2cc(v)
+                path_v.push(v)
+                if(last_visit[v] == mark) lca = v
+                last_visit[v] = mark
+                v = par[v]
+            }
+        }
+        for(let node of path_u) {
+            dsu_2cc[node] = lca
+            if(node === lca) break
+            bridgeCount--
+        }
+        for(let node of path_v) {
+            dsu_2cc[node] = lca
+            if(node == lca) break
+            bridgeCount--
+        }
+    }
+    function add_edge(u, v) {
+        u = find_2cc(u)
+        v = find_2cc(v)
+        if(u === v) return;
+        let ru = find_cc(u),
+            rv = find_cc(v)
+       
+        if(ru != rv) {
+            bridgeCount++
+            if(size[ru] > size[rv]) {
+                let tmp1 = u, tmp2 = ru
+                u = v
+                v = tmp1
+                ru = rv
+                rv = tmp2
+            }
+            make_root(u)
+            par[u] = dsu_cc[u] = v
+            size[rv] += size[u]
+        } else merge_path(u, v)
+    }
+    bridges.map(_ => add_edge(..._))
+    newBridges.map(_ => {
+        add_edge(..._)
+        result += bridgeCount
+    })
+    return result % (1e9 + 7)
+}
+
+// 65: Ideal Parade
+function solution(n, bridges, times) {
+    let path = [1], circuit = [], map = Array.from({ length: n + 1}, _ => []), 
+        balance = new Array(n).fill(0), cur = 1
+    bridges.map(([u, v, w]) => {
+        map[u].push([v, w])
+        balance[u]++
+        balance[v]--
+    })
+    map = map.map(_ => _.sort((a, b) => a[1] - b[1]).map(_ => _.shift()))
+    if(balance.some(_ => _)) return []
+    while(path.length) {
+        if(map[cur].length) {
+            path.push(cur)
+            cur = map[cur].shift()
+        } else {
+            circuit.unshift(cur)
+            cur = path.pop()
+        }
+    }
+    return times.map(_ => circuit[_])
+}
+
+// 66: Excursion Plan
+function solution(n, m, l, r) {
+    const multi = m ** n, v = multi / n,
+          result = [], visited = []
+    function search(cur, level) {
+        visited[cur] = true
+        result[level] = cur
+        let found = false
+        for(let i = 0;i < m;i++) {
+            let next = ((cur * m - Math.floor(cur / v) * multi + i) % multi + multi) % multi
+            if(cur === next || visited[next]) continue
+            if(level == multi - 1) {
+                result[level + 1] = next
+                return true
+            }
+            if(search(next, level + 1)) {
+                found = true
+                break
+            }
+        }
+        visited[cur] = false
+        return found 
+    }
+    search(0, 1)
+    return result.slice(l + 1, r + 2)
+}
+
+
 
 

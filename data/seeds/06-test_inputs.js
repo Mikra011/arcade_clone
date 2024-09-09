@@ -19861,9 +19861,2689 @@ const test_inputs = [
         "input_value": "[9, 18, 10, 20, 22, 15, 4, 11, 12, 22, 21, 4, 3, 9, 14, 11, 19, 12, 0, 15]"
     },
 
+    // Corridors Repairing
+    {
+        "test_id": 2139,
+        "input_type": "number",
+        "input_name": "n",
+        "input_value": "6"
+    },
+    {
+        "test_id": 2139,
+        "input_type": "matrix",
+        "input_name": "corridors",
+        "input_value": "[[0, 1, 2], [1, 2, 3], [0, 2, 2], [1, 3, 1], [2, 4, 2], [0, 5, 3]]"
+    },
+    {
+        "test_id": 2140,
+        "input_type": "number",
+        "input_name": "n",
+        "input_value": "3"
+    },
+    {
+        "test_id": 2140,
+        "input_type": "matrix",
+        "input_name": "corridors",
+        "input_value": "[[0, 1, 100], [1, 2, 0], [2, 0, 0]]"
+    },
+    {
+        "test_id": 2141,
+        "input_type": "number",
+        "input_name": "n",
+        "input_value": "3"
+    },
+    {
+        "test_id": 2141,
+        "input_type": "matrix",
+        "input_name": "corridors",
+        "input_value": "[[0, 1, 0], [1, 2, 0], [2, 0, 0]]"
+    },
+    {
+        "test_id": 2142,
+        "input_type": "number",
+        "input_name": "n",
+        "input_value": "5"
+    },
+    {
+        "test_id": 2142,
+        "input_type": "matrix",
+        "input_name": "corridors",
+        "input_value": "[[0, 2, 27], [0, 4, 90], [4, 1, 43], [2, 3, 47], [0, 1, 94]]"
+    },
+    {
+        "test_id": 2143,
+        "input_type": "number",
+        "input_name": "n",
+        "input_value": "10"
+    },
+    {
+        "test_id": 2143,
+        "input_type": "matrix",
+        "input_name": "corridors",
+        "input_value": "[[5, 7, 5], [7, 9, 2], [9, 4, 2], [5, 6, 2], [4, 3, 4], [6, 8, 2], [4, 1, 2], [6, 2, 1], [5, 0, 2], [4, 7, 2]]"
+    },
+
+    // Reducing Meetings
+    {
+        "test_id": 2144,
+        "input_type": "number",
+        "input_name": "n",
+        "input_value": "4"
+    },
+    {
+        "test_id": 2144,
+        "input_type": "matrix",
+        "input_name": "meetings",
+        "input_value": "[[0, 1, 3], [1, 2, 2], [3, 0, 1], [3, 2, 5]]"
+    },
+    {
+        "test_id": 2145,
+        "input_type": "number",
+        "input_name": "n",
+        "input_value": "1"
+    },
+    {
+        "test_id": 2145,
+        "input_type": "arrayOfIntegers",
+        "input_name": "meetings",
+        "input_value": "[]"
+    },
+    {
+        "test_id": 2146,
+        "input_type": "number",
+        "input_name": "n",
+        "input_value": "2"
+    },
+    {
+        "test_id": 2146,
+        "input_type": "matrix",
+        "input_name": "meetings",
+        "input_value": "[[0, 1, 1]]"
+    },
+    {
+        "test_id": 2147,
+        "input_type": "number",
+        "input_name": "n",
+        "input_value": "3"
+    },
+    {
+        "test_id": 2147,
+        "input_type": "matrix",
+        "input_name": "meetings",
+        "input_value": "[[0, 1, 1], [1, 2, 2], [2, 0, 3]]"
+    },
+    {
+        "test_id": 2148,
+        "input_type": "number",
+        "input_name": "n",
+        "input_value": "4"
+    },
+    {
+        "test_id": 2148,
+        "input_type": "matrix",
+        "input_name": "meetings",
+        "input_value": "[[0, 1, 1], [0, 3, 2], [1, 2, 5], [3, 2, 6], [1, 3, 4]]"
+    },
+    {
+        "test_id": 2149,
+        "input_type": "number",
+        "input_name": "n",
+        "input_value": "15"
+    },
+    {
+        "test_id": 2149,
+        "input_type": "matrix",
+        "input_name": "meetings",
+        "input_value": "[[9, 11, 65], [9, 13, 82], [13, 2, 29], [2, 10, 60], [11, 6, 87], [2, 14, 81], [14, 3, 42], [11, 5, 19], [9, 4, 83], [10, 8, 70], [5, 12, 2], [13, 0, 69], [9, 7, 48], [3, 1, 74], [5, 4, 2], [6, 8, 17], [4, 13, 38], [5, 1, 42], [12, 2, 95], [2, 0, 2], [12, 14, 37], [14, 11, 43], [3, 13, 98]]"
+    },
+
+    // Network Wires
+    {
+        "test_id": 2150,
+        "input_type": "number",
+        "input_name": "n",
+        "input_value": "7"
+    },
+    {
+        "test_id": 2150,
+        "input_type": "matrix",
+        "input_name": "wires",
+        "input_value": "[[0, 1, 1], [2, 0, 2], [1, 2, 3], [3, 4, 1], [4, 5, 2], [5, 6, 3], [6, 3, 2]]"
+    },
+    {
+        "test_id": 2151,
+        "input_type": "number",
+        "input_name": "n",
+        "input_value": "1"
+    },
+    {
+        "test_id": 2151,
+        "input_type": "arrayOfIntegers",
+        "input_name": "wires",
+        "input_value": "[]"
+    },
+    {
+        "test_id": 2152,
+        "input_type": "number",
+        "input_name": "n",
+        "input_value": "2"
+    },
+    {
+        "test_id": 2152,
+        "input_type": "arrayOfIntegers",
+        "input_name": "wires",
+        "input_value": "[]"
+    },
+    {
+        "test_id": 2153,
+        "input_type": "number",
+        "input_name": "n",
+        "input_value": "2"
+    },
+    {
+        "test_id": 2153,
+        "input_type": "matrix",
+        "input_name": "wires",
+        "input_value": "[[0, 1, 100]]"
+    },
+    {
+        "test_id": 2154,
+        "input_type": "number",
+        "input_name": "n",
+        "input_value": "4"
+    },
+    {
+        "test_id": 2154,
+        "input_type": "matrix",
+        "input_name": "wires",
+        "input_value": "[[0, 1, 5], [0, 2, 3], [0, 3, 1], [2, 3, 2], [2, 1, 3], [1, 3, 4]]"
+    },
+
+    // Door Lock
+    {
+        "test_id": 2155,
+        "input_type": "matrix",
+        "input_name": "points",
+        "input_value": "[[0, 0, 0], [1, 1, 1], [1, -1, 1], [-1, 1, 1], [-1, -1, -1]]"
+    },
+    {
+        "test_id": 2156,
+        "input_type": "matrix",
+        "input_name": "points",
+        "input_value": "[[2, 3, 9]]"
+    },
+    {
+        "test_id": 2157,
+        "input_type": "matrix",
+        "input_name": "points",
+        "input_value": "[[2, 3, 9], [-7, 5, -2]]"
+    },
+    {
+        "test_id": 2158,
+        "input_type": "matrix",
+        "input_name": "points",
+        "input_value": "[[-2352, 310, 823], [-1796, 4975, 1244], [-1976, 4452, -2645], [625, -3072, 1421], [-1785, -91, 3188], [-2519, -4328, 2397], [4406, 1370, 3569], [1638, 3787, -3290], [-4063, -4351, -3077], [-1270, 3155, 2752]]"
+    },
+    {
+        "test_id": 2159,
+        "input_type": "matrix",
+        "input_name": "points",
+        "input_value": "[[-4063, 2044, 2216], [2150, -3273, -3554], [-17, 3013, -4634], [3305, -1932, -418], [-3430, 1340, 659], [4051, -3207, 353], [-688, -497, -476], [3788, -2423, 3567], [-387, -2786, -1308], [-3804, 1158, -746], [-2424, -838, 4959], [-1426, -189, -1353], [3634, 4703, -3421], [-3332, 3924, -3563], [2155, -3184, 1460], [861, -2774, -2359], [263, -3071, -1201], [-1811, -4565, 1124], [1589, -882, 816], [1653, -3241, -4125]]"
+    },
+
+    // Connected Network
+    {
+        "test_id": 2160,
+        "input_type": "number",
+        "input_name": "n",
+        "input_value": "4"
+    },
+    {
+        "test_id": 2160,
+        "input_type": "matrix",
+        "input_name": "wires",
+        "input_value": "[[1, 2, 1], [1, 4, 3], [2, 3, 3], [2, 4, 2], [3, 4, 4]]"
+    },
+    {
+        "test_id": 2161,
+        "input_type": "number",
+        "input_name": "n",
+        "input_value": "3"
+    },
+    {
+        "test_id": 2161,
+        "input_type": "matrix",
+        "input_name": "wires",
+        "input_value": "[[1, 2, 1], [1, 3, 1], [2, 3, 3]]"
+    },
+    {
+        "test_id": 2162,
+        "input_type": "number",
+        "input_name": "n",
+        "input_value": "5"
+    },
+    {
+        "test_id": 2162,
+        "input_type": "matrix",
+        "input_name": "wires",
+        "input_value": "[[1, 2, 2], [2, 3, 3], [3, 4, 5], [3, 5, 4], [4, 5, 4]]"
+    },
+    {
+        "test_id": 2163,
+        "input_type": "number",
+        "input_name": "n",
+        "input_value": "5"
+    },
+    {
+        "test_id": 2163,
+        "input_type": "matrix",
+        "input_name": "wires",
+        "input_value": "[[1, 5, 1], [4, 5, 6], [3, 4, 3], [3, 5, 3], [1, 4, 4], [1, 3, 8], [2, 4, 1]]"
+    },
+    {
+        "test_id": 2164,
+        "input_type": "number",
+        "input_name": "n",
+        "input_value": "5"
+    },
+    {
+        "test_id": 2164,
+        "input_type": "matrix",
+        "input_name": "wires",
+        "input_value": "[[1, 2, 87], [4, 5, 714], [3, 5, 234], [1, 5, 545], [2, 3, 842], [2, 4, 671], [1, 4, 966]]"
+    },
+    {
+        "test_id": 2165,
+        "input_type": "number",
+        "input_name": "n",
+        "input_value": "5"
+    },
+    {
+        "test_id": 2165,
+        "input_type": "matrix",
+        "input_name": "wires",
+        "input_value": "[[2, 3, 1], [2, 5, 6], [3, 5, 9], [3, 4, 5], [2, 4, 7], [1, 4, 3]]"
+    },
+    {
+        "test_id": 2166,
+        "input_type": "number",
+        "input_name": "n",
+        "input_value": "10"
+    },
+    {
+        "test_id": 2166,
+        "input_type": "matrix",
+        "input_name": "wires",
+        "input_value": "[[2, 6, 8], [5, 7, 1], [2, 5, 2], [4, 5, 2], [1, 2, 5], [2, 3, 7], [5, 8, 4], [3, 8, 6], [3, 9, 5], [1, 9, 2], [4, 6, 4], [1, 10, 1], [7, 9, 5], [5, 10, 9], [2, 4, 1], [4, 7, 2], [4, 8, 2], [7, 10, 6], [5, 6, 1], [6, 9, 2], [2, 10, 5], [4, 9, 1], [1, 4, 2], [1, 8, 5], [2, 8, 4], [9, 10, 5], [1, 3, 9]]"
+    },
+
+    // Changing Wires
+    {
+        "test_id": 2167,
+        "input_type": "number",
+        "input_name": "n",
+        "input_value": "4"
+    },
+    {
+        "test_id": 2167,
+        "input_type": "number",
+        "input_name": "k",
+        "input_value": "3"
+    },
+    {
+        "test_id": 2167,
+        "input_type": "matrix",
+        "input_name": "wires",
+        "input_value": "[[0, 1, 1], [1, 2, 2], [2, 3, 3], [3, 0, 4]]"
+    },
+    {
+        "test_id": 2167,
+        "input_type": "matrix",
+        "input_name": "updates",
+        "input_value": "[[0, 1, 5], [3, 0, 2]]"
+    },
+    {
+        "test_id": 2168,
+        "input_type": "number",
+        "input_name": "n",
+        "input_value": "2"
+    },
+    {
+        "test_id": 2168,
+        "input_type": "number",
+        "input_name": "k",
+        "input_value": "1"
+    },
+    {
+        "test_id": 2168,
+        "input_type": "matrix",
+        "input_name": "wires",
+        "input_value": "[[0, 1, 100]]"
+    },
+    {
+        "test_id": 2168,
+        "input_type": "matrix",
+        "input_name": "updates",
+        "input_value": "[[0, 1, 50], [0, 1, 1]]"
+    },
+    {
+        "test_id": 2169,
+        "input_type": "number",
+        "input_name": "n",
+        "input_value": "4"
+    },
+    {
+        "test_id": 2169,
+        "input_type": "number",
+        "input_name": "k",
+        "input_value": "3"
+    },
+    {
+        "test_id": 2169,
+        "input_type": "matrix",
+        "input_name": "wires",
+        "input_value": "[[0, 1, 1], [0, 2, 1], [1, 3, 2], [2, 3, 3], [1, 2, 100]]"
+    },
+    {
+        "test_id": 2169,
+        "input_type": "matrix",
+        "input_name": "updates",
+        "input_value": "[[1, 2, 3], [1, 2, 2], [1, 2, 1]]"
+    },
+    {
+        "test_id": 2170,
+        "input_type": "number",
+        "input_name": "n",
+        "input_value": "1"
+    },
+    {
+        "test_id": 2170,
+        "input_type": "number",
+        "input_name": "k",
+        "input_value": "0"
+    },
+    {
+        "test_id": 2170,
+        "input_type": "arrayOfIntegers",
+        "input_name": "wires",
+        "input_value": "[]"
+    },
+    {
+        "test_id": 2170,
+        "input_type": "arrayOfIntegers",
+        "input_name": "updates",
+        "input_value": "[]"
+    },
+    {
+        "test_id": 2171,
+        "input_type": "number",
+        "input_name": "n",
+        "input_value": "10"
+    },
+    {
+        "test_id": 2171,
+        "input_type": "number",
+        "input_name": "k",
+        "input_value": "7"
+    },
+    {
+        "test_id": 2171,
+        "input_type": "matrix",
+        "input_name": "wires",
+        "input_value": "[[6, 8, 2], [8, 0, 3], [0, 3, 2], [3, 7, 2], [0, 9, 1], [6, 1, 1], [1, 2, 2], [8, 4, 3], [3, 5, 0], [9, 8, 0], [5, 6, 0], [2, 9, 0], [7, 2, 0], [5, 8, 2], [9, 1, 0], [2, 5, 2], [7, 6, 1]]"
+    },
+    {
+        "test_id": 2171,
+        "input_type": "matrix",
+        "input_name": "updates",
+        "input_value": "[[8, 0, 55], [8, 0, 94], [9, 8, 71], [6, 1, 50]]"
+    },
+
+    // Hierarchies Count
+    {
+        "test_id": 2172,
+        "input_type": "number",
+        "input_name": "n",
+        "input_value": "4"
+    },
+    {
+        "test_id": 2172,
+        "input_type": "matrix",
+        "input_name": "respectList",
+        "input_value": "[[0, 1], [1, 2], [2, 3], [3, 0], [1, 3]]"
+    },
+    {
+        "test_id": 2173,
+        "input_type": "number",
+        "input_name": "n",
+        "input_value": "1"
+    },
+    {
+        "test_id": 2173,
+        "input_type": "arrayOfIntegers",
+        "input_name": "respectList",
+        "input_value": "[]"
+    },
+    {
+        "test_id": 2174,
+        "input_type": "number",
+        "input_name": "n",
+        "input_value": "2"
+    },
+    {
+        "test_id": 2174,
+        "input_type": "matrix",
+        "input_name": "respectList",
+        "input_value": "[[0, 1]]"
+    },
+    {
+        "test_id": 2175,
+        "input_type": "number",
+        "input_name": "n",
+        "input_value": "3"
+    },
+    {
+        "test_id": 2175,
+        "input_type": "matrix",
+        "input_name": "respectList",
+        "input_value": "[[0, 1], [1, 2], [0, 2]]"
+    },
+    {
+        "test_id": 2176,
+        "input_type": "number",
+        "input_name": "n",
+        "input_value": "4"
+    },
+    {
+        "test_id": 2176,
+        "input_type": "matrix",
+        "input_name": "respectList",
+        "input_value": "[[0, 1], [1, 2], [2, 3], [3, 0], [1, 3], [0, 2]]"
+    },
+
+    // Number Of Plans
+    {
+        "test_id": 2177,
+        "input_type": "number",
+        "input_name": "n",
+        "input_value": "4"
+    },
+    {
+        "test_id": 2177,
+        "input_type": "matrix",
+        "input_name": "streets",
+        "input_value": "[[0, 1, 1], [0, 3, 2], [1, 2, 2], [2, 3, 2]]"
+    },
+    {
+        "test_id": 2178,
+        "input_type": "number",
+        "input_name": "n",
+        "input_value": "1"
+    },
+    {
+        "test_id": 2178,
+        "input_type": "arrayOfIntegers",
+        "input_name": "streets",
+        "input_value": "[]"
+    },
+    {
+        "test_id": 2179,
+        "input_type": "number",
+        "input_name": "n",
+        "input_value": "2"
+    },
+    {
+        "test_id": 2179,
+        "input_type": "matrix",
+        "input_name": "streets",
+        "input_value": "[[0, 1, 100]]"
+    },
+    {
+        "test_id": 2180,
+        "input_type": "number",
+        "input_name": "n",
+        "input_value": "3"
+    },
+    {
+        "test_id": 2180,
+        "input_type": "matrix",
+        "input_name": "streets",
+        "input_value": "[[0, 1, 2], [2, 0, 3], [1, 2, 3]]"
+    },
+    {
+        "test_id": 2181,
+        "input_type": "number",
+        "input_name": "n",
+        "input_value": "5"
+    },
+    {
+        "test_id": 2181,
+        "input_type": "matrix",
+        "input_name": "streets",
+        "input_value": "[[3, 0, 1], [0, 1, 1], [0, 4, 1], [4, 2, 1], [0, 2, 2], [2, 3, 1], [3, 4, 1]]"
+    },
+    {
+        "test_id": 2182,
+        "input_type": "number",
+        "input_name": "n",
+        "input_value": "5"
+    },
+    {
+        "test_id": 2182,
+        "input_type": "matrix",
+        "input_name": "streets",
+        "input_value": "[[2, 0, 5], [2, 1, 1], [0, 4, 1], [2, 3, 5], [1, 4, 5], [3, 4, 0], [4, 2, 5], [1, 3, 1], [1, 0, 3]]"
+    },
+
+    // Running Water
+    {
+        "test_id": 2183,
+        "input_type": "number",
+        "input_name": "volume",
+        "input_value": "2"
+    },
+    {
+        "test_id": 2183,
+        "input_type": "arrayOfIntegers",
+        "input_name": "cap",
+        "input_value": "[1, 1, 1]"
+    },
+    {
+        "test_id": 2184,
+        "input_type": "number",
+        "input_name": "volume",
+        "input_value": "20"
+    },
+    {
+        "test_id": 2184,
+        "input_type": "arrayOfIntegers",
+        "input_name": "cap",
+        "input_value": "[16, 5, 3]"
+    },
+    {
+        "test_id": 2185,
+        "input_type": "number",
+        "input_name": "volume",
+        "input_value": "80"
+    },
+    {
+        "test_id": 2185,
+        "input_type": "arrayOfIntegers",
+        "input_name": "cap",
+        "input_value": "[80, 61, 76]"
+    },
+    {
+        "test_id": 2186,
+        "input_type": "number",
+        "input_name": "volume",
+        "input_value": "144"
+    },
+    {
+        "test_id": 2186,
+        "input_type": "arrayOfIntegers",
+        "input_name": "cap",
+        "input_value": "[1, 50, 100]"
+    },
+    {
+        "test_id": 2187,
+        "input_type": "number",
+        "input_name": "volume",
+        "input_value": "15"
+    },
+    {
+        "test_id": 2187,
+        "input_type": "arrayOfIntegers",
+        "input_name": "cap",
+        "input_value": "[7, 4, 7]"
+    },
+    {
+        "test_id": 2188,
+        "input_type": "number",
+        "input_name": "volume",
+        "input_value": "113"
+    },
+    {
+        "test_id": 2188,
+        "input_type": "arrayOfIntegers",
+        "input_name": "cap",
+        "input_value": "[19, 44, 67]"
+    },
+    {
+        "test_id": 2189,
+        "input_type": "number",
+        "input_name": "volume",
+        "input_value": "10"
+    },
+    {
+        "test_id": 2189,
+        "input_type": "arrayOfIntegers",
+        "input_name": "cap",
+        "input_value": "[8, 5, 3]"
+    },
+    {
+        "test_id": 2190,
+        "input_type": "number",
+        "input_name": "volume",
+        "input_value": "13"
+    },
+    {
+        "test_id": 2190,
+        "input_type": "arrayOfIntegers",
+        "input_name": "cap",
+        "input_value": "[2, 4, 8]"
+    },
+    {
+        "test_id": 2191,
+        "input_type": "number",
+        "input_name": "volume",
+        "input_value": "51"
+    },
+    {
+        "test_id": 2191,
+        "input_type": "arrayOfIntegers",
+        "input_name": "cap",
+        "input_value": "[31, 46, 61]"
+    },
+    {
+        "test_id": 2192,
+        "input_type": "number",
+        "input_name": "volume",
+        "input_value": "65"
+    },
+    {
+        "test_id": 2192,
+        "input_type": "arrayOfIntegers",
+        "input_name": "cap",
+        "input_value": "[57, 30, 11]"
+    },
+
+    // Red Alert
+    {
+        "test_id": 2193,
+        "input_type": "number",
+        "input_name": "nodes",
+        "input_value": "5"
+    },
+    {
+        "test_id": 2193,
+        "input_type": "number",
+        "input_name": "k",
+        "input_value": "4"
+    },
+    {
+        "test_id": 2193,
+        "input_type": "arrayOfIntegers",
+        "input_name": "corridor",
+        "input_value": "[1, 2, 1, 3, 2, 4, 3, 5, 4, 5]"
+    },
+    {
+        "test_id": 2194,
+        "input_type": "number",
+        "input_name": "nodes",
+        "input_value": "4"
+    },
+    {
+        "test_id": 2194,
+        "input_type": "number",
+        "input_name": "k",
+        "input_value": "2"
+    },
+    {
+        "test_id": 2194,
+        "input_type": "arrayOfIntegers",
+        "input_name": "corridor",
+        "input_value": "[1, 2, 1, 3, 2, 4, 3, 4]"
+    },
+    {
+        "test_id": 2195,
+        "input_type": "number",
+        "input_name": "nodes",
+        "input_value": "9"
+    },
+    {
+        "test_id": 2195,
+        "input_type": "number",
+        "input_name": "k",
+        "input_value": "3"
+    },
+    {
+        "test_id": 2195,
+        "input_type": "arrayOfIntegers",
+        "input_name": "corridor",
+        "input_value": "[1, 2, 1, 3, 1, 4, 2, 5, 2, 8, 3, 6, 4, 5, 4, 6, 5, 8, 6, 9, 7, 8, 7, 9]"
+    },
+    {
+        "test_id": 2196,
+        "input_type": "number",
+        "input_name": "nodes",
+        "input_value": "2"
+    },
+    {
+        "test_id": 2196,
+        "input_type": "number",
+        "input_name": "k",
+        "input_value": "2"
+    },
+    {
+        "test_id": 2196,
+        "input_type": "arrayOfIntegers",
+        "input_name": "corridor",
+        "input_value": "[]"
+    },
+    {
+        "test_id": 2197,
+        "input_type": "number",
+        "input_name": "nodes",
+        "input_value": "10"
+    },
+    {
+        "test_id": 2197,
+        "input_type": "number",
+        "input_name": "k",
+        "input_value": "5"
+    },
+    {
+        "test_id": 2197,
+        "input_type": "arrayOfIntegers",
+        "input_name": "corridor",
+        "input_value": "[1, 2, 2, 3, 3, 4, 4, 5, 5, 6, 6, 7, 7, 8, 8, 9, 9, 10]"
+    },
+    {
+        "test_id": 2198,
+        "input_type": "number",
+        "input_name": "nodes",
+        "input_value": "16"
+    },
+    {
+        "test_id": 2198,
+        "input_type": "number",
+        "input_name": "k",
+        "input_value": "4"
+    },
+    {
+        "test_id": 2198,
+        "input_type": "arrayOfIntegers",
+        "input_name": "corridor",
+        "input_value": "[1, 2, 1, 11, 2, 7, 2, 10, 3, 8, 3, 13, 4, 9, 4, 14, 5, 10, 6, 7, 7, 8, 8, 10, 11, 12, 13, 14, 14, 15, 15, 16]"
+    },
+    {
+        "test_id": 2199,
+        "input_type": "number",
+        "input_name": "nodes",
+        "input_value": "30"
+    },
+    {
+        "test_id": 2199,
+        "input_type": "number",
+        "input_name": "k",
+        "input_value": "5"
+    },
+    {
+        "test_id": 2199,
+        "input_type": "arrayOfIntegers",
+        "input_name": "corridor",
+        "input_value": "[1, 2, 1, 6, 2, 7, 3, 5, 3, 8, 4, 9, 5, 10, 6, 7, 6, 11, 7, 12, 8, 10, 8, 13, 9, 14, 10, 15, 11, 12, 11, 16, 12, 17, 13, 15, 13, 18, 14, 19, 15, 20, 16, 17, 16, 21, 17, 22, 18, 20, 18, 23, 19, 24, 20, 25, 21, 22, 21, 26, 22, 27, 23, 25, 23, 28, 24, 29, 25, 30, 26, 27, 28, 30]"
+    },
+
+    // Rod In Labyrinth
+    {
+        "test_id": 2200,
+        "input_type": "matrix",
+        "input_name": "labyrinth",
+        "input_value": '[[".",".",".",".",".",".",".",".","."],["#",".",".",".","#",".",".",".","."],[".",".",".",".","#",".",".",".","."],[".","#",".",".",".",".",".","#","."],[".","#",".",".",".",".",".","#","."]]'
+    },
+    {
+        "test_id": 2201,
+        "input_type": "matrix",
+        "input_name": "labyrinth",
+        "input_value": '[[".",".",".",".",".",".",".",".","."],["#",".",".",".","#",".",".","#","."],[".",".",".",".","#",".",".",".","."],[".","#",".",".",".",".",".","#","."],[".","#",".",".",".",".",".","#","."]]'
+    },
+    {
+        "test_id": 2202,
+        "input_type": "matrix",
+        "input_name": "labyrinth",
+        "input_value": '[[".",".","."],["#",".","#"],[".","#","."]]'
+    },
+    {
+        "test_id": 2203,
+        "input_type": "matrix",
+        "input_name": "labyrinth",
+        "input_value": '[[".",".","."],[".",".","."],[".",".","."]]'
+    },
+    {
+        "test_id": 2204,
+        "input_type": "matrix",
+        "input_name": "labyrinth",
+        "input_value": '[[".",".",".",".",".",".",".",".",".","."],[".","#",".",".",".",".","#",".",".","."],[".","#",".",".",".",".",".",".",".","."],[".",".",".",".",".",".",".",".",".","."],[".",".",".",".",".",".",".",".",".","."],[".","#",".",".",".",".",".",".",".","."],[".","#",".",".",".","#",".",".",".","."],[".",".",".",".",".",".","#",".",".","."],[".",".",".",".",".",".",".",".",".","."],[".",".",".",".",".",".",".",".",".","."]]'
+    },
+
+    // Barrel Maze
+    {
+        "test_id": 2205,
+        "input_type": "number",
+        "input_name": "n",
+        "input_value": "3"
+    },
+    {
+        "test_id": 2205,
+        "input_type": "number",
+        "input_name": "m",
+        "input_value": "3"
+    },
+    {
+        "test_id": 2205,
+        "input_type": "matrix",
+        "input_name": "boxes",
+        "input_value": "[[0, 2], [2, 2], [1, 0], [2, 0], [1, 1], [2, 1]]"
+    },
+    {
+        "test_id": 2206,
+        "input_type": "number",
+        "input_name": "n",
+        "input_value": "1"
+    },
+    {
+        "test_id": 2206,
+        "input_type": "number",
+        "input_name": "m",
+        "input_value": "3"
+    },
+    {
+        "test_id": 2206,
+        "input_type": "arrayOfIntegers",
+        "input_name": "boxes",
+        "input_value": "[]"
+    },
+    {
+        "test_id": 2207,
+        "input_type": "number",
+        "input_name": "n",
+        "input_value": "3"
+    },
+    {
+        "test_id": 2207,
+        "input_type": "number",
+        "input_name": "m",
+        "input_value": "5"
+    },
+    {
+        "test_id": 2207,
+        "input_type": "matrix",
+        "input_name": "boxes",
+        "input_value": "[[1, 1], [1, 0], [1, 2], [2, 3], [2, 4], [0, 4], [1, 4], [1, 3], [2, 0], [0, 2], [2, 2], [0, 3]]"
+    },
+    {
+        "test_id": 2208,
+        "input_type": "number",
+        "input_name": "n",
+        "input_value": "5"
+    },
+    {
+        "test_id": 2208,
+        "input_type": "number",
+        "input_name": "m",
+        "input_value": "6"
+    },
+    {
+        "test_id": 2208,
+        "input_type": "matrix",
+        "input_name": "boxes",
+        "input_value": "[[3, 3], [2, 0], [4, 5], [0, 1], [3, 1], [3, 4], [1, 5], [0, 4], [0, 3], [2, 2], [1, 2], [1, 1], [2, 4], [4, 2], [3, 0], [2, 1], [4, 3], [3, 2], [1, 4], [0, 2], [4, 0], [2, 3], [0, 5], [4, 4], [3, 5], [1, 3], [2, 5]]"
+    },
+    {
+        "test_id": 2209,
+        "input_type": "number",
+        "input_name": "n",
+        "input_value": "7"
+    },
+    {
+        "test_id": 2209,
+        "input_type": "number",
+        "input_name": "m",
+        "input_value": "6"
+    },
+    {
+        "test_id": 2209,
+        "input_type": "matrix",
+        "input_name": "boxes",
+        "input_value": "[[5, 4], [5, 1], [2, 2], [5, 3], [2, 5], [6, 3], [1, 4], [4, 4], [3, 2], [5, 5], [6, 0], [4, 1], [4, 5], [5, 0], [3, 3], [2, 4], [6, 2], [4, 0], [3, 0], [2, 3], [2, 1], [1, 1], [0, 2], [5, 2], [4, 3], [6, 4], [3, 4], [3, 5], [1, 3], [3, 1], [1, 0], [1, 5], [0, 5], [4, 2], [6, 5], [1, 2], [2, 0], [0, 3], [0, 4]]"
+    },
+    {
+        "test_id": 2210,
+        "input_type": "number",
+        "input_name": "n",
+        "input_value": "2"
+    },
+    {
+        "test_id": 2210,
+        "input_type": "number",
+        "input_name": "m",
+        "input_value": "6"
+    },
+    {
+        "test_id": 2210,
+        "input_type": "matrix",
+        "input_name": "boxes",
+        "input_value": "[[0, 2], [0, 3], [0, 4], [0, 5], [1, 0], [1, 1], [1, 2], [1, 4], [1, 5]]"
+    },
+    {
+        "test_id": 2211,
+        "input_type": "number",
+        "input_name": "n",
+        "input_value": "3"
+    },
+    {
+        "test_id": 2211,
+        "input_type": "number",
+        "input_name": "m",
+        "input_value": "4"
+    },
+    {
+        "test_id": 2211,
+        "input_type": "matrix",
+        "input_name": "boxes",
+        "input_value": "[[0, 2], [0, 3], [1, 0], [1, 1], [1, 2], [1, 3], [2, 1], [2, 2], [2, 3]]"
+    },
+    {
+        "test_id": 2212,
+        "input_type": "number",
+        "input_name": "n",
+        "input_value": "6"
+    },
+    {
+        "test_id": 2212,
+        "input_type": "number",
+        "input_name": "m",
+        "input_value": "6"
+    },
+    {
+        "test_id": 2212,
+        "input_type": "matrix",
+        "input_name": "boxes",
+        "input_value": "[[0, 2], [0, 3], [0, 4], [0, 5], [1, 0], [1, 1], [1, 2], [1, 3], [1, 4], [1, 5], [2, 0], [2, 1], [2, 3], [2, 4], [2, 5], [3, 0], [3, 1], [3, 2], [3, 3], [3, 4], [3, 5], [4, 0], [4, 1], [4, 2], [4, 3], [4, 4], [4, 5], [5, 0], [5, 1], [5, 2], [5, 3], [5, 4], [5, 5]]"
+    },
+    {
+        "test_id": 2213,
+        "input_type": "number",
+        "input_name": "n",
+        "input_value": "7"
+    },
+    {
+        "test_id": 2213,
+        "input_type": "number",
+        "input_name": "m",
+        "input_value": "6"
+    },
+    {
+        "test_id": 2213,
+        "input_type": "matrix",
+        "input_name": "boxes",
+        "input_value": "[[0, 2], [0, 3], [0, 4], [0, 5], [1, 0], [1, 1], [1, 2], [1, 3], [1, 4], [1, 5], [2, 0], [2, 1], [2, 2], [2, 3], [2, 4], [2, 5], [3, 0], [3, 1], [3, 2], [3, 3], [3, 4], [3, 5], [4, 0], [4, 1], [4, 2], [4, 3], [4, 4], [4, 5], [5, 0], [5, 1], [5, 3], [5, 4], [5, 5], [6, 0], [6, 1], [6, 2], [6, 3], [6, 4], [6, 5]]"
+    },
+    {
+        "test_id": 2214,
+        "input_type": "number",
+        "input_name": "n",
+        "input_value": "4"
+    },
+    {
+        "test_id": 2214,
+        "input_type": "number",
+        "input_name": "m",
+        "input_value": "2"
+    },
+    {
+        "test_id": 2214,
+        "input_type": "matrix",
+        "input_name": "boxes",
+        "input_value": "[[1, 0], [1, 1], [2, 0], [2, 1], [3, 1]]"
+    },
+
+    // Forming Of Words
+    {
+        "test_id": 2215,
+        "input_type": "string",
+        "input_name": "newWord",
+        "input_value": "rsam"
+    },
+    {
+        "test_id": 2215,
+        "input_type": "matrix",
+        "input_name": "grid",
+        "input_value": '[["a","b","c","d"], ["e","f","g","h"], ["i","j","k","l"], ["m","n","o","p"], ["q","r","s","t"]]'
+    },
+    {
+        "test_id": 2215,
+        "input_type": "matrix",
+        "input_name": "positions",
+        "input_value": "[[2, 2], [0, 2], [4, 3], [2, 1]]"
+    },
+    {
+        "test_id": 2216,
+        "input_type": "string",
+        "input_name": "newWord",
+        "input_value": "kxic"
+    },
+    {
+        "test_id": 2216,
+        "input_type": "matrix",
+        "input_name": "grid",
+        "input_value": '[["x","i","f","x"],["k","i","v","k"],["c","x","k","h"],["r","a","c","q"],["e","q","z","n"]]'
+    },
+    {
+        "test_id": 2216,
+        "input_type": "matrix",
+        "input_name": "positions",
+        "input_value": "[[4, 0], [4, 2], [4, 1], [4, 3]]"
+    },
+    {
+        "test_id": 2217,
+        "input_type": "string",
+        "input_name": "newWord",
+        "input_value": "rxcg"
+    },
+    {
+        "test_id": 2217,
+        "input_type": "matrix",
+        "input_name": "grid",
+        "input_value": '[["m","j","i","z"],["k","p","y","g"],["x","y","a","t"],["r","c","z","e"],["p","o","k","r"]]'
+    },
+    {
+        "test_id": 2217,
+        "input_type": "matrix",
+        "input_name": "positions",
+        "input_value": "[[2, 0], [0, 2], [4, 3], [0, 3]]"
+    },
+    {
+        "test_id": 2218,
+        "input_type": "string",
+        "input_name": "newWord",
+        "input_value": "zxok"
+    },
+    {
+        "test_id": 2218,
+        "input_type": "matrix",
+        "input_name": "grid",
+        "input_value": '[["c","i","f","z"],["k","x","o","j"],["a","o","g","e"],["x","a","e","g"],["x","d","j","a"]]'
+    },
+    {
+        "test_id": 2218,
+        "input_type": "matrix",
+        "input_name": "positions",
+        "input_value": "[[1, 0], [1, 1], [0, 2], [1, 2]]"
+    },
+    {
+        "test_id": 2219,
+        "input_type": "string",
+        "input_name": "newWord",
+        "input_value": "ozlc"
+    },
+    {
+        "test_id": 2219,
+        "input_type": "matrix",
+        "input_name": "grid",
+        "input_value": '[["a","m","y","j"],["j","j","m","j"],["c","c","p","z"],["z","d","n","o"],["a","r","l","u"]]'
+    },
+    {
+        "test_id": 2219,
+        "input_type": "matrix",
+        "input_name": "positions",
+        "input_value": "[[4, 2], [1, 0], [3, 2], [4, 1]]"
+    },
+
+    // Crossing The River
+    {
+        "test_id": 2220,
+        "input_type": "matrix",
+        "input_name": "animals",
+        "input_value": "[[3, -1, 4], [-1, 2, -1], [4, -1, 1]]"
+    },
+    {
+        "test_id": 2221,
+        "input_type": "matrix",
+        "input_name": "animals",
+        "input_value": "[[3, -1, -1], [-1, 2, -1], [-1, -1, 1]]"
+    },
+    {
+        "test_id": 2222,
+        "input_type": "matrix",
+        "input_name": "animals",
+        "input_value": "[[1, 1, 1], [1, 1, 1], [1, 1, 1]]"
+    },
+    {
+        "test_id": 2223,
+        "input_type": "matrix",
+        "input_name": "animals",
+        "input_value": "[[98, 20, 1, 97, 65], [20, 34, 96, -1, -1], [1, 96, 68, 39, 68], [97, -1, 39, 99, 91], [65, -1, 68, 91, 69]]"
+    },
+    {
+        "test_id": 2224,
+        "input_type": "matrix",
+        "input_name": "animals",
+        "input_value": "[[2, 1, 3], [1, 5, 1], [3, 1, 9]]"
+    },
+
+    // Rubiks Cubes
+    {
+        "test_id": 2225,
+        "input_type": "matrix",
+        "input_name": "firstCube",
+        "input_value": "[[0, 0, 0, 0], [1, 1, 1, 1], [2, 2, 2, 2], [3, 3, 3, 3], [4, 4, 4, 4], [5, 5, 5, 5]]"
+    },
+    {
+        "test_id": 2225,
+        "input_type": "matrix",
+        "input_name": "secondCube",
+        "input_value": "[[5, 0, 3, 0], [1, 4, 1, 2], [5, 5, 2, 2], [3, 4, 3, 4], [0, 2, 0, 4], [3, 1, 5, 1]]"
+    },
+    {
+        "test_id": 2226,
+        "input_type": "matrix",
+        "input_name": "firstCube",
+        "input_value": "[[4, 4, 0, 3], [5, 5, 2, 1], [1, 2, 4, 0], [1, 3, 5, 0], [4, 1, 5, 2], [0, 3, 3, 2]]"
+    },
+    {
+        "test_id": 2226,
+        "input_type": "matrix",
+        "input_name": "secondCube",
+        "input_value": "[[4, 4, 2, 1], [3, 5, 1, 5], [1, 2, 3, 1], [0, 5, 4, 0], [5, 3, 4, 0], [2, 2, 0, 3]]"
+    },
+    {
+        "test_id": 2227,
+        "input_type": "matrix",
+        "input_name": "firstCube",
+        "input_value": "[[2, 5, 1, 5], [1, 1, 4, 2], [0, 5, 0, 3], [0, 0, 3, 2], [4, 3, 4, 4], [1, 2, 5, 3]]"
+    },
+    {
+        "test_id": 2227,
+        "input_type": "matrix",
+        "input_name": "secondCube",
+        "input_value": "[[2, 5, 1, 5], [1, 1, 4, 2], [0, 5, 0, 3], [0, 0, 3, 2], [4, 3, 4, 4], [1, 2, 5, 3]]"
+    },
+    {
+        "test_id": 2228,
+        "input_type": "matrix",
+        "input_name": "firstCube",
+        "input_value": "[[0, 2, 5, 0], [3, 3, 2, 4], [5, 4, 5, 4], [2, 3, 1, 3], [0, 4, 1, 5], [2, 1, 0, 1]]"
+    },
+    {
+        "test_id": 2228,
+        "input_type": "matrix",
+        "input_name": "secondCube",
+        "input_value": "[[4, 5, 5, 2], [1, 2, 4, 4], [4, 5, 5, 3], [0, 3, 0, 3], [0, 2, 1, 0], [1, 1, 3, 2]]"
+    },
+    {
+        "test_id": 2229,
+        "input_type": "matrix",
+        "input_name": "firstCube",
+        "input_value": "[[0, 0, 0, 0], [1, 1, 1, 1], [2, 2, 2, 2], [3, 3, 3, 3], [4, 4, 4, 4], [5, 5, 5, 5]]"
+    },
+    {
+        "test_id": 2229,
+        "input_type": "matrix",
+        "input_name": "secondCube",
+        "input_value": "[[0, 0, 0, 2], [4, 1, 1, 3], [1, 4, 5, 1], [5, 5, 3, 0], [3, 4, 4, 2], [2, 2, 3, 5]]"
+    },
+    {
+        "test_id": 2230,
+        "input_type": "matrix",
+        "input_name": "firstCube",
+        "input_value": "[[0, 0, 0, 0], [1, 1, 1, 1], [2, 2, 2, 2], [3, 3, 3, 3], [4, 4, 4, 4], [5, 5, 5, 5]]"
+    },
+    {
+        "test_id": 2230,
+        "input_type": "matrix",
+        "input_name": "secondCube",
+        "input_value": "[[0, 0, 0, 2], [4, 1, 1, 3], [1, 4, 5, 1], [5, 5, 3, 0], [3, 4, 4, 2], [2, 2, 5, 3]]"
+    },
+
+    // Prisoner Escape
+    {
+        "test_id": 2231,
+        "input_type": "number",
+        "input_name": "nodes",
+        "input_value": "5"
+    },
+    {
+        "test_id": 2231,
+        "input_type": "arrayOfIntegers",
+        "input_name": "graph",
+        "input_value": "[1, 2, 2, 3, 3, 4, 4, 5, 5, 1]"
+    },
+    {
+        "test_id": 2231,
+        "input_type": "arrayOfIntegers",
+        "input_name": "start",
+        "input_value": "[1, 3, 4]"
+    },
+    {
+        "test_id": 2232,
+        "input_type": "number",
+        "input_name": "nodes",
+        "input_value": "16"
+    },
+    {
+        "test_id": 2232,
+        "input_type": "arrayOfIntegers",
+        "input_name": "graph",
+        "input_value": "[1, 2, 1, 4, 1, 5, 1, 13, 2, 3, 2, 6, 2, 14, 3, 4, 3, 7, 3, 15, 4, 8, 4, 16, 5, 6, 5, 8, 5, 9, 6, 7, 6, 10, 7, 8, 7, 11, 8, 12, 9, 10, 9, 12, 9, 13, 10, 11, 10, 14, 11, 12, 11, 15, 12, 16, 13, 14, 13, 16, 14, 15, 15, 16]"
+    },
+    {
+        "test_id": 2232,
+        "input_type": "arrayOfIntegers",
+        "input_name": "start",
+        "input_value": "[1, 5, 16]"
+    },
+    {
+        "test_id": 2233,
+        "input_type": "number",
+        "input_name": "nodes",
+        "input_value": "3"
+    },
+    {
+        "test_id": 2233,
+        "input_type": "arrayOfIntegers",
+        "input_name": "graph",
+        "input_value": "[]"
+    },
+    {
+        "test_id": 2233,
+        "input_type": "arrayOfIntegers",
+        "input_name": "start",
+        "input_value": "[1, 2, 3]"
+    },
+    {
+        "test_id": 2234,
+        "input_type": "number",
+        "input_name": "nodes",
+        "input_value": "9"
+    },
+    {
+        "test_id": 2234,
+        "input_type": "arrayOfIntegers",
+        "input_name": "graph",
+        "input_value": "[1, 2, 1, 3, 1, 4, 1, 7, 2, 3, 2, 5, 2, 8, 3, 6, 3, 9, 4, 5, 4, 6, 4, 7, 5, 6, 5, 8, 6, 9, 7, 8, 7, 9, 8, 9]"
+    },
+    {
+        "test_id": 2234,
+        "input_type": "arrayOfIntegers",
+        "input_name": "start",
+        "input_value": "[6, 7, 9]"
+    },
+    {
+        "test_id": 2235,
+        "input_type": "number",
+        "input_name": "nodes",
+        "input_value": "8"
+    },
+    {
+        "test_id": 2235,
+        "input_type": "arrayOfIntegers",
+        "input_name": "graph",
+        "input_value": "[1, 2, 2, 3, 5, 6, 6, 7, 7, 8]"
+    },
+    {
+        "test_id": 2235,
+        "input_type": "arrayOfIntegers",
+        "input_name": "start",
+        "input_value": "[4, 1, 8]"
+    },
+    {
+        "test_id": 2236,
+        "input_type": "number",
+        "input_name": "nodes",
+        "input_value": "12"
+    },
+    {
+        "test_id": 2236,
+        "input_type": "arrayOfIntegers",
+        "input_name": "graph",
+        "input_value": "[1, 2, 1, 3, 1, 4, 2, 5, 3, 6, 4, 5, 4, 6, 4, 7, 5, 8, 6, 9, 7, 8, 7, 9, 7, 10, 8, 11, 9, 12, 10, 11, 10, 12]"
+    },
+    {
+        "test_id": 2236,
+        "input_type": "arrayOfIntegers",
+        "input_name": "start",
+        "input_value": "[8, 9, 2]"
+    },
+    {
+        "test_id": 2237,
+        "input_type": "number",
+        "input_name": "nodes",
+        "input_value": "20"
+    },
+    {
+        "test_id": 2237,
+        "input_type": "arrayOfIntegers",
+        "input_name": "graph",
+        "input_value": "[1, 2, 1, 4, 1, 6, 1, 11, 2, 3, 2, 7, 2, 12, 3, 4, 3, 8, 3, 13, 4, 5, 4, 9, 4, 14, 5, 10, 5, 15, 6, 7, 6, 9, 6, 11, 7, 8, 7, 12, 8, 9, 8, 13, 9, 10, 9, 14, 10, 15, 11, 12, 11, 14, 11, 16, 12, 13, 12, 17, 13, 14, 13, 18, 14, 15, 14, 19, 15, 20, 16, 17, 16, 19, 17, 18, 18, 19, 19, 20]"
+    },
+    {
+        "test_id": 2237,
+        "input_type": "arrayOfIntegers",
+        "input_name": "start",
+        "input_value": "[20, 1, 9]"
+    },
+    {
+        "test_id": 2238,
+        "input_type": "number",
+        "input_name": "nodes",
+        "input_value": "50"
+    },
+    {
+        "test_id": 2238,
+        "input_type": "arrayOfIntegers",
+        "input_name": "graph",
+        "input_value": "[1, 2, 2, 3, 5, 6, 6, 7, 7, 8]"
+    },
+    {
+        "test_id": 2238,
+        "input_type": "arrayOfIntegers",
+        "input_name": "start",
+        "input_value": "[4, 1, 8]"
+    },
+    {
+        "test_id": 2239,
+        "input_type": "number",
+        "input_name": "nodes",
+        "input_value": "9"
+    },
+    {
+        "test_id": 2239,
+        "input_type": "arrayOfIntegers",
+        "input_name": "graph",
+        "input_value": "[1, 2, 2, 3, 5, 6, 6, 7, 7, 8, 1, 9, 9, 5]"
+    },
+    {
+        "test_id": 2239,
+        "input_type": "arrayOfIntegers",
+        "input_name": "start",
+        "input_value": "[4, 1, 8]"
+    },
+    {
+        "test_id": 2240,
+        "input_type": "number",
+        "input_name": "nodes",
+        "input_value": "3"
+    },
+    {
+        "test_id": 2240,
+        "input_type": "arrayOfIntegers",
+        "input_name": "graph",
+        "input_value": "[1, 2, 2, 3]"
+    },
+    {
+        "test_id": 2240,
+        "input_type": "arrayOfIntegers",
+        "input_name": "start",
+        "input_value": "[1, 2, 3]"
+    },
+    {
+        "test_id": 2241,
+        "input_type": "number",
+        "input_name": "nodes",
+        "input_value": "3"
+    },
+    {
+        "test_id": 2241,
+        "input_type": "arrayOfIntegers",
+        "input_name": "graph",
+        "input_value": "[]"
+    },
+    {
+        "test_id": 2241,
+        "input_type": "arrayOfIntegers",
+        "input_name": "start",
+        "input_value": "[3, 1, 2]"
+    },
+    {
+        "test_id": 2242,
+        "input_type": "number",
+        "input_name": "nodes",
+        "input_value": "25"
+    },
+    {
+        "test_id": 2242,
+        "input_type": "arrayOfIntegers",
+        "input_name": "graph",
+        "input_value": "[1, 2, 1, 5, 1, 6, 1, 21, 2, 3, 2, 7, 2, 22, 3, 4, 3, 8, 3, 23, 4, 5, 4, 9, 4, 24, 5, 10, 5, 25, 6, 7, 6, 10, 6, 11, 7, 8, 7, 12, 8, 9, 8, 13, 9, 10, 9, 14, 11, 12, 11, 16, 12, 13, 12, 17, 13, 14, 13, 18, 14, 19, 16, 17, 16, 20, 16, 21, 17, 18, 17, 22, 18, 19, 18, 23, 19, 20, 19, 24, 20, 25, 21, 22, 21, 25, 22, 23, 23, 24, 24, 25]"
+    },
+    {
+        "test_id": 2242,
+        "input_type": "arrayOfIntegers",
+        "input_name": "start",
+        "input_value": "[5, 17, 10]"
+    },
+
+    // Childrens Party
+    {
+        "test_id": 2243,
+        "input_type": "matrix",
+        "input_name": "directions",
+        "input_value": "[[13, 14, 9], [4, 1, 5], [7, 10, 11]]"
+    },
+    {
+        "test_id": 2244,
+        "input_type": "matrix",
+        "input_name": "directions",
+        "input_value": "[[15]]"
+    },
+    {
+        "test_id": 2245,
+        "input_type": "matrix",
+        "input_name": "directions",
+        "input_value": "[[14, 9], [14, 7]]"
+    },
+    {
+        "test_id": 2246,
+        "input_type": "matrix",
+        "input_name": "directions",
+        "input_value": "[[13, 10, 8, 11, 11], [7, 8, 2, 0, 13], [4, 0, 4, 4, 9], [12, 0, 0, 15, 1], [15, 3, 2, 10, 3]]"
+    },
+    {
+        "test_id": 2247,
+        "input_type": "matrix",
+        "input_name": "directions",
+        "input_value": "[[15, 10, 11, 15, 10, 10, 9, 13], [4, 8, 6, 1, 0, 4, 8, 1], [15, 8, 4, 8, 0, 8, 7, 5], [6, 8, 0, 2, 0, 8, 11, 5], [4, 5, 12, 5, 0, 1, 0, 9], [12, 8, 2, 5, 0, 1, 10, 1], [6, 2, 2, 7, 2, 14, 3, 15]]"
+    },
+
+    // Bridges Destruction
+    {
+        "test_id": 2248,
+        "input_type": "number",
+        "input_name": "a",
+        "input_value": "0"
+    },
+    {
+        "test_id": 2248,
+        "input_type": "number",
+        "input_name": "b",
+        "input_value": "2"
+    },
+    {
+        "test_id": 2248,
+        "input_type": "matrix",
+        "input_name": "bridges",
+        "input_value": "[[1, 2], [0], [0]]"
+    },
+    {
+        "test_id": 2249,
+        "input_type": "number",
+        "input_name": "a",
+        "input_value": "0"
+    },
+    {
+        "test_id": 2249,
+        "input_type": "number",
+        "input_name": "b",
+        "input_value": "0"
+    },
+    {
+        "test_id": 2249,
+        "input_type": "matrix",
+        "input_name": "bridges",
+        "input_value": "[[]]"
+    },
+    {
+        "test_id": 2250,
+        "input_type": "number",
+        "input_name": "a",
+        "input_value": "0"
+    },
+    {
+        "test_id": 2250,
+        "input_type": "number",
+        "input_name": "b",
+        "input_value": "1"
+    },
+    {
+        "test_id": 2250,
+        "input_type": "matrix",
+        "input_name": "bridges",
+        "input_value": "[[1], [0]]"
+    },
+    {
+        "test_id": 2251,
+        "input_type": "number",
+        "input_name": "a",
+        "input_value": "4"
+    },
+    {
+        "test_id": 2251,
+        "input_type": "number",
+        "input_name": "b",
+        "input_value": "2"
+    },
+    {
+        "test_id": 2251,
+        "input_type": "matrix",
+        "input_name": "bridges",
+        "input_value": "[[1, 2], [0, 4], [0], [4], [1, 3]]"
+    },
+    {
+        "test_id": 2252,
+        "input_type": "number",
+        "input_name": "a",
+        "input_value": "1"
+    },
+    {
+        "test_id": 2252,
+        "input_type": "number",
+        "input_name": "b",
+        "input_value": "4"
+    },
+    {
+        "test_id": 2252,
+        "input_type": "matrix",
+        "input_name": "bridges",
+        "input_value": "[[4], [5, 3, 2], [5, 3, 1, 4], [1, 2], [0, 2], [2, 1]]"
+    },
+    {
+        "test_id": 2253,
+        "input_type": "number",
+        "input_name": "a",
+        "input_value": "5"
+    },
+    {
+        "test_id": 2253,
+        "input_type": "number",
+        "input_name": "b",
+        "input_value": "12"
+    },
+    {
+        "test_id": 2253,
+        "input_type": "matrix",
+        "input_name": "bridges",
+        "input_value": "[[6], [10, 14], [4, 12, 14], [5, 14], [2, 11], [3], [0, 9], [13, 9], [13], [6, 7], [1], [4], [2], [8, 7], [1, 3, 2]]"
+    },
+    {
+        "test_id": 2254,
+        "input_type": "number",
+        "input_name": "a",
+        "input_value": "9"
+    },
+    {
+        "test_id": 2254,
+        "input_type": "number",
+        "input_name": "b",
+        "input_value": "17"
+    },
+    {
+        "test_id": 2254,
+        "input_type": "matrix",
+        "input_name": "bridges",
+        "input_value": "[[6], [27], [17], [16], [24], [8], [0], [], [5, 23], [10], [27, 9, 17], [21], [16], [], [], [31], [17, 24, 12, 29, 3], [16, 25, 18, 2, 10], [17], [], [24, 30], [11], [], [8], [20, 16, 4, 28], [17], [], [10, 1], [24], [16], [20], [15]]"
+    },
+
+    // Antelopes Migration
+    {
+        "test_id": 2255,
+        "input_type": "number",
+        "input_name": "islands",
+        "input_value": "4"
+    },
+    {
+        "test_id": 2255,
+        "input_type": "number",
+        "input_name": "a",
+        "input_value": "0"
+    },
+    {
+        "test_id": 2255,
+        "input_type": "number",
+        "input_name": "b",
+        "input_value": "3"
+    },
+    {
+        "test_id": 2255,
+        "input_type": "matrix",
+        "input_name": "bridges",
+        "input_value": "[[0, 1], [1, 2], [2, 0], [2, 3]]"
+    },
+    {
+        "test_id": 2256,
+        "input_type": "number",
+        "input_name": "islands",
+        "input_value": "7"
+    },
+    {
+        "test_id": 2256,
+        "input_type": "number",
+        "input_name": "a",
+        "input_value": "5"
+    },
+    {
+        "test_id": 2256,
+        "input_type": "number",
+        "input_name": "b",
+        "input_value": "2"
+    },
+    {
+        "test_id": 2256,
+        "input_type": "matrix",
+        "input_name": "bridges",
+        "input_value": "[[0, 1], [1, 2], [2, 3], [3, 0], [4, 3], [0, 5], [6, 1]]"
+    },
+    {
+        "test_id": 2257,
+        "input_type": "number",
+        "input_name": "islands",
+        "input_value": "2"
+    },
+    {
+        "test_id": 2257,
+        "input_type": "number",
+        "input_name": "a",
+        "input_value": "0"
+    },
+    {
+        "test_id": 2257,
+        "input_type": "number",
+        "input_name": "b",
+        "input_value": "1"
+    },
+    {
+        "test_id": 2257,
+        "input_type": "matrix",
+        "input_name": "bridges",
+        "input_value": "[[0, 1]]"
+    },
+    {
+        "test_id": 2258,
+        "input_type": "number",
+        "input_name": "islands",
+        "input_value": "8"
+    },
+    {
+        "test_id": 2258,
+        "input_type": "number",
+        "input_name": "a",
+        "input_value": "1"
+    },
+    {
+        "test_id": 2258,
+        "input_type": "number",
+        "input_name": "b",
+        "input_value": "3"
+    },
+    {
+        "test_id": 2258,
+        "input_type": "matrix",
+        "input_name": "bridges",
+        "input_value": "[[0, 1], [1, 2], [2, 3], [3, 0], [4, 3], [0, 5], [6, 1], [2, 7]]"
+    },
+    {
+        "test_id": 2259,
+        "input_type": "number",
+        "input_name": "islands",
+        "input_value": "8"
+    },
+    {
+        "test_id": 2259,
+        "input_type": "number",
+        "input_name": "a",
+        "input_value": "6"
+    },
+    {
+        "test_id": 2259,
+        "input_type": "number",
+        "input_name": "b",
+        "input_value": "7"
+    },
+    {
+        "test_id": 2259,
+        "input_type": "matrix",
+        "input_name": "bridges",
+        "input_value": "[[1, 6], [6, 2], [2, 3], [3, 5], [5, 7], [7, 0], [0, 4]]"
+    },
+    {
+        "test_id": 2260,
+        "input_type": "number",
+        "input_name": "islands",
+        "input_value": "3"
+    },
+    {
+        "test_id": 2260,
+        "input_type": "number",
+        "input_name": "a",
+        "input_value": "1"
+    },
+    {
+        "test_id": 2260,
+        "input_type": "number",
+        "input_name": "b",
+        "input_value": "0"
+    },
+    {
+        "test_id": 2260,
+        "input_type": "matrix",
+        "input_name": "bridges",
+        "input_value": "[[2, 1], [2, 0]]"
+    },
+    {
+        "test_id": 2261,
+        "input_type": "number",
+        "input_name": "islands",
+        "input_value": "4"
+    },
+    {
+        "test_id": 2261,
+        "input_type": "number",
+        "input_name": "a",
+        "input_value": "3"
+    },
+    {
+        "test_id": 2261,
+        "input_type": "number",
+        "input_name": "b",
+        "input_value": "0"
+    },
+    {
+        "test_id": 2261,
+        "input_type": "matrix",
+        "input_name": "bridges",
+        "input_value": "[[2, 1], [2, 0], [3, 2], [1, 0]]"
+    },
+    {
+        "test_id": 2262,
+        "input_type": "number",
+        "input_name": "islands",
+        "input_value": "5"
+    },
+    {
+        "test_id": 2262,
+        "input_type": "number",
+        "input_name": "a",
+        "input_value": "2"
+    },
+    {
+        "test_id": 2262,
+        "input_type": "number",
+        "input_name": "b",
+        "input_value": "0"
+    },
+    {
+        "test_id": 2262,
+        "input_type": "matrix",
+        "input_name": "bridges",
+        "input_value": "[[4, 2], [3, 2], [4, 3], [3, 0]]"
+    },
+    {
+        "test_id": 2263,
+        "input_type": "number",
+        "input_name": "islands",
+        "input_value": "6"
+    },
+    {
+        "test_id": 2263,
+        "input_type": "number",
+        "input_name": "a",
+        "input_value": "2"
+    },
+    {
+        "test_id": 2263,
+        "input_type": "number",
+        "input_name": "b",
+        "input_value": "4"
+    },
+    {
+        "test_id": 2263,
+        "input_type": "matrix",
+        "input_name": "bridges",
+        "input_value": "[[4, 1], [5, 0], [5, 2], [5, 4], [2, 0], [5, 1]]"
+    },
+    {
+        "test_id": 2264,
+        "input_type": "number",
+        "input_name": "islands",
+        "input_value": "6"
+    },
+    {
+        "test_id": 2264,
+        "input_type": "number",
+        "input_name": "a",
+        "input_value": "4"
+    },
+    {
+        "test_id": 2264,
+        "input_type": "number",
+        "input_name": "b",
+        "input_value": "0"
+    },
+    {
+        "test_id": 2264,
+        "input_type": "matrix",
+        "input_name": "bridges",
+        "input_value": "[[5, 0], [5, 4], [2, 0], [3, 0], [4, 1], [5, 1]]"
+    },
+    {
+        "test_id": 2265,
+        "input_type": "number",
+        "input_name": "islands",
+        "input_value": "6"
+    },
+    {
+        "test_id": 2265,
+        "input_type": "number",
+        "input_name": "a",
+        "input_value": "4"
+    },
+    {
+        "test_id": 2265,
+        "input_type": "number",
+        "input_name": "b",
+        "input_value": "2"
+    },
+    {
+        "test_id": 2265,
+        "input_type": "matrix",
+        "input_name": "bridges",
+        "input_value": "[[5, 3], [5, 2], [5, 0], [1, 0], [3, 0], [5, 4], [3, 2], [2, 1]]"
+    },
+    {
+        "test_id": 2266,
+        "input_type": "number",
+        "input_name": "islands",
+        "input_value": "7"
+    },
+    {
+        "test_id": 2266,
+        "input_type": "number",
+        "input_name": "a",
+        "input_value": "3"
+    },
+    {
+        "test_id": 2266,
+        "input_type": "number",
+        "input_name": "b",
+        "input_value": "4"
+    },
+    {
+        "test_id": 2266,
+        "input_type": "matrix",
+        "input_name": "bridges",
+        "input_value": "[[3, 0], [4, 1], [3, 1], [5, 2], [6, 3]]"
+    },
+    {
+        "test_id": 2267,
+        "input_type": "number",
+        "input_name": "islands",
+        "input_value": "7"
+    },
+    {
+        "test_id": 2267,
+        "input_type": "number",
+        "input_name": "a",
+        "input_value": "1"
+    },
+    {
+        "test_id": 2267,
+        "input_type": "number",
+        "input_name": "b",
+        "input_value": "3"
+    },
+    {
+        "test_id": 2267,
+        "input_type": "matrix",
+        "input_name": "bridges",
+        "input_value": "[[4, 1], [6, 4], [3, 0], [6, 3], [5, 0], [6, 2]]"
+    },
+    {
+        "test_id": 2268,
+        "input_type": "number",
+        "input_name": "islands",
+        "input_value": "7"
+    },
+    {
+        "test_id": 2268,
+        "input_type": "number",
+        "input_name": "a",
+        "input_value": "0"
+    },
+    {
+        "test_id": 2268,
+        "input_type": "number",
+        "input_name": "b",
+        "input_value": "2"
+    },
+    {
+        "test_id": 2268,
+        "input_type": "matrix",
+        "input_name": "bridges",
+        "input_value": "[[5, 4], [5, 0], [6, 1], [6, 0], [5, 1], [4, 3], [4, 1], [3, 2], [6, 4], [3, 0]]"
+    },
+    {
+        "test_id": 2269,
+        "input_type": "number",
+        "input_name": "islands",
+        "input_value": "8"
+    },
+    {
+        "test_id": 2269,
+        "input_type": "number",
+        "input_name": "a",
+        "input_value": "5"
+    },
+    {
+        "test_id": 2269,
+        "input_type": "number",
+        "input_name": "b",
+        "input_value": "3"
+    },
+    {
+        "test_id": 2269,
+        "input_type": "matrix",
+        "input_name": "bridges",
+        "input_value": "[[6, 3], [6, 4], [5, 4], [4, 1]]"
+    },
+    {
+        "test_id": 2270,
+        "input_type": "number",
+        "input_name": "islands",
+        "input_value": "9"
+    },
+    {
+        "test_id": 2270,
+        "input_type": "number",
+        "input_name": "a",
+        "input_value": "1"
+    },
+    {
+        "test_id": 2270,
+        "input_type": "number",
+        "input_name": "b",
+        "input_value": "6"
+    },
+    {
+        "test_id": 2270,
+        "input_type": "matrix",
+        "input_name": "bridges",
+        "input_value": "[[2, 1], [5, 1], [5, 0], [3, 1], [5, 2], [6, 2], [3, 2], [8, 5], [7, 1]]"
+    },
+
+    // Frustrated Aborigines
+    {
+        "test_id": 2271,
+        "input_type": "matrix",
+        "input_name": "bridges",
+        "input_value": "[[1], [2], [1]]"
+    },
+    {
+        "test_id": 2271,
+        "input_type": "arrayOfIntegers",
+        "input_name": "crowd",
+        "input_value": "[4, 1, 2]"
+    },
+    {
+        "test_id": 2272,
+        "input_type": "matrix",
+        "input_name": "bridges",
+        "input_value": "[[]]"
+    },
+    {
+        "test_id": 2272,
+        "input_type": "arrayOfIntegers",
+        "input_name": "crowd",
+        "input_value": "[2]"
+    },
+    {
+        "test_id": 2273,
+        "input_type": "matrix",
+        "input_name": "bridges",
+        "input_value": "[[], [0]]"
+    },
+    {
+        "test_id": 2273,
+        "input_type": "arrayOfIntegers",
+        "input_name": "crowd",
+        "input_value": "[2, 4]"
+    },
+    {
+        "test_id": 2274,
+        "input_type": "matrix",
+        "input_name": "bridges",
+        "input_value": "[[], [4], [], [4, 2], []]"
+    },
+    {
+        "test_id": 2274,
+        "input_type": "arrayOfIntegers",
+        "input_name": "crowd",
+        "input_value": "[4, 5, 10, 7, 10]"
+    },
+    {
+        "test_id": 2275,
+        "input_type": "matrix",
+        "input_name": "bridges",
+        "input_value": "[[6], [3], [0], [6], [], [2, 4], [5]]"
+    },
+    {
+        "test_id": 2275,
+        "input_type": "arrayOfIntegers",
+        "input_name": "crowd",
+        "input_value": "[18, 8, 9, 10, 13, 2, 8]"
+    },
+    {
+        "test_id": 2276,
+        "input_type": "matrix",
+        "input_name": "bridges",
+        "input_value": "[[5], [12], [6, 7], [12, 0], [5], [8, 9], [], [10], [6], [12, 1, 4, 5, 7], [11], [12, 2], []]"
+    },
+    {
+        "test_id": 2276,
+        "input_type": "arrayOfIntegers",
+        "input_name": "crowd",
+        "input_value": "[40, 14, 33, 14, 23, 21, 31, 10, 32, 37, 17, 15, 24]"
+    },
+
+    // Civilization Birth
+    {
+        "test_id": 2277,
+        "input_type": "number",
+        "input_name": "count",
+        "input_value": "2"
+    },
+    {
+        "test_id": 2277,
+        "input_type": "matrix",
+        "input_name": "votes",
+        "input_value": "[[1, 2], [1, -2], [-2, -1]]"
+    },
+    {
+        "test_id": 2278,
+        "input_type": "number",
+        "input_name": "count",
+        "input_value": "1"
+    },
+    {
+        "test_id": 2278,
+        "input_type": "matrix",
+        "input_name": "votes",
+        "input_value": "[[1, 1], [-1, -1]]"
+    },
+    {
+        "test_id": 2279,
+        "input_type": "number",
+        "input_name": "count",
+        "input_value": "1"
+    },
+    {
+        "test_id": 2279,
+        "input_type": "matrix",
+        "input_name": "votes",
+        "input_value": "[[1, -1], [-1, 1]]"
+    },
+    {
+        "test_id": 2280,
+        "input_type": "number",
+        "input_name": "count",
+        "input_value": "1"
+    },
+    {
+        "test_id": 2280,
+        "input_type": "matrix",
+        "input_name": "votes",
+        "input_value": "[[1, 1]]"
+    },
+    {
+        "test_id": 2281,
+        "input_type": "number",
+        "input_name": "count",
+        "input_value": "1"
+    },
+    {
+        "test_id": 2281,
+        "input_type": "matrix",
+        "input_name": "votes",
+        "input_value": "[[-1, -1]]"
+    },
+    {
+        "test_id": 2282,
+        "input_type": "number",
+        "input_name": "count",
+        "input_value": "1"
+    },
+    {
+        "test_id": 2282,
+        "input_type": "matrix",
+        "input_name": "votes",
+        "input_value": "[[1, -1]]"
+    },
+    {
+        "test_id": 2283,
+        "input_type": "number",
+        "input_name": "count",
+        "input_value": "3"
+    },
+    {
+        "test_id": 2283,
+        "input_type": "matrix",
+        "input_name": "votes",
+        "input_value": "[[-1, -2], [-2, -3], [-3, -3]]"
+    },
+    {
+        "test_id": 2284,
+        "input_type": "number",
+        "input_name": "count",
+        "input_value": "3"
+    },
+    {
+        "test_id": 2284,
+        "input_type": "matrix",
+        "input_name": "votes",
+        "input_value": "[[-1, -2], [-2, 3], [-3, 3]]"
+    },
+    {
+        "test_id": 2285,
+        "input_type": "number",
+        "input_name": "count",
+        "input_value": "13"
+    },
+    {
+        "test_id": 2285,
+        "input_type": "matrix",
+        "input_name": "votes",
+        "input_value": "[[11, 5], [-2, 11], [2, -3], [-10, -8], [-8, 10], [-7, -3], [-7, 13], [-10, -9], [-3, 4], [5, 11], [8, -2], [6, 7]]"
+    },
+    {
+        "test_id": 2286,
+        "input_type": "number",
+        "input_name": "count",
+        "input_value": "15"
+    },
+    {
+        "test_id": 2286,
+        "input_type": "matrix",
+        "input_name": "votes",
+        "input_value": "[[-7, 9], [9, -12], [-13, 10], [-1, -3], [15, -6], [-5, -14], [-1, 14], [3, -5], [13, -5], [-4, -10], [5, -14], [14, 1], [2, 3]]"
+    },
+    {
+        "test_id": 2287,
+        "input_type": "number",
+        "input_name": "count",
+        "input_value": "28"
+    },
+    {
+        "test_id": 2287,
+        "input_type": "matrix",
+        "input_name": "votes",
+        "input_value": "[[-6, 12], [-21, 7], [1, -23], [-1, -23], [17, -6], [-23, 14], [-7, -7], [-19, 27], [-25, -26], [4, 25], [-9, 3], [12, -19], [-6, -25], [7, -6], [-13, 24], [5, -13], [-9, -4], [-20, 19], [7, 13], [12, -10], [-24, 3], [18, -25], [-1, 4], [22, 8], [11, -16], [-11, -17], [17, -28], [22, 28]]"
+    },
+
+    // Unsafe Bridges
+    {
+        "test_id": 2288,
+        "input_type": "number",
+        "input_name": "n",
+        "input_value": "6"
+    },
+    {
+        "test_id": 2288,
+        "input_type": "matrix",
+        "input_name": "bridges",
+        "input_value": "[[0, 1], [1, 2], [2, 3], [3, 4], [4, 5]]"
+    },
+    {
+        "test_id": 2288,
+        "input_type": "matrix",
+        "input_name": "newBridges",
+        "input_value": "[[2, 4], [1, 3], [3, 5], [0, 5]]"
+    },
+    {
+        "test_id": 2289,
+        "input_type": "number",
+        "input_name": "n",
+        "input_value": "2"
+    },
+    {
+        "test_id": 2289,
+        "input_type": "matrix",
+        "input_name": "bridges",
+        "input_value": "[]"
+    },
+    {
+        "test_id": 2289,
+        "input_type": "matrix",
+        "input_name": "newBridges",
+        "input_value": "[[0, 1]]"
+    },
+    {
+        "test_id": 2290,
+        "input_type": "number",
+        "input_name": "n",
+        "input_value": "3"
+    },
+    {
+        "test_id": 2290,
+        "input_type": "matrix",
+        "input_name": "bridges",
+        "input_value": "[]"
+    },
+    {
+        "test_id": 2290,
+        "input_type": "matrix",
+        "input_name": "newBridges",
+        "input_value": "[[0, 1], [2, 0], [1, 2]]"
+    },
+    {
+        "test_id": 2291,
+        "input_type": "number",
+        "input_name": "n",
+        "input_value": "4"
+    },
+    {
+        "test_id": 2291,
+        "input_type": "matrix",
+        "input_name": "bridges",
+        "input_value": "[[1, 3]]"
+    },
+    {
+        "test_id": 2291,
+        "input_type": "matrix",
+        "input_name": "newBridges",
+        "input_value": "[[0, 1], [1, 2], [2, 0], [0, 3], [2, 3]]"
+    },
+    {
+        "test_id": 2292,
+        "input_type": "number",
+        "input_name": "n",
+        "input_value": "5"
+    },
+    {
+        "test_id": 2292,
+        "input_type": "matrix",
+        "input_name": "bridges",
+        "input_value": "[[3, 1], [3, 4], [1, 0], [0, 3]]"
+    },
+    {
+        "test_id": 2292,
+        "input_type": "matrix",
+        "input_name": "newBridges",
+        "input_value": "[[1, 4], [2, 4], [2, 1], [3, 2], [4, 0], [2, 0]]"
+    },
+    {
+        "test_id": 2293,
+        "input_type": "number",
+        "input_name": "n",
+        "input_value": "10"
+    },
+    {
+        "test_id": 2293,
+        "input_type": "matrix",
+        "input_name": "bridges",
+        "input_value": "[[6, 1], [4, 9], [7, 5], [8, 6], [2, 5], [3, 6], [8, 7], [3, 1], [2, 0], [8, 3], [4, 7], [9, 5], [8, 4], [3, 9], [5, 3]]"
+    },
+    {
+        "test_id": 2293,
+        "input_type": "matrix",
+        "input_name": "newBridges",
+        "input_value": "[[1, 8], [5, 0], [4, 2], [2, 3], [6, 2], [4, 6], [0, 9], [4, 3], [8, 5], [7, 9], [4, 0], [7, 0], [1, 7], [8, 2], [0, 1], [5, 6], [5, 1], [0, 8], [9, 2], [1, 4]]"
+    },
+
+    // Ideal Parade
+    {
+        "test_id": 2294,
+        "input_type": "number",
+        "input_name": "n",
+        "input_value": "5"
+    },
+    {
+        "test_id": 2294,
+        "input_type": "matrix",
+        "input_name": "bridges",
+        "input_value": "[[1, 2, 500], [1, 5, 1000], [2, 3, 2000], [3, 1, 2016], [4, 1, 1900], [5, 4, 2012]]"
+    },
+    {
+        "test_id": 2294,
+        "input_type": "arrayOfIntegers",
+        "input_name": "times",
+        "input_value": "[0, 1, 2, 3, 4, 5, 6]"
+    },
+    {
+        "test_id": 2295,
+        "input_type": "number",
+        "input_name": "n",
+        "input_value": "3"
+    },
+    {
+        "test_id": 2295,
+        "input_type": "matrix",
+        "input_name": "bridges",
+        "input_value": "[[1, 2, 500], [1, 3, 1000], [2, 3, 2000]]"
+    },
+    {
+        "test_id": 2295,
+        "input_type": "arrayOfIntegers",
+        "input_name": "times",
+        "input_value": "[0, 1, 2]"
+    },
+    {
+        "test_id": 2296,
+        "input_type": "number",
+        "input_name": "n",
+        "input_value": "3"
+    },
+    {
+        "test_id": 2296,
+        "input_type": "matrix",
+        "input_name": "bridges",
+        "input_value": "[[1, 3, 138057], [3, 3, 224248], [3, 1, 37024], [1, 1, 330083], [1, 3, 241572], [3, 1, 57821], [1, 1, 2108]]"
+    },
+    {
+        "test_id": 2296,
+        "input_type": "arrayOfIntegers",
+        "input_name": "times",
+        "input_value": "[1, 3, 6, 5, 3, 6, 5]"
+    },
+    {
+        "test_id": 2297,
+        "input_type": "number",
+        "input_name": "n",
+        "input_value": "4"
+    },
+    {
+        "test_id": 2297,
+        "input_type": "matrix",
+        "input_name": "bridges",
+        "input_value": "[[1, 2, 1], [2, 1, 2], [2, 3, 3], [3, 4, 4], [4, 2, 5]]"
+    },
+    {
+        "test_id": 2297,
+        "input_type": "arrayOfIntegers",
+        "input_name": "times",
+        "input_value": "[0, 1, 2, 3, 4, 5]"
+    },
+    {
+        "test_id": 2298,
+        "input_type": "number",
+        "input_name": "n",
+        "input_value": "4"
+    },
+    {
+        "test_id": 2298,
+        "input_type": "matrix",
+        "input_name": "bridges",
+        "input_value": "[[1, 2, 2], [1, 4, 1], [2, 3, 3], [3, 1, 5], [2, 1, 6], [4, 2, 4]]"
+    },
+    {
+        "test_id": 2298,
+        "input_type": "arrayOfIntegers",
+        "input_name": "times",
+        "input_value": "[0, 1, 2, 3, 4, 5, 6]"
+    },
+    {
+        "test_id": 2299,
+        "input_type": "number",
+        "input_name": "n",
+        "input_value": "3"
+    },
+    {
+        "test_id": 2299,
+        "input_type": "matrix",
+        "input_name": "bridges",
+        "input_value": "[[1, 3, 2283], [3, 2, 1079], [2, 3, 2082], [3, 1, 1259]]"
+    },
+    {
+        "test_id": 2299,
+        "input_type": "arrayOfIntegers",
+        "input_name": "times",
+        "input_value": "[0, 1, 2]"
+    },
+    {
+        "test_id": 2300,
+        "input_type": "number",
+        "input_name": "n",
+        "input_value": "4"
+    },
+    {
+        "test_id": 2300,
+        "input_type": "matrix",
+        "input_name": "bridges",
+        "input_value": "[[1, 1, 1927], [1, 3, 171], [3, 3, 801], [3, 4, 1045], [4, 1, 2237], [1, 1, 2989], [1, 1, 796]]"
+    },
+    {
+        "test_id": 2300,
+        "input_type": "arrayOfIntegers",
+        "input_name": "times",
+        "input_value": "[0, 1, 2, 3, 4, 5]"
+    },
+    {
+        "test_id": 2301,
+        "input_type": "number",
+        "input_name": "n",
+        "input_value": "5"
+    },
+    {
+        "test_id": 2301,
+        "input_type": "matrix",
+        "input_name": "bridges",
+        "input_value": "[[1, 1, 1209], [1, 3, 1773], [3, 3, 2444], [3, 4, 2525], [4, 3, 16], [3, 1, 2625], [1, 1, 1310], [1, 1, 553], [1, 2, 1943], [2, 2, 958], [2, 1, 1212]]"
+    },
+    {
+        "test_id": 2301,
+        "input_type": "arrayOfIntegers",
+        "input_name": "times",
+        "input_value": "[0, 1, 2, 3, 4, 5, 6, 7, 8, 9]"
+    },
+    {
+        "test_id": 2302,
+        "input_type": "number",
+        "input_name": "n",
+        "input_value": "6"
+    },
+    {
+        "test_id": 2302,
+        "input_type": "matrix",
+        "input_name": "bridges",
+        "input_value": "[[1, 4, 2829], [4, 1, 2366], [1, 4, 854], [4, 2, 296], [2, 4, 1602], [4, 6, 2215], [6, 4, 1352], [4, 2, 164], [2, 1, 24], [1, 3, 299], [3, 1, 1181]]"
+    },
+    {
+        "test_id": 2302,
+        "input_type": "arrayOfIntegers",
+        "input_name": "times",
+        "input_value": "[0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10]"
+    },
+    {
+        "test_id": 2303,
+        "input_type": "number",
+        "input_name": "n",
+        "input_value": "5"
+    },
+    {
+        "test_id": 2303,
+        "input_type": "matrix",
+        "input_name": "bridges",
+        "input_value": "[[1, 5, 2553], [5, 4, 102], [4, 1, 1011], [1, 5, 286], [5, 2, 2120], [2, 5, 1220], [5, 4, 1330], [4, 4, 1506], [4, 2, 2358]]"
+    },
+    {
+        "test_id": 2303,
+        "input_type": "arrayOfIntegers",
+        "input_name": "times",
+        "input_value": "[0, 1, 2, 3, 4, 5, 6, 7, 8]"
+    },
+    {
+        "test_id": 2304,
+        "input_type": "number",
+        "input_name": "n",
+        "input_value": "6"
+    },
+    {
+        "test_id": 2304,
+        "input_type": "matrix",
+        "input_name": "bridges",
+        "input_value": "[[1, 6, 104], [6, 4, 524], [4, 5, 1980], [5, 2, 1118], [2, 1, 2788], [1, 3, 69], [3, 3, 2186], [3, 2, 1537], [2, 2, 2975], [2, 6, 2096], [6, 2, 1327]]"
+    },
+    {
+        "test_id": 2304,
+        "input_type": "arrayOfIntegers",
+        "input_name": "times",
+        "input_value": "[0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10]"
+    },
+    {
+        "test_id": 2305,
+        "input_type": "number",
+        "input_name": "n",
+        "input_value": "6"
+    },
+    {
+        "test_id": 2305,
+        "input_type": "matrix",
+        "input_name": "bridges",
+        "input_value": "[[1, 6, 154690], [6, 5, 143946], [5, 4, 62429], [4, 2, 391860], [2, 3, 305208], [3, 6, 298311], [6, 2, 190761], [2, 1, 142323], [1, 2, 227326], [2, 5, 443713], [5, 1, 68855]]"
+    },
+    {
+        "test_id": 2305,
+        "input_type": "arrayOfIntegers",
+        "input_name": "times",
+        "input_value": "[4, 2, 7, 3, 8, 7, 10, 7, 6, 8, 3]"
+    },
+
+    // Excursion Plan
+    {
+        "test_id": 2306,
+        "input_type": "number",
+        "input_name": "n",
+        "input_value": "2"
+    },
+    {
+        "test_id": 2306,
+        "input_type": "number",
+        "input_name": "m",
+        "input_value": "3"
+    },
+    {
+        "test_id": 2306,
+        "input_type": "number",
+        "input_name": "l",
+        "input_value": "0"
+    },
+    {
+        "test_id": 2306,
+        "input_type": "number",
+        "input_name": "r",
+        "input_value": "8"
+    },
+    {
+        "test_id": 2307,
+        "input_type": "number",
+        "input_name": "n",
+        "input_value": "2"
+    },
+    {
+        "test_id": 2307,
+        "input_type": "number",
+        "input_name": "m",
+        "input_value": "3"
+    },
+    {
+        "test_id": 2307,
+        "input_type": "number",
+        "input_name": "l",
+        "input_value": "2"
+    },
+    {
+        "test_id": 2307,
+        "input_type": "number",
+        "input_name": "r",
+        "input_value": "6"
+    },
+    {
+        "test_id": 2308,
+        "input_type": "number",
+        "input_name": "n",
+        "input_value": "1"
+    },
+    {
+        "test_id": 2308,
+        "input_type": "number",
+        "input_name": "m",
+        "input_value": "1"
+    },
+    {
+        "test_id": 2308,
+        "input_type": "number",
+        "input_name": "l",
+        "input_value": "0"
+    },
+    {
+        "test_id": 2308,
+        "input_type": "number",
+        "input_name": "r",
+        "input_value": "0"
+    },
+    {
+        "test_id": 2309,
+        "input_type": "number",
+        "input_name": "n",
+        "input_value": "1"
+    },
+    {
+        "test_id": 2309,
+        "input_type": "number",
+        "input_name": "m",
+        "input_value": "100"
+    },
+    {
+        "test_id": 2309,
+        "input_type": "number",
+        "input_name": "l",
+        "input_value": "0"
+    },
+    {
+        "test_id": 2309,
+        "input_type": "number",
+        "input_name": "r",
+        "input_value": "99"
+    },
+    {
+        "test_id": 2310,
+        "input_type": "number",
+        "input_name": "n",
+        "input_value": "2"
+    },
+    {
+        "test_id": 2310,
+        "input_type": "number",
+        "input_name": "m",
+        "input_value": "2"
+    },
+    {
+        "test_id": 2310,
+        "input_type": "number",
+        "input_name": "l",
+        "input_value": "0"
+    },
+    {
+        "test_id": 2310,
+        "input_type": "number",
+        "input_name": "r",
+        "input_value": "3"
+    },
+    {
+        "test_id": 2311,
+        "input_type": "number",
+        "input_name": "n",
+        "input_value": "2"
+    },
+    {
+        "test_id": 2311,
+        "input_type": "number",
+        "input_name": "m",
+        "input_value": "10"
+    },
+    {
+        "test_id": 2311,
+        "input_type": "number",
+        "input_name": "l",
+        "input_value": "0"
+    },
+    {
+        "test_id": 2311,
+        "input_type": "number",
+        "input_name": "r",
+        "input_value": "99"
+    },
+
     // 
-
-
 
 
 
