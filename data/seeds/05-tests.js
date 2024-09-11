@@ -15770,7 +15770,1314 @@ const tests = [
         "is_sample": true
     },
 
-    // 
+    ////////// Intro hidden /////////////////////////////////////////////////// Intro hidden /////////////////////////////////////////
+    ////////// Intro hidden /////////////////////////////////////////////////// Intro hidden /////////////////////////////////////////
+    ////////// Intro hidden /////////////////////////////////////////////////// Intro hidden /////////////////////////////////////////
+    ////////// Intro hidden /////////////////////////////////////////////////// Intro hidden /////////////////////////////////////////
+    ////////// Intro hidden /////////////////////////////////////////////////// Intro hidden /////////////////////////////////////////
+    ////////// Intro hidden /////////////////////////////////////////////////// Intro hidden /////////////////////////////////////////
+    ////////// Intro hidden /////////////////////////////////////////////////// Intro hidden /////////////////////////////////////////
+    ////////// Intro hidden /////////////////////////////////////////////////// Intro hidden /////////////////////////////////////////
+    ////////// Intro hidden /////////////////////////////////////////////////// Intro hidden /////////////////////////////////////////
+    ////////// Intro hidden /////////////////////////////////////////////////// Intro hidden /////////////////////////////////////////
+    ////////// Intro hidden /////////////////////////////////////////////////// Intro hidden /////////////////////////////////////////
+    ////////// Intro hidden /////////////////////////////////////////////////// Intro hidden /////////////////////////////////////////
+
+
+    // add
+    {
+        "challenge_id": 1,
+        "order_index": 1,
+        "expected_output": "-1",
+        "is_complex": false,
+        "is_sample": false
+    },
+    {
+        "challenge_id": 1,
+        "order_index": 2,
+        "expected_output": "200",
+        "is_complex": false,
+        "is_sample": false
+    },
+    {
+        "challenge_id": 1,
+        "order_index": 3,
+        "expected_output": "-200",
+        "is_complex": false,
+        "is_sample": false
+    },
+    {
+        "challenge_id": 1,
+        "order_index": 4,
+        "expected_output": "-97",
+        "is_complex": false,
+        "is_sample": false
+    },
+    {
+        "challenge_id": 1,
+        "order_index": 5,
+        "expected_output": "2000",
+        "is_complex": false,
+        "is_sample": false
+    },
+    {
+        "challenge_id": 1,
+        "order_index": 6,
+        "expected_output": "0",
+        "is_complex": false,
+        "is_sample": false
+    },
+
+    // centuryFromYear
+    {
+        "challenge_id": 2,
+        "order_index": 1,
+        "expected_output": "3",
+        "is_complex": false,
+        "is_sample": false
+    },
+    {
+        "challenge_id": 2,
+        "order_index": 2,
+        "expected_output": "16",
+        "is_complex": false,
+        "is_sample": false
+    },
+    {
+        "challenge_id": 2,
+        "order_index": 3,
+        "expected_output": "1",
+        "is_complex": false,
+        "is_sample": false
+    },
+    {
+        "challenge_id": 2,
+        "order_index": 4,
+        "expected_output": "1",
+        "is_complex": false,
+        "is_sample": false
+    },
+    {
+        "challenge_id": 2,
+        "order_index": 5,
+        "expected_output": "2",
+        "is_complex": false,
+        "is_sample": false
+    },
+    {
+        "challenge_id": 2,
+        "order_index": 6,
+        "expected_output": "1",
+        "is_complex": false,
+        "is_sample": false
+    },
+    {
+        "challenge_id": 2,
+        "order_index": 7,
+        "expected_output": "9",
+        "is_complex": false,
+        "is_sample": false
+    },
+    {
+        "challenge_id": 2,
+        "order_index": 8,
+        "expected_output": "21",
+        "is_complex": false,
+        "is_sample": false
+    },
+    {
+        "challenge_id": 2,
+        "order_index": 9,
+        "expected_output": "12",
+        "is_complex": false,
+        "is_sample": false
+    },
+
+    // checkPalindrome
+    {
+        "challenge_id": 3,
+        "order_index": 1,
+        "expected_output": "false",
+        "is_complex": false,
+        "is_sample": false
+    },
+    {
+        "challenge_id": 3,
+        "order_index": 2,
+        "expected_output": "true",
+        "is_complex": false,
+        "is_sample": false
+    },
+    {
+        "challenge_id": 3,
+        "order_index": 3,
+        "expected_output": "true",
+        "is_complex": false,
+        "is_sample": false
+    },
+    {
+        "challenge_id": 3,
+        "order_index": 4,
+        "expected_output": "false",
+        "is_complex": false,
+        "is_sample": false
+    },
+    {
+        "challenge_id": 3,
+        "order_index": 5,
+        "expected_output": "true",
+        "is_complex": false,
+        "is_sample": false
+    },
+    {
+        "challenge_id": 3,
+        "order_index": 6,
+        "expected_output": "false",
+        "is_complex": false,
+        "is_sample": false
+    },
+    {
+        "challenge_id": 3,
+        "order_index": 7,
+        "expected_output": "false",
+        "is_complex": false,
+        "is_sample": false
+    },
+    {
+        "challenge_id": 3,
+        "order_index": 8,
+        "expected_output": "true",
+        "is_complex": false,
+        "is_sample": false
+    },
+
+    // adjacentElementsProduct
+    {
+        "challenge_id": 4,
+        "order_index": 1,
+        "expected_output": "10",
+        "is_complex": false,
+        "is_sample": false
+    },
+    {
+        "challenge_id": 4,
+        "order_index": 2,
+        "expected_output": "1",
+        "is_complex": false,
+        "is_sample": false
+    },
+    {
+        "challenge_id": 4,
+        "order_index": 3,
+        "expected_output": "-1",
+        "is_complex": false,
+        "is_sample": false
+    },
+    {
+        "challenge_id": 4,
+        "order_index": 4,
+        "expected_output": "-100",
+        "is_complex": false,
+        "is_sample": false
+    },
+    {
+        "challenge_id": 4,
+        "order_index": 5,
+        "expected_output": "40",
+        "is_complex": false,
+        "is_sample": false
+    },
+    {
+        "challenge_id": 4,
+        "order_index": 6,
+        "expected_output": "2300",
+        "is_complex": false,
+        "is_sample": false
+    },
+    {
+        "challenge_id": 4,
+        "order_index": 7,
+        "expected_output": "12",
+        "is_complex": false,
+        "is_sample": false
+    },
+    {
+        "challenge_id": 4,
+        "order_index": 8,
+        "expected_output": "25000",
+        "is_complex": false,
+        "is_sample": false
+    },
+    {
+        "challenge_id": 4,
+        "order_index": 9,
+        "expected_output": "1000000",
+        "is_complex": false,
+        "is_sample": false
+    },
+
+    // shapeArea
+    {
+        "challenge_id": 5,
+        "order_index": 1,
+        "expected_output": "181",
+        "is_complex": false,
+        "is_sample": false
+    },
+    {
+        "challenge_id": 5,
+        "order_index": 2,
+        "expected_output": "2466421",
+        "is_complex": false,
+        "is_sample": false
+    },
+    {
+        "challenge_id": 5,
+        "order_index": 3,
+        "expected_output": "2935465",
+        "is_complex": false,
+        "is_sample": false
+    },
+    {
+        "challenge_id": 5,
+        "order_index": 4,
+        "expected_output": "221",
+        "is_complex": false,
+        "is_sample": false
+    },
+    {
+        "challenge_id": 5,
+        "order_index": 5,
+        "expected_output": "477265",
+        "is_complex": false,
+        "is_sample": false
+    },
+    {
+        "challenge_id": 5,
+        "order_index": 6,
+        "expected_output": "1994005",
+        "is_complex": false,
+        "is_sample": false
+    },
+    {
+        "challenge_id": 5,
+        "order_index": 7,
+        "expected_output": "16381",
+        "is_complex": false,
+        "is_sample": false
+    },
+    {
+        "challenge_id": 5,
+        "order_index": 8,
+        "expected_output": "17113",
+        "is_complex": false,
+        "is_sample": false
+    },
+    {
+        "challenge_id": 5,
+        "order_index": 9,
+        "expected_output": "3613",
+        "is_complex": false,
+        "is_sample": false
+    },
+    {
+        "challenge_id": 5,
+        "order_index": 10,
+        "expected_output": "80226445",
+        "is_complex": false,
+        "is_sample": false
+    },
+
+    // Make Array Consecutive 2
+    {
+        "challenge_id": 6,
+        "order_index": 1,
+        "expected_output": "4",
+        "is_complex": false,
+        "is_sample": false
+    },
+    {
+        "challenge_id": 6,
+        "order_index": 2,
+        "expected_output": "0",
+        "is_complex": false,
+        "is_sample": false
+    },
+    {
+        "challenge_id": 6,
+        "order_index": 3,
+        "expected_output": "0",
+        "is_complex": false,
+        "is_sample": false
+    },
+    {
+        "challenge_id": 6,
+        "order_index": 4,
+        "expected_output": "13",
+        "is_complex": false,
+        "is_sample": false
+    },
+    {
+        "challenge_id": 6,
+        "order_index": 5,
+        "expected_output": "5",
+        "is_complex": false,
+        "is_sample": false
+    },
+
+    // almostIncreasingSequence
+    {
+        "challenge_id": 7,
+        "order_index": 1,
+        "expected_output": "false",
+        "is_complex": false,
+        "is_sample": false
+    },
+    {
+        "challenge_id": 7,
+        "order_index": 2,
+        "expected_output": "false",
+        "is_complex": false,
+        "is_sample": false
+    },
+    {
+        "challenge_id": 7,
+        "order_index": 3,
+        "expected_output": "true",
+        "is_complex": false,
+        "is_sample": false
+    },
+    {
+        "challenge_id": 7,
+        "order_index": 4,
+        "expected_output": "false",
+        "is_complex": false,
+        "is_sample": false
+    },
+    {
+        "challenge_id": 7,
+        "order_index": 5,
+        "expected_output": "false",
+        "is_complex": false,
+        "is_sample": false
+    },
+    {
+        "challenge_id": 7,
+        "order_index": 6,
+        "expected_output": "true",
+        "is_complex": false,
+        "is_sample": false
+    },
+    {
+        "challenge_id": 7,
+        "order_index": 7,
+        "expected_output": "false",
+        "is_complex": false,
+        "is_sample": false
+    },
+    {
+        "challenge_id": 7,
+        "order_index": 8,
+        "expected_output": "false",
+        "is_complex": false,
+        "is_sample": false
+    },
+    {
+        "challenge_id": 7,
+        "order_index": 9,
+        "expected_output": "false",
+        "is_complex": false,
+        "is_sample": false
+    },
+    {
+        "challenge_id": 7,
+        "order_index": 10,
+        "expected_output": "false",
+        "is_complex": false,
+        "is_sample": false
+    },
+    {
+        "challenge_id": 7,
+        "order_index": 11,
+        "expected_output": "true",
+        "is_complex": false,
+        "is_sample": false
+    },
+    {
+        "challenge_id": 7,
+        "order_index": 12,
+        "expected_output": "false",
+        "is_complex": false,
+        "is_sample": false
+    },
+    {
+        "challenge_id": 7,
+        "order_index": 13,
+        "expected_output": "true",
+        "is_complex": false,
+        "is_sample": false
+    },
+    {
+        "challenge_id": 7,
+        "order_index": 14,
+        "expected_output": "false",
+        "is_complex": false,
+        "is_sample": false
+    },
+    {
+        "challenge_id": 7,
+        "order_index": 15,
+        "expected_output": "false",
+        "is_complex": false,
+        "is_sample": false
+    },
+
+    // matrixElementsSum
+    {
+        "challenge_id": 8,
+        "order_index": 1,
+        "expected_output": "6",
+        "is_complex": false,
+        "is_sample": false
+    },
+    {
+        "challenge_id": 8,
+        "order_index": 2,
+        "expected_output": "21",
+        "is_complex": false,
+        "is_sample": false
+    },
+    {
+        "challenge_id": 8,
+        "order_index": 3,
+        "expected_output": "21",
+        "is_complex": false,
+        "is_sample": false
+    },
+    {
+        "challenge_id": 8,
+        "order_index": 4,
+        "expected_output": "18",
+        "is_complex": false,
+        "is_sample": false
+    },
+    {
+        "challenge_id": 8,
+        "order_index": 5,
+        "expected_output": "1",
+        "is_complex": false,
+        "is_sample": false
+    },
+    {
+        "challenge_id": 8,
+        "order_index": 6,
+        "expected_output": "17",
+        "is_complex": false,
+        "is_sample": false
+    },
+    {
+        "challenge_id": 8,
+        "order_index": 7,
+        "expected_output": "4",
+        "is_complex": false,
+        "is_sample": false
+    },
+    {
+        "challenge_id": 8,
+        "order_index": 8,
+        "expected_output": "22",
+        "is_complex": false,
+        "is_sample": false
+    },
+    {
+        "challenge_id": 8,
+        "order_index": 9,
+        "expected_output": "0",
+        "is_complex": false,
+        "is_sample": false
+    },
+    {
+        "challenge_id": 8,
+        "order_index": 10,
+        "expected_output": "12",
+        "is_complex": false,
+        "is_sample": false
+    },
+
+    // All Longest Strings
+    {
+        "challenge_id": 9,
+        "order_index": 1,
+        "expected_output": '["khtalawph", "gcyksgxay", "fywmfrxgk"]',
+        "is_complex": true,
+        "is_sample": false
+    },
+    {
+        "challenge_id": 9,
+        "order_index": 2,
+        "expected_output": '["rfty"]',
+        "is_complex": true,
+        "is_sample": false
+    },
+    {
+        "challenge_id": 9,
+        "order_index": 3,
+        "expected_output": '["zcecgkpyb"]',
+        "is_complex": true,
+        "is_sample": false
+    },
+    {
+        "challenge_id": 9,
+        "order_index": 4,
+        "expected_output": '["ikbxvrug", "hiccycgk"]',
+        "is_complex": true,
+        "is_sample": false
+    },
+    {
+        "challenge_id": 9,
+        "order_index": 5,
+        "expected_output": '["matafgnmrq", "mswvjnqusu"]',
+        "is_complex": true,
+        "is_sample": false
+    },
+    {
+        "challenge_id": 9,
+        "order_index": 6,
+        "expected_output": '["udyuekcfn", "zrmiiqwvg"]',
+        "is_complex": true,
+        "is_sample": false
+    },
+    {
+        "challenge_id": 9,
+        "order_index": 7,
+        "expected_output": '["uoopjf", "lixdzs"]',
+        "is_complex": true,
+        "is_sample": false
+    },
+    {
+        "challenge_id": 9,
+        "order_index": 8,
+        "expected_output": '["kpyutrrxa"]',
+        "is_complex": true,
+        "is_sample": false
+    },
+    {
+        "challenge_id": 9,
+        "order_index": 9,
+        "expected_output": '["uljczhlv"]',
+        "is_complex": true,
+        "is_sample": false
+    },
+    {
+        "challenge_id": 9,
+        "order_index": 10,
+        "expected_output": '["dumcwfqfu"]',
+        "is_complex": true,
+        "is_sample": false
+    },
+
+    // commonCharacterCount
+    {
+        "challenge_id": 10,
+        "order_index": 1,
+        "expected_output": "10",
+        "is_complex": false,
+        "is_sample": false
+    },
+    {
+        "challenge_id": 10,
+        "order_index": 2,
+        "expected_output": "2",
+        "is_complex": false,
+        "is_sample": false
+    },
+    {
+        "challenge_id": 10,
+        "order_index": 3,
+        "expected_output": "5",
+        "is_complex": false,
+        "is_sample": false
+    },
+    {
+        "challenge_id": 10,
+        "order_index": 4,
+        "expected_output": "1",
+        "is_complex": false,
+        "is_sample": false
+    },
+    {
+        "challenge_id": 10,
+        "order_index": 5,
+        "expected_output": "2",
+        "is_complex": false,
+        "is_sample": false
+    },
+
+    // isLucky
+    {
+        "challenge_id": 11,
+        "order_index": 1,
+        "expected_output": "true",
+        "is_complex": false,
+        "is_sample": false
+    },
+    {
+        "challenge_id": 11,
+        "order_index": 2,
+        "expected_output": "false",
+        "is_complex": false,
+        "is_sample": false
+    },
+    {
+        "challenge_id": 11,
+        "order_index": 3,
+        "expected_output": "false",
+        "is_complex": false,
+        "is_sample": false
+    },
+    {
+        "challenge_id": 11,
+        "order_index": 4,
+        "expected_output": "true",
+        "is_complex": false,
+        "is_sample": false
+    },
+    {
+        "challenge_id": 11,
+        "order_index": 5,
+        "expected_output": "false",
+        "is_complex": false,
+        "is_sample": false
+    },
+    {
+        "challenge_id": 11,
+        "order_index": 6,
+        "expected_output": "true",
+        "is_complex": false,
+        "is_sample": false
+    },
+    {
+        "challenge_id": 11,
+        "order_index": 7,
+        "expected_output": "true",
+        "is_complex": false,
+        "is_sample": false
+    },
+    {
+        "challenge_id": 11,
+        "order_index": 8,
+        "expected_output": "false",
+        "is_complex": false,
+        "is_sample": false
+    },
+    {
+        "challenge_id": 11,
+        "order_index": 9,
+        "expected_output": "false",
+        "is_complex": false,
+        "is_sample": false
+    },
+    {
+        "challenge_id": 11,
+        "order_index": 10,
+        "expected_output": "true",
+        "is_complex": false,
+        "is_sample": false
+    },
+
+    // Sort by Height
+    {
+        "challenge_id": 12,
+        "order_index": 1,
+        "expected_output": "[1000]",
+        "is_complex": true,
+        "is_sample": false
+    },
+    {
+        "challenge_id": 12,
+        "order_index": 2,
+        "expected_output": "[-1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1]",
+        "is_complex": true,
+        "is_sample": false
+    },
+    {
+        "challenge_id": 12,
+        "order_index": 3,
+        "expected_output": "[3, 29, 48, 62, 63, 78, 115, 163, 189, 198, 263, 263, 288, 299, 313, 333, 340, 351, 358, 365, 374, 377, 386, 407, 451, 501, 522, 576, 596, 598, 598, 626, 630, 647, 650, 689, 735, 736, 743, 758, 764, 857, 864, 874, 886, 899, 964, 975, 982, 983]",
+        "is_complex": true,
+        "is_sample": false
+    },
+    {
+        "challenge_id": 12,
+        "order_index": 4,
+        "expected_output": "[3, 4, 5, 8, 9, 9, 9, 9, 10, -1, 12, -1, 15, 16, 17, 18, 20, 21, 24, 24, 25, 26, 29, 30, -1, 34, 35, 36, 36, 37, 38, 39, -1, 42, -1, 44, 44, 44, 45, 46, -1, 46, -1, -1, 50, 50, 51, 54, 55, 57, 58, 59, 59, 60, 60, 65, 65, 66, -1, 66, 67, 69, -1, 69, 70, 70, 72, 75, 78, 78, 78, 79, 79, 82, 84, 87, 88, 89, 90, -1, 90, 91, 91, 92, 94, 95, 97, 97, -1, 97, 97, 98, 98, 99, 99, -1, -1, -1, 100, -1]",
+        "is_complex": true,
+        "is_sample": false
+    },
+
+    // reverseInParentheses
+    {
+        "challenge_id": 13,
+        "order_index": 1,
+        "expected_output": "foobarbaz",
+        "is_complex": false,
+        "is_sample": false
+    },
+    {
+        "challenge_id": 13,
+        "order_index": 2,
+        "expected_output": "",
+        "is_complex": false,
+        "is_sample": false
+    },
+    {
+        "challenge_id": 13,
+        "order_index": 3,
+        "expected_output": "bar",
+        "is_complex": false,
+        "is_sample": false
+    },
+    {
+        "challenge_id": 13,
+        "order_index": 4,
+        "expected_output": "wizeline",
+        "is_complex": false,
+        "is_sample": false
+    },
+    {
+        "challenge_id": 13,
+        "order_index": 5,
+        "expected_output": "foobar",
+        "is_complex": false,
+        "is_sample": false
+    },
+    {
+        "challenge_id": 13,
+        "order_index": 6,
+        "expected_output": "abcdefghijklmnopqrstuvwxyz",
+        "is_complex": false,
+        "is_sample": false
+    },
+    {
+        "challenge_id": 13,
+        "order_index": 7,
+        "expected_output": "abcdefghijklmnopqrstuvwxyzabcd",
+        "is_complex": false,
+        "is_sample": false
+    },
+
+    // alternatingSums
+    {
+        "challenge_id": 14,
+        "order_index": 1,
+        "expected_output": "[100, 0]",
+        "is_complex": true,
+        "is_sample": false
+    },
+    {
+        "challenge_id": 14,
+        "order_index": 2,
+        "expected_output": "[1675, 1817]",
+        "is_complex": true,
+        "is_sample": false
+    },
+
+    // Add Border
+    {
+        "challenge_id": 15,
+        "order_index": 1,
+        "expected_output": '["*******", "*yhopw*", "*hpplz*", "*idbnb*", "**wehb*", "*swbbg*", "*******"]',
+        "is_complex": true,
+        "is_sample": false
+    },
+    {
+        "challenge_id": 15,
+        "order_index": 2,
+        "expected_output": '["****", "****", "****", "**e*", "****"]',
+        "is_complex": true,
+        "is_sample": false
+    },
+    {
+        "challenge_id": 15,
+        "order_index": 3,
+        "expected_output": '["***", "*a*", "*a*", "***"]',
+        "is_complex": true,
+        "is_sample": false
+    },
+
+    // Are Similar?
+    {
+        "challenge_id": 16,
+        "order_index": 1,
+        "expected_output": "false",
+        "is_complex": false,
+        "is_sample": false
+    },
+    {
+        "challenge_id": 16,
+        "order_index": 2,
+        "expected_output": "false",
+        "is_complex": false,
+        "is_sample": false
+    },
+    {
+        "challenge_id": 16,
+        "order_index": 3,
+        "expected_output": "false",
+        "is_complex": false,
+        "is_sample": false
+    },
+    {
+        "challenge_id": 16,
+        "order_index": 4,
+        "expected_output": "false",
+        "is_complex": false,
+        "is_sample": false
+    },
+    {
+        "challenge_id": 16,
+        "order_index": 5,
+        "expected_output": "true",
+        "is_complex": false,
+        "is_sample": false
+    },
+    {
+        "challenge_id": 16,
+        "order_index": 6,
+        "expected_output": "true",
+        "is_complex": false,
+        "is_sample": false
+    },
+    {
+        "challenge_id": 16,
+        "order_index": 7,
+        "expected_output": "true",
+        "is_complex": false,
+        "is_sample": false
+    },
+    {
+        "challenge_id": 16,
+        "order_index": 8,
+        "expected_output": "true",
+        "is_complex": false,
+        "is_sample": false
+    },
+
+    // arrayChange
+    {
+        "challenge_id": 17,
+        "order_index": 1,
+        "expected_output": "711669",
+        "is_complex": false,
+        "is_sample": false
+    },
+    {
+        "challenge_id": 17,
+        "order_index": 2,
+        "expected_output": "140735",
+        "is_complex": false,
+        "is_sample": false
+    },
+
+    // palindromeRearranging
+    {
+        "challenge_id": 18,
+        "order_index": 1,
+        "expected_output": "true",
+        "is_complex": false,
+        "is_sample": false
+    },
+    {
+        "challenge_id": 18,
+        "order_index": 2,
+        "expected_output": "false",
+        "is_complex": false,
+        "is_sample": false
+    },
+    {
+        "challenge_id": 18,
+        "order_index": 3,
+        "expected_output": "true",
+        "is_complex": false,
+        "is_sample": false
+    },
+    {
+        "challenge_id": 18,
+        "order_index": 4,
+        "expected_output": "true",
+        "is_complex": false,
+        "is_sample": false
+    },
+    {
+        "challenge_id": 18,
+        "order_index": 5,
+        "expected_output": "true",
+        "is_complex": false,
+        "is_sample": false
+    },
+    {
+        "challenge_id": 18,
+        "order_index": 6,
+        "expected_output": "false",
+        "is_complex": false,
+        "is_sample": false
+    },
+    {
+        "challenge_id": 18,
+        "order_index": 7,
+        "expected_output": "false",
+        "is_complex": false,
+        "is_sample": false
+    },
+    {
+        "challenge_id": 18,
+        "order_index": 8,
+        "expected_output": "true",
+        "is_complex": false,
+        "is_sample": false
+    },
+    {
+        "challenge_id": 18,
+        "order_index": 9,
+        "expected_output": "false",
+        "is_complex": false,
+        "is_sample": false
+    },
+    {
+        "challenge_id": 18,
+        "order_index": 10,
+        "expected_output": "true",
+        "is_complex": false,
+        "is_sample": false
+    },
+
+    // areEquallyStrong
+    {
+        "challenge_id": 19,
+        "order_index": 1,
+        "expected_output": "false",
+        "is_complex": false,
+        "is_sample": false
+    },
+    {
+        "challenge_id": 19,
+        "order_index": 2,
+        "expected_output": "true",
+        "is_complex": false,
+        "is_sample": false
+    },
+    {
+        "challenge_id": 19,
+        "order_index": 3,
+        "expected_output": "false",
+        "is_complex": false,
+        "is_sample": false
+    },
+    {
+        "challenge_id": 19,
+        "order_index": 4,
+        "expected_output": "false",
+        "is_complex": false,
+        "is_sample": false
+    },
+    {
+        "challenge_id": 19,
+        "order_index": 5,
+        "expected_output": "true",
+        "is_complex": false,
+        "is_sample": false
+    },
+    {
+        "challenge_id": 19,
+        "order_index": 6,
+        "expected_output": "true",
+        "is_complex": false,
+        "is_sample": false
+    },
+    {
+        "challenge_id": 19,
+        "order_index": 7,
+        "expected_output": "false",
+        "is_complex": false,
+        "is_sample": false
+    },
+    {
+        "challenge_id": 19,
+        "order_index": 8,
+        "expected_output": "false",
+        "is_complex": false,
+        "is_sample": false
+    },
+    {
+        "challenge_id": 19,
+        "order_index": 9,
+        "expected_output": "false",
+        "is_complex": false,
+        "is_sample": false
+    },
+    {
+        "challenge_id": 19,
+        "order_index": 10,
+        "expected_output": "false",
+        "is_complex": false,
+        "is_sample": false
+    },
+    {
+        "challenge_id": 19,
+        "order_index": 11,
+        "expected_output": "true",
+        "is_complex": false,
+        "is_sample": false
+    },
+    {
+        "challenge_id": 19,
+        "order_index": 12,
+        "expected_output": "false",
+        "is_complex": false,
+        "is_sample": false
+    },
+    {
+        "challenge_id": 19,
+        "order_index": 13,
+        "expected_output": "true",
+        "is_complex": false,
+        "is_sample": false
+    },
+
+    // arrayMaximalAdjacentDifference
+    {
+        "challenge_id": 20,
+        "order_index": 1,
+        "expected_output": "12",
+        "is_complex": false,
+        "is_sample": false
+    },
+    {
+        "challenge_id": 20,
+        "order_index": 2,
+        "expected_output": "10",
+        "is_complex": false,
+        "is_sample": false
+    },
+    {
+        "challenge_id": 20,
+        "order_index": 3,
+        "expected_output": "25",
+        "is_complex": false,
+        "is_sample": false
+    },
+    {
+        "challenge_id": 20,
+        "order_index": 4,
+        "expected_output": "8",
+        "is_complex": false,
+        "is_sample": false
+    },
+    {
+        "challenge_id": 20,
+        "order_index": 5,
+        "expected_output": "10",
+        "is_complex": false,
+        "is_sample": false
+    },
+    {
+        "challenge_id": 20,
+        "order_index": 6,
+        "expected_output": "0",
+        "is_complex": false,
+        "is_sample": false
+    },
+
+    // isIPv4Address
+    {
+        "challenge_id": 21,
+        "order_index": 1,
+        "expected_output": "false",
+        "is_complex": false,
+        "is_sample": false
+    },
+    {
+        "challenge_id": 21,
+        "order_index": 2,
+        "expected_output": "true",
+        "is_complex": false,
+        "is_sample": false
+    },
+    {
+        "challenge_id": 21,
+        "order_index": 3,
+        "expected_output": "false",
+        "is_complex": false,
+        "is_sample": false
+    },
+    {
+        "challenge_id": 21,
+        "order_index": 4,
+        "expected_output": "false",
+        "is_complex": false,
+        "is_sample": false
+    },
+    {
+        "challenge_id": 21,
+        "order_index": 5,
+        "expected_output": "true",
+        "is_complex": false,
+        "is_sample": false
+    },
+    {
+        "challenge_id": 21,
+        "order_index": 6,
+        "expected_output": "false",
+        "is_complex": false,
+        "is_sample": false
+    },
+    {
+        "challenge_id": 21,
+        "order_index": 7,
+        "expected_output": "false",
+        "is_complex": false,
+        "is_sample": false
+    },
+    {
+        "challenge_id": 21,
+        "order_index": 8,
+        "expected_output": "false",
+        "is_complex": false,
+        "is_sample": false
+    },
+    {
+        "challenge_id": 21,
+        "order_index": 9,
+        "expected_output": "false",
+        "is_complex": false,
+        "is_sample": false
+    },
+    {
+        "challenge_id": 21,
+        "order_index": 10,
+        "expected_output": "false",
+        "is_complex": false,
+        "is_sample": false
+    },
+    {
+        "challenge_id": 21,
+        "order_index": 11,
+        "expected_output": "false",
+        "is_complex": false,
+        "is_sample": false
+    },
+    {
+        "challenge_id": 21,
+        "order_index": 12,
+        "expected_output": "false",
+        "is_complex": false,
+        "is_sample": false
+    },
+    {
+        "challenge_id": 21,
+        "order_index": 13,
+        "expected_output": "false",
+        "is_complex": false,
+        "is_sample": false
+    },
+    {
+        "challenge_id": 21,
+        "order_index": 14,
+        "expected_output": "false",
+        "is_complex": false,
+        "is_sample": false
+    },
+    {
+        "challenge_id": 21,
+        "order_index": 15,
+        "expected_output": "false",
+        "is_complex": false,
+        "is_sample": false
+    },
+    {
+        "challenge_id": 21,
+        "order_index": 16,
+        "expected_output": "true",
+        "is_complex": false,
+        "is_sample": false
+    },
+    {
+        "challenge_id": 21,
+        "order_index": 17,
+        "expected_output": "false",
+        "is_complex": false,
+        "is_sample": false
+    },
+    {
+        "challenge_id": 21,
+        "order_index": 18,
+        "expected_output": "false",
+        "is_complex": false,
+        "is_sample": false
+    },
+    {
+        "challenge_id": 21,
+        "order_index": 19,
+        "expected_output": "false",
+        "is_complex": false,
+        "is_sample": false
+    },
+    {
+        "challenge_id": 21,
+        "order_index": 20,
+        "expected_output": "false",
+        "is_complex": false,
+        "is_sample": false
+    },
+
+    // avoidObstacles
+    {
+        "challenge_id": 22,
+        "order_index": 1,
+        "expected_output": "7",
+        "is_complex": false,
+        "is_sample": false
+    },
+    {
+        "challenge_id": 22,
+        "order_index": 2,
+        "expected_output": "19",
+        "is_complex": false,
+        "is_sample": false
+    },
+    {
+        "challenge_id": 22,
+        "order_index": 3,
+        "expected_output": "47",
+        "is_complex": false,
+        "is_sample": false
+    },
+
+    // Box Blur
+    {
+        "challenge_id": 23,
+        "order_index": 1,
+        "expected_output": "[[123],  [125]]",
+        "is_complex": true,
+        "is_sample": false
+    },
+    {
+        "challenge_id": 23,
+        "order_index": 2,
+        "expected_output": "[[136,129,136,138,128,128,122,95],  [160,145,136,147,150,140,115,95]]",
+        "is_complex": true,
+        "is_sample": false
+    },
+    {
+        "challenge_id": 23,
+        "order_index": 3,
+        "expected_output": "[[118,128,110,124,119,117,95],  [135,131,126,134,131,125,112],  [133,117,135,152,153,137,101],  [140,112,111,130,149,145,129],  [156,129,103,117,128,123,131]]",
+        "is_complex": true,
+        "is_sample": false
+    },
+
+    // Minesweeper
+    
 
 
 ]

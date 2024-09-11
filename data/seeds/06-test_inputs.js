@@ -22543,8 +22543,1484 @@ const test_inputs = [
         "input_value": "99"
     },
 
-    // 
+    ////////// Intro hidden /////////////////////////////////////////////////// Intro hidden /////////////////////////////////////////
+    ////////// Intro hidden /////////////////////////////////////////////////// Intro hidden /////////////////////////////////////////
+    ////////// Intro hidden /////////////////////////////////////////////////// Intro hidden /////////////////////////////////////////
+    ////////// Intro hidden /////////////////////////////////////////////////// Intro hidden /////////////////////////////////////////
+    ////////// Intro hidden /////////////////////////////////////////////////// Intro hidden /////////////////////////////////////////
+    ////////// Intro hidden /////////////////////////////////////////////////// Intro hidden /////////////////////////////////////////
+    ////////// Intro hidden /////////////////////////////////////////////////// Intro hidden /////////////////////////////////////////
+    ////////// Intro hidden /////////////////////////////////////////////////// Intro hidden /////////////////////////////////////////
+    ////////// Intro hidden /////////////////////////////////////////////////// Intro hidden /////////////////////////////////////////
+    ////////// Intro hidden /////////////////////////////////////////////////// Intro hidden /////////////////////////////////////////
+    ////////// Intro hidden /////////////////////////////////////////////////// Intro hidden /////////////////////////////////////////
+    ////////// Intro hidden /////////////////////////////////////////////////// Intro hidden /////////////////////////////////////////
 
+
+    // add
+    {
+        "test_id": 2312,
+        "input_type": "number",
+        "input_name": "param1",
+        "input_value": -1000
+    },
+    {
+        "test_id": 2312,
+        "input_type": "number",
+        "input_name": "param2",
+        "input_value": 999
+    },
+    {
+        "test_id": 2313,
+        "input_type": "number",
+        "input_name": "param1",
+        "input_value": 100
+    },
+    {
+        "test_id": 2313,
+        "input_type": "number",
+        "input_name": "param2",
+        "input_value": 100
+    },
+    {
+        "test_id": 2314,
+        "input_type": "number",
+        "input_name": "param1",
+        "input_value": -100
+    },
+    {
+        "test_id": 2314,
+        "input_type": "number",
+        "input_name": "param2",
+        "input_value": -100
+    },
+    {
+        "test_id": 2315,
+        "input_type": "number",
+        "input_name": "param1",
+        "input_value": -98
+    },
+    {
+        "test_id": 2315,
+        "input_type": "number",
+        "input_name": "param2",
+        "input_value": 1
+    },
+    {
+        "test_id": 2316,
+        "input_type": "number",
+        "input_name": "param1",
+        "input_value": 1000
+    },
+    {
+        "test_id": 2316,
+        "input_type": "number",
+        "input_name": "param2",
+        "input_value": 1000
+    },
+    {
+        "test_id": 2317,
+        "input_type": "number",
+        "input_name": "param1",
+        "input_value": -1000
+    },
+    {
+        "test_id": 2317,
+        "input_type": "number",
+        "input_name": "param2",
+        "input_value": 1000
+    },
+
+    // centuryFromYear
+    {
+        "test_id": 2318,
+        "input_type": "number",
+        "input_name": "year",
+        "input_value": 300
+    },
+    {
+        "test_id": 2319,
+        "input_type": "number",
+        "input_name": "year",
+        "input_value": 1588
+    },
+    {
+        "test_id": 2320,
+        "input_type": "number",
+        "input_name": "year",
+        "input_value": 1
+    },
+    {
+        "test_id": 2321,
+        "input_type": "number",
+        "input_name": "year",
+        "input_value": 50
+    },
+    {
+        "test_id": 2322,
+        "input_type": "number",
+        "input_name": "year",
+        "input_value": 101
+    },
+    {
+        "test_id": 2323,
+        "input_type": "number",
+        "input_name": "year",
+        "input_value": 34
+    },
+    {
+        "test_id": 2324,
+        "input_type": "number",
+        "input_name": "year",
+        "input_value": 827
+    },
+    {
+        "test_id": 2325,
+        "input_type": "number",
+        "input_name": "year",
+        "input_value": 2005
+    },
+    {
+        "test_id": 2326,
+        "input_type": "number",
+        "input_name": "year",
+        "input_value": 1200
+    },
+
+    // checkPalindrome
+    {
+        "test_id": 2327,
+        "input_type": "string",
+        "input_name": "inputString",
+        "input_value": "tnfodxxzqtivgnostongvitqzxxdofnt"
+    },
+    {
+        "test_id": 2328,
+        "input_type": "string",
+        "input_name": "inputString",
+        "input_value": "tnfodxxzqtivgnottongvitqzxxdofnt"
+    },
+    {
+        "test_id": 2329,
+        "input_type": "string",
+        "input_name": "inputString",
+        "input_value": "zdsptawefecbickktjoeeojtkkcibcefewatpsdz"
+    },
+    {
+        "test_id": 2330,
+        "input_type": "string",
+        "input_name": "inputString",
+        "input_value": "dshdyghryuwbdiqiuwjhdisayueyhdasdwhgdhhshaduw"
+    },
+    {
+        "test_id": 2331,
+        "input_type": "string",
+        "input_name": "inputString",
+        "input_value": "gvtygiiyztilqbukcrropxafkskfaxporrckubqlitzyiigytvg"
+    },
+    {
+        "test_id": 2332,
+        "input_type": "string",
+        "input_name": "inputString",
+        "input_value": "sxwghmtxvzpzmxejczaqufqmibscltvbzouuordogclpqywzgyfulfpzuzwvkhhfitozydwjjoacdxfspbakpnltunrrgzffzcjx"
+    },
+    {
+        "test_id": 2333,
+        "input_type": "string",
+        "input_name": "inputString",
+        "input_value": "sxwghmtxvzpzmxejczaqufqmibscltvbzouuordogclpqywzgyfulfpzuzwvkhhfitozydwjjoacdxfspbakpnltunrrgzffzcjxsxwghmtxvzpzmxejczaqufqmibscltvbzouuordogclpqywzgyfulfpzuzwvkhhfitozydwjjoacdxfspbakpnltunrrgzffzcjx"
+    },
+    {
+        "test_id": 2334,
+        "input_type": "string",
+        "input_name": "inputString",
+        "input_value": "ksswieohzzonjqosouzbnthoqfktlhokcblmleilmrbxvldvodyhuzknirkdlexrprgqbznnwypsjowrjyteosbhqflkvyfshhgzchhchyeeasbopifwhsusjvxsvlxtchrxzywptdljywcqykstepgzufvcxphtjsnxeveuqybmifdbpnwwruqgyzbltubkjzvxhpsuusphxvzjkbutlbzygqurwwnpbdfimbyquevexnsjthpxcvfuzgpetskyqcwyjldtpwyzxrhctxlvsxvjsushwfipobsaeeyhchhczghhsfyvklfqhbsoetyjrwojspywnnzbqgrprxeldkrinkzuhydovdlvxbrmlielmlbckohltkfqohtnbzuosoqjnozzhoeiwssk"
+    },
+
+    // adjacentElementsProduct
+    {
+        "test_id": 2335,
+        "input_type": "arrayOfIntegers",
+        "input_name": "inputArray",
+        "input_value": "[2, 1, 3, 1, 2, 5]"
+    },
+    {
+        "test_id": 2336,
+        "input_type": "arrayOfIntegers",
+        "input_name": "inputArray",
+        "input_value": "[1, 1, -1, 10, -10, 1]"
+    },
+    {
+        "test_id": 2337,
+        "input_type": "arrayOfIntegers",
+        "input_name": "inputArray",
+        "input_value": "[-1, 1, -1]"
+    },
+    {
+        "test_id": 2338,
+        "input_type": "arrayOfIntegers",
+        "input_name": "inputArray",
+        "input_value": "[-1, 100]"
+    },
+    {
+        "test_id": 2339,
+        "input_type": "arrayOfIntegers",
+        "input_name": "inputArray",
+        "input_value": "[7, 5, 8, 2, 17, -1, -34]"
+    },
+    {
+        "test_id": 2340,
+        "input_type": "arrayOfIntegers",
+        "input_name": "inputArray",
+        "input_value": "[34, -23, -100, 23, 44]"
+    },
+    {
+        "test_id": 2341,
+        "input_type": "arrayOfIntegers",
+        "input_name": "inputArray",
+        "input_value": "[3, 4]"
+    },
+    {
+        "test_id": 2342,
+        "input_type": "arrayOfIntegers",
+        "input_name": "inputArray",
+        "input_value": "[-1000, 4, 5, 8, 100, 50, 500]"
+    },
+    {
+        "test_id": 2343,
+        "input_type": "arrayOfIntegers",
+        "input_name": "inputArray",
+        "input_value": "[-1000, -1000, 1, 1, 1, 5, 8, 100, 50, 500]"
+    },
+
+    // shapeArea
+    {
+        "test_id": 2344,
+        "input_type": "number",
+        "input_name": "n",
+        "input_value": 10
+    },
+    {
+        "test_id": 2345,
+        "input_type": "number",
+        "input_name": "n",
+        "input_value": 1111
+    },
+    {
+        "test_id": 2346,
+        "input_type": "number",
+        "input_name": "n",
+        "input_value": 1212
+    },
+    {
+        "test_id": 2347,
+        "input_type": "number",
+        "input_name": "n",
+        "input_value": 11
+    },
+    {
+        "test_id": 2348,
+        "input_type": "number",
+        "input_name": "n",
+        "input_value": 489
+    },
+    {
+        "test_id": 2349,
+        "input_type": "number",
+        "input_name": "n",
+        "input_value": 999
+    },
+    {
+        "test_id": 2350,
+        "input_type": "number",
+        "input_name": "n",
+        "input_value": 91
+    },
+    {
+        "test_id": 2351,
+        "input_type": "number",
+        "input_name": "n",
+        "input_value": 93
+    },
+    {
+        "test_id": 2352,
+        "input_type": "number",
+        "input_name": "n",
+        "input_value": 43
+    },
+    {
+        "test_id": 2353,
+        "input_type": "number",
+        "input_name": "n",
+        "input_value": 6334
+    },
+
+    // Make Array Consecutive 2
+    {
+        "test_id": 2354,
+        "input_type": "arrayOfIntegers",
+        "input_name": "statues",
+        "input_value": "[8, 1, 0, 4, 7]"
+    },
+    {
+        "test_id": 2355,
+        "input_type": "arrayOfIntegers",
+        "input_name": "statues",
+        "input_value": "[1, 2, 3, 4, 5, 6, 7, 8, 9, 10]"
+    },
+    {
+        "test_id": 2356,
+        "input_type": "arrayOfIntegers",
+        "input_name": "statues",
+        "input_value": "[10]"
+    },
+    {
+        "test_id": 2357,
+        "input_type": "arrayOfIntegers",
+        "input_name": "statues",
+        "input_value": "[4, 2, 7, 18]"
+    },
+    {
+        "test_id": 2358,
+        "input_type": "arrayOfIntegers",
+        "input_name": "statues",
+        "input_value": "[4, 2, 9]"
+    },
+
+    // almostIncreasingSequence
+    {
+        "test_id": 2359,
+        "input_type": "arrayOfIntegers",
+        "input_name": "sequence",
+        "input_value": "[1, 1, 1]"
+    },
+    {
+        "test_id": 2360,
+        "input_type": "arrayOfIntegers",
+        "input_name": "sequence",
+        "input_value": "[10, 12, 12, 12, 23]"
+    },
+    {
+        "test_id": 2361,
+        "input_type": "arrayOfIntegers",
+        "input_name": "sequence",
+        "input_value": "[1, 2, 3, 1]"
+    },
+    {
+        "test_id": 2362,
+        "input_type": "arrayOfIntegers",
+        "input_name": "sequence",
+        "input_value": "[3, 4, 5, 10, 20, 10, 20, 30]"
+    },
+    {
+        "test_id": 2363,
+        "input_type": "arrayOfIntegers",
+        "input_name": "sequence",
+        "input_value": "[5, 5, 5]"
+    },
+    {
+        "test_id": 2364,
+        "input_type": "arrayOfIntegers",
+        "input_name": "sequence",
+        "input_value": "[-5, -4, -3, -2, 10, 2, 8]"
+    },
+    {
+        "test_id": 2365,
+        "input_type": "arrayOfIntegers",
+        "input_name": "sequence",
+        "input_value": "[5384, 12, 34, 54, 48]"
+    },
+    {
+        "test_id": 2366,
+        "input_type": "arrayOfIntegers",
+        "input_name": "sequence",
+        "input_value": "[1, 4, 5, 2, 3]"
+    },
+    {
+        "test_id": 2367,
+        "input_type": "arrayOfIntegers",
+        "input_name": "sequence",
+        "input_value": "[1, 2, 3, 4, 5, 1, 2, 3, 4]"
+    },
+    {
+        "test_id": 2368,
+        "input_type": "arrayOfIntegers",
+        "input_name": "sequence",
+        "input_value": "[6, 5, 4]"
+    },
+    {
+        "test_id": 2369,
+        "input_type": "arrayOfIntegers",
+        "input_name": "sequence",
+        "input_value": "[3, 4, 10, 5, 10]"
+    },
+    {
+        "test_id": 2370,
+        "input_type": "arrayOfIntegers",
+        "input_name": "sequence",
+        "input_value": "[1, 2, 18, 4, 4]"
+    },
+    {
+        "test_id": 2371,
+        "input_type": "arrayOfIntegers",
+        "input_name": "sequence",
+        "input_value": "[1, 2, 18, 3, 4]"
+    },
+    {
+        "test_id": 2372,
+        "input_type": "arrayOfIntegers",
+        "input_name": "sequence",
+        "input_value": "[30, 60, 50, 80, 100, 200, 150]"
+    },
+    {
+        "test_id": 2373,
+        "input_type": "arrayOfIntegers",
+        "input_name": "sequence",
+        "input_value": "[1000, 1000, 2000, 3000, 4000, 5000, 5000]"
+    },
+
+    // matrixElementsSum
+    {
+        "test_id": 2374,
+        "input_type": "matrix",
+        "input_name": "matrix",
+        "input_value": "[[2, 4, 0]]"
+    },
+    {
+        "test_id": 2375,
+        "input_type": "matrix",
+        "input_name": "matrix",
+        "input_value": "[[7, 0, 0], [9, 0, 0], [5, 9, 0], [0, 0, 0]]"
+    },
+    {
+        "test_id": 2376,
+        "input_type": "matrix",
+        "input_name": "matrix",
+        "input_value": "[[9, 2], [9, 1]]"
+    },
+    {
+        "test_id": 2377,
+        "input_type": "matrix",
+        "input_name": "matrix",
+        "input_value": "[[0, 3, 0, 9, 6]]"
+    },
+    {
+        "test_id": 2378,
+        "input_type": "matrix",
+        "input_name": "matrix",
+        "input_value": "[[1, 0], [0, 0], [0, 8], [9, 8]]"
+    },
+    {
+        "test_id": 2379,
+        "input_type": "matrix",
+        "input_name": "matrix",
+        "input_value": "[[4, 0, 0, 0], [8, 4, 0, 1], [5, 0, 0, 4], [0, 0, 1, 2]]"
+    },
+    {
+        "test_id": 2380,
+        "input_type": "matrix",
+        "input_name": "matrix",
+        "input_value": "[[4], [0], [0], [7]]"
+    },
+    {
+        "test_id": 2381,
+        "input_type": "matrix",
+        "input_name": "matrix",
+        "input_value": "[[3, 9], [10, 0], [0, 0], [3, 4]]"
+    },
+    {
+        "test_id": 2382,
+        "input_type": "matrix",
+        "input_name": "matrix",
+        "input_value": "[[0], [0], [0], [9]]"
+    },
+    {
+        "test_id": 2383,
+        "input_type": "matrix",
+        "input_name": "matrix",
+        "input_value": "[[2, 7], [0, 2], [0, 1]]"
+    },
+
+    // All Longest Strings
+    {
+        "test_id": 2384,
+        "input_type": "arrayOfStrings",
+        "input_name": "inputArray",
+        "input_value": '["khtalawph","sbm","gcyksgxay","nsfllbkf","v","dgi","comuoube","fywmfrxgk","empg"]'
+    },
+    {
+        "test_id": 2385,
+        "input_type": "arrayOfStrings",
+        "input_name": "inputArray",
+        "input_value": '["rfty"]'
+    },
+    {
+        "test_id": 2386,
+        "input_type": "arrayOfStrings",
+        "input_name": "inputArray",
+        "input_value": '["zcecgkpyb","tdacd","m","wauqkcu","vpblr","arykm","bzogu","me","lt"]'
+    },
+    {
+        "test_id": 2387,
+        "input_type": "arrayOfStrings",
+        "input_name": "inputArray",
+        "input_value": '["ikbxvrug","hiccycgk","kyuus"]'
+    },
+    {
+        "test_id": 2388,
+        "input_type": "arrayOfStrings",
+        "input_name": "inputArray",
+        "input_value": '["xqa","hhnyfayyj","oxuqxqrx","bbibat","matafgnmrq","mswvjnqusu"]'
+    },
+    {
+        "test_id": 2389,
+        "input_type": "arrayOfStrings",
+        "input_name": "inputArray",
+        "input_value": '["hxumgl","udyuekcfn","zrmiiqwvg","xmkkgt","hkz"]'
+    },
+    {
+        "test_id": 2390,
+        "input_type": "arrayOfStrings",
+        "input_name": "inputArray",
+        "input_value": '["guux","i","uoopjf","yhwmg","qmc","lixdzs","t","duzh"]'
+    },
+    {
+        "test_id": 2391,
+        "input_type": "arrayOfStrings",
+        "input_name": "inputArray",
+        "input_value": '["pjwipkwr","cbjjkuos","vao","kpyutrrxa","cmt","ubg"]'
+    },
+    {
+        "test_id": 2392,
+        "input_type": "arrayOfStrings",
+        "input_name": "inputArray",
+        "input_value": '["ae","uljczhlv","t","qrxie"]'
+    },
+    {
+        "test_id": 2393,
+        "input_type": "arrayOfStrings",
+        "input_name": "inputArray",
+        "input_value": '["y","dumcwfqfu"]'
+    },
+
+    // commonCharacterCount
+    {
+        "test_id": 2394,
+        "input_type": "string",
+        "input_name": "s1",
+        "input_value": "abcdefghxyzttw"
+    },
+    {
+        "test_id": 2394,
+        "input_type": "string",
+        "input_name": "s2",
+        "input_value": "hgfedcbaabcwwt"
+    },
+    {
+        "test_id": 2395,
+        "input_type": "string",
+        "input_name": "s1",
+        "input_value": "zza"
+    },
+    {
+        "test_id": 2395,
+        "input_type": "string",
+        "input_name": "s2",
+        "input_value": "zzz"
+    },
+    {
+        "test_id": 2396,
+        "input_type": "string",
+        "input_name": "s1",
+        "input_value": "abaca"
+    },
+    {
+        "test_id": 2396,
+        "input_type": "string",
+        "input_name": "s2",
+        "input_value": "abaac"
+    },
+    {
+        "test_id": 2397,
+        "input_type": "string",
+        "input_name": "s1",
+        "input_value": "aba"
+    },
+    {
+        "test_id": 2397,
+        "input_type": "string",
+        "input_name": "s2",
+        "input_value": "bb"
+    },
+    {
+        "test_id": 2398,
+        "input_type": "string",
+        "input_name": "s1",
+        "input_value": "bb"
+    },
+    {
+        "test_id": 2398,
+        "input_type": "string",
+        "input_name": "s2",
+        "input_value": "bbb"
+    },
+
+    // isLucky
+    {
+        "test_id": 2399,
+        "input_type": "number",
+        "input_name": "n",
+        "input_value": 700340
+    },
+    {
+        "test_id": 2400,
+        "input_type": "number",
+        "input_name": "n",
+        "input_value": 312412
+    },
+    {
+        "test_id": 2401,
+        "input_type": "number",
+        "input_name": "n",
+        "input_value": 718321
+    },
+    {
+        "test_id": 2402,
+        "input_type": "number",
+        "input_name": "n",
+        "input_value": 132222
+    },
+    {
+        "test_id": 2403,
+        "input_type": "number",
+        "input_name": "n",
+        "input_value": 42
+    },
+    {
+        "test_id": 2404,
+        "input_type": "number",
+        "input_name": "n",
+        "input_value": 6758
+    },
+    {
+        "test_id": 2405,
+        "input_type": "number",
+        "input_name": "n",
+        "input_value": 66
+    },
+    {
+        "test_id": 2406,
+        "input_type": "number",
+        "input_name": "n",
+        "input_value": 134007
+    },
+    {
+        "test_id": 2407,
+        "input_type": "number",
+        "input_name": "n",
+        "input_value": 12
+    },
+    {
+        "test_id": 2408,
+        "input_type": "number",
+        "input_name": "n",
+        "input_value": 111300
+    },
+
+    // Sort by Height
+    {
+        "test_id": 2409,
+        "input_type": "arrayOfIntegers",
+        "input_name": "a",
+        "input_value": "[1000]"
+    },
+    {
+        "test_id": 2410,
+        "input_type": "arrayOfIntegers",
+        "input_name": "a",
+        "input_value": "[-1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1]"
+    },
+    {
+        "test_id": 2411,
+        "input_type": "arrayOfIntegers",
+        "input_name": "a",
+        "input_value": "[964, 735, 365, 864, 764, 689, 163, 886, 63, 263, 333, 299, 451, 62, 983, 3, 340, 115, 626, 576, 598, 407, 189, 975, 874, 78, 650, 598, 198, 522, 857, 501, 48, 982, 758, 630, 313, 647, 358, 351, 288, 29, 386, 377, 736, 743, 899, 596, 263, 374]"
+    },
+    {
+        "test_id": 2412,
+        "input_type": "arrayOfIntegers",
+        "input_name": "a",
+        "input_value": "[44, 36, 35, 78, 70, 92, 60, 17, 67, -1, 91, -1, 69, 54, 88, 58, 9, 90, 9, 12, 66, 21, 79, 99, -1, 18, 46, 78, 38, 15, 26, 82, -1, 65, -1, 44, 51, 3, 37, 60, -1, 59, -1, -1, 78, 97, 9, 90, 24, 75, 45, 65, 24, 87, 44, 100, 94, 98, -1, 97, 72, 50, -1, 50, 39, 70, 91, 25, 66, 79, 69, 46, 20, 99, 57, 34, 42, 84, 8, -1, 95, 5, 59, 98, 97, 36, 89, 4, -1, 29, 9, 97, 55, 30, 16, -1, -1, -1, 10, -1]"
+    },
+
+    // reverseInParentheses
+    {
+        "test_id": 2413,
+        "input_type": "string",
+        "input_name": "inputString",
+        "input_value": "foobarbaz"
+    },
+    {
+        "test_id": 2414,
+        "input_type": "string",
+        "input_name": "inputString",
+        "input_value": "(())(((())))"
+    },
+    {
+        "test_id": 2415,
+        "input_type": "string",
+        "input_name": "inputString",
+        "input_value": "((bar))"
+    },
+    {
+        "test_id": 2416,
+        "input_type": "string",
+        "input_name": "inputString",
+        "input_value": "wi(ez)(((il)))(en)"
+    },
+    {
+        "test_id": 2417,
+        "input_type": "string",
+        "input_name": "inputString",
+        "input_value": "foo()bar"
+    },
+    {
+        "test_id": 2418,
+        "input_type": "string",
+        "input_name": "inputString",
+        "input_value": "abc((ghi((mno((stu((xyz)wv))rqp))lkj))fed)"
+    },
+    {
+        "test_id": 2419,
+        "input_type": "string",
+        "input_name": "inputString",
+        "input_value": "abc((ghi((mno((stu((xyz)wv))rqp))lkj))fed)((abcd))"
+    },
+
+    // alternatingSums
+    {
+        "test_id": 2420,
+        "input_type": "arrayOfIntegers",
+        "input_name": "a",
+        "input_value": "[100]"
+    },
+    {
+        "test_id": 2421,
+        "input_type": "arrayOfIntegers",
+        "input_name": "a",
+        "input_value": "[66, 85, 85, 65, 89, 67, 45, 49, 51, 82, 74, 63, 49, 87, 68, 85, 71, 93, 56, 53, 75, 67, 96, 90, 49, 48, 78, 66, 56, 82, 84, 86, 62, 67, 46, 54, 93, 95, 89, 59, 52, 94, 80, 62, 54, 60, 50, 80, 57, 78]"
+    },
+
+    // Add Border
+    {
+        "test_id": 2422,
+        "input_type": "arrayOfStrings",
+        "input_name": "picture",
+        "input_value": '["yhopw","hpplz","idbnb","*wehb","swbbg"]'
+    },
+    {
+        "test_id": 2423,
+        "input_type": "arrayOfStrings",
+        "input_name": "picture",
+        "input_value": '["**","**","*e"]'
+    },
+    {
+        "test_id": 2424,
+        "input_type": "arrayOfStrings",
+        "input_name": "picture",
+        "input_value": '["a","a"]'
+    },
+
+    // Are Similar?
+    {
+        "test_id": 2425,
+        "input_type": "arrayOfIntegers",
+        "input_name": "a",
+        "input_value": "[1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11]"
+    },
+    {
+        "test_id": 2425,
+        "input_type": "arrayOfIntegers",
+        "input_name": "b",
+        "input_value": "[2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 1]"
+    },
+    {
+        "test_id": 2426,
+        "input_type": "arrayOfIntegers",
+        "input_name": "a",
+        "input_value": "[1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11]"
+    },
+    {
+        "test_id": 2426,
+        "input_type": "arrayOfIntegers",
+        "input_name": "b",
+        "input_value": "[12, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11]"
+    },
+    {
+        "test_id": 2427,
+        "input_type": "arrayOfIntegers",
+        "input_name": "a",
+        "input_value": "[1, 4, 2, 5, 3, 7, 4, 8, 4, 2, 25]"
+    },
+    {
+        "test_id": 2427,
+        "input_type": "arrayOfIntegers",
+        "input_name": "b",
+        "input_value": "[1, 4, 2, 5, 3, 3, 7, 8, 4, 2, 25]"
+    },
+    {
+        "test_id": 2428,
+        "input_type": "arrayOfIntegers",
+        "input_name": "a",
+        "input_value": "[1, 4, 2, 5, 3, 6, 3, 8, 4, 2, 25]"
+    },
+    {
+        "test_id": 2428,
+        "input_type": "arrayOfIntegers",
+        "input_name": "b",
+        "input_value": "[1, 4, 2, 5, 3, 3, 7, 8, 4, 2, 25]"
+    },
+    {
+        "test_id": 2429,
+        "input_type": "arrayOfIntegers",
+        "input_name": "a",
+        "input_value": "[928, 741, 703, 806, 785, 902, 927, 155, 267, 691, 651, 870, 691, 587, 894, 336, 587, 928, 587, 691]"
+    },
+    {
+        "test_id": 2429,
+        "input_type": "arrayOfIntegers",
+        "input_name": "b",
+        "input_value": "[928, 741, 703, 806, 785, 902, 927, 155, 267, 587, 651, 870, 691, 587, 894, 336, 691, 928, 587, 691]"
+    },
+    {
+        "test_id": 2430,
+        "input_type": "arrayOfIntegers",
+        "input_name": "a",
+        "input_value": "[77, 106, 129, 327, 486, 973, 595, 461, 422, 214, 205, 325, 641, 931, 698, 344, 337, 438, 95, 643, 531, 825, 862, 504, 415, 84, 212, 587, 205, 274, 207, 97, 86, 195, 260, 711, 783, 291, 313, 707, 263, 168, 639, 121, 928, 24, 274, 723, 274, 205]"
+    },
+    {
+        "test_id": 2430,
+        "input_type": "arrayOfIntegers",
+        "input_name": "b",
+        "input_value": "[77, 106, 129, 327, 486, 973, 595, 461, 422, 214, 274, 325, 641, 931, 698, 344, 337, 438, 95, 643, 531, 825, 862, 504, 415, 84, 212, 587, 205, 274, 207, 97, 86, 195, 260, 711, 783, 291, 313, 707, 263, 168, 639, 121, 928, 24, 205, 723, 274, 205]"
+    },
+    {
+        "test_id": 2431,
+        "input_type": "arrayOfIntegers",
+        "input_name": "a",
+        "input_value": "[244, 58, 14, 819, 661, 633, 308, 287, 141, 712, 663, 344, 615, 739, 459, 929, 157, 945, 654, 281, 570, 853, 444, 161, 169, 416, 952, 724, 884, 124, 707, 129, 799, 595, 439, 354, 230, 120, 929, 623, 54, 532, 199, 447, 177, 177, 860, 83, 118, 661, 526, 301, 3, 830, 668, 818, 323, 689, 748, 412, 976, 469, 544, 775, 782, 743, 56, 856, 684, 169, 121, 961, 467, 571, 342, 13, 75, 588, 766, 112, 96, 341, 264, 659, 88, 980, 679, 800, 309, 680, 46, 807, 28, 200, 225, 526, 519, 718, 526, 661]"
+    },
+    {
+        "test_id": 2431,
+        "input_type": "arrayOfIntegers",
+        "input_name": "b",
+        "input_value": "[244, 58, 14, 819, 526, 633, 308, 287, 141, 712, 663, 344, 615, 739, 459, 929, 157, 945, 654, 281, 570, 853, 444, 161, 169, 416, 952, 724, 884, 124, 707, 129, 799, 595, 439, 354, 230, 120, 929, 623, 54, 532, 199, 447, 177, 177, 860, 83, 118, 661, 526, 301, 3, 830, 668, 818, 323, 689, 748, 412, 976, 469, 544, 775, 782, 743, 56, 856, 684, 169, 121, 961, 467, 571, 342, 13, 75, 588, 766, 112, 96, 341, 264, 659, 88, 980, 679, 800, 309, 680, 46, 807, 28, 200, 225, 661, 519, 718, 526, 661]"
+    },
+    {
+        "test_id": 2432,
+        "input_type": "arrayOfIntegers",
+        "input_name": "a",
+        "input_value": "[1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 30, 31, 32, 33, 34, 35, 36, 37, 38, 39, 40, 41, 42, 43, 44, 45, 46, 47, 48, 49]"
+    },
+    {
+        "test_id": 2432,
+        "input_type": "arrayOfIntegers",
+        "input_name": "b",
+        "input_value": "[1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 30, 31, 32, 33, 34, 35, 36, 37, 38, 39, 40, 41, 42, 43, 44, 45, 46, 47, 48, 49]"
+    },
+
+    // arrayChange
+    {
+        "test_id": 2433,
+        "input_type": "arrayOfIntegers",
+        "input_name": "inputArray",
+        "input_value": "[20710, -4566, 28514, -27877, 10082, -22496, -22994, 5089, 11296, -24822, -16624, -17015, 12477, 29805, 31185, 16492, 564, -413, -28417, 1992, -28897, 31399, 19780, 9900, -17980]"
+    },
+    {
+        "test_id": 2434,
+        "input_type": "arrayOfIntegers",
+        "input_name": "inputArray",
+        "input_value": "[1976, 4676, 4653, 1782, 180, -4162, -5308, 968, -2405, 4100, 4435, 1326, 3731, -4483, 1419, 1311, 4747, 5211, -312, 5322, -5724, -994, 5914, -4059, -1169, -5361, -1519, -2298, 5118, -283, -2905]"
+    },
+
+    // palindromeRearranging
+    {
+        "test_id": 2435,
+        "input_type": "string",
+        "input_name": "inputString",
+        "input_value": "aaaaaaaaaaaaaaaaaaaaaaaaaaaaabbbbccccaaaaaaaaaaaaa"
+    },
+    {
+        "test_id": 2436,
+        "input_type": "string",
+        "input_name": "inputString",
+        "input_value": "abbaba"
+    },
+    {
+        "test_id": 2437,
+        "input_type": "string",
+        "input_name": "inputString",
+        "input_value": "zxcvzxcva"
+    },
+    {
+        "test_id": 2438,
+        "input_type": "string",
+        "input_name": "inputString",
+        "input_value": "abbabaabbabap"
+    },
+    {
+        "test_id": 2439,
+        "input_type": "string",
+        "input_name": "inputString",
+        "input_value": "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaabbbcccc"
+    },
+    {
+        "test_id": 2440,
+        "input_type": "string",
+        "input_name": "inputString",
+        "input_value": "zab"
+    },
+    {
+        "test_id": 2441,
+        "input_type": "string",
+        "input_name": "inputString",
+        "input_value": "ab"
+    },
+    {
+        "test_id": 2442,
+        "input_type": "string",
+        "input_name": "inputString",
+        "input_value": "aa"
+    },
+    {
+        "test_id": 2443,
+        "input_type": "string",
+        "input_name": "inputString",
+        "input_value": "zxy"
+    },
+    {
+        "test_id": 2444,
+        "input_type": "string",
+        "input_name": "inputString",
+        "input_value": "zzz"
+    },
+
+    // areEquallyStrong
+    {
+        "test_id": 2445,
+        "input_type": "number",
+        "input_name": "yourLeft",
+        "input_value": 0
+    },
+    {
+        "test_id": 2445,
+        "input_type": "number",
+        "input_name": "yourRight",
+        "input_value": 11
+    },
+    {
+        "test_id": 2445,
+        "input_type": "number",
+        "input_name": "friendsLeft",
+        "input_value": 10
+    },
+    {
+        "test_id": 2445,
+        "input_type": "number",
+        "input_name": "friendsRight",
+        "input_value": 0
+    },
+    {
+        "test_id": 2446,
+        "input_type": "number",
+        "input_name": "yourLeft",
+        "input_value": 0
+    },
+    {
+        "test_id": 2446,
+        "input_type": "number",
+        "input_name": "yourRight",
+        "input_value": 15
+    },
+    {
+        "test_id": 2446,
+        "input_type": "number",
+        "input_name": "friendsLeft",
+        "input_value": 15
+    },
+    {
+        "test_id": 2446,
+        "input_type": "number",
+        "input_name": "friendsRight",
+        "input_value": 0
+    },
+    {
+        "test_id": 2447,
+        "input_type": "number",
+        "input_name": "yourLeft",
+        "input_value": 10
+    },
+    {
+        "test_id": 2447,
+        "input_type": "number",
+        "input_name": "yourRight",
+        "input_value": 10
+    },
+    {
+        "test_id": 2447,
+        "input_type": "number",
+        "input_name": "friendsLeft",
+        "input_value": 8
+    },
+    {
+        "test_id": 2447,
+        "input_type": "number",
+        "input_name": "friendsRight",
+        "input_value": 12
+    },
+    {
+        "test_id": 2448,
+        "input_type": "number",
+        "input_name": "yourLeft",
+        "input_value": 7
+    },
+    {
+        "test_id": 2448,
+        "input_type": "number",
+        "input_name": "yourRight",
+        "input_value": 8
+    },
+    {
+        "test_id": 2448,
+        "input_type": "number",
+        "input_name": "friendsLeft",
+        "input_value": 5
+    },
+    {
+        "test_id": 2448,
+        "input_type": "number",
+        "input_name": "friendsRight",
+        "input_value": 10
+    },
+    {
+        "test_id": 2449,
+        "input_type": "number",
+        "input_name": "yourLeft",
+        "input_value": 15
+    },
+    {
+        "test_id": 2449,
+        "input_type": "number",
+        "input_name": "yourRight",
+        "input_value": 15
+    },
+    {
+        "test_id": 2449,
+        "input_type": "number",
+        "input_name": "friendsLeft",
+        "input_value": 15
+    },
+    {
+        "test_id": 2449,
+        "input_type": "number",
+        "input_name": "friendsRight",
+        "input_value": 15
+    },
+    {
+        "test_id": 2450,
+        "input_type": "number",
+        "input_name": "yourLeft",
+        "input_value": 15
+    },
+    {
+        "test_id": 2450,
+        "input_type": "number",
+        "input_name": "yourRight",
+        "input_value": 1
+    },
+    {
+        "test_id": 2450,
+        "input_type": "number",
+        "input_name": "friendsLeft",
+        "input_value": 1
+    },
+    {
+        "test_id": 2450,
+        "input_type": "number",
+        "input_name": "friendsRight",
+        "input_value": 15
+    },
+    {
+        "test_id": 2451,
+        "input_type": "number",
+        "input_name": "yourLeft",
+        "input_value": 15
+    },
+    {
+        "test_id": 2451,
+        "input_type": "number",
+        "input_name": "yourRight",
+        "input_value": 15
+    },
+    {
+        "test_id": 2451,
+        "input_type": "number",
+        "input_name": "friendsLeft",
+        "input_value": 1
+    },
+    {
+        "test_id": 2451,
+        "input_type": "number",
+        "input_name": "friendsRight",
+        "input_value": 1
+    },
+    {
+        "test_id": 2452,
+        "input_type": "number",
+        "input_name": "yourLeft",
+        "input_value": 14
+    },
+    {
+        "test_id": 2452,
+        "input_type": "number",
+        "input_name": "yourRight",
+        "input_value": 2
+    },
+    {
+        "test_id": 2452,
+        "input_type": "number",
+        "input_name": "friendsLeft",
+        "input_value": 3
+    },
+    {
+        "test_id": 2452,
+        "input_type": "number",
+        "input_name": "friendsRight",
+        "input_value": 13
+    },
+    {
+        "test_id": 2453,
+        "input_type": "number",
+        "input_name": "yourLeft",
+        "input_value": 14
+    },
+    {
+        "test_id": 2453,
+        "input_type": "number",
+        "input_name": "yourRight",
+        "input_value": 2
+    },
+    {
+        "test_id": 2453,
+        "input_type": "number",
+        "input_name": "friendsLeft",
+        "input_value": 3
+    },
+    {
+        "test_id": 2453,
+        "input_type": "number",
+        "input_name": "friendsRight",
+        "input_value": 12
+    },
+    {
+        "test_id": 2454,
+        "input_type": "number",
+        "input_name": "yourLeft",
+        "input_value": 20
+    },
+    {
+        "test_id": 2454,
+        "input_type": "number",
+        "input_name": "yourRight",
+        "input_value": 6
+    },
+    {
+        "test_id": 2454,
+        "input_type": "number",
+        "input_name": "friendsLeft",
+        "input_value": 5
+    },
+    {
+        "test_id": 2454,
+        "input_type": "number",
+        "input_name": "friendsRight",
+        "input_value": 19
+    },
+    {
+        "test_id": 2455,
+        "input_type": "number",
+        "input_name": "yourLeft",
+        "input_value": 20
+    },
+    {
+        "test_id": 2455,
+        "input_type": "number",
+        "input_name": "yourRight",
+        "input_value": 20
+    },
+    {
+        "test_id": 2455,
+        "input_type": "number",
+        "input_name": "friendsLeft",
+        "input_value": 20
+    },
+    {
+        "test_id": 2455,
+        "input_type": "number",
+        "input_name": "friendsRight",
+        "input_value": 20
+    },
+    {
+        "test_id": 2456,
+        "input_type": "number",
+        "input_name": "yourLeft",
+        "input_value": 20
+    },
+    {
+        "test_id": 2456,
+        "input_type": "number",
+        "input_name": "yourRight",
+        "input_value": 20
+    },
+    {
+        "test_id": 2456,
+        "input_type": "number",
+        "input_name": "friendsLeft",
+        "input_value": 10
+    },
+    {
+        "test_id": 2456,
+        "input_type": "number",
+        "input_name": "friendsRight",
+        "input_value": 10
+    },
+    {
+        "test_id": 2457,
+        "input_type": "number",
+        "input_name": "yourLeft",
+        "input_value": 0
+    },
+    {
+        "test_id": 2457,
+        "input_type": "number",
+        "input_name": "yourRight",
+        "input_value": 0
+    },
+    {
+        "test_id": 2457,
+        "input_type": "number",
+        "input_name": "friendsLeft",
+        "input_value": 0
+    },
+    {
+        "test_id": 2457,
+        "input_type": "number",
+        "input_name": "friendsRight",
+        "input_value": 0
+    },
+
+    // arrayMaximalAdjacentDifference
+    {
+        "test_id": 2458,
+        "input_type": "arrayOfIntegers",
+        "input_name": "inputArray",
+        "input_value": "[1, 5, 9, -3, 7, 1, 10]"
+    },
+    {
+        "test_id": 2459,
+        "input_type": "arrayOfIntegers",
+        "input_name": "inputArray",
+        "input_value": "[10, 7, -2, -5, -15]"
+    },
+    {
+        "test_id": 2460,
+        "input_type": "arrayOfIntegers",
+        "input_name": "inputArray",
+        "input_value": "[0, 15, -10]"
+    },
+    {
+        "test_id": 2461,
+        "input_type": "arrayOfIntegers",
+        "input_name": "inputArray",
+        "input_value": "[-1, 1, -1, 1, -4, 4, 3, -3, 3, -3]"
+    },
+    {
+        "test_id": 2462,
+        "input_type": "arrayOfIntegers",
+        "input_name": "inputArray",
+        "input_value": "[0, 10, 2, -1]"
+    },
+    {
+        "test_id": 2463,
+        "input_type": "arrayOfIntegers",
+        "input_name": "inputArray",
+        "input_value": "[2, 2, 2, 2]"
+    },
+
+    // isIPv4Address
+    {
+        "test_id": 2464,
+        "input_type": "string",
+        "input_name": "inputString",
+        "input_value": "256.255.255.0"
+    },
+    {
+        "test_id": 2465,
+        "input_type": "string",
+        "input_name": "inputString",
+        "input_value": "255.255.255.255"
+    },
+    {
+        "test_id": 2466,
+        "input_type": "string",
+        "input_name": "inputString",
+        "input_value": "255.255.256.255"
+    },
+    {
+        "test_id": 2467,
+        "input_type": "string",
+        "input_name": "inputString",
+        "input_value": "255..255.255"
+    },
+    {
+        "test_id": 2468,
+        "input_type": "string",
+        "input_name": "inputString",
+        "input_value": "0.0.0.0"
+    },
+    {
+        "test_id": 2469,
+        "input_type": "string",
+        "input_name": "inputString",
+        "input_value": ".0.0.0"
+    },
+    {
+        "test_id": 2470,
+        "input_type": "string",
+        "input_name": "inputString",
+        "input_value": "0.0.0z.0"
+    },
+    {
+        "test_id": 2471,
+        "input_type": "string",
+        "input_name": "inputString",
+        "input_value": "0.0.0.0.0"
+    },
+    {
+        "test_id": 2472,
+        "input_type": "string",
+        "input_name": "inputString",
+        "input_value": "12345"
+    },
+    {
+        "test_id": 2473,
+        "input_type": "string",
+        "input_name": "inputString",
+        "input_value": "12.14.24"
+    },
+    {
+        "test_id": 2474,
+        "input_type": "string",
+        "input_name": "inputString",
+        "input_value": "1.23.256.1."
+    },
+    {
+        "test_id": 2475,
+        "input_type": "string",
+        "input_name": "inputString",
+        "input_value": "255255255255"
+    },
+    {
+        "test_id": 2476,
+        "input_type": "string",
+        "input_name": "inputString",
+        "input_value": "250"
+    },
+    {
+        "test_id": 2477,
+        "input_type": "string",
+        "input_name": "inputString",
+        "input_value": "255255.255.255"
+    },
+    {
+        "test_id": 2478,
+        "input_type": "string",
+        "input_name": "inputString",
+        "input_value": "9"
+    },
+    {
+        "test_id": 2479,
+        "input_type": "string",
+        "input_name": "inputString",
+        "input_value": "0.0.0.249"
+    },
+    {
+        "test_id": 2480,
+        "input_type": "string",
+        "input_name": "inputString",
+        "input_value": "25..26.8.8.1"
+    },
+    {
+        "test_id": 2481,
+        "input_type": "string",
+        "input_name": "inputString",
+        "input_value": "64.233.161.01"
+    },
+    {
+        "test_id": 2482,
+        "input_type": "string",
+        "input_name": "inputString",
+        "input_value": "64.01.161.131"
+    },
+    {
+        "test_id": 2483,
+        "input_type": "string",
+        "input_name": "inputString",
+        "input_value": "00.233.161.131"
+    },
+
+    // avoidObstacles
+    {
+        "test_id": 2484,
+        "input_type": "arrayOfIntegers",
+        "input_name": "inputArray",
+        "input_value": "[10, 12]"
+    },
+    {
+        "test_id": 2485,
+        "input_type": "arrayOfIntegers",
+        "input_name": "inputArray",
+        "input_value": "[460, 397, 91, 542, 326, 929, 592, 721, 547, 155, 975, 307, 426, 811, 303, 124, 270, 913, 899, 583, 67, 591, 925, 445, 916, 905, 585, 493, 606, 625, 443, 954, 309, 743, 75, 993, 683, 962, 92, 746, 733, 145, 845, 60, 560, 181, 934, 421, 964, 278]"
+    },
+    {
+        "test_id": 2486,
+        "input_type": "arrayOfIntegers",
+        "input_name": "inputArray",
+        "input_value": "[513, 15, 18, 20, 23, 539, 39, 42, 44, 53, 55, 575, 779, 68, 583, 584, 591, 598, 89, 90, 93, 607, 617, 106, 619, 109, 626, 627, 127, 642, 136, 139, 144, 366, 672, 674, 165, 679, 174, 176, 179, 694, 715, 802, 210, 724, 728, 744, 233, 722, 241, 639, 766, 767, 258, 774, 267, 268, 789, 289, 290, 805, 318, 323, 331, 338, 851, 342, 344, 863, 871, 878, 370, 884, 373, 889, 378, 390, 397, 913, 914, 921, 942, 946, 438, 440, 449, 450, 458, 504, 469, 472, 483, 485, 160, 509]"
+    },
+
+    // Box Blur
+    {
+        "test_id": 2487,
+        "input_type": "matrix",
+        "input_name": "image",
+        "input_value": "[[8, 157, 172], [17, 186, 189], [73, 114, 197], [132, 142, 76]]"
+    },
+    {
+        "test_id": 2488,
+        "input_type": "matrix",
+        "input_name": "image",
+        "input_value": "[[208, 99, 59, 136, 161, 6, 219, 192, 85, 49], [194, 105, 43, 254, 153, 225, 171, 197, 1, 154], [221, 178, 119, 169, 134, 7, 76, 61, 99, 22], [161, 254, 172, 12, 174, 200, 216, 107, 109, 109]]"
+    },
+    {
+        "test_id": 2489,
+        "input_type": "matrix",
+        "input_name": "image",
+        "input_value": "[[172, 14, 85, 186, 28, 155, 122, 39, 44], [71, 215, 117, 16, 56, 107, 126, 114, 214], [83, 173, 135, 218, 151, 200, 133, 58, 8], [249, 119, 57, 134, 255, 70, 82, 238, 37], [199, 76, 110, 36, 121, 185, 187, 82, 92], [106, 231, 120, 126, 41, 205, 203, 57, 185], [246, 241, 81, 146, 148, 46, 16, 128, 233]]"
+    },
+
+    // Minesweeper  
+    
 
 
 

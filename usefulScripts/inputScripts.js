@@ -804,3 +804,86 @@ function logAllObjectsAsSingleObject(startId) {
 logAllObjectsAsSingleObject(startId);
 //#endregion
 
+// negatives ++++
+//#region 
+const startId = 776;  // Define your starting ID
+
+// Define your input types and their corresponding regex patterns
+const inputTypes = {
+    number: /(\w+):\s*(-?\d+(\.\d+)?)/g,  // Modified to handle both integers and floats, including negative numbers
+    string: /(\w+):\s*"([^"]*)"/g,
+    boolean: /(\w+):\s*(true|false)/g,
+    matrix: /(\w+):\s*\[\[(.*?)\]\]/gs,  // Pattern to match matrices, including empty arrays
+    arrayOfIntegers: /(\w+):\s*\[([^\[\]]*)\]/g,  // Pattern to match arrayOfIntegers, allowing empty arrays
+};
+
+// Function to log all objects as a single object
+function logAllObjectsAsSingleObject(startId) {
+    // Retrieve the data from local storage
+    const storedData = localStorage.getItem('paramsLog');
+    
+    // Check if data exists
+    if (!storedData) {
+        console.error('No data found in local storage.');
+        return;
+    }
+
+    // Parse the data if it's a JSON string
+    const dataArray = JSON.parse(storedData);
+    
+    // Check if data is an array
+    if (!Array.isArray(dataArray)) {
+        console.error('Data format is incorrect.');
+        return;
+    }
+
+    // Create an array to hold all the objects
+    const allObjects = [];
+
+    // Iterate over the array and extract information
+    dataArray.forEach((item, index) => {
+        Object.keys(inputTypes).forEach(inputType => {
+            const regex = inputTypes[inputType];
+            let match;
+            while ((match = regex.exec(item)) !== null) {
+                const [fullMatch, key, value] = match;
+
+                let inputValue;
+                if (inputType === 'matrix') {
+                    // Special handling for matrices
+                    const rows = value.split(/\s*\],\s*\[/).map(row => 
+                        row.trim() === '' ? [] : row.split(/\s*,\s*/).map(s => parseFloat(s))  // Parse as float
+                    );
+                    inputValue = `[${rows.map(row => `[${row.join(', ')}]`).join(', ')}]`;
+                } else if (inputType === 'arrayOfIntegers') {
+                    // Special handling for arrayOfIntegers, allowing empty arrays
+                    const inputValueArray = value.trim() === '' ? [] : value.split(/\s*,\s*/).map(s => parseInt(s, 10));
+                    inputValue = `[${inputValueArray.join(', ')}]`;
+                } else if (inputType === 'number') {
+                    inputValue = parseFloat(value);  // Convert number (integer or float)
+                } else {
+                    inputValue = value.trim();  // Handle string and boolean values
+                }
+
+                // Add the constructed object to the array
+                allObjects.push({
+                    test_id: startId + index,
+                    input_type: inputType,
+                    input_name: key.trim(),  // Use the extracted key as input_name
+                    input_value: inputValue,
+                });
+            }
+        });
+
+        if (allObjects.length === 0) {
+            console.warn(`No valid key-value pairs found in item ${index + 1}`);
+        }
+    });
+
+    // Log the array of objects as a single object
+    console.log({ allObjects });
+}
+
+// Call the function to log all objects
+logAllObjectsAsSingleObject(startId);
+//#endregion

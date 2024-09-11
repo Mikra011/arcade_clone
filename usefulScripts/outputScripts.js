@@ -7,7 +7,7 @@
 // Define the predefined values
 const CHALLENGE_ID = 20;  // Adjust if needed
 const IS_COMPLEX = false;
-const IS_SAMPLE = true;
+const IS_SAMPLE = false;
 
 // Retrieve the data from local storage using the correct key
 const data = JSON.parse(localStorage.getItem('returnValueLog'));
@@ -51,7 +51,7 @@ if (!data) {
 // Define the predefined values
 const CHALLENGE_ID = 20;  // Changed to 20 as per your example
 const IS_COMPLEX = false;
-const IS_SAMPLE = true;
+const IS_SAMPLE = false;
 
 // Retrieve the data from local storage using the correct key
 const data = JSON.parse(localStorage.getItem('returnValueLog'));
@@ -90,7 +90,7 @@ if (!data) {
 // Define the predefined values
 const CHALLENGE_ID = 20;  // Adjust if needed
 const IS_COMPLEX = false;
-const IS_SAMPLE = true;
+const IS_SAMPLE = false;
 
 // Retrieve the data from local storage using the correct key
 const data = JSON.parse(localStorage.getItem('returnValueLog'));
@@ -131,7 +131,7 @@ if (!data) {
 // Define the predefined values
 const CHALLENGE_ID = 20;  // Adjust if needed
 const IS_COMPLEX = true;
-const IS_SAMPLE = true;
+const IS_SAMPLE = false;
 
 // Retrieve the data from local storage using the correct key
 const data = JSON.parse(localStorage.getItem('returnValueLog'));
@@ -178,7 +178,7 @@ if (!data) {
 // Define the predefined values
 const CHALLENGE_ID = 25;  // Adjust if needed
 const IS_COMPLEX = true;
-const IS_SAMPLE = true;
+const IS_SAMPLE = false;
 
 // Retrieve the data from local storage using the correct key
 const data = JSON.parse(localStorage.getItem('returnValueLog'));
@@ -244,7 +244,7 @@ if (!data) {
     "order_index": ${index + 1},
     "expected_output": '${expectedOutput}',
     "is_complex": true,
-    "is_sample": true
+    "is_sample": false
 }`;
         });
     }
