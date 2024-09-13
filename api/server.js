@@ -4,7 +4,6 @@ const cors = require('cors')
 const sectionsRouter = require('./sections/sections-router')
 const topicsRouter = require('./topics/topics-router')
 const challengesRouter = require('./challenges/challenges-router')
-const testsRouter = require('./tests/tests-router')
 
 const server = express()
 

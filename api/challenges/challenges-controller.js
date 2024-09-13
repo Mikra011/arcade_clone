@@ -15,110 +15,107 @@ const getChallengeDescriptionById = async (req, res) => {
         res.status(500).json({ error: 'Failed to retrieve challenge' })
     }
 }
-
 const ivm = require('isolated-vm');
 
 const runCode = async (req, res) => {
     const { code, tests } = req.body;
-    
-    // Log code type and content for debugging
-    console.log("Type of code:", typeof code);
-    console.log("Code content:", code);
 
-    // Wrap user code correctly
+    // User code is a full function definition, so we just assign it to global.solution
     const wrappedCode = `
-        function solution(param1, param2) {
-            ${code}
-        }
-        solution;
+        ${code}  // User-provided function
+        global.solution = solution;
     `;
 
-    let getSolutionFunction;
+    const isolate = new ivm.Isolate({ memoryLimit: 4096 }); // 4096MB memory limit
+    const context = await isolate.createContext();
+    const jail = context.global;
+
+    // Make the jail object behave like the global object
+    await jail.set('global', jail.derefInto());
 
     try {
-        // Create a new isolate and context
-        const isolate = new ivm.Isolate({ memoryLimit: 128 }); // Adjust memory limit if needed
-        const context = await isolate.createContext();
+        // Compile and run the code in the isolated-vm
         const script = await isolate.compileScript(wrappedCode);
+        await script.run(context, { timeout: 4000 }); // Timeout of 1000 ms for code execution
 
-        // Run the script to get the solution function
-        getSolutionFunction = await script.run(context, { timeout: 1000 });
+        // Get a reference to the 'solution' function
+        const getSolutionFunction = await jail.get('solution', { reference: true });
 
-        if (typeof getSolutionFunction !== 'function') {
-            throw new Error("The generated code does not return a function.");
-        }
+        const results = await Promise.all(tests.map(async test => {
+            const { test_id, expected_output, inputs, is_complex } = test;
 
-        console.log("Successfully retrieved solution function.");
+            // Convert input values to their appropriate types
+            const parsedInputs = Object.entries(inputs).map(([key, { value, type }]) => {
+                switch (type) {
+                    case 'number':
+                        return Number(value);
+                    case 'arrayOfIntegers':
+                        return JSON.parse(value);
+                    case 'matrix':
+                        return JSON.parse(value);
+                    case 'arrayOfStrings':
+                        return JSON.parse(value);
+                    case 'boolean':
+                        return JSON.parse(value);
+                    default:
+                        return String(value); // Default is string or any unhandled type
+                }
+            });
+
+            try {
+                // Invoke the solution function inside the isolated-vm using apply, with a timeout of 1000 ms
+                const result = await getSolutionFunction.apply(undefined, parsedInputs, { timeout: 1000, arguments: { copy: true } });
+
+                let passed;
+                if (is_complex) {
+                    passed = areEqual(result, JSON.parse(expected_output));
+                } else if (typeof result === 'number' && !Number.isInteger(result)) {
+                    passed = areFloatsEqual(result, parseFloat(expected_output));
+                } else {
+                    passed = String(result) === expected_output;
+                }
+
+                return {
+                    test_id,
+                    passed,
+                    expected_output,
+                    result: tests.is_complex ? String(result) : result
+                };
+            } catch (error) {
+                // Check if the error message or name contains 'timeout' to detect a timeout error
+                if (error.message && error.message.toLowerCase().includes('timeout')) {
+                    return {
+                        test_id,
+                        passed: false,
+                        expected_output,
+                        error: {
+                            message: "Execution timed out.",
+                        }
+                    };
+                }
+
+                // General error handling
+                return {
+                    test_id,
+                    passed: false,
+                    expected_output,
+                    error: {
+                        message: error.message,
+                        stack: error.stack,
+                        name: error.name,
+                    }
+                };
+            }
+        }));
+
+        // Send back the results as JSON
+        res.json({ results });
     } catch (error) {
+        // If the code throws an error or times out during initial compilation
         return res.status(400).json({ error: "Error processing the code: " + error.message });
     }
-
-    const results = await Promise.all(tests.map(async test => {
-        const { test_id, expected_output, inputs, is_complex } = test;
-
-        // Convert input values to their appropriate types
-        const parsedInputs = Object.entries(inputs).map(([key, { value, type }]) => {
-            switch (type) {
-                case 'number':
-                    return Number(value);
-                case 'arrayOfIntegers':
-                case 'matrix':
-                case 'arrayOfStrings':
-                case 'boolean':
-                    return JSON.parse(value);
-                default:
-                    return String(value); // Default is string or any unhandled type
-            }
-        });
-
-        try {
-            // Prepare the function invocation code
-            const functionCode = `
-                (async function() {
-                    const solutionFunction = ${getSolutionFunction.toString()};
-                    return await solutionFunction(${parsedInputs.map(input => JSON.stringify(input)).join(', ')});
-                })();
-            `;
-
-            console.log("Function code:", functionCode);
-            console.log("Attempting to run solution function.");
-
-            // Run the function code in the isolated context
-            const result = await context.eval(functionCode);
-
-            // Convert result and expected output to strings for comparison
-            const resultString = JSON.stringify(result);
-            const expectedString = JSON.stringify(is_complex ? JSON.parse(expected_output) : expected_output);
-
-            // Log results for debugging
-            console.log("Result:", resultString);
-            console.log("Expected Output:", expectedString);
-
-            const passed = resultString === expectedString;
-
-            return {
-                test_id,
-                passed,
-                expected_output,
-                result: is_complex ? resultString : result
-            };
-        } catch (error) {
-            return {
-                test_id,
-                passed: false,
-                expected_output,
-                error: {
-                    message: error.message,
-                    stack: error.stack,
-                    name: error.name,
-                }
-            };
-        }
-    }));
-
-    // Send back the results as JSON
-    res.json({ results });
 };
+
 
 
 
