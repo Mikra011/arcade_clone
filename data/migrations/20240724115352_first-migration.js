@@ -64,6 +64,34 @@ exports.up = async function (knex) {
             table.string('input_name').notNullable() // Name of the input parameter
             table.text('input_value').notNullable() // Value of the input parameter
         })
+
+        .createTable('users', table => {
+            table.increments('id') // Primary Key
+            table.string('username').notNullable().unique() // Username
+            table.string('email').notNullable().unique() // Email
+            table.string('password').notNullable() // Password (hashed)
+            table.string('role').notNullable().defaultTo('user') // Role (defaults to 'user')
+        })
+
+        .createTable('user_progress', table => {
+            table.increments('id') // Primary Key
+            table.integer('user_id')
+                .unsigned()
+                .notNullable()
+                .references('id')
+                .inTable('users')
+                .onDelete('CASCADE')
+                .onUpdate('CASCADE') // Foreign Key to Users
+            table.integer('challenge_id')
+                .unsigned()
+                .notNullable()
+                .references('id')
+                .inTable('challenges')
+                .onDelete('CASCADE')
+                .onUpdate('CASCADE') // Foreign Key to Challenges
+            table.string('status').notNullable().defaultTo('not-started') // Challenge status (e.g., 'completed', 'in-progress')
+            table.unique(['user_id', 'challenge_id']) // Ensure a user can have only one progress record per challenge
+        })
 }
 
 /**
@@ -72,6 +100,8 @@ exports.up = async function (knex) {
  */
 exports.down = async function (knex) {
     await knex.schema
+        .dropTableIfExists('user_progress')
+        .dropTableIfExists('users')
         .dropTableIfExists('test_inputs')
         .dropTableIfExists('tests')
         .dropTableIfExists('challenges')

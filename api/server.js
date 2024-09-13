@@ -15,7 +15,7 @@ server.use(express.json())
 server.use('/api/sections', sectionsRouter)
 server.use('/api/topics', topicsRouter)
 server.use('/api/challenges', challengesRouter)
-server.use('/api/tests', testsRouter)
+
 
 server.use("*", (req, res) => {
     res.json({ api: "works" })
