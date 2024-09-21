@@ -49,12 +49,9 @@ const runCode = async (req, res) => {
                 switch (type) {
                     case 'number':
                         return Number(value);
-                    case 'arrayOfIntegers':
-                        return JSON.parse(value);
-                    case 'matrix':
-                        return JSON.parse(value);
+                    case 'arrayOfIntegers':                       
+                    case 'matrix':                        
                     case 'arrayOfStrings':
-                        return JSON.parse(value);
                     case 'boolean':
                         return JSON.parse(value);
                     default:
