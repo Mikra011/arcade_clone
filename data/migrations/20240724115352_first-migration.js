@@ -89,7 +89,7 @@ exports.up = async function (knex) {
                 .inTable('challenges')
                 .onDelete('CASCADE')
                 .onUpdate('CASCADE') // Foreign Key to Challenges
-            table.string('status').notNullable().defaultTo('not-started') // Challenge status (e.g., 'completed', 'in-progress')
+            table.boolean('completed').notNullable() // Indicates if the challenge is completed
             table.unique(['user_id', 'challenge_id']) // Ensure a user can have only one progress record per challenge
         })
 }

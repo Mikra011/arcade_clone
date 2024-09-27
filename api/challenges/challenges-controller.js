@@ -113,9 +113,6 @@ const runCode = async (req, res) => {
     }
 };
 
-
-
-
 // Helper for deep comparison
 function areEqual(value1, value2) {
     // Check if both are arrays
