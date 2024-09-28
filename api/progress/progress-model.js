@@ -22,4 +22,27 @@ const recordUserProgress = async (user_id, challenge_id, completed) => {
     }
 };
 
-module.exports = { recordUserProgress };
+const getUserProgressBySections = async (user_id) => {
+    // Fetch user progress by sections
+    return await db('sections as s') // Start from the sections table
+        .leftJoin('topics as t', 's.section_name', 't.section_name') // Join topics
+        .leftJoin('challenges as c', 't.id', 'c.topic_id') // Join challenges
+        .leftJoin('user_progress as up', function () {
+            this.on('c.id', 'up.challenge_id') // Join user progress
+                .andOn('up.user_id', user_id); // Ensure to filter by the user ID
+        })
+        .select(
+            's.id as section_id',
+            's.section_name',
+            db.raw('COUNT(c.id) as total_challenges'), // Count all challenges in the section
+            db.raw('SUM(CASE WHEN up.completed THEN 1 ELSE 0 END) as completed_challenges') // Count completed challenges
+        )
+        .groupBy('s.id', 's.section_name') // Group by section ID and name
+        .orderBy('s.order_index'); // Order by section index
+};
+
+module.exports = {
+    recordUserProgress,
+    getUserProgressBySections,
+};
+

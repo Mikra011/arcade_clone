@@ -3,7 +3,7 @@ const progressModel = require('./progress-model');
 // Controller to record user progress
 const recordProgress = async (req, res) => {
     const { challenge_id, completed } = req.body;
-    const user_id = req.decodedJwt.id;  // Assuming the user ID is in the JWT token
+    const user_id = req.decodedJwt.id;
 
     if (!challenge_id || typeof completed !== 'boolean') {
         return res.status(400).json({ message: 'Challenge ID and completed status are required.' });
@@ -19,4 +19,23 @@ const recordProgress = async (req, res) => {
     }
 };
 
-module.exports = { recordProgress };
+// get user progress
+const getUserProgressBySections = async (req, res) => {
+    const user_id = req.decodedJwt.id; 
+
+    try {
+        // Fetch the user's progress from the model
+        const progress = await progressModel.getUserProgressBySections(user_id);
+
+        // Return the progress data
+        res.status(200).json({ progress });
+    } catch (error) {
+        console.error('Error fetching user progress:', error);
+        res.status(500).json({ message: 'Failed to retrieve user progress' });
+    }
+};
+
+module.exports = {
+    recordProgress,
+    getUserProgressBySections
+};

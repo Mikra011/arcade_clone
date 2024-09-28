@@ -1,4 +1,5 @@
 const challengeModel = require('./challenges-model');
+const ivm = require('isolated-vm');
 
 const getChallengeDescriptionById = async (req, res) => {
     const { id } = req.params
@@ -15,7 +16,6 @@ const getChallengeDescriptionById = async (req, res) => {
         res.status(500).json({ error: 'Failed to retrieve challenge' })
     }
 }
-const ivm = require('isolated-vm');
 
 const runCode = async (req, res) => {
     const { code, tests } = req.body;
@@ -36,21 +36,23 @@ const runCode = async (req, res) => {
     try {
         // Compile and run the code in the isolated-vm
         const script = await isolate.compileScript(wrappedCode);
-        await script.run(context, { timeout: 4000 }); // Timeout of 1000 ms for code execution
+        await script.run(context, { timeout: 4000 }); // Timeout of 4000 ms for code execution
 
         // Get a reference to the 'solution' function
         const getSolutionFunction = await jail.get('solution', { reference: true });
 
         const results = await Promise.all(tests.map(async test => {
             const { test_id, expected_output, inputs, is_complex } = test;
+            console.log('exp: ', expected_output)
+
 
             // Convert input values to their appropriate types
             const parsedInputs = Object.entries(inputs).map(([key, { value, type }]) => {
                 switch (type) {
                     case 'number':
                         return Number(value);
-                    case 'arrayOfIntegers':                       
-                    case 'matrix':                        
+                    case 'arrayOfIntegers':
+                    case 'matrix':
                     case 'arrayOfStrings':
                     case 'boolean':
                         return JSON.parse(value);
@@ -58,6 +60,8 @@ const runCode = async (req, res) => {
                         return String(value); // Default is string or any unhandled type
                 }
             });
+
+            
 
             try {
                 // Invoke the solution function inside the isolated-vm using apply, with a timeout of 1000 ms
@@ -71,6 +75,8 @@ const runCode = async (req, res) => {
                 } else {
                     passed = String(result) === expected_output;
                 }
+
+                console.log('result: ', result)
 
                 return {
                     test_id,
