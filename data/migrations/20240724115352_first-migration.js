@@ -22,6 +22,7 @@ exports.up = async function (knex) {
             table.integer('order_index').index()
             table.string('topic_name').notNullable().unique() // Topic name
             table.string('topic_img_url') // URL or path to the topic image
+            table.string('topic_img_c_url')
         })
         .createTable('challenges', table => {
             table.increments('id') // Primary Key

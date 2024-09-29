@@ -1,7 +1,7 @@
 const challengeModel = require('./challenges-model');
 const ivm = require('isolated-vm');
 
-const getChallengeDescriptionById = async (req, res) => {
+const getChallengeById = async (req, res) => {
     const { id } = req.params
 
     try {
@@ -151,6 +151,6 @@ function areFloatsEqual(result, expected, epsilon = 1e-7) {
 }
 
 module.exports = {
-    getChallengeDescriptionById,
+    getChallengeById,
     runCode
 }

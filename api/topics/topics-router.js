@@ -1,8 +1,8 @@
 const express = require('express');
 const router = express.Router();
-const topicController = require('./topics-controller');
+const { getTopicsBySection } = require('./topics-controller');
 
 // GET topics by section:
-router.get('/:sectionName', topicController.getTopicsBySection)
+router.get('/:sectionName', getTopicsBySection)
 
 module.exports = router
