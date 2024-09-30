@@ -2,7 +2,7 @@
   "name": "arcade_clone",
   "version": "1.0.0",
   "scripts": {
-    "start": "npm run prodmigrate && npm run prodseed && node index.js",
+    "start": "node index.js",
     "server": "nodemon --exec 'node --no-node-snapshot' index.js",
     "ketchup": "git fetch && git reset --hard origin/lecture",
     "migrate": "knex migrate:latest",
