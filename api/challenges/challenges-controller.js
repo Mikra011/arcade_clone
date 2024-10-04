@@ -43,7 +43,8 @@ const runCode = async (req, res) => {
 
         const results = await Promise.all(tests.map(async test => {
             const { test_id, expected_output, inputs, is_complex } = test;
-            console.log('exp: ', expected_output)
+            // console.log('exp: ', expected_output)
+            // console.log('inp:', inputs)
 
 
             // Convert input values to their appropriate types
@@ -61,11 +62,15 @@ const runCode = async (req, res) => {
                 }
             });
 
-            
+            // console.log('parsed inp:', parsedInputs)
 
             try {
                 // Invoke the solution function inside the isolated-vm using apply, with a timeout of 1000 ms
-                const result = await getSolutionFunction.apply(undefined, parsedInputs, { timeout: 1000, arguments: { copy: true } });
+                const result = await getSolutionFunction.apply(undefined, parsedInputs, { 
+                    timeout: 1000, 
+                    arguments: { copy: true },
+                    result: { copy: true }
+                });
 
                 let passed;
                 if (is_complex) {
@@ -76,7 +81,8 @@ const runCode = async (req, res) => {
                     passed = String(result) === expected_output;
                 }
 
-                console.log('result: ', result)
+                // console.log('result: ', result)
+                // console.log('result type:', typeof result);
 
                 return {
                     test_id,
