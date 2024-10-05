@@ -43,9 +43,6 @@ const runCode = async (req, res) => {
 
         const results = await Promise.all(tests.map(async test => {
             const { test_id, expected_output, inputs, is_complex } = test;
-            // console.log('exp: ', expected_output)
-            // console.log('inp:', inputs)
-
 
             // Convert input values to their appropriate types
             const parsedInputs = Object.entries(inputs).map(([key, { value, type }]) => {
@@ -61,8 +58,6 @@ const runCode = async (req, res) => {
                         return String(value); // Default is string or any unhandled type
                 }
             });
-
-            // console.log('parsed inp:', parsedInputs)
 
             try {
                 // Invoke the solution function inside the isolated-vm using apply, with a timeout of 1000 ms
@@ -81,17 +76,14 @@ const runCode = async (req, res) => {
                     passed = String(result) === expected_output;
                 }
 
-                // console.log('result: ', result)
-                // console.log('result type:', typeof result);
-
                 return {
                     test_id,
                     passed,
                     expected_output,
-                    result: tests.is_complex ? String(result) : result
+                    result: is_complex ? String(result) : result
                 };
             } catch (error) {
-                // Check if the error message or name contains 'timeout' to detect a timeout error
+                // Detect timeout errors
                 if (error.message && error.message.toLowerCase().includes('timeout')) {
                     return {
                         test_id,
@@ -117,13 +109,29 @@ const runCode = async (req, res) => {
             }
         }));
 
+        // Log the results before sending
+        console.log("Results:", JSON.stringify({ results }, null, 2));
+
         // Send back the results as JSON
-        res.json({ results });
+        return res.json({ results });
     } catch (error) {
         // If the code throws an error or times out during initial compilation
-        return res.status(400).json({ error: "Error processing the code: " + error.message });
+        console.error("Error processing the code:", error.message);
+        
+        // Log the error response before sending
+        const errorResponse = { 
+            error: "Error processing the code", 
+            message: error.message, 
+            stack: error.stack, 
+            name: error.name 
+        };
+        console.log("Error Response:", JSON.stringify(errorResponse, null, 2));
+
+        // Send the error response
+        return res.status(400).json(errorResponse);
     }
 };
+
 
 // Helper for deep comparison
 function areEqual(value1, value2) {
