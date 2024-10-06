@@ -102,7 +102,6 @@ const runCode = async (req, res) => {
                     expected_output,
                     error: {
                         message: error.message,
-                        stack: error.stack,
                         name: error.name,
                     }
                 };
@@ -122,7 +121,6 @@ const runCode = async (req, res) => {
         const errorResponse = { 
             error: "Error processing the code", 
             message: error.message, 
-            stack: error.stack, 
             name: error.name 
         };
         console.log("Error Response:", JSON.stringify(errorResponse, null, 2));
