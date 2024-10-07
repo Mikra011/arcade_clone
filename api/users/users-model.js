@@ -5,6 +5,7 @@ module.exports = {
   find,
   findBy,
   findById,
+  getUserInfo
 }
 
 // Add a new user
@@ -26,4 +27,24 @@ function findBy(filter) {
 // Find user by ID
 function findById(id) {
   return db('users').where({ id }).first()
+}
+
+// Fetch user info and completed challenges count
+async function getUserInfo(userId) {
+
+  const user = await findById(userId);
+
+  if (!user) {
+    return null; // Ensure you handle the null case in your controller
+  }
+
+  const completedChallengesCount = await db('user_progress')
+    .where({ user_id: userId, completed: true })
+    .count('id as count')
+    .first();
+
+  return {
+    username: user.username,
+    challengesCompleted: completedChallengesCount.count || 0 // Default to 0 if undefined
+  };
 }

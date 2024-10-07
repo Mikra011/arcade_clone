@@ -109,13 +109,13 @@ const runCode = async (req, res) => {
         }));
 
         // Log the results before sending
-        console.log("Results:", JSON.stringify({ results }, null, 2));
+        // console.log("Results:", JSON.stringify({ results }, null, 2));
 
         // Send back the results as JSON
         return res.json({ results });
     } catch (error) {
         // If the code throws an error or times out during initial compilation
-        console.error("Error processing the code:", error.message);
+        // console.error("Error processing the code:", error.message);
         
         // Log the error response before sending
         const errorResponse = { 
@@ -123,7 +123,7 @@ const runCode = async (req, res) => {
             message: error.message, 
             name: error.name 
         };
-        console.log("Error Response:", JSON.stringify(errorResponse, null, 2));
+        // console.log("Error Response:", JSON.stringify(errorResponse, null, 2));
 
         // Send the error response
         return res.status(400).json(errorResponse);
