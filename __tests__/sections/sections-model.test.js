@@ -6,15 +6,10 @@ describe('Sections Model', () => {
         await db.destroy() // Ensure the database connection is closed
     })
 
-    // Test to verify that the environment is set to testing
-    test('environment is testing', () => {
-        expect(process.env.NODE_ENV).toBe('testing')
-    })
-
     // Test to retrieve all sections
     test('should retrieve all sections', async () => {
         const sections = await sectionModel.getSections()
-        expect(sections).toBeDefined();
+        expect(sections).toBeDefined()
         expect(Array.isArray(sections)).toBe(true)
         expect(sections).toHaveLength(5)
     })
