@@ -31,10 +31,12 @@ server.use("*", (req, res) => {
     res.json({ api: "works" })
 })
 
-server.use((err, req, res, next) => { // eslint-disable-line
-    res.status(500).json({
-        message: err.message,
-        stack: err.stack,
+server.use((err, req, res, next) => {
+    const status = err.status || 500
+    const message = err.message || 'Internal Server Error'
+    res.status(status).json({
+        message: message,
+        stack: process.env.NODE_ENV === 'development' ? err.stack : undefined,
     })
 })
 
