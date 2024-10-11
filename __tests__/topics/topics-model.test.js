@@ -75,7 +75,75 @@ describe('Topics Model', () => {
                 expect(availableChallenges.length).toBeLessThanOrEqual(1)
             })
         })   
+        
+        it('should have only one available challenge across all topics in a section', async () => {
+            const sectionName = 'intro'
+            const userId = 1
     
+            const topics = await topicModel.getTopicsBySection(sectionName, userId)
+    
+            // Flatten all challenges from all topics into one array
+            const allChallenges = topics.reduce((acc, topic) => {
+                return acc.concat(topic.challenges)
+            }, [])
+    
+            // Filter for available challenges across all topics
+            const availableChallenges = allChallenges.filter(challenge => challenge.available)
+    
+            // There should be only one available challenge across the section
+            expect(availableChallenges.length).toBe(1)
+        })
+    
+        it('should have the first uncompleted challenge in the section available', async () => {
+            const sectionName = 'intro'
+            const userId = 1 
+    
+            const topics = await topicModel.getTopicsBySection(sectionName, userId)
+    
+            // Find the first uncompleted challenge
+            const allChallenges = topics.reduce((acc, topic) => {
+                return acc.concat(topic.challenges)
+            }, [])
+    
+            const firstUncompletedChallenge = allChallenges.find(challenge => !challenge.completed)
+    
+            // The first uncompleted challenge should be marked as available
+            expect(firstUncompletedChallenge.available).toBe(true)
+    
+            // Ensure no other challenge before it is available
+            const indexOfFirstUncompleted = allChallenges.indexOf(firstUncompletedChallenge)
+            for (let i = 0; i < indexOfFirstUncompleted; i++) {
+                expect(allChallenges[i].available).toBe(false)
+            }
+        })
+    
+        it('should have the next challenge available after the last completed one', async () => {
+            const sectionName = 'intro'
+            const userId = 1
+    
+            const topics = await topicModel.getTopicsBySection(sectionName, userId)
+            expect(topics.length).toBeGreaterThan(0)
+    
+            // Flatten all challenges from all topics into one array
+            const allChallenges = topics.reduce((acc, topic) => {
+                return acc.concat(topic.challenges)
+            }, [])
+    
+            // Find the last completed challenge
+            const lastCompletedChallengeIndex = allChallenges.map(challenge => challenge.completed)
+                .lastIndexOf(1)
+    
+            // The next challenge after the last completed should be available
+            if (lastCompletedChallengeIndex >= 0 && lastCompletedChallengeIndex < allChallenges.length - 1) {
+                const nextChallenge = allChallenges[lastCompletedChallengeIndex + 1]
+                expect(nextChallenge.available).toBe(true)
+            }
+    
+            // Ensure that challenges before the last completed one are not available
+            for (let i = 0; i < lastCompletedChallengeIndex; i++) {
+                expect(allChallenges[i].available).toBe(false)
+            }
+        })
     
     })
 })
