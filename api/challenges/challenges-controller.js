@@ -87,7 +87,7 @@ const runCode = async (req, res) => {
             try {
                 // Invoke the solution function inside the isolated-vm using apply, with a timeout of 1000 ms
                 const result = await getSolutionFunction.apply(undefined, parsedInputs, {
-                    timeout: 1000,
+                    timeout: 4000,
                     arguments: { copy: true },
                     result: { copy: true }
                 })
