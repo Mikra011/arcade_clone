@@ -74,72 +74,8 @@ describe('Topics Model', () => {
                 // Expect only one challenge to be available at any time
                 expect(availableChallenges.length).toBeLessThanOrEqual(1)
             })
-        })       
-          
-        // it('should mark the next available challenge correctly', async () => {
-        //     const sectionName = 'validSection' // Use a valid section name from your seed
-        //     const userId = 3 // Assume user 3 has completed only one challenge
-
-        //     const topics = await topicModel.getTopicsBySection(sectionName, userId)
-
-        //     let foundAvailableChallenge = false
-
-        //     topics.forEach(topic => {
-        //         topic.challenges.forEach(challenge => {
-        //             if (!challenge.completed) {
-        //                 if (!foundAvailableChallenge) {
-        //                     expect(challenge.available).toBe(true) // The first incomplete challenge should be available
-        //                     foundAvailableChallenge = true
-        //                 } else {
-        //                     expect(challenge.available).toBe(false) // All subsequent challenges should be locked
-        //                 }
-        //             }
-        //         })
-        //     })
-        // })
-
-        // it('should mark topics as completed when all challenges are done', async () => {
-        //     const sectionName = 'validSection' // Use a valid section name from your seed
-        //     const userId = 4 // Assume user 4 has completed all challenges in one topic
-
-        //     const topics = await topicModel.getTopicsBySection(sectionName, userId)
-
-        //     topics.forEach(topic => {
-        //         if (topic.challenges.every(challenge => challenge.completed)) {
-        //             expect(topic.completed).toBe(true) // Topic should be marked as completed
-        //         } else {
-        //             expect(topic.completed).toBe(false) // Otherwise, it should not be marked as completed
-        //         }
-        //     })
-        // })
-
-        // it('should handle users with no progress in a section', async () => {
-        //     const sectionName = 'validSection' // Use a valid section name
-        //     const userId = 5 // Assume user 5 has no progress
-
-        //     const topics = await topicModel.getTopicsBySection(sectionName, userId)
-
-        //     topics.forEach(topic => {
-        //         let firstChallengeAvailable = false
-
-        //         topic.challenges.forEach((challenge, index) => {
-        //             if (index === 0) {
-        //                 // First challenge should be available if no progress
-        //                 expect(challenge.available).toBe(true)
-        //                 firstChallengeAvailable = true
-        //             } else {
-        //                 // All other challenges should be locked
-        //                 expect(challenge.available).toBe(false)
-        //             }
-
-        //             // No challenges should be completed
-        //             expect(challenge.completed).toBe(0)
-        //         })
-
-        //         // Only the first challenge should be available, rest should be locked
-        //         expect(firstChallengeAvailable).toBe(true)
-        //     })
-        // })
+        })   
+    
     
     })
 })

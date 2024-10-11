@@ -1,71 +1,94 @@
 const db = require('../../data/db-config')
 
-const getTopicsBySection = async (sectionName, userId) => {
-    // Fetch topics sorted by order_index
-    const topics = await db('topics')
+// Fetch topics based on sectionName
+const getTopics = async (sectionName) => {
+    return await db('topics')
         .select('topic_name', 'topic_img_url', 'topic_img_c_url', 'id', 'order_index')
         .where('section_name', sectionName)
         .orderBy('order_index')
+}
 
-    // Get user's progress in the current section, only completed challenges
+// Fetch user's progress (completed challenges)
+const getUserProgress = async (userId) => {
     const userProgress = await db('user_progress')
         .select('challenge_id')
         .where('user_id', userId)
         .andWhere('completed', 1)
 
-    // Extract completed challenge IDs
-    const completedChallengeIds = userProgress.map(progress => progress.challenge_id)
+    // Return only the IDs of completed challenges
+    return userProgress.map(progress => progress.challenge_id)
+}
 
-    let foundAvailableChallenge = false; // Only one challenge should be available
+// Fetch challenges for a specific topic
+const getChallengesByTopic = async (topicId) => {
+    return await db('challenges')
+        .select('order_index', 'challenge_name', 'id')
+        .where('topic_id', topicId)
+        .orderBy('order_index')
+}
 
-    // Iterate through each topic
-    for (const topic of topics) {
-        // Fetch challenges sorted by order_index for each topic
-        const challenges = await db('challenges')
-            .select('order_index', 'challenge_name', 'challenges.id')
-            .where('topic_id', topic.id)
-            .orderBy('order_index')
+// Process challenges: mark available and completed challenges
+const processChallenges = (challenges, completedChallengeIds, foundAvailableChallenge) => {
+    let topicHasAvailableChallenge = false
+    let allChallengesCompleted = true
 
-        let topicHasAvailableChallenge = false // To mark topic available if any challenge is available
-        let allChallengesCompleted = true // Track if all challenges in the topic are completed
+    for (let i = 0; i < challenges.length; i++) {
+        const challenge = challenges[i]
 
-        // Iterate through the challenges
-        for (let i = 0; i < challenges.length; i++) {
-            const challenge = challenges[i]
+        // Check if the challenge is completed
+        challenge.completed = completedChallengeIds.includes(challenge.id) ? 1 : 0
 
-            // Check if the challenge is completed
-            challenge.completed = completedChallengeIds.includes(challenge.id) ? 1 : 0
-
-            // If the challenge is completed, the next one should be marked as available
-            if (challenge.completed) {
-                challenge.available = false // Completed challenges are not available
-            } else if (!foundAvailableChallenge) {
-                // If we haven't found an available challenge yet, mark this one as available
-                challenge.available = true
-                foundAvailableChallenge = true
-                topicHasAvailableChallenge = true // Topic becomes available since it has this challenge
-            } else {
-                challenge.available = false // Lock other challenges
-            }
-
-            // If any challenge is not completed, the topic can't be marked as completed
-            if (!challenge.completed) {
-                allChallengesCompleted = false
-            }
+        // If the challenge is completed, the next one should be available
+        if (challenge.completed) {
+            challenge.available = false // Completed challenges are not available
+        } else if (!foundAvailableChallenge) {
+            challenge.available = true
+            foundAvailableChallenge = true
+            topicHasAvailableChallenge = true // This topic now has an available challenge
+        } else {
+            challenge.available = false // Lock other challenges
         }
 
-        // Mark all challenges and the topic as part of the topic object
-        topic.challenges = challenges
+        if (!challenge.completed) {
+            allChallengesCompleted = false
+        }
+    }
 
-        // If the topic contains an available challenge, the topic itself should be marked as available
+    return { challenges, foundAvailableChallenge, topicHasAvailableChallenge, allChallengesCompleted }
+}
+
+// Process topics: assign challenges and availability status
+const processTopics = async (topics, completedChallengeIds) => {
+    let foundAvailableChallenge = false
+
+    for (const topic of topics) {
+        const challenges = await getChallengesByTopic(topic.id)
+        const {
+            challenges: processedChallenges,
+            foundAvailableChallenge: newAvailableChallenge,
+            topicHasAvailableChallenge,
+            allChallengesCompleted
+        } = processChallenges(challenges, completedChallengeIds, foundAvailableChallenge)
+
+        // Add processed challenges to the topic
+        topic.challenges = processedChallenges
         topic.available = topicHasAvailableChallenge
-
-        // Mark the topic as completed if all challenges are done
         topic.completed = allChallengesCompleted
+
+        // Update foundAvailableChallenge for other topics
+        foundAvailableChallenge = newAvailableChallenge
     }
 
     return topics
 }
+
+// Main function to get topics by section and user progress
+const getTopicsBySection = async (sectionName, userId) => {
+    const topics = await getTopics(sectionName)
+    const completedChallengeIds = await getUserProgress(userId)
+    return await processTopics(topics, completedChallengeIds)
+}
+
 
 module.exports = {
     getTopicsBySection
