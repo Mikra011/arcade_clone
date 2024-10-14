@@ -24,5 +24,28 @@ const authenticate = (req, res, next) => {
     }
 }
 
+// Validation
+function validateUser(req, res, next) {
+    const { username, password } = req.body
 
-module.exports = authenticate
+    if (!username || !password) {
+        return res.status(400).json({ message: 'Username and password are required' })
+    }
+
+    if (username.length < 3 || username.length > 10) {
+        return res.status(400).json({ message: 'Username must be between 3 and 10 characters' })
+    }
+
+    if (password.length < 3 || password.length > 10) {
+        return res.status(400).json({ message: 'Password must be between 3 and 10 characters' })
+    }
+
+    next() // if validation passes, proceed to the next middleware/route handler
+}
+
+
+
+module.exports = {
+    authenticate,
+    validateUser
+}

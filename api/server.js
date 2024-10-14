@@ -2,7 +2,7 @@ const express = require('express')
 const helmet = require('helmet')
 const cors = require('cors')
 
-const authenticate = require('./auth/auth-middleware')
+const { authenticate, validateUser } = require('./auth/auth-middleware')
 
 const sectionsRouter = require('./sections/sections-router')
 const topicsRouter = require('./topics/topics-router')
@@ -19,7 +19,7 @@ server.use(express.json())
 
 // public
 server.use('/api/sections', sectionsRouter)
-server.use('/api/auth', authRouter)
+server.use('/api/auth', validateUser, authRouter)
 
 // protected
 server.use('/api/topics', authenticate, topicsRouter)
