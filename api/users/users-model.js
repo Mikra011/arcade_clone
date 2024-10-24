@@ -10,8 +10,12 @@ module.exports = {
 
 // Add a new user
 async function add(user) {
-  const [id] = await db('users').insert(user)
-  return findById(id)
+  const result = await db('users').insert(user).returning('id')
+  if (result.length > 0) {
+    const id = result[0].id
+    return findById(id)
+  }
+  throw new Error('Insert operation failed to return an ID')
 }
 
 // Find all users (or you can add filters later)
