@@ -30,7 +30,6 @@ module.exports = {
       user: process.env.SUPABASE_USER, 
       password: process.env.SUPABASE_PASSWORD, 
       database: process.env.SUPABASE_DATABASE, 
-      port: 6543,
       ssl: {
         rejectUnauthorized: false,
       },

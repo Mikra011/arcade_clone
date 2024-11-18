@@ -81,5 +81,5 @@ If you prefer not to register, you can log in with the following credentials:
 
 ## Notes:
 
-- Currently, only JavaScript challenges are available.
+- Currently, only JavaScript challenges are available.( python and databeses sections are not containing any challenges currently )
 - Time and space constraints do not align with the limits of my current deployment tier. To explore more advanced challenges, please run the project locally, or visit the original site: [codesignal/arcade](https://app.codesignal.com/arcade)
