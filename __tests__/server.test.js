@@ -44,7 +44,7 @@ describe('API Tests', () => {
   describe('Auth Routes', () => {
     describe('POST /api/auth/register', () => {
       it('should register a new user and return a success message', async () => {
-        const newUser = { username: 'testuser', password: 'password123', email: 'test@test.com' };
+        const newUser = { username: 'testuser', password: 'password', email: 'test@test.com' };
 
         const res = await request(server)
           .post('/api/auth/register')
@@ -61,14 +61,14 @@ describe('API Tests', () => {
           .post('/api/auth/register')
           .send(incompleteUser)
 
-        expect(res.status).toBe(500)
-        expect(res.body.message).toBeDefined()
+        expect(res.status).toBe(400)
+        expect(res.body.message).toBe("Username and password are required")
       })
     })
 
     describe('POST /api/auth/login', () => {
       it('should login an existing user and return a token', async () => {
-        const credentials = { username: 'testuser', password: 'password123' }
+        const credentials = { username: 'testuser', password: 'password' }
 
         const res = await request(server)
           .post('/api/auth/login')
@@ -80,7 +80,7 @@ describe('API Tests', () => {
       })
 
       it('should return a 401 for invalid credentials', async () => {
-        const invalidCredentials = { username: 'wronguser', password: 'wrongpassword' }
+        const invalidCredentials = { username: 'wronguser', password: 'wrong' }
 
         const res = await request(server)
           .post('/api/auth/login')
